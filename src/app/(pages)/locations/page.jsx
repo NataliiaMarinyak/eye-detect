@@ -1,4 +1,4 @@
-import LocationsSection from "@/app/sections/locationsSection/locationsSection";
+import LocationsSection from "@/app/sections/locationsSection/LocationsSection";
 
 
 const LocationsPage = () => {

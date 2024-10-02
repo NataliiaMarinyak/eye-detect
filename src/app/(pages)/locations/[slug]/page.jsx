@@ -1,4 +1,4 @@
-import LocationIdSection from "@/app/sections/locationIdSection/locationIdSection";
+import LocationIdSection from "@/app/sections/locationIdSection/LocationIdSection";
 
 
 const LocationIdPage = () => {
