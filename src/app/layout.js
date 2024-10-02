@@ -37,16 +37,34 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
+
+const ukraineHeadRegular = localFont({
+  src: "./fonts/e-UkraineHead-Regular.otf",
+  variable: "--font-ukraine-head-regular",
+  weight: "400",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const ukraineBold = localFont({
+  src: "./fonts/e-Ukraine-Bold.otf",
+  variable: "--font-ukraine-bold",
+  weight: "700",
 });
+const ukraineRegular = localFont({
+  src: "./fonts/e-Ukraine-Regular.otf",
+  variable: "--font-ukraine-regular",
+  weight: "400",
+});
+
+
 
 
 export const metadata = {
@@ -59,8 +77,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}`}
-        style={{ overflowX: "hidden", overflowY: "auto" }}
+        className={`${ukraineHeadRegular.variable} ${ukraineBold.variable} ${ukraineRegular.variable}`}
+        style={{ overflowX: "hidden" }}
       >
         <Header />
         <main>
