@@ -45,3 +45,16 @@ $alert-error: rgba(179, 0, 0, 1);
 $alert-warning: rgba(255, 206, 43, 1);
 $alert-success: rgba(0, 105, 52, 1);
 $alert-system: rgba(2, 0, 148, 1);
+
+// mixins in variables
+
+// @mixin btnBg {
+//   background-image: linear-gradient(135deg, #1f6273, #b0d4ff);
+//   background-size: 300%;
+//   background-position-x: left;
+// }
+
+// mixins in styles
+// .someBtn {
+//      @include btnBg;
+// }

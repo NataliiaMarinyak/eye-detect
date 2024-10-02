@@ -1,6 +1,15 @@
+import HeroSection from "../sections/homeSections/heroSection/HeroSection";
+
+export default function Home() {
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
+}
+
 // import Image from "next/image";
 // import styles from "./page.module.css";
-
 
 // export default function Home() {
 //   return (
@@ -94,16 +103,3 @@
 //     </div>
 //   );
 // }
-
-
-
-import HeroSection from "../sections/homeSections/heroSection/HeroSection";
-
-
-export default function Home() {
-  return (
-    <>
-      <HeroSection />
-    </>
-  );
-}
