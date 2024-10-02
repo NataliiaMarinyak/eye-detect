@@ -1,4 +1,4 @@
-import ContactsSection from "@/app/sections/contactsSection/ContactsSection";
+import ContactsSection from "@/sections/contactsSection/ContactsSection";
 
 
 const ContactsPage = () => {

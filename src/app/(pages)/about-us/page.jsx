@@ -1,4 +1,4 @@
-import AboutUsSection from "@/app/sections/aboutUsSection/AboutUsSection";
+import AboutUsSection from "@/sections/aboutUsSection/AboutUsSection";
 
 
 const AboutUsPage = () => {
