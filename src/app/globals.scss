@@ -1,3 +1,83 @@
+@import "./_variables";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  // width: 100%; //?
+  min-height: 100vh;
+  color: $gray-900;
+  font-family: var(--font-ukraine-head-regular);
+  font-style: normal;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // background-color: $gray-600; // temporary
+}
+
+// header,
+// footer {
+//   // width: inherit; //?
+//   // max-width: inherit; //?
+
+//   // background-color: $gray-50; // temporary
+// }
+main {
+  flex: 1;
+  // background-color: $primary-200; // temporary
+}
+
+section {
+  padding: 100px 20px; // temporary
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px; //?
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+
+  display: inline-block;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 // :root {
 //   --background: #ffffff;
 //   --foreground: #171717;
@@ -41,11 +121,6 @@
 //   }
 // }
 
-
-
-@import './_variables';
-
-
 // :root {
 //   --background: #ffffff;
 //   --foreground: #171717;
@@ -58,34 +133,18 @@
 //   }
 // }
 
-html,
-body {
-  max-width: 100vw;
-}
+// html,
+// body {
+//   max-width: 100vw;
+// }
 
-body {
-  // color: var(--foreground);
-  // background: var(--background);
-  // font-family: Arial, Helvetica, sans-serif;
+// body {
+//   // color: var(--foreground);
+//   // background: var(--background);
+//   // font-family: Arial, Helvetica, sans-serif;
 
-  // have a question about fonts here and in layout in body
-  font-family: var(--font-ukraine-regular);
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul,
-ol {
-  list-style: none;
-}
+//   // have a question about fonts here and in layout in body
+//   font-family: var(--font-ukraine-regular);
+//   // -webkit-font-smoothing: antialiased;
+//   // -moz-osx-font-smoothing: grayscale;
+// }
