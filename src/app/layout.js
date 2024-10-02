@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import { SiteProvider } from "@/context/SiteContext";
 
 const ukraineHeadRegular = localFont({
   src: "./fonts/e-UkraineHead-Regular.otf",
@@ -31,9 +32,11 @@ export default function RootLayout({ children }) {
         className={`${ukraineHeadRegular.variable} ${ukraineBold.variable} ${ukraineRegular.variable}`}
         style={{ overflowX: "hidden" }}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <SiteProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </SiteProvider>
       </body>
     </html>
   );
