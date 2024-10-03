@@ -1,10 +1,14 @@
-import AboutUsSection from "@/sections/aboutUsSection/AboutUsSection";
+import ConsultationSection from "@/sections/consultationSection/ConsultationSection";
+import SpecialistSection from "@/sections/specialistSection/SpecialistSection";
+import HomeCertificatesSection from "@/sections/homeSections/homeCertificatesSection/HomeCertificatesSection";
 
 
 const AboutUsPage = () => {
     return (
         <>
-            <AboutUsSection />
+            <ConsultationSection />
+            <SpecialistSection />
+            <HomeCertificatesSection />
         </>
     )
 }
