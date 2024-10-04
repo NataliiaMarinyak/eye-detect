@@ -2,7 +2,7 @@
   "name": "eye-detect",
   "version": "0.1.0",
   "private": true,
-  "figma": "https://www.figma.com/design/a1wkLxXLZDgjIykgVbz09N/EyeDetect?node-id=1-48&node-type=canvas&t=OgFMRXmJx5Bhvp8u-0",
+  "figma": "https://www.figma.com/design/hEyimTRsWCS8lWGlRozcKP/EyeDetect-Ready?node-id=1-48&node-type=canvas&t=mY2zIaTEhUkhUiX7-0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
