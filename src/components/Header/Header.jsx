@@ -1,5 +1,11 @@
+import HeaderTop from "./HeaderTop/HeaderTop";
+
 const Header = () => {
-  return <header>Header</header>;
+  return (
+    <header>
+      <HeaderTop />
+    </header>
+  );
 };
 
 export default Header;
