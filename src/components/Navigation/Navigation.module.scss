@@ -1,0 +1,11 @@
+@import "../../app/variables";
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.navItemSubmenu {
+  position: relative;
+  left: 0;
+}

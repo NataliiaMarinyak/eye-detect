@@ -2,18 +2,16 @@
 
 .headerTopWrapper {
   background-color: $secondary-600;
-  height: 32px;
+  @include sectionSidePadding;
 }
 
 .headerTop {
+  height: 32px;
   color: $gray-0;
-  height: 34px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
-
-  @include sectionSidePadding;
 
   & svg {
     stroke: $gray-0;
