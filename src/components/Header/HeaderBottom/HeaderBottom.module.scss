@@ -1,0 +1,15 @@
+@import "../../../app/variables";
+
+.headerBottomWrapper {
+  background-color: $secondary-50;
+  @include sectionSidePadding;
+}
+
+.headerBottom {
+  height: 58px;
+  color: $secondary-900;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}

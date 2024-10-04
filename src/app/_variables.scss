@@ -49,14 +49,17 @@ $alert-system: rgba(2, 0, 148, 1);
 @mixin sectionSidePadding {
   padding-left: 20px; //?
   padding-right: 20px; //?
+
   @media screen and (min-width: $laptop) {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
+
 @mixin sectionTopBottomPadding {
   padding-top: 20px; //?
   padding-bottom: 20px; //?
+
   @media screen and (min-width: $laptop) {
     padding-top: 32px;
     padding-bottom: 32px;
