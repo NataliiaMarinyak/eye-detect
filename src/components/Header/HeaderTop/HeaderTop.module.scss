@@ -1,0 +1,49 @@
+@import "../../../app/variables";
+
+.headerTopWrapper {
+  background-color: $secondary-600;
+  height: 32px;
+}
+
+.headerTop {
+  color: $gray-0;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+
+  @include sectionSidePadding;
+
+  & svg {
+    stroke: $gray-0;
+    fill: none;
+
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  & svg {
+    margin-right: 12px;
+  }
+}
+
+.socLinks {
+  display: flex;
+  gap: 12px;
+
+  & svg {
+  }
+}
+
+.viber,
+.whatsapp {
+  & svg {
+    fill: $gray-0;
+    stroke: none;
+  }
+}
