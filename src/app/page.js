@@ -1,12 +1,35 @@
 import HeroSection from "../sections/homeSections/heroSection/HeroSection";
+import HomeAboutSection from "@/sections/homeSections/homeAboutSection/HomeAboutSection";
+import HomeCertificatesSection from "@/sections/homeSections/homeCertificatesSection/HomeCertificatesSection";
+import HomeAdvantagesSection from "@/sections/homeSections/homeAdvantagesSection/HomeAdvantagesSection";
+import HomeClientsSection from "@/sections/homeSections/homeClientsSection/HomeClientsSection";
+import HomeTestingSection from "@/sections/homeSections/homeTestingSection/HomeTestingSection";
+import HomeDirectionsSection from "@/sections/homeSections/homeDirectionsSection/HomeDirectionsSection";
+import HomeCountriesSection from "@/sections/homeSections/homeCountriesSection/HomeCountriesSection";
+import HomeFAQSection from "@/sections/homeSections/homeFAQSection/HomeFAQSection";
+import HomeConditionsSection from "@/sections/homeSections/homeConditionsSection/HomeConditionsSection";
+import HomeOrderSection from "@/sections/homeSections/homeOrderSection/HomeOrderSection";
+
+
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <HomeAboutSection />
+      <HomeCertificatesSection />
+      <HomeAdvantagesSection />
+      <HomeClientsSection />
+      <HomeTestingSection />
+      <HomeDirectionsSection />
+      <HomeCountriesSection />
+      <HomeFAQSection />
+      <HomeConditionsSection />
+      <HomeOrderSection />
     </>
   );
 }
+
 
 // import Image from "next/image";
 // import styles from "./page.module.css";
