@@ -1,7 +1,4 @@
-const locationsData = [
-    {
-        slug: "Lviv",
-        city: "Львів",
-        cityRus: "Львов",
-    }
-]
+import { europeanCitiesData } from "./europeanCitiesData";
+import { ukrainianCitiesData } from "./ukrainianCitiesData";
+
+export const locationsData = [...ukrainianCitiesData, ...europeanCitiesData];
