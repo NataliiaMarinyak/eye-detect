@@ -19,7 +19,7 @@ const HeaderTop = () => {
           <svg>
             <use href="/sprite.svg#icon-map_pin"></use>
           </svg>
-          виїзд по Україні та Європи
+          виїзд по Україні та Європі
         </Link>
 
         <ul className={styles.socLinks}>

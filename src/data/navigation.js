@@ -12,14 +12,14 @@ export const navLinks = [
     href: "/about-us",
   },
   {
-    title: "Локацї",
-    titleRu: "Локацї",
+    title: "Локації",
+    titleRu: "Локации",
     href: "/locations",
     subMenu: locationsData,
   },
   {
     title: "Контакти",
-    titleRu: "Контакти",
+    titleRu: "Контакты",
     href: "/contacts",
   },
 ];
