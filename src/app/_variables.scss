@@ -46,6 +46,26 @@ $alert-warning: rgba(255, 206, 43, 1);
 $alert-success: rgba(0, 105, 52, 1);
 $alert-system: rgba(2, 0, 148, 1);
 
+@mixin sectionSidePadding {
+  padding-left: 20px; //?
+  padding-right: 20px; //?
+
+  @media screen and (min-width: $laptop) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@mixin sectionTopBottomPadding {
+  padding-top: 20px; //?
+  padding-bottom: 20px; //?
+
+  @media screen and (min-width: $laptop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 // mixins in variables
 
 // @mixin btnBg {

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "figma": "https://www.figma.com/design/hEyimTRsWCS8lWGlRozcKP/EyeDetect-Ready?node-id=1-48&node-type=canvas&t=mY2zIaTEhUkhUiX7-0",
+  "github": "https://github.com/NataliiaMarinyak/eye-detect",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

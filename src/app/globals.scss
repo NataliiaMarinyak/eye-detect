@@ -49,13 +49,14 @@ main {
 }
 
 section {
-  padding: 100px 20px; // temporary
+  @include sectionSidePadding;
+  @include sectionTopBottomPadding;
 }
 
 .container {
   width: 100%;
   height: 100%;
-  max-width: 1200px; //?
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }

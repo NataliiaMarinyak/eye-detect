@@ -1,0 +1,10 @@
+@import "../../app/variables";
+
+.logowrapp {
+  position: relative;
+  width: 174px;
+  height: 32px;
+  & img {
+    object-fit: contain;
+  }
+}
