@@ -3,30 +3,14 @@ import styles from "./Navigation.module.scss";
 import { navLinks } from "../../data/navigation";
 import Link from "next/link";
 
-const Navigation = () => {
+const Navigation = ({ className }) => {
   return (
-    <nav className={styles.nav}>
+    <nav className={`${className}`}>
       {navLinks.map((el) => {
         return (
-          <div key={el.title}>
-            <Link href={el.href}>{el.title}</Link>
-            {/* {el.subMenu ? (
-              <nav className={styles.navItemSubmenu}>
-                {el.subMenu.map((item, i, arr) => {
-                  return (
-                    <p key={item.city} href={el.href}>
-                      {item.city}
-                    </p>
-                  );
-                })}
-              </nav>
-            ) : null} */}
-            {/* {el.subMenu ? (
-              <svg>
-                <use href=".s/sprite.svg#icon-nav-arrow"></use>
-              </svg>
-            ) : null} */}
-          </div>
+          <Link key={el.title} href={el.href}>
+            {el.title}
+          </Link>
         );
       })}
     </nav>

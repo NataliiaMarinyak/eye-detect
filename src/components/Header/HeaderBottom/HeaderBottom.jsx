@@ -9,7 +9,7 @@ const HeaderBottom = () => {
     <div className={`${styles.headerBottomWrapper}`}>
       <div className={`container ${styles.headerBottom}`}>
         <Logo />
-        <Navigation />
+        <Navigation className={styles.nav} />
         <LangSwitcher />
       </div>
     </div>

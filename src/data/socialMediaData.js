@@ -38,6 +38,7 @@ export const socialMediaData = [
     type: "email",
     href: "mailto:eyedetect_natalia@gmail.com",
     icon: "./sprite.svg#icon-email",
+    contact: "eyedetect_natalia@gmail.com",
   },
 ];
 // console.log("socialMediaData", socialMediaData);
@@ -50,3 +51,13 @@ export const headerSocLinks = socialMediaData.filter(
 );
 
 // console.log("headerSocLinks", headerSocLinks);
+
+// Move Telegram item to the pre-last position
+// Make a copy of the array to avoid mutating the original
+export const rearrangedArray = [...socialMediaData];
+
+// Remove the item from index 1 (splice returns an array of removed elements)
+const [elementToMove] = rearrangedArray.splice(1, 1);
+
+// Insert the item at index 3 (pre-last position)
+rearrangedArray.splice(3, 0, elementToMove);
