@@ -1,15 +1,15 @@
 export const europeanCitiesData = [
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "vienna",
+        city: "Відень",
+        cityRus: "Вена",
+        country: "Австрія",
+        countryRus: "Австрия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/T3yrhYdv0h4",
         services: [
             {
                 familyTest: {
@@ -144,16 +144,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "tirana",
+        city: "Тирана",
+        cityRus: "Тирана",
+        country: "Албанія",
+        countryRus: "Албания",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/iVhAp6GQrrk",
         services: [
             {
                 familyTest: {
@@ -288,16 +288,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "andorra-la-vella",
+        city: "Андорра-ла-Велья",
+        cityRus: "Андорра-ла-Велья",
+        country: "Андорра",
+        countryRus: "Андорра",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/cYmNWHD5Edw",
         services: [
             {
                 familyTest: {
@@ -432,16 +432,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "brussels",
+        city: "Брюссель",
+        cityRus: "Брюссель",
+        country: "Бельгія",
+        countryRus: "Бельгия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/M3wZyyppsn8",
         services: [
             {
                 familyTest: {
@@ -576,16 +576,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "minsk",
+        city: "Мінськ",
+        cityRus: "Минск",
+        country: "Білорусь",
+        countryRus: "Беларусь",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/M3zIpQvXXik",
         services: [
             {
                 familyTest: {
@@ -720,16 +720,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "sofia",
+        city: "Софія",
+        cityRus: "София",
+        country: "Болгарія",
+        countryRus: "Болгария",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/ctpOAWZqtQg",
         services: [
             {
                 familyTest: {
@@ -864,16 +864,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "sarajevo",
+        city: "Сараєво",
+        cityRus: "Сараево",
+        country: "Боснія і Герцеговина",
+        countryRus: "Босния и Герцеговина",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/xpXZdSyJgaA",
         services: [
             {
                 familyTest: {
@@ -1008,16 +1008,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "vatican",
+        city: "Ватикан",
+        cityRus: "Ватикан",
+        country: "Ватикан",
+        countryRus: "Ватикан",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/oJPO-F1vv_E",
         services: [
             {
                 familyTest: {
@@ -1152,16 +1152,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "london",
+        city: "Лондон",
+        cityRus: "Лондон",
+        country: "Велика Британія",
+        countryRus: "Великобритания",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/9u_l4Xn-pSM",
         services: [
             {
                 familyTest: {
@@ -1296,16 +1296,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "athens",
+        city: "Афіни",
+        cityRus: "Афины",
+        country: "Греція",
+        countryRus: "Греция",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/Cfstsz21_ZU",
         services: [
             {
                 familyTest: {
@@ -1440,16 +1440,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "copenhagen",
+        city: "Копенгаген",
+        cityRus: "Копенгаген",
+        country: "Данія",
+        countryRus: "Дания",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/x5aEXKA5Awo",
         services: [
             {
                 familyTest: {
@@ -1584,16 +1584,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "tallinn",
+        city: "Таллінн",
+        cityRus: "Таллин",
+        country: "Естонія",
+        countryRus: "Эстония",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/VKc3EYzZlSI",
         services: [
             {
                 familyTest: {
@@ -1728,16 +1728,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "dublin",
+        city: "Дублін",
+        cityRus: "Дублин",
+        country: "Ірландія",
+        countryRus: "Ирландия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/WBOrhXG1HFc",
         services: [
             {
                 familyTest: {
@@ -1872,16 +1872,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "reykjavík",
+        city: "Рейк’явік",
+        cityRus: "Рейкьявик",
+        country: "Ісландія",
+        countryRus: "Исландия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/uQ8QRsLKzPU",
         services: [
             {
                 familyTest: {
@@ -2016,16 +2016,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "madrid",
+        city: "Мадрид",
+        cityRus: "Мадрид",
+        country: "Іспанія",
+        countryRus: "Испания",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/-QTEXEvZ350",
         services: [
             {
                 familyTest: {
@@ -2160,16 +2160,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "rome",
+        city: "Рим",
+        cityRus: "Рим",
+        country: "Італія",
+        countryRus: "Италия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/B8sqL5rulxs",
         services: [
             {
                 familyTest: {
@@ -2304,16 +2304,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "pristina",
+        city: "Приштина",
+        cityRus: "Приштина",
+        country: "Косово",
+        countryRus: "Косово",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/P9ef-RqCkFw",
         services: [
             {
                 familyTest: {
@@ -2448,16 +2448,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "riga",
+        city: "Рига",
+        cityRus: "Рига",
+        country: "Латвія",
+        countryRus: "Латвия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/2UPQ70LngiY",
         services: [
             {
                 familyTest: {
@@ -2592,16 +2592,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "vilnius",
+        city: "Вільнюс",
+        cityRus: "Вильнюс",
+        country: "Литва",
+        countryRus: "Литва",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/ryR0fGmRkXA",
         services: [
             {
                 familyTest: {
@@ -2736,16 +2736,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "vaduz",
+        city: "Вадуц",
+        cityRus: "Вадуц",
+        country: "Ліхтенштейн",
+        countryRus: "Лихтенштейн",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/jt5Seow4EZI",
         services: [
             {
                 familyTest: {
@@ -2880,16 +2880,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "luxembourg",
+        city: "Люксембург",
+        cityRus: "Люксембург",
+        country: "Люксембург",
+        countryRus: "Люксембург",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/NooZeEBvmRg",
         services: [
             {
                 familyTest: {
@@ -3024,16 +3024,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "valletta",
+        city: "Валлетта",
+        cityRus: "Валлетта",
+        country: "Мальта",
+        countryRus: "Мальта",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/puJvqSTGXYo",
         services: [
             {
                 familyTest: {
@@ -3168,16 +3168,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "chișinău",
+        city: "Кишинів",
+        cityRus: "Кишинёв",
+        country: "Молдова",
+        countryRus: "Молдова",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/MD29Z-qt9j0",
         services: [
             {
                 familyTest: {
@@ -3312,16 +3312,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "monaco",
+        city: "Монако",
+        cityRus: "Монако",
+        country: "Монако",
+        countryRus: "Монако",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/zrnG3fyF76g",
         services: [
             {
                 familyTest: {
@@ -3456,16 +3456,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "amsterdam",
+        city: "Амстердам",
+        cityRus: "Амстердам",
+        country: "Нідерланди",
+        countryRus: "Нидерланды",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/7K0A1xMrq4g",
         services: [
             {
                 familyTest: {
@@ -3600,16 +3600,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "berlin",
+        city: "Берлін",
+        cityRus: "Берлин",
+        country: "Німеччина",
+        countryRus: "Германия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/xkcRBiTBylI",
         services: [
             {
                 familyTest: {
@@ -3744,16 +3744,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "oslo",
+        city: "Осло",
+        cityRus: "Осло",
+        country: "Норвегія",
+        countryRus: "Норвегия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/zoi9o0kBBRo",
         services: [
             {
                 familyTest: {
@@ -3888,16 +3888,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "skopje",
+        city: "Скоп’є",
+        cityRus: "Скопье",
+        country: "Північна Македонія",
+        countryRus: "Северная Македония",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/epfcQR9W6KM",
         services: [
             {
                 familyTest: {
@@ -4032,16 +4032,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "warsaw",
+        city: "Варшава",
+        cityRus: "Варшава",
+        country: "Польща",
+        countryRus: "Польша",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/IM_i6352Ttw",
         services: [
             {
                 familyTest: {
@@ -4176,16 +4176,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "lisbon",
+        city: "Лісабон",
+        cityRus: "Лиссабон",
+        country: "Португалія",
+        countryRus: "Португалия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/9eoLFdhnzGQ",
         services: [
             {
                 familyTest: {
@@ -4320,16 +4320,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "bucharest",
+        city: "Бухарест",
+        cityRus: "Бухарест",
+        country: "Румунія",
+        countryRus: "Румыния",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/ZxaH1R8cQeg",
         services: [
             {
                 familyTest: {
@@ -4464,16 +4464,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "san-marino",
+        city: "Сан-Марино",
+        cityRus: "Сан-Марино",
+        country: "Сан-Марино",
+        countryRus: "Сан-Марино",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/nHFUX1Q3y3k",
         services: [
             {
                 familyTest: {
@@ -4608,16 +4608,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "belgrade",
+        city: "Белград",
+        cityRus: "Белград",
+        country: "Сербія (без Косово)",
+        countryRus: "Сербия (без Косово)",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/PVk11G6ZunA",
         services: [
             {
                 familyTest: {
@@ -4752,16 +4752,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "bratislava",
+        city: "Братислава",
+        cityRus: "Братислава",
+        country: "Словаччина",
+        countryRus: "Словакия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/F8-MwcMt9Uk",
         services: [
             {
                 familyTest: {
@@ -4896,16 +4896,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "ljubljana",
+        city: "Любляна",
+        cityRus: "Любляна",
+        country: "Словенія",
+        countryRus: "Словения",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/3Pxwy8a4xV0",
         services: [
             {
                 familyTest: {
@@ -5040,16 +5040,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "budapest",
+        city: "Будапешт",
+        cityRus: "Будапешт",
+        country: "Угорщина",
+        countryRus: "Венгрия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/IPNwvg9WQVs",
         services: [
             {
                 familyTest: {
@@ -5184,16 +5184,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "kyiv",
+        city: "Київ",
+        cityRus: "Киев",
+        country: "Україна",
+        countryRus: "Украина",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/jsiXUDNf3DM",
         services: [
             {
                 familyTest: {
@@ -5328,16 +5328,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "helsinki",
+        city: "Гельсінкі",
+        cityRus: "Хельсинки",
+        country: "Фінляндія",
+        countryRus: "Финляндия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/uLaMMuEJOCY",
         services: [
             {
                 familyTest: {
@@ -5472,16 +5472,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "paris",
+        city: "Париж",
+        cityRus: "Париж",
+        country: "Франція",
+        countryRus: "Франция",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/ljeNcCIHml8",
         services: [
             {
                 familyTest: {
@@ -5616,16 +5616,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "zagreb",
+        city: "Загреб",
+        cityRus: "Загреб",
+        country: "Хорватія",
+        countryRus: "Хорватия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/KJdK5Z2GL4w",
         services: [
             {
                 familyTest: {
@@ -5760,16 +5760,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "prague",
+        city: "Прага",
+        cityRus: "Прага",
+        country: "Чехія",
+        countryRus: "Чехия",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/F73NM4zL5eA",
         services: [
             {
                 familyTest: {
@@ -5904,16 +5904,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "podgorica",
+        city: "Подгориця",
+        cityRus: "Подгорица",
+        country: "Чорногорія",
+        countryRus: "Черногория",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/YijF2JAEPxk",
         services: [
             {
                 familyTest: {
@@ -6048,16 +6048,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "bern",
+        city: "Берн",
+        cityRus: "Берн",
+        country: "Швейцарія",
+        countryRus: "Швейцария",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/hcLtrGW-YV8",
         services: [
             {
                 familyTest: {
@@ -6192,16 +6192,16 @@ export const europeanCitiesData = [
     },
 
     {
-        slug: "",
-        city: "",
-        cityRus: "",
-        country: "",
-        countryRus: "",
+        slug: "stockholm",
+        city: "Стокгольм",
+        cityRus: "Стокгольм",
+        country: "Швеція",
+        countryRus: "Швеция",
         mainTitle: "Замовити тестування EyeDetect у Києві",
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "",
+        videoLink: "https://youtu.be/8lkAuBGmYmU",
         services: [
             {
                 familyTest: {
