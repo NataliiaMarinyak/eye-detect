@@ -9,7 +9,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=X5gWdhwDJ0M",
+        videoLink: "https://youtu.be/X5gWdhwDJ0M",
         services: [
             {
                 familyTest: {
@@ -153,7 +153,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=pGDWMcKicwc",
+        videoLink: "https://youtu.be/pGDWMcKicwc",
         services: [
             {
                 familyTest: {
@@ -297,7 +297,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=aBvMckqcAjs",
+        videoLink: "https://youtu.be/aBvMckqcAjs",
         services: [
             {
                 familyTest: {
@@ -441,7 +441,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=teeCn6n8fu4",
+        videoLink: "https://youtu.be/teeCn6n8fu4",
         services: [
             {
                 familyTest: {
@@ -585,7 +585,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=nKmJ1oOQTHQ",
+        videoLink: "https://youtu.be/nKmJ1oOQTHQ",
         services: [
             {
                 familyTest: {
@@ -729,7 +729,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=AmfAhwi_FZQ",
+        videoLink: "https://youtu.be/AmfAhwi_FZQ",
         services: [
             {
                 familyTest: {
@@ -873,7 +873,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=Z3Hhtam-dmo",
+        videoLink: "https://youtu.be/Z3Hhtam-dmo",
         services: [
             {
                 familyTest: {
@@ -1017,7 +1017,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=sow6eqEwB_g",
+        videoLink: "https://youtu.be/sow6eqEwB_g",
         services: [
             {
                 familyTest: {
@@ -1161,7 +1161,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=nBCJ8u_yWM0",
+        videoLink: "https://youtu.be/nBCJ8u_yWM0",
         services: [
             {
                 familyTest: {
@@ -1305,7 +1305,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=fLrRQCotXnc",
+        videoLink: "https://youtu.be/fLrRQCotXnc",
         services: [
             {
                 familyTest: {
@@ -1449,7 +1449,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect во Львове",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=UbPPNJgFouk",
+        videoLink: "https://youtu.be/UbPPNJgFouk",
         services: [
             {
                 familyTest: {
@@ -1593,7 +1593,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=34GDPzfYMuU",
+        videoLink: "https://youtu.be/34GDPzfYMuU",
         services: [
             {
                 familyTest: {
@@ -1737,7 +1737,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=9bvrREJGsSQ",
+        videoLink: "https://youtu.be/9bvrREJGsSQ",
         services: [
             {
                 familyTest: {
@@ -1881,7 +1881,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=QPn2VEa9Ypk",
+        videoLink: "https://youtu.be/QPn2VEa9Ypk",
         services: [
             {
                 familyTest: {
@@ -2025,7 +2025,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=kMuGmSbRf4Y",
+        videoLink: "https://youtu.be/kMuGmSbRf4Y",
         services: [
             {
                 familyTest: {
@@ -2169,7 +2169,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=K8Meqewn3nI",
+        videoLink: "https://youtu.be/K8Meqewn3nI",
         services: [
             {
                 familyTest: {
@@ -2313,7 +2313,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=WwpMnTFG60w",
+        videoLink: "https://youtu.be/WwpMnTFG60w",
         services: [
             {
                 familyTest: {
@@ -2456,7 +2456,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=On_jT9R7uPw",
+        videoLink: "https://youtu.be/On_jT9R7uPw",
         services: [
             {
                 familyTest: {
@@ -2600,7 +2600,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=YaTt1VQNWbA",
+        videoLink: "https://youtu.be/YaTt1VQNWbA",
         services: [
             {
                 familyTest: {
@@ -2744,7 +2744,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=t7GbQOS8F_Q",
+        videoLink: "https://youtu.be/t7GbQOS8F_Q",
         services: [
             {
                 familyTest: {
@@ -2888,7 +2888,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=BVtjKa2EVb4",
+        videoLink: "https://youtu.be/BVtjKa2EVb4",
         services: [
             {
                 familyTest: {
@@ -3032,7 +3032,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=yx05k8lbr8U",
+        videoLink: "https://youtu.be/yx05k8lbr8U",
         services: [
             {
                 familyTest: {
@@ -3176,7 +3176,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=FZdSsBWoj_o",
+        videoLink: "https://youtu.be/FZdSsBWoj_o",
         services: [
             {
                 familyTest: {
@@ -3320,7 +3320,7 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect в Киеве",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        videoLink: "https://www.youtube.com/watch?v=pXmKHquaB_g",
+        videoLink: "https://youtu.be/pXmKHquaB_g",
         services: [
             {
                 familyTest: {
