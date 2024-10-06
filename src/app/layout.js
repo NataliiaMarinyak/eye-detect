@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${ukraineHeadRegular.variable} ${ukraineBold.variable} ${ukraineRegular.variable}`}
-        style={{ overflowX: "hidden" }}
+        // style={{ overflowX: "hidden" }}
       >
         <SiteProvider>
           <Header />

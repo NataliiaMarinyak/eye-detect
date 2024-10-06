@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./LangSwitcher.module.scss";
 
-const LangSwitcher = () => {
+const LangSwitcher = ({ className, id }) => {
   return (
-    <div className={styles.langSwitch}>
+    <div className={`${className} ${styles.langSwitch}`} id={id}>
       <span>УКР</span>
       <span>РУС</span>
     </div>
