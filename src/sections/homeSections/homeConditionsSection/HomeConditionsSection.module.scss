@@ -9,10 +9,7 @@
 
 .title {
     @include sectionTitle;
-}
 
-// перебить стили
-.container .title {
-    font-size: 32px;
-    line-height: 1.1;
+    text-align: center;
+    line-height: 1.3;
 }

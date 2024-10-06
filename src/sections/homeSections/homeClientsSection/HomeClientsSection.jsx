@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import ButtonLink from '@/components/Buttons/ButtonLink/ButtonLink';
 import styles from './HomeClientsSection.module.scss';
-import Image from 'next/image';
 
 
 const HomeClientsSection = () => {
