@@ -20,8 +20,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 20px;
+
     align-items: normal;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 20px;
   }
 }
 

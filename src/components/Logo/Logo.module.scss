@@ -2,9 +2,15 @@
 
 .logowrapp {
   position: relative;
-  width: 174px;
-  height: 32px;
+  width: 136px;
+  height: 24px;
+
   & img {
     object-fit: contain;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 174px;
+    height: 32px;
   }
 }

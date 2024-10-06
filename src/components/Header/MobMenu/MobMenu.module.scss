@@ -1,0 +1,40 @@
+@import "../../../app/variables";
+
+.burgerMenu {
+  position: absolute;
+  left: 0;
+  height: 0;
+  background-color: $background-color;
+
+  padding: 0px 40px 0px 40px;
+  overflow-y: hidden;
+
+  @media screen and (min-width: $laptop) {
+    display: none;
+  }
+}
+
+.visible {
+  height: max-content;
+  border-right: 1px solid $btnBgColor;
+  border-bottom: 1px solid $btnBgColor;
+
+  padding: 24px 40px;
+  overflow-y: visible;
+}
+
+#langSwitcher {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 18px;
+
+  & a {
+    padding: 4px;
+  }
+}

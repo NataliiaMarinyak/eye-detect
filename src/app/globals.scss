@@ -25,6 +25,7 @@ html {
 
 body {
   min-height: 100vh;
+  width: 100%;
   color: $textDarkColor;
   font-family: var(--font-ukraine-head-regular);
   font-style: normal;
@@ -56,6 +57,7 @@ section {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -70,6 +72,7 @@ a {
 
 button {
   cursor: pointer;
+  outline: none;
 }
 
 ul,
