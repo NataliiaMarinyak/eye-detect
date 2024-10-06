@@ -11,5 +11,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 16px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
 }

@@ -24,7 +24,6 @@ html {
 }
 
 body {
-  // width: 100%; //?
   min-height: 100vh;
   color: $gray-900;
   font-family: var(--font-ukraine-head-regular);
@@ -37,16 +36,13 @@ body {
   background-color: $background-color;
 }
 
-// header,
-// footer {
-//   // width: inherit; //?
-//   // max-width: inherit; //?
-
-//   // background-color: $gray-50; // temporary
-// }
 main {
   flex: 1;
-  // background-color: $primary-200; // temporary
+}
+
+header,
+footer {
+  font-family: var(--font-ukraine-regular);
 }
 
 section {
