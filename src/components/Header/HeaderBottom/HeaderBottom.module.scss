@@ -19,6 +19,26 @@
 }
 
 .nav {
-  display: flex;
+  display: none;
   gap: 24px;
+  font-size: 20px;
+
+  @media screen and (min-width: $laptop) {
+    display: flex;
+  }
+}
+
+#langSwitcher {
+  display: none;
+
+  @media screen and (min-width: $laptop) {
+    display: flex;
+  }
+}
+
+.logo {
+  margin-left: auto;
+  @media screen and (min-width: $laptop) {
+    margin-left: 0;
+  }
 }

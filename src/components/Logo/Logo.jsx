@@ -3,9 +3,9 @@ import Link from "next/link";
 import React from "react";
 import styles from "./Logo.module.scss";
 
-const Logo = () => {
+const Logo = ({ className }) => {
   return (
-    <Link href="/" className={styles.logowrapp}>
+    <Link href="/" className={`${styles.logowrapp} ${className}`}>
       <Image src="/images/Logo.png" fill sizes="33vw" alt="Eye-detect" />
     </Link>
   );

@@ -1,10 +1,9 @@
 @import "../../app/variables";
 
 .langSwitch {
+  display: flex;
+  gap: 16px;
   font-size: 14px;
-  & span:last-child {
-    margin-left: 16px;
-  }
 
   @media screen and (min-width: $tablet) {
     font-size: 16px;
