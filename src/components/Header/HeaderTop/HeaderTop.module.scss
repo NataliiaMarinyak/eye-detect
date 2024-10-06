@@ -1,7 +1,7 @@
 @import "../../../app/variables";
 
 .headerTopWrapper {
-  background-color: $secondary-600;
+  background-color: $footerBgColor;
   @include sectionSidePadding;
 }
 
