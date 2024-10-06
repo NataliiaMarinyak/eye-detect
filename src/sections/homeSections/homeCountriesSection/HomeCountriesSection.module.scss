@@ -7,12 +7,20 @@
     row-gap: 24px;
 }
 
-.title {
-    @include sectionTitle;
+.titlesWrapper {
+    width: 100%;
 }
 
-// перебить стили
-.container .title {
-    font-size: 32px;
-    line-height: 1.1;
+.title {
+    @include sectionTitle;
+
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.subTitle {
+    @include sectionSubTitle;
+
+    text-align: center;
+    line-height: 1.4;
 }

@@ -27,14 +27,17 @@ body {
   min-height: 100vh;
   width: 100%;
   color: $textDarkColor;
-  font-family: var(--font-ukraine-head-regular);
+  font-family: var(--font-ukraine-regular), sans-serif;
   font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: $background-color;
+  background-color: $bgColor;
 }
 
 main {
@@ -53,7 +56,6 @@ section {
 
 .container {
   width: 100%;
-  height: 100%;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;

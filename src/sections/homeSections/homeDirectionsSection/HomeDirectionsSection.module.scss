@@ -1,0 +1,51 @@
+@import "../../../app/variables";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+}
+
+.title {
+    @include sectionTitle;
+
+    text-align: center;
+}
+
+.directionsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.directionItem {
+    width: calc((100% - 48px)/3);
+    padding: 16px;
+    background-color: $cardBgColor;
+}
+
+.iconWrapper {
+    width: 56px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 100px;
+    background-color: $footerBgColor;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.subTitle {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.description {
+    font-size: 16px;
+}

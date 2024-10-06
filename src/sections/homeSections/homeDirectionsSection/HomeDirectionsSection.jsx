@@ -1,5 +1,28 @@
+import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
+import { directionsData } from "@/data/directionsData";
+import styles from './HomeDirectionsSection.module.scss';
+
+
 const HomeDirectionsSection = () => {
-  return <section>Home Directions Section</section>;
+  return <section>
+    <div className={`container ${styles.container}`}>
+      <h2 className={styles.title}>Які питання допомагає вирішити технологія EyeDetect</h2>
+      <ul className={styles.directionsWrapper}>
+        {directionsData.map(direction => <li key={direction.title} className={styles.directionItem}>
+          <div className={styles.iconWrapper}>
+            <svg className={styles.icon}>
+              <use href={direction.href} />
+            </svg>
+          </div>
+          <h3 className={styles.subTitle}>{direction.title}</h3>
+          <p className={styles.description}>{direction.description}</p>
+        </li>)}
+      </ul>
+      {/* href='/contacts' must be changed */}
+      <ButtonLink href='/contacts' title="Замовити консультацію" />
+    </div>
+  </section>;
 };
+
 
 export default HomeDirectionsSection;

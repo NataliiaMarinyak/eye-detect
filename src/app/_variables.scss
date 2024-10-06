@@ -37,14 +37,16 @@ $secondary-800: rgba(28, 40, 53, 1);
 $secondary-700: rgba(42, 57, 73, 1);
 // $secondary-600: rgba(56, 75, 94, 1);
 $footerBgColor: rgba(56, 75, 94, 1);
-$secondary-500: rgba(67, 88, 109, 1);
+// $secondary-500: rgba(67, 88, 109, 1);
+$subTitleColor: rgba(67, 88, 109, 1);
 $secondary-400: rgba(93, 110, 129, 1);
 $secondary-300: rgba(119, 134, 151, 1);
 $secondary-200: rgba(157, 168, 181, 1);
 $secondary-100: rgba(194, 203, 212, 1);
-$secondary-50: rgba(230, 234, 240, 1);
+// $secondary-50: rgba(230, 234, 240, 1);
+$cardBgColor: rgba(230, 234, 240, 1);
 
-$background-color: rgba(250, 250, 250, 1);
+$bgColor: rgba(250, 250, 250, 1);
 
 $alert-error: rgba(179, 0, 0, 1);
 $alert-warning: rgba(255, 206, 43, 1);
@@ -74,11 +76,18 @@ $alert-system: rgba(2, 0, 148, 1);
 @mixin sectionTitle {
 
   @media screen and (min-width: $laptop) {
-    // font-family: --font-ukraine-head-regular;
-    font-family: --font-ukraine-head-regular, sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 1.3;
+  }
+}
+
+@mixin sectionSubTitle {
+
+  @media screen and (min-width: $laptop) {
+    font-weight: 400;
+    font-size: 28px;
+    color: $subTitleColor;
   }
 }
 

@@ -1,7 +1,7 @@
 @import "../../../app/variables";
 
 .headerBottomWrapper {
-  background-color: $secondary-50;
+  background-color: $cardBgColor;
   @include sectionSidePadding;
 }
 
