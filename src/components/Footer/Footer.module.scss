@@ -1,7 +1,7 @@
 @import "../../app/variables";
 
 .footer {
-  background-color: $secondary-600;
+  background-color: $footerBgColor;
 
   @include sectionSidePadding;
   @include sectionTopBottomPadding;
@@ -13,7 +13,7 @@
   align-items: center;
   gap: 20px;
 
-  color: $gray-0;
+  color: $textLightColor;
   font-size: 16px;
 
   @media screen and (min-width: $tablet) {
@@ -32,7 +32,7 @@
   gap: 12px;
 
   & svg {
-    stroke: $gray-0;
+    stroke: $textLightColor;
     fill: none;
 
     width: 24px;
@@ -42,12 +42,14 @@
 
 .socMedia {
   flex-direction: row;
+
   & span {
     display: none;
   }
 
   @media screen and (min-width: $tablet) {
     flex-direction: column;
+
     & span {
       display: inline-block;
     }
@@ -65,7 +67,7 @@
 .viber,
 .whatsapp {
   & svg {
-    fill: $gray-0;
+    fill: $textLightColor;
     stroke: none;
   }
 }

@@ -22,15 +22,18 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   min-height: 100vh;
-  color: $gray-900;
+  color: $textDarkColor;
   font-family: var(--font-ukraine-head-regular);
   font-style: normal;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  background-color: $background-color;
 }
 
 main {
@@ -64,6 +67,7 @@ a {
   display: inline-block;
   cursor: pointer;
 }
+
 button {
   cursor: pointer;
 }
