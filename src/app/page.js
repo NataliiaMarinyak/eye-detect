@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <HeroSection />
       <HomeAboutSection />
-      <HomeCertificatesSection />
+      <HomeCertificatesSection isOnHomePage={true} />
       <HomeAdvantagesSection />
       <HomeClientsSection />
       <HomeTestingSection />

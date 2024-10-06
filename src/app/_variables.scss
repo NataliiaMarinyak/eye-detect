@@ -18,17 +18,21 @@ $gray-300: rgba(203, 203, 203, 1);
 $gray-200: rgba(222, 222, 222, 1);
 $gray-100: rgba(236, 236, 236, 1);
 $gray-50: rgba(246, 246, 246, 1);
-$gray-0: rgba(255, 255, 255, 1);
+// $gray-0: rgba(255, 255, 255, 1);
+$textLightColor: rgba(255, 255, 255, 1);
 
-$primary-600: rgba(25, 65, 209, 1);
-$primary-500: rgba(31, 73, 220, 1);
+// $primary-600: rgba(25, 65, 209, 1);
+$btnBgColor: rgba(25, 65, 209, 1);
+$primary-500: rgb(33, 64, 180);
 $primary-400: rgba(77, 102, 227, 1);
 $primary-300: rgba(113, 130, 232, 1);
 $primary-200: rgba(156, 166, 238, 1);
-$primary-100: rgba(196, 201, 245, 1);
+// $primary-100: rgba(196, 201, 245, 1);
+$btnHoverBgColor: rgba(196, 201, 245, 1);
 $primary-50: rgba(232, 233, 251, 1);
 
-$secondary-900: rgba(11, 21, 31, 1);
+// $secondary-900: rgba(11, 21, 31, 1);
+$textDarkColor: rgba(11, 21, 31, 1);
 $secondary-800: rgba(28, 40, 53, 1);
 $secondary-700: rgba(42, 57, 73, 1);
 $secondary-600: rgba(56, 75, 94, 1);
@@ -63,6 +67,17 @@ $alert-system: rgba(2, 0, 148, 1);
   @media screen and (min-width: $laptop) {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+@mixin sectionTitle {
+
+  @media screen and (min-width: $laptop) {
+    // font-family: --font-ukraine-head-regular;
+    font-family: --font-ukraine-head-regular, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.3;
   }
 }
 

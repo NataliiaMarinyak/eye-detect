@@ -7,14 +7,14 @@
 
 .headerTop {
   height: 32px;
-  color: $gray-0;
+  color: $textLightColor;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
 
   & svg {
-    stroke: $gray-0;
+    stroke: $textLightColor;
     fill: none;
 
     width: 24px;
@@ -25,6 +25,7 @@
 .link {
   display: flex;
   align-items: center;
+
   & svg {
     margin-right: 12px;
   }
@@ -34,14 +35,13 @@
   display: flex;
   gap: 12px;
 
-  & svg {
-  }
+  & svg {}
 }
 
 .viber,
 .whatsapp {
   & svg {
-    fill: $gray-0;
+    fill: $textLightColor;
     stroke: none;
   }
 }

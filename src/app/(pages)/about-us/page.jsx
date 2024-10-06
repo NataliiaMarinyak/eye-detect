@@ -8,7 +8,7 @@ const AboutUsPage = () => {
         <>
             <ConsultationSection />
             <SpecialistSection />
-            <HomeCertificatesSection />
+            <HomeCertificatesSection isOnHomePage={false} />
         </>
     )
 }

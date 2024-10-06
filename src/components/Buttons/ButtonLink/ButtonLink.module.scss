@@ -1,0 +1,22 @@
+@import "../../../app/variables";
+
+.btn {
+    width: 304px;
+    padding: 9px 16px;
+    font-family: var(--font-ukraine-regular);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 100px;
+    color: $textLightColor;
+    background-color: $btnBgColor;
+    outline: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $btnHoverBgColor;
+        color: $textDarkColor;
+    }
+}
