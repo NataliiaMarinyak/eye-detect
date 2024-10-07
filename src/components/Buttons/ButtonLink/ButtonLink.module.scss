@@ -1,14 +1,13 @@
 @import "../../../app/variables";
 
 .btn {
-    width: 304px;
-    padding: 12px 16px;
-    font-family: var(--font-ukraine-regular);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.7;
+    width: 100%;
+    max-width: 304px;
+    padding: 12px 14px;
+    font-size: 16px;
     text-align: center;
     border-radius: 100px;
+    border: solid 1px $btnBgColor;
     color: $textLightColor;
     background-color: $btnBgColor;
     outline: none;
@@ -18,5 +17,13 @@
     &:focus {
         background-color: $btnHoverBgColor;
         color: $textDarkColor;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        font-size: 20px;
     }
 }

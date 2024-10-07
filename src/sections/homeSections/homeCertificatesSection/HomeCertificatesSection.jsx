@@ -8,16 +8,24 @@ const HomeCertificatesSection = ({ isOnHomePage }) => {
     <div className={`container ${styles.container}`}>
       <h2 className={styles.title}>Освіта тестувальника EyeDetect</h2>
       <div className={styles.certificatesWrapper}>
-        <Image
-          width={468}
-          height={352}
-          src='/images/certificate_ukr.webp'
-          alt="Тестувальник EyeDetect" />
-        <Image
-          width={468}
-          height={352}
-          src='/images/certificate_eng.webp'
-          alt="Тестировщик EyeDetect" />
+        <div className={styles.certWrap}>
+          <Image
+            className={styles.certificate}
+            src='/images/certificate_ukr.webp'
+            alt="Тестувальник EyeDetect"
+            sizes='100vw'
+            fill
+          />
+        </div>
+        <div className={styles.certWrap}>
+          <Image
+            className={styles.certificate}
+            src='/images/certificate_eng.webp'
+            alt="Тестировщик EyeDetect"
+            sizes='100vw'
+            fill
+          />
+        </div>
       </div>
       <div className={styles.btnWrapper}>
         {/* href='/contacts' must be changed */}
