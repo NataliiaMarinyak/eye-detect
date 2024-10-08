@@ -11,7 +11,7 @@ const Footer = () => {
           className={`${styles.list} ${styles.socMedia}`}
           itemStyles={styles.item}
         />
-        <Navigation className={styles.list} />
+        <Navigation className={`${styles.list} ${styles.nav}`} />
         <Link href="/" className={styles.privacy}>
           Політика Конфіденційності
         </Link>
