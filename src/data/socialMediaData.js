@@ -60,4 +60,4 @@ export const rearrangedArray = [...socialMediaData];
 const [elementToMove] = rearrangedArray.splice(1, 1);
 
 // Insert the item at index 3 (pre-last position)
-rearrangedArray.splice(3, 0, elementToMove);
+rearrangedArray.splice(2, 0, elementToMove);
