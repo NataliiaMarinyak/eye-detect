@@ -1,5 +1,5 @@
 const HeroSection = () => {
-  return <section>Hero Section</section>;
+  return <section id="hero">Hero Section</section>;
 };
 
 export default HeroSection;
