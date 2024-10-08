@@ -1,8 +1,8 @@
 @import "../../../app/variables";
 
 .btn {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-color: transparent;
   border: none;
 
@@ -11,6 +11,11 @@
     height: 100%;
 
     stroke: $textDarkColor;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 32px;
+    height: 32px;
   }
 
   @media screen and (min-width: $laptop) {

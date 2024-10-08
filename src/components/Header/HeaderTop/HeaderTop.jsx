@@ -8,7 +8,7 @@ const HeaderTop = () => {
   return (
     <div className={`${styles.headerTopWrapper}`}>
       <div className={`container ${styles.headerTop}`}>
-        <Link href={phone.href} className={styles.link}>
+        <Link href={phone.href} className={`${styles.link} ${styles.phone}`}>
           <svg>
             <use href={phone.icon}></use>
           </svg>
