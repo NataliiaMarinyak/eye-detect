@@ -1,0 +1,62 @@
+@import "../../../app/variables";
+
+.hero {
+  height: 100vh;
+  position: relative;
+  color: $textLightColor;
+  padding-top: 92px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+
+  & h1 {
+    font-size: 34px;
+    line-height: 42.5px;
+  }
+
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 1) 1%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("/images/hero-bg.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0px 0px, 25% 80px;
+
+  animation: bgMobile linear;
+  animation-timeline: view();
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: clamp(34px, 10vw, 68px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    border-top: clamp(34px, 10vw, 68px) solid transparent;
+
+    border-top-color: transparent;
+    border-right: 50vw solid $bgColor;
+    border-left: 50vw solid $bgColor;
+  }
+}
+
+@keyframes bgMobile {
+  to {
+    background-position: 0px 0px, 100% 0px;
+  }
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button {
+  margin-top: auto;
+}
