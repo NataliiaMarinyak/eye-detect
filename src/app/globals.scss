@@ -52,6 +52,7 @@ footer {
 section {
   @include sectionSidePadding;
   @include sectionTopBottomPadding;
+  // background-color: $bgColor;
 }
 
 .container {

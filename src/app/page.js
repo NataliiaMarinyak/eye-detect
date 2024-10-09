@@ -10,8 +10,6 @@ import HomeFAQSection from "@/sections/homeSections/homeFAQSection/HomeFAQSectio
 import HomeConditionsSection from "@/sections/homeSections/homeConditionsSection/HomeConditionsSection";
 import HomeOrderSection from "@/sections/homeSections/homeOrderSection/HomeOrderSection";
 
-
-
 export default function Home() {
   return (
     <>
@@ -29,7 +27,6 @@ export default function Home() {
     </>
   );
 }
-
 
 // import Image from "next/image";
 // import styles from "./page.module.css";
