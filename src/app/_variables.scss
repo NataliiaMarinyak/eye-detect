@@ -52,6 +52,7 @@ $alert-error: rgba(179, 0, 0, 1);
 $alert-warning: rgba(255, 206, 43, 1);
 $alert-success: rgba(0, 105, 52, 1);
 $alert-system: rgba(2, 0, 148, 1);
+$textShadow: 2px 4px 8px $footerBgColor;
 
 @mixin sectionSidePadding {
   padding-left: 20px;
@@ -96,7 +97,6 @@ $alert-system: rgba(2, 0, 148, 1);
 }
 
 @mixin sectionSubTitle {
-
   @media screen and (min-width: $laptop) {
     font-weight: 400;
     font-size: 28px;
