@@ -13,7 +13,7 @@ const HomeCertificatesSection = ({ isOnHomePage }) => {
             className={styles.certificate}
             src='/images/certificate_ukr.webp'
             alt="Тестувальник EyeDetect"
-            sizes='100vw'
+            sizes="(max-width: 767px) 100vw, 50vw"
             fill
           />
         </div>
@@ -22,8 +22,7 @@ const HomeCertificatesSection = ({ isOnHomePage }) => {
             className={styles.certificate}
             src='/images/certificate_eng.webp'
             alt="Тестировщик EyeDetect"
-            sizes='100vw'
-            fill
+            sizes="(max-width: 767px) 100vw, 50vw" fill
           />
         </div>
       </div>
