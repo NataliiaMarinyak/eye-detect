@@ -13,7 +13,7 @@ const HomeAdvantagesSection = () => {
               <use href={`/sprite.svg#icon-check-mark-in-circle`} />
             </svg>
           </div>
-          <p>{advantage.text}</p>
+          <p className={styles.description}>{advantage.text}</p>
         </li>)}
       </ul>
     </div>
