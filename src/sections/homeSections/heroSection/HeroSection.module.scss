@@ -2,28 +2,24 @@
 
 .hero {
   height: 100vh;
+
   position: relative;
   color: $textLightColor;
   padding-top: 92px;
   padding-bottom: 60px;
   display: flex;
   align-items: center;
-
-  & h1 {
-    font-size: 34px;
-    line-height: 42.5px;
-  }
-
+  background-color: black;
   background-image: linear-gradient(
-      rgba(0, 0, 0, 1) 1%,
-      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 2%,
+      rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0) 100%
     ),
     url("/images/hero-bg.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: 0px 0px, 25% 80px;
+  background-position: 0px 0px, 25% 100px;
 
   animation: bgMobile linear;
   animation-timeline: view();
@@ -42,6 +38,26 @@
     border-right: 50vw solid $bgColor;
     border-left: 50vw solid $bgColor;
   }
+
+  @media screen and (min-width: $tablet) and (orientation: landscape) {
+    height: 100vh;
+  }
+  // and (min-height: 600px)
+  @media screen and (max-height: 700px) and (orientation: landscape) {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: $tablet) and (orientation: portrait) {
+    height: auto;
+    padding-bottom: 100px;
+    background-size: 150% auto;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 104px;
+  }
+  @media screen and (min-width: $laptop) {
+    padding-top: 124px;
+  }
 }
 
 @keyframes bgMobile {
@@ -55,8 +71,58 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
 }
 
-.button {
-  margin-top: auto;
+.title {
+  font-size: 34px;
+  line-height: 1.25;
+  margin-bottom: 4px;
+  text-shadow: $textShadow;
+  max-width: 500px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 44px;
+    margin-bottom: 8px;
+    width: 72%;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.4;
+  max-width: 300px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    max-width: 56%;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 28px;
+  }
+}
+
+.btn {
+  margin: auto auto 0;
+  @media screen and (min-width: $tablet) {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 324px;
+    max-width: none;
+    height: 56px;
+    font-size: 18px;
+  }
+  @media screen and (min-width: $laptop) {
+    margin-top: 24px;
+    width: 368px;
+    height: 58px;
+    font-size: 20px;
+  }
 }
