@@ -10,11 +10,23 @@ const HomeCountriesSection = () => {
         <h2 className={styles.title}>Технологія EyeDetect у Європі</h2>
         <h3 className={styles.subTitle}>виїзд у центри Європейських країн</h3>
       </div>
-      <Image
-        width={1024}
-        height={902}
-        src='/images/countries.webp'
-        alt="Країни Європи та EyeDetect" />
+      <div className={styles.imgWrapper}>
+        {/* возможно, попробовать оставить один компонент Image и, в зависимости от результата useRasize (до laptop или после), менять src */}
+        <Image
+          className={styles.img}
+          src='/images/countries.webp'
+          alt="Країни Європи та EyeDetect"
+          sizes="100vw"
+          fill
+        />
+        <Image
+          className={styles.desktopImg}
+          src='/images/countriesDesktop.webp'
+          alt="Країни Європи та EyeDetect"
+          sizes="100vw"
+          fill
+        />
+      </div>
       {/* href='/contacts' must be changed */}
       <ButtonLink href='/locations' title="Дізнатись більше" />
     </div>

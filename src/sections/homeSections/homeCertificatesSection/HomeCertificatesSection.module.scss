@@ -11,9 +11,6 @@
     }
 
     @media screen and (min-width: $laptop) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         row-gap: 24px;
     }
 }
@@ -26,6 +23,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 12px;
 
     @media screen and (min-width: $tablet) {
@@ -36,23 +34,18 @@
     }
 
     @media screen and (min-width: $laptop) {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
         column-gap: 24px;
     }
 }
 
 .certWrap {
     position: relative;
-    // width: 100%;
-    width: 87.5vw;
-    height: 65.625vw;
+    width: 100%;
+    aspect-ratio: 280/210;
 
     @media screen and (min-width: $tablet) {
-        // width: calc((100vw - 100px) / 2);
-        width: 43.48vw;
-        height: 32.71vw;
+        width: calc((100vw - 100px) / 2);
+        aspect-ratio: 334/251;
     }
 
     @media screen and (min-width: $laptop) {
@@ -80,8 +73,6 @@
     }
 
     @media screen and (min-width: $laptop) {
-        display: flex;
-        align-items: center;
         column-gap: 24px;
     }
 }
