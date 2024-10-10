@@ -3,7 +3,7 @@ import styles from './HomeOrderSection.module.scss';
 
 
 const HomeOrderSection = () => {
-  return <section>
+  return <section id="order">
     <div className={`container ${styles.container}`}>
       <h2 className={styles.title}>Зв’язатись з нами</h2>
       <div className={styles.infoWrapper}>
