@@ -122,10 +122,18 @@ $textShadow: 2px 4px 8px $footerBgColor;
 }
 
 @mixin sectionSubTitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: $subTitleColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  }
+
   @media screen and (min-width: $laptop) {
-    font-weight: 400;
     font-size: 28px;
-    color: $subTitleColor;
   }
 }
 

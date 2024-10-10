@@ -1,1 +1,20 @@
 @import "../../../app/variables";
+
+.imgWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 280/156;
+
+    @media screen and (min-width: $tablet) {
+        aspect-ratio: 688/388;
+    }
+
+    @media screen and (min-width: $laptop) {
+        width: 960px;
+        height: 540px;
+    }
+}
+
+.img {
+    object-fit: cover;
+}
