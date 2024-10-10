@@ -42,6 +42,10 @@ body {
 
 main {
   flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header,
@@ -52,7 +56,7 @@ footer {
 section {
   @include sectionSidePadding;
   @include sectionTopBottomPadding;
-  // background-color: $bgColor;
+  width: 100%;
 }
 
 .container {

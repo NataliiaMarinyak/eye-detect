@@ -30,8 +30,9 @@ export const socialMediaData = [
   {
     name: "instagram",
     type: "socialMedia",
-    href: "https://www.instagram.com/natalabojko/",
+    href: "https://www.instagram.com/natalia_eyedetect/",
     icon: "./sprite.svg#icon-instagram",
+    contact: "@natalia_eyedetect",
   },
   {
     name: "email",
@@ -61,3 +62,10 @@ const [elementToMove] = rearrangedArray.splice(1, 1);
 
 // Insert the item at index 3 (pre-last position)
 rearrangedArray.splice(2, 0, elementToMove);
+
+// Move Instagram (i=4) item to the pre-last position
+export const contactsSocMedData = [...socialMediaData];
+
+const [elementToreplace] = contactsSocMedData.splice(4, 1);
+
+contactsSocMedData.splice(5, 0, elementToreplace);
