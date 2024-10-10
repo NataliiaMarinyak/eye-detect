@@ -1,0 +1,131 @@
+@import "../../app/variables";
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  @include pageTopPadding;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  & h1 {
+    @include pageTitle;
+  }
+
+  @media screen and (min-width: $tablet) {
+    gap: 20px;
+  }
+  @media screen and (min-width: $laptop) {
+    gap: 24px;
+  }
+}
+
+.contentWrapp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & svg {
+    stroke: $textDarkColor;
+    fill: none;
+
+    width: 24px;
+    height: 24px;
+  }
+  @media screen and (min-width: $tablet) {
+    gap: 20px;
+  }
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+  }
+}
+
+.socMedia {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 56px;
+  }
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    gap: 20px;
+  }
+}
+.socMediaItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-style: normal;
+  font-size: 16px;
+  @media screen and (max-width: 340px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 20px;
+  }
+}
+
+.viber,
+.whatsapp {
+  & svg {
+    fill: $textDarkColor;
+    stroke: none;
+  }
+}
+
+.mapWrapp {
+  width: 100%;
+  & iframe {
+    width: 100%;
+    aspect-ratio: 688/260;
+    border: none;
+  }
+  @media screen and (min-width: $tablet) {
+    // & iframe {
+
+    // }
+  }
+  @media screen and (min-width: $laptop) {
+    flex: 1;
+    & iframe {
+      aspect-ratio: 550/260;
+    }
+  }
+}
+
+.locationLink {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  @media screen and (max-width: 340px) {
+    font-size: 14px;
+  }
+}
+
+#btn {
+  @media screen and (min-width: $laptop) {
+    max-width: none;
+    width: 304px;
+    height: 58px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

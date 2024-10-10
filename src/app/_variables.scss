@@ -79,6 +79,31 @@ $textShadow: 2px 4px 8px $footerBgColor;
   }
 }
 
+@mixin pageTopPadding {
+  padding-top: 92px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 104px;
+  }
+  @media screen and (min-width: $laptop) {
+    padding-top: 124px;
+  }
+}
+
+@mixin pageTitle {
+  font-family: var(--font-ukraine-head-regular);
+  //styleName: H/H2/Mobile;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 40px;
+  }
+}
+
 @mixin sectionTitle {
   font-weight: 400;
   font-size: 22px;
