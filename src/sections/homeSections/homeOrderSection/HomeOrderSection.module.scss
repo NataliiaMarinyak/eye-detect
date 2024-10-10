@@ -1,0 +1,79 @@
+@import "../../../app/variables";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        row-gap: 20px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        gap: 24px;
+    }
+}
+
+.title {
+    @include sectionTitle;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    @media screen and (min-width: $tablet) {
+        row-gap: 12px;
+    }
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    @media screen and (min-width: $tablet) {
+        row-gap: 12px;
+    }
+}
+
+.infoItem {
+    font-size: 16px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        font-size: 20px;
+    }
+}
+
+.addressLink {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 16px;
+
+    @media screen and (min-width: $tablet) {
+        column-gap: 12px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        font-size: 20px;
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: $textDarkColor;
+}
+
+.orderForm {
+    width: 100%;
+}
