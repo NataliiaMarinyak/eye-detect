@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import ButtonLink from '@/components/Buttons/ButtonLink/ButtonLink';
 import styles from './HomeCertificatesSection.module.scss';
 
@@ -27,8 +28,7 @@ const HomeCertificatesSection = ({ isOnHomePage }) => {
         </div>
       </div>
       <div className={styles.btnWrapper}>
-        {/* href='/contacts' must be changed */}
-        <ButtonLink href='/contacts' title="Замовити консультацію" />
+        <OpenModalBtn />
         {isOnHomePage && <ButtonLink href='/about-us' title="Дізнатись більше" customBtn={styles.detailsBtn} />}
       </div>
     </div>

@@ -3,7 +3,9 @@
 .btn {
     width: 100%;
     max-width: 304px;
+    height: 53px;
     padding: 12px 14px;
+    font-family: inherit;
     font-size: 16px;
     text-align: center;
     border-radius: 100px;
@@ -22,11 +24,13 @@
 
     @media screen and (min-width: $tablet) {
         max-width: 452px;
+        height: 57px;
         font-size: 18px;
     }
 
     @media screen and (min-width: $laptop) {
         max-width: 304px;
+        height: 60px;
         font-size: 20px;
     }
 }

@@ -1,4 +1,4 @@
-import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
+import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { directionsData } from "@/data/directionsData";
 import styles from './HomeDirectionsSection.module.scss';
 
@@ -19,8 +19,7 @@ const HomeDirectionsSection = () => {
           <p className={styles.description}>{direction.description}</p>
         </li>)}
       </ul>
-      {/* href='/contacts' must be changed */}
-      <ButtonLink href='/contacts' title="Замовити консультацію" />
+      <OpenModalBtn />
     </div>
   </section>;
 };
