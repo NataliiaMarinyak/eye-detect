@@ -1,5 +1,5 @@
-import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
 import Image from "next/image";
+import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import styles from './HomeConditionsSection.module.scss';
 
 
@@ -17,8 +17,7 @@ const HomeConditionsSection = () => {
           fill
         />
       </div>
-      {/* href='/contacts' must be changed */}
-      <ButtonLink href='/contacts' title="Замовити консультацію" />
+      <OpenModalBtn />
     </div>
   </section>;
 };

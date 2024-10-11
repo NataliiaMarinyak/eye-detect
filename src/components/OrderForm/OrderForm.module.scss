@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 280px;
+    width: 100%;
+    max-width: 688px;
     padding: 24px 16px;
 
     @media screen and (min-width: $tablet) {
@@ -13,6 +14,194 @@
     }
 
     @media screen and (min-width: $laptop) {
+        flex: 1;
         width: 468px;
+    }
+}
+
+.inputWrap {
+    width: 100%;
+    position: relative;
+}
+
+.inputWrap:not(:last-of-type) {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        margin-bottom: 20px;
+    }
+}
+
+.inputWrap:last-of-type {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 20px;
+    }
+}
+
+.error {
+    position: absolute;
+    bottom: 2px;
+    right: 100px;
+    color: red;
+
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.input {
+    width: 100%;
+    height: 51px;
+    border-radius: 8px;
+    padding: 12px 14px;
+    border: none;
+    outline: none;
+    background-color: $cardBgColor ;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+
+    @media screen and (min-width: $tablet) {
+        height: 55px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        height: 58px;
+        font-size: 20px;
+    }
+}
+
+.errorInput {
+    border: 1px solid $alert-error;
+}
+
+.input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        font-size: 20px;
+    }
+}
+
+.textarea {
+    resize: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+
+    @media screen and (min-width: $tablet) {
+        height: 112px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        height: 116px;
+        font-size: 20px;
+    }
+}
+
+.textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        font-size: 20px;
+    }
+}
+
+.iconMark {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    right: 14px;
+
+    @media screen and (min-width: $tablet) {
+        top: 15px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        top: 17px;
+    }
+}
+
+.submitButton {
+    width: 100%;
+    height: 53px;
+    max-width: 304px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 100px;
+    border: solid 1px $btnBgColor;
+    color: $textLightColor;
+    background-color: $btnBgColor;
+    outline: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $btnHoverBgColor;
+        border-color: $btnHoverBgColor;
+        color: $textDarkColor;
+    }
+
+    @media screen and (min-width: $tablet) {
+        max-width: 637px;
+        height: 57px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        max-width: 100%;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+.disabledBtn {
+    width: 100%;
+    max-width: 304px;
+    height: 53px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 100px;
+    border: solid 1px $disabledBgColor;
+    background-color: $disabledBgColor;
+    color: $textLightColor;
+    outline: none;
+    cursor: not-allowed;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 637px;
+        height: 57px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        max-width: 100%;
+        height: 60px;
+        font-size: 20px;
     }
 }
