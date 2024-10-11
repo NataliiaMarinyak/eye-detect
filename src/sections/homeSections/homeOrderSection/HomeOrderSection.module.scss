@@ -19,6 +19,24 @@
     @include sectionTitle;
 }
 
+.contentWrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        row-gap: 20px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        flex-direction: row;
+        align-items: start;
+        row-gap: 0px;
+        column-gap: 24px;
+    }
+}
+
 .infoWrapper {
     display: flex;
     flex-direction: column;
@@ -26,6 +44,10 @@
 
     @media screen and (min-width: $tablet) {
         row-gap: 12px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        flex: 1;
     }
 }
 
