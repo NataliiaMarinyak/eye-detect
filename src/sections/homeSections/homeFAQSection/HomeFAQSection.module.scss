@@ -1,0 +1,11 @@
+@import "../../../app/variables";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    @include sectionTitle;
+}

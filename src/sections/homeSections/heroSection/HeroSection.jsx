@@ -5,8 +5,8 @@ const HeroSection = () => {
   return (
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
-        <h1 className={styles.title}>Передові рішення для виявлення обману</h1>
-        <p className={styles.text}>Lorem ipsum dolor sit amet consectetur.</p>
+        <h1 className={styles.title}>Сучасний поліграф (детектор брехні) у Львові: точність та новітні технології EyeDetect</h1>
+        <p className={styles.text}>Поліграф-тестування у Львові: швидка та достовірна перевірка за допомогою технології EyeDetect</p>
         <ButtonLink
           href="/contacts"
           title="Замовити консультацію"

@@ -6,7 +6,7 @@ import styles from './HomeClientsSection.module.scss';
 const HomeClientsSection = () => {
   return <section>
     <div className={`container ${styles.container}`}>
-      <h2 className={styles.title}>Більше 500 клієнтів EyeDetect в 40 країнах</h2>
+      <h2 className={styles.title}>Детектор брехні EyeDetect: 500+ задоволених клієнтів у 40 країнах</h2>
       <div className={styles.imgWrapper}>
         <Image
           className={styles.img}
