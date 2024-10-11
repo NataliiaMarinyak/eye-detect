@@ -6,8 +6,10 @@ import styles from './HomeDirectionsSection.module.scss';
 const HomeDirectionsSection = () => {
   return <section>
     <div className={`container ${styles.container}`}>
-      <h2 className={styles.mobileTitle}>Які питання вирішує EyeDetect</h2>
-      <h2 className={styles.title}>Які питання допомагає вирішити технологія EyeDetect</h2>
+      {/* <h2 className={styles.mobileTitle}>Які питання вирішує EyeDetect</h2>
+      <h2 className={styles.title}>Які питання допомагає вирішити технологія EyeDetect</h2> */}
+      <h2 className={styles.mobileTitle}>Які питання допомагає вирішити детектор брехні EyeDetect?</h2>
+      <h2 className={styles.title}>Які питання допомагає вирішити детектор брехні EyeDetect?</h2>
       <ul className={styles.directionsWrapper}>
         {directionsData.map(direction => <li key={direction.title} className={styles.directionItem}>
           <div className={styles.iconWrapper}>

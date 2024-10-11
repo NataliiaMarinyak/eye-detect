@@ -5,7 +5,7 @@ import styles from './HomeAdvantagesSection.module.scss'
 const HomeAdvantagesSection = () => {
   return <section>
     <div className={`container ${styles.container}`}>
-      <h2 className={styles.title}>Переваги використання EyeDetect</h2>
+      <h2 className={styles.title}>Детектор брехні у Львові: переваги використання EyeDetect</h2>
       <ul className={styles.advantagesWrapper}>
         {advantagesData.map(advantage => <li key={advantage.text} className={styles.advantageItem}>
           <div className={styles.iconWrapper}>
