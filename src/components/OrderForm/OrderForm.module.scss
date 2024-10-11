@@ -1,0 +1,18 @@
+@import "../../app/variables";
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    padding: 24px 16px;
+
+    @media screen and (min-width: $tablet) {
+        width: 688px;
+        padding: 24px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        width: 468px;
+    }
+}
