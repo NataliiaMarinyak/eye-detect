@@ -1,0 +1,99 @@
+@import "../../../app/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  @media screen and (min-width: $tablet) {
+    gap: 20px;
+  }
+  @media screen and (min-width: $laptop) {
+    gap: 24px;
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.textWrapp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  & h2 {
+    @include sectionTitle;
+  }
+  @media screen and (min-width: $tablet) {
+    gap: 20px;
+
+    & h2 {
+      text-align: start;
+    }
+  }
+  @media screen and (min-width: $laptop) {
+    justify-content: space-between;
+  }
+}
+
+.aboutList {
+  & li {
+    display: flex;
+    gap: 4px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  & svg {
+    border-radius: 50%;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    background-color: $footerBgColor;
+    padding: 4px;
+  }
+  @media screen and (min-width: $tablet) {
+    & li {
+      gap: 8px;
+      font-size: 18px;
+    }
+    & svg {
+      width: 48px;
+      min-width: 48px;
+      height: 48px;
+      padding: 8px;
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    & li {
+      gap: 20px;
+      font-size: 20px;
+    }
+    & svg {
+      width: 56px;
+      min-width: 56px;
+
+      height: 56px;
+    }
+  }
+}
+
+.imgWrapp {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 148/100;
+
+  & img {
+    object-fit: cover;
+  }
+  @media screen and (min-width: $laptop) {
+    aspect-ratio: 1/1;
+  }
+}
