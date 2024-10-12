@@ -46,15 +46,11 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
 
     @media screen and (min-width: $tablet) {
         gap: 12px;
-        font-size: 18px;
-    }
-
-    @media screen and (min-width: $laptop) {
         font-size: 20px;
     }
 }

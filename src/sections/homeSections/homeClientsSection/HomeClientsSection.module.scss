@@ -21,10 +21,14 @@
 
 // перебивает стили
 .container .title {
+    font-size: 18px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 28px;
+    }
 
     @media screen and (min-width: $laptop) {
         font-size: 32px;
-        line-height: 1.1;
     }
 }
 
