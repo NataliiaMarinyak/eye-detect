@@ -19,9 +19,7 @@ const HomeOrderSection = () => {
               <svg className={styles.icon}>
                 <use href={`/sprite.svg#icon-map_pin`} />
               </svg>
-              <span>
-                Львів, вул. Данилишина 6, оф. 217
-              </span>
+              Львів, вул. Данилишина 6, оф. 217
             </a>
           </address>
         </div>

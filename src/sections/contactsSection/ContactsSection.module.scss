@@ -20,6 +20,7 @@
   @media screen and (min-width: $tablet) {
     gap: 20px;
   }
+
   @media screen and (min-width: $laptop) {
     gap: 24px;
   }
@@ -38,9 +39,11 @@
     width: 24px;
     height: 24px;
   }
+
   @media screen and (min-width: $tablet) {
     gap: 20px;
   }
+
   @media screen and (min-width: $laptop) {
     display: flex;
     flex-direction: row;
@@ -52,28 +55,34 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+
   @media screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 56px;
   }
+
   @media screen and (min-width: $laptop) {
     display: flex;
     gap: 20px;
   }
 }
+
 .socMediaItem {
   display: flex;
   align-items: center;
   gap: 4px;
   font-style: normal;
   font-size: 16px;
+
   @media screen and (max-width: 340px) {
     font-size: 14px;
   }
+
   @media screen and (min-width: $tablet) {
     font-size: 18px;
   }
+
   @media screen and (min-width: $laptop) {
     font-size: 20px;
   }
@@ -89,20 +98,26 @@
 
 .mapWrapp {
   width: 100%;
+
   & iframe {
     width: 100%;
-    aspect-ratio: 688/260;
+    aspect-ratio: 287/108;
     border: none;
   }
-  @media screen and (min-width: $tablet) {
-    // & iframe {
 
-    // }
+  @media screen and (min-width: $tablet) {
+    & iframe {
+      aspect-ratio: 688/260;
+    }
   }
+
   @media screen and (min-width: $laptop) {
     flex: 1;
+
     & iframe {
-      aspect-ratio: 550/260;
+      // aspect-ratio: 550/260;
+      width: 550px;
+      height: 260px;
     }
   }
 }
@@ -111,10 +126,22 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  font-weight: 700;
   font-size: 16px;
-  @media screen and (max-width: 340px) {
-    font-size: 14px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 12px;
+    font-size: 18px;
   }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 20px;
+  }
+}
+
+.locationLink .locationIcon {
+  stroke: $alert-error;
+  fill: $alert-error;
 }
 
 #btn {

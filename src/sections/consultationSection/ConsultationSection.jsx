@@ -1,6 +1,9 @@
+import styles from './ConsultationSection.module.scss'
+
+
 const ConsultationSection = () => {
     return (
-        <section>Consultation Section</section>
+        <section className={styles.section}>Consultation Section</section>
     )
 }
 

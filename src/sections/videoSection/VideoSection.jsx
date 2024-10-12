@@ -1,6 +1,9 @@
+import styles from './VideoSection.module.scss';
+
+
 const VideoSection = () => {
     return (
-        <section>Video Section</section>
+        <section className={styles.section}>Video Section</section>
     )
 }
 

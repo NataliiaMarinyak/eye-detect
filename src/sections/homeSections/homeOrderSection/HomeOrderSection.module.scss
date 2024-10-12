@@ -77,6 +77,7 @@
     display: flex;
     align-items: center;
     column-gap: 4px;
+    font-weight: 700;
     font-size: 16px;
 
     @media screen and (min-width: $tablet) {
@@ -92,8 +93,8 @@
 .icon {
     width: 24px;
     height: 24px;
-    fill: transparent;
-    stroke: $textDarkColor;
+    stroke: $alert-error;
+    fill: $alert-error;
 }
 
 .orderForm {
