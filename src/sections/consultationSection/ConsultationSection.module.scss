@@ -1,0 +1,8 @@
+@import "../../app/variables";
+
+.section {
+    @include pageTopPadding;
+
+    display: flex;
+    align-items: center;
+}

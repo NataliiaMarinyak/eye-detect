@@ -26,7 +26,7 @@ const ContactsSection = () => {
               target="_blank"
               className={styles.locationLink}
             >
-              <svg>
+              <svg className={styles.locationIcon}>
                 <use href="./sprite.svg#icon-map_pin"></use>
               </svg>
               Львів, вул. Данилишина 6, оф. 217

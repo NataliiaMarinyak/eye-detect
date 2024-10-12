@@ -1,0 +1,67 @@
+@import "../../app/variables";
+
+.section {
+    @include pageTopPadding;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (min-width: $tablet) {
+        gap: 20px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        gap: 24px;
+    }
+}
+
+.title {
+    @include pageTitle;
+}
+
+.mapWrapper {
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    aspect-ratio: 280/108;
+    border: none;
+
+    @media screen and (min-width: $tablet) {
+        aspect-ratio: 688/260;
+    }
+
+    @media screen and (min-width: $laptop) {
+        width: 960px;
+        height: 260px;
+    }
+}
+
+.locationLink {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 700;
+    font-size: 16px;
+
+    @media screen and (min-width: $tablet) {
+        gap: 12px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        font-size: 20px;
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    stroke: $alert-error;
+    fill: $alert-error;
+}

@@ -1,4 +1,4 @@
-import LocationsSection from "@/sections/locationsSection/LocationsSection";
+import LocationSection from "@/sections/locationSection/LocationSection";
 import UkrainianCitiesSection from "@/sections/ukrainianCitiesSection/UkrainianCitiesSection";
 import EuropeanCitiesSection from "@/sections/europeanCitiesSection/EuropeanCitiesSection";
 
@@ -6,7 +6,7 @@ import EuropeanCitiesSection from "@/sections/europeanCitiesSection/EuropeanCiti
 const LocationsPage = () => {
     return (
         <>
-            <LocationsSection />
+            <LocationSection />
             <UkrainianCitiesSection />
             <EuropeanCitiesSection />
         </>
