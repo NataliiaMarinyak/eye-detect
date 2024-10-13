@@ -1,7 +1,7 @@
+import Link from 'next/link';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import { ukrainianCitiesData } from "@/data/ukrainianCitiesData";
 import styles from './UkrainianCitiesSection.module.scss';
-import Link from 'next/link';
 
 
 const UkrainianCitiesSection = () => {
