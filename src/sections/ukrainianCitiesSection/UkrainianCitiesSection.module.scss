@@ -3,7 +3,7 @@
 .section {
 
     @media screen and (min-width: $tablet) {
-        padding: 20px 157px 32px;
+        padding: 20px 40px 32px;
     }
 
     @media screen and (min-width: $laptop) {
@@ -18,10 +18,12 @@
     row-gap: 16px;
 
     @media screen and (min-width: $tablet) {
+        width: 454px;
         row-gap: 20px;
     }
 
     @media screen and (min-width: $laptop) {
+        width: 100%;
         row-gap: 24px;
     }
 }
@@ -33,14 +35,13 @@
 .citiesWrapper {
     max-width: 304px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 2px;
     row-gap: 4px;
 
     @media screen and (min-width: $tablet) {
-        max-width: 380px;
+        max-width: 100%;
         margin-left: 4vw;
     }
 
@@ -56,13 +57,11 @@
     font-size: 14px;
 
     @media screen and (min-width: $tablet) {
-        width: 50%;
         max-width: 180px;
         font-size: 18px;
     }
 
     @media screen and (min-width: $laptop) {
-        width: 50%;
         max-width: 200px;
         font-size: 20px;
     }

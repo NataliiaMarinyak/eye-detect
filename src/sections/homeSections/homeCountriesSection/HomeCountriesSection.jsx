@@ -11,7 +11,7 @@ const HomeCountriesSection = () => {
         <h3 className={styles.subTitle}>виїзд у центри Європейських країн</h3>
       </div>
       <div className={styles.imgWrapper}>
-        {/* возможно, попробовать оставить один компонент Image и, в зависимости от результата useRasize (до laptop или после), менять src */}
+        {/* возможно, попробовать оставить один компонент Image и, в зависимости от результата useResize (до laptop или после), менять src */}
         <Image
           className={styles.img}
           src='/images/countries.webp'
