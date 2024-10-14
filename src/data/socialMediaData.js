@@ -13,6 +13,8 @@ export const socialMediaData = [
     icon: "./sprite.svg#icon-telegram",
     contact: "@natalia_eyedetect",
   },
+
+  // going to be Facebook here
   {
     name: "viber",
     type: "socialMedia",
@@ -27,6 +29,8 @@ export const socialMediaData = [
     icon: "./sprite.svg#icon-whatsapp",
     contact: "+380 (97) 321 30 40",
   },
+
+  // going to be Facebook here
   {
     name: "instagram",
     type: "socialMedia",

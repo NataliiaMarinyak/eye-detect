@@ -1,0 +1,27 @@
+@import "../../app/variables";
+
+.modalFrame {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+}
+
+.backDrop {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.3)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.visible {
+  opacity: 1;
+}
