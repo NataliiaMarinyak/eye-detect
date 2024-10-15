@@ -5,12 +5,12 @@ const HeroSection = () => {
   return (
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
-        <div className={styles.titleWrapp}>
+        <div>
           <h2 className={styles.title}>
             Передові рішення для виявлення обману швидко і точно
           </h2>
           <h3 className={styles.text}>
-            швидка та достовірна перевірка за допомогою технології eyedetect
+            Швидка та достовірна перевірка за допомогою технології EyeDetect
           </h3>
         </div>
         <OpenModalBtn customBtn={styles.btn} />
