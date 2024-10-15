@@ -10,7 +10,7 @@ const HeroSection = () => {
             Передові рішення для виявлення обману швидко і точно
           </h2>
           <h3 className={styles.text}>
-            швидка та достовірна перевірка за допомогою технології eyedetect
+            швидка та достовірна перевірка за допомогою технології EyeDetect
           </h3>
         </div>
         <OpenModalBtn customBtn={styles.btn} />
