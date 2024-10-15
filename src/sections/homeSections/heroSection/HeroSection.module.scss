@@ -1,20 +1,23 @@
 @import "../../../app/variables";
 
 .hero {
+  @include pageTopPadding;
+  position: relative;
   height: 100vh;
 
-  position: relative;
-
-  @include pageTopPadding;
-  padding-bottom: 60px;
   display: flex;
   align-items: center;
   background-color: black;
   background-image: url("/images/hero-bg.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  // background-size: cover;
+  background-size: auto 100%;
   background-position: 25% 100px;
+
+  padding-bottom: 60px;
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 
   animation: bgMobile linear;
   animation-timeline: view();
@@ -35,26 +38,29 @@
     );
   }
 
-  &::after {
-    content: "";
-    width: 100%;
-    height: clamp(34px, 10vw, 68px);
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  // &::after {
+  //   content: "";
+  //   width: 100%;
+  //   height: clamp(34px, 10vw, 68px);
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
 
-    border-top: clamp(34px, 10vw, 68px) solid transparent;
+  //   border-top: clamp(34px, 10vw, 68px) solid transparent;
 
-    border-top-color: transparent;
-    border-right: 50vw solid $bgColor;
-    border-left: 50vw solid $bgColor;
-  }
+  //   border-top-color: transparent;
+  //   border-right: 50vw solid $bgColor;
+  //   border-left: 50vw solid $bgColor;
+  // }
 
   @media screen and (orientation: portrait) {
     height: 100vh;
   }
   @media screen and (orientation: portrait) and (min-width: 600px) {
     height: auto;
+    & button {
+      margin-top: 40px;
+    }
   }
 
   @media screen and (orientation: landscape) {
@@ -63,6 +69,9 @@
 
   @media screen and (orientation: landscape) and (max-height: 700px) {
     height: auto;
+    & button {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -80,13 +89,13 @@
   justify-content: space-between;
 
   color: $textLightColor;
+  text-shadow: $textShadow;
 }
 
 .title {
   font-size: 34px;
   line-height: 1.25;
   margin-bottom: 4px;
-  text-shadow: $textShadow;
 
   @media screen and (min-width: $tablet) {
     font-size: 44px;
@@ -113,7 +122,8 @@
 }
 
 .btn {
-  margin: auto auto 0;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: $tablet) {
     margin-top: 20px;
     margin-left: 0;
