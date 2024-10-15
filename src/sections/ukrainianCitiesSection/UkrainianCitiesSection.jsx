@@ -10,7 +10,7 @@ const UkrainianCitiesSection = () => {
     return (
         <section className={styles.section}>
             <div className={`container ${styles.container}`}>
-                <h2 className={styles.title}>Замовити тестування EyeDetect в Україні</h2>
+                <h2 className={styles.title}>Перевірка на поліграфі EyeDetect в Україні</h2>
                 <ul className={styles.citiesWrapper}>
                     {ukrainianCitiesData.map((item) => <li
                         key={item.slug}

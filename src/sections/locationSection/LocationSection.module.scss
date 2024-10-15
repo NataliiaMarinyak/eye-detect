@@ -21,6 +21,8 @@
 
 .title {
     @include pageTitle;
+
+    font-size: 22px;
 }
 
 .mapWrapper {
