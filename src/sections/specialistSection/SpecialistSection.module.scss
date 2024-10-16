@@ -1,0 +1,131 @@
+@import "../../app/variables";
+
+.title {
+  @include sectionTitle;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $laptop) {
+    margin-bottom: 24px;
+  }
+}
+
+.contentWrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+    gap: 24px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(n + 2) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.textWrapp {
+  @media screen and (min-width: $laptop) {
+    flex: 1.5;
+  }
+}
+
+.subtitle {
+  @include sectionSubTitle;
+  margin-bottom: 16px;
+  color: $textDarkColor;
+  font-family: var(--font-ukraine-bold);
+  text-align: start;
+
+  @media screen and (min-width: $laptop) {
+    margin-bottom: 24px;
+  }
+}
+
+// .details {
+// }
+
+.detailsTitle {
+  font-family: var(--font-ukraine-bold);
+  font-size: 16px;
+  margin-bottom: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  & svg {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    stroke: $textDarkColor;
+    fill: none;
+    // stroke-width: 2px;
+    // stroke-width="1.6"
+  }
+  @media screen and (min-width: $tablet) {
+    gap: 12px;
+    & svg {
+      width: 32px;
+      min-width: 32px;
+      height: 32px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    margin-bottom: 8px;
+    gap: 24px;
+
+    & svg {
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.detailsList {
+  list-style: disc;
+  padding-left: 28px;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 20px;
+  }
+}
+
+.imgWrapp {
+  @include imgWrapper;
+  width: 100%;
+  aspect-ratio: 280/188;
+
+  & img {
+    object-position: 50% 10%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    aspect-ratio: 688/556;
+  }
+
+  @media screen and (min-width: $laptop) {
+    flex: 1;
+    aspect-ratio: auto;
+  }
+}

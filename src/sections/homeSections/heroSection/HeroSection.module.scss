@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right 65% top 32px;
+  background-position: right 65% top 100px;
 
   animation: bgMobile linear;
   animation-timeline: view();
@@ -35,12 +35,10 @@
 
 @keyframes bgMobile {
   from {
-    background-position: right 65% top 32px;
-    background-size: auto 100%;
+    background-position: right 65% top 100px;
   }
   to {
     background-position: 100% -100px;
-    background-size: auto 150%;
   }
 }
 

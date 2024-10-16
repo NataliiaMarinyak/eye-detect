@@ -8,21 +8,17 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  // background-size: auto 100%;
   background-size: cover;
-  background-position: center;
-  // background-position: 15% 50%;
 
-  animation: qwe linear;
-  animation-timeline: scroll();
+  background-position: right 90% top 30%;
+  background-position: left -15% top 30%;
+
+  animation: bgMobile linear;
+  animation-timeline: view();
 }
-
-@keyframes qwe {
-  from {
-    background-size: 100%;
-  }
+@keyframes bgMobile {
   to {
-    background-size: 150%;
+    background-position: left 50% top 30%;
   }
 }
 
