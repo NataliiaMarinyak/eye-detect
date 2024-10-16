@@ -7,7 +7,7 @@ const LocationSection = () => {
     return (
         <section className={styles.section}>
             <div className={`container ${styles.container}`}>
-                <h1 className={styles.title}>Тестування на поліграфі EyeDetect в Україні та Європі</h1>
+                <h1 className={styles.title}>Де пройти тест на поліграфі EyeDetect: Україна та Європа</h1>
 
                 <div className={styles.mapWrapper}>
                     <iframe

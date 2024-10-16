@@ -1,14 +1,14 @@
-import styles from "./ContactsSection.module.scss";
-import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
-import { rearrangedArray } from "@/data/socialMediaData";
 import Link from "next/link";
+import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
 import ContactsSocMedia from "./ContactsSocMedia";
+import styles from "./ContactsSection.module.scss";
+
 
 const ContactsSection = () => {
   return (
     <section className={styles.section}>
       <div className={`container ${styles.container}`}>
-        <h1>Тестування на поліграфі EyeDetect в Україні та Європі</h1>
+        <h1>Детектор брехні EyeDetect: контакти в Україні та Європі</h1>
         <div className={styles.contentWrapp}>
           <ContactsSocMedia
             className={styles.socMedia}
