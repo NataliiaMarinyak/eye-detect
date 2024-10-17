@@ -1,0 +1,201 @@
+@import "../../app/variables";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+
+    @media screen and (min-width: $tablet) {
+        row-gap: 20px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        row-gap: 32px;
+    }
+}
+
+.serviceItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    @media screen and (min-width: $laptop) {
+        row-gap: 32px;
+    }
+}
+
+.areaWrapper {
+    display: flex;
+    column-gap: 8px;
+
+    @media screen and (min-width: $tablet) {
+        column-gap: 24px;
+    }
+}
+
+.areaIconWrapper {
+    width: 32px;
+    height: 32px;
+
+    @media screen and (min-width: $tablet) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.areaIcon {
+    width: 32px;
+    height: 32px;
+
+    @media screen and (min-width: $tablet) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.areaTitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        font-size: 26px;
+    }
+}
+
+.directionList {
+    font-size: 16px;
+    line-height: 1.7;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        margin-left: 142px;
+        font-size: 20px;
+    }
+}
+
+.directionItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.directionItem:not(:last-child) {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        margin-bottom: 20px;
+    }
+}
+
+.directionTitleWrapper {
+    display: flex;
+    column-gap: 4px;
+
+    @media screen and (min-width: $tablet) {
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        column-gap: 24px;
+    }
+}
+
+.directionIconWrapper {
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: $tablet) {
+        width: 32px;
+        height: 32px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.directionIcon {
+    width: 24px;
+    height: 24px;
+    stroke: $textDarkColor;
+
+    @media screen and (min-width: $tablet) {
+        width: 32px;
+        height: 32px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.directionTitle {
+    font-weight: 700;
+}
+
+.directionDescription {
+    font-weight: 400;
+}
+
+.checksList {
+    list-style: inside;
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 120px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        margin-left: 64px;
+    }
+}
+
+.imgWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 280/132;
+
+    @media screen and (min-width: $tablet) {
+        aspect-ratio: 688/332;
+    }
+
+    @media screen and (min-width: $laptop) {
+        width: 960px;
+        height: 464px;
+    }
+}
+
+.img {
+    object-fit: cover;
+}
+
+.openModalBtn {
+    margin-left: auto;
+    margin-right: auto;
+}
