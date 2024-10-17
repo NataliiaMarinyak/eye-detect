@@ -2,53 +2,29 @@
 
 .section {
   @include pageTopPadding;
-  position: relative;
-  height: 100vh;
+  @include pageHero;
 
   background-image: url("/images/about-asBgImg.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  background-size: 100% auto;
-  background-position: center;
+  background-size: cover;
 
-  padding-bottom: 60px;
-
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+  background-position: right 90% top 30%;
+  background-position: left -15% top 30%;
 
   animation: bgMobile linear;
   animation-timeline: view();
-
-  @media screen and (orientation: portrait) {
-    height: 100vh;
-  }
-  @media screen and (orientation: portrait) and (min-width: 600px) {
-    height: auto;
-    & button {
-      margin-top: 40px;
-    }
-  }
-
-  @media screen and (orientation: landscape) {
-    height: 100vh;
-  }
-
-  @media screen and (orientation: landscape) and (max-height: 700px) {
-    height: auto;
-    & button {
-      margin-top: 40px;
-    }
-  }
 }
-
 @keyframes bgMobile {
   to {
-    background-size: 150% auto;
+    background-position: left 50% top 30%;
   }
 }
 
 .container {
   height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,10 +73,10 @@
 .btn {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+
   @media screen and (min-width: $tablet) {
-    margin-top: 20px;
     margin-left: 0;
-    // margin-bottom: 20px;
     width: 324px;
     max-width: none;
     height: 56px;

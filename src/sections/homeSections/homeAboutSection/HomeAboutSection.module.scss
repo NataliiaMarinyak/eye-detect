@@ -59,6 +59,8 @@
     width: 24px;
     min-width: 24px;
     height: 24px;
+    stroke: $textLightColor;
+    fill: none;
     background-color: $footerBgColor;
     padding: 4px;
   }
@@ -92,43 +94,17 @@
 }
 
 .imgWrapp {
-  position: relative;
-  overflow: hidden;
+  @include imgWrapper;
+
   width: 100%;
   aspect-ratio: 148/100;
-  box-shadow: inset 4px 4px 40px rgba(11, 21, 31, 0.5),
-    inset -2px -2px 20px rgba(11, 21, 31, 0.5);
 
   & img {
-    object-fit: cover;
     object-position: 64% 0px;
-
-    z-index: -1;
-
-    animation: aboutImg 60s linear infinite;
   }
+
   @media screen and (min-width: $laptop) {
     flex: 1;
     aspect-ratio: auto;
-  }
-}
-
-@keyframes aboutImg {
-  0% {
-    scale: 1;
-  }
-  25% {
-    scale: 1.06;
-  }
-  50% {
-    scale: 1.06;
-    transform: translate(-2%, 1%);
-  }
-  75% {
-    scale: 1.03;
-    transform: translate(-2%, 0%);
-  }
-  100% {
-    transform: translate(0);
   }
 }
