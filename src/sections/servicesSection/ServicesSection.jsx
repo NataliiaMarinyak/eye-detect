@@ -12,11 +12,9 @@ const ServicesSection = ({ data }) => {
                 {data?.services.map((service, index) =>
                     <li key={index} className={styles.serviceItem}>
                         <div className={styles.areaWrapper}>
-                            <div className={styles.areaIconWrapper}>
-                                <svg className={styles.areaIcon}>
-                                    <use href={`/sprite.svg#icon-area-${index}`} />
-                                </svg>
-                            </div>
+                            <svg className={styles.areaIcon}>
+                                <use href={`/sprite.svg#icon-area-${index}`} />
+                            </svg>
                             <h3 className={styles.areaTitle}>{service.area}</h3>
                         </div>
                         <ul className={styles.directionList}>
@@ -26,11 +24,9 @@ const ServicesSection = ({ data }) => {
                                     className={styles.directionItem}
                                 >
                                     <div className={styles.directionTitleWrapper}>
-                                        <div className={styles.directionIconWrapper}>
-                                            <svg className={styles.directionIcon}>
-                                                <use href={`/sprite.svg#icon-check-mark-in-circle`} />
-                                            </svg>
-                                        </div>
+                                        <svg className={styles.directionIcon}>
+                                            <use href={`/sprite.svg#icon-check-mark-in-circle`} />
+                                        </svg>
                                         <p className={styles.directionDescription}>
                                             <span className={styles.directionTitle}>{direction.title}</span> {direction.description}
                                         </p>
