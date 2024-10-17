@@ -6,9 +6,9 @@ const ConsultationSection = () => {
     <section className={styles.section}>
       <div className={`container ${styles.container}`}>
         <div>
-          <h1 className={styles.title}>Тестування на поліграфі EyeDetect</h1>
+          <h1 className={styles.title}>Перевірка на поліграфі EyeDetect – професійний підхід</h1>
           <h2 className={styles.text}>
-            Консультація тестувальника EyeDetect Наталії Мариняк
+            Консультація поліграфолога EyeDetect Наталії Мариняк
           </h2>
         </div>
         <OpenModalBtn customBtn={styles.btn} />

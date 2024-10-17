@@ -7,7 +7,7 @@ import styles from './HomeCertificatesSection.module.scss';
 const HomeCertificatesSection = ({ isOnHomePage }) => {
   return <section>
     <div className={`container ${styles.container}`}>
-      <h2 className={styles.title}>Освіта тестувальника EyeDetect</h2>
+      <h2 className={styles.title}>Професійна освіта поліграфолога EyeDetect</h2>
       <div className={styles.certificatesWrapper}>
         <div className={styles.certWrap}>
           <Image
