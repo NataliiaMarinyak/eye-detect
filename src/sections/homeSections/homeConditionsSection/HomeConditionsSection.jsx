@@ -13,7 +13,7 @@ const HomeConditionsSection = () => {
           className={styles.img}
           src='/images/conditions.webp'
           alt="Умови тестування EyeDetect"
-          sizes="100vw"
+          sizes="(max-width: 1023px) 100vw, 960px"
           fill
         />
       </div>

@@ -33,7 +33,7 @@
 
     font-size: 21px;
 
-    @media screen and (min-width: 334px) {
+    @media screen and (min-width: 334px) and (max-width:767px) {
         font-size: 22px;
     }
 }

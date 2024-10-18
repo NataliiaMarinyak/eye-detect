@@ -14,7 +14,7 @@ const HomeCertificatesSection = ({ isOnHomePage }) => {
             className={styles.certificate}
             src='/images/certificate_ukr.webp'
             alt="Тестувальник EyeDetect"
-            sizes="(max-width: 767px) 100vw, 50vw"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 468px"
             fill
           />
         </div>
@@ -23,7 +23,8 @@ const HomeCertificatesSection = ({ isOnHomePage }) => {
             className={styles.certificate}
             src='/images/certificate_eng.webp'
             alt="Тестировщик EyeDetect"
-            sizes="(max-width: 767px) 100vw, 50vw" fill
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 468px"
+            fill
           />
         </div>
       </div>
