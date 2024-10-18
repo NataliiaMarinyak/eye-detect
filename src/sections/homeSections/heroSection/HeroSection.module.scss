@@ -4,6 +4,8 @@
   @include pageTopPadding;
   @include pageHero;
 
+  box-shadow: inset 20px 20px 100px black;
+
   display: flex;
   align-items: center;
   background-color: black;
@@ -26,9 +28,9 @@
     bottom: 0;
     left: 0;
     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.253),
+      rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0.3)
     );
   }
 }
