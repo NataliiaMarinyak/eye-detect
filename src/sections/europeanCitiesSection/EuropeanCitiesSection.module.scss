@@ -37,6 +37,12 @@
     @include sectionTitle;
 
     padding: 0px 20px;
+    font-size: 21px;
+
+    @media screen and (min-width: 334px) {
+        padding: 0px;
+        font-size: 22px;
+    }
 
     @media screen and (min-width: 360px) {
         padding: 0px;

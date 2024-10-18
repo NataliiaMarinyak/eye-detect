@@ -6,7 +6,7 @@ const SpecialistSection = () => {
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        <h2 className={styles.title}>Тестувальник EyeDetect Наталія Мариняк</h2>
+        <h2 className={styles.title}>Наталія Мариняк – експерт з детектора брехні EyeDetect</h2>
 
         <ul>
           {spesialistData.map((el, i) => {
