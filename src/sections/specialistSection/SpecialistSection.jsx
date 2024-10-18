@@ -5,7 +5,7 @@ import Image from "next/image";
 const SpecialistSection = () => {
   return (
     <section>
-      <div className={`container ${styles.container}`}>
+      <div className="container">
         <h2 className={styles.title}>Наталія Мариняк – експерт з детектора брехні EyeDetect</h2>
 
         <ul>

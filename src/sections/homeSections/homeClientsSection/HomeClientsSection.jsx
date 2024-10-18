@@ -12,7 +12,7 @@ const HomeClientsSection = () => {
           className={styles.img}
           src='/images/clients.webp'
           alt="Клієнти EyeDetect"
-          sizes="100vw"
+          sizes="(max-width: 1023px) 100vw, 960px"
           fill
         />
       </div>

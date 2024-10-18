@@ -23,7 +23,7 @@ const HomeCountriesSection = () => {
           className={styles.desktopImg}
           src='/images/countriesDesktop.webp'
           alt="Країни Європи та EyeDetect"
-          sizes="100vw"
+          sizes="1024px"
           fill
         />
       </div>
