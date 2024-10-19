@@ -143,6 +143,24 @@
     }
 }
 
+.iconError {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    right: 14px;
+    fill: #b30000;
+    stroke: white;
+
+    @media screen and (min-width: $tablet) {
+        top: 15px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        top: 17px;
+    }
+}
+
 .submitButton {
     width: 100%;
     max-width: 452px;

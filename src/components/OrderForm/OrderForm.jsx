@@ -42,6 +42,12 @@ const OrderForm = () => {
                 <svg className={styles.iconMark}>
                     <use href='/sprite.svg#icon-important'></use>
                 </svg>
+
+                {errors.name && (
+                    <svg className={styles.iconError}>
+                        <use href='/sprite.svg#icon-error' />
+                    </svg>
+                )}
                 <p className={styles.error}>{errors.name?.message}</p>
 
                 <input
@@ -63,6 +69,12 @@ const OrderForm = () => {
                 <svg className={styles.iconMark}>
                     <use href='/sprite.svg#icon-important'></use>
                 </svg>
+
+                {errors.name && (
+                    <svg className={styles.iconError}>
+                        <use href='/sprite.svg#icon-error' />
+                    </svg>
+                )}
                 <p className={styles.error}>{errors.tel?.message}</p>
 
                 <input
