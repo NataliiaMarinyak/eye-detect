@@ -1399,8 +1399,8 @@ export const ukrainianCitiesData = [
         mainTitleRus: "Заказать тестирование EyeDetect во Львове",
         mainDescription: "Опис для meta SEO",
         mainDescriptionRus: "Описание для meta SEO",
-        // videoLink: "https://www.youtube.com/watch?v=qd-A08_WKi4",
-        videoLink: "https://www.youtube.com/embed/qd-A08_WKi4",
+        // videoLink: "https://www.youtube.com/watch?v=uaMkZJJoXcI",
+        videoLink: "https://www.youtube.com/embed/uaMkZJJoXcI",
         services: [
             {
                 area: "Тестування EyeDetect у Львові на вірність у подружжі",
