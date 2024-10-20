@@ -20,7 +20,7 @@ const OrderForm = () => {
 
     const form = useForm(initialValues);
     const { register, handleSubmit, formState, reset } = form;
-    const { errors, isSubmitSuccessful, isValid, isSubmitting } = formState;
+    const { errors, isSubmitSuccessful, isValid, isSubmitting, isSubmitted, dirtyFields } = formState;
 
     useEffect(() => {
         if (isSubmitSuccessful) {
@@ -39,15 +39,22 @@ const OrderForm = () => {
             onSubmit={handleSubmit(onSubmit)}
         >
             <div className={styles.inputWrap}>
-                <svg className={styles.iconMark}>
+                {!dirtyFields.name && !errors.name && <svg className={styles.iconMark}>
                     <use href='/sprite.svg#icon-important'></use>
-                </svg>
+                </svg>}
 
                 {errors.name && (
                     <svg className={styles.iconError}>
                         <use href='/sprite.svg#icon-error' />
                     </svg>
                 )}
+
+                {dirtyFields.name && !errors.name && (
+                    <svg className={styles.iconSuccess}>
+                        <use href='/sprite.svg#icon-success' />
+                    </svg>
+                )}
+
                 <p className={styles.error}>{errors.name?.message}</p>
 
                 <input
@@ -58,23 +65,30 @@ const OrderForm = () => {
                     maxLength='30'
                     autoComplete='off'
                     className={
-                        errors.name
-                            ? `${styles.input} ${styles.errorInput}`
+                        dirtyFields.name && !errors.name
+                            ? `${styles.input} ${styles.successInput}`
                             : styles.input
                     }
                 />
             </div>
 
             <div className={styles.inputWrap}>
-                <svg className={styles.iconMark}>
+                {!dirtyFields.tel && !errors.tel && <svg className={styles.iconMark}>
                     <use href='/sprite.svg#icon-important'></use>
-                </svg>
+                </svg>}
 
-                {errors.name && (
+                {errors.tel && (
                     <svg className={styles.iconError}>
                         <use href='/sprite.svg#icon-error' />
                     </svg>
                 )}
+
+                {dirtyFields.tel && !errors.tel && (
+                    <svg className={styles.iconSuccess}>
+                        <use href='/sprite.svg#icon-success' />
+                    </svg>
+                )}
+
                 <p className={styles.error}>{errors.tel?.message}</p>
 
                 <input
@@ -85,8 +99,8 @@ const OrderForm = () => {
                     maxLength='13'
                     autoComplete='off'
                     className={
-                        errors.tel
-                            ? `${styles.input} ${styles.errorInput}`
+                        dirtyFields.tel && !errors.tel
+                            ? `${styles.input} ${styles.successInput}`
                             : styles.input
                     }
                 />
@@ -124,16 +138,17 @@ const OrderForm = () => {
             <button
                 type='submit'
                 disabled={isSubmitting}
-                // className={
-                //     isValid
-                //         ? styles.submitButton : styles.disabledBtn
-                // }
-                className={styles.submitButton}
+                className={
+                    !isSubmitted || (isValid && isSubmitted)
+                        ? `${styles.submitButton} ${styles.activeBtn}`
+                        : styles.submitButton
+                }
+
             >
                 {/* {t('Buttons.SendRequest')} */}
                 Відправити
             </button>
-        </form>
+        </form >
     )
 }
 
