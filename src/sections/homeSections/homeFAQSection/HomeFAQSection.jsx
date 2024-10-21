@@ -1,10 +1,9 @@
 "use client";
-
-import { FAQData } from "@/data/FAQData";
-import styles from "./HomeFAQSection.module.scss";
 import { useState } from "react";
+import styles from "./HomeFAQSection.module.scss";
 
-const HomeFAQSection = () => {
+
+const HomeFAQSection = ({ data }) => {
   const [openItems, setOpenItems] = useState([]);
 
   const handleOpen = (id) => {
@@ -24,7 +23,7 @@ const HomeFAQSection = () => {
           Часті питання про детектор брехні EyeDetect
         </h2>
         <ul>
-          {FAQData.map((el, i) => {
+          {data.map((el, i) => {
             const id = i + 1;
             const isActive = openItems.includes(id);
 
@@ -44,9 +43,8 @@ const HomeFAQSection = () => {
                 </h3>
 
                 <div
-                  className={`${styles.answerWrapp} ${
-                    isActive ? styles.isOpen : styles.isClosed
-                  }`}
+                  className={`${styles.answerWrapp} ${isActive ? styles.isOpen : styles.isClosed
+                    }`}
                 >
                   <h4 className={styles.answer}>{el.answer}</h4>
                 </div>

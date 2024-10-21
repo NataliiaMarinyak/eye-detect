@@ -15,25 +15,8 @@
     }
 }
 
-.mobileTitle {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 1.4;
-    text-align: center;
-
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
-}
-
 .title {
-    display: none;
-
-    @media screen and (min-width: $tablet) {
-        @include sectionTitle;
-
-        display: block;
-    }
+    @include sectionTitle;
 }
 
 .imgWrapper {

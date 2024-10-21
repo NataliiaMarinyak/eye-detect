@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { feedbackFormSchema } from "@/yupSchemas/feedbackFormSchema";
+import { sendToTelegram } from "@/helpers/sendToTelegram";
 import styles from './OrderForm.module.scss';
 
 
@@ -29,7 +30,8 @@ const OrderForm = () => {
     }, [isSubmitSuccessful, reset]);
 
     const onSubmit = (data) => {
-        console.log("feedbackFormData:", data);
+        // console.log("feedbackFormData:", data);
+        sendToTelegram(data);
     };
 
 
