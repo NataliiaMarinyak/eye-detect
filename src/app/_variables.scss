@@ -150,6 +150,8 @@ $textShadow: 2px 4px 8px $footerBgColor;
 
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 
+  box-shadow: inset 20px 20px 100px black;
+
   @media screen and (orientation: portrait) {
     height: 100vh;
     padding-bottom: 25%;

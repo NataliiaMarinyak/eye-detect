@@ -12,14 +12,6 @@
 
   background-position: right 90% top 30%;
   background-position: left -15% top 30%;
-
-  animation: bgMobile linear;
-  animation-timeline: view();
-}
-@keyframes bgMobile {
-  to {
-    background-position: left 50% top 30%;
-  }
 }
 
 .container {
