@@ -11,7 +11,7 @@ const HomeTestingSection = () => {
           src='/images/testing_ukr.webp'
           // alt={ukrLang ? "Конференція з тестування EyeDetect" : "Конференция по тестированию EyeDetect"} />
           alt="Конференція з тестування EyeDetect"
-          sizes="100vw"
+          sizes="(max-width: 1023px) 100vw, 960px"
           fill
         />
       </div>

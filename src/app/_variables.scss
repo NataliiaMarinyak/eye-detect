@@ -133,10 +133,9 @@ $textShadow: 2px 4px 8px $footerBgColor;
   font-size: 20px;
   line-height: 1.4;
   text-align: center;
-  color: $subTitleColor;
 
   @media screen and (min-width: $tablet) {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   @media screen and (min-width: $laptop) {
@@ -156,9 +155,11 @@ $textShadow: 2px 4px 8px $footerBgColor;
     height: 100vh;
     padding-bottom: 25%;
   }
+
   @media screen and (orientation: portrait) and (min-width: 600px) {
     height: auto;
     padding-bottom: 10%;
+
     & button {
       margin-top: 40px;
     }
@@ -170,6 +171,7 @@ $textShadow: 2px 4px 8px $footerBgColor;
 
   @media screen and (orientation: landscape) and (max-height: 700px) {
     height: auto;
+
     & button {
       margin-top: 40px;
     }
@@ -199,17 +201,21 @@ $textShadow: 2px 4px 8px $footerBgColor;
   0% {
     scale: 1;
   }
+
   25% {
     scale: 1.06;
   }
+
   50% {
     scale: 1.06;
     transform: translate(-2%, 1%);
   }
+
   75% {
     scale: 1.03;
     transform: translate(-2%, 0%);
   }
+
   100% {
     transform: translate(0);
   }

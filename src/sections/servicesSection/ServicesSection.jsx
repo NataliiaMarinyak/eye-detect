@@ -12,9 +12,7 @@ const ServicesSection = ({ data }) => {
                 {data?.services.map((service, index) =>
                     <li key={index} className={styles.serviceItem}>
                         <div className={styles.areaWrapper}>
-                            <svg className={styles.areaIcon}>
-                                <use href={`/sprite.svg#icon-area-${index}`} />
-                            </svg>
+                            <span className={styles.figure}>{index + 1}</span>
                             <h3 className={styles.areaTitle}>{service.area}</h3>
                         </div>
                         <ul className={styles.directionList}>
@@ -43,7 +41,7 @@ const ServicesSection = ({ data }) => {
                                 className={styles.img}
                                 src={service.image}
                                 alt={service.imageAlt}
-                                sizes="100vw"
+                                sizes="(max-width: 1023px) 100vw, 960px"
                                 fill
                             />
                         </div>

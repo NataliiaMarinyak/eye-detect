@@ -31,6 +31,8 @@
 
 .subTitle {
     @include sectionSubTitle;
+
+    color: $subTitleColor;
 }
 
 .imgWrapper {
