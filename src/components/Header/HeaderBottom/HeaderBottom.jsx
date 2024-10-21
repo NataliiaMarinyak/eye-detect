@@ -12,7 +12,7 @@ const HeaderBottom = () => {
       <div className={`container ${styles.headerBottom}`}>
         <Burger />
         <Logo className={styles.logo} />
-        <Navigation className={styles.nav} />
+        <Navigation className={styles.nav} isInHeader="true" />
         <LangSwitcher id={styles.langSwitcher} />
       </div>
       <MobMenu />

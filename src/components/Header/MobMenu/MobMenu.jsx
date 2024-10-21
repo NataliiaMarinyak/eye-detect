@@ -48,7 +48,7 @@ const MobMenu = () => {
         >
           <LangSwitcher id={styles.langSwitcher} />
 
-          <Navigation className={styles.nav} />
+          <Navigation className={styles.nav} isInHeader="true" />
         </div>
       )}
     </>
