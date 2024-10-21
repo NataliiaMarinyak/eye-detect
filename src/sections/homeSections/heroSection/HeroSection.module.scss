@@ -4,19 +4,13 @@
   @include pageTopPadding;
   @include pageHero;
 
-  box-shadow: inset 20px 20px 100px black;
-
   display: flex;
   align-items: center;
-  background-color: black;
   background-image: url("/images/hero-bg.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right 65% top 100px;
-
-  animation: bgMobile linear;
-  animation-timeline: view();
+  background-position: right 35% top 12px;
 
   &::before {
     content: "";
@@ -28,19 +22,12 @@
     bottom: 0;
     left: 0;
     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 1) 3%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0) 100%
     );
-  }
-}
-
-@keyframes bgMobile {
-  from {
-    background-position: right 65% top 100px;
-  }
-  to {
-    background-position: 100% -100px;
+    background-attachment: fixed;
   }
 }
 

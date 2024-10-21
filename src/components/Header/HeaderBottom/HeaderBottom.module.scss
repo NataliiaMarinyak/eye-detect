@@ -24,11 +24,22 @@
 
 .nav {
   display: none;
-  gap: 24px;
+  gap: 16px;
   font-size: 20px;
 
   @media screen and (min-width: $laptop) {
     display: flex;
+
+    & a {
+      padding: 4px;
+      transition-duration: 250ms;
+
+      &:hover,
+      &:focus {
+        background-color: $btnBgColor;
+        color: $textLightColor;
+      }
+    }
   }
 }
 

@@ -1,1 +1,6 @@
 @import "../../app/variables";
+
+.activeLink {
+  background-color: $btnBgColor;
+  color: $textLightColor;
+}
