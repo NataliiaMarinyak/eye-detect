@@ -1,5 +1,3 @@
-import { locationsData } from "./locationsData";
-
 export const navLinks = [
   {
     title: "Головна",
@@ -15,7 +13,6 @@ export const navLinks = [
     title: "Локації",
     titleRu: "Локации",
     href: "/locations",
-    subMenu: locationsData,
   },
   {
     title: "Контакти",

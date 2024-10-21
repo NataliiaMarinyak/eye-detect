@@ -153,7 +153,7 @@ export const europeanCitiesData = [
         videoLink: "https://www.youtube.com/embed/ZcdAiuGHnm4",
         services: [
             {
-                area: "Тестування EyeDetect у Тирані Тиране на вірність у подружжі",
+                area: "Тестування EyeDetect у Тирані на вірність у подружжі",
                 areaRus: "Тестирование EyeDetect в Тиране на верность в браке",
                 directions: [
                     {
