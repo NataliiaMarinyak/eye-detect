@@ -6,12 +6,12 @@ const HeroSection = () => {
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
         <div>
-          <h2 className={styles.title}>
+          <p className={styles.title}>
             Передові рішення для виявлення обману швидко і точно
-          </h2>
-          <h3 className={styles.text}>
+          </p>
+          <p className={styles.text}>
             Швидка та достовірна перевірка за допомогою технології EyeDetect
-          </h3>
+          </p>
         </div>
         <OpenModalBtn customBtn={styles.btn} />
       </div>

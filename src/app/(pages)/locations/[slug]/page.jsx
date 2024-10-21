@@ -6,6 +6,7 @@ import HomeConditionsSection from "@/sections/homeSections/homeConditionsSection
 import { ukrainianCitiesData } from "@/data/ukrainianCitiesData";
 import { europeanCitiesData } from "@/data/europeanCitiesData";
 import { FAQData } from "@/data/FAQData";
+import TownsSection from "@/sections/townsSection/townsSection";
 
 
 const LocationIdPage = ({ params }) => {
@@ -24,6 +25,7 @@ const LocationIdPage = ({ params }) => {
         <>
             <VideoSection data={cityData} />
             <ServicesSection data={cityData} />
+            <TownsSection data={cityData} />
             <GuaranteeSection />
             <HomeFAQSection data={FAQData} />
             <HomeConditionsSection />
