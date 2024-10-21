@@ -1,7 +1,7 @@
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import styles from "./GuaranteeSection.module.scss";
 import Image from "next/image";
-import { confidentDuaranty } from "@/data/confidentGuaranty";
+import { confidentGuaranty } from "@/data/confidentGuaranty";
 
 const GuaranteeSection = () => {
   return (
@@ -11,7 +11,7 @@ const GuaranteeSection = () => {
           Гарантія конфіденційості тестування EyeDetect
         </h2>
         <ul className={styles.list}>
-          {confidentDuaranty.map((el, i) => {
+          {confidentGuaranty.map((el, i) => {
             return (
               <li key={i} className={styles.item}>
                 <svg className={styles.icon}>

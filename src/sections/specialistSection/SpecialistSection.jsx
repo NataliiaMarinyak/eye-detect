@@ -1,4 +1,4 @@
-import { spesialistData } from "@/data/spesialistData";
+import { specialistData } from "@/data/specialistData";
 import styles from "./SpecialistSection.module.scss";
 import Image from "next/image";
 
@@ -6,10 +6,12 @@ const SpecialistSection = () => {
   return (
     <section>
       <div className="container">
-        <h2 className={styles.title}>Наталія Мариняк – експерт з детектора брехні EyeDetect</h2>
+        <h2 className={styles.title}>
+          Наталія Мариняк – експерт з детектора брехні EyeDetect
+        </h2>
 
         <ul>
-          {spesialistData.map((el, i) => {
+          {specialistData.map((el, i) => {
             return (
               <li key={i} className={styles.contentWrapp}>
                 <div className={styles.textWrapp}>
