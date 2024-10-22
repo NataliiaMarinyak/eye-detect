@@ -57,6 +57,8 @@ section {
   @include sectionSidePadding;
   @include sectionTopBottomPadding;
   width: 100%;
+  // background-color: $bgColor;
+  // z-index: 1;
 }
 
 .container {

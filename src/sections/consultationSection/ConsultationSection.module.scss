@@ -3,12 +3,21 @@
 .section {
   @include pageTopPadding;
   @include pageHero;
+}
 
-  background-image: url("/images/about-as-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 12%;
+.bgImgWrapp {
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  & img {
+    object-fit: cover;
+    object-position: 12% 0px;
+  }
 }
 
 .container {
