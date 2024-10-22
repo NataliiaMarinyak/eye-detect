@@ -4,14 +4,11 @@
   @include pageTopPadding;
   @include pageHero;
 
-  background-image: url("/images/about-asBgImg.webp");
+  background-image: url("/images/about-as-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   background-size: cover;
-
-  background-position: right 90% top 30%;
-  background-position: left -15% top 30%;
+  background-position: 12%;
 }
 
 .container {
