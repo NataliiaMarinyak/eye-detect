@@ -1,5 +1,6 @@
 import VideoSection from "@/sections/videoSection/VideoSection";
 import ServicesSection from "@/sections/servicesSection/ServicesSection";
+import TownsSection from "@/sections/townsSection/TownsSection";
 import GuaranteeSection from "@/sections/guaranteeSection/GuaranteeSection";
 import HomeFAQSection from "@/sections/homeSections/homeFAQSection/HomeFAQSection";
 import HomeConditionsSection from "@/sections/homeSections/homeConditionsSection/HomeConditionsSection";
@@ -24,6 +25,7 @@ const LocationIdPage = ({ params }) => {
         <>
             <VideoSection data={cityData} />
             <ServicesSection data={cityData} />
+            <TownsSection data={cityData} />
             <GuaranteeSection />
             <HomeFAQSection data={FAQData} />
             <HomeConditionsSection />

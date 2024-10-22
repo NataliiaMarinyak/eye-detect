@@ -11,6 +11,25 @@
     }
 
     @media screen and (min-width: $laptop) {
+        row-gap: 24px;
+    }
+}
+
+.subTitle {
+    @include pageTitle;
+}
+
+.servicesList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+
+    @media screen and (min-width: $tablet) {
+        row-gap: 20px;
+    }
+
+    @media screen and (min-width: $laptop) {
         row-gap: 32px;
     }
 }
