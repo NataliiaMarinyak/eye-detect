@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import styles from "./HeroSection.module.scss";
 
@@ -20,26 +21,16 @@ const HeroSection = () => {
         </div>
         <OpenModalBtn customBtn={styles.btn} />
       </div>
+      <div className={styles.bgImgWrapp}>
+        <Image
+          src="/images/hero-bg.webp"
+          alt=" Передові рішення для виявлення обману швидко і точно"
+          fill
+          sizes="100vw"
+        />
+      </div>
     </section>
   );
 };
-
-// const HeroSection = () => {
-//   return (
-//     <section id="hero" className={styles.hero}>
-//       <div className={`container ${styles.container}`}>
-//         <h1 className={styles.title}>
-//           Сучасний поліграф (детектор брехні) у Львові: точність та новітні
-//           технології EyeDetect
-//         </h1>
-//         <h2 className={styles.text}>
-//           Поліграф-тестування у Львові: швидка та достовірна перевірка за
-//           допомогою технології EyeDetect
-//         </h2>
-//         <OpenModalBtn customBtn={styles.btn} />
-//       </div>
-//     </section>
-//   );
-// };
 
 export default HeroSection;

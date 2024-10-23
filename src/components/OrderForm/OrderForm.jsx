@@ -5,15 +5,19 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { feedbackFormSchema } from "@/yupSchemas/feedbackFormSchema";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
-import styles from './OrderForm.module.scss';
+import styles from "./OrderForm.module.scss";
 
+import { useModalActions } from "@/hooks/modalActions";
 
 const OrderForm = () => {
-     const { t } = useTranslation();
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
   const schema = useMemo(() => feedbackFormSchema(), []);
+
+    const { closeModal } = useModalActions();
+
 
     const initialValues = {
         defaultValues: {
@@ -24,21 +28,29 @@ const OrderForm = () => {
         },
         resolver: yupResolver(schema),
         mode: "onChange",
-    };
+    };  
 
-    const form = useForm(initialValues);
-    const { register, handleSubmit, formState, reset } = form;
-    const { errors, isSubmitSuccessful, isValid, isSubmitting, isSubmitted, dirtyFields } = formState;
+  const form = useForm(initialValues);
+  const { register, handleSubmit, formState, reset } = form;
+  const {
+    errors,
+    isSubmitSuccessful,
+    isValid,
+    isSubmitting,
+    isSubmitted,
+    dirtyFields,
+  } = formState;
 
-    useEffect(() => {
-        if (isSubmitSuccessful) {
-            reset();
-        }
-    }, [isSubmitSuccessful, reset]);
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset();
+    }
+  }, [isSubmitSuccessful, reset]);
 
-    const onSubmit = (data) => {
+      const onSubmit = (data) => {
         // console.log("feedbackFormData:", data);
         sendToTelegram(data);
+        closeModal();
     };
 
 
@@ -155,5 +167,6 @@ const OrderForm = () => {
         </form >
     )
 }
+
 
 export default OrderForm
