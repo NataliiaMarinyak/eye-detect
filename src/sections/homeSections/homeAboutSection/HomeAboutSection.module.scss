@@ -43,15 +43,19 @@
 .aboutList {
   display: flex;
   flex-direction: column;
-  // align-items: flex-start;
   gap: 12px;
+
   & li {
     display: flex;
+    align-items: center;
     gap: 4px;
+  }
 
+  & h3 {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
+    font-size: 16px;
   }
 
   & svg {
@@ -64,11 +68,16 @@
     background-color: $footerBgColor;
     padding: 4px;
   }
+
   @media screen and (min-width: $tablet) {
     & li {
-      gap: 8px;
+      gap: 20px;
+    }
+
+    & h3 {
       font-size: 18px;
     }
+
     & svg {
       width: 48px;
       min-width: 48px;
@@ -80,10 +89,11 @@
   @media screen and (min-width: $laptop) {
     flex: 1.2;
     justify-content: space-between;
-    & li {
-      gap: 20px;
+
+    & h3 {
       font-size: 20px;
     }
+
     & svg {
       width: 56px;
       min-width: 56px;
