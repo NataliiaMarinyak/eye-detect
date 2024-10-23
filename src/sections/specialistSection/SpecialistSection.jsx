@@ -33,7 +33,7 @@ const SpecialistSection = () => {
                         <li key={i} className={styles.details}>
                           {!isLoading && <h4 className={styles.detailsTitle}>
                             <svg>
-                              <use href="./sprite.svg#icon-check-mark-in-circle"></use>
+                              <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                             </svg>
                             {i18n.language === currentLanguages.UA
                               ? det.subTitle : det.subTitleRus}

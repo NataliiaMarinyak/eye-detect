@@ -41,6 +41,18 @@
     "SpecialistSection": {
         "Title": "Наталя Мариняк – експерт з детектора брехні EyeDetect"
     },
+    "ContactsSection": {
+        "Title": "Детектор брехні EyeDetect: контакти в Україні та Європі"
+    },
+    "LocationSection": {
+        "Title": "Де пройти тест на поліграфі EyeDetect: Україна та Європа"
+    },
+    "UkrainianCitiesSection": {
+        "Title": "Перевірка на поліграфі EyeDetect в Україні"
+    },
+    "EuropeanCitiesSection": {
+        "Title": "Перевірка на поліграфі EyeDetect в Європі"
+    },
     "Form": {
         "Name": "Ваше ім’я",
         "Tel": "Номер телефону",
