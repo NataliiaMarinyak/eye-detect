@@ -1,25 +1,14 @@
 "use client";
-import { useContext } from "react";
 import styles from "./OpenModalBtn.module.scss";
-import { SiteContext } from "@/context/SiteContext";
-import { openModal } from "@/helpers/modalActions";
+import { useModalActions } from "@/hooks/modalActions";
 
 const OpenModalBtn = ({ customBtn }) => {
-  const { setModalFrame } = useContext(SiteContext);
-  const { setBackDrop } = useContext(SiteContext);
-
-  //   const openModal = () => {
-  //     setModalFrame(true);
-
-  //     setTimeout(() => {
-  //       setBackDrop(true);
-  //     }, 100);
-  //   };
+  const { openModal } = useModalActions();
 
   return (
     <button
       className={styles.btn + " " + customBtn}
-      onClick={() => openModal(setModalFrame, setBackDrop)}
+      onClick={openModal}
       type="button"
     >
       Замовити консультацію
