@@ -4,15 +4,17 @@ import React, { useContext, useEffect } from "react";
 import styles from "./Modal.module.scss";
 import { SiteContext } from "@/context/SiteContext";
 import OrderForm from "../OrderForm/OrderForm";
-import { closeModal } from "@/helpers/modalActions";
+import { useModalActions } from "@/hooks/modalActions";
 
 const Modal = () => {
-  const { modalFrame, setModalFrame } = useContext(SiteContext);
-  const { backDrop, setBackDrop } = useContext(SiteContext);
+  const { modalFrame } = useContext(SiteContext);
+  const { backDrop } = useContext(SiteContext);
+
+  const { closeModal } = useModalActions();
 
   const closeModalFrame = (e) => {
     if (e.target.id === "backDrop") {
-      closeModal(setBackDrop, setModalFrame);
+      closeModal();
     } else {
       return;
     }
