@@ -41,6 +41,18 @@
     "SpecialistSection": {
         "Title": "Наталья Мариняк – эксперт детектора лжи EyeDetect"
     },
+    "ContactsSection": {
+        "Title": "Детектор лжи EyeDetect: контакты в Украине и Европе"
+    },
+    "LocationSection": {
+        "Title": "Где пройти тест на полиграфе EyeDetect: Украина и Европа"
+    },
+    "UkrainianCitiesSection": {
+        "Title": "Проверка на полиграфе EyeDetect в Украине"
+    },
+    "EuropeanCitiesSection": {
+        "Title": "Проверка на полиграфе EyeDetect в Европе"
+    },
     "Form": {
         "Name": "Ваше имя",
         "Tel": "Номер телефона",

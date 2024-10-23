@@ -1,13 +1,23 @@
+"use client";
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
+import { currentLanguages } from "@/data/languages";
+import { addressData } from '@/data/addressData';
 import styles from './LocationSection.module.scss';
 
 
 const LocationSection = () => {
+    const { t, i18n } = useTranslation();
+    const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => setIsLoading(false), []);
+
+
     return (
         <section className={styles.section}>
             <div className={`container ${styles.container}`}>
-                <h1 className={styles.title}>Де пройти тест на поліграфі EyeDetect: Україна та Європа</h1>
+                {!isLoading && <h1 className={styles.title}>{t('LocationSection.Title')}</h1>}
 
                 <div className={styles.mapWrapper}>
                     <iframe
@@ -19,16 +29,19 @@ const LocationSection = () => {
                     ></iframe>
                 </div>
 
-                <Link
-                    href="https://maps.app.goo.gl/pziDUUpQtqttVmKC7"
+                {!isLoading && <a
+                    href={addressData.hrefLink}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className={styles.locationLink}
                 >
                     <svg className={styles.icon}>
-                        <use href="./sprite.svg#icon-map_pin"></use>
+                        <use href="/sprite.svg#icon-map_pin"></use>
                     </svg>
-                    Львів, вул. Данилишина 6, оф. 217
-                </Link>
+                    {i18n.language === currentLanguages.UA
+                        ? addressData.textAddress
+                        : addressData.textAddressRus}
+                </a>}
 
                 <OpenModalBtn />
             </div>
