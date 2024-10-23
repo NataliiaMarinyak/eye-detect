@@ -1,5 +1,6 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { feedbackFormSchema } from "@/yupSchemas/feedbackFormSchema";
@@ -8,6 +9,12 @@ import styles from './OrderForm.module.scss';
 
 
 const OrderForm = () => {
+     const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
+
+  const schema = useMemo(() => feedbackFormSchema(), []);
+
     const initialValues = {
         defaultValues: {
             name: "",
@@ -15,7 +22,7 @@ const OrderForm = () => {
             email: "",
             comment: "",
         },
-        resolver: yupResolver(feedbackFormSchema),
+        resolver: yupResolver(schema),
         mode: "onChange",
     };
 
@@ -40,7 +47,7 @@ const OrderForm = () => {
             className={styles.form}
             onSubmit={handleSubmit(onSubmit)}
         >
-            <div className={styles.inputWrap}>
+            {!isLoading && <div className={styles.inputWrap}>
                 {!dirtyFields.name && !errors.name && <svg className={styles.iconMark}>
                     <use href='/sprite.svg#icon-important'></use>
                 </svg>}
@@ -62,8 +69,7 @@ const OrderForm = () => {
                 <input
                     type='text'
                     {...register("name")}
-                    // placeholder={t('Form.Name')}
-                    placeholder='Ваше Ім’я'
+                    placeholder={t('Form.Name')}
                     maxLength='30'
                     autoComplete='off'
                     className={
@@ -72,9 +78,9 @@ const OrderForm = () => {
                             : styles.input
                     }
                 />
-            </div>
+            </div>}
 
-            <div className={styles.inputWrap}>
+            {!isLoading && <div className={styles.inputWrap}>
                 {!dirtyFields.tel && !errors.tel && <svg className={styles.iconMark}>
                     <use href='/sprite.svg#icon-important'></use>
                 </svg>}
@@ -96,8 +102,7 @@ const OrderForm = () => {
                 <input
                     type='text'
                     {...register("tel")}
-                    // placeholder={t('Form.Phone')}
-                    placeholder='Номер телефону'
+                    placeholder={t('Form.Tel')}
                     maxLength='13'
                     autoComplete='off'
                     className={
@@ -106,16 +111,15 @@ const OrderForm = () => {
                             : styles.input
                     }
                 />
-            </div>
+            </div>}
 
-            <div className={styles.inputWrap}>
+            {!isLoading && <div className={styles.inputWrap}>
                 <p className={styles.error}>{errors.email?.message}</p>
 
                 <input
                     type='text'
                     {...register("email")}
-                    // placeholder={t('Form.Email')}
-                    placeholder='Електронна пошта'
+                    placeholder={t('Form.Email')}
                     autoComplete='off'
                     className={
                         errors.email
@@ -123,21 +127,20 @@ const OrderForm = () => {
                             : styles.input
                     }
                 />
-            </div>
+            </div>}
 
-            <div className={`${styles.inputWrap} ${styles.textareaWrap}`}>
+            {!isLoading && <div className={`${styles.inputWrap} ${styles.textareaWrap}`}>
                 <p className={styles.error}>{errors.comment?.message}</p>
                 <textarea
                     className={`${styles.input} ${styles.textarea}`}
                     cols='30'
                     rows='2'
-                    // placeholder={t('Form.TextArea')}
-                    placeholder='Коментар'
+                    placeholder={t('Form.TextArea')}
                     {...register("comment")}
                 />
-            </div>
+            </div>}
 
-            <button
+           { !isLoading && <button
                 type='submit'
                 disabled={isSubmitting}
                 className={
@@ -147,9 +150,8 @@ const OrderForm = () => {
                 }
 
             >
-                {/* {t('Buttons.SendRequest')} */}
-                Відправити
-            </button>
+                {t('Buttons.SendRequest')}
+            </button>}
         </form >
     )
 }

@@ -1,12 +1,12 @@
 "use client";
 
-import LangSwitcher from "@/components/LangSwitcher/LangSwitcher";
 import Navigation from "@/components/Navigation/Navigation";
 import { useWindowResize } from "@/hooks/windowResize";
 import { useCallback, useContext, useEffect, useRef } from "react";
 import { SiteContext } from "@/context/SiteContext";
 import React from "react";
 import styles from "./MobMenu.module.scss";
+import TranslatorBtnBlock from "@/components/TranslatorBtnBlock/TranslatorBtnBlock";
 
 const MobMenu = () => {
   const { isMobile, isTablet } = useWindowResize();
@@ -15,7 +15,7 @@ const MobMenu = () => {
 
   const onWindowClick = useCallback(
     (e) => {
-      if (e.target.id === navMenu.current.id || e.target.nodeName === "SPAN") {
+      if (e.target.id === navMenu.current.id || e.target.nodeName === "LI") {
         return;
       } else {
         setIsMobileMenu(false);
@@ -23,6 +23,7 @@ const MobMenu = () => {
     },
     [setIsMobileMenu]
   );
+
   useEffect(() => {
     if (typeof window !== "undefined" && isMobileMenu) {
       setTimeout(() => {
@@ -46,7 +47,9 @@ const MobMenu = () => {
           id="mobileMenu"
           ref={navMenu}
         >
-          <LangSwitcher id={styles.langSwitcher} />
+          <TranslatorBtnBlock
+            className={styles.translatorMobile}
+          />
 
           <Navigation className={styles.nav} isInHeader="true" />
         </div>

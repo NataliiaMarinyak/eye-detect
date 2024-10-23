@@ -1,9 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { currentLanguages } from "@/data/languages";
 import styles from "./HomeFAQSection.module.scss";
 
 
 const HomeFAQSection = ({ data }) => {
+  const { t, i18n } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
+
   const [openItems, setOpenItems] = useState([]);
 
   const handleOpen = (id) => {
@@ -19,9 +25,9 @@ const HomeFAQSection = ({ data }) => {
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        <h2 className={styles.title}>
-          Часті питання про детектор брехні EyeDetect
-        </h2>
+        {!isLoading && <h2 className={styles.title}>
+          {t('HomeFAQSection.Title')}
+        </h2>}
         <ul>
           {data.map((el, i) => {
             const id = i + 1;
@@ -29,24 +35,26 @@ const HomeFAQSection = ({ data }) => {
 
             return (
               <li key={id} className={styles.faqItem}>
-                <h3
+                {!isLoading && <h3
                   data-id={id}
                   className={styles.faqTitle}
                   onClick={() => handleOpen(id)}
                 >
-                  {el.question}
+                  {i18n.language === currentLanguages.UA
+            ? el.question : el.questionRus}
                   <svg
                     className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
                   >
                     <use href="./sprite.svg#icon-close"></use>
                   </svg>
-                </h3>
+                </h3>}
 
                 <div
                   className={`${styles.answerWrapp} ${isActive ? styles.isOpen : styles.isClosed
                     }`}
                 >
-                  <h4 className={styles.answer}>{el.answer}</h4>
+                  {!isLoading && <h4 className={styles.answer}>{i18n.language === currentLanguages.UA
+            ? el.answer : el.answerRus}</h4>}
                 </div>
               </li>
             );

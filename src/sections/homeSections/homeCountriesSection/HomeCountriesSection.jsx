@@ -1,14 +1,22 @@
+"use client";
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import ButtonLink from '@/components/Buttons/ButtonLink/ButtonLink';
 import styles from './HomeCountriesSection.module.scss';
 
 
 const HomeCountriesSection = () => {
+ const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
+
+
   return <section>
     <div className={`container ${styles.container}`}>
       <div className={styles.titlesWrapper}>
-        <h2 className={styles.title}>Технологія EyeDetect у Європі</h2>
-        <h3 className={styles.subTitle}>виїзд у центри Європейських країн</h3>
+        {!isLoading && <h2 className={styles.title}>{t('HomeCountriesSection.Title')}</h2>}
+        {!isLoading && <h3 className={styles.subTitle}>{t('HomeCountriesSection.SubTitle')}</h3>}
       </div>
       <div className={styles.imgWrapper}>
         {/* возможно, попробовать оставить один компонент Image и, в зависимости от результата useResize (до laptop или после), менять src */}
@@ -28,7 +36,7 @@ const HomeCountriesSection = () => {
         />
       </div>
       {/* href='/contacts' must be changed */}
-      <ButtonLink href='/locations' title="Дізнатись більше" />
+      <ButtonLink href='/locations' />
     </div>
   </section>;
 };
