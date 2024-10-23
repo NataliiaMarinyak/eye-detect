@@ -8,7 +8,7 @@ const GuaranteeSection = () => {
     <section>
       <div className={`container ${styles.container}`}>
         <h2 className={styles.title}>
-          Гарантія конфіденційості тестування EyeDetect
+          Гарантія конфіденційності тестування EyeDetect
         </h2>
         <ul className={styles.list}>
           {confidentGuaranty.map((el, i) => {
