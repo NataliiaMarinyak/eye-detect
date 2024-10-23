@@ -29,7 +29,8 @@
   width: 36px;
   height: 36px;
   padding: 2px;
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: inset -2px 2px 8px rgba(56, 75, 94, 0.5);
     padding: 6px;
 
