@@ -45,7 +45,7 @@ const HomeFAQSection = ({ data }) => {
                   <svg
                     className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
                   >
-                    <use href="./sprite.svg#icon-close"></use>
+                    <use href="/sprite.svg#icon-close"></use>
                   </svg>
                 </h3>}
 

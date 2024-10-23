@@ -29,10 +29,10 @@ const HomeAboutSection = () => {
               return (
                 <li key={i}>
                   <svg>
-                    <use href="./sprite.svg#icon-check-mark-in-circle"></use>
+                    <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                   </svg>
                   {!isLoading && <h3>{i18n.language === currentLanguages.UA
-            ? el.text : el.textRus}</h3>}
+                    ? el.text : el.textRus}</h3>}
                 </li>
               );
             })}

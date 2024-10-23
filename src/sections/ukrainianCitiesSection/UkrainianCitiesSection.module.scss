@@ -1,6 +1,11 @@
 @import "../../app/variables";
 
 .section {
+    padding: 20px 16px;
+
+    @media screen and (min-width: 327px) {
+        padding: 20px;
+    }
 
     @media screen and (min-width: $tablet) {
         padding: 20px 40px 32px;
@@ -31,7 +36,7 @@
 .title {
     @include sectionTitle;
 
-    font-size: 21px;
+    font-size: 20px;
 
     @media screen and (min-width: 334px) and (max-width:767px) {
         font-size: 22px;
@@ -59,16 +64,24 @@
 
 .cityItem {
     width: calc((100% - 2px) / 2);
-    max-width: 140px;
+    // max-width: 140px;
+    max-width: 143px;
     font-size: 14px;
 
     @media screen and (min-width: $tablet) {
-        max-width: 180px;
+        // max-width: 180px;
+        max-width: 183px;
         font-size: 18px;
     }
 
     @media screen and (min-width: $laptop) {
-        max-width: 200px;
+        // max-width: 200px;
+        max-width: 204px;
         font-size: 20px;
     }
+}
+
+.cityLink:hover,
+.cityLink:focus {
+    background-color: $btnHoverBgColor;
 }

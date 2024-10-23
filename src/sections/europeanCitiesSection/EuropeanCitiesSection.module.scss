@@ -4,6 +4,10 @@
     padding: 20px 0px;
 
     @media screen and (min-width: 360px) {
+        padding: 20px 8px;
+    }
+
+    @media screen and (min-width: 383px) {
         padding: 20px;
     }
 
@@ -23,7 +27,7 @@
     row-gap: 16px;
 
     @media screen and (min-width: $tablet) {
-        width: 460px;
+        width: 480px;
         row-gap: 20px;
     }
 
@@ -37,7 +41,7 @@
     @include sectionTitle;
 
     padding: 0px 20px;
-    font-size: 21px;
+    font-size: 20px;
 
     @media screen and (min-width: 334px) and (max-width:767px) {
         padding: 0px;
@@ -49,7 +53,7 @@
     }
 }
 
-.citiesWrapper {
+.locationsWrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -57,12 +61,12 @@
     row-gap: 4px;
     padding: 0px 2px;
 
-    @media screen and (min-width: 360px) {
-        width: calc(100vw - 40px);
+    @media screen and (min-width: 383px) {
+        width: 343px;
     }
 
-    @media screen and (min-width: 380px) {
-        width: 340px;
+    @media screen and (min-width: 400px) {
+        width: 360px;
     }
 
     @media screen and (min-width: $tablet) {
@@ -77,16 +81,20 @@
     }
 }
 
-.cityItem {
+.locationItem {
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
+
+    @media screen and (min-width:383px) {
+        font-size: 14px;
+    }
 
     @media screen and (min-width: $tablet) {
         font-size: 18px;
     }
 
     @media screen and (min-width: $laptop) {
-        max-width: 470px;
+        max-width: 460px;
     }
 }
 
@@ -104,12 +112,12 @@
 .country {
     width: 165px;
 
-    @media screen and (min-width: $tablet) {
-        width: 212px;
+    @media screen and (min-width: 343px) {
+        width: 190px;
     }
 
-    @media screen and (min-width: $laptop) {
-        width: 274px;
+    @media screen and (min-width: $tablet) {
+        width: 230px;
     }
 }
 
@@ -120,10 +128,6 @@
     @media screen and (min-width: $tablet) {
         width: 230px;
         padding-left: 40px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        width: 264px;
     }
 }
 
