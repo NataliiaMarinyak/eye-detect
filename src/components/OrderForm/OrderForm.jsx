@@ -1,5 +1,6 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { feedbackFormSchema } from "@/yupSchemas/feedbackFormSchema";
@@ -9,18 +10,25 @@ import styles from "./OrderForm.module.scss";
 import { useModalActions } from "@/hooks/modalActions";
 
 const OrderForm = () => {
-  const { closeModal } = useModalActions();
+  const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
 
-  const initialValues = {
-    defaultValues: {
-      name: "",
-      tel: "",
-      email: "",
-      comment: "",
-    },
-    resolver: yupResolver(feedbackFormSchema),
-    mode: "onChange",
-  };
+  const schema = useMemo(() => feedbackFormSchema(), []);
+
+    const { closeModal } = useModalActions();
+
+
+    const initialValues = {
+        defaultValues: {
+            name: "",
+            tel: "",
+            email: "",
+            comment: "",
+        },
+        resolver: yupResolver(schema),
+        mode: "onChange",
+    };  
 
   const form = useForm(initialValues);
   const { register, handleSubmit, formState, reset } = form;
@@ -39,127 +47,126 @@ const OrderForm = () => {
     }
   }, [isSubmitSuccessful, reset]);
 
-  const onSubmit = (data) => {
-    // console.log("feedbackFormData:", data);
-    sendToTelegram(data);
-    closeModal();
-  };
+      const onSubmit = (data) => {
+        // console.log("feedbackFormData:", data);
+        sendToTelegram(data);
+        closeModal();
+    };
 
-  return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-      <div className={styles.inputWrap}>
-        {!dirtyFields.name && !errors.name && (
-          <svg className={styles.iconMark}>
-            <use href="/sprite.svg#icon-important"></use>
-          </svg>
-        )}
 
-        {errors.name && (
-          <svg className={styles.iconError}>
-            <use href="/sprite.svg#icon-error" />
-          </svg>
-        )}
+    return (
+        <form
+            className={styles.form}
+            onSubmit={handleSubmit(onSubmit)}
+        >
+            {!isLoading && <div className={styles.inputWrap}>
+                {!dirtyFields.name && !errors.name && <svg className={styles.iconMark}>
+                    <use href='/sprite.svg#icon-important'></use>
+                </svg>}
 
-        {dirtyFields.name && !errors.name && (
-          <svg className={styles.iconSuccess}>
-            <use href="/sprite.svg#icon-success" />
-          </svg>
-        )}
+                {errors.name && (
+                    <svg className={styles.iconError}>
+                        <use href='/sprite.svg#icon-error' />
+                    </svg>
+                )}
 
-        <p className={styles.error}>{errors.name?.message}</p>
+                {dirtyFields.name && !errors.name && (
+                    <svg className={styles.iconSuccess}>
+                        <use href='/sprite.svg#icon-success' />
+                    </svg>
+                )}
 
-        <input
-          type="text"
-          {...register("name")}
-          // placeholder={t('Form.Name')}
-          placeholder="Ваше Ім’я"
-          maxLength="30"
-          autoComplete="off"
-          className={
-            dirtyFields.name && !errors.name
-              ? `${styles.input} ${styles.successInput}`
-              : styles.input
-          }
-        />
-      </div>
+                <p className={styles.error}>{errors.name?.message}</p>
 
-      <div className={styles.inputWrap}>
-        {!dirtyFields.tel && !errors.tel && (
-          <svg className={styles.iconMark}>
-            <use href="/sprite.svg#icon-important"></use>
-          </svg>
-        )}
+                <input
+                    type='text'
+                    {...register("name")}
+                    placeholder={t('Form.Name')}
+                    maxLength='30'
+                    autoComplete='off'
+                    className={
+                        dirtyFields.name && !errors.name
+                            ? `${styles.input} ${styles.successInput}`
+                            : styles.input
+                    }
+                />
+            </div>}
 
-        {errors.tel && (
-          <svg className={styles.iconError}>
-            <use href="/sprite.svg#icon-error" />
-          </svg>
-        )}
+            {!isLoading && <div className={styles.inputWrap}>
+                {!dirtyFields.tel && !errors.tel && <svg className={styles.iconMark}>
+                    <use href='/sprite.svg#icon-important'></use>
+                </svg>}
 
-        {dirtyFields.tel && !errors.tel && (
-          <svg className={styles.iconSuccess}>
-            <use href="/sprite.svg#icon-success" />
-          </svg>
-        )}
+                {errors.tel && (
+                    <svg className={styles.iconError}>
+                        <use href='/sprite.svg#icon-error' />
+                    </svg>
+                )}
 
-        <p className={styles.error}>{errors.tel?.message}</p>
+                {dirtyFields.tel && !errors.tel && (
+                    <svg className={styles.iconSuccess}>
+                        <use href='/sprite.svg#icon-success' />
+                    </svg>
+                )}
 
-        <input
-          type="text"
-          {...register("tel")}
-          // placeholder={t('Form.Phone')}
-          placeholder="Номер телефону"
-          maxLength="13"
-          autoComplete="off"
-          className={
-            dirtyFields.tel && !errors.tel
-              ? `${styles.input} ${styles.successInput}`
-              : styles.input
-          }
-        />
-      </div>
+                <p className={styles.error}>{errors.tel?.message}</p>
 
-      <div className={styles.inputWrap}>
-        <p className={styles.error}>{errors.email?.message}</p>
+                <input
+                    type='text'
+                    {...register("tel")}
+                    placeholder={t('Form.Tel')}
+                    maxLength='13'
+                    autoComplete='off'
+                    className={
+                        dirtyFields.tel && !errors.tel
+                            ? `${styles.input} ${styles.successInput}`
+                            : styles.input
+                    }
+                />
+            </div>}
 
-        <input
-          type="text"
-          {...register("email")}
-          // placeholder={t('Form.Email')}
-          placeholder="Електронна пошта"
-          autoComplete="off"
-          className={
-            errors.email ? `${styles.input} ${styles.errorInput}` : styles.input
-          }
-        />
-      </div>
+            {!isLoading && <div className={styles.inputWrap}>
+                <p className={styles.error}>{errors.email?.message}</p>
 
-      <div className={`${styles.inputWrap} ${styles.textareaWrap}`}>
-        <p className={styles.error}>{errors.comment?.message}</p>
-        <textarea
-          className={`${styles.input} ${styles.textarea}`}
-          cols="30"
-          rows="2"
-          // placeholder={t('Form.TextArea')}
-          placeholder="Коментар"
-          {...register("comment")}
-        />
-      </div>
+                <input
+                    type='text'
+                    {...register("email")}
+                    placeholder={t('Form.Email')}
+                    autoComplete='off'
+                    className={
+                        errors.email
+                            ? `${styles.input} ${styles.errorInput}`
+                            : styles.input
+                    }
+                />
+            </div>}
 
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className={
-          !isSubmitted || (isValid && isSubmitted)
-            ? `${styles.submitButton} ${styles.activeBtn}`
-            : styles.submitButton
-        }
-      >
-        {/* {t('Buttons.SendRequest')} */}
-        Відправити
-      </button>
-    </form>
-  );
-};
+            {!isLoading && <div className={`${styles.inputWrap} ${styles.textareaWrap}`}>
+                <p className={styles.error}>{errors.comment?.message}</p>
+                <textarea
+                    className={`${styles.input} ${styles.textarea}`}
+                    cols='30'
+                    rows='2'
+                    placeholder={t('Form.TextArea')}
+                    {...register("comment")}
+                />
+            </div>}
 
-export default OrderForm;
+           { !isLoading && <button
+                type='submit'
+                disabled={isSubmitting}
+                className={
+                    !isSubmitted || (isValid && isSubmitted)
+                        ? `${styles.submitButton} ${styles.activeBtn}`
+                        : styles.submitButton
+                }
+
+            >
+                {t('Buttons.SendRequest')}
+            </button>}
+        </form >
+    )
+}
+
+
+export default OrderForm

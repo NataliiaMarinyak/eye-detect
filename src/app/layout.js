@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { SiteProvider } from "@/context/SiteContext";
 import Modal from "@/components/Modal/Modal";
+import TranslatorProvider from "@/translator/TranslatorProvider";
 
 const ukraineHeadRegular = localFont({
   src: "./fonts/e-UkraineHead-Regular.otf",
@@ -31,13 +32,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${ukraineHeadRegular.variable} ${ukraineBold.variable} ${ukraineRegular.variable}`}
-        // style={{ overflowX: "hidden" }}
+      // style={{ overflowX: "hidden" }}
       >
         <SiteProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <Modal />
+          <TranslatorProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <Modal />
+          </TranslatorProvider>
         </SiteProvider>
       </body>
     </html>

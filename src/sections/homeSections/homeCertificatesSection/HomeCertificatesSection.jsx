@@ -1,3 +1,6 @@
+"use client";
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import ButtonLink from '@/components/Buttons/ButtonLink/ButtonLink';
@@ -5,9 +8,14 @@ import styles from './HomeCertificatesSection.module.scss';
 
 
 const HomeCertificatesSection = ({ isOnHomePage }) => {
+  const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
+
+
   return <section>
     <div className={`container ${styles.container}`}>
-      <h2 className={styles.title}>Професійна освіта поліграфолога EyeDetect</h2>
+      {!isLoading && <h2 className={styles.title}>{t('HomeCertificatesSection.Title')}</h2>}
       <div className={styles.certificatesWrapper}>
         <div className={styles.certWrap}>
           <Image
@@ -30,7 +38,7 @@ const HomeCertificatesSection = ({ isOnHomePage }) => {
       </div>
       <div className={styles.btnWrapper}>
         <OpenModalBtn />
-        {isOnHomePage && <ButtonLink href='/about-us' title="Дізнатись більше" customBtn={styles.detailsBtn} />}
+        {isOnHomePage && <ButtonLink href='/about-us' customBtn={styles.detailsBtn}></ButtonLink>}
       </div>
     </div>
   </section>

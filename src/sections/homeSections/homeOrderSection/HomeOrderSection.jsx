@@ -1,26 +1,33 @@
-import OrderForm from '@/components/OrderForm/OrderForm';
+"use client";
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';import OrderForm from '@/components/OrderForm/OrderForm';
+import { currentLanguages } from "@/data/languages";
 import styles from './HomeOrderSection.module.scss';
 
 
 const HomeOrderSection = () => {
+  const { t, i18n } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
+
+  
   return <section id="order">
     <div className={`container ${styles.container}`}>
-      <h2 className={styles.title}>Зв’язатись з нами</h2>
+      {!isLoading && <h2 className={styles.title}>{t('HomeOrderSection.Title')}</h2>}
       <div className={styles.contentWrap}>
         <div className={styles.infoWrapper}>
           <ul className={styles.infoList}>
-            <li className={styles.infoItem}>Для замовлення тестування на поліграфі (детекторі брехні) Eye Detect залиште свої дані у формі, або зверніться до нас за вказаними контактами.</li>
-            <li className={styles.infoItem}>Атестований експерт та психолог
-              (поліграфолог), кандидат психологічних наук, доцент
-              Наталя Мариняк зв’яжеться з Вами найближчим часом</li>
+            {!isLoading && <li className={styles.infoItem}>{t('HomeOrderSection.Question')}</li>}
+            {!isLoading && <li className={styles.infoItem}>{t('HomeOrderSection.Answer')}</li>}
           </ul>
           <address>
-            <a className={styles.addressLink} href="https://maps.app.goo.gl/dP8aPY264zdKpEoT6" target="_blank" rel="noopener noreferrer">
+            {!isLoading && <a className={styles.addressLink} href="https://maps.app.goo.gl/dP8aPY264zdKpEoT6" target="_blank" rel="noopener noreferrer">
               <svg className={styles.icon}>
                 <use href={`/sprite.svg#icon-map_pin`} />
               </svg>
-              Львів, вул. Данилишина 6, оф. 217
-            </a>
+              {i18n.language === currentLanguages.UA
+            ? "Львів, вул. Данилишина 6, оф. 217" : "Львов, ул. Данилишина 6, оф. 217"}
+            </a>}
           </address>
         </div>
         <OrderForm />

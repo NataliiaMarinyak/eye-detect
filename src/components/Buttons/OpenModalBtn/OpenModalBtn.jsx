@@ -1,9 +1,17 @@
 "use client";
-import styles from "./OpenModalBtn.module.scss";
+import { useContext, useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { useModalActions } from "@/hooks/modalActions";
+import styles from "./OpenModalBtn.module.scss";
+
 
 const OpenModalBtn = ({ customBtn }) => {
+  const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
+ 
   const { openModal } = useModalActions();
+
 
   return (
     <button
@@ -11,9 +19,10 @@ const OpenModalBtn = ({ customBtn }) => {
       onClick={openModal}
       type="button"
     >
-      Замовити консультацію
+      {!isLoading && t('Buttons.OrderConsultation')}
     </button>
   );
 };
+
 
 export default OpenModalBtn;
