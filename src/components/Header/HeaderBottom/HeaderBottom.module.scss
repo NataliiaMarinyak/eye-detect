@@ -17,6 +17,7 @@
     font-size: 20px;
     height: 48px;
   }
+
   @media screen and (min-width: $laptop) {
     height: 58px;
   }
@@ -43,7 +44,7 @@
   }
 }
 
-#langSwitcher {
+.translatorDesktop {
   display: none;
 
   @media screen and (min-width: $laptop) {
@@ -53,6 +54,7 @@
 
 .logo {
   margin-left: auto;
+
   @media screen and (min-width: $laptop) {
     margin-left: 0;
   }

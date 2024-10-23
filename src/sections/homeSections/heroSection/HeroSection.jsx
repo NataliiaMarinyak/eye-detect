@@ -1,18 +1,23 @@
+"use client";
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Image from "next/image";
-import styles from "./HeroSection.module.scss";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
+import styles from "./HeroSection.module.scss";
+
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
+
+
   return (
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
         <div>
-          <p className={styles.title}>
-            Передові рішення для виявлення обману швидко і точно
-          </p>
-          <p className={styles.text}>
-            Швидка та достовірна перевірка за допомогою технології EyeDetect
-          </p>
+          {!isLoading && <p className={styles.title}>{t('HeroSection.Title')}</p>}
+          {!isLoading && <p className={styles.text}>{t('HeroSection.Text')}</p>}
         </div>
         <OpenModalBtn customBtn={styles.btn} />
       </div>
