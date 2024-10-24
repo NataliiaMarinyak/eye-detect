@@ -1,7 +1,7 @@
-import Link from "next/link";
 import Navigation from "../Navigation/Navigation";
 import styles from "./Footer.module.scss";
 import FooterSocMedia from "./FooterSocMedia/FooterSocMedia";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 const Footer = () => {
   return (
@@ -12,9 +12,8 @@ const Footer = () => {
           itemStyles={styles.item}
         />
         <Navigation className={`${styles.list} ${styles.nav}`} />
-        <Link href="/" className={styles.privacy}>
-          Політика Конфіденційності
-        </Link>
+
+        <PrivacyPolicy className={styles.privacy} />
       </div>
     </footer>
   );

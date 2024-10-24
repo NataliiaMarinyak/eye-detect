@@ -1,10 +1,19 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./HeaderTop.module.scss";
 import { phone } from "../../../data/socialMediaData";
 import { headerSocLinks } from "../../../data/socialMediaData";
+import { useTranslation } from "react-i18next";
 
 const HeaderTop = () => {
+  const { t } = useTranslation();
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => setIsLoading(false), []);
+
   return (
     <div className={`${styles.headerTopWrapper}`}>
       <div className={`container ${styles.headerTop}`}>
@@ -15,12 +24,14 @@ const HeaderTop = () => {
           {phone.contact}
         </Link>
 
-        <Link href="/locations" className={styles.link}>
-          <svg>
-            <use href="/sprite.svg#icon-map_pin"></use>
-          </svg>
-          виїзд по Україні та Європі
-        </Link>
+        {!isLoading && (
+          <Link href="/locations" className={styles.link}>
+            <svg>
+              <use href="/sprite.svg#icon-map_pin"></use>
+            </svg>
+            {t("Header.TopTitle")}
+          </Link>
+        )}
 
         <ul className={styles.socLinks}>
           {headerSocLinks.map((el) => {
