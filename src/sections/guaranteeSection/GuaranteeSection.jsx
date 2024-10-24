@@ -1,15 +1,25 @@
-import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
-import styles from "./GuaranteeSection.module.scss";
+"use client";
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Image from "next/image";
+import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { confidentGuaranty } from "@/data/confidentGuaranty";
+import { currentLanguages } from "@/data/languages";
+import styles from "./GuaranteeSection.module.scss";
+
 
 const GuaranteeSection = () => {
+  const { t, i18n } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
+
+
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        <h2 className={styles.title}>
-          Гарантія конфіденційності тестування EyeDetect
-        </h2>
+        {!isLoading && <h2 className={styles.title}>
+          {t('GuaranteeSection.Title')}
+        </h2>}
         <ul className={styles.list}>
           {confidentGuaranty.map((el, i) => {
             return (
@@ -17,7 +27,8 @@ const GuaranteeSection = () => {
                 <svg className={styles.icon}>
                   <use href="/sprite.svg#icon-cross-in-circle"></use>
                 </svg>
-                <p className={styles.text}>{el.text}</p>
+                {!isLoading && <p className={styles.text}>{i18n.language === currentLanguages.UA
+                  ? el.text : el.textRus}</p>}
               </li>
             );
           })}
