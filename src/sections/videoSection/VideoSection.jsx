@@ -1,15 +1,22 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'next/navigation';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
+import { getCityData } from '@/helpers/getCityData';
 import { currentLanguages } from "@/data/languages";
 import styles from './VideoSection.module.scss';
 
 
-const VideoSection = ({ data }) => {
+const VideoSection = () => {
     const { i18n } = useTranslation();
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => setIsLoading(false), []);
+
+    const { slug } = useParams();
+
+    const data = getCityData(slug);
+
 
     return (
         <section className={styles.section}>
