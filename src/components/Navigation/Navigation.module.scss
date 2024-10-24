@@ -1,6 +1,9 @@
 @import "../../app/variables";
 
 .activeLink {
+  padding: 4px;
+  transition-duration: 250ms;
+  font-size: 20px;
   background-color: $btnBgColor;
   color: $textLightColor;
 }

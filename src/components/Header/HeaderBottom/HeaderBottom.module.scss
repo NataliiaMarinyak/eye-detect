@@ -26,21 +26,19 @@
 .nav {
   display: none;
   gap: 16px;
-  font-size: 20px;
 
   @media screen and (min-width: $laptop) {
     display: flex;
+  }
+}
+.navLink {
+  padding: 4px;
+  transition-duration: 250ms;
+  font-size: 20px;
 
-    & a {
-      padding: 4px;
-      transition-duration: 250ms;
-
-      &:hover,
-      &:focus {
-        background-color: $btnBgColor;
-        color: $textLightColor;
-      }
-    }
+  &:hover,
+  &:focus {
+    background-color: $btnHoverBgColor;
   }
 }
 

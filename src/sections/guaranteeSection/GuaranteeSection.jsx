@@ -34,7 +34,12 @@ const GuaranteeSection = () => {
           })}
         </ul>
         <div className={styles.imgWrapp}>
-          <Image src="/images/specialist3.webp" alt="qwe" fill sizes="100vw" />
+          <Image
+            src="/images/specialist3.webp"
+            alt=" Гарантія конфіденційності тестування EyeDetect"
+            fill
+            sizes="(max-width: 1023px) 100vw, 960px"
+          />
         </div>
         <OpenModalBtn customBtn={styles.btn} />
       </div>

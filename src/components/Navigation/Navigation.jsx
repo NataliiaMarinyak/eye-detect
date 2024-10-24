@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { currentLanguages } from "@/data/languages";
 
-const Navigation = ({ className, isInHeader }) => {
+const Navigation = ({ className, isInHeader, linkStyles }) => {
   const { setIsMobileMenu } = useContext(SiteContext);
 
   const pathname = usePathname();
@@ -28,7 +28,7 @@ const Navigation = ({ className, isInHeader }) => {
           if (pathname === el.href && isInHeader) {
             return `${styles.activeLink}`;
           } else {
-            return;
+            return `${linkStyles}`;
           }
         };
 
