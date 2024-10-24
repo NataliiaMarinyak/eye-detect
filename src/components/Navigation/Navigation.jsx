@@ -1,16 +1,25 @@
 "use client";
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "./Navigation.module.scss";
 import { navLinks } from "../../data/navigation";
 import Link from "next/link";
 import { SiteContext } from "@/context/SiteContext";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
+import { currentLanguages } from "@/data/languages";
 
 const Navigation = ({ className, isInHeader }) => {
   const { setIsMobileMenu } = useContext(SiteContext);
 
   const pathname = usePathname();
+
+  const { i18n } = useTranslation();
+
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => setIsLoading(false), []);
+
+  const isUa = !isLoading && i18n.language === currentLanguages.UA;
 
   return (
     <nav className={`${styles.nav} ${className}`}>
@@ -32,7 +41,7 @@ const Navigation = ({ className, isInHeader }) => {
             }}
             className={pageLinkClassName()}
           >
-            {el.title}
+            {!isUa ? el.titleRus : el.title}
           </Link>
         );
       })}

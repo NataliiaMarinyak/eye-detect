@@ -1,72 +1,79 @@
 {
-    "HeroSection": {
-        "Title": "Передові рішення для виявлення обману швидко і точно",
-        "Text": "Швидка та достовірна перевірка за допомогою технології EyeDetect"
-    },
-    "HomeAboutSection": {
-        "Title": "Сучасний поліграф “детектор брехні” у Львові: точність та новітні технології EyeDetect",
-        "SubTitle": "Поліграф-тестування у Львові: швидка та достовірна перевірка за допомогою технології EyeDetect"
-    },
-    "HomeCertificatesSection": {
-        "Title": "Професійна освіта поліграфолога EyeDetect"
-    },
-    "HomeAdvantagesSection": {
-        "Title": "Детектор брехні у Львові: переваги використання EyeDetect"
-    },
-    "HomeClientsSection": {
-        "Title": "Детектор брехні EyeDetect: 500+ задоволених клієнтів у 40 країнах"
-    },
-    "HomeDirectionsSection": {
-        "Title": "Які питання допомагає вирішити технологія EyeDetect?"
-    },
-    "HomeCountriesSection": {
-        "Title": "Технологія EyeDetect у Європі",
-        "SubTitle": "виїзд у центри Європейських країн"
-    },
-    "HomeFAQSection": {
-        "Title": "Часті питання про детектор брехні EyeDetect"
-    },
-    "HomeConditionsSection": {
-        "Title": "Комфортні умови тестування на поліграфі (детекторі брехні) EyeDetect"
-    },
-    "HomeOrderSection": {
-        "Title": "Зв’язатись з нами",
-        "Question": "Для замовлення тестування на поліграфі (детекторі брехні) Eye Detect залиште свої дані у формі, або зверніться до нас за вказаними контактами.",
-        "Answer": "Атестований експерт та психолог (поліграфолог), кандидат психологічних наук, доцент Наталя Мариняк зв’яжеться з Вами найближчим часом."
-    },
-    "ConsultationSection": {
-        "Title": "Перевірка на поліграфі EyeDetect – професійний підхід",
-        "SubTitle": "Консультація поліграфолога EyeDetect Наталі Мариняк"
-    },
-    "SpecialistSection": {
-        "Title": "Наталя Мариняк – експерт з детектора брехні EyeDetect"
-    },
-    "ContactsSection": {
-        "Title": "Детектор брехні EyeDetect: контакти в Україні та Європі"
-    },
-    "LocationSection": {
-        "Title": "Де пройти тест на поліграфі EyeDetect: Україна та Європа"
-    },
-    "UkrainianCitiesSection": {
-        "Title": "Перевірка на поліграфі EyeDetect в Україні"
-    },
-    "EuropeanCitiesSection": {
-        "Title": "Перевірка на поліграфі EyeDetect в Європі"
-    },
-    "Form": {
-        "Name": "Ваше ім’я",
-        "Tel": "Номер телефону",
-        "Email": "Електронна пошта",
-        "TextArea": "Коментар",
-        "FormSubmitedMsg": "Ваше повідомлення відправлено."
-    },
-    "FormErrors": {
-        "RequiredField": "Обов’язкове поле",
-        "ShortName": "Занадто коротке"
-    },
-    "Buttons": {
-        "OrderConsultation": "Замовити консультацію",
-        "MoreDetails": "Дізнатись більше",
-        "SendRequest": "Відправити"
-    }
+  "Header": {
+    "TopTitle": "Виїзд по Україні та Європі"
+  },
+  "Footer": {
+    "Policy": "Політика Конфіденційності"
+  },
+
+  "HeroSection": {
+    "Title": "Передові рішення для виявлення обману швидко і точно",
+    "Text": "Швидка та достовірна перевірка за допомогою технології EyeDetect"
+  },
+  "HomeAboutSection": {
+    "Title": "Сучасний поліграф “детектор брехні” у Львові: точність та новітні технології EyeDetect",
+    "SubTitle": "Поліграф-тестування у Львові: швидка та достовірна перевірка за допомогою технології EyeDetect"
+  },
+  "HomeCertificatesSection": {
+    "Title": "Професійна освіта поліграфолога EyeDetect"
+  },
+  "HomeAdvantagesSection": {
+    "Title": "Детектор брехні у Львові: переваги використання EyeDetect"
+  },
+  "HomeClientsSection": {
+    "Title": "Детектор брехні EyeDetect: 500+ задоволених клієнтів у 40 країнах"
+  },
+  "HomeDirectionsSection": {
+    "Title": "Які питання допомагає вирішити технологія EyeDetect?"
+  },
+  "HomeCountriesSection": {
+    "Title": "Технологія EyeDetect у Європі",
+    "SubTitle": "виїзд у центри Європейських країн"
+  },
+  "HomeFAQSection": {
+    "Title": "Часті питання про детектор брехні EyeDetect"
+  },
+  "HomeConditionsSection": {
+    "Title": "Комфортні умови тестування на поліграфі (детекторі брехні) EyeDetect"
+  },
+  "HomeOrderSection": {
+    "Title": "Зв’язатись з нами",
+    "Question": "Для замовлення тестування на поліграфі (детекторі брехні) Eye Detect залиште свої дані у формі, або зверніться до нас за вказаними контактами.",
+    "Answer": "Атестований експерт та психолог (поліграфолог), кандидат психологічних наук, доцент Наталя Мариняк зв’яжеться з Вами найближчим часом."
+  },
+  "ConsultationSection": {
+    "Title": "Перевірка на поліграфі EyeDetect – професійний підхід",
+    "SubTitle": "Консультація поліграфолога EyeDetect Наталі Мариняк"
+  },
+  "SpecialistSection": {
+    "Title": "Наталя Мариняк – експерт з детектора брехні EyeDetect"
+  },
+  "ContactsSection": {
+    "Title": "Детектор брехні EyeDetect: контакти в Україні та Європі"
+  },
+  "LocationSection": {
+    "Title": "Де пройти тест на поліграфі EyeDetect: Україна та Європа"
+  },
+  "UkrainianCitiesSection": {
+    "Title": "Перевірка на поліграфі EyeDetect в Україні"
+  },
+  "EuropeanCitiesSection": {
+    "Title": "Перевірка на поліграфі EyeDetect в Європі"
+  },
+  "Form": {
+    "Name": "Ваше ім’я",
+    "Tel": "Номер телефону",
+    "Email": "Електронна пошта",
+    "TextArea": "Коментар",
+    "FormSubmitedMsg": "Ваше повідомлення відправлено."
+  },
+  "FormErrors": {
+    "RequiredField": "Обов’язкове поле",
+    "ShortName": "Занадто коротке"
+  },
+  "Buttons": {
+    "OrderConsultation": "Замовити консультацію",
+    "MoreDetails": "Дізнатись більше",
+    "SendRequest": "Відправити"
+  }
 }

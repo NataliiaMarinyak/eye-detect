@@ -72,6 +72,7 @@
 }
 
 .answerWrapp {
+  interpolate-size: allow-keywords; //for chrome
   background-color: $cardBgColor;
   max-height: 0;
   overflow: hidden;
