@@ -5,6 +5,22 @@ import GuaranteeSection from "@/sections/guaranteeSection/GuaranteeSection";
 import HomeFAQSection from "@/sections/homeSections/homeFAQSection/HomeFAQSection";
 import HomeConditionsSection from "@/sections/homeSections/homeConditionsSection/HomeConditionsSection";
 import { FAQData } from "@/data/FAQData";
+import { cookies } from 'next/headers';
+import { getCityData } from "@/helpers/getCityData";
+
+export async function generateMetadata({ params }) {
+    const { slug } = params;
+    const language = cookies().get('language')?.value || 'ua';
+
+    const data = getCityData(slug);
+    const title = language === 'ru' ? data.mainTitleRus : data.mainTitle;
+    const description = language === 'ru' ? data.mainDescriptionRus : data.mainDescription;
+
+    return {
+        title,
+        description,
+    };
+}
 
 
 const LocationIdPage = () => {
