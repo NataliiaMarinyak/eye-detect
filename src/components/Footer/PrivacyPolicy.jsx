@@ -13,7 +13,7 @@ const PrivacyPolicy = ({ className }) => {
   return (
     <>
       {!isLoading && (
-        <Link href="/" className={className}>
+        <Link href="/privacy-policy" className={className}>
           {t("Footer.Policy")}
         </Link>
       )}
