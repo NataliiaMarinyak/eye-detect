@@ -1,31 +1,34 @@
 "use client";
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';import Image from 'next/image';
-import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
-import styles from './HomeClientsSection.module.scss';
-
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import Image from "next/image";
+import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
+import styles from "./HomeClientsSection.module.scss";
 
 const HomeClientsSection = () => {
-const { t } = useTranslation();
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
-
-  return <section>
-    <div className={`container ${styles.container}`}>
-      {!isLoading && <h2 className={styles.title}>{t('HomeClientsSection.Title')}</h2>}
-      <div className={styles.imgWrapper}>
-        <Image
-          className={styles.img}
-          src='/images/clients.webp'
-          alt="Клієнти EyeDetect"
-          sizes="(max-width: 1023px) 100vw, 960px"
-          fill
-        />
+  return (
+    <section>
+      <div className={`container ${styles.container}`}>
+        {!isLoading && (
+          <h2 className={styles.title}>{t("HomeClientsSection.Title")}</h2>
+        )}
+        <div className={styles.imgWrapper}>
+          <Image
+            className={styles.img}
+            src="/images/clients.webp"
+            alt="Клієнти EyeDetect"
+            sizes="(max-width: 1023px) 100vw, 960px"
+            fill
+          />
+        </div>
+        <OpenModalBtn />
       </div>
-      <OpenModalBtn />
-    </div>
-  </section>;
+    </section>
+  );
 };
 
 export default HomeClientsSection;

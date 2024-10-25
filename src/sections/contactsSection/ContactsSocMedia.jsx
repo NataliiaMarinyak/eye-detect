@@ -1,12 +1,12 @@
 import React from "react";
-import { contactsSocMedData } from "@/data/socialMediaData";
+import { socialMediaData } from "@/data/socialMediaData";
 import Link from "next/link";
 import styles from "./ContactsSection.module.scss";
 
 const ContactsSocMedia = ({ className, itemStyles }) => {
   return (
     <address className={className}>
-      {contactsSocMedData.map((el, i) => {
+      {socialMediaData.map((el, i) => {
         return (
           <Link
             key={el.name}
