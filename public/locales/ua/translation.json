@@ -82,5 +82,8 @@
     "OrderConsultation": "Замовити консультацію",
     "MoreDetails": "Дізнатись більше",
     "SendRequest": "Відправити"
+  },
+  "Notifications": {
+    "Success": "Ваше повідомлення відправлено"
   }
 }
