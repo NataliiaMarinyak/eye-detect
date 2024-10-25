@@ -3,6 +3,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { toast } from "sonner";
 import { useModalActions } from "@/hooks/modalActions";
 import { feedbackFormSchema } from "@/yupSchemas/feedbackFormSchema";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
@@ -50,6 +51,7 @@ const OrderForm = () => {
     const onSubmit = (data) => {
         // console.log("feedbackFormData:", data);
         sendToTelegram(data);
+        toast.success(t('Notifications.Success'));
         closeModal();
     };
 
