@@ -1,15 +1,12 @@
 import React from "react";
-import { rearrangedArray } from "@/data/socialMediaData";
+import { socialMediaData } from "@/data/socialMediaData";
 import Link from "next/link";
 import styles from "../Footer.module.scss";
 
 const FooterSocMedia = ({ className, itemStyles }) => {
   return (
     <address className={className}>
-      {rearrangedArray.map((el) => {
-        if (el.name === "instagram") {
-          return;
-        }
+      {socialMediaData.map((el) => {
         return (
           <Link
             key={el.name}

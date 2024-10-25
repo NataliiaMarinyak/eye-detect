@@ -1,0 +1,24 @@
+@import "../../app/variables";
+
+.section {
+  @include pageTopPadding;
+}
+.container {
+  & h2 {
+    margin-bottom: 20px;
+  }
+
+  & p {
+    margin-bottom: 20px;
+  }
+
+  & address {
+    margin-bottom: 20px;
+  }
+  & a {
+    cursor: pointer;
+    font-weight: 900;
+    margin: 0px 12px;
+    scale: 1.01;
+  }
+}
