@@ -3,18 +3,18 @@ import { useEffect, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useModalActions } from "@/hooks/modalActions";
 import { feedbackFormSchema } from "@/yupSchemas/feedbackFormSchema";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
 import styles from "./OrderForm.module.scss";
 
-import { useModalActions } from "@/hooks/modalActions";
 
 const OrderForm = () => {
-  const { t } = useTranslation();
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => setIsLoading(false), []);
+    const { t } = useTranslation();
+    const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => setIsLoading(false), []);
 
-  const schema = useMemo(() => feedbackFormSchema(), []);
+    const schema = useMemo(() => feedbackFormSchema(), []);
 
     const { closeModal } = useModalActions();
 
@@ -28,26 +28,26 @@ const OrderForm = () => {
         },
         resolver: yupResolver(schema),
         mode: "onChange",
-    };  
+    };
 
-  const form = useForm(initialValues);
-  const { register, handleSubmit, formState, reset } = form;
-  const {
-    errors,
-    isSubmitSuccessful,
-    isValid,
-    isSubmitting,
-    isSubmitted,
-    dirtyFields,
-  } = formState;
+    const form = useForm(initialValues);
+    const { register, handleSubmit, formState, reset } = form;
+    const {
+        errors,
+        isSubmitSuccessful,
+        isValid,
+        isSubmitting,
+        isSubmitted,
+        dirtyFields,
+    } = formState;
 
-  useEffect(() => {
-    if (isSubmitSuccessful) {
-      reset();
-    }
-  }, [isSubmitSuccessful, reset]);
+    useEffect(() => {
+        if (isSubmitSuccessful) {
+            reset();
+        }
+    }, [isSubmitSuccessful, reset]);
 
-      const onSubmit = (data) => {
+    const onSubmit = (data) => {
         // console.log("feedbackFormData:", data);
         sendToTelegram(data);
         closeModal();
@@ -115,7 +115,7 @@ const OrderForm = () => {
                     type='text'
                     {...register("tel")}
                     placeholder={t('Form.Tel')}
-                    maxLength='13'
+                    maxLength='16'
                     autoComplete='off'
                     className={
                         dirtyFields.tel && !errors.tel
@@ -132,6 +132,7 @@ const OrderForm = () => {
                     type='text'
                     {...register("email")}
                     placeholder={t('Form.Email')}
+                    maxLength='254'
                     autoComplete='off'
                     className={
                         errors.email
@@ -152,7 +153,7 @@ const OrderForm = () => {
                 />
             </div>}
 
-           { !isLoading && <button
+            {!isLoading && <button
                 type='submit'
                 disabled={isSubmitting}
                 className={
