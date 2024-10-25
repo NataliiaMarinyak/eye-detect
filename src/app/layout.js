@@ -23,13 +23,23 @@ const ukraineRegular = localFont({
 });
 
 export const metadata = {
-  title: "EyeDetect",
-  description: "Сучасний науковий поліграф",
+  title: "Поліграф у Львові: швидка і надійна перевірка з EyeDetect",
+  description: "Детектор брехні EyeDetect у Львові – сучасний метод перевірки з гарантованою точністю для будь-яких ситуацій. Понад 500 задоволених клієнтів!",
+  keywords: [
+    "EyeDetect",
+    "Львові",
+    "Детектор брехні",
+    "Консультація",
+    "Перевірка",
+    "Надійна перевірка",
+    "Сучасний поліграф",
+    "Поліграф-тестування",
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="uk-UA">
       <body
         className={`${ukraineHeadRegular.variable} ${ukraineBold.variable} ${ukraineRegular.variable}`}
       // style={{ overflowX: "hidden" }}
