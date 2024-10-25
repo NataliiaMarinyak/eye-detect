@@ -71,7 +71,12 @@
   },
   "FormErrors": {
     "RequiredField": "Обов’язкове поле",
-    "ShortName": "Занадто коротке"
+    "ShortName": "Занадто коротке",
+    "OnlyNumbers": "Тільки числа",
+    "OnlyInteger": "Тільки цілі числа",
+    "ShortNumber": "Занадто короткий номер",
+    "LongNumber": "Занадто довгий номер",
+    "InvalidEmail": "Не валідна адреса"
   },
   "Buttons": {
     "OrderConsultation": "Замовити консультацію",
