@@ -54,7 +54,10 @@ export default function RootLayout({ children }) {
             <Modal />
             <Toaster
               richColors
-              position="top-right"
+              position="top-center"
+              toastOptions={{
+                style: { background: 'green', color: 'white' }
+              }}
             />
           </TranslatorProvider>
         </SiteProvider>

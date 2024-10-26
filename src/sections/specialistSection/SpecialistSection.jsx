@@ -48,11 +48,11 @@ const SpecialistSection = () => {
                             <ul className={styles.detailsList}>
                               {i18n.language === currentLanguages.UA
                                 ? det.list.map((item, i) => {
-                                    return <li key={i}>{item}</li>;
-                                  })
+                                  return <li key={i}>{item}</li>;
+                                })
                                 : det.listRus.map((item, i) => {
-                                    return <li key={i}>{item}</li>;
-                                  })}
+                                  return <li key={i}>{item}</li>;
+                                })}
                             </ul>
                           )}
                         </li>
@@ -66,6 +66,7 @@ const SpecialistSection = () => {
                     alt={el.title}
                     fill
                     sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 375px"
+                    loading="eager"
                   />
                 </div>
               </li>
