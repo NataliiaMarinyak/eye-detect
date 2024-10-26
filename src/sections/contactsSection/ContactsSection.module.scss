@@ -1,19 +1,10 @@
 @import "../../app/variables";
 
 .section {
-  min-height: 100vh;
-  // min-height: calc(100vh - 179px);
   display: flex;
+  flex: 1;
   align-items: center;
   @include pageTopPadding;
-
-  // @media screen and (min-width: $tablet) {
-  //   min-height: calc(100vh - 305px);
-  // }
-
-  // @media screen and (min-width: $laptop) {
-  //   min-height: calc(100vh - 356px);
-  // }
 }
 
 .container {

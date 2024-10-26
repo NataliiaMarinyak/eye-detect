@@ -15,6 +15,8 @@
   height: 100%;
 
   & img {
+    @include imageFillProp;
+
     object-fit: cover;
     object-position: 12% 0px;
   }

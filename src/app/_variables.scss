@@ -223,6 +223,16 @@ $textShadow: 2px 4px 8px $footerBgColor;
   }
 }
 
+@mixin imageFillProp {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
 // mixins in variables
 
 // @mixin btnBg {
