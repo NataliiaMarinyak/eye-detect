@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
     const language = cookies().get('language')?.value || 'ua';
 
     const data = getCityData(slug);
-    const title = language === 'ua' ? data.mainTitle : data.mainTitleRus;
+    const title = language === 'ua' ? data.seoTitle : data.seoTitleRus;
     const description = language === 'ua' ? data.mainDescription : data.mainDescriptionRus;
 
     return {
