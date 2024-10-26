@@ -39,7 +39,6 @@
 }
 
 .certWrap {
-    position: relative;
     width: 100%;
     aspect-ratio: 280/210;
 
@@ -55,7 +54,8 @@
 }
 
 .certificate {
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
 }
 
 .btnWrapper {
