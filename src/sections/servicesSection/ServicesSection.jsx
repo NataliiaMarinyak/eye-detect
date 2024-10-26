@@ -63,7 +63,8 @@ const ServicesSection = () => {
                                     src={service.image}
                                     alt={service.imageAlt}
                                     sizes="(max-width: 1023px) 100vw, 960px"
-                                    fill
+                                    width={960}
+                                    height={494}
                                 />
                             </div>
                             <OpenModalBtn customBtn={styles.openModalBtn} />

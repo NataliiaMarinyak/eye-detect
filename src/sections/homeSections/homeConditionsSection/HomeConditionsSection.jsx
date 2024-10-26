@@ -7,21 +7,22 @@ import styles from './HomeConditionsSection.module.scss';
 
 
 const HomeConditionsSection = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
 
   return <section>
     <div className={`container ${styles.container}`}>
-      {!isLoading &&<h2 className={styles.title}>{t('HomeConditionsSection.Title')}</h2>}
+      {!isLoading && <h2 className={styles.title}>{t('HomeConditionsSection.Title')}</h2>}
       <div className={styles.imgWrapper}>
         <Image
           className={styles.img}
           src='/images/conditions.webp'
           alt="Умови тестування EyeDetect"
           sizes="(max-width: 1023px) 100vw, 960px"
-          fill
+          width={960}
+          height={317}
         />
       </div>
       <OpenModalBtn />

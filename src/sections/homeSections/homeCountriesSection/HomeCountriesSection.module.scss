@@ -36,7 +36,6 @@
 }
 
 .imgWrapper {
-    position: relative;
     width: 100%;
     aspect-ratio: 280/478;
 
@@ -51,7 +50,8 @@
 }
 
 .img {
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
 
     @media screen and (min-width: $laptop) {
         display: none;
@@ -63,6 +63,7 @@
 
     @media screen and (min-width: $laptop) {
         display: block;
-        object-fit: cover;
+        max-width: 100%;
+        height: auto;
     }
 }

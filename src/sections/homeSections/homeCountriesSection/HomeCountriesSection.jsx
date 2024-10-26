@@ -7,7 +7,7 @@ import styles from './HomeCountriesSection.module.scss';
 
 
 const HomeCountriesSection = () => {
- const { t } = useTranslation();
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
@@ -19,23 +19,23 @@ const HomeCountriesSection = () => {
         {!isLoading && <h3 className={styles.subTitle}>{t('HomeCountriesSection.SubTitle')}</h3>}
       </div>
       <div className={styles.imgWrapper}>
-        {/* возможно, попробовать оставить один компонент Image и, в зависимости от результата useResize (до laptop или после), менять src */}
         <Image
           className={styles.img}
           src='/images/countries.webp'
           alt="Країни Європи та EyeDetect"
           sizes="100vw"
-          fill
+          width={943}
+          height={1564}
         />
         <Image
           className={styles.desktopImg}
           src='/images/countriesDesktop.webp'
           alt="Країни Європи та EyeDetect"
           sizes="1024px"
-          fill
+          width={1024}
+          height={902}
         />
       </div>
-      {/* href='/contacts' must be changed */}
       <ButtonLink href='/locations' />
     </div>
   </section>;

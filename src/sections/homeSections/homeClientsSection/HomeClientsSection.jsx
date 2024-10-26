@@ -22,7 +22,8 @@ const HomeClientsSection = () => {
             src="/images/clients.webp"
             alt="Клієнти EyeDetect"
             sizes="(max-width: 1023px) 100vw, 960px"
-            fill
+            width={960}
+            height={321}
           />
         </div>
         <OpenModalBtn />
