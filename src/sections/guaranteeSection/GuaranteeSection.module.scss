@@ -88,6 +88,8 @@ $sectionGapsLaptop: 32px;
   margin-bottom: $sectionGapsMob;
 
   & img {
+    @include imageFillProp;
+    animation: none;
     object-position: top;
   }
 

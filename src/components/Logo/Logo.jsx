@@ -12,7 +12,14 @@ const Logo = ({ className }) => {
       href={pathName === "/" ? "#hero" : "/"}
       className={`${styles.logowrapp} ${className}`}
     >
-      <Image src="/images/Logo.png" fill sizes="33vw" alt="Eye-detect" loading="eager" />
+      <Image
+        src="/images/Logo.png"
+        width={175}
+        height={32}
+        sizes="33vw"
+        alt="Eye-detect"
+        loading="eager"
+      />
     </Link>
   );
 };

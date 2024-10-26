@@ -43,8 +43,9 @@ const HomeAboutSection = () => {
           <div className={styles.imgWrapp}>
             <Image
               src="/images/aboutImg.webp"
-              fill
-              alt="Наталя"
+              width={943}
+              height={638}
+              alt="Наталія Мариняк"
               sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
             />
           </div>

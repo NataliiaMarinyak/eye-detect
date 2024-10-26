@@ -7,7 +7,6 @@ import Modal from "@/components/Modal/Modal";
 import TranslatorProvider from "@/translator/TranslatorProvider";
 import { Toaster } from "sonner";
 
-
 const ukraineHeadRegular = localFont({
   src: "./fonts/e-UkraineHead-Regular.otf",
   variable: "--font-ukraine-head-regular",
@@ -26,7 +25,8 @@ const ukraineRegular = localFont({
 
 export const metadata = {
   title: "Поліграф у Львові: швидка і надійна перевірка з EyeDetect",
-  description: "Детектор брехні EyeDetect у Львові – сучасний метод перевірки з гарантованою точністю для будь-яких ситуацій. Понад 500 задоволених клієнтів!",
+  description:
+    "Детектор брехні EyeDetect у Львові – сучасний метод перевірки з гарантованою точністю для будь-яких ситуацій. Понад 500 задоволених клієнтів!",
   keywords: [
     "EyeDetect",
     "Львові",
@@ -44,7 +44,6 @@ export default function RootLayout({ children }) {
     <html lang="uk-UA">
       <body
         className={`${ukraineHeadRegular.variable} ${ukraineBold.variable} ${ukraineRegular.variable}`}
-      // style={{ overflowX: "hidden" }}
       >
         <SiteProvider>
           <TranslatorProvider>
@@ -56,7 +55,7 @@ export default function RootLayout({ children }) {
               richColors
               position="top-center"
               toastOptions={{
-                style: { background: 'green', color: 'white' }
+                style: { background: "green", color: "white" },
               }}
             />
           </TranslatorProvider>

@@ -111,6 +111,8 @@
   aspect-ratio: 148/100;
 
   & img {
+    @include imageFillProp;
+
     object-position: 64% 0px;
   }
 
