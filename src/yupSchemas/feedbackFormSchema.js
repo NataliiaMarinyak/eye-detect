@@ -20,7 +20,7 @@ export const feedbackFormSchema = () => {
             // .number()
             .string()
             .required(i18n.t("FormErrors.RequiredField"))
-            .matches(regexPhone2, "+123*********")
+            .matches(regexPhone2, "+380XXXXXXXXX")
             .test('moreThanEight', i18n.t("FormErrors.ShortNumber"), value => !value || value.toString().length > 8)
         // .integer(i18n.t("FormErrors.OnlyInteger"))
         // .typeError(i18n.t("FormErrors.OnlyNumbers"))

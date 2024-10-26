@@ -98,11 +98,7 @@
     }
 }
 
-// .locationItem:hover .locationLink {
-//     background-color: $btnHoverBgColor;
-// }
-
-.locationItem:hover .city {
+.locationItem:hover {
     background-color: $btnHoverBgColor;
 }
 

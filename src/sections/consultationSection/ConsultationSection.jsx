@@ -30,6 +30,7 @@ const ConsultationSection = () => {
           alt=" Передові рішення для виявлення обману швидко і точно"
           fill
           sizes="100vw"
+          loading="eager"
         />
       </div>
     </section>

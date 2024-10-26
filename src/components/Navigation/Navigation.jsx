@@ -22,7 +22,8 @@ const Navigation = ({ className, isInHeader, linkStyles }) => {
   const isUa = !isLoading && i18n.language === currentLanguages.UA;
 
   return (
-    <nav className={`${styles.nav} ${className}`}>
+    // <nav className={`${styles.nav} ${className}`}>
+    <nav className={className}>
       {navLinks.map((el) => {
         const pageLinkClassName = () => {
           if (pathname === el.href && isInHeader) {

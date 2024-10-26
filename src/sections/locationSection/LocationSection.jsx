@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Link from 'next/link';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import { currentLanguages } from "@/data/languages";
 import { addressData } from '@/data/addressData';
