@@ -63,6 +63,8 @@
   }
 
   @media screen and (min-width: $laptop) {
+    height: 260px;
+    justify-content: space-between;
     display: flex;
     gap: 20px;
   }
@@ -130,6 +132,7 @@
   font-size: 16px;
 
   @media screen and (min-width: $tablet) {
+    justify-content: center;
     gap: 12px;
     font-size: 18px;
   }
