@@ -1,19 +1,19 @@
 @import "../../app/variables";
 
-.section {
-    @include pageTopPadding;
+// .section {
+//     @include pageTopPadding;
 
-    display: flex;
-    align-items: center;
+//     display: flex;
+//     align-items: center;
 
-    @media screen and (min-width: $tablet) {
-        padding: 101px 40px 35px;
-    }
+//     @media screen and (min-width: $tablet) {
+//         padding: 101px 40px 35px;
+//     }
 
-    @media screen and (min-width: $laptop) {
-        padding: 122px 32px 37px;
-    }
-}
+//     @media screen and (min-width: $laptop) {
+//         padding: 122px 32px 37px;
+//     }
+// }
 
 .container {
     display: flex;
@@ -28,10 +28,6 @@
     @media screen and (min-width: $laptop) {
         row-gap: 24px;
     }
-}
-
-.title {
-    @include pageTitle;
 }
 
 .videoWrapper {
