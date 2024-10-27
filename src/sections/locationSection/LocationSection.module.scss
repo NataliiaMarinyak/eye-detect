@@ -23,9 +23,23 @@
     @include pageTitle;
 
     font-size: 22px;
+    height: 93px;
 
-    @media screen and (min-width: 324px) and (max-width:767px) {
+    @media screen and (min-width: 342px) and (max-width:767px) {
+        height: 101px;
         font-size: 24px;
+    }
+
+    @media screen and (min-width: 458px) {
+        height: 68px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        height: 84px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        height: 94px;
     }
 }
 
@@ -50,10 +64,15 @@
 
 .locationLink {
     display: flex;
+    min-height: 55px;
     align-items: center;
     gap: 4px;
     font-weight: 400;
     font-size: 16px;
+
+    @media screen and (min-width: 369px) {
+        min-height: 28px;
+    }
 
     @media screen and (min-width: $tablet) {
         gap: 12px;
