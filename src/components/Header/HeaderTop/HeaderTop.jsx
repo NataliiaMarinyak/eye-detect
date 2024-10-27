@@ -37,7 +37,7 @@ const HeaderTop = () => {
           {headerSocLinks.map((el) => {
             return (
               <li key={el.name} className={styles[el.name]}>
-                <Link href={el.href} target="_blank">
+                <Link href={el.href} aria-label={el.name} target="_blank">
                   <svg>
                     <use href={el.icon}></use>
                   </svg>
