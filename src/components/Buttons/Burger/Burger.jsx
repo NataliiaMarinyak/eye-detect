@@ -27,6 +27,7 @@ const Burger = () => {
           onClick={() => {
             setIsMobileMenu(!isMobileMenu);
           }}
+          aria-label="Бургер меню"
         >
           {isMobileMenu ? (
             <svg>
