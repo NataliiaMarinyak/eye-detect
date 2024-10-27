@@ -94,6 +94,7 @@ $textShadow: 2px 4px 8px $footerBgColor;
 }
 
 @mixin pageTitle {
+font-display:swap;
   font-family: var(--font-ukraine-head-regular);
   //styleName: H/H2/Mobile;
   font-size: 24px;
