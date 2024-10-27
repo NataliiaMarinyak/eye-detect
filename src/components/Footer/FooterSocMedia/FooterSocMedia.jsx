@@ -11,6 +11,7 @@ const FooterSocMedia = ({ className, itemStyles }) => {
           <Link
             key={el.name}
             href={el.href}
+            aria-label={el.name}
             target="_blank"
             className={`${itemStyles} ${styles[el.name]}`}
           >

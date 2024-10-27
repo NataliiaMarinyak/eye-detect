@@ -1,24 +1,22 @@
 "use client";
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
-import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
+import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import ContactsSocMedia from "./ContactsSocMedia";
 import { currentLanguages } from "@/data/languages";
-import { addressData } from '@/data/addressData';
+import { addressData } from "@/data/addressData";
 import styles from "./ContactsSection.module.scss";
-
 
 const ContactsSection = () => {
   const { t, i18n } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
-
   return (
     <section className={styles.section}>
       <div className={`container ${styles.container}`}>
-        {!isLoading && <h1>{t('ContactsSection.Title')}</h1>}
+        {!isLoading && <h1>{t("ContactsSection.Title")}</h1>}
         <div className={styles.contentWrapp}>
           <ContactsSocMedia
             className={styles.socMedia}
@@ -30,19 +28,32 @@ const ContactsSection = () => {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title={
+                i18n.language === currentLanguages.UA
+                  ? addressData.textAddress
+                  : addressData.textAddressRus
+              }
             ></iframe>
-            {!isLoading && <a
-              href={addressData.hrefLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.locationLink}
-            >
-              <svg className={styles.locationIcon}>
-                <use href="/sprite.svg#icon-map_pin"></use>
-              </svg>
-              {i18n.language === currentLanguages.UA
-                ? addressData.textAddress : addressData.textAddressRus}
-            </a>}
+            {!isLoading && (
+              <a
+                href={addressData.hrefLink}
+                aria-label={
+                  i18n.language === currentLanguages.UA
+                    ? addressData.textAddress
+                    : addressData.textAddressRus
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.locationLink}
+              >
+                <svg className={styles.locationIcon}>
+                  <use href="/sprite.svg#icon-map_pin"></use>
+                </svg>
+                {i18n.language === currentLanguages.UA
+                  ? addressData.textAddress
+                  : addressData.textAddressRus}
+              </a>
+            )}
           </div>
         </div>
         <OpenModalBtn />
@@ -50,6 +61,5 @@ const ContactsSection = () => {
     </section>
   );
 };
-
 
 export default ContactsSection;
