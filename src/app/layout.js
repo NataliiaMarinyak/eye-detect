@@ -3,9 +3,10 @@ import "./globals.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { SiteProvider } from "@/context/SiteContext";
-import Modal from "@/components/Modal/Modal";
+// import Modal from "@/components/Modal/Modal";
 import TranslatorProvider from "@/translator/TranslatorProvider";
 import { Toaster } from "sonner";
+import dynamic from "next/dynamic";
 
 const ukraineHeadRegular = localFont({
   src: "./fonts/e-UkraineHead-Regular.otf",
@@ -22,6 +23,10 @@ const ukraineRegular = localFont({
   variable: "--font-ukraine-regular",
   weight: "400",
 });
+
+const DynamicModal = dynamic(() =>
+  import("@/components/Modal/Modal")
+);
 
 export const metadata = {
   title: "Поліграф у Львові: швидка і надійна перевірка з EyeDetect",
@@ -50,7 +55,8 @@ export default function RootLayout({ children }) {
             <Header />
             <main>{children}</main>
             <Footer />
-            <Modal />
+            {/* <Modal /> */}
+            <DynamicModal />
             <Toaster
               richColors
               position="top-center"
