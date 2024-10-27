@@ -1,8 +1,16 @@
 import ConsultationSection from "@/sections/consultationSection/ConsultationSection";
-import SpecialistSection from "@/sections/specialistSection/SpecialistSection";
-import HomeCertificatesSection from "@/sections/homeSections/homeCertificatesSection/HomeCertificatesSection";
+// import SpecialistSection from "@/sections/specialistSection/SpecialistSection";
+// import HomeCertificatesSection from "@/sections/homeSections/homeCertificatesSection/HomeCertificatesSection";
 import { cookies } from 'next/headers';
+import dynamic from "next/dynamic";
 
+const DynamicSpecialistSection = dynamic(() =>
+  import("@/sections/specialistSection/SpecialistSection")
+);
+
+const DynamicHomeCertificatesSection = dynamic(() =>
+  import("@/sections/homeSections/homeCertificatesSection/HomeCertificatesSection")
+);
 
 export async function generateMetadata({ params }) {
 
@@ -39,8 +47,10 @@ const AboutUsPage = () => {
     return (
         <>
             <ConsultationSection />
-            <SpecialistSection />
-            <HomeCertificatesSection isOnHomePage={false} />
+            {/* <SpecialistSection /> */}
+            <DynamicSpecialistSection />
+            {/* <HomeCertificatesSection isOnHomePage={false} /> */}
+            <DynamicHomeCertificatesSection isOnHomePage={false} />
         </>
     )
 }

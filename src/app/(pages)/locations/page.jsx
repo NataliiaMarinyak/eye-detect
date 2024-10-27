@@ -1,8 +1,16 @@
 import LocationSection from "@/sections/locationSection/LocationSection";
-import UkrainianCitiesSection from "@/sections/ukrainianCitiesSection/UkrainianCitiesSection";
-import EuropeanCitiesSection from "@/sections/europeanCitiesSection/EuropeanCitiesSection";
+// import UkrainianCitiesSection from "@/sections/ukrainianCitiesSection/UkrainianCitiesSection";
+// import EuropeanCitiesSection from "@/sections/europeanCitiesSection/EuropeanCitiesSection";
 import { cookies } from 'next/headers';
+import dynamic from "next/dynamic";
 
+const DynamicUkrainianCitiesSection = dynamic(() =>
+  import("@/sections/ukrainianCitiesSection/UkrainianCitiesSection")
+);
+
+const DynamicEuropeanCitiesSection = dynamic(() =>
+  import("@/sections/europeanCitiesSection/EuropeanCitiesSection")
+);
 
 export async function generateMetadata({ params }) {
 
@@ -38,8 +46,10 @@ const LocationsPage = () => {
     return (
         <>
             <LocationSection />
-            <UkrainianCitiesSection />
-            <EuropeanCitiesSection />
+            {/* <UkrainianCitiesSection /> */}
+            <DynamicUkrainianCitiesSection />
+            {/* <EuropeanCitiesSection /> */}
+            <DynamicEuropeanCitiesSection />
         </>
     )
 }
