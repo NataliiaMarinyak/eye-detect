@@ -17,7 +17,7 @@ const EuropeanCitiesSection = () => {
     return (
         <section className={styles.section}>
             <div className={`container ${styles.container}`}>
-                {!isLoading && <h2 className={styles.title}>{t('EuropeanCitiesSection.Title')}</h2>}
+                <h2 className={styles.title}>{!isLoading && t('EuropeanCitiesSection.Title')}</h2>
                 <ul className={styles.locationsWrapper}>
                     {europeanCitiesData.map((item) => <li
                         key={item.slug}
