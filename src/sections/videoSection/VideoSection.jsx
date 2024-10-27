@@ -19,19 +19,17 @@ const VideoSection = () => {
 
 
     return (
-        <section className={styles.section}>
+        <section>
             <div className={`container ${styles.container}`}>
-                {!isLoading && <h1 className={styles.title}>{i18n.language === currentLanguages.UA
-                    ? data?.mainTitle : data?.mainTitleRus}</h1>}
-
                 <div className={styles.videoWrapper}>
-                    <iframe
+                    {!isLoading && <iframe
                         className={styles.video}
                         src={data?.videoLink}
                         // frameBorder="0"
                         allowFullScreen
-                        title={data?.mainTitle}
-                    />
+                        title={i18n.language === currentLanguages.UA
+                            ? data?.mainTitle : data?.mainTitleRus}
+                    />}
                 </div>
 
                 <OpenModalBtn />
