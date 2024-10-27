@@ -12,7 +12,7 @@
 }
 
 .langBtn {
-  color: $langColor;
+  // color: $langColor;
   cursor: pointer;
 }
 
@@ -22,5 +22,6 @@
 
 
 .active {
-  color: $textDarkColor;
+  color: $cardBgColor;
+  background-color: $btnBgColor;
 }
