@@ -7,6 +7,7 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: $laptop) {
     margin-bottom: 24px;
   }
@@ -45,7 +46,8 @@
   @include sectionSubTitle;
   margin-bottom: 16px;
   color: $textDarkColor;
-  font-family: var(--font-ukraine-bold);
+  // font-family: var(--font-ukraine-bold);
+  font-family: ukraineBold;
   text-align: start;
 
   @media screen and (min-width: $laptop) {
@@ -57,7 +59,8 @@
 // }
 
 .detailsTitle {
-  font-family: var(--font-ukraine-bold);
+  // font-family: var(--font-ukraine-bold);
+  font-family: ukraineBold;
   font-size: 16px;
   margin-bottom: 8px;
 
@@ -74,8 +77,10 @@
     // stroke-width: 2px;
     // stroke-width="1.6"
   }
+
   @media screen and (min-width: $tablet) {
     gap: 12px;
+
     & svg {
       width: 32px;
       min-width: 32px;
@@ -106,6 +111,7 @@
   @media screen and (min-width: $tablet) {
     font-size: 18px;
   }
+
   @media screen and (min-width: $laptop) {
     font-size: 20px;
     margin-left: 20px;
