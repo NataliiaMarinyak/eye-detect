@@ -74,6 +74,8 @@ const VideoSection = () => {
         return match && match[7].length === 11 ? match[7] : null;
     }
 
+    const videoIdName = getYouTubeId(data?.videoLink)
+
     return (
         <section>
             <div className={`container ${styles.container}`}>
@@ -83,7 +85,7 @@ const VideoSection = () => {
                             <Image
                                 className={styles.previewImage}
                                 loading='lazy'
-                                src={`https://img.youtube.com/vi/${getYouTubeId(data?.videoLink)}/hqdefault.jpg`}
+                                src={`https://img.youtube.com/vi/${videoIdName}/hqdefault.jpg`}
                                 alt={i18n.language === currentLanguages.UA ? data?.mainTitle : data?.mainTitleRus}
                                 sizes="(max-width: 1023px) 100vw, 960px"
                                 width={960}
