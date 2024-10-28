@@ -1,5 +1,29 @@
 @import "./_variables";
 
+@font-face {
+  font-family: "ukraineHeadRegular";
+  src: url("./fonts/e-UkraineHead-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ukraineBold";
+  src: url("./fonts/e-Ukraine-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ukraineRegular";
+  src: url("./fonts/e-Ukraine-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *::after,
 *::before {
@@ -27,7 +51,8 @@ body {
   min-height: 100vh;
   width: 100%;
   color: $textDarkColor;
-  font-family: var(--font-ukraine-regular), sans-serif;
+  // font-family: var(--font-ukraine-regular), sans-serif;
+  font-family: ukraineRegular, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -50,7 +75,8 @@ main {
 
 header,
 footer {
-  font-family: var(--font-ukraine-regular);
+  // font-family: var(--font-ukraine-regular);
+  font-family: ukraineRegular;
 }
 
 section {
@@ -86,74 +112,3 @@ ul,
 ol {
   list-style: none;
 }
-
-// :root {
-//   --background: #ffffff;
-//   --foreground: #171717;
-// }
-
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --background: #0a0a0a;
-//     --foreground: #ededed;
-//   }
-// }
-
-// html,
-// body {
-//   max-width: 100vw;
-//   overflow-x: hidden;
-// }
-
-// body {
-//   color: var(--foreground);
-//   background: var(--background);
-//   font-family: Arial, Helvetica, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
-
-// * {
-//   box-sizing: border-box;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// a {
-//   color: inherit;
-//   text-decoration: none;
-// }
-
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     color-scheme: dark;
-//   }
-// }
-
-// :root {
-//   --background: #ffffff;
-//   --foreground: #171717;
-// }
-
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --background: #0a0a0a;
-//     --foreground: #ededed;
-//   }
-// }
-
-// html,
-// body {
-//   max-width: 100vw;
-// }
-
-// body {
-//   // color: var(--foreground);
-//   // background: var(--background);
-//   // font-family: Arial, Helvetica, sans-serif;
-
-//   // have a question about fonts here and in layout in body
-//   font-family: var(--font-ukraine-regular);
-//   // -webkit-font-smoothing: antialiased;
-//   // -moz-osx-font-smoothing: grayscale;
-// }

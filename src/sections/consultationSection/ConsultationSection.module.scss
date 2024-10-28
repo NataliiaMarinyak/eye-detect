@@ -29,7 +29,8 @@
   flex-direction: column;
   justify-content: space-between;
 
-  font-family: var(--font-ukraine-head-regular);
+  // font-family: var(--font-ukraine-head-regular);
+  font-family: ukraineHeadRegular;
   text-shadow: $textShadow;
 }
 
@@ -65,6 +66,7 @@
     width: 430px;
     font-size: 22px;
   }
+
   @media screen and (min-width: $laptop) {
     font-size: 26px;
   }
