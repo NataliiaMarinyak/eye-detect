@@ -94,8 +94,9 @@ $textShadow: 2px 4px 8px $footerBgColor;
 }
 
 @mixin pageTitle {
-font-display:swap;
-  font-family: var(--font-ukraine-head-regular);
+  // font-display:swap;
+  // font-family: var(--font-ukraine-head-regular);
+  font-family: ukraineHeadRegular;
   //styleName: H/H2/Mobile;
   font-size: 24px;
   font-weight: 400;
@@ -115,7 +116,8 @@ font-display:swap;
 }
 
 @mixin sectionTitle {
-  font-family: var(--font-ukraine-head-regular);
+  // font-family: var(--font-ukraine-head-regular);
+  font-family: ukraineHeadRegular;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.4;

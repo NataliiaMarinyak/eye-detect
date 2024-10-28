@@ -49,6 +49,7 @@
 
 .map {
     width: 100%;
+    height: auto;
     aspect-ratio: 280/108;
     border: none;
 
@@ -64,14 +65,14 @@
 
 .locationLink {
     display: flex;
-    min-height: 55px;
+    height: 55px;
     align-items: center;
     gap: 4px;
     font-weight: 400;
     font-size: 16px;
 
     @media screen and (min-width: 369px) {
-        min-height: 28px;
+        height: 28px;
     }
 
     @media screen and (min-width: $tablet) {
