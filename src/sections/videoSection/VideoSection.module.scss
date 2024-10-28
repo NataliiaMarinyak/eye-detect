@@ -30,12 +30,70 @@
     }
 }
 
+// .videoWrapper {
+//     width: 100%;
+//     aspect-ratio: 16/9;
+// }
+
+// .video {
+//     width: 100%;
+//     height: 100%;
+// }
+
+// ================================================================
+
 .videoWrapper {
+    // position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     width: 100%;
     aspect-ratio: 16/9;
 }
 
+
 .video {
     width: 100%;
     height: 100%;
+}
+
+.previewContainer {
+    position: relative;
+    cursor: pointer;
+    width: 100%;  // Робимо зображення адаптивним на всю ширину
+    // aspect-ratio: 16 / 9;  // Зберігаємо співвідношення сторін
+}
+
+.previewImage {
+    // // border-radius: 8px;
+    // width: 100%;  // Заповнює ширину контейнера
+    // height: 100%; // Автоматична висота для збереження співвідношення сторін
+    // display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.playIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    background-color: rgb(255 0 0);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playIcon::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 16px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    margin-left: 4px;
 }
