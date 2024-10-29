@@ -27,8 +27,9 @@ const LocationSection = () => {
                         height={108}
                         allowFullScreen=""
                         title={!isLoading && i18n.language === currentLanguages.UA
-                            ? "Адреса тестування EyeDetect " : "Адрес тестирования EyeDetect"}
-                        priority="true" referrerPolicy="no-referrer-when-downgrade"
+                            ? addressData.textAddress
+                            : addressData.textAddressRus}
+                        loading="eager" referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>}
                 </div>
 
