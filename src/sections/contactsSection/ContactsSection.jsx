@@ -118,8 +118,10 @@ const ContactsSection = () => {
                         ? addressData.textAddress
                         : addressData.textAddressRus
                       }
-                      width={600}
+                      sizes="(max-width: 569px) 100vw"
+                      width={570}
                       height={300}
+                      loading="eager"
                     />
                   </div> 
               ) : (
