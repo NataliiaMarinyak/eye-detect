@@ -159,3 +159,15 @@
     justify-content: center;
   }
 }
+
+.previewContainer {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  cursor: pointer;
+}
+
+.previewImage {
+  width: 100%; 
+  height: auto;
+}
