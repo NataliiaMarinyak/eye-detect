@@ -1,6 +1,4 @@
 import LocationSection from "@/sections/locationSection/LocationSection";
-// import UkrainianCitiesSection from "@/sections/ukrainianCitiesSection/UkrainianCitiesSection";
-// import EuropeanCitiesSection from "@/sections/europeanCitiesSection/EuropeanCitiesSection";
 import { cookies } from 'next/headers';
 import dynamic from "next/dynamic";
 
@@ -42,13 +40,12 @@ export async function generateMetadata({ params }) {
   };
 }
 
+
 const LocationsPage = () => {
   return (
     <>
       <LocationSection />
-      {/* <UkrainianCitiesSection /> */}
       <DynamicUkrainianCitiesSection />
-      {/* <EuropeanCitiesSection /> */}
       <DynamicEuropeanCitiesSection />
     </>
   )

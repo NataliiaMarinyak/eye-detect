@@ -38,13 +38,9 @@ export const socialMediaData = [
     contact: "eyedetect_natalia@gmail.com",
   },
 ];
-// console.log("socialMediaData", socialMediaData);
 
 export const phone = socialMediaData.find((el) => el.name === "phone");
-// console.log("phone", phone);
 
 export const headerSocLinks = socialMediaData.filter(
   (el) => el.name !== "phone"
 );
-
-// console.log("headerSocLinks", headerSocLinks);

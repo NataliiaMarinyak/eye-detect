@@ -1,9 +1,9 @@
 "use client";
-
-import HeaderTop from "./HeaderTop/HeaderTop";
-import styles from "./Header.module.scss";
-import HeaderBottom from "./HeaderBottom/HeaderBottom";
 import { useCallback, useEffect, useRef, useState } from "react";
+import HeaderTop from "./HeaderTop/HeaderTop";
+import HeaderBottom from "./HeaderBottom/HeaderBottom";
+import styles from "./Header.module.scss";
+
 
 const Header = () => {
   const [scrolledWindow, setScrolledWindow] = useState(0);
@@ -41,5 +41,6 @@ const Header = () => {
     </header>
   );
 };
+
 
 export default Header;

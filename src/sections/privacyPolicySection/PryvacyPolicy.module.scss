@@ -3,6 +3,7 @@
 .section {
   @include pageTopPadding;
 }
+
 .container {
   & h2 {
     margin-bottom: 20px;
@@ -15,6 +16,7 @@
   & address {
     margin-bottom: 20px;
   }
+
   & a {
     cursor: pointer;
     font-weight: 900;

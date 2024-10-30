@@ -1,11 +1,11 @@
 "use client";
-
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import styles from "./HeaderTop.module.scss";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { phone } from "../../../data/socialMediaData";
 import { headerSocLinks } from "../../../data/socialMediaData";
-import { useTranslation } from "react-i18next";
+import styles from "./HeaderTop.module.scss";
+
 
 const HeaderTop = () => {
   const { t } = useTranslation();
@@ -50,5 +50,6 @@ const HeaderTop = () => {
     </div>
   );
 };
+
 
 export default HeaderTop;

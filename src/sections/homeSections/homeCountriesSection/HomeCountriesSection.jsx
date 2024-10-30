@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import ButtonLink from '@/components/Buttons/ButtonLink/ButtonLink';
+import { currentLanguages } from '@/data/languages';
 import styles from './HomeCountriesSection.module.scss';
 
 
 const HomeCountriesSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
@@ -19,22 +20,24 @@ const HomeCountriesSection = () => {
         {!isLoading && <h3 className={styles.subTitle}>{t('HomeCountriesSection.SubTitle')}</h3>}
       </div>
       <div className={styles.imgWrapper}>
-        <Image
+        {!isLoading && <Image
           className={styles.img}
           src='/images/countries.webp'
-          alt="Країни Європи та EyeDetect"
+          alt={i18n.language === currentLanguages.UA
+            ? "Країни Європи та EyeDetect" : "Страны Европы и EyeDetect"}
           sizes="100vw"
           width={943}
           height={1564}
-        />
-        <Image
+        />}
+        {!isLoading && <Image
           className={styles.desktopImg}
           src='/images/countriesDesktop.webp'
-          alt="Країни Європи та EyeDetect"
+          alt={i18n.language === currentLanguages.UA
+            ? "Країни Європи та EyeDetect" : "Страны Европы и EyeDetect"}
           sizes="1024px"
           width={1024}
           height={902}
-        />
+        />}
       </div>
       <ButtonLink href='/locations' />
     </div>

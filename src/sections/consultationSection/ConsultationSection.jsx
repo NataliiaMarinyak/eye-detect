@@ -5,6 +5,7 @@ import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import styles from "./ConsultationSection.module.scss";
 
+
 const ConsultationSection = () => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
@@ -36,5 +37,6 @@ const ConsultationSection = () => {
     </section>
   );
 };
+
 
 export default ConsultationSection;

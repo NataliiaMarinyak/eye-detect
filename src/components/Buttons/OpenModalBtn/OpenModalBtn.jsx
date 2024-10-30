@@ -1,5 +1,5 @@
 "use client";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { useModalActions } from "@/hooks/modalActions";
 import styles from "./OpenModalBtn.module.scss";
@@ -9,7 +9,7 @@ const OpenModalBtn = ({ customBtn }) => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
- 
+
   const { openModal } = useModalActions();
 
 

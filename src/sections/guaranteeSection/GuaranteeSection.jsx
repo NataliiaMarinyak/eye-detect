@@ -7,10 +7,12 @@ import { confidentGuaranty } from "@/data/confidentGuaranty";
 import { currentLanguages } from "@/data/languages";
 import styles from "./GuaranteeSection.module.scss";
 
+
 const GuaranteeSection = () => {
   const { t, i18n } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
+
 
   return (
     <section>
@@ -37,18 +39,20 @@ const GuaranteeSection = () => {
           })}
         </ul>
         <div className={styles.imgWrapp}>
-          <Image
+          {!isLoading && <Image
             src="/images/specialist3.webp"
-            alt=" Гарантія конфіденційності тестування EyeDetect"
+            alt={i18n.language === currentLanguages.UA
+              ? "Гарантія конфіденційності тестування EyeDetect" : "Гарантия конфиденциальности тестирования EyeDetect"}
             width={960}
             height={560}
             sizes="(max-width: 1023px) 100vw, 960px"
-          />
+          />}
         </div>
         <OpenModalBtn customBtn={styles.btn} />
       </div>
     </section>
   );
 };
+
 
 export default GuaranteeSection;

@@ -1,7 +1,7 @@
 "use client";
-
 const { SiteContext } = require("@/context/SiteContext");
 const { useContext } = require("react");
+
 
 export const useModalActions = () => {
   const { setModalFrame } = useContext(SiteContext);
@@ -13,7 +13,6 @@ export const useModalActions = () => {
     setTimeout(() => {
       setBackDrop(true);
     }, 100);
-    console.log("openModalHook");
   };
 
   const closeModal = () => {
@@ -21,7 +20,6 @@ export const useModalActions = () => {
     setTimeout(() => {
       setModalFrame(false);
     }, 1000);
-    console.log("closeModalHook");
   };
 
   return { openModal, closeModal };

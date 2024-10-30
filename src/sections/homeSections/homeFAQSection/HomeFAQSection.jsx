@@ -41,7 +41,7 @@ const HomeFAQSection = ({ data }) => {
                   onClick={() => handleOpen(id)}
                 >
                   {i18n.language === currentLanguages.UA
-            ? el.question : el.questionRus}
+                    ? el.question : el.questionRus}
                   <svg
                     className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
                   >
@@ -54,7 +54,7 @@ const HomeFAQSection = ({ data }) => {
                     }`}
                 >
                   {!isLoading && <h4 className={styles.answer}>{i18n.language === currentLanguages.UA
-            ? el.answer : el.answerRus}</h4>}
+                    ? el.answer : el.answerRus}</h4>}
                 </div>
               </li>
             );
@@ -64,5 +64,6 @@ const HomeFAQSection = ({ data }) => {
     </section>
   );
 };
+
 
 export default HomeFAQSection;

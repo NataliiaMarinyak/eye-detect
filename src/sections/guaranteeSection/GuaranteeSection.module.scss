@@ -1,4 +1,5 @@
 @import "../../app/variables";
+
 $sectionGapsMob: 16px;
 $sectionGapsTablet: 20px;
 $sectionGapsLaptop: 32px;
@@ -10,6 +11,7 @@ $sectionGapsLaptop: 32px;
   @media screen and (min-width: $tablet) {
     margin-bottom: $sectionGapsTablet;
   }
+
   @media screen and (min-width: $laptop) {
     margin-bottom: $sectionGapsLaptop;
   }
@@ -26,6 +28,7 @@ $sectionGapsLaptop: 32px;
     gap: $sectionGapsTablet;
     margin-bottom: $sectionGapsTablet;
   }
+
   @media screen and (min-width: $laptop) {
     gap: 24px;
     margin-bottom: 24px;
@@ -71,9 +74,11 @@ $sectionGapsLaptop: 32px;
 .text {
   font-size: 14px;
   line-height: 1.7;
+
   @media screen and (min-width: $tablet) {
     font-size: 16px;
   }
+
   @media screen and (min-width: $tablet) {
     font-size: 20px;
   }
@@ -96,6 +101,7 @@ $sectionGapsLaptop: 32px;
   @media screen and (min-width: $tablet) {
     margin-bottom: $sectionGapsTablet;
   }
+
   @media screen and (min-width: $laptop) {
     margin-bottom: $sectionGapsLaptop;
     aspect-ratio: 960/560;

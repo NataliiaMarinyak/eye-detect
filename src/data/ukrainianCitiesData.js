@@ -13,7 +13,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Виннице: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Вінниці за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Виннице с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=35I6Oy5i0uU",
         videoLink: "https://www.youtube.com/embed/35I6Oy5i0uU",
         services: [
             {
@@ -142,7 +141,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Днепре: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Дніпрі за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Днепре с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=pGDWMcKicwc",
         videoLink: "https://www.youtube.com/embed/pGDWMcKicwc",
         services: [
             {
@@ -271,7 +269,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Донецке: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Донецьку за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Донецке с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=aBvMckqcAjs",
         videoLink: "https://www.youtube.com/embed/aBvMckqcAjs",
         services: [
             {
@@ -400,7 +397,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Житомире: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Житомирі за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Житомире с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=vYbBemUdFHI",
         videoLink: "https://www.youtube.com/embed/vYbBemUdFHI",
         services: [
             {
@@ -529,7 +525,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Запорожье: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Запоріжжі за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Запорожье с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=nKmJ1oOQTHQ",
         videoLink: "https://www.youtube.com/embed/nKmJ1oOQTHQ",
         services: [
             {
@@ -658,7 +653,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Ивано-Франковске: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Івано-Франківську за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Ивано-Франковске с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=Nd0MEewnAAE",
         videoLink: "https://www.youtube.com/embed/Nd0MEewnAAE",
         services: [
             {
@@ -787,7 +781,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Киеве: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Києві за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Киеве с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=Z3Hhtam-dmo",
         videoLink: "https://www.youtube.com/embed/Z3Hhtam-dmo",
         services: [
             {
@@ -916,7 +909,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Кропивницком: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Кропивницькому за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Кропивницком с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=iFo5yygAY3k",
         videoLink: "https://www.youtube.com/embed/iFo5yygAY3k",
         services: [
             {
@@ -1045,7 +1037,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Луганске: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Луганську за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Луганске с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=s_bTJDGBraA",
         videoLink: "https://www.youtube.com/embed/s_bTJDGBraA",
         services: [
             {
@@ -1174,7 +1165,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Луцке: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Луцьку за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Луцке с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=WBQgcRx9Qfs",
         videoLink: "https://www.youtube.com/embed/WBQgcRx9Qfs",
         services: [
             {
@@ -1303,7 +1293,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Львове: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Львові за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка во Львове с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=uaMkZJJoXcI",
         videoLink: "https://www.youtube.com/embed/uaMkZJJoXcI",
         services: [
             {
@@ -1432,7 +1421,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Николаеве: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Миколаєві за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Николаеве с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=FtadISwiUV8",
         videoLink: "https://www.youtube.com/embed/FtadISwiUV8",
         services: [
             {
@@ -1561,7 +1549,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Одессе: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка в Одесі за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Одессе с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=NCwFrTtdGhU",
         videoLink: "https://www.youtube.com/embed/NCwFrTtdGhU",
         services: [
             {
@@ -1690,7 +1677,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Полтаве: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Полтаві за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Полтаве с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=DIdLRoC4dbA",
         videoLink: "https://www.youtube.com/embed/DIdLRoC4dbA",
         services: [
             {
@@ -1819,7 +1805,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Ровно: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Рівному за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Ровно с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=1tQtA_cFF08",
         videoLink: "https://www.youtube.com/embed/1tQtA_cFF08",
         services: [
             {
@@ -1948,7 +1933,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Сумах: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Сумах за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Сумах с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=YumWJ4KhgYo",
         videoLink: "https://www.youtube.com/embed/YumWJ4KhgYo",
         services: [
             {
@@ -2077,7 +2061,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Тернополе: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Тернополі за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Тернополе с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=DkUiAEVwkVs",
         videoLink: "https://www.youtube.com/embed/DkUiAEVwkVs",
         services: [
             {
@@ -2205,7 +2188,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Ужгороде: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка в Ужгороді за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Ужгороде с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=1_gbQ83fK6Y",
         videoLink: "https://www.youtube.com/embed/1_gbQ83fK6Y",
         services: [
             {
@@ -2334,7 +2316,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Харькове: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Харкові за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Харькове с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=YaTt1VQNWbA",
         videoLink: "https://www.youtube.com/embed/YaTt1VQNWbA",
         services: [
             {
@@ -2463,7 +2444,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Херсоне: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Херсоні за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Херсоне с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=t7GbQOS8F_Q",
         videoLink: "https://www.youtube.com/embed/t7GbQOS8F_Q",
         services: [
             {
@@ -2592,7 +2572,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Хмельницком: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Хмельницькому за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Хмельницком с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=BVtjKa2EVb4",
         videoLink: "https://www.youtube.com/embed/BVtjKa2EVb4",
         services: [
             {
@@ -2721,7 +2700,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Черкассах: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Черкасах за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Черкассах с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=4APGXbKRPJ8",
         videoLink: "https://www.youtube.com/embed/4APGXbKRPJ8",
         services: [
             {
@@ -2850,7 +2828,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Черновцах: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Чернівцях за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Черновцах с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=-45e_3hVWaQ",
         videoLink: "https://www.youtube.com/embed/-45e_3hVWaQ",
         services: [
             {
@@ -2979,7 +2956,6 @@ export const ukrainianCitiesData = [
         mainDescriptionRus: "Полиграф-тестирование EyeDetect в Чернигове: помощь в выявлении правды для семейных, деловых и личных вопросов. Быстро, точно, конфиденциально.",
         subTitle: "Швидка та достовірна перевірка у Чернігові за допомогою EyeDetect",
         subTitleRus: "Быстрая и достоверная проверка в Чернигове с помощью EyeDetect",
-        // videoLink: "https://www.youtube.com/watch?v=5Sx4qiltYuQ",
         videoLink: "https://www.youtube.com/embed/5Sx4qiltYuQ",
         services: [
             {

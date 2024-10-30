@@ -78,18 +78,15 @@
 
 .cityItem {
     width: calc((100% - 2px) / 2);
-    // max-width: 140px;
     max-width: 143px;
     font-size: 14px;
 
     @media screen and (min-width: $tablet) {
-        // max-width: 180px;
         max-width: 183px;
         font-size: 18px;
     }
 
     @media screen and (min-width: $laptop) {
-        // max-width: 200px;
         max-width: 204px;
         font-size: 20px;
     }

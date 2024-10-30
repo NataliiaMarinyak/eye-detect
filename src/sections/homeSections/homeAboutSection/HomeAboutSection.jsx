@@ -6,10 +6,12 @@ import { aboutData } from "@/data/aboutData";
 import { currentLanguages } from "@/data/languages";
 import styles from "./HomeAboutSection.module.scss";
 
+
 const HomeAboutSection = () => {
   const { t, i18n } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
+
 
   return (
     <section>
@@ -41,18 +43,20 @@ const HomeAboutSection = () => {
             })}
           </ul>
           <div className={styles.imgWrapp}>
-            <Image
+            {!isLoading && <Image
               src="/images/aboutImg.webp"
               width={943}
               height={638}
-              alt="Наталія Мариняк"
+              alt={i18n.language === currentLanguages.UA
+                ? "Наталя Мариняк" : "Наталья Мариняк"}
               sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
-            />
+            />}
           </div>
         </div>
       </div>
     </section>
   );
 };
+
 
 export default HomeAboutSection;

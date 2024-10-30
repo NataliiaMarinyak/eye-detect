@@ -33,6 +33,7 @@
   & svg {
     margin-right: 12px;
   }
+
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -41,6 +42,7 @@
 .phone {
   display: flex;
   margin-left: auto;
+
   @media screen and (min-width: $tablet) {
     margin-left: 0;
   }
@@ -50,15 +52,8 @@
   display: none;
 
   gap: 12px;
+
   @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
-
-// .facebook {
-//   & svg {
-//     fill: none;
-//     background-color: $textLightColor;
-//     stroke: none;
-//   }
-// }

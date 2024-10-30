@@ -1,5 +1,6 @@
 import { addressData } from "./addressData";
 
+
 export const FAQDataHome = [
   {
     question: "Яка точність роботи детектора брехні EyeDetect?",
