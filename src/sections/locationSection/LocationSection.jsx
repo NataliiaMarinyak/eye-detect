@@ -34,22 +34,18 @@ const LocationSection = () => {
                 >{!isLoading && t('LocationSection.Title')}</h1>
 
                 <div className={styles.mapWrapper}>
-                    {isMobile && !isLoading && <div
+                    {isMobile && <div
                         className={styles.previewContainer}
                         onClick={handleMobileMapClick}
                     >
                         <Image
                             className={styles.previewImage}
                             src="/images/map-preview-mobile.webp"
-                            alt={
-                                i18n.language === currentLanguages.UA
-                                    ? addressData.textAddress
-                                    : addressData.textAddressRus
-                            }
+                            alt="Google карта"
                             sizes="(max-width: 569px) 100vw"
                             width={529}
                             height={201}
-                            loading="eager"
+                            priority={true}
                         />
                     </div>}
 
