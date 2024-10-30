@@ -34,8 +34,8 @@ const MachineSection = () => {
                         sizes="(max-width: 1023px) 100vw, 960px"
                         width={960}
                         height={494}
-                        loading="eager"
-                    />}
+                        priority={true} />
+                    }
                 </div>
 
                 <OpenModalBtn />

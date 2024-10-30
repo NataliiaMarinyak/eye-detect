@@ -42,7 +42,7 @@ const ContactsSection = () => {
               className={styles.previewContainer}
               onClick={handleMobileMapClick}
             >
-              {!isLoading && <Image
+              <Image
                 className={styles.previewImage}
                 src="/images/map-preview-mobile.webp"
                 alt={
@@ -53,8 +53,7 @@ const ContactsSection = () => {
                 sizes="(max-width: 569px) 100vw"
                 width={570}
                 height={300}
-                loading="eager"
-              />}
+                priority={true} />
             </div>
             }
 
