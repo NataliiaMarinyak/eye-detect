@@ -3,6 +3,7 @@ import styles from "./Footer.module.scss";
 import FooterSocMedia from "./FooterSocMedia/FooterSocMedia";
 import PrivacyPolicy from "./PrivacyPolicy";
 
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -18,5 +19,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default Footer;

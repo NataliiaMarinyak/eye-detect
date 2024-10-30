@@ -1,9 +1,9 @@
 "use client";
-
+import React, { useContext, useEffect } from "react";
 import { SiteContext } from "@/context/SiteContext";
 import { useWindowResize } from "@/hooks/windowResize";
-import React, { useContext, useEffect } from "react";
 import styles from "./Burger.module.scss";
+
 
 const Burger = () => {
   const { isMobileMenu, setIsMobileMenu } = useContext(SiteContext);
@@ -43,5 +43,6 @@ const Burger = () => {
     </>
   );
 };
+
 
 export default Burger;

@@ -1,12 +1,12 @@
 "use client";
-
-import Navigation from "@/components/Navigation/Navigation";
-import { useWindowResize } from "@/hooks/windowResize";
-import { useCallback, useContext, useEffect, useRef } from "react";
-import { SiteContext } from "@/context/SiteContext";
 import React from "react";
-import styles from "./MobMenu.module.scss";
+import { useCallback, useContext, useEffect, useRef } from "react";
+import Navigation from "@/components/Navigation/Navigation";
 import TranslatorBtnBlock from "@/components/TranslatorBtnBlock/TranslatorBtnBlock";
+import { useWindowResize } from "@/hooks/windowResize";
+import { SiteContext } from "@/context/SiteContext";
+import styles from "./MobMenu.module.scss";
+
 
 const MobMenu = () => {
   const { isMobile, isTablet } = useWindowResize();
@@ -57,5 +57,6 @@ const MobMenu = () => {
     </>
   );
 };
+
 
 export default MobMenu;

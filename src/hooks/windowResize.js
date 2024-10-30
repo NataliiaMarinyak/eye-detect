@@ -1,6 +1,6 @@
 "use client";
-
 import { useState, useEffect, useCallback } from "react";
+
 
 export function useWindowResize() {
   const [isMobile, setMobile] = useState(false);
@@ -74,26 +74,3 @@ export function useWindowResize() {
 
   return { isMobile, isTablet, isLaptop, isDesktop };
 }
-
-// ussage:
-
-// "use client";
-// import { useWindowResize } from "@/hooks/windowResize";
-// const Header = () => {
-// const { isMobile } = useWindowResize();
-// ...
-// return (
-//     <header>
-//       Header
-//       {isMobile && (
-//         <button
-//           onClick={() => {
-//             setIsMobileMenu(!isMobileMenu);
-//           }}
-//         >
-//           menu
-//         </button>
-//       )}
-//     </header>
-//   );
-// }

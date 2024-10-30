@@ -25,6 +25,7 @@
     font-size: 18px;
     gap: 0;
   }
+
   @media screen and (min-width: $laptop) {
     font-size: 20px;
   }
@@ -79,16 +80,8 @@
 
 .nav {
   display: none;
+
   @media screen and (min-width: $laptop) {
     display: flex;
   }
 }
-
-// .privacy {
-//   width: 100%;
-//   text-align: center;
-
-//   @media screen and (min-width: $laptop) {
-//     width: auto;
-//   }
-// }

@@ -1,13 +1,13 @@
 "use client";
-
 import React, { useContext, useEffect, useState } from "react";
-import styles from "./Navigation.module.scss";
-import { navLinks } from "../../data/navigation";
 import Link from "next/link";
-import { SiteContext } from "@/context/SiteContext";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
+import { SiteContext } from "@/context/SiteContext";
+import { navLinks } from "@/data/navigation";
 import { currentLanguages } from "@/data/languages";
+import styles from "./Navigation.module.scss";
+
 
 const Navigation = ({ className, isInHeader, linkStyles }) => {
   const { setIsMobileMenu } = useContext(SiteContext);
@@ -22,7 +22,6 @@ const Navigation = ({ className, isInHeader, linkStyles }) => {
   const isUa = !isLoading && i18n.language === currentLanguages.UA;
 
   return (
-    // <nav className={`${styles.nav} ${className}`}>
     <nav className={className}>
       {navLinks.map((el) => {
         const pageLinkClassName = () => {
@@ -49,5 +48,6 @@ const Navigation = ({ className, isInHeader, linkStyles }) => {
     </nav>
   );
 };
+
 
 export default Navigation;

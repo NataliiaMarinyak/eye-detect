@@ -49,7 +49,6 @@ const OrderForm = () => {
     }, [isSubmitSuccessful, reset]);
 
     const onSubmit = (data) => {
-        // console.log("feedbackFormData:", data);
         sendToTelegram(data);
         toast.success(t('Notifications.Success'));
         closeModal();

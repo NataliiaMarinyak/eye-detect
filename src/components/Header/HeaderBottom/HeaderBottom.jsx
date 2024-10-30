@@ -1,10 +1,11 @@
 import React from "react";
-import styles from "./HeaderBottom.module.scss";
 import Logo from "../../../components/Logo/Logo";
 import Navigation from "@/components/Navigation/Navigation";
 import Burger from "@/components/Buttons/Burger/Burger";
-import MobMenu from "../MobMenu/MobMenu";
 import TranslatorBtnBlock from "@/components/TranslatorBtnBlock/TranslatorBtnBlock";
+import MobMenu from "../MobMenu/MobMenu";
+import styles from "./HeaderBottom.module.scss";
+
 
 const HeaderBottom = () => {
   return (
@@ -23,5 +24,6 @@ const HeaderBottom = () => {
     </div>
   );
 };
+
 
 export default HeaderBottom;

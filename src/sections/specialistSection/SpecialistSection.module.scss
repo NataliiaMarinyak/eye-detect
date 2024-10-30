@@ -46,7 +46,6 @@
   @include sectionSubTitle;
   margin-bottom: 16px;
   color: $textDarkColor;
-  // font-family: var(--font-ukraine-bold);
   font-family: ukraineBold;
   text-align: start;
 
@@ -55,11 +54,7 @@
   }
 }
 
-// .details {
-// }
-
 .detailsTitle {
-  // font-family: var(--font-ukraine-bold);
   font-family: ukraineBold;
   font-size: 16px;
   margin-bottom: 8px;
@@ -74,8 +69,6 @@
     height: 24px;
     stroke: $textDarkColor;
     fill: none;
-    // stroke-width: 2px;
-    // stroke-width="1.6"
   }
 
   @media screen and (min-width: $tablet) {

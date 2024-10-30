@@ -1,7 +1,8 @@
 import React from "react";
-import { socialMediaData } from "@/data/socialMediaData";
 import Link from "next/link";
+import { socialMediaData } from "@/data/socialMediaData";
 import styles from "./ContactsSection.module.scss";
+
 
 const ContactsSocMedia = ({ className, itemStyles }) => {
   return (
@@ -25,5 +26,6 @@ const ContactsSocMedia = ({ className, itemStyles }) => {
     </address>
   );
 };
+
 
 export default ContactsSocMedia;

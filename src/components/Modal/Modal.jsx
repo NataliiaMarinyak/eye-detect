@@ -1,10 +1,10 @@
 "use client";
-
 import React, { useContext, useEffect } from "react";
-import styles from "./Modal.module.scss";
-import { SiteContext } from "@/context/SiteContext";
 import OrderForm from "../OrderForm/OrderForm";
+import { SiteContext } from "@/context/SiteContext";
 import { useModalActions } from "@/hooks/modalActions";
+import styles from "./Modal.module.scss";
+
 
 const Modal = () => {
   const { modalFrame } = useContext(SiteContext);
@@ -49,5 +49,6 @@ const Modal = () => {
     </div>
   );
 };
+
 
 export default Modal;

@@ -26,6 +26,7 @@ const LocationSection = () => {
         window.open(addressData.hrefLink, "_blank");
     };
 
+
     return (
         <section className={styles.section}>
             <div className={`container ${styles.container}`}>

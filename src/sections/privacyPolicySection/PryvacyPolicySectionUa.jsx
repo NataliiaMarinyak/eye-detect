@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./PryvacyPolicy.module.scss";
 
+
 const PryvacyPolicySectionUa = () => {
+
+
   return (
     <section className={styles.section}>
       <div className={`container ${styles.container}`}>

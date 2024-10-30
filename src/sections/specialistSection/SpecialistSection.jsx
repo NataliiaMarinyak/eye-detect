@@ -6,10 +6,12 @@ import { specialistData } from "@/data/specialistData";
 import { currentLanguages } from "@/data/languages";
 import styles from "./SpecialistSection.module.scss";
 
+
 const SpecialistSection = () => {
   const { t, i18n } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
+
 
   return (
     <section>
@@ -48,11 +50,11 @@ const SpecialistSection = () => {
                             <ul className={styles.detailsList}>
                               {i18n.language === currentLanguages.UA
                                 ? det.list.map((item, i) => {
-                                    return <li key={i}>{item}</li>;
-                                  })
+                                  return <li key={i}>{item}</li>;
+                                })
                                 : det.listRus.map((item, i) => {
-                                    return <li key={i}>{item}</li>;
-                                  })}
+                                  return <li key={i}>{item}</li>;
+                                })}
                             </ul>
                           )}
                         </li>
@@ -61,14 +63,16 @@ const SpecialistSection = () => {
                   </ul>
                 </div>
                 <div className={styles.imgWrapp}>
-                  <Image
+                  {!isLoading && <Image
                     src={el.img}
-                    alt={el.title}
+                    alt={i18n.language === currentLanguages.UA
+                      ? el.title
+                      : el.titleRus}
                     width={943}
                     height={638}
                     sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 375px"
                     loading="eager"
-                  />
+                  />}
                 </div>
               </li>
             );

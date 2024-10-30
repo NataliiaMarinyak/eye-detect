@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Link from "next/link";
 import styles from "./ButtonLink.module.scss";
 
+
 const ButtonLink = ({ customBtn, href, id }) => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
@@ -16,5 +17,6 @@ const ButtonLink = ({ customBtn, href, id }) => {
     </Link>
   );
 };
+
 
 export default ButtonLink;
