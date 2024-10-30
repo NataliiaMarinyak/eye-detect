@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import { currentLanguages } from "@/data/languages";
 import { addressData } from '@/data/addressData';
@@ -12,6 +13,18 @@ const LocationSection = () => {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => setIsLoading(false), []);
 
+    const [isMobile, setIsMobile] = useState(true);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 570);
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const handleMobileMapClick = () => {
+        window.open(addressData.hrefLink, "_blank");
+    };
 
     return (
         <section className={styles.section}>
@@ -20,9 +33,28 @@ const LocationSection = () => {
                 >{!isLoading && t('LocationSection.Title')}</h1>
 
                 <div className={styles.mapWrapper}>
-                    {!isLoading && <iframe
+                    {isMobile && !isLoading && <div
+                        className={styles.previewContainer}
+                        onClick={handleMobileMapClick}
+                    >
+                        <Image
+                            className={styles.previewImage}
+                            src="/images/map-preview-mobile.webp"
+                            alt={
+                                i18n.language === currentLanguages.UA
+                                    ? addressData.textAddress
+                                    : addressData.textAddressRus
+                            }
+                            sizes="(max-width: 569px) 100vw"
+                            width={529}
+                            height={201}
+                            loading="eager"
+                        />
+                    </div>}
+
+                    {!isMobile && !isLoading && <iframe
                         className={styles.map}
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.9463559329574!2d24.02055367655992!3d49.843465471482666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add739d964237%3A0x45b9239b44ba1e3b!2z0LLRg9C70LjRhtGPINCU0LzQuNGC0YDQsCDQlNCw0L3QuNC70LjRiNC40L3QsCwgNiwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1728562646496!5m2!1suk!2sua"
+                        src={addressData.iframeSrcLink}
                         width={280}
                         height={108}
                         allowFullScreen=""
@@ -54,4 +86,4 @@ const LocationSection = () => {
 }
 
 
-export default LocationSection
+export default LocationSection;

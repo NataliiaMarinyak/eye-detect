@@ -43,6 +43,17 @@
     }
 }
 
+.previewContainer {
+    width: 100%;
+    max-width: 530px;
+    cursor: pointer;
+}
+
+.previewImage {
+    width: 100%;
+    height: auto;
+}
+
 .mapWrapper {
     width: 100%;
 }
