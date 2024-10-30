@@ -19,7 +19,7 @@ const Logo = ({ className }) => {
         height={32}
         sizes="33vw"
         alt="Eye-detect"
-        loading="eager"
+        priority={true}
       />
     </Link>
   );

@@ -26,12 +26,12 @@ const ConsultationSection = () => {
       </div>
       <div className={styles.bgImgWrapp}>
         <Image
-          src="/images/about-as-bg.webp"
+          src="/images/about-us-bg.webp"
           alt=" Передові рішення для виявлення обману швидко і точно"
           width={1440}
           height={900}
           sizes="100vw"
-          loading="eager"
+          priority={true}
         />
       </div>
     </section>

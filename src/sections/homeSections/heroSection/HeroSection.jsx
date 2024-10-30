@@ -30,7 +30,7 @@ const HeroSection = () => {
           width={1440}
           height={900}
           sizes="100vw"
-          loading="eager"
+          priority={true}
         />}
       </div>
     </section>
