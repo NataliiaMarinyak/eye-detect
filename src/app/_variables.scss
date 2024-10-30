@@ -154,33 +154,33 @@ $textShadow: 2px 4px 8px $footerBgColor;
 
   & img {
     object-fit: cover;
-    animation: aliveImg 60s linear infinite;
+    // animation: aliveImg 60s linear infinite;
   }
 }
 
-@keyframes aliveImg {
-  0% {
-    scale: 1;
-  }
+// @keyframes aliveImg {
+//   0% {
+//     scale: 1;
+//   }
 
-  25% {
-    scale: 1.06;
-  }
+//   25% {
+//     scale: 1.06;
+//   }
 
-  50% {
-    scale: 1.06;
-    transform: translate(-2%, 1%);
-  }
+//   50% {
+//     scale: 1.06;
+//     transform: translate(-2%, 1%);
+//   }
 
-  75% {
-    scale: 1.03;
-    transform: translate(-2%, 0%);
-  }
+//   75% {
+//     scale: 1.03;
+//     transform: translate(-2%, 0%);
+//   }
 
-  100% {
-    transform: translate(0);
-  }
-}
+//   100% {
+//     transform: translate(0);
+//   }
+// }
 
 @mixin imageFillProp {
   position: absolute;
