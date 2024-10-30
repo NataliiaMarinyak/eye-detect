@@ -25,14 +25,14 @@ const ConsultationSection = () => {
         <OpenModalBtn customBtn={styles.btn} />
       </div>
       <div className={styles.bgImgWrapp}>
-        <Image
+        {!isLoading && <Image
           src="/images/about-us-bg.webp"
-          alt=" Передові рішення для виявлення обману швидко і точно"
+          alt={t("ConsultationSection.Title")}
           width={1440}
           height={900}
           sizes="100vw"
           priority={true}
-        />
+        />}
       </div>
     </section>
   );

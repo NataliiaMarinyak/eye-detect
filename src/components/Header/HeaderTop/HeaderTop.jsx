@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { phone } from "../../../data/socialMediaData";
-import { headerSocLinks } from "../../../data/socialMediaData";
+import { headerSocLinks, phone } from "@/data/socialMediaData";
 import styles from "./HeaderTop.module.scss";
 
 
@@ -17,7 +16,10 @@ const HeaderTop = () => {
   return (
     <div className={`${styles.headerTopWrapper}`}>
       <div className={`container ${styles.headerTop}`}>
-        <Link href={phone.href} className={`${styles.link} ${styles.phone}`}>
+        <Link href={phone.href}
+          className={`${styles.link} ${styles.phone}`}
+          style={{ height: "24px" }}
+        >
           <svg>
             <use href={phone.icon}></use>
           </svg>
