@@ -49,7 +49,7 @@ const LocationSection = () => {
                             sizes="(max-width: 569px) 100vw"
                             width={529}
                             height={201}
-                            priority={true}
+                            loading="eager"
                         />
                     </div>}
 

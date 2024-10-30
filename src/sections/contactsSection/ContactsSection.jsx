@@ -53,7 +53,7 @@ const ContactsSection = () => {
                 sizes="(max-width: 569px) 100vw"
                 width={570}
                 height={300}
-                priority={true} />
+                loading="eager" />
             </div>
             }
 
