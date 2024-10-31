@@ -15,12 +15,8 @@ const ConsultationSection = () => {
     <section className={styles.section}>
       <div className={`container ${styles.container}`}>
         <div>
-          {!isLoading && (
-            <h1 className={styles.title}>{t("ConsultationSection.Title")}</h1>
-          )}
-          {!isLoading && (
-            <h2 className={styles.text}>{t("ConsultationSection.SubTitle")}</h2>
-          )}
+          <h1 className={styles.title}>{!isLoading && t("ConsultationSection.Title")}</h1>
+          <h2 className={styles.text}>{!isLoading && t("ConsultationSection.SubTitle")}</h2>
         </div>
         <OpenModalBtn customBtn={styles.btn} />
       </div>

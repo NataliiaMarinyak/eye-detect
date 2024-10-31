@@ -16,13 +16,8 @@ const HomeAboutSection = () => {
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        {!isLoading && (
-          <h1 className={styles.title}>{t("HomeAboutSection.Title")}</h1>
-        )}
-        {!isLoading && (
-          <h2 className={styles.subTitle}>{t("HomeAboutSection.SubTitle")}</h2>
-        )}
-
+        <h1 className={styles.title}>{!isLoading && t("HomeAboutSection.Title")}</h1>
+        <h2 className={styles.subTitle}>{!isLoading && t("HomeAboutSection.SubTitle")}</h2>
         <div className={styles.content}>
           <ul className={styles.aboutList}>
             {aboutData.map((el, i) => {
@@ -31,13 +26,11 @@ const HomeAboutSection = () => {
                   <svg>
                     <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                   </svg>
-                  {!isLoading && (
-                    <h3>
-                      {i18n.language === currentLanguages.UA
-                        ? el.text
-                        : el.textRus}
-                    </h3>
-                  )}
+                  <h3>
+                    {!isLoading && i18n.language === currentLanguages.UA
+                      ? el.text
+                      : el.textRus}
+                  </h3>
                 </li>
               );
             })}
