@@ -32,6 +32,18 @@
 
 .title {
     @include pageTitle;
+
+    height: 168px;
+    max-height: fit-content;
+
+    @media screen and (min-width: $tablet) {
+        height: 125px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        height: 94px;
+        max-height: none;
+    }
 }
 
 .imgWrapper {
