@@ -17,6 +17,18 @@
 
 .subTitle {
   @include pageTitle;
+
+  height: 202px;
+  max-height: fit-content;
+
+  @media screen and (min-width: $tablet) {
+    height: 125px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    height: 94px;
+    max-height: none;
+  }
 }
 
 .servicesList {
