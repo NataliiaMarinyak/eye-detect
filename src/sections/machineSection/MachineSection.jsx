@@ -26,16 +26,14 @@ const MachineSection = () => {
                     ? data?.mainTitle : data?.mainTitleRus}</h1>}
 
                 <div className={styles.imgWrapper}>
-                    {!isLoading && <Image
+                    <Image
                         className={styles.img}
                         src="/images/machine.webp"
-                        alt={i18n.language === currentLanguages.UA
-                            ? "Прилад EyeDetect" : "Прибор EyeDetect"}
+                        alt="Тест EyeDetect"
                         sizes="(max-width: 1023px) 100vw, 960px"
                         width={960}
                         height={494}
                         priority={true} />
-                    }
                 </div>
 
                 <OpenModalBtn />
