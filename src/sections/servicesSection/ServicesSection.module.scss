@@ -27,7 +27,6 @@
 
   @media screen and (min-width: $laptop) {
     height: 94px;
-    max-height: none;
   }
 }
 
@@ -58,11 +57,18 @@
 }
 
 .areaWrapper {
+  height: 112px;
+  max-height: fit-content;
   display: flex;
   column-gap: 8px;
 
   @media screen and (min-width: $tablet) {
+    height: 62px;
     column-gap: 24px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    height: 73px;
   }
 }
 
@@ -139,15 +145,19 @@
 }
 
 .directionTitleWrapper {
+  height: 327px;
+  max-height: fit-content;
   display: flex;
   column-gap: 4px;
 
   @media screen and (min-width: $tablet) {
+    height: 153px;
     align-items: center;
     column-gap: 16px;
   }
 
   @media screen and (min-width: $laptop) {
+    height: 136px;
     column-gap: 24px;
   }
 }
@@ -181,15 +191,19 @@
 }
 
 .checksList {
+  height: 272px;
+  max-height: fit-content;
   padding-left: 24px;
   list-style: outside;
 
   @media screen and (min-width: $tablet) {
+    height: 153px;
     margin-left: 120px;
     padding-left: 28px;
   }
 
   @media screen and (min-width: $laptop) {
+    height: 136px;
     margin-left: 64px;
     padding-left: 32px;
   }
