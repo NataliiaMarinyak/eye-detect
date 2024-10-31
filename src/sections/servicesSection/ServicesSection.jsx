@@ -20,7 +20,7 @@ const ServicesSection = () => {
 
 
     return (
-        <section>
+        <section className={styles.section}>
             <div className={`container ${styles.container}`}>
                 {!isLoading && <h2 className={styles.subTitle}>{i18n.language === currentLanguages.UA
                     ? data?.subTitle : data?.subTitleRus}</h2>}
