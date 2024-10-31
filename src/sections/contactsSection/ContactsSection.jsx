@@ -31,7 +31,7 @@ const ContactsSection = () => {
   return (
     <section className={styles.section}>
       <div className={`container ${styles.container}`}>
-        {!isLoading && <h1>{t("ContactsSection.Title")}</h1>}
+        <h1>{!isLoading && t("ContactsSection.Title")}</h1>
         <div className={styles.contentWrapp}>
           <ContactsSocMedia
             className={styles.socMedia}
@@ -67,10 +67,10 @@ const ContactsSection = () => {
             ></iframe>
             }
 
-            {!isLoading && <a
+            <a
               href={addressData.hrefLink}
               aria-label={
-                i18n.language === currentLanguages.UA
+                !isLoading && i18n.language === currentLanguages.UA
                   ? addressData.textAddress
                   : addressData.textAddressRus
               }
@@ -81,10 +81,10 @@ const ContactsSection = () => {
               <svg className={styles.locationIcon}>
                 <use href="/sprite.svg#icon-map_pin"></use>
               </svg>
-              {i18n.language === currentLanguages.UA
+              {!isLoading && i18n.language === currentLanguages.UA
                 ? addressData.textAddress
                 : addressData.textAddressRus}
-            </a>}
+            </a>
 
           </div>
         </div>

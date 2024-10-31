@@ -23,15 +23,15 @@ const EuropeanCitiesSection = () => {
                         key={item.slug}
                         className={styles.locationItem}
                     >
-                        {!isLoading && <Link
+                        <Link
                             href={`/locations/${item.slug}`}
                             className={styles.locationLink}
                         >
-                            <p className={styles.country}>{i18n.language === currentLanguages.UA
+                            <p className={styles.country}>{!isLoading && i18n.language === currentLanguages.UA
                                 ? item.country : item.countryRus}</p>
-                            <p className={styles.city}>{i18n.language === currentLanguages.UA
+                            <p className={styles.city}>{!isLoading && i18n.language === currentLanguages.UA
                                 ? item.city : item.cityRus}</p>
-                        </Link>}
+                        </Link>
                     </li>)}
                 </ul>
                 <OpenModalBtn customBtn={styles.modalBtn} />

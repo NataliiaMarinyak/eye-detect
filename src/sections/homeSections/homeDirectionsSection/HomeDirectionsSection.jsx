@@ -8,14 +8,14 @@ import styles from './HomeDirectionsSection.module.scss';
 
 
 const HomeDirectionsSection = () => {
-    const { t,i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
 
   return <section>
     <div className={`container ${styles.container}`}>
-      {!isLoading && <h2 className={styles.title}>{t('HomeDirectionsSection.Title')}</h2>}
+      <h2 className={styles.title}>{!isLoading && t('HomeDirectionsSection.Title')}</h2>
       <ul className={styles.directionsWrapper}>
         {directionsData.map(direction => <li key={direction.title} className={styles.directionItem}>
           <div className={styles.iconWrapper}>
@@ -23,10 +23,10 @@ const HomeDirectionsSection = () => {
               <use href={direction.href} />
             </svg>
           </div>
-          {!isLoading && <h3 className={styles.subTitle}>{i18n.language === currentLanguages.UA
-            ? direction.title : direction.titleRus}</h3>}
-          {!isLoading && <p className={styles.description}>{i18n.language === currentLanguages.UA
-            ? direction.description : direction.descriptionRus}</p>}
+          <h3 className={styles.subTitle}>{!isLoading && i18n.language === currentLanguages.UA
+            ? direction.title : direction.titleRus}</h3>
+          <p className={styles.description}>{!isLoading && i18n.language === currentLanguages.UA
+            ? direction.description : direction.descriptionRus}</p>
         </li>)}
       </ul>
       <OpenModalBtn />

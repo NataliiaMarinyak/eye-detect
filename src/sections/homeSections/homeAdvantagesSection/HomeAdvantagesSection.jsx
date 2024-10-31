@@ -14,7 +14,7 @@ const HomeAdvantagesSection = () => {
 
   return <section>
     <div className={`container ${styles.container}`}>
-      {!isLoading && <h2 className={styles.title}>{t('HomeAdvantagesSection.Title')}</h2>}
+      <h2 className={styles.title}>{!isLoading && t('HomeAdvantagesSection.Title')}</h2>
       <ul className={styles.advantagesWrapper}>
         {advantagesData.map(advantage => <li key={advantage.text} className={styles.advantageItem}>
           <div className={styles.iconWrapper}>
@@ -22,9 +22,9 @@ const HomeAdvantagesSection = () => {
               <use href={`/sprite.svg#icon-check-mark-in-circle`} />
             </svg>
           </div>
-          {!isLoading && <p className={styles.description}>{i18n.language === currentLanguages.UA
+          <p className={styles.description}>{!isLoading && i18n.language === currentLanguages.UA
             ? advantage.text
-            : advantage.textRus}</p>}
+            : advantage.textRus}</p>
         </li>)}
       </ul>
     </div>

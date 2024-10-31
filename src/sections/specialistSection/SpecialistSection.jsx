@@ -16,47 +16,38 @@ const SpecialistSection = () => {
   return (
     <section>
       <div className="container">
-        {!isLoading && (
-          <h2 className={styles.title}>{t("SpecialistSection.Title")}</h2>
-        )}
-
+        <h2 className={styles.title}>{!isLoading && t("SpecialistSection.Title")}</h2>
         <ul>
           {specialistData.map((el, i) => {
             return (
               <li key={i} className={styles.contentWrapp}>
                 <div className={styles.textWrapp}>
-                  {!isLoading && (
-                    <h3 className={styles.subtitle}>
-                      {i18n.language === currentLanguages.UA
-                        ? el.title
-                        : el.titleRus}
-                    </h3>
-                  )}
+                  <h3 className={styles.subtitle}>
+                    {!isLoading && i18n.language === currentLanguages.UA
+                      ? el.title
+                      : el.titleRus}
+                  </h3>
                   <ul>
                     {el.details.map((det, i) => {
                       return (
                         <li key={i} className={styles.details}>
-                          {!isLoading && (
-                            <h4 className={styles.detailsTitle}>
-                              <svg>
-                                <use href="/sprite.svg#icon-check-mark-in-circle"></use>
-                              </svg>
-                              {i18n.language === currentLanguages.UA
-                                ? det.subTitle
-                                : det.subTitleRus}
-                            </h4>
-                          )}
-                          {!isLoading && (
-                            <ul className={styles.detailsList}>
-                              {i18n.language === currentLanguages.UA
-                                ? det.list.map((item, i) => {
-                                  return <li key={i}>{item}</li>;
-                                })
-                                : det.listRus.map((item, i) => {
-                                  return <li key={i}>{item}</li>;
-                                })}
-                            </ul>
-                          )}
+                          <h4 className={styles.detailsTitle}>
+                            <svg>
+                              <use href="/sprite.svg#icon-check-mark-in-circle"></use>
+                            </svg>
+                            {!isLoading && i18n.language === currentLanguages.UA
+                              ? det.subTitle
+                              : det.subTitleRus}
+                          </h4>
+                          <ul className={styles.detailsList}>
+                            {!isLoading && i18n.language === currentLanguages.UA
+                              ? det.list.map((item, i) => {
+                                return <li key={i}>{item}</li>;
+                              })
+                              : det.listRus.map((item, i) => {
+                                return <li key={i}>{item}</li>;
+                              })}
+                          </ul>
                         </li>
                       );
                     })}

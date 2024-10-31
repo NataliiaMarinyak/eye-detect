@@ -16,7 +16,7 @@ const HomeCertificatesSection = ({ isOnHomePage }) => {
 
   return <section>
     <div className={`container ${styles.container}`}>
-      {!isLoading && <h2 className={styles.title}>{t('HomeCertificatesSection.Title')}</h2>}
+      <h2 className={styles.title}>{!isLoading && t('HomeCertificatesSection.Title')}</h2>
       <div className={styles.certificatesWrapper}>
         <div className={styles.certWrap}>
           {!isLoading && <Image

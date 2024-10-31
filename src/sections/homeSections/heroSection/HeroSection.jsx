@@ -16,10 +16,8 @@ const HeroSection = () => {
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
         <div>
-          {!isLoading && (
-            <p className={styles.title}>{t("HeroSection.Title")}</p>
-          )}
-          {!isLoading && <p className={styles.text}>{t("HeroSection.Text")}</p>}
+          <p className={styles.title}>{!isLoading && t("HeroSection.Title")}</p>
+          <p className={styles.text}>{!isLoading && t("HeroSection.Text")}</p>
         </div>
         <OpenModalBtn customBtn={styles.btn} />
       </div>

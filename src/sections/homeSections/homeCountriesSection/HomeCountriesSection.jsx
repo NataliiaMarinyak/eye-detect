@@ -16,8 +16,8 @@ const HomeCountriesSection = () => {
   return <section>
     <div className={`container ${styles.container}`}>
       <div className={styles.titlesWrapper}>
-        {!isLoading && <h2 className={styles.title}>{t('HomeCountriesSection.Title')}</h2>}
-        {!isLoading && <h3 className={styles.subTitle}>{t('HomeCountriesSection.SubTitle')}</h3>}
+        <h2 className={styles.title}>{!isLoading && t('HomeCountriesSection.Title')}</h2>
+        <h3 className={styles.subTitle}>{!isLoading && t('HomeCountriesSection.SubTitle')}</h3>
       </div>
       <div className={styles.imgWrapper}>
         {!isLoading && <Image
