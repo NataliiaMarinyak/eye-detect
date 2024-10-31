@@ -1,10 +1,5 @@
 @import "../../app/variables";
 
-.section {
-  height: 2400px;
-  max-height: fit-content;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -21,10 +16,20 @@
 }
 
 .subTitle {
-  @include pageTitle;
+  font-family: ukraineHeadRegular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
 
-  height: 168px;
-  max-height: fit-content;
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 36px;
+  }
 }
 
 .servicesList {
@@ -44,8 +49,6 @@
 
 .serviceItem {
   width: 100%;
-  height: 1038px;
-  max-height: fit-content;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -56,8 +59,6 @@
 }
 
 .areaWrapper {
-  height: 112px;
-  max-height: fit-content;
   display: flex;
   column-gap: 8px;
 
@@ -177,8 +178,6 @@
 }
 
 .directionDescription {
-  height: 300px;
-  max-height: fit-content;
   font-weight: 400;
 }
 
