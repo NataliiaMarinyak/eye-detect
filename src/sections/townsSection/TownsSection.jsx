@@ -20,14 +20,14 @@ const TownsSection = () => {
     return (
         <section>
             <div className={`container ${styles.container}`}>
-                {!isLoading && <h2 className={styles.title}>{i18n.language === currentLanguages.UA
-                    ? data?.townsInfo.title : data?.townsInfo.titleRus}</h2>}
-                {!isLoading && <p className={styles.preface}>{i18n.language === currentLanguages.UA
-                    ? data?.townsInfo.preface : data?.townsInfo.prefaceRus}</p>}
-                {!isLoading && <p className={styles.towns}>{i18n.language === currentLanguages.UA
-                    ? data?.townsInfo.towns : data?.townsInfo.townsRus}</p>}
-                {!isLoading && <p className={styles.afterword}>{i18n.language === currentLanguages.UA
-                    ? data?.townsInfo.afterword : data?.townsInfo.afterwordRus}</p>}
+                <h2 className={styles.title}>{!isLoading && i18n.language === currentLanguages.UA
+                    ? data?.townsInfo.title : data?.townsInfo.titleRus}</h2>
+                <p className={styles.preface}>{!isLoading && i18n.language === currentLanguages.UA
+                    ? data?.townsInfo.preface : data?.townsInfo.prefaceRus}</p>
+                <p className={styles.towns}>{!isLoading && i18n.language === currentLanguages.UA
+                    ? data?.townsInfo.towns : data?.townsInfo.townsRus}</p>
+                <p className={styles.afterword}>{!isLoading && i18n.language === currentLanguages.UA
+                    ? data?.townsInfo.afterword : data?.townsInfo.afterwordRus}</p>
             </div>
         </section >
     )

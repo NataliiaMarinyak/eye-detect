@@ -17,9 +17,8 @@ const GuaranteeSection = () => {
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        {!isLoading && (
-          <h2 className={styles.title}>{t("GuaranteeSection.Title")}</h2>
-        )}
+        <h2 className={styles.title}>{!isLoading && t("GuaranteeSection.Title")}</h2>
+
         <ul className={styles.list}>
           {confidentGuaranty.map((el, i) => {
             return (
@@ -27,13 +26,11 @@ const GuaranteeSection = () => {
                 <svg className={styles.icon}>
                   <use href="/sprite.svg#icon-cross-in-circle"></use>
                 </svg>
-                {!isLoading && (
-                  <p className={styles.text}>
-                    {i18n.language === currentLanguages.UA
-                      ? el.text
-                      : el.textRus}
-                  </p>
-                )}
+                <p className={styles.text}>
+                  {!isLoading && i18n.language === currentLanguages.UA
+                    ? el.text
+                    : el.textRus}
+                </p>
               </li>
             );
           })}

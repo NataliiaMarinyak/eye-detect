@@ -14,7 +14,7 @@ const HomeConditionsSection = () => {
 
   return <section>
     <div className={`container ${styles.container}`}>
-      {!isLoading && <h2 className={styles.title}>{t('HomeConditionsSection.Title')}</h2>}
+      <h2 className={styles.title}>{!isLoading && t('HomeConditionsSection.Title')}</h2>
       <div className={styles.imgWrapper}>
         {!isLoading && <Image
           className={styles.img}

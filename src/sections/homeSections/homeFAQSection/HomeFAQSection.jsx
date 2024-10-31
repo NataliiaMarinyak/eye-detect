@@ -25,9 +25,9 @@ const HomeFAQSection = ({ data }) => {
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        {!isLoading && <h2 className={styles.title}>
-          {t('HomeFAQSection.Title')}
-        </h2>}
+        <h2 className={styles.title}>
+          {!isLoading && t('HomeFAQSection.Title')}
+        </h2>
         <ul>
           {data.map((el, i) => {
             const id = i + 1;
@@ -35,26 +35,26 @@ const HomeFAQSection = ({ data }) => {
 
             return (
               <li key={id} className={styles.faqItem}>
-                {!isLoading && <h3
+                <h3
                   data-id={id}
                   className={styles.faqTitle}
                   onClick={() => handleOpen(id)}
                 >
-                  {i18n.language === currentLanguages.UA
+                  {!isLoading && i18n.language === currentLanguages.UA
                     ? el.question : el.questionRus}
                   <svg
                     className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
                   >
                     <use href="/sprite.svg#icon-close"></use>
                   </svg>
-                </h3>}
+                </h3>
 
                 <div
                   className={`${styles.answerWrapp} ${isActive ? styles.isOpen : styles.isClosed
                     }`}
                 >
-                  {!isLoading && <h4 className={styles.answer}>{i18n.language === currentLanguages.UA
-                    ? el.answer : el.answerRus}</h4>}
+                  <h4 className={styles.answer}>{!isLoading && i18n.language === currentLanguages.UA
+                    ? el.answer : el.answerRus}</h4>
                 </div>
               </li>
             );
