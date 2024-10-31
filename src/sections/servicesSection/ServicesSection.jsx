@@ -22,8 +22,8 @@ const ServicesSection = () => {
     return (
         <section>
             <div className={`container ${styles.container}`}>
-                {!isLoading && <h2 className={styles.subTitle}>{i18n.language === currentLanguages.UA
-                    ? data?.subTitle : data?.subTitleRus}</h2>}
+                <h2 className={styles.subTitle}>{!isLoading && i18n.language === currentLanguages.UA
+                    ? data?.subTitle : data?.subTitleRus}</h2>
                 <ul className={styles.servicesList}>
                     {data?.services.map((service, index) =>
                         <li key={index} className={styles.serviceItem}>
