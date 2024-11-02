@@ -1,20 +1,5 @@
 @import "../../app/variables";
 
-// .section {
-//     @include pageTopPadding;
-
-//     display: flex;
-//     align-items: center;
-
-//     @media screen and (min-width: $tablet) {
-//         padding: 101px 40px 35px;
-//     }
-
-//     @media screen and (min-width: $laptop) {
-//         padding: 122px 32px 37px;
-//     }
-// }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -30,46 +15,20 @@
     }
 }
 
-// .videoWrapper {
-//     width: 100%;
-//     aspect-ratio: 16/9;
-// }
-
-// .video {
-//     width: 100%;
-//     height: 100%;
-// }
-
-// ================================================================
-
 .videoWrapper {
-    // position: relative;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+
     width: 100%;
     aspect-ratio: 16/9;
 }
 
-
-.video {
-    width: 100%;
-    height: 100%;
-}
-
 .previewContainer {
+    width: 100%;
     position: relative;
     cursor: pointer;
-    width: 100%;  // Робимо зображення адаптивним на всю ширину
-    // aspect-ratio: 16 / 9;  // Зберігаємо співвідношення сторін
 }
 
 .previewImage {
-    // // border-radius: 8px;
-    // width: 100%;  // Заповнює ширину контейнера
-    // height: 100%; // Автоматична висота для збереження співвідношення сторін
-    // display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -96,4 +55,9 @@
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     margin-left: 4px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
 }
