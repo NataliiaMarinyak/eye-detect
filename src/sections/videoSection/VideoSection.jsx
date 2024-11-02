@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import { getCityData } from '@/helpers/getCityData';
+import { getImageForYoutubePreload } from '@/helpers/getImageForYoutubePreload';
 import { currentLanguages } from "@/data/languages";
 import styles from './VideoSection.module.scss';
 
@@ -18,13 +19,8 @@ const VideoSection = () => {
     const { slug } = useParams();
     const data = getCityData(slug);
 
-    function getYouTubeId(url) {
-        const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
-        const match = url.match(regExp);
-        return match && match[7].length === 11 ? match[7] : null;
-    }
+    const imageSrcForYoutube = getImageForYoutubePreload(data?.videoLink);
 
-    const videoIdName = getYouTubeId(data?.videoLink)
 
     return (
         <section>
@@ -35,7 +31,7 @@ const VideoSection = () => {
                             {!isLoading && <Image
                                 className={styles.previewImage}
                                 loading='lazy'
-                                src={`https://img.youtube.com/vi/${videoIdName}/hqdefault.jpg`}
+                                src={imageSrcForYoutube}
                                 alt={i18n.language === currentLanguages.UA ? data?.mainTitle : data?.mainTitleRus}
                                 sizes="(max-width: 1023px) 100vw, 960px"
                                 width={960}
