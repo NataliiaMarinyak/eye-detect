@@ -44,3 +44,5 @@ export const phone = socialMediaData.find((el) => el.name === "phone");
 export const headerSocLinks = socialMediaData.filter(
   (el) => el.name !== "phone"
 );
+
+export const email = socialMediaData.find((el) => el.name === "email");
