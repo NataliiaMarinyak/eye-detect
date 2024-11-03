@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Image from "next/image";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from './HomeTestingSection.module.scss';
 
 
@@ -15,7 +15,7 @@ const HomeTestingSection = () => {
   return <section>
     <div className="container">
       <div className={styles.imgWrapper}>
-        {!isLoading && i18n.language === currentLanguages.UA ? <Image
+        {!isLoading && i18n.language === languagesData.UA ? <Image
           className={styles.img}
           src='/images/testing_ukr.webp'
           alt="Конференція з тестування EyeDetect"

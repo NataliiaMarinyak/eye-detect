@@ -1,3 +1,4 @@
+import { languagesData } from "@/data/languagesData";
 import styles from "./LangSwitcher.module.scss";
 
 
@@ -7,12 +8,12 @@ const LangSwitcher = ({
 }) => {
 
   const onHandleSetUa = () => {
-    const languageUser = "ua";
+    const languageUser = languagesData.UA;
     changeLanguage(languageUser);
   };
 
   const onHandleSetRu = () => {
-    const languageUser = "ru";
+    const languageUser = languagesData.RU;
     changeLanguage(languageUser);
   };
 
@@ -20,13 +21,13 @@ const LangSwitcher = ({
   return (
     <ul className={styles.langSwitch}>
       <li
-        className={currentLanguage === "ua" ? styles.active : styles.langBtn}
+        className={currentLanguage === languagesData.UA ? styles.active : styles.langBtn}
         onClick={onHandleSetUa}
       >
         УКР
       </li>
       <li
-        className={currentLanguage === "ru" ? styles.active : styles.langBtn}
+        className={currentLanguage === languagesData.RU ? styles.active : styles.langBtn}
         onClick={onHandleSetRu}
       >
         РУС

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import { addressData } from '@/data/addressData';
 import styles from './LocationSection.module.scss';
 
@@ -55,7 +55,7 @@ const LocationSection = () => {
                         width={280}
                         height={108}
                         allowFullScreen=""
-                        title={!isLoading && i18n.language === currentLanguages.UA
+                        title={!isLoading && i18n.language === languagesData.UA
                             ? addressData.textAddress
                             : addressData.textAddressRus}
                         loading="eager" referrerPolicy="no-referrer-when-downgrade"
@@ -71,7 +71,7 @@ const LocationSection = () => {
                     <svg className={styles.icon}>
                         <use href="/sprite.svg#icon-map_pin"></use>
                     </svg>
-                    {!isLoading && i18n.language === currentLanguages.UA
+                    {!isLoading && i18n.language === languagesData.UA
                         ? addressData.textAddress
                         : addressData.textAddressRus}
                 </a>

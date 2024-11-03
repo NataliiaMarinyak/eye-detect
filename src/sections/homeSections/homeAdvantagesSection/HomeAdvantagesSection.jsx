@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { advantagesData } from '@/data/advantagesData';
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from './HomeAdvantagesSection.module.scss'
 
 
@@ -22,7 +22,7 @@ const HomeAdvantagesSection = () => {
               <use href={`/sprite.svg#icon-check-mark-in-circle`} />
             </svg>
           </div>
-          <p className={styles.description}>{!isLoading && i18n.language === currentLanguages.UA
+          <p className={styles.description}>{!isLoading && i18n.language === languagesData.UA
             ? advantage.text
             : advantage.textRus}</p>
         </li>)}

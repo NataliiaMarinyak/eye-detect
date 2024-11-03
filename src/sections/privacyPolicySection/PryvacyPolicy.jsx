@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import PryvacyPolicySectionUa from "./PryvacyPolicySectionUa";
 import PryvacyPolicySectionRu from "./PryvacyPolicySectionRu";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 
 
 const PryvacyPolicySection = () => {
@@ -11,7 +11,7 @@ const PryvacyPolicySection = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
-  const isUa = !isLoading && i18n.language === currentLanguages.UA;
+  const isUa = !isLoading && i18n.language === languagesData.UA;
 
   return <>{isUa ? <PryvacyPolicySectionUa /> : <PryvacyPolicySectionRu />}</>;
 };

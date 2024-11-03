@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
-import { confidentGuaranty } from "@/data/confidentGuaranty";
-import { currentLanguages } from "@/data/languages";
+import { confidentialityGuaranteeData } from "@/data/confidentialityGuaranteeData";
+import { languagesData } from "@/data/languagesData";
 import styles from "./GuaranteeSection.module.scss";
 
 
@@ -20,14 +20,14 @@ const GuaranteeSection = () => {
         <h2 className={styles.title}>{!isLoading && t("GuaranteeSection.Title")}</h2>
 
         <ul className={styles.list}>
-          {confidentGuaranty.map((el, i) => {
+          {confidentialityGuaranteeData.map((el, i) => {
             return (
               <li key={i} className={styles.item}>
                 <svg className={styles.icon}>
                   <use href="/sprite.svg#icon-cross-in-circle"></use>
                 </svg>
                 <p className={styles.text}>
-                  {!isLoading && i18n.language === currentLanguages.UA
+                  {!isLoading && i18n.language === languagesData.UA
                     ? el.text
                     : el.textRus}
                 </p>
@@ -38,7 +38,7 @@ const GuaranteeSection = () => {
         <div className={styles.imgWrapp}>
           {!isLoading && <Image
             src="/images/specialist3.webp"
-            alt={i18n.language === currentLanguages.UA
+            alt={i18n.language === languagesData.UA
               ? "Гарантія конфіденційності тестування EyeDetect" : "Гарантия конфиденциальности тестирования EyeDetect"}
             width={960}
             height={560}

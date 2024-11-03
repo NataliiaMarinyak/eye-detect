@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import ButtonLink from '@/components/Buttons/ButtonLink/ButtonLink';
-import { currentLanguages } from '@/data/languages';
+import { languagesData } from '@/data/languagesData';
 import styles from './HomeCountriesSection.module.scss';
 
 
@@ -23,7 +23,7 @@ const HomeCountriesSection = () => {
         {!isLoading && <Image
           className={styles.img}
           src='/images/countries.webp'
-          alt={i18n.language === currentLanguages.UA
+          alt={i18n.language === languagesData.UA
             ? "Країни Європи та EyeDetect" : "Страны Европы и EyeDetect"}
           sizes="100vw"
           width={943}
@@ -32,7 +32,7 @@ const HomeCountriesSection = () => {
         {!isLoading && <Image
           className={styles.desktopImg}
           src='/images/countriesDesktop.webp'
-          alt={i18n.language === currentLanguages.UA
+          alt={i18n.language === languagesData.UA
             ? "Країни Європи та EyeDetect" : "Страны Европы и EyeDetect"}
           sizes="1024px"
           width={1024}

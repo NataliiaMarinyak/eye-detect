@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import { europeanCitiesData } from "@/data/europeanCitiesData";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from './EuropeanCitiesSection.module.scss';
 
 
@@ -27,9 +27,9 @@ const EuropeanCitiesSection = () => {
                             href={`/locations/${item.slug}`}
                             className={styles.locationLink}
                         >
-                            <p className={styles.country}>{!isLoading && i18n.language === currentLanguages.UA
+                            <p className={styles.country}>{!isLoading && i18n.language === languagesData.UA
                                 ? item.country : item.countryRus}</p>
-                            <p className={styles.city}>{!isLoading && i18n.language === currentLanguages.UA
+                            <p className={styles.city}>{!isLoading && i18n.language === languagesData.UA
                                 ? item.city : item.cityRus}</p>
                         </Link>
                     </li>)}

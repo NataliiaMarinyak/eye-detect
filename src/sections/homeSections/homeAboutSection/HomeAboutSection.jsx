@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { aboutData } from "@/data/aboutData";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from "./HomeAboutSection.module.scss";
 
 
@@ -27,7 +27,7 @@ const HomeAboutSection = () => {
                     <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                   </svg>
                   <h3>
-                    {!isLoading && i18n.language === currentLanguages.UA
+                    {!isLoading && i18n.language === languagesData.UA
                       ? el.text
                       : el.textRus}
                   </h3>
@@ -40,7 +40,7 @@ const HomeAboutSection = () => {
               src="/images/aboutImg.webp"
               width={943}
               height={638}
-              alt={i18n.language === currentLanguages.UA
+              alt={i18n.language === languagesData.UA
                 ? "Наталя Мариняк" : "Наталья Мариняк"}
               sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
             />}

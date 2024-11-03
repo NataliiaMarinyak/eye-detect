@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from "./HomeClientsSection.module.scss";
 
 
@@ -21,7 +21,7 @@ const HomeClientsSection = () => {
           {!isLoading && <Image
             className={styles.img}
             src="/images/clients.webp"
-            alt={i18n.language === currentLanguages.UA
+            alt={i18n.language === languagesData.UA
               ? "Клієнти EyeDetect" : "Клиенты EyeDetect"}
             sizes="(max-width: 1023px) 100vw, 960px"
             width={960}
