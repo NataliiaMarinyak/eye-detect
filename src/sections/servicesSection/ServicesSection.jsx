@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { getCityData } from '@/helpers/getCityData';
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from './ServicesSection.module.scss';
 
 
@@ -22,14 +22,14 @@ const ServicesSection = () => {
     return (
         <section>
             <div className={`container ${styles.container}`}>
-                <h2 className={styles.subTitle}>{!isLoading && i18n.language === currentLanguages.UA
+                <h2 className={styles.subTitle}>{!isLoading && i18n.language === languagesData.UA
                     ? data?.subTitle : data?.subTitleRus}</h2>
                 <ul className={styles.servicesList}>
                     {data?.services.map((service, index) =>
                         <li key={index} className={styles.serviceItem}>
                             <div className={styles.areaWrapper}>
                                 <span className={styles.figure}>{index + 1}</span>
-                                <h3 className={styles.areaTitle}>{!isLoading && i18n.language === currentLanguages.UA
+                                <h3 className={styles.areaTitle}>{!isLoading && i18n.language === languagesData.UA
                                     ? service.area : service.areaRus}</h3>
                             </div>
                             <ul className={styles.directionList}>
@@ -43,13 +43,13 @@ const ServicesSection = () => {
                                                 <use href={`/sprite.svg#icon-check-mark-in-circle`} />
                                             </svg>
                                             <p className={styles.directionDescription}>
-                                                <span className={styles.directionTitle}>{!isLoading && i18n.language === currentLanguages.UA
-                                                    ? direction.title : direction.titleRus}</span> {!isLoading && i18n.language === currentLanguages.UA
+                                                <span className={styles.directionTitle}>{!isLoading && i18n.language === languagesData.UA
+                                                    ? direction.title : direction.titleRus}</span> {!isLoading && i18n.language === languagesData.UA
                                                         ? direction.description : direction.descriptionRus}
                                             </p>
                                         </div>
                                         {direction.checks.length !== 0 && <ul className={styles.checksList}>
-                                            {!isLoading && i18n.language === currentLanguages.UA
+                                            {!isLoading && i18n.language === languagesData.UA
                                                 ? direction.checks.map((check, ind) =>
                                                     <li key={ind}>{check}</li>) : direction.checksRus.map((checkRus, ind) =>
                                                         <li key={ind}>{checkRus}</li>)

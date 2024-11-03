@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { directionsData } from "@/data/directionsData";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from './HomeDirectionsSection.module.scss';
 
 
@@ -23,9 +23,9 @@ const HomeDirectionsSection = () => {
               <use href={direction.href} />
             </svg>
           </div>
-          <h3 className={styles.subTitle}>{!isLoading && i18n.language === currentLanguages.UA
+          <h3 className={styles.subTitle}>{!isLoading && i18n.language === languagesData.UA
             ? direction.title : direction.titleRus}</h3>
-          <p className={styles.description}>{!isLoading && i18n.language === currentLanguages.UA
+          <p className={styles.description}>{!isLoading && i18n.language === languagesData.UA
             ? direction.description : direction.descriptionRus}</p>
         </li>)}
       </ul>

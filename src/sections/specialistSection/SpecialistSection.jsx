@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { specialistData } from "@/data/specialistData";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from "./SpecialistSection.module.scss";
 
 
@@ -23,7 +23,7 @@ const SpecialistSection = () => {
               <li key={i} className={styles.contentWrapp}>
                 <div className={styles.textWrapp}>
                   <h3 className={styles.subtitle}>
-                    {!isLoading && i18n.language === currentLanguages.UA
+                    {!isLoading && i18n.language === languagesData.UA
                       ? el.title
                       : el.titleRus}
                   </h3>
@@ -35,12 +35,12 @@ const SpecialistSection = () => {
                             <svg>
                               <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                             </svg>
-                            {!isLoading && i18n.language === currentLanguages.UA
+                            {!isLoading && i18n.language === languagesData.UA
                               ? det.subTitle
                               : det.subTitleRus}
                           </h4>
                           <ul className={styles.detailsList}>
-                            {!isLoading && i18n.language === currentLanguages.UA
+                            {!isLoading && i18n.language === languagesData.UA
                               ? det.list.map((item, i) => {
                                 return <li key={i}>{item}</li>;
                               })
@@ -56,7 +56,7 @@ const SpecialistSection = () => {
                 <div className={styles.imgWrapp}>
                   {!isLoading && <Image
                     src={el.img}
-                    alt={i18n.language === currentLanguages.UA
+                    alt={i18n.language === languagesData.UA
                       ? el.title
                       : el.titleRus}
                     width={943}

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import ContactsSocMedia from "./ContactsSocMedia";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import { addressData } from "@/data/addressData";
 import styles from "./ContactsSection.module.scss";
 
@@ -60,7 +60,7 @@ const ContactsSection = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title={
-                i18n.language === currentLanguages.UA
+                i18n.language === languagesData.UA
                   ? addressData.textAddress
                   : addressData.textAddressRus
               }
@@ -70,7 +70,7 @@ const ContactsSection = () => {
             <a
               href={addressData.hrefLink}
               aria-label={
-                !isLoading && i18n.language === currentLanguages.UA
+                !isLoading && i18n.language === languagesData.UA
                   ? addressData.textAddress
                   : addressData.textAddressRus
               }
@@ -81,7 +81,7 @@ const ContactsSection = () => {
               <svg className={styles.locationIcon}>
                 <use href="/sprite.svg#icon-map_pin"></use>
               </svg>
-              {!isLoading && i18n.language === currentLanguages.UA
+              {!isLoading && i18n.language === languagesData.UA
                 ? addressData.textAddress
                 : addressData.textAddressRus}
             </a>

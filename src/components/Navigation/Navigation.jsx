@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { SiteContext } from "@/context/SiteContext";
 import { navLinks } from "@/data/navigation";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from "./Navigation.module.scss";
 
 
@@ -19,7 +19,7 @@ const Navigation = ({ className, isInHeader, linkStyles }) => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
-  const isUa = !isLoading && i18n.language === currentLanguages.UA;
+  const isUa = !isLoading && i18n.language === languagesData.UA;
 
   return (
     <nav className={className}>

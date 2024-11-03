@@ -1,4 +1,4 @@
-export const confidentGuaranty = [
+export const confidentialityGuaranteeData = [
   {
     text: "Не публікую фото чи відео перевірок на поліграфі на сайті чи в соцмережах.",
     textRus:

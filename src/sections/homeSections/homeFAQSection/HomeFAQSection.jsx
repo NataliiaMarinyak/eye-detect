@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from "./HomeFAQSection.module.scss";
 
 
@@ -40,7 +40,7 @@ const HomeFAQSection = ({ data }) => {
                   className={styles.faqTitle}
                   onClick={() => handleOpen(id)}
                 >
-                  {!isLoading && i18n.language === currentLanguages.UA
+                  {!isLoading && i18n.language === languagesData.UA
                     ? el.question : el.questionRus}
                   <svg
                     className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
@@ -53,7 +53,7 @@ const HomeFAQSection = ({ data }) => {
                   className={`${styles.answerWrapp} ${isActive ? styles.isOpen : styles.isClosed
                     }`}
                 >
-                  <h4 className={styles.answer}>{!isLoading && i18n.language === currentLanguages.UA
+                  <h4 className={styles.answer}>{!isLoading && i18n.language === languagesData.UA
                     ? el.answer : el.answerRus}</h4>
                 </div>
               </li>

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import { ukrainianCitiesData } from "@/data/ukrainianCitiesData";
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from './UkrainianCitiesSection.module.scss';
 
 
@@ -27,7 +27,7 @@ const UkrainianCitiesSection = () => {
                             href={`/locations/${item.slug}`}
                             className={styles.cityLink}
                         >
-                            {i18n.language === currentLanguages.UA
+                            {i18n.language === languagesData.UA
                                 ? item.city : item.cityRus}
                         </Link>}
                     </li>)}

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import ButtonLink from '@/components/Buttons/ButtonLink/ButtonLink';
-import { currentLanguages } from '@/data/languages';
+import { languagesData } from '@/data/languagesData';
 import styles from './HomeCertificatesSection.module.scss';
 
 
@@ -22,7 +22,7 @@ const HomeCertificatesSection = ({ isOnHomePage }) => {
           {!isLoading && <Image
             className={styles.certificate}
             src='/images/certificate_ukr.webp'
-            alt={i18n.language === currentLanguages.UA
+            alt={i18n.language === languagesData.UA
               ? "Тестувальник EyeDetect" : "Тестировщик EyeDetect"}
             sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 468px"
             width={727}

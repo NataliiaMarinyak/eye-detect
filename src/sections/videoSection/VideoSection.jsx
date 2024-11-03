@@ -6,7 +6,7 @@ import Image from 'next/image';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import { getCityData } from '@/helpers/getCityData';
 import { getImageForYoutubePreload } from '@/helpers/getImageForYoutubePreload';
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from './VideoSection.module.scss';
 
 
@@ -32,7 +32,7 @@ const VideoSection = () => {
                                 className={styles.previewImage}
                                 loading='lazy'
                                 src={imageSrcForYoutube}
-                                alt={i18n.language === currentLanguages.UA ? data?.mainTitle : data?.mainTitleRus}
+                                alt={i18n.language === languagesData.UA ? data?.mainTitle : data?.mainTitleRus}
                                 sizes="(max-width: 1023px) 100vw, 960px"
                                 width={960}
                                 height={494}
@@ -45,7 +45,7 @@ const VideoSection = () => {
                             loading='lazy'
                             src={data?.videoLink}
                             allowFullScreen
-                            title={i18n.language === currentLanguages.UA ? data?.mainTitle : data?.mainTitleRus}
+                            title={i18n.language === languagesData.UA ? data?.mainTitle : data?.mainTitleRus}
                         />
                     )}
                 </div>

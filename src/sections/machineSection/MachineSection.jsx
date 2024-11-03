@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import OpenModalBtn from '@/components/Buttons/OpenModalBtn/OpenModalBtn';
 import { getCityData } from '@/helpers/getCityData';
-import { currentLanguages } from "@/data/languages";
+import { languagesData } from "@/data/languagesData";
 import styles from './MachineSection.module.scss';
 
 
@@ -22,7 +22,7 @@ const MachineSection = () => {
     return (
         <section className={styles.section}>
             <div className={`container ${styles.container}`}>
-                <h1 className={styles.title}>{!isLoading && i18n.language === currentLanguages.UA
+                <h1 className={styles.title}>{!isLoading && i18n.language === languagesData.UA
                     ? data?.mainTitle : data?.mainTitleRus}</h1>
 
                 <div className={styles.imgWrapper}>
