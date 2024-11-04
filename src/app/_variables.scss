@@ -3,7 +3,6 @@ $tablet: "768px";
 $laptop: "1024px";
 $desktop: "1440px";
 
-
 $disabledBgColor: rgba(203, 203, 203, 1);
 $textLightColor: rgba(255, 255, 255, 1);
 $btnBgColor: rgba(25, 65, 209, 1);
@@ -143,44 +142,10 @@ $textShadow: 2px 4px 8px $footerBgColor;
   position: relative;
   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 4px 4px 40px rgba(11, 21, 31, 0.4);
-    z-index: 1;
-  }
-
   & img {
     object-fit: cover;
-    // animation: aliveImg 60s linear infinite;
   }
 }
-
-// @keyframes aliveImg {
-//   0% {
-//     scale: 1;
-//   }
-
-//   25% {
-//     scale: 1.06;
-//   }
-
-//   50% {
-//     scale: 1.06;
-//     transform: translate(-2%, 1%);
-//   }
-
-//   75% {
-//     scale: 1.03;
-//     transform: translate(-2%, 0%);
-//   }
-
-//   100% {
-//     transform: translate(0);
-//   }
-// }
 
 @mixin imageFillProp {
   position: absolute;

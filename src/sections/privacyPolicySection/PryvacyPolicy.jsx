@@ -5,7 +5,6 @@ import PryvacyPolicySectionUa from "./PryvacyPolicySectionUa";
 import PryvacyPolicySectionRu from "./PryvacyPolicySectionRu";
 import { languagesData } from "@/data/languagesData";
 
-
 const PryvacyPolicySection = () => {
   const { i18n } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
@@ -15,6 +14,5 @@ const PryvacyPolicySection = () => {
 
   return <>{isUa ? <PryvacyPolicySectionUa /> : <PryvacyPolicySectionRu />}</>;
 };
-
 
 export default PryvacyPolicySection;
