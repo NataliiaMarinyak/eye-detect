@@ -9,8 +9,8 @@ import { languagesData } from "@/data/languagesData";
 const TranslatorBtnBlock = ({ className }) => {
     const { i18n } = useTranslation();
     const [language, setLanguage] = useState(
-        (prev) =>
-            !prev || prev === undefined ? languagesData.UA : prev
+        // (prev) => !prev || prev === undefined ? languagesData.UA : prev
+        "ua"
     );
 
     const [isLoad, setIsLoad] = useState(true);
