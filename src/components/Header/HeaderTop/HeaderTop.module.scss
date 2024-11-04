@@ -43,6 +43,8 @@
   display: flex;
   margin-left: auto;
 
+  height: 24px;
+
   @media screen and (min-width: $tablet) {
     margin-left: 0;
   }

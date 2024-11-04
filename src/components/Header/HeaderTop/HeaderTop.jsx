@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import { headerSocLinks, phone } from "@/data/socialMediaData";
 import styles from "./HeaderTop.module.scss";
 
-
 const HeaderTop = () => {
   const { t } = useTranslation();
 
@@ -16,9 +15,10 @@ const HeaderTop = () => {
   return (
     <div className={`${styles.headerTopWrapper}`}>
       <div className={`container ${styles.headerTop}`}>
-        <Link href={phone.href}
+        <Link
+          href={phone.href}
+          aria-label={phone.name}
           className={`${styles.link} ${styles.phone}`}
-          style={{ height: "24px" }}
         >
           <svg>
             <use href={phone.icon}></use>
@@ -52,6 +52,5 @@ const HeaderTop = () => {
     </div>
   );
 };
-
 
 export default HeaderTop;
