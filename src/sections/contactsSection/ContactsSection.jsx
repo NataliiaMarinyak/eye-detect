@@ -70,9 +70,9 @@ const ContactsSection = () => {
             <a
               href={addressData.hrefLink}
               aria-label={
-                !isLoading && i18n.language === languagesData.UA
+                !isLoading && (i18n.language === languagesData.UA
                   ? addressData.textAddress
-                  : addressData.textAddressRus
+                  : addressData.textAddressRus)
               }
               target="_blank"
               rel="noopener noreferrer"
@@ -81,9 +81,9 @@ const ContactsSection = () => {
               <svg className={styles.locationIcon}>
                 <use href="/sprite.svg#icon-map_pin"></use>
               </svg>
-              {!isLoading && i18n.language === languagesData.UA
+              {!isLoading && (i18n.language === languagesData.UA
                 ? addressData.textAddress
-                : addressData.textAddressRus}
+                : addressData.textAddressRus)}
             </a>
 
           </div>

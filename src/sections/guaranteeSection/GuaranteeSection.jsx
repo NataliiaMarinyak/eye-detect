@@ -27,9 +27,9 @@ const GuaranteeSection = () => {
                   <use href="/sprite.svg#icon-cross-in-circle"></use>
                 </svg>
                 <p className={styles.text}>
-                  {!isLoading && i18n.language === languagesData.UA
+                  {!isLoading && (i18n.language === languagesData.UA
                     ? el.text
-                    : el.textRus}
+                    : el.textRus)}
                 </p>
               </li>
             );

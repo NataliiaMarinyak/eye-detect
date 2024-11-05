@@ -10,9 +10,9 @@ const PryvacyPolicySection = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => setIsLoading(false), []);
 
-  const isUa = !isLoading && i18n.language === languagesData.UA;
+  // const isUa = !isLoading && (i18n.language === languagesData.UA);
 
-  return <>{isUa ? <PryvacyPolicySectionUa /> : <PryvacyPolicySectionRu />}</>;
+  return <>{!isLoading && (i18n.language === languagesData.UA ? <PryvacyPolicySectionUa /> : <PryvacyPolicySectionRu />)}</>;
 };
 
 export default PryvacyPolicySection;

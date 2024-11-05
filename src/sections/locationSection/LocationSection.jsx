@@ -55,9 +55,9 @@ const LocationSection = () => {
                         width={280}
                         height={108}
                         allowFullScreen=""
-                        title={!isLoading && i18n.language === languagesData.UA
+                        title={!isLoading && (i18n.language === languagesData.UA
                             ? addressData.textAddress
-                            : addressData.textAddressRus}
+                            : addressData.textAddressRus)}
                         loading="eager" referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>}
                 </div>
@@ -71,9 +71,9 @@ const LocationSection = () => {
                     <svg className={styles.icon}>
                         <use href="/sprite.svg#icon-map_pin"></use>
                     </svg>
-                    {!isLoading && i18n.language === languagesData.UA
+                    {!isLoading && (i18n.language === languagesData.UA
                         ? addressData.textAddress
-                        : addressData.textAddressRus}
+                        : addressData.textAddressRus)}
                 </a>
 
                 <OpenModalBtn />

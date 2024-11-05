@@ -27,9 +27,9 @@ const HomeAboutSection = () => {
                     <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                   </svg>
                   <h3>
-                    {!isLoading && i18n.language === languagesData.UA
+                    {!isLoading && (i18n.language === languagesData.UA
                       ? el.text
-                      : el.textRus}
+                      : el.textRus)}
                   </h3>
                 </li>
               );
