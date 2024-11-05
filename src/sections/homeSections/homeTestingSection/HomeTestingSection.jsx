@@ -15,7 +15,7 @@ const HomeTestingSection = () => {
   return <section>
     <div className="container">
       <div className={styles.imgWrapper}>
-        {!isLoading && i18n.language === languagesData.UA ? <Image
+        {!isLoading && (i18n.language === languagesData.UA ? <Image
           className={styles.img}
           src='/images/testing_ukr.webp'
           alt="Конференція з тестування EyeDetect"
@@ -29,7 +29,7 @@ const HomeTestingSection = () => {
           sizes="(max-width: 1023px) 100vw, 960px"
           width={960}
           height={541}
-        />
+        />)
         }
       </div>
     </div>

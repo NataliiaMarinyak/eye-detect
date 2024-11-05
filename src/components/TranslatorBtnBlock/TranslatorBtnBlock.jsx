@@ -17,20 +17,18 @@ const TranslatorBtnBlock = ({ className }) => {
 
     useEffect(() => {
         const lang = localStorage.getItem("i18nextLng");
-
         setLanguage(() => (lang ? lang : languagesData.UA));
         Cookies.set('language', lang);
         setIsLoad(false);
-
     }, []);
 
 
     const changeLanguage = (languageUser) => {
         localStorage.setItem("i18nextLng", languageUser);
-        const language = localStorage.getItem("i18nextLng");
-        setLanguage(language);
-        i18n.changeLanguage(language);
-        Cookies.set('language', language);
+        // const language = localStorage.getItem("i18nextLng");
+        setLanguage(languageUser);
+        i18n.changeLanguage(languageUser);
+        Cookies.set('language', languageUser);
     };
 
 

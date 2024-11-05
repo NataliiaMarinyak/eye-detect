@@ -27,10 +27,10 @@ const EuropeanCitiesSection = () => {
                             href={`/locations/${item.slug}`}
                             className={styles.locationLink}
                         >
-                            <p className={styles.country}>{!isLoading && i18n.language === languagesData.UA
-                                ? item.country : item.countryRus}</p>
-                            <p className={styles.city}>{!isLoading && i18n.language === languagesData.UA
-                                ? item.city : item.cityRus}</p>
+                            <p className={styles.country}>{!isLoading && (i18n.language === languagesData.UA
+                                ? item.country : item.countryRus)}</p>
+                            <p className={styles.city}>{!isLoading && (i18n.language === languagesData.UA
+                                ? item.city : item.cityRus)}</p>
                         </Link>
                     </li>)}
                 </ul>

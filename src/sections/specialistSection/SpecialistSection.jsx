@@ -23,9 +23,9 @@ const SpecialistSection = () => {
               <li key={i} className={styles.contentWrapp}>
                 <div className={styles.textWrapp}>
                   <h3 className={styles.subtitle}>
-                    {!isLoading && i18n.language === languagesData.UA
+                    {!isLoading && (i18n.language === languagesData.UA
                       ? el.title
-                      : el.titleRus}
+                      : el.titleRus)}
                   </h3>
                   <ul>
                     {el.details.map((det, i) => {
@@ -35,18 +35,19 @@ const SpecialistSection = () => {
                             <svg>
                               <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                             </svg>
-                            {!isLoading && i18n.language === languagesData.UA
+                            {!isLoading && (i18n.language === languagesData.UA
                               ? det.subTitle
-                              : det.subTitleRus}
+                              : det.subTitleRus)}
                           </h4>
                           <ul className={styles.detailsList}>
-                            {!isLoading && i18n.language === languagesData.UA
+                            {!isLoading && (i18n.language === languagesData.UA
                               ? det.list.map((item, i) => {
                                 return <li key={i}>{item}</li>;
                               })
                               : det.listRus.map((item, i) => {
                                 return <li key={i}>{item}</li>;
-                              })}
+                              }))
+                            }
                           </ul>
                         </li>
                       );

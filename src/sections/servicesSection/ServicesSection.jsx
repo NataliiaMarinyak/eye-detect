@@ -22,15 +22,15 @@ const ServicesSection = () => {
     return (
         <section>
             <div className={`container ${styles.container}`}>
-                <h2 className={styles.subTitle}>{!isLoading && i18n.language === languagesData.UA
-                    ? data?.subTitle : data?.subTitleRus}</h2>
+                <h2 className={styles.subTitle}>{!isLoading && (i18n.language === languagesData.UA
+                    ? data?.subTitle : data?.subTitleRus)}</h2>
                 <ul className={styles.servicesList}>
                     {data?.services.map((service, index) =>
                         <li key={index} className={styles.serviceItem}>
                             <div className={styles.areaWrapper}>
                                 <span className={styles.figure}>{index + 1}</span>
-                                <h3 className={styles.areaTitle}>{!isLoading && i18n.language === languagesData.UA
-                                    ? service.area : service.areaRus}</h3>
+                                <h3 className={styles.areaTitle}>{!isLoading && (i18n.language === languagesData.UA
+                                    ? service.area : service.areaRus)}</h3>
                             </div>
                             <ul className={styles.directionList}>
                                 {service.directions.map((direction) =>
@@ -43,16 +43,16 @@ const ServicesSection = () => {
                                                 <use href={`/sprite.svg#icon-check-mark-in-circle`} />
                                             </svg>
                                             <p className={styles.directionDescription}>
-                                                <span className={styles.directionTitle}>{!isLoading && i18n.language === languagesData.UA
-                                                    ? direction.title : direction.titleRus}</span> {!isLoading && i18n.language === languagesData.UA
-                                                        ? direction.description : direction.descriptionRus}
+                                                <span className={styles.directionTitle}>{!isLoading && (i18n.language === languagesData.UA
+                                                    ? direction.title : direction.titleRus)}</span> {!isLoading && (i18n.language === languagesData.UA
+                                                        ? direction.description : direction.descriptionRus)}
                                             </p>
                                         </div>
                                         {direction.checks.length !== 0 && <ul className={styles.checksList}>
-                                            {!isLoading && i18n.language === languagesData.UA
+                                            {!isLoading && (i18n.language === languagesData.UA
                                                 ? direction.checks.map((check, ind) =>
                                                     <li key={ind}>{check}</li>) : direction.checksRus.map((checkRus, ind) =>
-                                                        <li key={ind}>{checkRus}</li>)
+                                                        <li key={ind}>{checkRus}</li>))
                                             }
                                         </ul>}
                                     </li>)}
