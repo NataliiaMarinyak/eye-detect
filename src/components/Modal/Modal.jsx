@@ -5,7 +5,6 @@ import { SiteContext } from "@/context/SiteContext";
 import { useModalActions } from "@/hooks/modalActions";
 import styles from "./Modal.module.scss";
 
-
 const Modal = () => {
   const { modalFrame } = useContext(SiteContext);
   const { backDrop } = useContext(SiteContext);
@@ -21,12 +20,14 @@ const Modal = () => {
   };
 
   useEffect(() => {
-    if (typeof window !== "undefined" && modalFrame) {
+    if (modalFrame) {
       document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
     }
 
     return () => {
-      document.body.style.overflowY = "scroll";
+      document.body.style.overflowY = "auto";
     };
   }, [modalFrame]);
 
@@ -49,6 +50,5 @@ const Modal = () => {
     </div>
   );
 };
-
 
 export default Modal;

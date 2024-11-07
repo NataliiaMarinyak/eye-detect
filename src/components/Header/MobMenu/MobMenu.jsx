@@ -7,7 +7,6 @@ import { useWindowResize } from "@/hooks/windowResize";
 import { SiteContext } from "@/context/SiteContext";
 import styles from "./MobMenu.module.scss";
 
-
 const MobMenu = () => {
   const { isMobile, isTablet } = useWindowResize();
   const { isMobileMenu, setIsMobileMenu } = useContext(SiteContext);
@@ -15,7 +14,7 @@ const MobMenu = () => {
 
   const onWindowClick = useCallback(
     (e) => {
-      if (e.target.id === navMenu.current.id || e.target.nodeName === "LI") {
+      if (e.target.id === navMenu.current.id) {
         return;
       } else {
         setIsMobileMenu(false);
@@ -29,12 +28,18 @@ const MobMenu = () => {
       setTimeout(() => {
         window.addEventListener("click", onWindowClick);
       }, 100);
+
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
     }
 
     return () => {
       window.removeEventListener("click", onWindowClick);
+      document.body.style.overflowY = "auto";
     };
   }, [isMobileMenu, onWindowClick]);
+
   return (
     <>
       {(isMobile || isTablet) && (
@@ -47,9 +52,7 @@ const MobMenu = () => {
           id="mobileMenu"
           ref={navMenu}
         >
-          <TranslatorBtnBlock
-            className={styles.translatorMobile}
-          />
+          <TranslatorBtnBlock className={styles.translatorMobile} />
 
           <Navigation className={styles.nav} isInHeader="true" />
         </div>
@@ -57,6 +60,5 @@ const MobMenu = () => {
     </>
   );
 };
-
 
 export default MobMenu;
