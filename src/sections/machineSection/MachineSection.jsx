@@ -22,8 +22,8 @@ const MachineSection = () => {
     return (
         <section className={styles.section}>
             <div className={`container ${styles.container}`}>
-                <h1 className={styles.title}>{!isLoading && i18n.language === languagesData.UA
-                    ? data?.mainTitle : data?.mainTitleRus}</h1>
+                <h1 className={styles.title}>{!isLoading && (i18n.language === languagesData.UA
+                    ? data?.mainTitle : data?.mainTitleRus)}</h1>
 
                 <div className={styles.imgWrapper}>
                     <Image

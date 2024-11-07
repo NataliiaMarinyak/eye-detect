@@ -22,9 +22,9 @@ const HomeAdvantagesSection = () => {
               <use href={`/sprite.svg#icon-check-mark-in-circle`} />
             </svg>
           </div>
-          <p className={styles.description}>{!isLoading && i18n.language === languagesData.UA
+          <p className={styles.description}>{!isLoading && (i18n.language === languagesData.UA
             ? advantage.text
-            : advantage.textRus}</p>
+            : advantage.textRus)}</p>
         </li>)}
       </ul>
     </div>

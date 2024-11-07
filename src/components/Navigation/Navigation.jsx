@@ -14,12 +14,10 @@ const Navigation = ({ className, isInHeader, linkStyles }) => {
   const pathname = usePathname();
 
   const { i18n } = useTranslation();
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => setIsLoading(false), []);
 
-  const isUa = !isLoading && i18n.language === languagesData.UA;
 
   return (
     <nav className={className}>
@@ -41,7 +39,7 @@ const Navigation = ({ className, isInHeader, linkStyles }) => {
             }}
             className={pageLinkClassName()}
           >
-            {!isUa ? el.titleRus : el.title}
+            {!isLoading && (i18n.language === languagesData.UA ? el.title : el.titleRus)}
           </Link>
         );
       })}

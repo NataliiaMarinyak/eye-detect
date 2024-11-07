@@ -40,8 +40,8 @@ const HomeFAQSection = ({ data }) => {
                   className={styles.faqTitle}
                   onClick={() => handleOpen(id)}
                 >
-                  {!isLoading && i18n.language === languagesData.UA
-                    ? el.question : el.questionRus}
+                  {!isLoading && (i18n.language === languagesData.UA
+                    ? el.question : el.questionRus)}
                   <svg
                     className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
                   >
@@ -53,8 +53,8 @@ const HomeFAQSection = ({ data }) => {
                   className={`${styles.answerWrapp} ${isActive ? styles.isOpen : styles.isClosed
                     }`}
                 >
-                  <h4 className={styles.answer}>{!isLoading && i18n.language === languagesData.UA
-                    ? el.answer : el.answerRus}</h4>
+                  <h4 className={styles.answer}>{!isLoading && (i18n.language === languagesData.UA
+                    ? el.answer : el.answerRus)}</h4>
                 </div>
               </li>
             );

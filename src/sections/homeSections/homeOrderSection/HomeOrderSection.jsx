@@ -26,8 +26,8 @@ const HomeOrderSection = () => {
               <svg className={styles.icon}>
                 <use href={`/sprite.svg#icon-map_pin`} />
               </svg>
-              {!isLoading && i18n.language === languagesData.UA
-                ? addressData.textAddress : addressData.textAddressRus}
+              {!isLoading && (i18n.language === languagesData.UA
+                ? addressData.textAddress : addressData.textAddressRus)}
             </a>
           </address>
         </div>
