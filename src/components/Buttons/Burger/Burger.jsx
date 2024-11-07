@@ -4,20 +4,9 @@ import { SiteContext } from "@/context/SiteContext";
 import { useWindowResize } from "@/hooks/windowResize";
 import styles from "./Burger.module.scss";
 
-
 const Burger = () => {
   const { isMobileMenu, setIsMobileMenu } = useContext(SiteContext);
   const { isMobile, isTablet } = useWindowResize();
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && isMobileMenu) {
-      document.body.style.overflowY = "hidden";
-    }
-
-    return () => {
-      document.body.style.overflowY = "scroll";
-    };
-  }, [isMobileMenu]);
 
   return (
     <>
@@ -43,6 +32,5 @@ const Burger = () => {
     </>
   );
 };
-
 
 export default Burger;

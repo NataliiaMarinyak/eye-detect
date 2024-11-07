@@ -8,7 +8,6 @@ import { navLinks } from "@/data/navigation";
 import { languagesData } from "@/data/languagesData";
 import styles from "./Navigation.module.scss";
 
-
 const Navigation = ({ className, isInHeader, linkStyles }) => {
   const { setIsMobileMenu } = useContext(SiteContext);
 
@@ -17,6 +16,7 @@ const Navigation = ({ className, isInHeader, linkStyles }) => {
   const { i18n } = useTranslation();
 
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => setIsLoading(false), []);
 
   const isUa = !isLoading && i18n.language === languagesData.UA;
@@ -48,6 +48,5 @@ const Navigation = ({ className, isInHeader, linkStyles }) => {
     </nav>
   );
 };
-
 
 export default Navigation;
