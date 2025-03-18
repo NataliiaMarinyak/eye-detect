@@ -52,5 +52,8 @@ export const phone = socialMediaData.find((el) => el.name === "phone");
 export const headerSocLinks = socialMediaData.filter(
   (el) => el.type === "socialMedia"
 );
+export const footerSocLinks = socialMediaData.filter(
+  (el) => el.name !== "email"
+);
 
 export const email = socialMediaData.find((el) => el.name === "email");

@@ -1,13 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { socialMediaData } from "@/data/socialMediaData";
+import { footerSocLinks } from "@/data/socialMediaData";
 import styles from "../Footer.module.scss";
-
 
 const FooterSocMedia = ({ className, itemStyles }) => {
   return (
     <address className={className}>
-      {socialMediaData.map((el) => {
+      {footerSocLinks.map((el) => {
         return (
           <Link
             key={el.name}
@@ -26,6 +25,5 @@ const FooterSocMedia = ({ className, itemStyles }) => {
     </address>
   );
 };
-
 
 export default FooterSocMedia;
