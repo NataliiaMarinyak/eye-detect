@@ -2,9 +2,9 @@ export const socialMediaData = [
   {
     name: "phone",
     type: "phone",
-    href: "tel:+380686833368",    
+    href: "tel:+380686833368",
     icon: "/sprite.svg#icon-call",
-    contact: "+380 (68) 68 333 68",             
+    contact: "+380 (68) 68 333 68",
   },
   {
     name: "telegram",
@@ -30,11 +30,11 @@ export const socialMediaData = [
     contact: "@eye_detect",
   },
 
-   {
+  {
     name: "tiktok",
     type: "socialMedia",
     href: "https://www.tiktok.com/@www.eyepolygraph?_t=ZM-8ummsP51AXt&_r=1",
-    icon: "/sprite.svg#icon-telegram",
+    icon: "/sprite.svg#icon-tiktok",
     contact: "@www.eyepolygraph",
   },
 
@@ -50,7 +50,10 @@ export const socialMediaData = [
 export const phone = socialMediaData.find((el) => el.name === "phone");
 
 export const headerSocLinks = socialMediaData.filter(
-  (el) => el.name !== "phone"
+  (el) => el.type === "socialMedia"
+);
+export const footerSocLinks = socialMediaData.filter(
+  (el) => el.name !== "email"
 );
 
 export const email = socialMediaData.find((el) => el.name === "email");
