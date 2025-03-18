@@ -2,40 +2,48 @@ export const socialMediaData = [
   {
     name: "phone",
     type: "phone",
-    href: "tel:+380973213040",
+    href: "tel:+380686833368",    
     icon: "/sprite.svg#icon-call",
-    contact: "+380 (97) 321 30 40",
+    contact: "+380 (68) 68 333 68",             
   },
   {
     name: "telegram",
     type: "socialMedia",
-    href: "https://t.me/FullStack_specialist",
+    href: "https://t.me/Detecteye",
     icon: "/sprite.svg#icon-telegram",
-    contact: "@natalia_eyedetect",
+    contact: "@Detecteye",
   },
 
   {
     name: "facebook",
     type: "socialMedia",
-    href: "https://www.facebook.com/maxim.peltek/",
+    href: "https://www.facebook.com/share/1527nF4Rwh/",
     icon: "/sprite.svg#icon-facebook",
-    contact: "+380 (97) 321 30 40",
+    contact: "EyeDetect",
   },
 
   {
     name: "instagram",
     type: "socialMedia",
-    href: "https://www.instagram.com/natalabojko/",
+    href: "https://www.instagram.com/eye_detect",
     icon: "/sprite.svg#icon-instagram",
-    contact: "@natalia_eyedetect",
+    contact: "@eye_detect",
+  },
+
+   {
+    name: "tiktok",
+    type: "socialMedia",
+    href: "https://www.tiktok.com/@www.eyepolygraph?_t=ZM-8ummsP51AXt&_r=1",
+    icon: "/sprite.svg#icon-telegram",
+    contact: "@www.eyepolygraph",
   },
 
   {
     name: "email",
     type: "email",
-    href: "mailto:eyedetect_natalia@gmail.com",
+    href: "mailto:info@eye-polygraph.com",
     icon: "/sprite.svg#icon-email",
-    contact: "eyedetect_natalia@gmail.com",
+    contact: "info@eye-polygraph.com",
   },
 ];
 
