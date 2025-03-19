@@ -13,6 +13,7 @@ const DynamicModal = dynamic(() =>
 
 
 export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SEO_URL),
   title: "Поліграф у Львові: швидка і надійна перевірка з EyeDetect",
   description:
     "Детектор брехні EyeDetect у Львові – сучасний метод перевірки з гарантованою точністю для будь-яких ситуацій. Понад 500 задоволених клієнтів!",
@@ -26,10 +27,15 @@ export const metadata = {
     "Сучасний поліграф",
     "Поліграф-тестування",
   ],
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_SEO_URL,
+  },
+  
 };
 
 
 export default function RootLayout({ children }) {
+  
   const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
   return (
     <html lang="uk-UA">
