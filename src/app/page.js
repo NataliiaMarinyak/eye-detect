@@ -37,9 +37,25 @@ const DynamicHomeOrderSection = dynamic(() =>
 );
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'http://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: {
+      '@type': 'ListItem',
+      position: 1,
+      item: {
+        '@id': process.env.NEXT_PUBLIC_SEO_URL,
+        name: 'Головна сторінка Поліграф.',
+      },
+    },
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection />
       <DynamicHomeAboutSection />
       <DynamicHomeCertificatesSection isOnHomePage={true} />
