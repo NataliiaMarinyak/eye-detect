@@ -27,10 +27,13 @@ export const sendToTelegram = async (formData) => {
             }),
         });
 
-        if (response.ok) {
-            console.log("To telegram sent:", formData);
-            console.log("text", text)
-        } else {
+        // if (response.ok) {
+        //     console.log("To telegram sent:", formData);
+        //     console.log("text", text)
+        // } else {
+        //     throw new Error(response.statusText);
+        // }
+         if (!response.ok) {               
             throw new Error(response.statusText);
         }
     } catch (error) {

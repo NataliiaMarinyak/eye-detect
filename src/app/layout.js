@@ -6,6 +6,8 @@ import { SiteProvider } from "@/context/SiteContext";
 import TranslatorProvider from "@/translator/TranslatorProvider";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import CallWidget from "@/components/CallWidget/CallWidget";
+
 
 const DynamicModal = dynamic(() =>
   import("@/components/Modal/Modal")
@@ -95,6 +97,7 @@ export default function RootLayout({ children }) {
             />
           </TranslatorProvider>
         </SiteProvider>
+        <CallWidget /> 
       </body>
     </html>
   );
