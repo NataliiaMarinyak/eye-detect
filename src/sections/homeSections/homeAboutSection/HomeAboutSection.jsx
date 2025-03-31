@@ -40,26 +40,28 @@ const HomeAboutSection = () => {
               );
             })}
           </ul>
-          <div className={styles.imgWrapp}>
-            {!isLoading && (
-              <Image
-                src="/images/home-about.webp"
-                width={943}
-                height={638}
-                alt={
-                  i18n.language === languagesData.UA
-                    ? "Наталя Мариняк"
-                    : "Наталья Мариняк"
-                }
-                sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
-              />
-            )}
+          <div className={styles.figure}>
+            <div className={styles.imgWrapp}>
+              {!isLoading && (
+                <Image
+                  src="/images/home-about.webp"
+                  width={943}
+                  height={638}
+                  alt={
+                    i18n.language === languagesData.UA
+                      ? "Наталя Мариняк"
+                      : "Наталья Мариняк"
+                  }
+                  sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
+                />
+              )}
+            </div>
+
+            <p className={styles.imgCaption}>
+              {!isLoading && t("HomeAboutSection.ImgCaption")}
+            </p>
           </div>
         </div>
-
-        <p className={styles.imgCaption}>
-          {!isLoading && t("HomeAboutSection.ImgCaption")}
-        </p>
       </div>
     </section>
   );
