@@ -104,11 +104,26 @@
   }
 }
 
+.figure {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: $laptop) {
+    flex: 1;
+    aspect-ratio: auto;
+
+    justify-content: space-between;
+  }
+}
+
 .imgWrapp {
   @include imgWrapper;
 
   width: 100%;
-  aspect-ratio: 148/100;
+  aspect-ratio: 148 / 100;
 
   & img {
     @include imageFillProp;
@@ -117,8 +132,7 @@
   }
 
   @media screen and (min-width: $laptop) {
-    flex: 1;
-    aspect-ratio: auto;
+    aspect-ratio: 148 / 140;
   }
 }
 
@@ -130,14 +144,8 @@
   width: 100%;
   text-align: left;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 650px) {
     font-size: 18px;
     text-align: center;
-  }
-
-  @media screen and (min-width: $laptop) {
-    width: 43%;
-    margin-left: auto;
-    margin-right: 0;
   }
 }
