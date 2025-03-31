@@ -131,3 +131,24 @@
     aspect-ratio: auto;
   }
 }
+
+.imgWrappFigure {
+  aspect-ratio: 280/300;
+}
+
+.imgCaption {
+  position: absolute;
+  bottom: 0;
+
+  background-color: rgba(11, 21, 31, 0.5);
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+
+  color: $bgColor;
+  font-size: 12px;
+
+  @media screen and (min-width: 650px) {
+    font-size: 16px;
+  }
+}
