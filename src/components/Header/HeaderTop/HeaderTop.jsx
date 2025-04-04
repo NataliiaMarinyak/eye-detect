@@ -1,16 +1,20 @@
-"use client";
-import React, { useEffect, useState } from "react";
+// "use client";
+// import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
+// import CustomLink from "@/components/CustomLink/CustomLink";
+import { i18n } from "@/dictionaries/i18n.config";
 import { headerSocLinks, phone } from "@/data/socialMediaData";
 import styles from "./HeaderTop.module.scss";
+// import { usePathname } from "next/navigation";
 
-const HeaderTop = () => {
-  const { t } = useTranslation();
+const HeaderTop = ({ dictionary, lang }) => {
+  // const pathname = usePathname();
+  // const { t } = useTranslation();
 
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => setIsLoading(false), []);
+  // useEffect(() => setIsLoading(false), []);
 
   return (
     <div className={`${styles.headerTopWrapper}`}>
@@ -26,14 +30,34 @@ const HeaderTop = () => {
           {phone.contact}
         </Link>
 
-        {!isLoading && (
-          <Link href="/locations" className={styles.link}>
-            <svg>
-              <use href="/sprite.svg#icon-map_pin"></use>
-            </svg>
-            {t("Header.TopTitle")}
-          </Link>
-        )}
+        {/* {!isLoading && (
+        <Link href={`${pathname}/locations`} className={styles.link}>
+          <svg>
+            <use href="/sprite.svg#icon-map_pin"></use>
+          </svg>
+          {t("Header.TopTitle")}
+           {dictionary.header.topTitle}
+        </Link>
+        )} */}
+
+        <Link
+          href={
+            lang === i18n.defaultLocale ? "/locations" : `/${lang}/locations`
+          }
+          className={styles.link}
+        >
+          <svg>
+            <use
+              // href={
+              //   lang === i18n.defaultLocale
+              //     ? "/sprite.svg#icon-map_pin"
+              //     : "/ru/sprite.svg#icon-map_pin"
+              // }
+              href="/sprite.svg#icon-map_pin"
+            ></use>
+          </svg>
+          {dictionary.header.topTitle}
+        </Link>
 
         <ul className={styles.socLinks}>
           {headerSocLinks.map((el) => {

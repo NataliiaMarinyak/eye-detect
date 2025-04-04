@@ -1,18 +1,16 @@
-import "./globals.scss";
+import "@/app/globals.scss";
 import dynamic from "next/dynamic";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Toaster } from "sonner";
 import { SiteProvider } from "@/context/SiteContext";
-import TranslatorProvider from "@/translator/TranslatorProvider";
+// import TranslatorProvider from "@/translator/TranslatorProvider";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import CallWidget from "@/components/CallWidget/CallWidget";
+import { i18n } from "@/dictionaries/i18n.config";
+import { getDictionary } from "@/helpers/getDictionary";
 
-
-const DynamicModal = dynamic(() =>
-  import("@/components/Modal/Modal")
-);
-
+const DynamicModal = dynamic(() => import("@/components/Modal/Modal"));
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SEO_URL),
@@ -66,15 +64,20 @@ export const metadata = {
   },
 };
 
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+}
 
-export default function RootLayout({ children }) {
-  
+export default async function RootLayout({ children, params }) {
+  const { lang } = params;
+  const dictionary = await getDictionary(lang);
+
   const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
   return (
-    <html lang="uk-UA">
+    <html lang={lang}>
       <GoogleTagManager gtmId={`${GTM_ID}`} />
       <body>
-      <noscript>
+        <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
@@ -83,21 +86,21 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         <SiteProvider>
-          <TranslatorProvider>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-            <DynamicModal />
-            <Toaster
-              richColors
-              position="top-center"
-              toastOptions={{
-                style: { background: "green", color: "white" },
-              }}
-            />
-          </TranslatorProvider>
+          {/* <TranslatorProvider> */}
+          <Header lang={lang} dictionary={dictionary} />
+          <main>{children}</main>
+          <Footer dictionary={dictionary} />
+          <DynamicModal dictionary={dictionary} />
+          <Toaster
+            richColors
+            position="top-center"
+            toastOptions={{
+              style: { background: "green", color: "white" },
+            }}
+          />
+          {/* </TranslatorProvider> */}
         </SiteProvider>
-        <CallWidget /> 
+        <CallWidget />
       </body>
     </html>
   );

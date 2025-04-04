@@ -1,25 +1,44 @@
-"use client";
-import React from "react";
-import { useEffect, useState } from "react";
+// "use client";
+// import React from "react";
+// import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
-
-const PrivacyPolicy = ({ className }) => {
-  const { t } = useTranslation();
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => setIsLoading(false), []);
+const PrivacyPolicy = ({ className, dictionary }) => {
+  // const { t } = useTranslation();
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => setIsLoading(false), []);
 
   return (
-    <>
-      {!isLoading && (
-        <Link href="/privacy-policy" className={className}>
-          {t("Footer.Policy")}
-        </Link>
-      )}
-    </>
+    <Link href="/privacy-policy" className={className}>
+      {/* {t("Footer.Policy")} */}
+      {dictionary.footer.policy}
+    </Link>
   );
 };
 
-
 export default PrivacyPolicy;
+
+// "use client";
+// import React from "react";
+// import { useEffect, useState } from "react";
+// import Link from "next/link";
+// import { useTranslation } from "react-i18next";
+
+// const PrivacyPolicy = ({ className }) => {
+//   const { t } = useTranslation();
+//   const [isLoading, setIsLoading] = useState(true);
+//   useEffect(() => setIsLoading(false), []);
+
+//   return (
+//     <>
+//       {!isLoading && (
+//         <Link href="/privacy-policy" className={className}>
+//           {t("Footer.Policy")}
+//         </Link>
+//       )}
+//     </>
+//   );
+// };
+
+// export default PrivacyPolicy;

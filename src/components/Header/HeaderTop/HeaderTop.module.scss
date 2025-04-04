@@ -50,6 +50,19 @@
   }
 }
 
+.customLink {
+  display: none;
+  align-items: center;
+
+  & svg {
+    margin-right: 12px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
 .socLinks {
   display: none;
 

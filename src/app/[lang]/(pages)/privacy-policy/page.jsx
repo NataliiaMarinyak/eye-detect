@@ -1,7 +1,7 @@
-import PryvacyPolicySection from "@/sections/privacyPolicySection/PryvacyPolicy";
+import PrivacyPolicySection from "@/sections/privacyPolicySection/PrivacyPolicySection";
+import { getDictionary } from "@/helpers/getDictionary";
 
 export async function generateMetadata({ params }) {
-
   return {
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_SEO_URL}privacy-policy`,
@@ -9,7 +9,10 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const PryvacyPolicyPage = () => {
+const PryvacyPolicyPage = async ({ params }) => {
+  const { lang } = params;
+  const dictionary = await getDictionary(lang);
+
   const jsonLd = {
     "@context": "http://schema.org",
     "@type": "BreadcrumbList",
@@ -34,11 +37,11 @@ const PryvacyPolicyPage = () => {
   };
   return (
     <>
-    <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <PryvacyPolicySection />
+      <PrivacyPolicySection lang={lang} />
     </>
   );
 };

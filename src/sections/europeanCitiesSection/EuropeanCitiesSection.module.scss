@@ -1,178 +1,180 @@
 @import "../../app/variables";
 
 .section {
-    padding: 20px 0px;
+  padding: 20px 0px;
 
-    @media screen and (min-width: 360px) {
-        padding: 20px 8px;
-    }
+  @media screen and (min-width: 360px) {
+    padding: 20px 8px;
+  }
 
-    @media screen and (min-width: 383px) {
-        padding: 20px;
-    }
+  @media screen and (min-width: 383px) {
+    padding: 20px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        padding: 20px 40px 32px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding: 20px 40px 32px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        padding: 32px 28px;
-    }
+  @media screen and (min-width: $laptop) {
+    padding: 32px 28px;
+  }
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
 
-    @media screen and (min-width: $tablet) {
-        width: 480px;
-        row-gap: 20px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 480px;
+    row-gap: 20px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        width: 100%;
-        row-gap: 24px;
-    }
+  @media screen and (min-width: $laptop) {
+    width: 100%;
+    row-gap: 24px;
+  }
 }
 
 .title {
-    @include sectionTitle;
+  @include sectionTitle;
 
-    height: 56px;
-    padding: 0px 20px;
-    font-size: 20px;
+  height: 56px;
+  padding: 0px 20px;
+  font-size: 20px;
 
-    @media screen and (min-width: 343px) and (max-width:767px) {
-        padding: 0px;
-        max-width: 420px;
-        height: 62px;
-        font-size: 22px;
-    }
+  @media screen and (min-width: 343px) and (max-width: 767px) {
+    padding: 0px;
+    max-width: 420px;
+    height: 62px;
+    font-size: 22px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        height: 73px;
-        padding: 0px;
-    }
+  @media screen and (min-width: $tablet) {
+    height: 73px;
+    padding: 0px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        height: 42px;
-    }
+  @media screen and (min-width: $laptop) {
+    height: 42px;
+  }
 }
 
 .locationsWrapper {
+  width: 100%;
+  height: 1092px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+  padding: 0px 2px;
+
+  @media screen and (min-width: 383px) {
+    width: 343px;
+    height: 1164px;
+  }
+
+  @media screen and (min-width: 400px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: $tablet) {
     width: 100%;
-    height: 1092px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 4px;
-    padding: 0px 2px;
+    height: 1449px;
+    padding: 0px;
+  }
 
-    @media screen and (min-width: 383px) {
-        width: 343px;
-        height: 1164px;
-    }
-
-    @media screen and (min-width: 400px) {
-        width: 360px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        width: 100%;
-        height: 1449px;
-        padding: 0px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        height: 723px;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+  @media screen and (min-width: $laptop) {
+    height: 723px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .locationItem {
-    width: 100%;
-    font-size: 13px;
+  width: 100%;
+  font-size: 13px;
 
-    @media screen and (min-width:383px) {
-        font-size: 14px;
-    }
+  @media screen and (min-width: 383px) {
+    font-size: 14px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        font-size: 18px;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        max-width: 460px;
-    }
+  @media screen and (min-width: $laptop) {
+    max-width: 460px;
+  }
 }
 
 .locationItem:hover {
-    background-color: $btnHoverBgColor;
+  background-color: $btnHoverBgColor;
 }
 
 .locationLink {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 3px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 3px;
 
-    @media screen and (min-width: $tablet) {
-        column-gap: 0px;
-    }
+  @media screen and (min-width: $tablet) {
+    column-gap: 0px;
+  }
 }
 
 .country {
-    width: 165px;
+  width: 165px;
 
-    @media screen and (min-width: 343px) {
-        width: 190px;
-    }
+  @media screen and (min-width: 343px) {
+    width: 190px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        width: 230px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 230px;
+  }
 }
 
 .city {
-    width: 148px;
-    position: relative;
+  width: 148px;
+  position: relative;
 
-    @media screen and (min-width: $tablet) {
-        width: 230px;
-        padding-left: 40px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 230px;
+    padding-left: 40px;
+  }
 }
 
 .city::before {
-    content: '';
-    background-image: url(/svgs/nav-arrow.svg);
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    background-size: cover;
-    left: -10px;
+  content: "";
+  // background-image: url(/svgs/nav-arrow.svg);
+  background-image: url(../../../public/svgs/nav-arrow.svg);
 
-    @media screen and (min-width: 380px) {
-        width: 14px;
-        height: 14px;
-        left: -14px;
-    }
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-size: cover;
+  left: -10px;
 
-    @media screen and (min-width: $tablet) {
-        width: 24px;
-        height: 24px;
-        left: 0px;
-    }
+  @media screen and (min-width: 380px) {
+    width: 14px;
+    height: 14px;
+    left: -14px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 24px;
+    height: 24px;
+    left: 0px;
+  }
 }
 
 .modalBtn {
-    width: calc(100% - 40px);
+  width: calc(100% - 40px);
 
-    @media screen and (min-width: $tablet) {
-        width: 100%;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+  }
 }

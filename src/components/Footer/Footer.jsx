@@ -3,8 +3,7 @@ import styles from "./Footer.module.scss";
 import FooterSocMedia from "./FooterSocMedia/FooterSocMedia";
 import PrivacyPolicy from "./PrivacyPolicy";
 
-
-const Footer = () => {
+const Footer = ({ dictionary }) => {
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.container}`}>
@@ -14,11 +13,10 @@ const Footer = () => {
         />
         <Navigation className={`${styles.list} ${styles.nav}`} />
 
-        <PrivacyPolicy className={styles.privacy} />
+        <PrivacyPolicy className={styles.privacy} dictionary={dictionary} />
       </div>
     </footer>
   );
 };
-
 
 export default Footer;

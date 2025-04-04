@@ -1,14 +1,15 @@
 "use client";
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { languagesData } from "@/data/languagesData";
+// import { useEffect, useState } from 'react';
+import { useState } from "react";
+// import { useTranslation } from 'react-i18next';
+// import { languagesData } from "@/data/languagesData";
+import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./HomeFAQSection.module.scss";
 
-
-const HomeFAQSection = ({ data }) => {
-  const { t, i18n } = useTranslation();
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => setIsLoading(false), []);
+const HomeFAQSection = ({ data, lang, dictionary }) => {
+  // const { t, i18n } = useTranslation();
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => setIsLoading(false), []);
 
   const [openItems, setOpenItems] = useState([]);
 
@@ -25,9 +26,7 @@ const HomeFAQSection = ({ data }) => {
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        <h2 className={styles.title}>
-          {!isLoading && t('HomeFAQSection.Title')}
-        </h2>
+        <h2 className={styles.title}>{dictionary.homeFAQSection.title}</h2>
         <ul>
           {data.map((el, i) => {
             const id = i + 1;
@@ -40,8 +39,7 @@ const HomeFAQSection = ({ data }) => {
                   className={styles.faqTitle}
                   onClick={() => handleOpen(id)}
                 >
-                  {!isLoading && (i18n.language === languagesData.UA
-                    ? el.question : el.questionRus)}
+                  {lang === i18n.locales[0] ? el.question : el.questionRus}
                   <svg
                     className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
                   >
@@ -50,11 +48,13 @@ const HomeFAQSection = ({ data }) => {
                 </h3>
 
                 <div
-                  className={`${styles.answerWrapp} ${isActive ? styles.isOpen : styles.isClosed
-                    }`}
+                  className={`${styles.answerWrapp} ${
+                    isActive ? styles.isOpen : styles.isClosed
+                  }`}
                 >
-                  <h4 className={styles.answer}>{!isLoading && (i18n.language === languagesData.UA
-                    ? el.answer : el.answerRus)}</h4>
+                  <h4 className={styles.answer}>
+                    {lang === i18n.locales[0] ? el.answer : el.answerRus}
+                  </h4>
                 </div>
               </li>
             );
@@ -64,6 +64,5 @@ const HomeFAQSection = ({ data }) => {
     </section>
   );
 };
-
 
 export default HomeFAQSection;

@@ -1,30 +1,33 @@
-import ConsultationSection from "@/sections/consultationSection/ConsultationSection";
-import { cookies } from 'next/headers';
+import { cookies } from "next/headers";
 import dynamic from "next/dynamic";
+import ConsultationSection from "@/sections/consultationSection/ConsultationSection";
+import { getDictionary } from "@/helpers/getDictionary";
 
 const DynamicSpecialistSection = dynamic(() =>
   import("@/sections/specialistSection/SpecialistSection")
 );
 
 const DynamicHomeCertificatesSection = dynamic(() =>
-  import("@/sections/homeSections/homeCertificatesSection/HomeCertificatesSection")
+  import(
+    "@/sections/homeSections/homeCertificatesSection/HomeCertificatesSection"
+  )
 );
 
-
 export async function generateMetadata({ params }) {
-
   const data = {
     mainTitle: "Наталя Мариняк – професійний поліграфолог EyeDetect",
     mainTitleRus: "Наталья Мариняк - профессиональный полиграфолог EyeDetect",
-    mainDescription: "Отримайте експертну консультацію та професійну перевірку на детекторі брехні EyeDetect. Наталя Мариняк гарантує якість і конфіденційність.",
-    mainDescriptionRus: "Получите экспертную консультацию и профессиональную проверку на детекторе лжи EyeDetect. Наталья Мариняк гарантирует качество и конфиденциальность.",
+    mainDescription:
+      "Отримайте експертну консультацію та професійну перевірку на детекторі брехні EyeDetect. Наталя Мариняк гарантує якість і конфіденційність.",
+    mainDescriptionRus:
+      "Получите экспертную консультацию и профессиональную проверку на детекторе лжи EyeDetect. Наталья Мариняк гарантирует качество и конфиденциальность.",
   };
 
-  const language = cookies().get('language')?.value || 'ua';
+  const language = cookies().get("language")?.value || "ua";
 
-  const title = language === 'ua' ? data.mainTitle : data.mainTitleRus;
-  const description = language === 'ua' ? data.mainDescription : data.mainDescriptionRus;
-
+  const title = language === "ua" ? data.mainTitle : data.mainTitleRus;
+  const description =
+    language === "ua" ? data.mainDescription : data.mainDescriptionRus;
 
   return {
     title,
@@ -44,8 +47,10 @@ export async function generateMetadata({ params }) {
   };
 }
 
-
-const AboutUsPage = () => {
+const AboutUsPage = async ({ params }) => {
+  const { lang } = params;
+  const dictionary = await getDictionary(lang);
+ 
   const jsonLd = {
     "@context": "http://schema.org",
     "@type": "BreadcrumbList",
@@ -68,18 +73,22 @@ const AboutUsPage = () => {
       },
     ],
   };
+
   return (
     <>
-    <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ConsultationSection />
-      <DynamicSpecialistSection />
-      <DynamicHomeCertificatesSection isOnHomePage={false} />
+      <ConsultationSection dictionary={dictionary} />
+      <DynamicSpecialistSection lang={lang} dictionary={dictionary} />
+      <DynamicHomeCertificatesSection
+        isOnHomePage={false}
+        lang={lang}
+        dictionary={dictionary}
+      />
     </>
-  )
-}
-
+  );
+};
 
 export default AboutUsPage;

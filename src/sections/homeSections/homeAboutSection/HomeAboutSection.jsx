@@ -1,25 +1,24 @@
-"use client";
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+// "use client";
+// import { useEffect, useState } from "react";
+// import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { aboutData } from "@/data/aboutData";
-import { languagesData } from "@/data/languagesData";
+// import { languagesData } from "@/data/languagesData";
+import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./HomeAboutSection.module.scss";
 
-const HomeAboutSection = () => {
-  const { t, i18n } = useTranslation();
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => setIsLoading(false), []);
+const HomeAboutSection = ({ lang, dictionary }) => {
+  // const { t, i18n } = useTranslation();
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => setIsLoading(false), []);
 
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        <h1 className={styles.title}>
-          {!isLoading && t("HomeAboutSection.Title")}
-        </h1>
+        <h1 className={styles.title}>{dictionary.homeAboutSection.title}</h1>
 
         <h2 className={styles.subTitle}>
-          {!isLoading && t("HomeAboutSection.SubTitle")}
+          {dictionary.homeAboutSection.subTitle}
         </h2>
 
         <div className={styles.content}>
@@ -30,35 +29,27 @@ const HomeAboutSection = () => {
                   <svg>
                     <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                   </svg>
-                  <h3>
-                    {!isLoading &&
-                      (i18n.language === languagesData.UA
-                        ? el.text
-                        : el.textRus)}
-                  </h3>
+                  <h3>{lang === i18n.locales[0] ? el.text : el.textRus}</h3>
                 </li>
               );
             })}
           </ul>
           <div className={styles.figure}>
             <div className={styles.imgWrapp}>
-              {!isLoading && (
-                <Image
-                  src="/images/home-about.webp"
-                  width={943}
-                  height={638}
-                  alt={
-                    i18n.language === languagesData.UA
-                      ? "Наталя Мариняк"
-                      : "Наталья Мариняк"
-                  }
-                  sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
-                />
-              )}
+              <Image
+                src="/images/home-about.webp"
+                width={943}
+                height={638}
+                alt={
+                  lang === i18n.locales[0]
+                    ? "Наталя Мариняк"
+                    : "Наталья Мариняк"
+                }
+                sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
+              />
             </div>
-
             <p className={styles.imgCaption}>
-              {!isLoading && t("HomeAboutSection.ImgCaption")}
+              {dictionary.homeAboutSection.imgCaption}
             </p>
           </div>
         </div>

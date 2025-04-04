@@ -1,38 +1,43 @@
-"use client";
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+// "use client";
+// import { useEffect, useState } from "react";
+// import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import styles from "./ConsultationSection.module.scss";
 
-
-const ConsultationSection = () => {
-  const { t } = useTranslation();
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => setIsLoading(false), []);
+const ConsultationSection = ({ dictionary }) => {
+  // const { t } = useTranslation();
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => setIsLoading(false), []);
 
   return (
     <section className={styles.section}>
       <div className={`container ${styles.container}`}>
         <div>
-          <h1 className={styles.title}>{!isLoading && t("ConsultationSection.Title")}</h1>
-          <h2 className={styles.text}>{!isLoading && t("ConsultationSection.SubTitle")}</h2>
+          <h1 className={styles.title}>
+            {dictionary.consultationSection.title}
+          </h1>
+          <h2 className={styles.text}>
+            {dictionary.consultationSection.subTitle}
+          </h2>
         </div>
-        <OpenModalBtn customBtn={styles.btn} />
+        <OpenModalBtn
+          customClass={styles.btn}
+          title={dictionary.buttons.orderConsultation}
+        />
       </div>
       <div className={styles.bgImgWrapp}>
-        {!isLoading && <Image
+        <Image
           src="/images/about-us-bg.webp"
-          alt={t("ConsultationSection.Title")}
+          alt={dictionary.consultationSection.title}
           width={1440}
           height={900}
           sizes="100vw"
           priority={true}
-        />}
+        />
       </div>
     </section>
   );
 };
-
 
 export default ConsultationSection;

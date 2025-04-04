@@ -1,0 +1,26 @@
+@import "../../app/variables";
+
+.langSwitch {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.langBtn {
+  cursor: pointer;
+}
+
+.langBtn:hover {
+  background-color: $btnHoverBgColor;
+}
+
+
+.active {
+  color: $cardBgColor;
+  background-color: $btnBgColor;
+}

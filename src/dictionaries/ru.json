@@ -1,0 +1,91 @@
+{
+  "lang": "ru",
+  "header": {
+    "topTitle": "Выезд по Украине и Европе"
+  },
+  "footer": {
+    "policy": "Политика конфиденциальности"
+  },
+  "heroSection": {
+    "title": "Передовые решения для обнаружения обмана быстро и точно",
+    "text": "Быстрая и достоверная проверка с помощью технологии EyeDetect"
+  },
+  "homeAboutSection": {
+    "title": "Современный полиграф “детектор лжи” во Львове: точность и новейшие технологии EyeDetect",
+    "subTitle": "Полиграф-тестирование во Львове: быстрая и достоверная проверка с помощью технологии EyeDetect",
+    "imgCaption": "Russ Warner, коммерческий директор Converus, и Наталья Мариняк"
+  },
+  "homeCertificatesSection": {
+    "title": "Профессиональное образование полиграфолога EyeDetect"
+  },
+  "homeAdvantagesSection": {
+    "title": "Детектор лжи во Львове: преимущества использования EyeDetect"
+  },
+  "homeClientsSection": {
+    "title": "Детектор лжи EyeDetect: 500+ довольных клиентов в 40 странах"
+  },
+  "homeDirectionsSection": {
+    "title": "Какие вопросы помогает решить технология EyeDetect?"
+  },
+  "homeCountriesSection": {
+    "title": "Технология EyeDetect в Европе",
+    "subTitle": "выезд в центры Европейских стран"
+  },
+  "homeFAQSection": {
+    "title": "Часто задаваемые вопросы о детекторе лжи EyeDetect"
+  },
+  "homeConditionsSection": {
+    "title": "Комфортные условия тестирования на полиграфе (детекторе лжи) EyeDetect"
+  },
+  "homeOrderSection": {
+    "title": "Связаться с нами",
+    "question": "Для заказа тестирования на полиграфе (детекторе лжи) Eye Detect оставьте свои данные в форме или обратитесь к нам по указанным контактам.",
+    "answer": "Аттестованный эксперт-полиграфолог, психолог Наталья Мариняк свяжется с Вами в ближайшее время."
+  },
+  "consultationSection": {
+    "title": "Проверка на полиграфе EyeDetect – профессиональный подход",
+    "subTitle": "Консультация полиграфолога EyeDetect Натальи Мариняк"
+  },
+  "specialistSection": {
+    "title": "Наталья Мариняк – эксперт детектора лжи EyeDetect"
+  },
+  "contactsSection": {
+    "title": "Детектор лжи EyeDetect: контакты в Украине и Европе"
+  },
+  "locationSection": {
+    "title": "Где пройти тест на полиграфе EyeDetect: Украина и Европа"
+  },
+  "ukrainianCitiesSection": {
+    "title": "Проверка на полиграфе EyeDetect в Украине"
+  },
+  "europeanCitiesSection": {
+    "title": "Проверка на полиграфе EyeDetect в Европе"
+  },
+  "guaranteeSection": {
+    "title": "Гарантия конфиденциальности тестирования EyeDetect"
+  },
+  "form": {
+    "name": "Ваше имя",
+    "tel": "Номер телефона",
+    "email": "Электронная почта",
+    "textArea": "Комментарий",
+    "formSubmitedMsg": "Ваше сообщение отправлено."
+  },
+  "formErrors": {
+    "requiredField": "Обязательное поле",
+    "shortName": "Слишком короткое",
+    "onlyNumbers": "Только числа",
+    "onlyInteger": "Только целые числа",
+    "shortNumber": "Слишком короткий номер",
+    "longNumber": "Слишком длинный номер",
+    "invalidEmail": "Не валидный адрес"
+  },
+  "buttons": {
+    "orderConsultation": "Заказать консультацию",
+    "moreDetails": "Узнать подробнее",
+    "sendRequest": "Отправить"
+  },
+  "notifications": {
+    "success": "Ваше сообщение отправлено"
+  }
+}

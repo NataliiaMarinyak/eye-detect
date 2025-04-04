@@ -4,7 +4,8 @@ import styles from "./LangSwitcher.module.scss";
 
 const LangSwitcher = ({
   changeLanguage,
-  currentLanguage
+  currentLanguage,
+  lang,
 }) => {
 
   const onHandleSetUa = () => {

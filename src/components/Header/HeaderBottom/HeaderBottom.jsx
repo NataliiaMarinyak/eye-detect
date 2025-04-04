@@ -7,7 +7,7 @@ import MobMenu from "../MobMenu/MobMenu";
 import styles from "./HeaderBottom.module.scss";
 
 
-const HeaderBottom = () => {
+const HeaderBottom = ({ lang }) => {
   return (
     <div className={`${styles.headerBottomWrapper}`}>
       <div className={`container ${styles.headerBottom}`}>
@@ -17,8 +17,9 @@ const HeaderBottom = () => {
           className={styles.nav}
           isInHeader="true"
           linkStyles={styles.navLink}
+          lang={lang}
         />
-        <TranslatorBtnBlock className={styles.translatorDesktop} />
+        <TranslatorBtnBlock className={styles.translatorDesktop} lang={lang} />
       </div>
       <MobMenu />
     </div>
