@@ -24,7 +24,7 @@ const HeaderBottom = ({ lang, dictionary }) => {
           dictionary={dictionary}
         />
       </div>
-      <MobMenu />
+      <MobMenu lang={lang} dictionary={dictionary} />
     </div>
   );
 };

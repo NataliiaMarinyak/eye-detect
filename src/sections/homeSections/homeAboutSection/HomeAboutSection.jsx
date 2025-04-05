@@ -42,8 +42,8 @@ const HomeAboutSection = ({ lang, dictionary }) => {
                 height={638}
                 alt={
                   lang === i18n.locales[0]
-                    ? "Наталя Мариняк"
-                    : "Наталья Мариняк"
+                    ? "Russ Warner і Наталя Мариняк"
+                    : "Russ Warner и Наталья Мариняк"
                 }
                 sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
               />

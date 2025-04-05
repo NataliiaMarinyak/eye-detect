@@ -7,7 +7,7 @@ import { useWindowResize } from "@/hooks/windowResize";
 import { SiteContext } from "@/context/SiteContext";
 import styles from "./MobMenu.module.scss";
 
-const MobMenu = () => {
+const MobMenu = ({ lang, dictionary }) => {
   const { isMobile, isTablet } = useWindowResize();
   const { isMobileMenu, setIsMobileMenu } = useContext(SiteContext);
   const navMenu = useRef(null);
@@ -52,9 +52,13 @@ const MobMenu = () => {
           id="mobileMenu"
           ref={navMenu}
         >
-          <TranslatorBtnBlock className={styles.translatorMobile} />
+          <TranslatorBtnBlock
+            className={styles.translatorMobile}
+            lang={lang}
+            dictionary={dictionary}
+          />
 
-          <Navigation className={styles.nav} isInHeader="true" />
+          <Navigation className={styles.nav} isInHeader="true" lang={lang} />
         </div>
       )}
     </>

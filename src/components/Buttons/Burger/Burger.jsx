@@ -1,5 +1,6 @@
 "use client";
-import React, { useContext, useEffect } from "react";
+// import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { SiteContext } from "@/context/SiteContext";
 import { useWindowResize } from "@/hooks/windowResize";
 import styles from "./Burger.module.scss";
