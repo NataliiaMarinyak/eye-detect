@@ -1,4 +1,5 @@
 export const languagesData = {
     UA: "ua",
-    RU: "ru"
+    RU: "ru",
+    // EN: "en",
 }
