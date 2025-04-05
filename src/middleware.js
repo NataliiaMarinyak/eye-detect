@@ -17,6 +17,17 @@ function getLocale(request) {
 
 export function middleware(request) {
   const pathname = request.nextUrl.pathname;
+
+  // ✨ Ігноруємо системні шляхи Next.js
+  if (
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/api") ||
+    pathname.startsWith("/favicon.ico") ||
+    pathname.match(/\.(png|jpg|jpeg|svg|gif|webp|ico|avif)$/)
+  ) {
+    return NextResponse.next();
+  }
+
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
