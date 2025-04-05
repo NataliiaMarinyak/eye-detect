@@ -60,7 +60,7 @@ export const metadata = {
         alt: "EyeDetect",
       },
     ],
-    locale: "uk-UA",
+    locale: "uk",
   },
 };
 
@@ -89,7 +89,7 @@ export default async function RootLayout({ children, params }) {
           {/* <TranslatorProvider> */}
           <Header lang={lang} dictionary={dictionary} />
           <main>{children}</main>
-          <Footer dictionary={dictionary} />
+          <Footer dictionary={dictionary} lang={lang} />
           <DynamicModal dictionary={dictionary} />
           <Toaster
             richColors

@@ -1,9 +1,10 @@
 import MachineSection from "@/sections/machineSection/MachineSection";
 import { FAQData } from "@/data/FAQData";
-import { cookies } from "next/headers";
+// import { cookies } from "next/headers";
 import { getCityData } from "@/helpers/getCityData";
 import dynamic from "next/dynamic";
 import { getDictionary } from "@/helpers/getDictionary";
+import { i18n } from "@/dictionaries/i18n.config";
 
 const DynamicServicesSection = dynamic(() =>
   import("@/sections/servicesSection/ServicesSection")
@@ -30,13 +31,15 @@ const DynamicHomeConditionsSection = dynamic(() =>
 );
 
 export async function generateMetadata({ params }) {
-  const { slug } = params;
-  const language = cookies().get("language")?.value || "ua";
+  const { slug, lang } = params;
+  console.log("params", params);
+  // const language = cookies().get("language")?.value || "uk";
 
   const data = getCityData(slug);
-  const title = language === "ua" ? data.seoTitle : data.seoTitleRus;
+
+  const title = lang === i18n.locales[0] ? data.mainTitle : data.mainTitleRus;
   const description =
-    language === "ua" ? data.mainDescription : data.mainDescriptionRus;
+    lang === i18n.locales[0] ? data.mainDescription : data.mainDescriptionRus;
 
   return {
     title,

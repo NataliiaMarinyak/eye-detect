@@ -1,5 +1,5 @@
 {
-  "lang": "ua",
+  "lang": "uk",
   "header": {
     "topTitle": "Виїзд по Україні та Європі"
   },
@@ -83,7 +83,9 @@
   "buttons": {
     "orderConsultation": "Замовити консультацію",
     "moreDetails": "Дізнатись більше",
-    "sendRequest": "Відправити"
+    "sendRequest": "Відправити",
+    "localeSwitcherUkr": "УКР",
+    "localeSwitcherRus": "РОС"
   },
   "notifications": {
     "success": "Ваше повідомлення відправлено"

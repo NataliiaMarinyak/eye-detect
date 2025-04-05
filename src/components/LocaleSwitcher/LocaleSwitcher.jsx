@@ -8,6 +8,7 @@ const LocaleSwitcher = ({
   changeLanguage,
   // currentLanguage,
   lang,
+  dictionary,
 }) => {
   const pathName = usePathname();
   // console.log("pathName", pathName);
@@ -61,7 +62,8 @@ const LocaleSwitcher = ({
           href={redirectedPathName(i18n.locales[0])}
         >
           {/* УКР */}
-          {i18n.locales[0]}
+          {/* {i18n.locales[0]} */}
+          {dictionary.buttons.localeSwitcherUkr}
         </Link>
       </li>
       <li
@@ -74,7 +76,8 @@ const LocaleSwitcher = ({
           href={redirectedPathName(i18n.locales[1])}
         >
           {/* РУС */}
-          {i18n.locales[1]}
+          {/* {i18n.locales[1]} */}
+          {dictionary.buttons.localeSwitcherRus}
         </Link>
       </li>
     </ul>

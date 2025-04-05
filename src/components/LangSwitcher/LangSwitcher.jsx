@@ -1,34 +1,28 @@
-import { languagesData } from "@/data/languagesData";
+// import { languagesData } from "@/data/languagesData";
+import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./LangSwitcher.module.scss";
 
-
-const LangSwitcher = ({
-  changeLanguage,
-  currentLanguage,
-  lang,
-}) => {
-
+const LangSwitcher = ({ changeLanguage, lang }) => {
   const onHandleSetUa = () => {
-    const languageUser = languagesData.UA;
+    const languageUser = i18n.locales[0];
     changeLanguage(languageUser);
   };
 
   const onHandleSetRu = () => {
-    const languageUser = languagesData.RU;
+    const languageUser = i18n.locales[1];
     changeLanguage(languageUser);
   };
-
 
   return (
     <ul className={styles.langSwitch}>
       <li
-        className={currentLanguage === languagesData.UA ? styles.active : styles.langBtn}
+        className={lang === i18n.locales[0] ? styles.active : styles.langBtn}
         onClick={onHandleSetUa}
       >
         УКР
       </li>
       <li
-        className={currentLanguage === languagesData.RU ? styles.active : styles.langBtn}
+        className={lang === i18n.locales[1] ? styles.active : styles.langBtn}
         onClick={onHandleSetRu}
       >
         РУС
@@ -36,6 +30,5 @@ const LangSwitcher = ({
     </ul>
   );
 };
-
 
 export default LangSwitcher;

@@ -58,7 +58,12 @@ const SpecialistSection = ({ lang, dictionary }) => {
                   >
                     <Image
                       src={el.img}
-                      alt={lang === i18n.locales[0] ? el.title : el.titleRus}
+                      // alt={lang === i18n.locales[0] ? el.title : el.titleRus}
+                      alt={
+                        lang === i18n.locales[0]
+                          ? "Russ Warner і Наталя Мариняк"
+                          : "Russ Warner и Наталья Мариняк"
+                      }
                       width={943}
                       height={638}
                       sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 375px"

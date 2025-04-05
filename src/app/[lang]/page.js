@@ -39,6 +39,8 @@ const DynamicHomeOrderSection = dynamic(() =>
 );
 
 export default async function Home({ params }) {
+  const { lang } = params;
+
   const jsonLd = {
     "@context": "http://schema.org",
     "@type": "BreadcrumbList",
@@ -52,7 +54,6 @@ export default async function Home({ params }) {
     },
   };
 
-  const { lang } = params;
   const dictionary = await getDictionary(lang);
 
   return (

@@ -2,15 +2,19 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./Logo.module.scss";
 
-
-const Logo = ({ className }) => {
+const Logo = ({ className, lang }) => {
   const pathName = usePathname();
+
+  const isDefaultLang = lang === i18n.defaultLocale;
+  const path = isDefaultLang ? "" : `${lang}`;
 
   return (
     <Link
-      href={pathName === "/" ? "#hero" : "/"}
+      // href={pathName === "/" ? "#hero" : "/"}
+      href={pathName === `/${path}` ? `${path}#hero` : `/${path}`}
       className={`${styles.logowrapp} ${className}`}
     >
       <Image
@@ -24,6 +28,5 @@ const Logo = ({ className }) => {
     </Link>
   );
 };
-
 
 export default Logo;

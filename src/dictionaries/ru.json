@@ -83,7 +83,9 @@
   "buttons": {
     "orderConsultation": "Заказать консультацию",
     "moreDetails": "Узнать подробнее",
-    "sendRequest": "Отправить"
+    "sendRequest": "Отправить",
+    "localeSwitcherUkr": "УКР",
+    "localeSwitcherRus": "РУС"
   },
   "notifications": {
     "success": "Ваше сообщение отправлено"

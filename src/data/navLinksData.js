@@ -1,4 +1,4 @@
-export const navLinks = [
+export const navLinksData = [
   {
     title: "Головна",
     titleRus: "Главная",

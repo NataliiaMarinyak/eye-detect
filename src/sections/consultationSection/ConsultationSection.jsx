@@ -33,7 +33,8 @@ const ConsultationSection = ({ dictionary }) => {
           width={1440}
           height={900}
           sizes="100vw"
-          priority={true}
+          // priority={true}
+          loading="eager"
         />
       </div>
     </section>

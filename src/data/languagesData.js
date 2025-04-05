@@ -1,4 +1,4 @@
-export const languagesData = {
-    UA: "ua",
-    RU: "ru"
-}
+// export const languagesData = {
+//     UA: "ua",
+//     RU: "ru"
+// }

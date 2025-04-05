@@ -1,7 +1,8 @@
-import { cookies } from "next/headers";
+// import { cookies } from "next/headers";
 import dynamic from "next/dynamic";
 import LocationSection from "@/sections/locationSection/LocationSection";
 import { getDictionary } from "@/helpers/getDictionary";
+import { i18n } from "@/dictionaries/i18n.config";
 
 const DynamicUkrainianCitiesSection = dynamic(() =>
   import("@/sections/ukrainianCitiesSection/UkrainianCitiesSection")
@@ -12,6 +13,7 @@ const DynamicEuropeanCitiesSection = dynamic(() =>
 );
 
 export async function generateMetadata({ params }) {
+  const { lang } = params;
   const data = {
     mainTitle: "Локації поліграфа EyeDetect: тестування в Україні та Європі",
     mainTitleRus:
@@ -22,11 +24,11 @@ export async function generateMetadata({ params }) {
       "EyeDetect доступен в вашем регионе! Найдите удобные локации в Украине и Европе для проверки на детекторе лжи. Удобная запись и консультация.",
   };
 
-  const language = cookies().get("language")?.value || "ua";
+  // const language = cookies().get("language")?.value || "uk";
 
-  const title = language === "ua" ? data.mainTitle : data.mainTitleRus;
+  const title = lang === i18n.locales[0] ? data.mainTitle : data.mainTitleRus;
   const description =
-    language === "ua" ? data.mainDescription : data.mainDescriptionRus;
+    lang === i18n.locales[0] ? data.mainDescription : data.mainDescriptionRus;
 
   return {
     title,

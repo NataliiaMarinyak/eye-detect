@@ -7,7 +7,7 @@ import Cookies from "js-cookie";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
 
-const TranslatorBtnBlock = ({ className, lang }) => {
+const TranslatorBtnBlock = ({ className, lang, dictionary }) => {
   // const { i18n } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState(
     // (prev) => !prev || prev === undefined ? languagesData.UA : prev
@@ -43,6 +43,7 @@ const TranslatorBtnBlock = ({ className, lang }) => {
           changeLanguage={changeLanguage}
           // currentLanguage={currentLanguage}
           lang={lang}
+          dictionary={dictionary}
         />
       )}
     </div>

@@ -1,5 +1,4 @@
 import PrivacyPolicySection from "@/sections/privacyPolicySection/PrivacyPolicySection";
-import { getDictionary } from "@/helpers/getDictionary";
 
 export async function generateMetadata({ params }) {
   return {
@@ -11,7 +10,6 @@ export async function generateMetadata({ params }) {
 
 const PryvacyPolicyPage = async ({ params }) => {
   const { lang } = params;
-  const dictionary = await getDictionary(lang);
 
   const jsonLd = {
     "@context": "http://schema.org",

@@ -1,7 +1,8 @@
-import { cookies } from "next/headers";
+// import { cookies } from "next/headers";
 import dynamic from "next/dynamic";
 import ConsultationSection from "@/sections/consultationSection/ConsultationSection";
 import { getDictionary } from "@/helpers/getDictionary";
+import { i18n } from "@/dictionaries/i18n.config";
 
 const DynamicSpecialistSection = dynamic(() =>
   import("@/sections/specialistSection/SpecialistSection")
@@ -14,6 +15,7 @@ const DynamicHomeCertificatesSection = dynamic(() =>
 );
 
 export async function generateMetadata({ params }) {
+  const { lang } = params;
   const data = {
     mainTitle: "Наталя Мариняк – професійний поліграфолог EyeDetect",
     mainTitleRus: "Наталья Мариняк - профессиональный полиграфолог EyeDetect",
@@ -23,11 +25,11 @@ export async function generateMetadata({ params }) {
       "Получите экспертную консультацию и профессиональную проверку на детекторе лжи EyeDetect. Наталья Мариняк гарантирует качество и конфиденциальность.",
   };
 
-  const language = cookies().get("language")?.value || "ua";
+  // const language = cookies().get("language")?.value || "uk";
 
-  const title = language === "ua" ? data.mainTitle : data.mainTitleRus;
+  const title = lang === i18n.locales[0] ? data.mainTitle : data.mainTitleRus;
   const description =
-    language === "ua" ? data.mainDescription : data.mainDescriptionRus;
+    lang === i18n.locales[0] ? data.mainDescription : data.mainDescriptionRus;
 
   return {
     title,
@@ -50,7 +52,7 @@ export async function generateMetadata({ params }) {
 const AboutUsPage = async ({ params }) => {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
- 
+
   const jsonLd = {
     "@context": "http://schema.org",
     "@type": "BreadcrumbList",

@@ -36,7 +36,7 @@ const Header = ({ lang, dictionary }) => {
   return (
     <header className={styles.header} ref={headerRef}>
       <HeaderTop lang={lang} dictionary={dictionary} />
-      <HeaderBottom lang={lang} />
+      <HeaderBottom lang={lang} dictionary={dictionary} />
     </header>
   );
 };
