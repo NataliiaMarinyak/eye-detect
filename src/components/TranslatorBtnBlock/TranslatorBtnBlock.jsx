@@ -1,48 +1,53 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import LangSwitcher from "../LangSwitcher/LangSwitcher";
+// import { useTranslation } from "react-i18next";
+// import LangSwitcher from "../LangSwitcher/LangSwitcher";
+import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import Cookies from "js-cookie";
-import { languagesData } from "@/data/languagesData";
+// import { languagesData } from "@/data/languagesData";
+import { i18n } from "@/dictionaries/i18n.config";
 
+const TranslatorBtnBlock = ({ className, lang, dictionary }) => {
+  // const { i18n } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(
+    // (prev) => !prev || prev === undefined ? languagesData.UA : prev
+    lang
+  );
 
-const TranslatorBtnBlock = ({ className }) => {
-    const { i18n } = useTranslation();
-    const [language, setLanguage] = useState(
-        // (prev) => !prev || prev === undefined ? languagesData.UA : prev
-        "ua"
-    );
+  const [isLoading, setIsLoading] = useState(true);
 
-    const [isLoad, setIsLoad] = useState(true);
+  useEffect(() => {
+    const language = localStorage.getItem("lang");
+    setCurrentLanguage(() => (language ? language : i18n.defaultLocale));
+    localStorage.setItem("lang", currentLanguage);
+    Cookies.set("language", language);
+    setIsLoading(false);
+  }, [currentLanguage]);
 
-    useEffect(() => {
-        const lang = localStorage.getItem("i18nextLng");
-        setLanguage(() => (lang ? lang : languagesData.UA));
-        Cookies.set('language', lang);
-        setIsLoad(false);
-    }, []);
+  const changeLanguage = (languageUser) => {
+    localStorage.setItem("lang", languageUser);
+    // setCurrentLanguage(languageUser);
+    // i18n.changeLanguage(languageUser);
+    Cookies.set("language", languageUser);
+  };
 
-
-    const changeLanguage = (languageUser) => {
-        localStorage.setItem("i18nextLng", languageUser);
-        // const language = localStorage.getItem("i18nextLng");
-        setLanguage(languageUser);
-        i18n.changeLanguage(languageUser);
-        Cookies.set('language', languageUser);
-    };
-
-
-    return (
-        <div className={className}>
-            {!isLoad && (
-                <LangSwitcher
-                    changeLanguage={changeLanguage}
-                    currentLanguage={language}
-                />
-            )}
-        </div>
-    );
+  return (
+    <div className={className}>
+      {!isLoading && (
+        // <LangSwitcher
+        //     changeLanguage={changeLanguage}
+        //     currentLanguage={language}
+        //     lang={lang}
+        // />
+        <LocaleSwitcher
+          changeLanguage={changeLanguage}
+          // currentLanguage={currentLanguage}
+          lang={lang}
+          dictionary={dictionary}
+        />
+      )}
+    </div>
+  );
 };
-
 
 export default TranslatorBtnBlock;

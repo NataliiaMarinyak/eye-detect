@@ -1,37 +1,47 @@
-"use client";
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { useParams } from 'next/navigation';
-import { getCityData } from '@/helpers/getCityData';
-import { languagesData } from "@/data/languagesData";
-import styles from './TownsSection.module.scss';
+// "use client";
+// import { useEffect, useState } from 'react';
+// import { useTranslation } from 'react-i18next';
+// import { useParams } from "next/navigation";
+import { getCityData } from "@/helpers/getCityData";
+// import { languagesData } from "@/data/languagesData";
+import styles from "./TownsSection.module.scss";
+import { i18n } from "@/dictionaries/i18n.config";
 
+const TownsSection = ({ lang, slug }) => {
+  // const { i18n } = useTranslation();
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => setIsLoading(false), []);
 
-const TownsSection = () => {
-    const { i18n } = useTranslation();
-    const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => setIsLoading(false), []);
+  // const { slug } = useParams();
 
-    const { slug } = useParams();
+  const data = getCityData(slug);
 
-    const data = getCityData(slug);
+  return (
+    <section>
+      <div className={`container ${styles.container}`}>
+        <h2 className={styles.title}>
+          {lang === i18n.locales[0]
+            ? data?.townsInfo.title
+            : data?.townsInfo.titleRus}
+        </h2>
+        <p className={styles.preface}>
+          {lang === i18n.locales[0]
+            ? data?.townsInfo.preface
+            : data?.townsInfo.prefaceRus}
+        </p>
+        <p className={styles.towns}>
+          {lang === i18n.locales[0]
+            ? data?.townsInfo.towns
+            : data?.townsInfo.townsRus}
+        </p>
+        <p className={styles.afterword}>
+          {lang === i18n.locales[0]
+            ? data?.townsInfo.afterword
+            : data?.townsInfo.afterwordRus}
+        </p>
+      </div>
+    </section>
+  );
+};
 
-
-    return (
-        <section>
-            <div className={`container ${styles.container}`}>
-                <h2 className={styles.title}>{!isLoading && (i18n.language === languagesData.UA
-                    ? data?.townsInfo.title : data?.townsInfo.titleRus)}</h2>
-                <p className={styles.preface}>{!isLoading && (i18n.language === languagesData.UA
-                    ? data?.townsInfo.preface : data?.townsInfo.prefaceRus)}</p>
-                <p className={styles.towns}>{!isLoading && (i18n.language === languagesData.UA
-                    ? data?.townsInfo.towns : data?.townsInfo.townsRus)}</p>
-                <p className={styles.afterword}>{!isLoading && (i18n.language === languagesData.UA
-                    ? data?.townsInfo.afterword : data?.townsInfo.afterwordRus)}</p>
-            </div>
-        </section >
-    )
-}
-
-
-export default TownsSection
+export default TownsSection;

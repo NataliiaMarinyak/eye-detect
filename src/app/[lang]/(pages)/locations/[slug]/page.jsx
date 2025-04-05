@@ -1,9 +1,10 @@
 import MachineSection from "@/sections/machineSection/MachineSection";
 import { FAQData } from "@/data/FAQData";
-import { cookies } from 'next/headers';
+// import { cookies } from "next/headers";
 import { getCityData } from "@/helpers/getCityData";
 import dynamic from "next/dynamic";
-
+import { getDictionary } from "@/helpers/getDictionary";
+import { i18n } from "@/dictionaries/i18n.config";
 
 const DynamicServicesSection = dynamic(() =>
   import("@/sections/servicesSection/ServicesSection")
@@ -30,12 +31,15 @@ const DynamicHomeConditionsSection = dynamic(() =>
 );
 
 export async function generateMetadata({ params }) {
-  const { slug } = params;
-  const language = cookies().get('language')?.value || 'ua';
+  const { slug, lang } = params;
+  console.log("params", params);
+  // const language = cookies().get("language")?.value || "uk";
 
   const data = getCityData(slug);
-  const title = language === 'ua' ? data.seoTitle : data.seoTitleRus;
-  const description = language === 'ua' ? data.mainDescription : data.mainDescriptionRus;
+
+  const title = lang === i18n.locales[0] ? data.mainTitle : data.mainTitleRus;
+  const description =
+    lang === i18n.locales[0] ? data.mainDescription : data.mainDescriptionRus;
 
   return {
     title,
@@ -51,7 +55,7 @@ export async function generateMetadata({ params }) {
       "Перевірка персоналу",
       "Службові розслідування",
       "Поліграф-тестування",
-      "Умови тестування"
+      "Умови тестування",
     ],
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_SEO_URL}locations/${slug}`,
@@ -59,10 +63,12 @@ export async function generateMetadata({ params }) {
   };
 }
 
-
-const LocationIdPage = ({params}) => {
-  const slugId =  params?.slug;
+const LocationIdPage = async ({ params }) => {
+  const { lang } = params;
+  const dictionary = await getDictionary(lang);
+  const slugId = params?.slug;
   const dataId = getCityData(slugId);
+
   const jsonLd = {
     "@context": "http://schema.org",
     "@type": "BreadcrumbList",
@@ -96,20 +102,27 @@ const LocationIdPage = ({params}) => {
 
   return (
     <>
-    <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <MachineSection />
-      <DynamicServicesSection />
-      <DynamicTownsSection />
-      <DynamicVideoSection />
-      <DynamicGuaranteeSection />
-      <DynamicHomeFAQSection data={FAQData} />
-      <DynamicHomeConditionsSection />
+      <MachineSection lang={lang} dictionary={dictionary} slug={slugId} />
+      <DynamicServicesSection
+        lang={lang}
+        dictionary={dictionary}
+        slug={slugId}
+      />
+      <DynamicTownsSection lang={lang} slug={slugId} />
+      <DynamicVideoSection lang={lang} dictionary={dictionary} slug={slugId} />
+      <DynamicGuaranteeSection lang={lang} dictionary={dictionary} />
+      <DynamicHomeFAQSection
+        lang={lang}
+        dictionary={dictionary}
+        data={FAQData}
+      />
+      <DynamicHomeConditionsSection dictionary={dictionary} />
     </>
-  )
-}
-
+  );
+};
 
 export default LocationIdPage;

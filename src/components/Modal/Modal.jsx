@@ -5,7 +5,7 @@ import { SiteContext } from "@/context/SiteContext";
 import { useModalActions } from "@/hooks/modalActions";
 import styles from "./Modal.module.scss";
 
-const Modal = () => {
+const Modal = ({ dictionary }) => {
   const { modalFrame } = useContext(SiteContext);
   const { backDrop } = useContext(SiteContext);
 
@@ -45,7 +45,7 @@ const Modal = () => {
         }
         id="backDrop"
       >
-        <OrderForm />
+        <OrderForm dictionary={dictionary} />
       </div>
     </div>
   );
