@@ -36,6 +36,8 @@ const DynamicHomeOrderSection = dynamic(() =>
   import("@/sections/homeSections/homeOrderSection/HomeOrderSection")
 );
 
+// previousVersion commit 
+
 export default function Home() {
   const jsonLd = {
     '@context': 'http://schema.org',
