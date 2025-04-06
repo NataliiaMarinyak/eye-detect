@@ -23,6 +23,10 @@ export function middleware(request) {
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
     pathname.startsWith("/favicon.ico") ||
+    pathname.startsWith("/sitemap.xml") ||
+    pathname.startsWith("/sitemap.js") ||
+    pathname.startsWith("/robots.txt") ||
+    pathname.startsWith("/robots.js") ||
     pathname.match(/\.(png|jpg|jpeg|svg|gif|webp|ico|avif)$/)
   ) {
     return NextResponse.next();
