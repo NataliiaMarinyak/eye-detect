@@ -1,7 +1,7 @@
 import { europeanCitiesData } from "@/data/europeanCitiesData";
 import { ukrainianCitiesData } from "@/data/ukrainianCitiesData";
 
-export const runtime = "edge"; // або 'node' якщо edge не підходить
+// export const runtime = "edge"; // або 'node' якщо edge не підходить
 export const dynamic = "force-static";
 
 const baseUrl = process.env.NEXT_PUBLIC_SEO_URL;
