@@ -1,8 +1,8 @@
-// import { cookies } from "next/headers";
 import dynamic from "next/dynamic";
 import ConsultationSection from "@/sections/consultationSection/ConsultationSection";
 import { getDictionary } from "@/helpers/getDictionary";
-import { i18n } from "@/dictionaries/i18n.config";
+import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+
 
 const DynamicSpecialistSection = dynamic(() =>
   import("@/sections/specialistSection/SpecialistSection")
@@ -16,35 +16,57 @@ const DynamicHomeCertificatesSection = dynamic(() =>
 
 export async function generateMetadata({ params }) {
   const { lang } = params;
-  const data = {
-    mainTitle: "Наталя Мариняк – професійний поліграфолог EyeDetect",
-    mainTitleRus: "Наталья Мариняк - профессиональный полиграфолог EyeDetect",
-    mainDescription:
-      "Отримайте експертну консультацію та професійну перевірку на детекторі брехні EyeDetect. Наталя Мариняк гарантує якість і конфіденційність.",
-    mainDescriptionRus:
-      "Получите экспертную консультацию и профессиональную проверку на детекторе лжи EyeDetect. Наталья Мариняк гарантирует качество и конфиденциальность.",
-  };
+  const {seoAboutUsPage} = await getDictionary(lang);
 
-  // const language = cookies().get("language")?.value || "uk";
+  const title = seoAboutUsPage.seoMetaMainTitle;
+  const description = seoAboutUsPage.seoMetaMainDescription;
+  const keywords = seoAboutUsPage.seoMetaKeywords;
+  const titleOpenGraph = seoAboutUsPage.seoMetaTitleOpenGraph;
+  const descriptionOpenGraph = seoAboutUsPage.seoMetaDescriptionOpenGraph;
 
-  const title = lang === i18n.locales[0] ? data.mainTitle : data.mainTitleRus;
-  const description =
-    lang === i18n.locales[0] ? data.mainDescription : data.mainDescriptionRus;
+  const seoMetaPageUrl = getSeoMetaPageUrl(lang);
 
   return {
     title,
     description,
-    keywords: [
-      "EyeDetect",
-      "Наталя Мариняк",
-      "Детектор брехні",
-      "Консультація",
-      "Перевірка",
-      "Професійний поліграфолог",
-      "Поліграфолог",
-    ],
+    keywords,
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SEO_URL}about-us`,
+      canonical: `${seoMetaPageUrl}about-us`,
+      languages: {
+        'uk': `${process.env.NEXT_PUBLIC_SEO_URL}about-us`,
+        'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/about-us`,
+      },
+    },
+    openGraph: {
+      title: titleOpenGraph,
+      url: `${seoMetaPageUrl}about-us`,
+      description: descriptionOpenGraph,
+      siteName: "EyeDetect",
+      type: "website",
+      images: [
+        {
+          url: "images/seo_images/opengraph-image-400x300.png",
+          type: "image/png",
+          width: 400,
+          height: 300,
+          alt: "EyeDetect",
+        },
+        {
+          url: "images/seo_images/twitter-image-800x600.png",
+          type: "image/png",
+          width: 800,
+          height: 600,
+          alt: "EyeDetect",
+        },
+        {
+          url: "images/seo_images/opengraph-image-1200-630.png",
+          type: "image/png",
+          width: 1200,
+          height: 630,
+          alt: "EyeDetect",
+        },
+      ],
+      locale: lang,
     },
   };
 }
@@ -52,6 +74,13 @@ export async function generateMetadata({ params }) {
 const AboutUsPage = async ({ params }) => {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
+
+  const {seoAboutUsPage} = await getDictionary(lang);
+
+  const pageUrlJsonLd = getSeoMetaPageUrl(lang);
+
+  const name_01 = seoAboutUsPage.seoMetaNameJsonLd_1;
+  const name_02 = seoAboutUsPage.seoMetaNameJsonLd_2;
 
   const jsonLd = {
     "@context": "http://schema.org",
@@ -61,16 +90,16 @@ const AboutUsPage = async ({ params }) => {
         "@type": "ListItem",
         position: 1,
         item: {
-          "@id": process.env.NEXT_PUBLIC_SEO_URL,
-          name: "Головна сторінка Поліграф.",
+          "@id": pageUrlJsonLd,
+          name: name_01,
         },
       },
       {
         "@type": "ListItem",
         position: 2,
         item: {
-          "@id": `${process.env.NEXT_PUBLIC_SEO_URL}about-us`,
-          name: "Сторінка про нас.",
+          "@id": `${pageUrlJsonLd}about-us`,
+          name: name_02,
         },
       },
     ],

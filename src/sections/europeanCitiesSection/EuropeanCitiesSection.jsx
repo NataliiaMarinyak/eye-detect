@@ -11,7 +11,7 @@ import styles from "./EuropeanCitiesSection.module.scss";
 
 const EuropeanCitiesSection = ({ lang, dictionary }) => {
   const pathname = usePathname();
-  console.log("pathname", pathname);
+  // console.log("pathname", pathname);
   // const { t, i18n } = useTranslation();
   // const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => setIsLoading(false), []);

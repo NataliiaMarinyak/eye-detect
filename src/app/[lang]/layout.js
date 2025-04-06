@@ -14,54 +14,54 @@ const DynamicModal = dynamic(() => import("@/components/Modal/Modal"));
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SEO_URL),
-  title: "Поліграф у Львові: швидка і надійна перевірка з EyeDetect",
-  description:
-    "Детектор брехні EyeDetect у Львові – сучасний метод перевірки з гарантованою точністю для будь-яких ситуацій. Понад 500 задоволених клієнтів!",
-  keywords: [
-    "EyeDetect",
-    "Львові",
-    "Детектор брехні",
-    "Консультація",
-    "Перевірка",
-    "Надійна перевірка",
-    "Сучасний поліграф",
-    "Поліграф-тестування",
-  ],
-  alternates: {
-    canonical: process.env.NEXT_PUBLIC_SEO_URL,
-  },
-  openGraph: {
-    title: "Поліграф у Львові: швидка і надійна перевірка з EyeDetect✅",
-    url: process.env.NEXT_PUBLIC_SEO_URL,
-    description:
-      "Детектор брехні EyeDetect у Львові 👆 сучасний метод перевірки з гарантованою точністю для будь-яких ситуацій. Понад 500 задоволених клієнтів!",
-    siteName: "EyeDetect",
-    type: "website",
-    images: [
-      {
-        url: "images/seo_images/opengraph-image-400x300.png",
-        type: "image/png",
-        width: 400,
-        height: 300,
-        alt: "EyeDetect",
-      },
-      {
-        url: "images/seo_images/twitter-image-800x600.png",
-        type: "image/png",
-        width: 800,
-        height: 600,
-        alt: "EyeDetect",
-      },
-      {
-        url: "images/seo_images/opengraph-image-1200-630.png",
-        type: "image/png",
-        width: 1200,
-        height: 630,
-        alt: "EyeDetect",
-      },
-    ],
-    locale: "uk",
-  },
+  // title: "Поліграф у Львові: швидка і надійна перевірка з EyeDetect",
+  // description:
+  //   "Детектор брехні EyeDetect у Львові – сучасний метод перевірки з гарантованою точністю для будь-яких ситуацій. Понад 500 задоволених клієнтів!",
+  // keywords: [
+  //   "EyeDetect",
+  //   "Львові",
+  //   "Детектор брехні",
+  //   "Консультація",
+  //   "Перевірка",
+  //   "Надійна перевірка",
+  //   "Сучасний поліграф",
+  //   "Поліграф-тестування",
+  // ],
+  // alternates: {
+  //   canonical: process.env.NEXT_PUBLIC_SEO_URL,
+  // },
+  // openGraph: {
+  //   title: "Поліграф у Львові: швидка і надійна перевірка з EyeDetect✅",
+  //   url: process.env.NEXT_PUBLIC_SEO_URL,
+  //   description:
+  //     "Детектор брехні EyeDetect у Львові 👆 сучасний метод перевірки з гарантованою точністю для будь-яких ситуацій. Понад 500 задоволених клієнтів!",
+  //   siteName: "EyeDetect",
+  //   type: "website",
+  //   images: [
+  //     {
+  //       url: "images/seo_images/opengraph-image-400x300.png",
+  //       type: "image/png",
+  //       width: 400,
+  //       height: 300,
+  //       alt: "EyeDetect",
+  //     },
+  //     {
+  //       url: "images/seo_images/twitter-image-800x600.png",
+  //       type: "image/png",
+  //       width: 800,
+  //       height: 600,
+  //       alt: "EyeDetect",
+  //     },
+  //     {
+  //       url: "images/seo_images/opengraph-image-1200-630.png",
+  //       type: "image/png",
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "EyeDetect",
+  //     },
+  //   ],
+  //   locale: "uk",
+  // },
 };
 
 export async function generateStaticParams() {

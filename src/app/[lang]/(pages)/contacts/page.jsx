@@ -1,38 +1,61 @@
-// import { cookies } from "next/headers";
 import ContactsSection from "@/sections/contactsSection/ContactsSection";
 import { getDictionary } from "@/helpers/getDictionary";
-import { i18n } from "@/dictionaries/i18n.config";
+import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+
 
 export async function generateMetadata({ params }) {
   const { lang } = params;
+  const {seoContactsPage} = await getDictionary(lang);
 
-  const data = {
-    mainTitle: "Контакти EyeDetect – поліграф у Львові, Україні та Європі",
-    mainTitleRus: "Контакты EyeDetect - полиграф во Львове, Украине и Европе",
-    mainDescription:
-      "Зв’яжіться для перевірки на детекторі брехні EyeDetect. Адреса офісу у Львові та можливість виїзду по Україні та Європі. Консультації та виїзні послуги.",
-    mainDescriptionRus:
-      "Свяжитесь для проверки на детекторе лжи EyeDetect. Адрес офиса во Львове и возможность выезда по Украине и Европе. Консультации и выездные услуги.",
-  };
+  const title = seoContactsPage.seoMetaMainTitle;
+  const description = seoContactsPage.seoMetaMainDescription;
+  const keywords = seoContactsPage.seoMetaKeywords;
+  const titleOpenGraph = seoContactsPage.seoMetaTitleOpenGraph;
+  const descriptionOpenGraph = seoContactsPage.seoMetaDescriptionOpenGraph;
 
-  // const language = cookies().get("language")?.value || "uk";
-
-  const title = lang === i18n.locales[0] ? data.mainTitle : data.mainTitleRus;
-  const description =
-    lang === i18n.locales[0] ? data.mainDescription : data.mainDescriptionRus;
+  const seoMetaPageUrl = getSeoMetaPageUrl(lang);
 
   return {
     title,
     description,
-    keywords: [
-      "EyeDetect",
-      "Виїзні послуги",
-      "Детектор брехні",
-      "Консультація",
-      "Перевірка",
-    ],
+    keywords,
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SEO_URL}contacts`,
+      canonical: `${seoMetaPageUrl}contacts`,
+      languages: {
+        'uk': `${process.env.NEXT_PUBLIC_SEO_URL}contacts`,
+        'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/contacts`,
+      },
+    },
+    openGraph: {
+      title: titleOpenGraph,
+      url: `${seoMetaPageUrl}contacts`,
+      description: descriptionOpenGraph,
+      siteName: "EyeDetect",
+      type: "website",
+      images: [
+        {
+          url: "images/seo_images/opengraph-image-400x300.png",
+          type: "image/png",
+          width: 400,
+          height: 300,
+          alt: "EyeDetect",
+        },
+        {
+          url: "images/seo_images/twitter-image-800x600.png",
+          type: "image/png",
+          width: 800,
+          height: 600,
+          alt: "EyeDetect",
+        },
+        {
+          url: "images/seo_images/opengraph-image-1200-630.png",
+          type: "image/png",
+          width: 1200,
+          height: 630,
+          alt: "EyeDetect",
+        },
+      ],
+      locale: lang,
     },
   };
 }
@@ -40,6 +63,12 @@ export async function generateMetadata({ params }) {
 const ContactsPage = async ({ params }) => {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
+  const {seoContactsPage} = await getDictionary(lang);
+
+  const pageUrlJsonLd = getSeoMetaPageUrl(lang);
+
+  const name_01 = seoContactsPage.seoMetaNameJsonLd_1;
+  const name_02 = seoContactsPage.seoMetaNameJsonLd_2;
 
   const jsonLd = {
     "@context": "http://schema.org",
@@ -49,16 +78,16 @@ const ContactsPage = async ({ params }) => {
         "@type": "ListItem",
         position: 1,
         item: {
-          "@id": process.env.NEXT_PUBLIC_SEO_URL,
-          name: "Головна сторінка Поліграф.",
+          "@id": pageUrlJsonLd,
+          name: name_01,
         },
       },
       {
         "@type": "ListItem",
         position: 2,
         item: {
-          "@id": `${process.env.NEXT_PUBLIC_SEO_URL}contacts`,
-          name: "Контакти EyeDetect.",
+          "@id": `${pageUrlJsonLd}contacts`,
+          name: name_02,
         },
       },
     ],
