@@ -1,17 +1,9 @@
-// "use client";
-// import { useEffect, useState } from 'react';
-// import { useTranslation } from 'react-i18next';
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { directionsData } from "@/data/directionsData";
-// import { languagesData } from "@/data/languagesData";
-import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./HomeDirectionsSection.module.scss";
 
 const HomeDirectionsSection = ({ lang, dictionary }) => {
-  // const { t, i18n } = useTranslation();
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => setIsLoading(false), []);
-
   return (
     <section>
       <div className={`container ${styles.container}`}>
@@ -32,14 +24,10 @@ const HomeDirectionsSection = ({ lang, dictionary }) => {
                 </svg>
               </div>
               <h3 className={styles.subTitle}>
-                {lang === i18n.locales[0]
-                  ? direction.title
-                  : direction.titleRus}
+                {getLocalizedField(direction, "title", lang)}
               </h3>
               <p className={styles.description}>
-                {lang === i18n.locales[0]
-                  ? direction.description
-                  : direction.descriptionRus}
+                {getLocalizedField(direction, "description", lang)}
               </p>
             </li>
           ))}
