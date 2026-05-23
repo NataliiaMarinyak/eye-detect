@@ -19,8 +19,16 @@
   line-height: 1.4;
   color: $subTitleColor;
   text-align: left;
-  font-size: clamp(12px, 1vw + 8px, 24px);
+  font-size: 16px;
   margin-bottom: 12px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 20px;
+  }
 }
 
 .content {
