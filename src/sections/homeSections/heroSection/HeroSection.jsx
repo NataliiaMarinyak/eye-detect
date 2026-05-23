@@ -17,6 +17,9 @@ const HeroSection = async ({ dictionary }) => {
           <p className={styles.title}>{dictionary.heroSection.title}</p>
           <p className={styles.text}>{dictionary.heroSection.text}</p>
         </div>
+        <a href="https://price.eye-polygraph.com/" target="_blank" rel="noopener noreferrer" className={styles.priceBtn}>
+          {dictionary.buttons.calculatePrice}
+        </a>
         <OpenModalBtn
           customClass={styles.btn}
           title={dictionary.buttons.orderConsultation}
