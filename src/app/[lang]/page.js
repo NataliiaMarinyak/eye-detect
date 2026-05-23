@@ -137,12 +137,12 @@ export default async function Home({ params }) {
       <DynamicHomeClientsSection lang={lang} dictionary={dictionary} />
       <DynamicHomeTestingSection lang={lang} />
       <DynamicHomeDirectionsSection lang={lang} dictionary={dictionary} />
-      <DynamicHomeCountriesSection lang={lang} dictionary={dictionary} />
       <DynamicHomeFAQSection
         data={FAQDataHome}
         lang={lang}
         dictionary={dictionary}
       />
+      <DynamicHomeCountriesSection lang={lang} dictionary={dictionary} />
       <DynamicHomeConditionsSection dictionary={dictionary} />
       <DynamicHomeOrderSection lang={lang} dictionary={dictionary} />
     </>
