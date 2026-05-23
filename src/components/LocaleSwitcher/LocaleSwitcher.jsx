@@ -4,21 +4,20 @@ import Link from "next/link";
 import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./LocaleSwitcher.module.scss";
 
-const LocaleSwitcher = ({
-  changeLanguage,
-  // currentLanguage,
-  lang,
-  dictionary,
-}) => {
+const LOCALE_LABEL_KEY = {
+  uk: "localeSwitcherUkr",
+  ru: "localeSwitcherRus",
+  en: "localeSwitcherEn",
+};
+
+const LocaleSwitcher = ({ changeLanguage, lang, dictionary }) => {
   const pathName = usePathname();
-  // console.log("pathName", pathName);
 
   const redirectedPathName = (locale) => {
     if (!pathName) return "/";
 
     const pathnameIsMissingLocale = i18n.locales.every(
-      (locale) =>
-        !pathName.startsWith(`/${locale}/`) && pathName !== `/${locale}`
+      (loc) => !pathName.startsWith(`/${loc}/`) && pathName !== `/${loc}`
     );
 
     if (pathnameIsMissingLocale) {
@@ -40,46 +39,25 @@ const LocaleSwitcher = ({
     }
   };
 
-  const onHandleSetUa = () => {
-    const languageUser = i18n.locales[0];
-    changeLanguage(languageUser);
-  };
-
-  const onHandleSetRu = () => {
-    const languageUser = i18n.locales[1];
-    changeLanguage(languageUser);
-  };
-
   return (
     <ul className={styles.langSwitch}>
-      <li
-        // className={lang === languagesData.UA ? styles.active : styles.langBtn}
-        onClick={onHandleSetUa}
-      >
-        <Link
-          className={lang === i18n.locales[0] ? styles.active : styles.langBtn}
-          // href={redirectedPathName(languagesData.UA)}
-          href={redirectedPathName(i18n.locales[0])}
-        >
-          {/* УКР */}
-          {/* {i18n.locales[0]} */}
-          {dictionary.buttons.localeSwitcherUkr}
-        </Link>
-      </li>
-      <li
-        // className={lang === languagesData.RU ? styles.active : styles.langBtn}
-        onClick={onHandleSetRu}
-      >
-        <Link
-          className={lang === i18n.locales[1] ? styles.active : styles.langBtn}
-          // href={redirectedPathName(languagesData.RU)}
-          href={redirectedPathName(i18n.locales[1])}
-        >
-          {/* РУС */}
-          {/* {i18n.locales[1]} */}
-          {dictionary.buttons.localeSwitcherRus}
-        </Link>
-      </li>
+      {i18n.locales.map((locale) => {
+        const labelKey = LOCALE_LABEL_KEY[locale];
+        const label = labelKey && dictionary?.buttons?.[labelKey]
+          ? dictionary.buttons[labelKey]
+          : locale.toUpperCase();
+
+        return (
+          <li key={locale} onClick={() => changeLanguage && changeLanguage(locale)}>
+            <Link
+              className={lang === locale ? styles.active : styles.langBtn}
+              href={redirectedPathName(locale)}
+            >
+              {label}
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 };
