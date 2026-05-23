@@ -1,16 +1,15 @@
-// "use client";
-// import { useEffect, useState } from "react";
-// import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
-// import { languagesData } from "@/data/languagesData";
-import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./HomeClientsSection.module.scss";
 
+const CLIENTS_ALT = {
+  uk: "Клієнти EyeDetect",
+  ru: "Клиенты EyeDetect",
+  en: "EyeDetect clients",
+};
+
 const HomeClientsSection = ({ lang, dictionary }) => {
-  // const { t, i18n } = useTranslation();
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => setIsLoading(false), []);
+  const altText = CLIENTS_ALT[lang] ?? CLIENTS_ALT.uk;
 
   return (
     <section>
@@ -20,11 +19,7 @@ const HomeClientsSection = ({ lang, dictionary }) => {
           <Image
             className={styles.img}
             src="/images/clients.webp"
-            alt={
-              lang === i18n.locales[0]
-                ? "Клієнти EyeDetect"
-                : "Клиенты EyeDetect"
-            }
+            alt={altText}
             sizes="(max-width: 1023px) 100vw, 960px"
             width={960}
             height={321}
