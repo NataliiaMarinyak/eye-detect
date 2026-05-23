@@ -1,101 +1,148 @@
 @import "../../../app/variables";
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
 
-    @media screen and (min-width: $tablet) {
-        row-gap: 20px;
-    }
+  @media screen and (min-width: $tablet) {
+    row-gap: 20px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        row-gap: 24px;
-    }
+  @media screen and (min-width: $laptop) {
+    row-gap: 24px;
+  }
 }
 
 .title {
-    @include sectionTitle;
+  @include sectionTitle;
+}
+
+.subTitle {
+  line-height: 1.5;
+  color: $subTitleColor;
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
 }
 
 .advantagesWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    @media screen and (min-width: $tablet) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 20px;
-        row-gap: 16px;
-    }
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        gap: 24px;
-    }
+  @media screen and (min-width: $laptop) {
+    gap: 24px;
+  }
 }
 
 .advantageItem {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+  border-radius: 12px;
+  background-color: $footerBgColor;
+  color: $textLightColor;
 
-    @media screen and (min-width: $tablet) {
-        width: calc((100% - 20px) / 2);
-    }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 20px) / 2);
+    padding: 24px 20px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        width: calc((100% - 24px) / 2);
-    }
+  @media screen and (min-width: $laptop) {
+    width: calc((100% - 24px) / 2);
+    padding: 32px 24px;
+  }
 }
 
 .iconWrapper {
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 4px;
-    padding: 8px;
-    border-radius: 100px;
-    background-color: $footerBgColor;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.12);
 
-    @media screen and (min-width: $tablet) {
-        width: 48px;
-        height: 48px;
-        margin-bottom: 12px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        width: 56px;
-        height: 56px;
-        margin-bottom: 20px;
-    }
+  @media screen and (min-width: $laptop) {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
+  }
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
-    fill: none;
-    stroke: $textLightColor ;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: $textLightColor;
 
-    @media screen and (min-width: $tablet) {
-        width: 32px;
-        height: 32px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 32px;
+    height: 32px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        width: 40px;
-        height: 40px;
-    }
+  @media screen and (min-width: $laptop) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.advantageTitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
 }
 
 .description {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        font-size: 18px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        font-size: 20px;
-    }
+  @media screen and (min-width: $laptop) {
+    font-size: 18px;
+  }
 }
