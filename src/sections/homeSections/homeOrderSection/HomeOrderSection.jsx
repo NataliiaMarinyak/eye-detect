@@ -1,17 +1,9 @@
-// "use client";
-// import { useEffect, useState } from 'react';
-// import { useTranslation } from 'react-i18next';
 import OrderForm from "@/components/OrderForm/OrderForm";
-// import { languagesData } from "@/data/languagesData";
-import { i18n } from "@/dictionaries/i18n.config";
 import { addressData } from "@/data/addressData";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./HomeOrderSection.module.scss";
 
 const HomeOrderSection = ({ lang, dictionary }) => {
-  // const { t, i18n } = useTranslation();
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => setIsLoading(false), []);
-
   return (
     <section id="order">
       <div className={`container ${styles.container}`}>
@@ -36,9 +28,7 @@ const HomeOrderSection = ({ lang, dictionary }) => {
                 <svg className={styles.icon}>
                   <use href={`/sprite.svg#icon-map_pin`} />
                 </svg>
-                {lang === i18n.locales[0]
-                  ? addressData.textAddress
-                  : addressData.textAddressRus}
+                {getLocalizedField(addressData, "textAddress", lang)}
               </a>
             </address>
           </div>
