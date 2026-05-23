@@ -9,9 +9,6 @@ import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./HomeAboutSection.module.scss";
 
 const HomeAboutSection = ({ lang, dictionary }) => {
-  // const { t, i18n } = useTranslation();
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => setIsLoading(false), []);
 
   return (
     <section>
@@ -39,10 +36,6 @@ const HomeAboutSection = ({ lang, dictionary }) => {
                 );
               })}
             </ul>
-            <OpenModalBtn
-              customClass={styles.ctaBtn}
-              title={dictionary.buttons.orderConsultation}
-            />
           </div>
           <div className={styles.figure}>
             <div className={styles.imgWrapp}>
@@ -63,6 +56,11 @@ const HomeAboutSection = ({ lang, dictionary }) => {
             </p>
           </div>
         </div>
+
+        <OpenModalBtn
+          customClass={styles.ctaBtn}
+          title={dictionary.buttons.orderConsultation}
+        />
       </div>
     </section>
   );
