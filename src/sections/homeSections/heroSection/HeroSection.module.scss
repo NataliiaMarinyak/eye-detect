@@ -92,10 +92,10 @@
   align-self: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: 8px !important;
 
   @media screen and (min-width: $tablet) {
-    margin-top: 8px;
+    margin-top: 8px !important;
     margin-bottom: 20px;
     width: 324px;
     max-width: 324px;
@@ -104,7 +104,7 @@
   }
 
   @media screen and (min-width: $laptop) {
-    margin-top: 8px;
+    margin-top: 8px !important;
     width: 368px;
     max-width: 368px;
     height: 58px;
@@ -121,7 +121,7 @@
   text-align: center;
   width: 100%;
   max-width: 452px;
-  height: 53px;
+  height: 56px;
   padding: 12px 14px;
   font-family: inherit;
   font-size: 18px;
@@ -135,8 +135,8 @@
   text-shadow: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 16px;
-  margin-bottom: 8px;
+  margin-top: auto;
+  margin-bottom: 0;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 
   &:hover, &:focus {
@@ -146,8 +146,8 @@
   }
 
   @media screen and (min-width: $tablet) {
-    margin-top: 16px;
-    margin-bottom: 8px;
+    margin-top: auto;
+    margin-bottom: 0;
     width: 324px;
     max-width: 324px;
     height: 56px;
@@ -155,8 +155,8 @@
   }
 
   @media screen and (min-width: $laptop) {
-    margin-top: 16px;
-    margin-bottom: 8px;
+    margin-top: auto;
+    margin-bottom: 0;
     width: 368px;
     max-width: 368px;
     height: 58px;
