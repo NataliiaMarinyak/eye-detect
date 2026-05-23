@@ -1,21 +1,24 @@
-// "use client";
-// import { useEffect, useState } from "react";
-// import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import styles from "./HeroSection.module.scss";
 
 const HeroSection = async ({ dictionary }) => {
-  // const { t } = useTranslation();
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => setIsLoading(false), []);
-
   return (
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
         <div>
-          <p className={styles.title}>{dictionary.heroSection.title}</p>
-          <p className={styles.text}>{dictionary.heroSection.text}</p>
+          <h1 className={styles.title}>{dictionary.heroSection.title}</h1>
+          <p className={styles.subtitle}>{dictionary.heroSection.subtitle}</p>
+          <ul className={styles.features}>
+            {dictionary.heroSection.features.map((item, idx) => (
+              <li key={idx} className={styles.featureItem}>
+                <svg className={styles.checkIcon} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
         <OpenModalBtn
           customClass={styles.btn}
@@ -23,16 +26,6 @@ const HeroSection = async ({ dictionary }) => {
         />
       </div>
       <div className={styles.bgImgWrapp}>
-        {/* {!isLoading && (
-          <Image
-            src="/images/hero-bg.webp"
-            alt={t("HeroSection.Title")}
-            width={1440}
-            height={900}
-            sizes="100vw"
-            priority={true}
-          />
-        )} */}
         <Image
           src="/images/hero-bg.webp"
           alt={dictionary.heroSection.title}
