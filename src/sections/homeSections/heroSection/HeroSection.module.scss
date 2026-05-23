@@ -57,13 +57,12 @@
 .title {
   font-size: 22px;
   white-space: pre-line;
-  line-height: 1.2;
+  line-height: 1.25;
   margin-bottom: 12px;
 
   @media screen and (min-width: $tablet) {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 14px;
-    width: 84%;
   }
 
   @media screen and (min-width: $laptop) {
@@ -95,7 +94,6 @@
 
   @media screen and (min-width: $tablet) {
     margin-top: 20px;
-    margin-left: 0;
     margin-bottom: 20px;
     width: 324px;
     max-width: none;
@@ -112,40 +110,45 @@
 }
 
 .priceBtn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   text-align: center;
-  background-color: #f59e0b;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-size: 15px;
+  width: 100%;
+  max-width: 452px;
+  height: 53px;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 100px;
+  border: solid 1px $btnBgColor;
+  color: $textLightColor;
+  background-color: $btnBgColor;
+  outline: none;
+  cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 
   &:hover, &:focus {
-    background-color: #d97706;
-    transform: translateY(-1px);
+    background-color: $btnHoverBgColor;
+    border-color: $btnHoverBgColor;
+    color: $textDarkColor;
   }
 
   @media screen and (min-width: $tablet) {
-    margin-left: 0;
     margin-bottom: 14px;
     width: 324px;
-    height: 56px;
+    height: 57px;
     font-size: 18px;
   }
 
   @media screen and (min-width: $laptop) {
     width: 368px;
-    height: 58px;
+    height: 60px;
     font-size: 20px;
     margin-bottom: 16px;
   }
