@@ -59,7 +59,7 @@ const HomeAboutSection = ({ lang, dictionary }) => {
 
         <OpenModalBtn
           customClass={styles.ctaBtn}
-          title={dictionary.buttons.orderConsultation}
+          title={dictionary.buttons.askSpecialist}
         />
       </div>
     </section>
