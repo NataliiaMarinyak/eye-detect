@@ -35,9 +35,9 @@
   }
 
   @media screen and (min-width: $laptop) {
-    gap: 48px;
+    gap: 32px;
     flex-direction: row;
-    align-items: stretch;
+    align-items: flex-start;
   }
 }
 
@@ -88,8 +88,6 @@
   }
 
   @media screen and (min-width: $laptop) {
-    justify-content: space-between;
-
     & h3 {
       font-size: 20px;
     }
@@ -113,8 +111,6 @@
   @media screen and (min-width: $laptop) {
     flex: 1;
     aspect-ratio: auto;
-
-    justify-content: space-between;
   }
 }
 
