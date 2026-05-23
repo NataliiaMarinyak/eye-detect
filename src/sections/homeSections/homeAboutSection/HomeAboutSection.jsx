@@ -1,14 +1,17 @@
-// "use client";
-// import { useEffect, useState } from "react";
-// import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { aboutData } from "@/data/aboutData";
-// import { languagesData } from "@/data/languagesData";
-import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./HomeAboutSection.module.scss";
 
+const IMG_ALT = {
+  uk: "Russ Warner і Наталя Мариняк",
+  ru: "Russ Warner и Наталья Мариняк",
+  en: "Russ Warner and Nataliia Marynyak",
+};
+
 const HomeAboutSection = ({ lang, dictionary }) => {
+  const altText = IMG_ALT[lang] ?? IMG_ALT.uk;
 
   return (
     <section>
@@ -31,7 +34,7 @@ const HomeAboutSection = ({ lang, dictionary }) => {
                     <svg>
                       <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                     </svg>
-                    <h3>{lang === i18n.locales[0] ? el.text : el.textRus}</h3>
+                    <h3>{getLocalizedField(el, "text", lang)}</h3>
                   </li>
                 );
               })}
@@ -43,11 +46,7 @@ const HomeAboutSection = ({ lang, dictionary }) => {
                 src="/images/home-about.webp"
                 width={943}
                 height={638}
-                alt={
-                  lang === i18n.locales[0]
-                    ? "Russ Warner і Наталя Мариняк"
-                    : "Russ Warner и Наталья Мариняк"
-                }
+                alt={altText}
                 sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
               />
             </div>
