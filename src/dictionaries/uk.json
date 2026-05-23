@@ -81,6 +81,7 @@
     "invalidEmail": "Не валідна адреса"
   },
   "buttons": {
+    "calculatePrice": "Розрахувати вартість",
     "orderConsultation": "Замовити консультацію",
     "moreDetails": "Дізнатись більше",
     "sendRequest": "Відправити",
