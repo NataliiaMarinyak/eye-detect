@@ -55,35 +55,36 @@
 }
 
 .title {
-  font-size: 34px;
+  font-size: 24px;
   white-space: pre-line;
-  line-height: 1.25;
-  margin-bottom: 4px;
+  line-height: 1.2;
+  margin-bottom: 12px;
 
   @media screen and (min-width: $tablet) {
-    font-size: 44px;
-    margin-bottom: 8px;
+    font-size: 32px;
+    margin-bottom: 16px;
     width: 84%;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 48px;
-    margin-bottom: 12px;
+    font-size: 36px;
+    margin-bottom: 20px;
   }
 }
 
 .text {
-  font-size: 18px;
+  font-size: 14px;
   white-space: pre-line;
-  line-height: 1.4;
+  line-height: 1.6;
 
   @media screen and (min-width: $tablet) {
-    font-size: 24px;
-    width: 56%;
+    font-size: 17px;
+    line-height: 1.7;
+    width: 70%;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 28px;
+    font-size: 19px;
   }
 }
 
