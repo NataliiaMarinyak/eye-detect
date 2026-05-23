@@ -4,7 +4,6 @@ import { FAQDataHome } from "@/data/FAQDataHome";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
 
-
 const DynamicHomeAboutSection = dynamic(() =>
   import("@/sections/homeSections/homeAboutSection/HomeAboutSection")
 );
@@ -31,9 +30,6 @@ const DynamicHomeCountriesSection = dynamic(() =>
 );
 const DynamicHomeFAQSection = dynamic(() =>
   import("@/sections/homeSections/homeFAQSection/HomeFAQSection")
-);
-const DynamicHomeConditionsSection = dynamic(() =>
-  import("@/sections/homeSections/homeConditionsSection/HomeConditionsSection")
 );
 
 const DynamicHomeOrderSection = dynamic(() =>
@@ -143,7 +139,6 @@ export default async function Home({ params }) {
         dictionary={dictionary}
       />
       <DynamicHomeCountriesSection lang={lang} dictionary={dictionary} />
-      <DynamicHomeConditionsSection dictionary={dictionary} />
       <DynamicHomeOrderSection lang={lang} dictionary={dictionary} />
     </>
   );
