@@ -91,7 +91,8 @@
     "moreDetails": "Узнать подробнее",
     "sendRequest": "Отправить",
     "localeSwitcherUkr": "УКР",
-    "localeSwitcherRus": "РУС"
+    "localeSwitcherRus": "РУС",
+    "localeSwitcherEn": "АНГ"
   },
   "notifications": {
     "success": "Ваше сообщение отправлено"
