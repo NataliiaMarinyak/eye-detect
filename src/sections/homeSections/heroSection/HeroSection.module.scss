@@ -48,7 +48,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   color: $textLightColor;
   text-shadow: $textShadow;
@@ -72,19 +71,22 @@
 }
 
 .text {
-  font-size: 14px;
+  font-size: 16px;
   white-space: pre-line;
   line-height: 1.5;
+  margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
     font-size: 15px;
     line-height: 1.5;
     width: 60%;
+    margin-bottom: 24px;
   }
 
   @media screen and (min-width: $laptop) {
     font-size: 16px;
     width: 55%;
+    margin-bottom: 28px;
   }
 }
 
@@ -135,7 +137,7 @@
   text-shadow: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: 0;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 
@@ -146,7 +148,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    margin-top: auto;
+    margin-top: 0;
     margin-bottom: 0;
     width: 324px;
     max-width: 324px;
@@ -155,7 +157,7 @@
   }
 
   @media screen and (min-width: $laptop) {
-    margin-top: auto;
+    margin-top: 0;
     margin-bottom: 0;
     width: 368px;
     max-width: 368px;
