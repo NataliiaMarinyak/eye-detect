@@ -7,12 +7,12 @@
 
 // export const getDictionary = async (locale) => dictionaries[locale]();
 
-
 import "server-only";
 
 const dictionaries = {
   uk: () => import("@/dictionaries/uk.json").then((m) => m.default),
   ru: () => import("@/dictionaries/ru.json").then((m) => m.default),
+  en: () => import("@/dictionaries/en.json").then((m) => m.default),
 };
 
 export const getDictionary = async (locale) => {
