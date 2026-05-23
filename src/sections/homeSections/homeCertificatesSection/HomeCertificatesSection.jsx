@@ -1,19 +1,14 @@
-// "use client";
-// import { useEffect, useState } from 'react';
-// import { useTranslation } from 'react-i18next';
 import Image from "next/image";
-// import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
-// import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
-// import CustomLink from "@/components/CustomLink/CustomLink";
-// import { languagesData } from "@/data/languagesData";
-import { i18n } from "@/dictionaries/i18n.config";
-// import { getDictionary } from "@/helpers/getDictionary";
 import styles from "./HomeCertificatesSection.module.scss";
 
+const CERT_ALT_UKR = {
+  uk: "Тестувальник EyeDetect",
+  ru: "Тестировщик EyeDetect",
+  en: "EyeDetect Test Proctor (Ukrainian certificate)",
+};
+
 const HomeCertificatesSection = ({ isOnHomePage, lang, dictionary }) => {
-  // const { t, i18n } = useTranslation();
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => setIsLoading(false), []);
+  const certAltUkr = CERT_ALT_UKR[lang] ?? CERT_ALT_UKR.uk;
 
   return (
     <section>
@@ -26,11 +21,7 @@ const HomeCertificatesSection = ({ isOnHomePage, lang, dictionary }) => {
             <Image
               className={styles.certificate}
               src="/images/certificate_ukr.webp"
-              alt={
-                lang === i18n.locales[0]
-                  ? "Тестувальник EyeDetect"
-                  : "Тестировщик EyeDetect"
-              }
+              alt={certAltUkr}
               sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 468px"
               width={727}
               height={545}
