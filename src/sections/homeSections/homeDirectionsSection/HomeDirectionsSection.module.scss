@@ -38,8 +38,9 @@
 
 .directionItem {
     width: 100%;
-    padding: 8px;
+    padding: 16px;
     background-color: $cardBgColor;
+    border-radius: 12px;
 
     @media screen and (min-width: $tablet) {
         width: calc((100% - 20px) / 2);
@@ -113,4 +114,44 @@
     @media screen and (min-width: $tablet) {
         font-size: 16px;
     }
+}
+
+.intro {
+    max-width: 900px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        font-size: 20px;
+    }
+}
+
+.conclusion {
+    max-width: 900px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.55;
+    font-style: italic;
+    padding: 16px;
+    background-color: $cardBgColor;
+    border-radius: 12px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+        padding: 20px 24px;
+    }
+
+    @media screen and (min-width: $laptop) {
+        font-size: 17px;
+        padding: 24px 32px;
+    }
+}
+
+.ctaBtn {
+    align-self: center;
 }
