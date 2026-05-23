@@ -1,9 +1,6 @@
 "use client";
-// import { useEffect, useState } from 'react';
-// import { useTranslation } from 'react-i18next';
 import { advantagesData } from "@/data/advantagesData";
-// import { languagesData } from "@/data/languagesData";
-import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./HomeAdvantagesSection.module.scss";
 
 const HomeAdvantagesSection = ({ lang, dictionary }) => {
@@ -27,10 +24,10 @@ const HomeAdvantagesSection = ({ lang, dictionary }) => {
                 </svg>
               </div>
               <h3 className={styles.advantageTitle}>
-                {lang === i18n.locales[0] ? advantage.title : advantage.titleRus}
+                {getLocalizedField(advantage, "title", lang)}
               </h3>
               <p className={styles.description}>
-                {lang === i18n.locales[0] ? advantage.text : advantage.textRus}
+                {getLocalizedField(advantage, "text", lang)}
               </p>
             </li>
           ))}
