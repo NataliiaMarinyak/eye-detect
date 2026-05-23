@@ -84,6 +84,7 @@
   "buttons": {
     "calculatePrice": "Розрахувати вартість",
     "orderConsultation": "Замовити консультацію",
+    "askSpecialist": "Задати питання спеціалісту",
     "moreDetails": "Дізнатись більше",
     "sendRequest": "Відправити",
     "localeSwitcherUkr": "УКР",
