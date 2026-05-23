@@ -2,6 +2,7 @@
 // import { useEffect, useState } from "react";
 // import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { aboutData } from "@/data/aboutData";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
@@ -22,18 +23,27 @@ const HomeAboutSection = ({ lang, dictionary }) => {
         </h2>
 
         <div className={styles.content}>
-          <ul className={styles.aboutList}>
-            {aboutData.map((el, i) => {
-              return (
-                <li key={i}>
-                  <svg>
-                    <use href="/sprite.svg#icon-check-mark-in-circle"></use>
-                  </svg>
-                  <h3>{lang === i18n.locales[0] ? el.text : el.textRus}</h3>
-                </li>
-              );
-            })}
-          </ul>
+          <div className={styles.listColumn}>
+            <h3 className={styles.listIntro}>
+              {dictionary.homeAboutSection.listIntro}
+            </h3>
+            <ul className={styles.aboutList}>
+              {aboutData.map((el, i) => {
+                return (
+                  <li key={i}>
+                    <svg>
+                      <use href="/sprite.svg#icon-check-mark-in-circle"></use>
+                    </svg>
+                    <h3>{lang === i18n.locales[0] ? el.text : el.textRus}</h3>
+                  </li>
+                );
+              })}
+            </ul>
+            <OpenModalBtn
+              customClass={styles.ctaBtn}
+              title={dictionary.buttons.orderConsultation}
+            />
+          </div>
           <div className={styles.figure}>
             <div className={styles.imgWrapp}>
               <Image
