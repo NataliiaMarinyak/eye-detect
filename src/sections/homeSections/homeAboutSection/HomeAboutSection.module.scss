@@ -18,7 +18,7 @@
 .subTitle {
   line-height: 1.4;
   color: $subTitleColor;
-  text-align: justify;
+  text-align: left;
   font-size: clamp(12px, 1vw + 8px, 24px);
   margin-bottom: 12px;
 }
@@ -35,7 +35,7 @@
   }
 
   @media screen and (min-width: $laptop) {
-    gap: 24px;
+    gap: 48px;
     flex-direction: row;
     align-items: stretch;
   }
