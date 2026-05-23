@@ -18,6 +18,11 @@ const HomeDirectionsSection = ({ lang, dictionary }) => {
         <h2 className={styles.title}>
           {dictionary.homeDirectionsSection.title}
         </h2>
+        {dictionary.homeDirectionsSection.subTitle && (
+          <p className={styles.intro}>
+            {dictionary.homeDirectionsSection.subTitle}
+          </p>
+        )}
         <ul className={styles.directionsWrapper}>
           {directionsData.map((direction) => (
             <li key={direction.title} className={styles.directionItem}>
@@ -39,9 +44,14 @@ const HomeDirectionsSection = ({ lang, dictionary }) => {
             </li>
           ))}
         </ul>
+        {dictionary.homeDirectionsSection.conclusion && (
+          <p className={styles.conclusion}>
+            {dictionary.homeDirectionsSection.conclusion}
+          </p>
+        )}
         <OpenModalBtn
-          customClass=""
-          title={dictionary.buttons.orderConsultation}
+          customClass={styles.ctaBtn}
+          title={dictionary.buttons.calculatePrice}
         />
       </div>
     </section>
