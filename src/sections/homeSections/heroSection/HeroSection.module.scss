@@ -55,35 +55,92 @@
 }
 
 .title {
-  font-size: 34px;
-  white-space: pre-line;
-  line-height: 1.25;
-  margin-bottom: 4px;
+  font-size: 26px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  font-weight: 700;
 
   @media screen and (min-width: $tablet) {
-    font-size: 44px;
-    margin-bottom: 8px;
+    font-size: 36px;
+    margin-bottom: 10px;
     width: 84%;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 12px;
   }
 }
 
-.text {
+.subtitle {
   font-size: 18px;
-  white-space: pre-line;
-  line-height: 1.4;
+  line-height: 1.3;
+  margin: 0 0 16px;
+  font-weight: 600;
+  opacity: 0.95;
 
   @media screen and (min-width: $tablet) {
-    font-size: 24px;
-    width: 56%;
+    font-size: 22px;
+    margin-bottom: 20px;
+    width: 80%;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 12px;
+    width: 70%;
+  }
+
+  @media screen and (min-width: $laptop) {
+    gap: 14px;
+  }
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 17px;
+    gap: 12px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 19px;
+  }
+}
+
+.checkIcon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: #4ade80;
+  margin-top: 2px;
+
+  @media screen and (min-width: $tablet) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 26px;
+    height: 26px;
   }
 }
 
