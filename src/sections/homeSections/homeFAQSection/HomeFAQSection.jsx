@@ -1,16 +1,9 @@
 "use client";
-// import { useEffect, useState } from 'react';
 import { useState } from "react";
-// import { useTranslation } from 'react-i18next';
-// import { languagesData } from "@/data/languagesData";
-import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./HomeFAQSection.module.scss";
 
 const HomeFAQSection = ({ data, lang, dictionary }) => {
-  // const { t, i18n } = useTranslation();
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => setIsLoading(false), []);
-
   const [openItems, setOpenItems] = useState([]);
 
   const handleOpen = (id) => {
@@ -39,7 +32,7 @@ const HomeFAQSection = ({ data, lang, dictionary }) => {
                   className={styles.faqTitle}
                   onClick={() => handleOpen(id)}
                 >
-                  {lang === i18n.locales[0] ? el.question : el.questionRus}
+                  {getLocalizedField(el, "question", lang)}
                   <svg
                     className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
                   >
@@ -53,7 +46,7 @@ const HomeFAQSection = ({ data, lang, dictionary }) => {
                   }`}
                 >
                   <h4 className={styles.answer}>
-                    {lang === i18n.locales[0] ? el.answer : el.answerRus}
+                    {getLocalizedField(el, "answer", lang)}
                   </h4>
                 </div>
               </li>
