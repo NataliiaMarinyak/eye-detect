@@ -56,9 +56,7 @@ export async function generateMetadata({ params }) {
       canonical: `${seoMetaPageUrl}`,
       languages: {
         'uk': `${process.env.NEXT_PUBLIC_SEO_URL}`,
-        'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/`,
-          'en': `${process.env.NEXT_PUBLIC_SEO_URL}en/`,
-      },
+        'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/`,      },
     },
     openGraph: {
       title: titleOpenGraph,
