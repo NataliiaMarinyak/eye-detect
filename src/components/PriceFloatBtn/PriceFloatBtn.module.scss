@@ -77,6 +77,8 @@
   font-weight: 700;
 }
 
+// На вузьких екранах підпис видно завжди. На десктопі кнопка згорнута
+// до значка, щоб не накривати текст сторінки, і розгортається на наведення.
 .text {
   white-space: nowrap;
   overflow: hidden;
@@ -89,11 +91,32 @@
     bottom: 128px;
     font-size: 15px;
     padding: 12px 20px 12px 14px;
+    gap: 10px;
   }
 
   .icon {
     width: 26px;
     height: 26px;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .float {
+    padding: 12px;
+    gap: 0;
+  }
+
+  .text {
+    max-width: 0;
+    opacity: 0;
+    transition: max-width 0.25s ease, opacity 0.2s ease, margin-left 0.25s ease;
+  }
+
+  .float:hover .text,
+  .float:focus-visible .text {
+    max-width: 220px;
+    opacity: 1;
+    margin-left: 10px;
   }
 }
 

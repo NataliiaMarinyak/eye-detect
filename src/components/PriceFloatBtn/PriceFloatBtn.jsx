@@ -36,6 +36,8 @@ const PriceFloatBtn = ({ title }) => {
       rel="noopener noreferrer"
       aria-hidden={!isVisible}
       tabIndex={isVisible ? 0 : -1}
+      aria-label={title}
+      title={title}
     >
       <span className={styles.icon} aria-hidden="true">
         ₴
