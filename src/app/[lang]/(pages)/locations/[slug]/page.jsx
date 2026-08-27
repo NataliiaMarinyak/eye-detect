@@ -39,7 +39,13 @@ export async function generateMetadata({ params }) {
 
   const data = getCityData(slug);
 
-  const title = lang === i18n.defaultLocale ? data.mainTitle : data.mainTitleRus;
+  // SEO: у <title> йде seoTitle (він написаний під пошуковий запит
+  // "детектор брехні <місто>"), а mainTitle лишається текстом H1 на сторінці.
+  // Якщо для міста seoTitle не заповнений — падаємо назад на mainTitle.
+  const title =
+    lang === i18n.defaultLocale
+      ? data.seoTitle || data.mainTitle
+      : data.seoTitleRus || data.mainTitleRus;
   const description =
     lang === i18n.defaultLocale ? data.mainDescription : data.mainDescriptionRus;
     const keywords = seoLocationIdPage.seoMetaKeywords;
