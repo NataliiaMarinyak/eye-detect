@@ -1,0 +1,76 @@
+@import "../../app/variables";
+
+// Віджет Binotel живе в лівому нижньому куті. Ставимо кнопку над ним,
+// із запасом, щоб вони не перекривались на жодному екрані.
+.float {
+  position: fixed;
+  left: 16px;
+  bottom: 116px;
+  z-index: 60;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100vw - 32px);
+  padding: 10px 16px 10px 12px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+  color: $textLightColor;
+  background-color: $btnBgColor;
+  border: solid 1px $btnBgColor;
+  border-radius: 100px;
+  box-shadow: 0 6px 18px rgba(11, 21, 31, 0.28);
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, transform 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $btnHoverBgColor;
+    border-color: $btnHoverBgColor;
+    color: $textDarkColor;
+    transform: translateY(-1px);
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.18);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: $tablet) {
+  .float {
+    left: 24px;
+    bottom: 128px;
+    font-size: 15px;
+    padding: 12px 20px 12px 14px;
+  }
+
+  .icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media print {
+  .float {
+    display: none;
+  }
+}
