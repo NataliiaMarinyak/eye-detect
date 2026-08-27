@@ -113,3 +113,10 @@ $sectionGapsLaptop: 32px;
   margin-left: auto;
   margin-right: auto;
 }
+.ctaGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}

@@ -3,6 +3,7 @@
 // import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
+import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import { confidentialityGuaranteeData } from "@/data/confidentialityGuaranteeData";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
@@ -45,10 +46,13 @@ const GuaranteeSection = ({ lang, dictionary }) => {
             sizes="(max-width: 1023px) 100vw, 960px"
           />
         </div>
-        <OpenModalBtn
-          customClass={styles.btn}
-          title={dictionary.buttons.orderConsultation}
-        />
+        <div className={styles.ctaGroup}>
+          <PriceQuizBtn title={dictionary.buttons.calculatePrice} />
+          <OpenModalBtn
+            customClass={styles.btn}
+            title={dictionary.buttons.orderConsultation}
+          />
+        </div>
       </div>
     </section>
   );
