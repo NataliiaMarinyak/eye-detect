@@ -5,7 +5,11 @@ import { ukrainianCitiesData } from "@/data/ukrainianCitiesData";
 export const dynamic = "force-static";
 
 const baseUrl = process.env.NEXT_PUBLIC_SEO_URL;
-const allCitiesArray = [...ukrainianCitiesData, ...europeanCitiesData];
+// Львів веде головна сторінка, а /locations/lviv віддає 308 на неї —
+// тож у sitemap його не подаємо.
+const allCitiesArray = [...ukrainianCitiesData, ...europeanCitiesData].filter(
+  (el) => el.slug !== "lviv"
+);
 
 
 export default async function sitemap() {
