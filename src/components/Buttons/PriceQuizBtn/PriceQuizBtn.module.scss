@@ -1,0 +1,35 @@
+@import "../../../app/variables";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  max-width: 452px;
+  min-height: 53px;
+  padding: 12px 14px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 100px;
+  border: solid 1px $btnBgColor;
+  color: $textLightColor;
+  background-color: $btnBgColor;
+  outline: none;
+  cursor: pointer;
+  text-shadow: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $btnHoverBgColor;
+    border-color: $btnHoverBgColor;
+    color: $textDarkColor;
+  }
+}
