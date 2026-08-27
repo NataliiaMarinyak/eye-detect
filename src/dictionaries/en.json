@@ -8,7 +8,8 @@
   },
   "heroSection": {
     "title": "EyeDetect Lie Detection in Lviv, Ukraine & across Europe",
-    "text": "✓ Official Converus partner in Ukraine\n\n✓ Trusted by U.S. and European law enforcement\n\n✓ Captures 50+ involuntary eye reactions per second\n\n✓ 15–45 minute test with automated, tamper-proof results"
+    "text": "✓ Official Converus partner in Ukraine\n\n✓ Trusted by U.S. and European law enforcement\n\n✓ Captures 50+ involuntary eye reactions per second\n\n✓ 15–45 minute test with automated, tamper-proof results",
+    "priceNote": "From UAH 5,500 · report the same day"
   },
   "homeAboutSection": {
     "title": "The EyeDetect Technology and the Expert Behind It",
@@ -196,5 +197,26 @@
     "seoMetaNameJsonLd_1": "Home — EyeDetect Polygraph",
     "seoMetaNameJsonLd_2": "EyeDetect Locations",
     "seoMetaNameJsonLd_3": "Modern EyeDetect Polygraph"
+  },
+  "pricesSection": {
+    "title": "EyeDetect testing prices in Lviv",
+    "subTitle": "The price depends on how many people are tested and how many issues are covered. Below are fixed prices for typical cases; the quiz calculates the exact figure for your situation in 30 seconds.",
+    "includedTitle": "What's included",
+    "notesTitle": "Additional",
+    "comparisonTitle": "What this costs elsewhere"
+  },
+  "seoPricesPage": {
+    "seoMetaMainTitle": "EyeDetect lie detector prices in Lviv — from UAH 5,500",
+    "seoMetaMainDescription": "EyeDetect polygraph testing prices in Lviv: private tests from UAH 5,500, staff screening from UAH 3,200 per person, travel within Lviv region included.",
+    "seoMetaKeywords": [
+      "EyeDetect price",
+      "Lie detector cost",
+      "Polygraph Lviv price",
+      "EyeDetect"
+    ],
+    "seoMetaTitleOpenGraph": "EyeDetect lie detector prices in Lviv — from UAH 5,500",
+    "seoMetaDescriptionOpenGraph": "Private tests from UAH 5,500, staff screening from UAH 3,200 per person, travel within Lviv region included.",
+    "seoMetaNameJsonLd_1": "Polygraph home page",
+    "seoMetaNameJsonLd_2": "EyeDetect prices"
   }
 }
