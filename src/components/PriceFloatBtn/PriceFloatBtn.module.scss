@@ -24,15 +24,43 @@
   border: solid 1px $btnBgColor;
   border-radius: 100px;
   box-shadow: 0 6px 18px rgba(11, 21, 31, 0.28);
-  transition: background-color 0.2s ease, border-color 0.2s ease,
-    color 0.2s ease, transform 0.2s ease;
+
+  // Прихована на першому екрані — там працює кнопка в героєві.
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s,
+    background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 
   &:hover,
   &:focus-visible {
     background-color: $btnHoverBgColor;
     border-color: $btnHoverBgColor;
     color: $textDarkColor;
+  }
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+
+  &:hover,
+  &:focus-visible {
     transform: translateY(-1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float {
+    transition: opacity 0.01ms, visibility 0.01ms;
+    transform: none;
+  }
+
+  .visible {
+    transform: none;
   }
 }
 
