@@ -4,6 +4,7 @@
 // import { useParams } from "next/navigation";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
+import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import { getCityData } from "@/helpers/getCityData";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
@@ -37,10 +38,13 @@ const MachineSection = ({ lang, dictionary, slug }) => {
           />
         </div>
 
-        <OpenModalBtn
-          customClass=""
-          title={dictionary.buttons.orderConsultation}
-        />
+        <div className={styles.ctaGroup}>
+          <PriceQuizBtn title={dictionary.buttons.calculatePrice} />
+          <OpenModalBtn
+            customClass=""
+            title={dictionary.buttons.orderConsultation}
+          />
+        </div>
       </div>
     </section>
   );
