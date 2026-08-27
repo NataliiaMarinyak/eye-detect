@@ -5,6 +5,7 @@ import {
   pricingNotes,
   pricingIncluded,
   pricingComparison,
+  pricingGuarantee,
 } from "@/data/pricingData";
 import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./PricesSection.module.scss";
@@ -35,6 +36,13 @@ const PricesSection = ({ lang, dictionary }) => {
             </ul>
           </div>
         ))}
+
+        <p className={styles.guarantee}>
+          <svg className={styles.guaranteeIcon} aria-hidden="true">
+            <use href="/sprite.svg#icon-cross-in-circle"></use>
+          </svg>
+          <span>{pick(pricingGuarantee, "text")}</span>
+        </p>
 
         <ul className={styles.notes}>
           {pricingNotes.map((note, i) => (

@@ -170,3 +170,30 @@
   line-height: 1.6;
   color: $subTitleColor;
 }
+
+.guarantee {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 20px;
+  padding: 16px 20px;
+  border: 1px solid $btnBgColor;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $textDarkColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
+
+.guaranteeIcon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-top: 1px;
+  fill: none;
+  stroke: $btnBgColor;
+}
