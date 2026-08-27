@@ -3,8 +3,29 @@
 import { NextResponse } from "next/server";
 import { i18n } from "@/dictionaries/i18n.config";
 
+// Єдиний "бойовий" домен сайту.
+// Vercel завжди тримає публічно доступною свою технічну адресу *.vercel.app,
+// і без редіректу пошуковики індексують її як повний дубль сайту.
+const CANONICAL_HOST = "www.eye-polygraph.com";
+
 export function middleware(request) {
   const { pathname } = request.nextUrl;
+
+  // SEO fix: усе, що прийшло не на бойовий домен (насамперед
+  // eye-detect.vercel.app), перекидаємо на CANONICAL_HOST постійним
+  // редіректом 308 зі збереженням шляху й параметрів.
+  // Preview-деплої гілок і локальна розробка не зачіпаються.
+  if (process.env.VERCEL_ENV === "production") {
+    const host = request.headers.get("host");
+
+    if (host && host !== CANONICAL_HOST) {
+      const url = request.nextUrl.clone();
+      url.protocol = "https:";
+      url.host = CANONICAL_HOST;
+      url.port = "";
+      return NextResponse.redirect(url, 308);
+    }
+  }
 
   // Пропускаємо системні файли
   if (
@@ -44,6 +65,6 @@ export function middleware(request) {
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico).*)",
   ],
 };
