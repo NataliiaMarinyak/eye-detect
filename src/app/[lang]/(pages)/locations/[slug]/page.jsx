@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { getDictionary } from "@/helpers/getDictionary";
 import { i18n } from "@/dictionaries/i18n.config";
 import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getFaqJsonLd } from "@/helpers/getFaqJsonLd";
 
 const DynamicServicesSection = dynamic(() =>
   import("@/sections/servicesSection/ServicesSection")
@@ -150,6 +151,12 @@ const LocationIdPage = async ({ params }) => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(getFaqJsonLd(FAQData, lang)),
+        }}
       />
       <MachineSection lang={lang} dictionary={dictionary} slug={slugId} />
       <DynamicServicesSection
