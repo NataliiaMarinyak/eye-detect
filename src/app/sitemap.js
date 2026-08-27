@@ -26,6 +26,7 @@ export default async function sitemap() {
 
     const routes = [
       { href: "", priority: 1.0 },
+      { href: "prices", priority: 0.9 },
       { href: "about-us", priority: 0.8 },
       { href: "locations", priority: 0.8 },
       { href: "contacts", priority: 0.6 },
