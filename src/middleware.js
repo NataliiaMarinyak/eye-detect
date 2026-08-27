@@ -27,6 +27,17 @@ export function middleware(request) {
     }
   }
 
+  // SEO: Львів веде головна сторінка — вона вже називається «Поліграф у Львові»
+  // і саме на неї приходять зовнішні посилання. Міська сторінка Львова
+  // дублювала її й конкурувала за ті самі запити, тому 308 на головну.
+  if (pathname === "/locations/lviv") {
+    return NextResponse.redirect(new URL("/", request.url), 308);
+  }
+
+  if (pathname === "/ru/locations/lviv") {
+    return NextResponse.redirect(new URL("/ru", request.url), 308);
+  }
+
   // Пропускаємо системні файли
   if (
     pathname.startsWith("/_next") ||
