@@ -3,6 +3,7 @@ import HeroSection from "@/sections/homeSections/heroSection/HeroSection";
 import { FAQDataHome } from "@/data/FAQDataHome";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getFaqJsonLd } from "@/helpers/getFaqJsonLd";
 
 const DynamicHomeAboutSection = dynamic(() =>
   import("@/sections/homeSections/homeAboutSection/HomeAboutSection")
@@ -120,6 +121,12 @@ export default async function Home({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(getFaqJsonLd(FAQDataHome, lang)),
+        }}
       />
       <HeroSection dictionary={dictionary} />
       <DynamicHomeAboutSection lang={lang} dictionary={dictionary} />
