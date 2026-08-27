@@ -16,6 +16,7 @@ const HeroSection = async ({ dictionary }) => {
         <div>
           <p className={styles.title}>{dictionary.heroSection.title}</p>
           <p className={styles.text}>{dictionary.heroSection.text}</p>
+          <p className={styles.priceNote}>{dictionary.heroSection.priceNote}</p>
         </div>
         <a href="https://price.eye-polygraph.com/" target="_blank" rel="noopener noreferrer" className={styles.priceBtn}>
           {dictionary.buttons.calculatePrice}

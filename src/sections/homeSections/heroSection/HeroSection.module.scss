@@ -167,3 +167,16 @@
     font-size: 17px;
   }
 }
+
+.priceNote {
+  margin: 16px 0 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: $textLightColor;
+  text-shadow: $textShadow;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 19px;
+  }
+}
