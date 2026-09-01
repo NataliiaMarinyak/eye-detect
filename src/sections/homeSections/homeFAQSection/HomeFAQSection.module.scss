@@ -20,14 +20,10 @@
 }
 
 .faqItem {
-  border: 1px solid $btnBgColor;
+  border-bottom: 1px solid $lineColor;
 
-  &:not(:last-child) {
-    margin-bottom: 24px;
-
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 16px;
-    }
+  &:first-child {
+    border-top: 1px solid $lineColor;
   }
 }
 
@@ -36,29 +32,36 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  color: $textLightColor;
-  background-color: $btnBgColor;
-  padding: 12px 8px;
+  color: $textDarkColor;
+  background-color: transparent;
+  padding: 18px 4px;
 
-  font-size: 16px;
+  font-family: ukraineHeadRegular;
+  font-size: 17px;
+  line-height: 1.35;
+  text-align: left;
   cursor: pointer;
+
+  &:hover {
+    color: $btnBgColor;
+  }
 
   @media screen and (min-width: $tablet) {
     gap: 24px;
-    padding: 16px 24px;
-    font-size: 22px;
+    padding: 22px 4px;
+    font-size: 19px;
   }
 
   @media screen and (min-width: $laptop) {
-    padding: 24px 16px;
-    font-size: 26px;
+    padding: 24px 4px;
+    font-size: 21px;
   }
 
   & svg {
-    width: 24px;
-    min-width: 24px;
-    height: 24px;
-    stroke: $textLightColor;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    stroke: $btnBgColor;
   }
 
   &:hover svg,
@@ -77,7 +80,7 @@
 
 .answerWrapp {
   interpolate-size: allow-keywords; //for chrome
-  background-color: $cardBgColor;
+  background-color: transparent;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.4s ease;
