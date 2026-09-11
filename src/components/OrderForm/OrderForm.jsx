@@ -82,8 +82,9 @@ const OrderForm = ({ dictionary }) => {
           type="text"
           {...register("name")}
           placeholder={dictionary.form.name}
+          aria-label={dictionary.form.name}
           maxLength="30"
-          autoComplete="off"
+          autoComplete="name"
           className={
             dirtyFields.name && !errors.name
               ? `${styles.input} ${styles.successInput}`
@@ -114,11 +115,13 @@ const OrderForm = ({ dictionary }) => {
         <p className={styles.error}>{errors.tel?.message}</p>
 
         <input
-          type="text"
+          type="tel"
+          inputMode="tel"
           {...register("tel")}
           placeholder={dictionary.form.tel}
+          aria-label={dictionary.form.tel}
           maxLength="16"
-          autoComplete="off"
+          autoComplete="tel"
           className={
             dirtyFields.tel && !errors.tel
               ? `${styles.input} ${styles.successInput}`
@@ -131,11 +134,13 @@ const OrderForm = ({ dictionary }) => {
         <p className={styles.error}>{errors.email?.message}</p>
 
         <input
-          type="text"
+          type="email"
+          inputMode="email"
           {...register("email")}
           placeholder={dictionary.form.email}
+          aria-label={dictionary.form.email}
           maxLength="254"
-          autoComplete="off"
+          autoComplete="email"
           className={
             errors.email ? `${styles.input} ${styles.errorInput}` : styles.input
           }
