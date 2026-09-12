@@ -200,6 +200,11 @@ export const pricingNotes = [
     textEng: "Urgent test within an hour, no queue — +100%.",
   },
   {
+    text: "Тест у неділю — +100% до вартості.",
+    textRus: "Тест в воскресенье — +100% к стоимости.",
+    textEng: "Sunday testing — +100%.",
+  },
+  {
     text: "Знижка 800 ₴ на заявку через сайт — код EYE25.",
     textRus: "Скидка 800 ₴ на заявку через сайт — код EYE25.",
     textEng: "UAH 800 off when you book through the site — code EYE25.",
