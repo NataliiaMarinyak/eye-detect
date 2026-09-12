@@ -16,7 +16,7 @@ const HomeReportSection = ({ dictionary }) => {
             {d.points.map((p) => (
               <li key={p}>
                 <svg aria-hidden="true">
-                  <use href="/sprite.svg#icon-check-mark-in-circle" />
+                  <use href="/sprite.svg#icon-check-solid" />
                 </svg>
                 <span>{p}</span>
               </li>

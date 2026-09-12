@@ -80,9 +80,10 @@
 }
 
 .price {
-  flex-shrink: 0;
+  flex: 0 0 auto;
+  max-width: 56%;
   font-weight: 700;
-  white-space: nowrap;
+  text-align: right;
   color: $btnBgColor;
 }
 

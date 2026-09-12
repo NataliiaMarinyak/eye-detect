@@ -303,3 +303,76 @@ $radiusBtn: 12px;
   right: 0;
   bottom: 0;
 }
+
+// Порівняльна таблиця: на телефоні гортається вбік, перша колонка закріплена.
+@mixin compareTable {
+  .tableWrap {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid $lineColor;
+    border-radius: $radiusCard;
+    background-color: $cardBgColor;
+  }
+
+  .tableHint {
+    margin: 8px 0 0;
+    font-size: 13px;
+    color: $subTitleColor;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  .table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 15px;
+
+    & th,
+    & td {
+      padding: 14px 16px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid $lineColor;
+      background-color: $cardBgColor;
+    }
+
+    & thead th {
+      font-family: var(--font-bold);
+      font-weight: 700;
+      background-color: $panelBgColor;
+    }
+
+    & thead th:nth-child(2) {
+      color: $primary;
+    }
+
+    & tbody th {
+      font-weight: 400;
+      color: $subTitleColor;
+      width: 24%;
+      min-width: 130px;
+    }
+
+    & th:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      box-shadow: 1px 0 0 $lineColor;
+    }
+
+    & tbody td:first-of-type {
+      font-family: var(--font-bold);
+    }
+
+    & tr:last-child th,
+    & tr:last-child td {
+      border-bottom: 0;
+    }
+  }
+}

@@ -15,6 +15,8 @@ const TownsSection = ({ lang, slug }) => {
   // const { slug } = useParams();
 
   const data = getCityData(slug);
+  // Для міст-держав (Ватикан, Монако) списку містечок немає — секцію не показуємо.
+  if (!data?.townsInfo?.towns) return null;
 
   return (
     <section>

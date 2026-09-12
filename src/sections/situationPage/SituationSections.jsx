@@ -83,7 +83,7 @@ const SituationSections = ({ s, lang, others, dictionary }) => {
             <ul className={styles.points}>
               {dictionary.homeReport.points.map((p) => (
                 <li key={p}>
-                  <svg aria-hidden="true"><use href="/sprite.svg#icon-check-mark-in-circle" /></svg>
+                  <svg aria-hidden="true"><use href="/sprite.svg#icon-check-solid" /></svg>
                   <span>{p}</span>
                 </li>
               ))}

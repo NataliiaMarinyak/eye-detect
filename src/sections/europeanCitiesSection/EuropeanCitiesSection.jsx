@@ -1,7 +1,6 @@
 "use client";
 // import { useEffect, useState } from "react";
 // import { useTranslation } from "react-i18next";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { europeanCitiesData } from "@/data/europeanCitiesData";
@@ -10,7 +9,9 @@ import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./EuropeanCitiesSection.module.scss";
 
 const EuropeanCitiesSection = ({ lang, dictionary }) => {
-  const pathname = usePathname();
+  // Посилання без префікса для мови за замовчуванням: хук шляху тут повертає
+  // внутрішній шлях /uk/..., через що посилання вели на редирект.
+  const prefix = lang === i18n.defaultLocale ? "" : `/${lang}`;
   // console.log("pathname", pathname);
   // const { t, i18n } = useTranslation();
   // const [isLoading, setIsLoading] = useState(true);
@@ -26,7 +27,7 @@ const EuropeanCitiesSection = ({ lang, dictionary }) => {
           {europeanCitiesData.map((item) => (
             <li key={item.slug} className={styles.locationItem}>
               <Link
-                href={`${pathname}/${item.slug}`}
+                href={`${prefix}/locations/${item.slug}`}
                 className={styles.locationLink}
               >
                 <p className={styles.country}>

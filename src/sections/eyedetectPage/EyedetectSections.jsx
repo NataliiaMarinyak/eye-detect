@@ -83,6 +83,7 @@ const EyedetectSections = ({ d, lang }) => (
             </tbody>
           </table>
         </Reveal>
+        <p className={styles.tableHint}>{lang === "uk" ? "Гортайте таблицю вбік →" : "Листайте таблицу вбок →"}</p>
       </div>
     </section>
 

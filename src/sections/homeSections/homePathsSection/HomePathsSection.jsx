@@ -31,7 +31,7 @@ const PathCard = ({ data, cta, delay, photo, logo, logoW, logoH }) => (
         {data.facts.map((f) => (
           <li key={f}>
             <svg aria-hidden="true">
-              <use href="/sprite.svg#icon-check-mark-in-circle" />
+              <use href="/sprite.svg#icon-check-solid" />
             </svg>
             {f}
           </li>

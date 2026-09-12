@@ -1,4 +1,5 @@
 import ContactsSection from "@/sections/contactsSection/ContactsSection";
+import HomeOrderSection from "@/sections/homeSections/homeOrderSection/HomeOrderSection";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
 
@@ -99,6 +100,7 @@ const ContactsPage = async ({ params }) => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <ContactsSection lang={lang} dictionary={dictionary} />
+      <HomeOrderSection lang={lang} dictionary={dictionary} />
     </>
   );
 };

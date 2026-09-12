@@ -1,7 +1,6 @@
 "use client";
 // import { useEffect, useState } from "react";
 // import { useTranslation } from "react-i18next";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { getUkrainianCities } from "@/helpers/getCityData";
@@ -11,7 +10,9 @@ import styles from "./UkrainianCitiesSection.module.scss";
 import { i18n } from "@/dictionaries/i18n.config";
 
 const UkrainianCitiesSection = ({ lang, dictionary }) => {
-  const pathname = usePathname();
+  // Посилання без префікса для мови за замовчуванням: хук шляху тут повертає
+  // внутрішній шлях /uk/..., через що посилання вели на редирект.
+  const prefix = lang === i18n.defaultLocale ? "" : `/${lang}`;
   // const { t, i18n } = useTranslation();
   // const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => setIsLoading(false), []);
@@ -26,7 +27,7 @@ const UkrainianCitiesSection = ({ lang, dictionary }) => {
           {ukrainianCitiesData.map((item) => (
             <li key={item.slug} className={styles.cityItem}>
               <Link
-                href={`${pathname}/${item.slug}`}
+                href={`${prefix}/locations/${item.slug}`}
                 className={styles.cityLink}
               >
                 {lang === i18n.locales[0] ? item.city : item.cityRus}

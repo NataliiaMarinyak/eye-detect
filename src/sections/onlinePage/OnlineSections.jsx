@@ -77,7 +77,7 @@ const OnlineSections = ({ d, lang, dictionary }) => (
               <ul className={styles.fitList}>
                 {col.items.map((t) => (
                   <li key={t}>
-                    <svg aria-hidden="true"><use href={i === 0 ? "/sprite.svg#icon-check-mark-in-circle" : "/sprite.svg#icon-cross-in-circle"} /></svg>
+                    <svg aria-hidden="true"><use href={i === 0 ? "/sprite.svg#icon-check-solid" : "/sprite.svg#icon-cross-in-circle"} /></svg>
                     <span>{t}</span>
                   </li>
                 ))}

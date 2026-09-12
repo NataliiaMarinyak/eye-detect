@@ -66,7 +66,8 @@
   @include card;
   overflow: hidden;
   padding: 16px;
-  background-color: $panelBgColor;
+  background-color: #000;
+  border-color: #000;
 
   & img {
     width: 100%;
@@ -120,54 +121,7 @@
   }
 }
 
-.tableWrap {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border: 1px solid $lineColor;
-  border-radius: $radiusCard;
-  background-color: $cardBgColor;
-}
-
-.table {
-  width: 100%;
-  min-width: 720px;
-  border-collapse: collapse;
-  font-size: 15px;
-
-  & th,
-  & td {
-    padding: 14px 16px;
-    text-align: left;
-    vertical-align: top;
-    border-bottom: 1px solid $lineColor;
-  }
-
-  & thead th {
-    font-family: var(--font-bold);
-    font-weight: 700;
-    background-color: $panelBgColor;
-  }
-
-  & thead th:nth-child(2) {
-    color: $primary;
-  }
-
-  & tbody th {
-    font-weight: 400;
-    color: $subTitleColor;
-    width: 24%;
-  }
-
-  & tbody td:first-of-type {
-    font-family: var(--font-bold);
-  }
-
-  & tr:last-child th,
-  & tr:last-child td {
-    border-bottom: 0;
-  }
-}
+@include compareTable;
 
 .limits {
   display: grid;

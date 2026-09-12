@@ -41,7 +41,7 @@
 
 .value {
   font-family: var(--font-head);
-  font-size: 34px;
+  font-size: clamp(24px, 7.6vw, 34px);
   line-height: 1;
   letter-spacing: -0.02em;
   color: $primary;

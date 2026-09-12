@@ -54,6 +54,7 @@ const BusinessSections = ({ d, lang, dictionary }) => {
               </tbody>
             </table>
           </Reveal>
+          <p className={styles.tableHint}>{isUk ? "Гортайте таблицю вбік →" : "Листайте таблицу вбок →"}</p>
         </div>
       </section>
 
