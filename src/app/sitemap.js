@@ -1,4 +1,5 @@
 import { getAllCities } from "@/helpers/getCityData";
+import { blogPosts } from "@/data/pages/blogData";
 
 // export const runtime = "edge"; // або 'node' якщо edge не підходить
 export const dynamic = "force-static";
@@ -36,6 +37,8 @@ export default async function sitemap() {
       { href: "situations/leak", priority: 0.8 },
       { href: "situations/hiring", priority: 0.8 },
       { href: "situations/dispute", priority: 0.7 },
+      { href: "blog", priority: 0.7 },
+      ...blogPosts.map((p) => ({ href: `blog/${p.slug}`, priority: 0.6 })),
       { href: "about-us", priority: 0.8 },
       { href: "locations", priority: 0.8 },
       { href: "contacts", priority: 0.6 },

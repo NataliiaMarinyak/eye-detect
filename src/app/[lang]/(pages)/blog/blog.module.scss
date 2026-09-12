@@ -1,0 +1,262 @@
+@import "../../../_variables";
+
+.section {
+  @include pageTopPadding;
+  padding-bottom: 80px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  @include pageTitle;
+  max-width: 24ch;
+}
+
+.sub {
+  @include sectionSubTitle;
+  margin-bottom: 24px;
+}
+
+.list {
+  display: grid;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+.card {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+  @media screen and (min-width: $laptop) {
+    padding: 28px 32px;
+  }
+}
+
+.date {
+  font-size: 13px;
+  color: $subTitleColor;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+
+  & a:hover {
+    color: $primary;
+  }
+}
+
+.cardText {
+  font-size: 15px;
+  line-height: 1.6;
+  color: $subTitleColor;
+  margin-bottom: 16px;
+}
+
+.more {
+  margin-top: auto;
+  font-size: 15px;
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  align-self: flex-start;
+}
+
+/* Стаття */
+.article {
+  @include pageTopPadding;
+  padding-bottom: 64px;
+}
+
+.articleInner {
+  max-width: 760px;
+}
+
+.crumbs {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: $subTitleColor;
+  margin-bottom: 20px;
+
+  & a:hover {
+    color: $primary;
+  }
+}
+
+.h1 {
+  @include pageTitle;
+  max-width: 22ch;
+  margin-bottom: 16px;
+}
+
+.meta {
+  font-size: 14px;
+  color: $subTitleColor;
+  margin-bottom: 24px;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  padding: 20px 24px;
+  background-color: $panelBgColor;
+  border-left: 3px solid $primary;
+  border-radius: 0 $radiusCard $radiusCard 0;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 19px;
+  }
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 1.7;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 17px;
+  }
+
+  & h2 {
+    font-family: var(--font-head);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-top: 24px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 28px;
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  & li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+
+    &::before {
+      content: "";
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      margin-top: 11px;
+      border-radius: 50%;
+      background-color: $primary;
+    }
+  }
+}
+
+.related {
+  padding-top: 40px;
+  margin-top: 48px;
+  border-top: 1px solid $lineColor;
+}
+
+.relatedTitle {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.relatedList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & a {
+    color: $primary;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.cta {
+  background-color: $deepNavy;
+  color: $textLightColor;
+}
+
+.ctaInner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
+
+.ctaTitle {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.ctaText {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 52ch;
+}
+
+.ctaActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+.ctaPrimary {
+  @include buttonOnDark;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    min-width: 200px;
+  }
+}
+
+.ctaSecondary {
+  @include buttonOnDarkSecondary;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    min-width: 200px;
+  }
+}

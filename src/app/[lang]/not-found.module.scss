@@ -1,0 +1,52 @@
+@import "../_variables";
+
+.section {
+  @include pageTopPadding;
+  padding-bottom: 80px;
+  min-height: 70svh;
+  display: flex;
+  align-items: center;
+}
+
+.inner {
+  max-width: 640px;
+}
+
+.code {
+  font-family: var(--font-head);
+  font-size: 64px;
+  line-height: 1;
+  color: $primary;
+  margin-bottom: 12px;
+}
+
+.title {
+  @include sectionTitle;
+  margin-bottom: 12px;
+}
+
+.text {
+  @include sectionSubTitle;
+  margin-bottom: 24px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  & a {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid $lineColor;
+    border-radius: 100px;
+    background-color: $cardBgColor;
+    font-size: 15px;
+    transition: border-color 200ms ease, color 200ms ease;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+}

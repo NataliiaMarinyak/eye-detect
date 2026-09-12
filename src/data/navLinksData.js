@@ -36,6 +36,12 @@ export const navLinksData = [
     href: "/locations",
   },
   {
+    title: "Блог",
+    titleRus: "Блог",
+    titleEng: "Blog",
+    href: "/blog",
+  },
+  {
     title: "Контакти",
     titleRus: "Контакты",
     titleEng: "Contact",
