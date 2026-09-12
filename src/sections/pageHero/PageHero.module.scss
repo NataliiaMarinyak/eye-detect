@@ -1,0 +1,143 @@
+@import "../../app/variables";
+
+.hero {
+  @include pageTopPadding;
+  background-color: $deepNavy;
+  background-image: radial-gradient(60% 50% at 85% 10%, rgba(30, 58, 138, 0.55) 0%, rgba(15, 23, 42, 0) 100%);
+  color: $textLightColor;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: $laptop) {
+    padding-bottom: 72px;
+  }
+}
+
+.container {
+  display: grid;
+  gap: 28px;
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: center;
+    gap: 56px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 48px;
+  }
+}
+
+.sub {
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 58ch;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+.btnPrimary {
+  @include buttonOnDark;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    min-width: 210px;
+  }
+}
+
+.btnSecondary {
+  @include buttonOnDarkSecondary;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    min-width: 210px;
+  }
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.72);
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #4ade80;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    & li {
+      font-size: 14px;
+    }
+  }
+}
+
+.photo {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: $navySoft;
+
+  & img {
+    @include imageFillProp;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: $laptop) {
+    justify-self: end;
+    width: 100%;
+    max-width: 480px;
+  }
+}

@@ -31,6 +31,12 @@ export default async function sitemap() {
     const routes = [
       { href: "", priority: 1.0 },
       { href: "prices", priority: 0.9 },
+      { href: "eyedetect", priority: 0.9 },
+      { href: "situations/fidelity", priority: 0.8 },
+      { href: "situations/theft", priority: 0.8 },
+      { href: "situations/leak", priority: 0.8 },
+      { href: "situations/hiring", priority: 0.8 },
+      { href: "situations/dispute", priority: 0.7 },
       { href: "about-us", priority: 0.8 },
       { href: "locations", priority: 0.8 },
       { href: "contacts", priority: 0.6 },

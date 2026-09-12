@@ -1,8 +1,20 @@
+import Link from "next/link";
 import Reveal from "@/components/Reveal/Reveal";
 import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import { directionsData } from "@/data/directionsData";
 import { getLocalizedField } from "@/helpers/getLocalizedField";
+import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./HomeDirectionsSection.module.scss";
+
+// Картка ситуації веде на окрему сторінку /situations/<slug>, якщо вона є.
+const SLUG_BY_ICON = {
+  "/sprite.svg#icon-money": "theft",
+  "/sprite.svg#icon-competitors": "leak",
+  "/sprite.svg#icon-search": "hiring",
+  "/sprite.svg#icon-rings": "fidelity",
+  "/sprite.svg#icon-books": "dispute",
+};
+const MORE = { uk: "Детальніше", ru: "Подробнее", en: "Learn more" };
 
 // Ситуації, в яких допомагає EyeDetect. Кнопка розрахунку вартості тут доречна:
 // це вже далеко за першим екраном.
@@ -39,6 +51,14 @@ const HomeDirectionsSection = ({ lang, dictionary }) => {
               <p className={styles.description}>
                 {getLocalizedField(direction, "description", lang)}
               </p>
+              {SLUG_BY_ICON[direction.href] && (
+                <Link
+                  className={styles.more}
+                  href={`${lang === i18n.defaultLocale ? "" : `/${lang}`}/situations/${SLUG_BY_ICON[direction.href]}`}
+                >
+                  {MORE[lang] || MORE.uk}
+                </Link>
+              )}
             </Reveal>
           ))}
         </ul>

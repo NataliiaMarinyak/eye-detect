@@ -1,0 +1,292 @@
+@import "../../app/variables";
+
+.white {
+  background-color: $cardBgColor;
+  border-top: 1px solid $lineColor;
+  border-bottom: 1px solid $lineColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @media screen and (min-width: $laptop) {
+    gap: 36px;
+  }
+}
+
+.title {
+  @include sectionTitle;
+  margin-bottom: 8px;
+}
+
+.subTitle {
+  @include sectionSubTitle;
+}
+
+.howGrid {
+  display: grid;
+  gap: 24px;
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    align-items: start;
+    gap: 40px;
+  }
+}
+
+.cards3 {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  @include card;
+  padding: 24px;
+}
+
+.cardTitle {
+  font-family: var(--font-bold);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.cardText {
+  font-size: 15px;
+  line-height: 1.6;
+  color: $subTitleColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.stationPhoto {
+  @include card;
+  overflow: hidden;
+  padding: 16px;
+  background-color: $panelBgColor;
+
+  & img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.steps {
+  display: grid;
+  gap: 20px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 24px;
+  }
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $lineColor;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.stepNum {
+  font-family: var(--font-head);
+  font-size: 22px;
+  color: $primary;
+  line-height: 1.2;
+}
+
+.stepTitle {
+  font-family: var(--font-bold);
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.stepText {
+  font-size: 15px;
+  line-height: 1.6;
+  color: $subTitleColor;
+  max-width: 62ch;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.tableWrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid $lineColor;
+  border-radius: $radiusCard;
+  background-color: $cardBgColor;
+}
+
+.table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 15px;
+
+  & th,
+  & td {
+    padding: 14px 16px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid $lineColor;
+  }
+
+  & thead th {
+    font-family: var(--font-bold);
+    font-weight: 700;
+    background-color: $panelBgColor;
+  }
+
+  & thead th:nth-child(2) {
+    color: $primary;
+  }
+
+  & tbody th {
+    font-weight: 400;
+    color: $subTitleColor;
+    width: 24%;
+  }
+
+  & tbody td:first-of-type {
+    font-family: var(--font-bold);
+  }
+
+  & tr:last-child th,
+  & tr:last-child td {
+    border-bottom: 0;
+  }
+}
+
+.limits {
+  display: grid;
+  gap: 12px;
+  max-width: 820px;
+}
+
+.limit {
+  @include card;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  padding: 18px 20px;
+  font-size: 15px;
+  line-height: 1.6;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.limitNum {
+  @include iconBadge;
+  width: 32px;
+  height: 32px;
+  font-family: var(--font-bold);
+  font-size: 14px;
+  color: $primary;
+}
+
+.science {
+  max-width: 820px;
+}
+
+.scienceText {
+  font-size: 16px;
+  line-height: 1.65;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  & a {
+    color: $primary;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.cta {
+  background-color: $deepNavy;
+  color: $textLightColor;
+}
+
+.ctaInner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
+
+.ctaTitle {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 36px;
+  }
+}
+
+.ctaText {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 52ch;
+}
+
+.ctaActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+.ctaPrimary {
+  @include buttonOnDark;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    min-width: 220px;
+  }
+}
+
+.ctaSecondary {
+  @include buttonOnDarkSecondary;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    min-width: 200px;
+  }
+}

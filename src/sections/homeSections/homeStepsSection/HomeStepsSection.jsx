@@ -1,9 +1,14 @@
+import Link from "next/link";
 import Reveal from "@/components/Reveal/Reveal";
+import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./HomeStepsSection.module.scss";
+
+const TECH_LINK = { uk: "Як працює технологія EyeDetect", ru: "Как работает технология EyeDetect", en: "How the EyeDetect technology works" };
 
 // Як проходить тест: три кроки.
 const HomeStepsSection = ({ dictionary }) => {
   const d = dictionary.homeSteps;
+  const lang = dictionary.lang || "uk";
 
   return (
     <section id="how" className={styles.section}>
@@ -21,6 +26,9 @@ const HomeStepsSection = ({ dictionary }) => {
             </Reveal>
           ))}
         </ol>
+        <Link className={styles.techLink} href={`${lang === i18n.defaultLocale ? "" : `/${lang}`}/eyedetect`}>
+          {TECH_LINK[lang] || TECH_LINK.uk}
+        </Link>
       </div>
     </section>
   );
