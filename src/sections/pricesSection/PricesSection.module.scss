@@ -1,8 +1,8 @@
 @import "../../app/variables";
 
 .section {
-  padding-top: 92px;
-  padding-bottom: 40px;
+  @include pageTopPadding;
+  padding-bottom: 56px;
 }
 
 .container {
@@ -11,32 +11,24 @@
 }
 
 .title {
+  @include pageTitle;
+  max-width: 24ch;
   margin: 0 0 16px;
-  font-size: 26px;
-  line-height: 1.25;
-  text-align: center;
-  color: $textDarkColor;
-
-  @media screen and (min-width: $tablet) {
-    font-size: 32px;
-  }
-
-  @media screen and (min-width: $laptop) {
-    font-size: 38px;
-  }
 }
 
 .subTitle {
-  margin: 0 auto 40px;
-  max-width: 760px;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  color: $subTitleColor;
+  @include sectionSubTitle;
+  margin: 0 0 40px;
 }
 
 .group {
-  margin-bottom: 36px;
+  @include card;
+  padding: 20px 24px 8px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 24px 32px 12px;
+  }
 }
 
 .groupTitle {
@@ -54,7 +46,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid $cardBgColor;
+  border-top: 0;
 }
 
 .row {
@@ -62,8 +54,12 @@
   align-items: baseline;
   gap: 8px;
   padding: 14px 0;
-  border-bottom: 1px solid $cardBgColor;
+  border-bottom: 1px solid $lineColor;
   font-size: 16px;
+
+  &:last-child {
+    border-bottom: 0;
+  }
   line-height: 1.4;
 
   @media screen and (min-width: $tablet) {
@@ -150,7 +146,8 @@
 .comparison {
   padding: 24px;
   border-radius: 16px;
-  background-color: $cardBgColor;
+  background-color: $panelBgColor;
+  border-left: 3px solid $primary;
 
   @media screen and (min-width: $tablet) {
     padding: 32px;
@@ -175,11 +172,13 @@
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  margin: 0 0 20px;
+  margin: 12px 0 20px;
   padding: 16px 20px;
-  border: 1px solid $btnBgColor;
+  border: 1px solid $primary;
+  background-color: $primarySoft;
   border-radius: 12px;
   font-size: 16px;
+  font-family: var(--font-bold);
   font-weight: 700;
   line-height: 1.5;
   color: $textDarkColor;
