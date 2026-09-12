@@ -25,7 +25,7 @@ const fontHead = localFont({
   preload: false,
   variable: "--font-head",
 });
-import { GoogleTagManager } from "@next/third-parties/google";
+import DeferredGtm from "@/components/DeferredGtm/DeferredGtm";
 import { Toaster } from "sonner";
 import { SiteProvider } from "@/context/SiteContext";
 // import TranslatorProvider from "@/translator/TranslatorProvider";
@@ -104,7 +104,6 @@ export default async function RootLayout({ children, params }) {
       lang={lang}
       className={`${fontRegular.variable} ${fontBold.variable} ${fontHead.variable}`}
     >
-      <GoogleTagManager gtmId={`${GTM_ID}`} />
       <body>
         <noscript>
           <iframe
@@ -114,6 +113,7 @@ export default async function RootLayout({ children, params }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <DeferredGtm gtmId={GTM_ID} />
         <SiteProvider>
           {/* <TranslatorProvider> */}
           <Header lang={lang} dictionary={dictionary} />
