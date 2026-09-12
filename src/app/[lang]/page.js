@@ -128,8 +128,37 @@ export default async function Home({ params }) {
 
   const dictionary = await getDictionary(lang);
 
+  // Організація і місцевий бізнес: адреса, телефон, соцмережі, послуги.
+  const isUk = lang === "uk";
+  const businessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business`,
+    name: isUk ? "Детектор брехні EyeDetect у Львові" : "Детектор лжи EyeDetect во Львове",
+    url: process.env.NEXT_PUBLIC_SEO_URL,
+    telephone: "+380686833368",
+    image: `${process.env.NEXT_PUBLIC_SEO_URL}images/seo_images/opengraph-image-1200-630.png`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: isUk ? "вул. Городоцька, 45" : "ул. Городоцкая, 45",
+      addressLocality: isUk ? "Львів" : "Львов",
+      postalCode: "79000",
+      addressCountry: "UA",
+    },
+    areaServed: [{ "@type": "Country", name: isUk ? "Україна" : "Украина" }, { "@type": "Place", name: isUk ? "Європа" : "Европа" }],
+    sameAs: ["https://t.me/Detecteye", "https://www.facebook.com/share/1527nF4Rwh/", "https://www.instagram.com/eye_detect", "https://www.tiktok.com/@www.eyepolygraph"],
+    makesOffer: [
+      { "@type": "Offer", name: "EyeDetect", price: 5500, priceCurrency: "UAH", url: `${pageUrlJsonLd}prices` },
+      { "@type": "Offer", name: "VerifEye", price: 2500, priceCurrency: "UAH", url: `${pageUrlJsonLd}online` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
