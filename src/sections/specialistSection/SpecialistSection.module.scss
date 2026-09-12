@@ -46,7 +46,7 @@
   @include sectionSubTitle;
   margin-bottom: 16px;
   color: $textDarkColor;
-  font-family: ukraineBold;
+  font-family: var(--font-bold);
   text-align: start;
 
   @media screen and (min-width: $laptop) {
@@ -55,7 +55,7 @@
 }
 
 .detailsTitle {
-  font-family: ukraineBold;
+  font-family: var(--font-bold);
   font-size: 16px;
   margin-bottom: 8px;
 

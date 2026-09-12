@@ -3,20 +3,21 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 16px;
-
-  @media screen and (min-width: $tablet) {
-    gap: 20px;
-  }
+  gap: 24px;
 
   @media screen and (min-width: $laptop) {
-    gap: 24px;
+    gap: 32px;
   }
 }
 
 .title {
   @include sectionTitle;
+}
+
+.list {
+  width: 100%;
+  max-width: 860px;
+  align-self: flex-start;
 }
 
 .faqItem {
@@ -27,51 +28,58 @@
   }
 }
 
+.faqHeading {
+  margin: 0;
+  font-weight: 400;
+}
+
 .faqTitle {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  color: $textDarkColor;
-  background-color: transparent;
+  gap: 16px;
   padding: 18px 4px;
-
-  font-family: ukraineHeadRegular;
-  font-size: 17px;
-  line-height: 1.35;
+  background: transparent;
+  border: 0;
+  color: $textDarkColor;
+  font-family: var(--font-regular);
+  font-size: 16px;
+  line-height: 1.4;
   text-align: left;
   cursor: pointer;
+  transition: color 200ms ease;
 
   &:hover {
-    color: $btnBgColor;
+    color: $primary;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $primary;
+    outline-offset: 2px;
+    border-radius: 6px;
   }
 
   @media screen and (min-width: $tablet) {
-    gap: 24px;
     padding: 22px 4px;
-    font-size: 19px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: $laptop) {
-    padding: 24px 4px;
-    font-size: 21px;
+    font-size: 19px;
   }
 
   & svg {
     width: 20px;
     min-width: 20px;
     height: 20px;
-    stroke: $btnBgColor;
-  }
-
-  &:hover svg,
-  &:focus svg {
-    transform: rotate(90deg);
+    stroke: $primary;
+    transition: transform 250ms ease;
   }
 }
 
 .isOpenSvg {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 .isClosedSvg {
@@ -79,42 +87,32 @@
 }
 
 .answerWrapp {
-  interpolate-size: allow-keywords; //for chrome
-  background-color: transparent;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-}
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms ease;
 
-.isClosed {
-  max-height: 0;
-  padding: 0 8px;
-
-  @media screen and (min-width: $tablet) {
-    padding: 0 24px;
-  }
-
-  @media screen and (min-width: $laptop) {
-    padding: 0px 20px;
+  & > p {
+    overflow: hidden;
   }
 }
 
 .isOpen {
-  max-height: 300px;
-  padding: 8px 8px;
+  grid-template-rows: 1fr;
+}
 
-  @media screen and (min-width: $tablet) {
-    padding: 8px 24px;
-  }
-
-  @media screen and (min-width: $laptop) {
-    padding: 24px 20px;
-  }
+.isClosed {
+  grid-template-rows: 0fr;
 }
 
 .answer {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.65;
+  color: $subTitleColor;
+  max-width: 62ch;
+
+  .isOpen & {
+    padding: 0 4px 20px;
+  }
 
   @media screen and (min-width: $tablet) {
     font-size: 16px;

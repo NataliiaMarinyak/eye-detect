@@ -60,7 +60,7 @@
     gap: 4px;
   }
 
-  & h3 {
+  & p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
@@ -83,7 +83,7 @@
       gap: 20px;
     }
 
-    & h3 {
+    & p {
       font-size: 18px;
     }
 
@@ -96,7 +96,7 @@
   }
 
   @media screen and (min-width: $laptop) {
-    & h3 {
+    & p {
       font-size: 20px;
     }
 
@@ -140,7 +140,7 @@
 }
 
 .imgCaption {
-  font-family: "ukraineRegular";
+  font-family: var(--font-regular);
   font-size: 16px;
   font-weight: 400;
 

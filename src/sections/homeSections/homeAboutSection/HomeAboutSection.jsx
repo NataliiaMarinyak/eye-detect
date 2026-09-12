@@ -16,25 +16,25 @@ const HomeAboutSection = ({ lang, dictionary }) => {
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        <h1 className={styles.title}>{dictionary.homeAboutSection.title}</h1>
+        <h2 className={styles.title}>{dictionary.homeAboutSection.title}</h2>
 
-        <h2 className={styles.subTitle}>
+        <p className={styles.subTitle}>
           {dictionary.homeAboutSection.subTitle}
-        </h2>
+        </p>
 
         <div className={styles.content}>
           <div className={styles.listColumn}>
-            <h3 className={styles.listIntro}>
+            <p className={styles.listIntro}>
               {dictionary.homeAboutSection.listIntro}
-            </h3>
+            </p>
             <ul className={styles.aboutList}>
               {aboutData.map((el, i) => {
                 return (
                   <li key={i}>
-                    <svg>
+                    <svg aria-hidden="true">
                       <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                     </svg>
-                    <h3>{getLocalizedField(el, "text", lang)}</h3>
+                    <p>{getLocalizedField(el, "text", lang)}</p>
                   </li>
                 );
               })}

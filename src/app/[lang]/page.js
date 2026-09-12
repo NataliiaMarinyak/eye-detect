@@ -36,6 +36,18 @@ const DynamicHomeFAQSection = dynamic(() =>
 const DynamicHomeOrderSection = dynamic(() =>
   import("@/sections/homeSections/homeOrderSection/HomeOrderSection")
 );
+const DynamicHomeStatsSection = dynamic(() =>
+  import("@/sections/homeSections/homeStatsSection/HomeStatsSection")
+);
+const DynamicHomePathsSection = dynamic(() =>
+  import("@/sections/homeSections/homePathsSection/HomePathsSection")
+);
+const DynamicHomeStepsSection = dynamic(() =>
+  import("@/sections/homeSections/homeStepsSection/HomeStepsSection")
+);
+const DynamicHomeReportSection = dynamic(() =>
+  import("@/sections/homeSections/homeReportSection/HomeReportSection")
+);
 
 export async function generateMetadata({ params }) {
   const { lang } = params;
@@ -129,22 +141,23 @@ export default async function Home({ params }) {
         }}
       />
       <HeroSection dictionary={dictionary} />
+      <DynamicHomeStatsSection dictionary={dictionary} />
+      <DynamicHomePathsSection dictionary={dictionary} />
+      <DynamicHomeStepsSection dictionary={dictionary} />
+      <DynamicHomeDirectionsSection lang={lang} dictionary={dictionary} />
+      <DynamicHomeReportSection dictionary={dictionary} />
       <DynamicHomeAboutSection lang={lang} dictionary={dictionary} />
       <DynamicHomeCertificatesSection
         isOnHomePage={true}
         lang={lang}
         dictionary={dictionary}
       />
-      <DynamicHomeAdvantagesSection lang={lang} dictionary={dictionary} />
       <DynamicHomeClientsSection lang={lang} dictionary={dictionary} />
-      <DynamicHomeTestingSection lang={lang} />
-      <DynamicHomeDirectionsSection lang={lang} dictionary={dictionary} />
       <DynamicHomeFAQSection
         data={FAQDataHome}
         lang={lang}
         dictionary={dictionary}
       />
-      <DynamicHomeCountriesSection lang={lang} dictionary={dictionary} />
       <DynamicHomeOrderSection lang={lang} dictionary={dictionary} />
     </>
   );

@@ -9,7 +9,14 @@
   "heroSection": {
     "title": "EyeDetect Lie Detection in Lviv, Ukraine & across Europe",
     "text": "✓ Official Converus partner in Ukraine\n\n✓ Trusted by U.S. and European law enforcement\n\n✓ Captures 50+ involuntary eye reactions per second\n\n✓ 15–45 minute test with automated, tamper-proof results",
-    "priceNote": "From UAH 5,500 · report the same day"
+    "priceNote": "From UAH 5,500 · report the same day",
+    "h1": "Lie detector in Lviv: EyeDetect in our office or online from your phone",
+    "sub": "Official Converus partner (USA). A 30–45 minute test with no body sensors, report the same day. We travel across Ukraine and Europe.",
+    "trust": [
+      "Official Converus partner",
+      "Up to 90% accuracy",
+      "Report the same day"
+    ]
   },
   "homeAboutSection": {
     "title": "The EyeDetect Technology and the Expert Behind It",
@@ -93,7 +100,11 @@
     "sendRequest": "Send",
     "localeSwitcherUkr": "UKR",
     "localeSwitcherRus": "RUS",
-    "localeSwitcherEn": "ENG"
+    "localeSwitcherEn": "ENG",
+    "testOnline": "Take the test online",
+    "bookLviv": "Book in Lviv",
+    "bookVisit": "Request a visit",
+    "learnHow": "How the test works"
   },
   "notifications": {
     "success": "Your message has been sent"
@@ -218,5 +229,90 @@
     "seoMetaDescriptionOpenGraph": "Private tests from UAH 5,500, staff screening from UAH 3,200 per person, travel within Lviv region included.",
     "seoMetaNameJsonLd_1": "Polygraph home page",
     "seoMetaNameJsonLd_2": "EyeDetect prices"
+  },
+  "homeStats": {
+    "items": [
+      {
+        "value": 90,
+        "prefix": "up to ",
+        "suffix": "%",
+        "label": "accuracy according to Converus"
+      },
+      {
+        "value": 45,
+        "prefix": "30–",
+        "suffix": " min",
+        "label": "test duration, no sensors"
+      },
+      {
+        "value": 500000,
+        "prefix": "",
+        "suffix": "+",
+        "label": "tests conducted worldwide"
+      },
+      {
+        "value": 60,
+        "prefix": "",
+        "suffix": "+",
+        "label": "countries use EyeDetect"
+      }
+    ]
+  },
+  "homePaths": {
+    "title": "Two ways to learn the truth",
+    "subTitle": "Both run on Converus technology. The difference is where the test takes place and how long it takes.",
+    "office": {
+      "badge": "In office or on site",
+      "title": "EyeDetect",
+      "text": "A test on dedicated equipment in Lviv or at your location. The camera captures 50+ eye reactions per second and the algorithm produces the result without human judgement.",
+      "facts": [
+        "30–45 minutes",
+        "no body sensors",
+        "report the same day"
+      ],
+      "price": "from UAH 5,500",
+      "cta": "Book a test"
+    },
+    "online": {
+      "badge": "Online from a phone",
+      "title": "VerifEye",
+      "text": "The same principle through a smartphone camera. You receive a link, the person takes the test in a quiet room, and the report arrives by email.",
+      "facts": [
+        "15 minutes",
+        "from any city",
+        "PDF report in 20 minutes"
+      ],
+      "price": "from UAH 2,500",
+      "cta": "Take it online"
+    }
+  },
+  "homeSteps": {
+    "title": "How the test works",
+    "subTitle": "Three steps from the first call to a written report.",
+    "steps": [
+      {
+        "title": "Conversation and question design",
+        "text": "You explain the situation and together we formulate 1–4 specific questions. There are no vague questions like “is this a good person”."
+      },
+      {
+        "title": "A 30–45 minute test",
+        "text": "The person sits in front of a monitor and answers “true” or “false” to statements. The equipment records eye reactions that cannot be controlled."
+      },
+      {
+        "title": "Report the same day",
+        "text": "The Converus algorithm calculates a credibility score from 1 to 99 for each question. You receive a PDF report with an explanation."
+      }
+    ]
+  },
+  "homeReport": {
+    "title": "What you receive",
+    "subTitle": "A written EyeDetect report with a credibility score for each question. Below is a real report with the client’s data blurred.",
+    "points": [
+      "A score from 1 to 99 per question: 50–99 truthful, 1–49 deceptive",
+      "A separate overall verdict: credible or not credible",
+      "Answer details for every statement so you can see how the score was formed",
+      "A PDF report, ready on the day of the test"
+    ],
+    "caption": "A real EyeDetect report, fidelity test. Personal data blurred."
   }
 }

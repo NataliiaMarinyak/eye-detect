@@ -3,51 +3,55 @@ import { useState } from "react";
 import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./HomeFAQSection.module.scss";
 
+// Питання це кнопки, відповіді це абзаци. Раніше відповіді були заголовками h4,
+// що псувало структуру для пошуковика і для читачів з екрана.
 const HomeFAQSection = ({ data, lang, dictionary }) => {
   const [openItems, setOpenItems] = useState([]);
 
-  const handleOpen = (id) => {
-    setOpenItems((prevOpenItems) => {
-      if (prevOpenItems.includes(id)) {
-        return prevOpenItems.filter((item) => item !== id);
-      } else {
-        return [...prevOpenItems, id];
-      }
-    });
-  };
+  const toggle = (id) =>
+    setOpenItems((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
+    );
 
   return (
-    <section>
+    <section id="faq">
       <div className={`container ${styles.container}`}>
         <h2 className={styles.title}>{dictionary.homeFAQSection.title}</h2>
-        <ul>
+        <ul className={styles.list}>
           {data.map((el, i) => {
             const id = i + 1;
             const isActive = openItems.includes(id);
+            const panelId = `faq-panel-${id}`;
 
             return (
               <li key={id} className={styles.faqItem}>
-                <h3
-                  data-id={id}
-                  className={styles.faqTitle}
-                  onClick={() => handleOpen(id)}
-                >
-                  {getLocalizedField(el, "question", lang)}
-                  <svg
-                    className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
+                <h3 className={styles.faqHeading}>
+                  <button
+                    type="button"
+                    className={styles.faqTitle}
+                    aria-expanded={isActive}
+                    aria-controls={panelId}
+                    onClick={() => toggle(id)}
                   >
-                    <use href="/sprite.svg#icon-close"></use>
-                  </svg>
+                    <span>{getLocalizedField(el, "question", lang)}</span>
+                    <svg
+                      aria-hidden="true"
+                      className={isActive ? styles.isOpenSvg : styles.isClosedSvg}
+                    >
+                      <use href="/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
                 </h3>
 
                 <div
+                  id={panelId}
                   className={`${styles.answerWrapp} ${
                     isActive ? styles.isOpen : styles.isClosed
                   }`}
                 >
-                  <h4 className={styles.answer}>
+                  <p className={styles.answer}>
                     {getLocalizedField(el, "answer", lang)}
-                  </h4>
+                  </p>
                 </div>
               </li>
             );

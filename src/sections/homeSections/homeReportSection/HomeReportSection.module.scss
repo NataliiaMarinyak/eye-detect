@@ -1,0 +1,78 @@
+@import "../../../app/variables";
+
+.container {
+  display: grid;
+  gap: 32px;
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    align-items: start;
+    gap: 64px;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  @include sectionTitle;
+  margin-bottom: 12px;
+}
+
+.subTitle {
+  @include sectionSubTitle;
+  margin-bottom: 28px;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  & li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  & svg {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+    fill: none;
+    stroke: $primary;
+  }
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.imgWrap {
+  @include card;
+  overflow: hidden;
+  padding: 0;
+  max-height: 640px;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: $laptop) {
+    max-height: none;
+  }
+}
+
+.caption {
+  font-size: 14px;
+  color: $subTitleColor;
+}

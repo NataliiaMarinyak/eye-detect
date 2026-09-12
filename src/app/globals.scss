@@ -1,29 +1,5 @@
 @import "./_variables";
 
-@font-face {
-  font-family: "ukraineHeadRegular";
-  src: url("./fonts/e-UkraineHead-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ukraineBold";
-  src: url("./fonts/e-Ukraine-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ukraineRegular";
-  src: url("./fonts/e-Ukraine-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 *,
 *::after,
 *::before {
@@ -69,11 +45,16 @@ body {
   min-height: 100vh;
   width: 100%;
   color: $textDarkColor;
-  font-family: ukraineRegular, sans-serif;
+  font-family: var(--font-regular);
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 17px;
+  }
 
   display: flex;
   flex-direction: column;
@@ -92,7 +73,7 @@ main {
 
 header,
 footer {
-  font-family: ukraineRegular;
+  font-family: var(--font-regular);
 }
 
 section {
@@ -121,6 +102,26 @@ a {
 
 button {
   cursor: pointer;
+}
+
+/* Проявлення блоків при прокрутці (керується компонентом Reveal) */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.reveal-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity 450ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-hidden {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 :focus-visible {

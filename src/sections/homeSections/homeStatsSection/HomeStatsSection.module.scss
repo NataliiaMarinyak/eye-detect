@@ -1,0 +1,68 @@
+@import "../../../app/variables";
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $cardBgColor;
+  border-bottom: 1px solid $lineColor;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 16px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 24px;
+    border-left: 1px solid $lineColor;
+
+    &:first-child {
+      padding-left: 0;
+      border-left: 0;
+    }
+  }
+}
+
+.value {
+  font-family: var(--font-head);
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: $primary;
+  white-space: nowrap;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 48px;
+  }
+}
+
+.label {
+  font-size: 14px;
+  line-height: 1.4;
+  color: $subTitleColor;
+  max-width: 18ch;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 15px;
+  }
+}

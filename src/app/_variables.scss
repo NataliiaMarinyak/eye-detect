@@ -1,25 +1,38 @@
+// ─── Дизайн-токени EyeDetect (див. design-system/MASTER.md) ───────────────
 $mobile: "360px";
 $tablet: "768px";
 $laptop: "1024px";
 $desktop: "1440px";
 
-$disabledBgColor: rgba(203, 203, 203, 1);
-$textLightColor: rgba(255, 255, 255, 1);
-$btnBgColor: rgba(25, 65, 209, 1);
-$btnHoverBgColor: rgba(196, 201, 245, 1);
-$textDarkColor: rgba(11, 21, 31, 1);
-$footerBgColor: rgba(56, 75, 94, 1);
-$subTitleColor: rgba(67, 88, 109, 1);
-$langColor: rgba(119, 134, 151, 1);
-$cardBgColor: rgba(230, 234, 240, 1);
-$panelBgColor: rgba(240, 243, 247, 1);
-$lineColor: rgba(206, 212, 220, 1);
-$bgColor: rgba(250, 250, 250, 1);
-$alert-error: rgba(179, 0, 0, 1);
-$alert-warning: rgba(255, 206, 43, 1);
-$alert-success: rgba(0, 105, 52, 1);
-$alert-system: rgba(2, 0, 148, 1);
-$textShadow: 2px 4px 8px $footerBgColor;
+// Кольори
+$primary: #1e3a8a;
+$primaryHover: #162c6b;
+$primarySoft: #e8edf8;
+$deepNavy: #0f172a;
+$navySoft: #16213a;
+
+$btnBgColor: $primary;
+$btnHoverBgColor: $primaryHover;
+$disabledBgColor: #cbd5e1;
+$textLightColor: #ffffff;
+$textDarkColor: #0f172a;
+$footerBgColor: $deepNavy;
+$subTitleColor: #475569;
+$langColor: #64748b;
+$cardBgColor: #ffffff;
+$panelBgColor: #eef2f7;
+$lineColor: #dce3ec;
+$bgColor: #f8fafc;
+$alert-error: #b91c1c;
+$alert-warning: #d97706;
+$alert-success: #047857;
+$alert-system: #1e3a8a;
+$textShadow: 0 1px 2px rgba(15, 23, 42, 0.35);
+
+$focusRing: 0 0 0 3px rgba(30, 58, 138, 0.35);
+$cardShadowHover: 0 8px 24px rgba(15, 23, 42, 0.06);
+$radiusCard: 16px;
+$radiusBtn: 12px;
 
 @mixin sectionSidePadding {
   padding-left: 20px;
@@ -37,17 +50,17 @@ $textShadow: 2px 4px 8px $footerBgColor;
 }
 
 @mixin sectionTopBottomPadding {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   @media screen and (min-width: $laptop) {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 }
 
@@ -64,10 +77,10 @@ $textShadow: 2px 4px 8px $footerBgColor;
 }
 
 @mixin pageTitle {
-  font-family: ukraineHeadRegular;
-  font-size: 28px;
+  font-family: var(--font-head);
+  font-size: 32px;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.08;
   letter-spacing: -0.02em;
   text-align: left;
   align-self: flex-start;
@@ -75,20 +88,19 @@ $textShadow: 2px 4px 8px $footerBgColor;
   max-width: 20ch;
 
   @media screen and (min-width: $tablet) {
-    font-size: 40px;
-    line-height: 1.1;
+    font-size: 44px;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 52px;
+    font-size: 56px;
   }
 }
 
 @mixin sectionTitle {
-  font-family: ukraineHeadRegular;
+  font-family: var(--font-head);
   font-weight: 400;
-  font-size: 24px;
-  line-height: 1.2;
+  font-size: 26px;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   text-align: left;
   align-self: flex-start;
@@ -96,30 +108,147 @@ $textShadow: 2px 4px 8px $footerBgColor;
   max-width: 24ch;
 
   @media screen and (min-width: $tablet) {
-    font-size: 30px;
-    line-height: 1.15;
+    font-size: 32px;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
 
 @mixin sectionSubTitle {
   font-weight: 400;
-  font-size: 19px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.55;
   text-align: left;
   align-self: flex-start;
   width: 100%;
   max-width: 62ch;
+  color: $subTitleColor;
 
   @media screen and (min-width: $tablet) {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 28px;
+    font-size: 20px;
+  }
+}
+
+// Картка: білий фон, тонка межа, тінь тільки на наведенні
+@mixin card {
+  background-color: $cardBgColor;
+  border: 1px solid $lineColor;
+  border-radius: $radiusCard;
+  transition: box-shadow 250ms ease, border-color 250ms ease;
+
+  &:hover {
+    box-shadow: $cardShadowHover;
+    border-color: #c9d3e0;
+  }
+}
+
+// Круг під іконкою картки
+@mixin iconBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $primarySoft;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: $primary;
+  }
+}
+
+// Кнопка primary
+@mixin buttonBase {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 360px;
+  min-height: 52px;
+  padding: 12px 24px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  border-radius: $radiusBtn;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 200ms ease, border-color 200ms ease,
+    color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    box-shadow: $focusRing;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-height: 56px;
+    font-size: 17px;
+  }
+}
+
+@mixin buttonPrimary {
+  @include buttonBase;
+  color: $textLightColor;
+  background-color: $btnBgColor;
+  border: 1px solid $btnBgColor;
+
+  &:hover {
+    background-color: $btnHoverBgColor;
+    border-color: $btnHoverBgColor;
+    color: $textLightColor;
+  }
+}
+
+@mixin buttonSecondary {
+  @include buttonBase;
+  color: $primary;
+  background-color: transparent;
+  border: 1px solid $primary;
+
+  &:hover {
+    background-color: $primarySoft;
+  }
+}
+
+// Кнопки на темному фоні (hero)
+@mixin buttonOnDark {
+  @include buttonBase;
+  color: $deepNavy;
+  background-color: $textLightColor;
+  border: 1px solid $textLightColor;
+
+  &:hover {
+    background-color: #e8edf8;
+    border-color: #e8edf8;
+  }
+}
+
+@mixin buttonOnDarkSecondary {
+  @include buttonBase;
+  color: $textLightColor;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.06);
   }
 }
 

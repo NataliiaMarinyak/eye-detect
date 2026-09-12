@@ -2,25 +2,29 @@
 
 .langSwitch {
   display: flex;
-  gap: 16px;
-  font-size: 14px;
-
+  gap: 4px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
 
   @media screen and (min-width: $tablet) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 .langBtn {
   cursor: pointer;
-}
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: $subTitleColor;
+  transition: color 200ms ease, background-color 200ms ease;
 
-.langBtn:hover {
-  background-color: $btnHoverBgColor;
+  &:hover {
+    color: $primary;
+    background-color: $primarySoft;
+  }
 }
-
 
 .active {
-  color: $cardBgColor;
-  background-color: $btnBgColor;
+  color: $primary;
+  background-color: $primarySoft;
 }

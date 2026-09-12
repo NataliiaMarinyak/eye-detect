@@ -2,181 +2,206 @@
 
 .hero {
   @include pageTopPadding;
-  @include pageHero;
-
-  display: flex;
-  align-items: center;
   position: relative;
-}
+  background-color: $deepNavy;
+  background-image: radial-gradient(
+      60% 50% at 85% 10%,
+      rgba(30, 58, 138, 0.55) 0%,
+      rgba(15, 23, 42, 0) 100%
+    ),
+    radial-gradient(40% 40% at 10% 90%, rgba(30, 58, 138, 0.35) 0%, rgba(15, 23, 42, 0) 100%);
+  color: $textLightColor;
+  padding-bottom: 48px;
+  overflow: hidden;
 
-.bgImgWrapp {
-  z-index: 0;
-  position: fixed;
-  left: 0;
-  top: 0;
-
-  width: 100%;
-  height: 100%;
-
-  & img {
-    @include imageFillProp;
-
-    object-fit: cover;
-    object-position: 65% 12px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 1) 3%,
-    rgba(0, 0, 0, 0.45) 20%,
-        rgba(0, 0, 0, 0.45) 80%,
-        rgba(0, 0, 0, 0) 100%);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 1) 3%,
-        rgba(0, 0, 0, 0.45) 20%,
-        rgba(0, 0, 0, 0.45) 80%,
-        rgba(0, 0, 0, 0) 100%);
+  @media screen and (min-width: $laptop) {
+    min-height: 88svh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 72px;
   }
 }
 
 .container {
+  position: relative;
   z-index: 1;
-  height: 100%;
+  display: grid;
+  gap: 28px;
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: center;
+    gap: 56px;
+  }
+}
+
+.content {
   display: flex;
   flex-direction: column;
-
-  color: $textLightColor;
-  text-shadow: $textShadow;
+  max-width: 620px;
 }
 
 .title {
-  font-size: 22px;
-  white-space: pre-line;
-  line-height: 1.25;
-  margin-bottom: 36px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
-    font-size: 28px;
-    margin-bottom: 42px;
+    font-size: 48px;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 30px;
+    font-size: 58px;
+    margin-bottom: 20px;
+  }
+}
+
+.titleSub {
+  font-family: var(--font-regular);
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 6px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 21px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 24px;
+  }
+}
+
+.sub {
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 52ch;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 17px;
     margin-bottom: 28px;
   }
 }
 
-.text {
-  font-size: 16px;
-  white-space: pre-line;
-  line-height: 1.5;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: $tablet) {
-    font-size: 15px;
-    line-height: 1.5;
-    width: 60%;
-    margin-bottom: 24px;
-  }
-
-  @media screen and (min-width: $laptop) {
-    font-size: 15px;
-    line-height: 1.2;
-    width: 55%;
-    margin-bottom: 16px;
-  }
-}
-
-.btn {
-  align-self: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 28px !important;
-
-  @media screen and (min-width: $tablet) {
-    margin-top: 6px !important;
-    margin-bottom: 12px;
-    width: 300px;
-    max-width: 300px;
-    height: 50px;
-    font-size: 17px;
-  }
-
-  @media screen and (min-width: $laptop) {
-    margin-top: 6px !important;
-    width: 320px;
-    max-width: 320px;
-    height: 48px;
-    font-size: 17px;
-  }
-}
-
-.priceBtn {
+.actions {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-  max-width: 452px;
-  height: 53px;
-  padding: 12px 14px;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 400;
-  border-radius: 100px;
-  border: solid 1px $btnBgColor;
-  color: $textLightColor;
-  background-color: $btnBgColor;
-  outline: none;
-  cursor: pointer;
-  text-shadow: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
 
-  &:hover, &:focus {
-    background-color: $btnHoverBgColor;
-    border-color: $btnHoverBgColor;
-    color: $textDarkColor;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+.btnPrimary {
+  @include buttonOnDark;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    min-width: 210px;
+  }
+}
+
+.btnSecondary {
+  @include buttonOnDarkSecondary;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    min-width: 210px;
+  }
+}
+
+.trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #4ade80;
+      flex-shrink: 0;
+    }
   }
 
   @media screen and (min-width: $tablet) {
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 300px;
-    max-width: 300px;
-    height: 50px;
-    font-size: 17px;
+    & li {
+      font-size: 14px;
+    }
+  }
+}
+
+.media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media screen and (min-width: $laptop) {
+    display: block;
+    justify-self: end;
+    width: 100%;
+    max-width: 560px;
+    padding-left: 120px;
+    padding-bottom: 40px;
+  }
+}
+
+.photo {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: $navySoft;
+
+  & img {
+    @include imageFillProp;
+    object-fit: cover;
+    object-position: 50% 35%;
   }
 
   @media screen and (min-width: $laptop) {
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 320px;
-    max-width: 320px;
-    height: 48px;
-    font-size: 17px;
+    aspect-ratio: 4 / 5;
+  }
+}
+
+.cardWrap {
+  @media screen and (min-width: $laptop) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 330px;
   }
 }
 
 .priceNote {
-  margin: 16px 0 0;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: $textLightColor;
-  text-shadow: $textShadow;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
 
   @media screen and (min-width: $tablet) {
-    font-size: 19px;
+    font-size: 14px;
   }
 }

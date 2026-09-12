@@ -1,5 +1,30 @@
 import "@/app/globals.scss";
 import dynamic from "next/dynamic";
+import localFont from "next/font/local";
+
+// Шрифти через next/font: попереднє завантаження і підбір запасного шрифту
+// з тими самими метриками, щоб текст не «стрибав» після завантаження.
+const fontRegular = localFont({
+  src: "../fonts/e-Ukraine-Regular.woff2",
+  weight: "400",
+  display: "swap",
+  preload: false,
+  variable: "--font-regular",
+});
+const fontBold = localFont({
+  src: "../fonts/e-Ukraine-Bold.woff2",
+  weight: "700",
+  display: "swap",
+  preload: false,
+  variable: "--font-bold",
+});
+const fontHead = localFont({
+  src: "../fonts/e-UkraineHead-Regular.woff2",
+  weight: "400",
+  display: "swap",
+  preload: false,
+  variable: "--font-head",
+});
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Toaster } from "sonner";
 import { SiteProvider } from "@/context/SiteContext";
@@ -75,7 +100,10 @@ export default async function RootLayout({ children, params }) {
 
   const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
   return (
-    <html lang={lang}>
+    <html
+      lang={lang}
+      className={`${fontRegular.variable} ${fontBold.variable} ${fontHead.variable}`}
+    >
       <GoogleTagManager gtmId={`${GTM_ID}`} />
       <body>
         <noscript>

@@ -1,53 +1,69 @@
-// "use client";
-// import { useEffect, useState } from "react";
-// import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
+import ReportCard from "@/components/ReportCard/ReportCard";
 import styles from "./HeroSection.module.scss";
 
-const HeroSection = async ({ dictionary }) => {
-  // const { t } = useTranslation();
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => setIsLoading(false), []);
+// Перший екран. H1 живе тут. Праворуч замість стокового фото компактний
+// фрагмент справжнього звіту з балами. Кнопки «Розрахувати вартість» тут немає навмисно.
+const HeroSection = ({ dictionary }) => {
+  const hero = dictionary.heroSection;
+  const [titleMain, titleRest] = splitTitle(hero.h1 || hero.title);
 
   return (
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
-        <div>
-          <p className={styles.title}>{dictionary.heroSection.title}</p>
-          <p className={styles.text}>{dictionary.heroSection.text}</p>
-          <p className={styles.priceNote}>{dictionary.heroSection.priceNote}</p>
+        <div className={styles.content}>
+          <h1 className={styles.title}>
+            {titleMain}
+            {titleRest && <span className={styles.titleSub}>{titleRest}</span>}
+          </h1>
+          <p className={styles.sub}>{hero.sub}</p>
+
+          <div className={styles.actions}>
+            <a href="#paths" className={styles.btnPrimary}>
+              {dictionary.buttons.testOnline}
+            </a>
+            <OpenModalBtn
+              customClass={styles.btnSecondary}
+              title={dictionary.buttons.bookLviv}
+            />
+          </div>
+
+          <ul className={styles.trust}>
+            {(hero.trust || []).map((t) => (
+              <li key={t}>{t}</li>
+            ))}
+          </ul>
+          <p className={styles.priceNote}>{hero.priceNote}</p>
         </div>
-        <a href="https://price.eye-polygraph.com/" target="_blank" rel="noopener noreferrer" className={styles.priceBtn}>
-          {dictionary.buttons.calculatePrice}
-        </a>
-        <OpenModalBtn
-          customClass={styles.btn}
-          title={dictionary.buttons.orderConsultation}
-        />
-      </div>
-      <div className={styles.bgImgWrapp}>
-        {/* {!isLoading && (
-          <Image
-            src="/images/hero-bg.webp"
-            alt={t("HeroSection.Title")}
-            width={1440}
-            height={900}
-            sizes="100vw"
-            priority={true}
-          />
-        )} */}
-        <Image
-          src="/images/hero-bg.webp"
-          alt={dictionary.heroSection.title}
-          width={1440}
-          height={900}
-          sizes="100vw"
-          priority={true}
-        />
+
+        <div className={styles.media}>
+          <div className={styles.photo}>
+            <Image
+              src="/images/converus/eyedetect-examinee.webp"
+              alt={hero.title}
+              width={1400}
+              height={1401}
+              sizes="(max-width: 767px) 92vw, (max-width: 1023px) 60vw, 440px"
+              quality={62}
+              priority
+            />
+          </div>
+          <div className={styles.cardWrap}>
+            <ReportCard dictionary={dictionary} />
+          </div>
+        </div>
       </div>
     </section>
   );
 };
+
+// «Детектор брехні у Львові: EyeDetect у кабінеті...» → перша частина великим,
+// друга (після двокрапки) меншим і світлішим. Один H1 для пошуковика.
+function splitTitle(t = "") {
+  const i = t.indexOf(":");
+  if (i === -1) return [t, ""];
+  return [t.slice(0, i).trim(), t.slice(i + 1).trim()];
+}
 
 export default HeroSection;
