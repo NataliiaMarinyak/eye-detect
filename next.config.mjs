@@ -19,10 +19,6 @@ const nextConfig = {
     //   },
     // ],
   },
-  env: {
-    TELEGRAM_API: process.env.TELEGRAM_API,
-    TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
-  },
 };
 
 export default nextConfig;

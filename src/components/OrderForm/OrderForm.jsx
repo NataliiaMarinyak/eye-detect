@@ -49,14 +49,27 @@ const OrderForm = ({ dictionary }) => {
     }
   }, [isSubmitSuccessful, reset]);
 
-  const onSubmit = (data) => {
-    sendToTelegram(data);
-    toast.success(dictionary.notifications.success);
-    closeModal();
+  const onSubmit = async (data) => {
+    const ok = await sendToTelegram(data);
+    if (ok) {
+      toast.success(dictionary.notifications.success);
+      closeModal();
+    } else {
+      toast.error(dictionary.notifications.error || "Не вдалося надіслати. Напишіть у Telegram або зателефонуйте.");
+    }
   };
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      {/* Пастка для ботів: приховане поле, людина його не бачить і не заповнює */}
+      <input
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, width: 0 }}
+        {...register("website")}
+      />
       <div className={styles.inputWrap}>
         {!dirtyFields.name && !errors.name && (
           <svg className={styles.iconMark}>
