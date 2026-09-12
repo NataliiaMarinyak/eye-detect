@@ -15,7 +15,7 @@
   overflow: hidden;
 
   @media screen and (min-width: $laptop) {
-    min-height: 88svh;
+    min-height: 74svh;
     display: flex;
     align-items: center;
     padding-bottom: 72px;
@@ -162,8 +162,8 @@
     justify-self: end;
     width: 100%;
     max-width: 560px;
-    padding-left: 120px;
-    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-bottom: 56px;
   }
 }
 
@@ -190,7 +190,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 330px;
+    width: 320px;
   }
 }
 
