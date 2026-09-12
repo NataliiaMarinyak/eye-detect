@@ -5,7 +5,9 @@ export const blogShared = {
   ru: { crumbHome: "Главная", crumb: "Блог", title: "Блог о детекторе лжи", sub: "Как проходит тест, что можно проверить, а что нет, и как не попасть на приложение-шутку. Пишем просто, без мифов.", readMore: "Читать", published: "Опубликовано", related: "Ещё из блога", ctaTitle: "Есть конкретный вопрос?", ctaText: "Напишите нам, подскажем, подходит ли тест для вашей ситуации.", ctaOnline: "Пройти онлайн", ctaBook: "Записаться" },
 };
 
-export const blogPosts = [
+import { blogPosts2 } from "@/data/pages/blogData2";
+
+const blogPosts1 = [
   {
     slug: "yaki-pytannya-stavlyat-na-poligrafi-pry-pryjomi-na-robotu",
     date: "2026-09-12",
@@ -159,6 +161,8 @@ export const blogPosts = [
     },
   },
 ];
+
+export const blogPosts = [...blogPosts1, ...blogPosts2];
 
 export const getPost = (slug, lang) => {
   const p = blogPosts.find((x) => x.slug === slug);
