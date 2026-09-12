@@ -1,178 +1,109 @@
-import MachineSection from "@/sections/machineSection/MachineSection";
-import { FAQData } from "@/data/FAQData";
-// import { cookies } from "next/headers";
-import { getCityData } from "@/helpers/getCityData";
 import dynamic from "next/dynamic";
+import { notFound } from "next/navigation";
+import PageHero from "@/sections/pageHero/PageHero";
+import CityVisitSection from "@/sections/cityVisitSection/CityVisitSection";
+import ContentFaq from "@/components/ContentFaq/ContentFaq";
+import { getCityData, getAllCities } from "@/helpers/getCityData";
+import { getCityLocative, getCityRegion, getCityDistance } from "@/helpers/cityMeta";
+import { cityTexts, fill } from "@/data/pages/cityTexts";
 import { getDictionary } from "@/helpers/getDictionary";
-import { i18n } from "@/dictionaries/i18n.config";
+import { getContentFaqJsonLd } from "@/helpers/getContentFaqJsonLd";
+import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadata";
 import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
-import { getFaqJsonLd } from "@/helpers/getFaqJsonLd";
+import { i18n } from "@/dictionaries/i18n.config";
 
-const DynamicServicesSection = dynamic(() =>
-  import("@/sections/servicesSection/ServicesSection")
-);
+const DynamicServicesSection = dynamic(() => import("@/sections/servicesSection/ServicesSection"));
+const DynamicTownsSection = dynamic(() => import("@/sections/townsSection/TownsSection"));
+const DynamicVideoSection = dynamic(() => import("@/sections/videoSection/VideoSection"));
+const DynamicGuaranteeSection = dynamic(() => import("@/sections/guaranteeSection/GuaranteeSection"));
 
-const DynamicTownsSection = dynamic(() =>
-  import("@/sections/townsSection/TownsSection")
-);
+// Усі міста рендеряться на етапі збірки, невідомий slug дає 404.
+export async function generateStaticParams() {
+  return i18n.locales.flatMap((lang) => getAllCities().map((c) => ({ lang, slug: c.slug })));
+}
 
-const DynamicVideoSection = dynamic(() =>
-  import("@/sections/videoSection/VideoSection")
-);
-
-const DynamicGuaranteeSection = dynamic(() =>
-  import("@/sections/guaranteeSection/GuaranteeSection")
-);
-
-const DynamicHomeFAQSection = dynamic(() =>
-  import("@/sections/homeSections/homeFAQSection/HomeFAQSection")
-);
-
-const DynamicHomeConditionsSection = dynamic(() =>
-  import("@/sections/homeSections/homeConditionsSection/HomeConditionsSection")
-);
+// Дані сторінки міста: локатив («у Києві»), регіон, відстань, заповнені тексти.
+const getCityPage = (slug, lang) => {
+  const data = getCityData(slug);
+  if (!data) return null;
+  const isUk = lang === i18n.defaultLocale;
+  const t = cityTexts[isUk ? "uk" : "ru"];
+  const loc = getCityLocative(data, lang);
+  const region = getCityRegion(slug, data.country);
+  const km = getCityDistance(slug);
+  const vars = { loc, city: isUk ? data.city : data.cityRus, km: km || "" };
+  return { data, t, loc, region, km, vars, isUk };
+};
 
 export async function generateMetadata({ params }) {
   const { slug, lang } = params;
-  // console.log("params", params);
-  // const language = cookies().get("language")?.value || "uk";
-  const {seoLocationIdPage} = await getDictionary(lang);
-
-  const data = getCityData(slug);
-
-  // SEO: у <title> йде seoTitle (він написаний під пошуковий запит
-  // "детектор брехні <місто>"), а mainTitle лишається текстом H1 на сторінці.
-  // Якщо для міста seoTitle не заповнений — падаємо назад на mainTitle.
-  const title =
-    lang === i18n.defaultLocale
-      ? data.seoTitle || data.mainTitle
-      : data.seoTitleRus || data.mainTitleRus;
-  const description =
-    lang === i18n.defaultLocale ? data.mainDescription : data.mainDescriptionRus;
-    const keywords = seoLocationIdPage.seoMetaKeywords;
-    const titleOpenGraph = seoLocationIdPage.seoMetaTitleOpenGraph;
-    const descriptionOpenGraph = seoLocationIdPage.seoMetaDescriptionOpenGraph;
-  
-    const seoMetaPageUrl = getSeoMetaPageUrl(lang);
-
-  return {
-    title,
-    description,
-    keywords,
-    alternates: {
-      canonical: `${seoMetaPageUrl}locations/${slug}`,
-      languages: {
-        'uk': `${process.env.NEXT_PUBLIC_SEO_URL}locations/${slug}`,
-        'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/locations/${slug}`,
-      },
-    },
-    openGraph: {
-      title: titleOpenGraph,
-      url: `${seoMetaPageUrl}locations/${slug}`,
-      description: descriptionOpenGraph,
-      siteName: "EyeDetect",
-      type: "website",
-      images: [
-        {
-          url: "images/seo_images/opengraph-image-400x300.png",
-          type: "image/png",
-          width: 400,
-          height: 300,
-          alt: "EyeDetect",
-        },
-        {
-          url: "images/seo_images/twitter-image-800x600.png",
-          type: "image/png",
-          width: 800,
-          height: 600,
-          alt: "EyeDetect",
-        },
-        {
-          url: "images/seo_images/opengraph-image-1200-630.png",
-          type: "image/png",
-          width: 1200,
-          height: 630,
-          alt: "EyeDetect",
-        },
-      ],
-      locale: lang,
-    },
-  };
+  const p = getCityPage(slug, lang);
+  if (!p) return {};
+  const { seoLocationIdPage } = await getDictionary(lang);
+  return buildPageMetadata({
+    lang,
+    path: `locations/${slug}`,
+    title: fill(p.t.title, p.vars),
+    description: p.isUk ? p.data.mainDescription : p.data.mainDescriptionRus,
+    keywords: seoLocationIdPage.seoMetaKeywords,
+  });
 }
 
 const LocationIdPage = async ({ params }) => {
-  const { lang } = params;
+  const { lang, slug } = params;
+  const p = getCityPage(slug, lang);
+  if (!p) notFound();
   const dictionary = await getDictionary(lang);
-  const slugId = params?.slug;
-  const dataId = getCityData(slugId);
-  const {seoLocationIdPage} = await getDictionary(lang);
+  const { seoLocationIdPage } = dictionary;
+  const { data, t, loc, region, km, vars, isUk } = p;
 
-  const pageUrlJsonLd = getSeoMetaPageUrl(lang);
+  const cityName = isUk ? data.city : data.cityRus;
+  const faq = t.faq[region].map((f) => ({ q: fill(f.q, vars), a: fill(f.a, vars) }));
 
-  const name_01 = seoLocationIdPage.seoMetaNameJsonLd_1;
-  const name_02 = seoLocationIdPage.seoMetaNameJsonLd_2;
-  const name_03 = seoLocationIdPage.seoMetaNameJsonLd_3;
+  const crumbs = breadcrumbsJsonLd(lang, [
+    ["", seoLocationIdPage.seoMetaNameJsonLd_1],
+    ["locations", seoLocationIdPage.seoMetaNameJsonLd_2],
+    [`locations/${slug}`, `${seoLocationIdPage.seoMetaNameJsonLd_3} ${cityName}`],
+  ]);
 
-  const cityIdName = lang === i18n.defaultLocale ? dataId?.city : dataId?.cityRus;
-
-  const jsonLd = {
-    "@context": "http://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        item: {
-          "@id": pageUrlJsonLd,
-          name: name_01,
-        },
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        item: {
-          "@id": `${pageUrlJsonLd}locations`,
-          name: name_02,
-        },
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        item: {
-          "@id": `${pageUrlJsonLd}locations/${slugId}`,
-          name: `${name_03} ${cityIdName}`,
-        },
-      },
-    ],
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: fill(t.h1, vars),
+    serviceType: isUk ? "Детектор брехні EyeDetect" : "Детектор лжи EyeDetect",
+    areaServed: { "@type": "City", name: cityName },
+    provider: {
+      "@type": "LocalBusiness",
+      name: "EyeDetect Lviv",
+      telephone: "+380686833368",
+      address: { "@type": "PostalAddress", streetAddress: isUk ? "вул. Городоцька, 45" : "ул. Городоцкая, 45", addressLocality: isUk ? "Львів" : "Львов", postalCode: "79000", addressCountry: "UA" },
+      url: process.env.NEXT_PUBLIC_SEO_URL,
+    },
+    url: `${getSeoMetaPageUrl(lang)}locations/${slug}`,
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getContentFaqJsonLd(faq)) }} />
+      <PageHero
+        eyebrow={t.eyebrow}
+        title={fill(t.h1, vars)}
+        sub={fill(t.sub[region], vars)}
+        facts={t.facts}
+        primary={t.visit.cta}
+        secondaryHref="#visit"
+        secondaryLabel={t.online.cta}
+        photo="/images/converus/eyedetect-examinee.webp"
+        photoAlt={fill(t.h1, vars)}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(getFaqJsonLd(FAQData, lang)),
-        }}
-      />
-      <MachineSection lang={lang} dictionary={dictionary} slug={slugId} />
-      <DynamicServicesSection
-        lang={lang}
-        dictionary={dictionary}
-        slug={slugId}
-      />
-      <DynamicTownsSection lang={lang} slug={slugId} />
-      <DynamicVideoSection lang={lang} dictionary={dictionary} slug={slugId} />
+      <CityVisitSection t={t} region={region} loc={loc} km={km} dictionary={dictionary} lang={lang} />
+      <DynamicServicesSection lang={lang} dictionary={dictionary} slug={slug} />
+      <DynamicVideoSection lang={lang} dictionary={dictionary} slug={slug} />
+      <DynamicTownsSection lang={lang} slug={slug} />
       <DynamicGuaranteeSection lang={lang} dictionary={dictionary} />
-      <DynamicHomeFAQSection
-        lang={lang}
-        dictionary={dictionary}
-        data={FAQData}
-      />
-      <DynamicHomeConditionsSection dictionary={dictionary} />
+      <ContentFaq items={faq} lang={lang} title={fill(t.faqTitle, vars)} />
     </>
   );
 };

@@ -1,0 +1,148 @@
+@import "../../app/variables";
+@import "../eyedetectPage/EyedetectSections.module.scss";
+
+.stepsGrid {
+  display: grid;
+  gap: 32px;
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    align-items: center;
+    gap: 56px;
+  }
+}
+
+.phone {
+  justify-self: center;
+  max-width: 260px;
+
+  & img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media screen and (min-width: $laptop) {
+    max-width: 320px;
+  }
+}
+
+.prices {
+  display: grid;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 760px;
+  }
+}
+
+.priceCard {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px;
+}
+
+.featured {
+  border-color: $primary;
+  box-shadow: 0 0 0 1px $primary;
+}
+
+.priceName {
+  font-family: var(--font-bold);
+  font-size: 16px;
+  color: $subTitleColor;
+}
+
+.priceValue {
+  font-family: var(--font-head);
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  color: $primary;
+}
+
+.btn {
+  @include buttonPrimary;
+  margin-top: 12px;
+}
+
+.upgrade {
+  max-width: 62ch;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 16px 20px;
+  background-color: $panelBgColor;
+  border-left: 3px solid $primary;
+  border-radius: 0 $radiusCard $radiusCard 0;
+}
+
+.fit {
+  display: grid;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+.fitCol {
+  @include card;
+  padding: 24px;
+}
+
+.fitList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  & svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    fill: none;
+    stroke: $primary;
+  }
+}
+
+.reqs {
+  display: grid;
+  gap: 12px;
+  max-width: 820px;
+}
+
+.req {
+  @include card;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 16px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.reqNum {
+  @include iconBadge;
+  width: 32px;
+  height: 32px;
+  font-family: var(--font-bold);
+  font-size: 14px;
+  color: $primary;
+}

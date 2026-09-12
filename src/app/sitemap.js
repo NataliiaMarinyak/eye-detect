@@ -1,15 +1,12 @@
-import { europeanCitiesData } from "@/data/europeanCitiesData";
-import { ukrainianCitiesData } from "@/data/ukrainianCitiesData";
+import { getAllCities } from "@/helpers/getCityData";
 
 // export const runtime = "edge"; // або 'node' якщо edge не підходить
 export const dynamic = "force-static";
 
 const baseUrl = process.env.NEXT_PUBLIC_SEO_URL;
 // Львів веде головна сторінка, а /locations/lviv віддає 308 на неї —
-// тож у sitemap його не подаємо.
-const allCitiesArray = [...ukrainianCitiesData, ...europeanCitiesData].filter(
-  (el) => el.slug !== "lviv"
-);
+// тож у sitemap його не подаємо. Донецьк і Луганськ виключені в getAllCities.
+const allCitiesArray = getAllCities().filter((el) => el.slug !== "lviv");
 
 
 export default async function sitemap() {
@@ -32,6 +29,8 @@ export default async function sitemap() {
       { href: "", priority: 1.0 },
       { href: "prices", priority: 0.9 },
       { href: "eyedetect", priority: 0.9 },
+      { href: "online", priority: 0.9 },
+      { href: "business", priority: 0.9 },
       { href: "situations/fidelity", priority: 0.8 },
       { href: "situations/theft", priority: 0.8 },
       { href: "situations/leak", priority: 0.8 },

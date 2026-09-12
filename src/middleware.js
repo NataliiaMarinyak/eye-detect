@@ -38,6 +38,12 @@ export function middleware(request) {
     return NextResponse.redirect(new URL("/ru", request.url), 308);
   }
 
+  // Виїзд у Донецьк і Луганськ неможливий: сторінки закриті, 308 на список локацій.
+  const closedCity = pathname.match(/^(\/ru)?\/locations\/(donetsk|luhansk)\/?$/);
+  if (closedCity) {
+    return NextResponse.redirect(new URL(`${closedCity[1] || ""}/locations`, request.url), 308);
+  }
+
   // Пропускаємо системні файли
   if (
     pathname.startsWith("/_next") ||

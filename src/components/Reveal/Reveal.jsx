@@ -19,7 +19,7 @@ function getObserver() {
         observer.unobserve(e.target);
       }
     },
-    { rootMargin: "0px 0px -8% 0px", threshold: 0.15 }
+    { rootMargin: "0px 0px -6% 0px", threshold: 0.01 }
   );
   return observer;
 }
@@ -45,7 +45,11 @@ const Reveal = ({ children, as = "div", delay = 0, className = "", y, amount }) 
     };
     callbacks.set(el, show);
     getObserver().observe(el);
+    // Запобіжник: якщо спостерігач з якоїсь причини не спрацював,
+    // блок усе одно з'явиться через 6 секунд.
+    const timer = setTimeout(show, 6000);
     return () => {
+      clearTimeout(timer);
       callbacks.delete(el);
       observer && observer.unobserve(el);
     };

@@ -1,0 +1,130 @@
+@import "../../app/variables";
+@import "../eyedetectPage/EyedetectSections.module.scss";
+
+.cases {
+  display: grid;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+.more {
+  margin-top: auto;
+  padding-top: 14px;
+  font-size: 15px;
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  align-self: flex-start;
+}
+
+.stepsGrid {
+  display: grid;
+  gap: 32px;
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    align-items: center;
+    gap: 56px;
+  }
+}
+
+.photo {
+  @include card;
+  overflow: hidden;
+  padding: 16px;
+  background-color: $panelBgColor;
+  justify-self: center;
+  max-width: 360px;
+
+  & img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.priceBox {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  max-width: 720px;
+
+  @media screen and (min-width: $laptop) {
+    padding: 32px;
+  }
+}
+
+.priceList {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid $lineColor;
+  font-size: 16px;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.priceVal {
+  font-family: var(--font-bold);
+  color: $primary;
+  white-space: nowrap;
+}
+
+.travel {
+  font-size: 14px;
+  line-height: 1.55;
+  color: $subTitleColor;
+}
+
+.btn {
+  @include buttonPrimary;
+  align-self: flex-start;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    min-width: 240px;
+  }
+}
+
+.legal {
+  display: grid;
+  gap: 12px;
+  max-width: 820px;
+}
+
+.legalItem {
+  @include card;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  padding: 18px 20px;
+  font-size: 15px;
+  line-height: 1.6;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.legalNum {
+  @include iconBadge;
+  width: 32px;
+  height: 32px;
+  font-family: var(--font-bold);
+  font-size: 14px;
+  color: $primary;
+}

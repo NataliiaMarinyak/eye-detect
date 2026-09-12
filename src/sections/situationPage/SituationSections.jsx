@@ -63,7 +63,7 @@ const SituationSections = ({ s, lang, others, dictionary }) => {
                 <div className={styles.formatFooter}>
                   <p className={styles.price}>{f.price}</p>
                   {i === 0 ? (
-                    <a href="/#paths" className={styles.btnSecondary}>{f.cta}</a>
+                    <a href={`${lang === "uk" ? "" : "/" + lang}/online`} className={styles.btnSecondary}>{f.cta}</a>
                   ) : (
                     <OpenModalBtn customClass={styles.btnPrimary} title={f.cta} />
                   )}
@@ -108,7 +108,7 @@ const SituationSections = ({ s, lang, others, dictionary }) => {
             <p className={styles.ctaText}>{t.ctaText}</p>
           </Reveal>
           <div className={styles.ctaActions}>
-            <a href="/#paths" className={styles.ctaSecondary}>{dictionary.buttons.testOnline}</a>
+            <a href={`${lang === "uk" ? "" : "/" + lang}/online`} className={styles.ctaSecondary}>{dictionary.buttons.testOnline}</a>
             <OpenModalBtn customClass={styles.ctaPrimary} title={dictionary.buttons.orderConsultation} />
           </div>
         </div>

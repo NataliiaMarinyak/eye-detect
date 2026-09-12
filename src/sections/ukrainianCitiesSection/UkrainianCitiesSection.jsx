@@ -4,7 +4,8 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
-import { ukrainianCitiesData } from "@/data/ukrainianCitiesData";
+import { getUkrainianCities } from "@/helpers/getCityData";
+const ukrainianCitiesData = getUkrainianCities();
 // import { languagesData } from "@/data/languagesData";
 import styles from "./UkrainianCitiesSection.module.scss";
 import { i18n } from "@/dictionaries/i18n.config";

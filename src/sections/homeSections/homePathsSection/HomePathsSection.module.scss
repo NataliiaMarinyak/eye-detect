@@ -138,3 +138,7 @@
     min-width: 200px;
   }
 }
+
+.btnLink {
+  @include buttonPrimary;
+}

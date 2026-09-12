@@ -6,6 +6,18 @@ export const navLinksData = [
     href: "/",
   },
   {
+    title: "Онлайн-тест",
+    titleRus: "Онлайн-тест",
+    titleEng: "Online test",
+    href: "/online",
+  },
+  {
+    title: "Для бізнесу",
+    titleRus: "Для бизнеса",
+    titleEng: "For business",
+    href: "/business",
+  },
+  {
     title: "Ціни",
     titleRus: "Цены",
     titleEng: "Prices",

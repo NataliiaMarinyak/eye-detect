@@ -133,7 +133,7 @@ const EyedetectSections = ({ d, lang }) => (
           <p className={styles.ctaText}>{d.cta.text}</p>
         </Reveal>
         <div className={styles.ctaActions}>
-          <a href="/#paths" className={styles.ctaSecondary}>
+          <a href={`${lang === "uk" ? "" : "/" + lang}/online`} className={styles.ctaSecondary}>
             {d.cta.online}
           </a>
           <OpenModalBtn customClass={styles.ctaPrimary} title={d.cta.book} />

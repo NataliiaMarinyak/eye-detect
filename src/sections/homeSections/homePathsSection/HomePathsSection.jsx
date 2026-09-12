@@ -72,7 +72,7 @@ const HomePathsSection = ({ dictionary }) => {
             logo="/images/converus/logo-verifeye.png"
             logoW={600}
             logoH={192}
-            cta={<OpenModalBtn customClass={styles.btn} title={d.online.cta} />}
+            cta={<a href={`${dictionary.lang === "uk" ? "" : "/" + dictionary.lang}/online`} className={`${styles.btn} ${styles.btnLink}`}>{d.online.cta}</a>}
           />
         </ul>
       </div>

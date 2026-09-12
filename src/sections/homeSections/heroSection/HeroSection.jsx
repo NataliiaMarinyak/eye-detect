@@ -20,7 +20,7 @@ const HeroSection = ({ dictionary }) => {
           <p className={styles.sub}>{hero.sub}</p>
 
           <div className={styles.actions}>
-            <a href="#paths" className={styles.btnPrimary}>
+            <a href={`${dictionary.lang === "uk" ? "" : "/" + dictionary.lang}/online`} className={styles.btnPrimary}>
               {dictionary.buttons.testOnline}
             </a>
             <OpenModalBtn

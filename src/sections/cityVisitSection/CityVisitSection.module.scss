@@ -1,0 +1,129 @@
+@import "../../app/variables";
+
+.section {
+  background-color: $cardBgColor;
+  border-bottom: 1px solid $lineColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: $laptop) {
+    gap: 32px;
+  }
+}
+
+.title {
+  @include sectionTitle;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+.card {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+  @media screen and (min-width: $laptop) {
+    padding: 28px 32px;
+  }
+}
+
+.cardAccent {
+  border-color: $primary;
+}
+
+.badge {
+  font-family: var(--font-bold);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: $subTitleColor;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid $lineColor;
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.price {
+  font-family: var(--font-head);
+  font-size: 19px;
+  letter-spacing: -0.01em;
+}
+
+.btnPrimary {
+  @include buttonPrimary;
+
+  @media screen and (min-width: $laptop) {
+    width: auto;
+    min-width: 180px;
+  }
+}
+
+.btnSecondary {
+  @include buttonSecondary;
+
+  @media screen and (min-width: $laptop) {
+    width: auto;
+    min-width: 180px;
+  }
+}
+
+.noteRow {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 24px;
+  background-color: $panelBgColor;
+  border-radius: $radiusCard;
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.note {
+  font-size: 15px;
+  line-height: 1.55;
+  max-width: 62ch;
+}
+
+.quiz {
+  @media screen and (min-width: $laptop) {
+    width: auto;
+    min-width: 220px;
+  }
+}
