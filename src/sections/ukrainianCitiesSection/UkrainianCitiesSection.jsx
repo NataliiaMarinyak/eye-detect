@@ -27,7 +27,7 @@ const UkrainianCitiesSection = ({ lang, dictionary }) => {
           {ukrainianCitiesData.map((item) => (
             <li key={item.slug} className={styles.cityItem}>
               <Link
-                href={`${prefix}/locations/${item.slug}`}
+                href={item.slug === "lviv" ? `${prefix}/` : `${prefix}/locations/${item.slug}`}
                 className={styles.cityLink}
               >
                 {lang === i18n.locales[0] ? item.city : item.cityRus}
