@@ -91,7 +91,7 @@ const SituationSections = ({ s, lang, others, dictionary }) => {
           </Reveal>
           <Reveal delay={0.1} className={styles.reportFigure}>
             <div className={styles.reportImg}>
-              <Image src={s.report} alt={t.reportCaption} width={1488} height={2105} sizes="(max-width: 1023px) 100vw, 440px" />
+              <Image src={s.report} alt={t.reportCaption} width={1488} height={1595} sizes="(max-width: 1023px) 100vw, 440px" />
             </div>
             <p className={styles.caption}>{t.reportCaption}</p>
           </Reveal>

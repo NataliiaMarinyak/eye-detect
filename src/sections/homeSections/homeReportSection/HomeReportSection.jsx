@@ -29,7 +29,7 @@ const HomeReportSection = ({ dictionary }) => {
               src="/images/report-sample-eyedetect.webp"
               alt={d.caption}
               width={1488}
-              height={2105}
+              height={1595}
               sizes="(max-width: 1023px) 100vw, 480px"
             />
           </div>
