@@ -19,10 +19,14 @@
 .title {
   @include sectionTitle;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .subTitle {
   @include sectionSubTitle;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .steps {
