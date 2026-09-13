@@ -6,9 +6,14 @@ export const runtime = "nodejs";
 
 const clean = (v, max) => String(v || "").replace(/\s+/g, " ").trim().slice(0, max);
 // Для повідомлення зберігаємо переноси рядків (квіз надсилає відповіді по рядку).
-const cleanMultiline = (v, max) => String(v || "").replace(//g, "").split("
-").map((l) => l.replace(/[ 	]+/g, " ").trim()).filter(Boolean).join("
-").slice(0, max);
+const cleanMultiline = (v, max) =>
+  String(v || "")
+    .replace(/\r/g, "")
+    .split("\n")
+    .map((l) => l.replace(/[ \t]+/g, " ").trim())
+    .filter(Boolean)
+    .join("\n")
+    .slice(0, max);
 
 export async function POST(request) {
   let body;
@@ -45,9 +50,7 @@ export async function POST(request) {
     `Ім'я: ${name}`,
     `Телефон: ${tel}`,
     email ? `Email: ${email}` : null,
-    comment ? (comment.includes("
-") ? `
-${comment}` : `Повідомлення: ${comment}`) : null,
+    comment ? (comment.includes("\n") ? `\n${comment}` : `Повідомлення: ${comment}`) : null,
   ].filter(Boolean);
 
   try {
