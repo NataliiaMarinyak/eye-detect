@@ -56,8 +56,8 @@
 
   & li {
     display: flex;
-    align-items: center;
-    gap: 4px;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   & p {
@@ -68,19 +68,17 @@
   }
 
   & svg {
-    border-radius: 50%;
-    width: 24px;
-    min-width: 24px;
-    height: 24px;
-    stroke: $textLightColor;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: 3px;
     fill: none;
-    background-color: $footerBgColor;
-    padding: 4px;
+    stroke: $primary;
   }
 
   @media screen and (min-width: $tablet) {
     & li {
-      gap: 20px;
+      gap: 12px;
     }
 
     & p {
@@ -88,10 +86,9 @@
     }
 
     & svg {
-      width: 48px;
-      min-width: 48px;
-      height: 48px;
-      padding: 8px;
+      width: 24px;
+      height: 24px;
+      margin-top: 4px;
     }
   }
 

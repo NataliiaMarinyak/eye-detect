@@ -40,3 +40,4 @@ next-env.d.ts
 # local AI tooling (not for the repo)
 /.claude/
 .mcp.json
+scratchpad/

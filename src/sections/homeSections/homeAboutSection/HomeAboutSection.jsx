@@ -32,7 +32,7 @@ const HomeAboutSection = ({ lang, dictionary }) => {
                 return (
                   <li key={i}>
                     <svg aria-hidden="true">
-                      <use href="/sprite.svg#icon-check-mark-in-circle"></use>
+                      <use href="/sprite.svg#icon-check-solid"></use>
                     </svg>
                     <p>{getLocalizedField(el, "text", lang)}</p>
                   </li>

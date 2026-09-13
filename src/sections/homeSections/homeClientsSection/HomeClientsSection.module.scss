@@ -17,12 +17,6 @@
 
 .title {
     @include sectionTitle;
-
-    font-size: 18px;
-
-    @media screen and (min-width: 381px) and (max-width: 767px) {
-        font-size: 22px;
-    }
 }
 
 .imgWrapper {
@@ -34,8 +28,9 @@
     }
 
     @media screen and (min-width: $laptop) {
-        width: 960px;
-        height: 321px;
+        width: 100%;
+        max-width: 960px;
+        aspect-ratio: 960/321;
     }
 }
 

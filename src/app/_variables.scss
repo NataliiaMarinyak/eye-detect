@@ -83,8 +83,10 @@ $radiusBtn: 12px;
   font-weight: 400;
   line-height: 1.08;
   letter-spacing: -0.02em;
-  text-align: left;
-  align-self: flex-start;
+  text-align: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   max-width: 20ch;
 
@@ -103,8 +105,10 @@ $radiusBtn: 12px;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  text-align: left;
-  align-self: flex-start;
+  text-align: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   max-width: 24ch;
 
@@ -117,8 +121,8 @@ $radiusBtn: 12px;
   }
 }
 
-// Заголовок і підзаголовок по центру: mixin-и вище мають max-width і align-self,
-// тому самого text-align недостатньо.
+// Усі заголовки й підзаголовки по центру (рішення замовника 13.09.2026).
+// sectionTitleCentered залишено для сумісності: тепер це те саме, що sectionTitle.
 @mixin sectionTitleCentered {
   @include sectionTitle;
   text-align: center;
@@ -131,8 +135,10 @@ $radiusBtn: 12px;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.55;
-  text-align: left;
-  align-self: flex-start;
+  text-align: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   max-width: 62ch;
   color: $subTitleColor;

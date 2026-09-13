@@ -1,98 +1,73 @@
 @import "../../app/variables";
 
+// Міста України: заголовок по центру, список як сітка посилань без фіксованих висот.
 .section {
-    padding: 20px 16px;
+  padding: 24px 20px 32px;
 
-    @media screen and (min-width: 327px) {
-        padding: 20px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding: 32px 40px 40px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        padding: 20px 40px 32px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        padding: 32px;
-    }
+  @media screen and (min-width: $laptop) {
+    padding: 40px 32px 48px;
+  }
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 
-    @media screen and (min-width: $tablet) {
-        width: 454px;
-        row-gap: 20px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        width: 100%;
-        row-gap: 24px;
-    }
+  @media screen and (min-width: $tablet) {
+    gap: 24px;
+  }
 }
 
 .title {
-    @include sectionTitle;
-
-    height: 56px;
-    font-size: 20px;
-
-    @media screen and (min-width: 343px) and (max-width:767px) {
-        max-width: 420px;
-        height: 62px;
-        font-size: 22px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        height: 73px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        height: 42px;
-    }
+  @include sectionTitleCentered;
 }
 
 .citiesWrapper {
-    max-width: 304px;
-    height: 330px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    column-gap: 2px;
-    row-gap: 4px;
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 12px;
 
-    @media screen and (min-width: $tablet) {
-        max-width: 100%;
-        height: 412px;
-        margin-left: 4vw;
-    }
+  @media screen and (min-width: 480px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 
-    @media screen and (min-width: $laptop) {
-        max-width: 410px;
-        height: 452px;
-        margin-left: 2vw;
-    }
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px 16px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
 
 .cityItem {
-    width: calc((100% - 2px) / 2);
-    max-width: 143px;
-    font-size: 14px;
+  font-size: 15px;
+  text-align: center;
 
-    @media screen and (min-width: $tablet) {
-        max-width: 183px;
-        font-size: 18px;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
 
-    @media screen and (min-width: $laptop) {
-        max-width: 204px;
-        font-size: 20px;
-    }
+.cityLink {
+  display: block;
+  padding: 6px 8px;
+  border-radius: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cityLink:hover,
 .cityLink:focus {
-    background-color: $btnHoverBgColor;
+  background-color: $btnHoverBgColor;
 }

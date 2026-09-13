@@ -33,6 +33,7 @@ const EuropeanCitiesSection = ({ lang, dictionary }) => {
                 <p className={styles.country}>
                   {lang === i18n.locales[0] ? item.country : item.countryRus}
                 </p>
+                <span className={styles.arrow} aria-hidden="true" />
                 <p className={styles.city}>
                   {lang === i18n.locales[0] ? item.city : item.cityRus}
                 </p>
@@ -40,10 +41,7 @@ const EuropeanCitiesSection = ({ lang, dictionary }) => {
             </li>
           ))}
         </ul>
-        <OpenModalBtn
-          customClass={styles.modalBtn}
-          title={dictionary.buttons.orderConsultation}
-        />
+        <OpenModalBtn title={dictionary.buttons.orderConsultation} />
       </div>
     </section>
   );

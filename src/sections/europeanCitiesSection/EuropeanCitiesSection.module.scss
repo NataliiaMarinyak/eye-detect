@@ -1,22 +1,15 @@
 @import "../../app/variables";
 
+// Міста Європи: рядки «країна → столиця» у дві колонки на комп'ютері.
 .section {
-  padding: 20px 0px;
-
-  @media screen and (min-width: 360px) {
-    padding: 20px 8px;
-  }
-
-  @media screen and (min-width: 383px) {
-    padding: 20px;
-  }
+  padding: 24px 20px 40px;
 
   @media screen and (min-width: $tablet) {
-    padding: 20px 40px 32px;
+    padding: 32px 40px 48px;
   }
 
   @media screen and (min-width: $laptop) {
-    padding: 32px 28px;
+    padding: 40px 32px 56px;
   }
 }
 
@@ -24,157 +17,67 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 16px;
+  gap: 20px;
 
   @media screen and (min-width: $tablet) {
-    width: 480px;
-    row-gap: 20px;
-  }
-
-  @media screen and (min-width: $laptop) {
-    width: 100%;
-    row-gap: 24px;
+    gap: 24px;
   }
 }
 
 .title {
-  @include sectionTitle;
-
-  height: 56px;
-  padding: 0px 20px;
-  font-size: 20px;
-
-  @media screen and (min-width: 343px) and (max-width: 767px) {
-    padding: 0px;
-    max-width: 420px;
-    height: 62px;
-    font-size: 22px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    height: 73px;
-    padding: 0px;
-  }
-
-  @media screen and (min-width: $laptop) {
-    height: 42px;
-  }
+  @include sectionTitleCentered;
 }
 
 .locationsWrapper {
   width: 100%;
-  height: 1092px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 4px;
-  padding: 0px 2px;
-
-  @media screen and (min-width: 383px) {
-    width: 343px;
-    height: 1164px;
-  }
-
-  @media screen and (min-width: 400px) {
-    width: 360px;
-  }
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px 32px;
 
   @media screen and (min-width: $tablet) {
-    width: 100%;
-    height: 1449px;
-    padding: 0px;
-  }
-
-  @media screen and (min-width: $laptop) {
-    height: 723px;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 .locationItem {
-  width: 100%;
-  font-size: 13px;
-
-  @media screen and (min-width: 383px) {
-    font-size: 14px;
-  }
+  font-size: 14px;
 
   @media screen and (min-width: $tablet) {
-    font-size: 18px;
+    font-size: 17px;
   }
-
-  @media screen and (min-width: $laptop) {
-    max-width: 460px;
-  }
-}
-
-.locationItem:hover {
-  background-color: $btnHoverBgColor;
 }
 
 .locationLink {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  column-gap: 3px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 20px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
 
-  @media screen and (min-width: $tablet) {
-    column-gap: 0px;
-  }
+.locationLink:hover,
+.locationLink:focus {
+  background-color: $btnHoverBgColor;
 }
 
 .country {
-  width: 165px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
-  @media screen and (min-width: 343px) {
-    width: 190px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 230px;
-  }
+.arrow {
+  width: 16px;
+  height: 16px;
+  background-image: url(../../../public/svgs/nav-arrow.svg);
+  background-size: cover;
+  justify-self: center;
 }
 
 .city {
-  width: 148px;
-  position: relative;
-
-  @media screen and (min-width: $tablet) {
-    width: 230px;
-    padding-left: 40px;
-  }
-}
-
-.city::before {
-  content: "";
-  // background-image: url(/svgs/nav-arrow.svg);
-  background-image: url(../../../public/svgs/nav-arrow.svg);
-
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  background-size: cover;
-  left: -10px;
-
-  @media screen and (min-width: 380px) {
-    width: 14px;
-    height: 14px;
-    left: -14px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 24px;
-    height: 24px;
-    left: 0px;
-  }
-}
-
-.modalBtn {
-  width: calc(100% - 40px);
-
-  @media screen and (min-width: $tablet) {
-    width: 100%;
-  }
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
