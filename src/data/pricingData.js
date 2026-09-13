@@ -183,11 +183,6 @@ export const pricingNotes = [
     textEng: "The surcharges below apply to EyeDetect tests in office or on-site. VerifEye online has no surcharges.",
   },
   {
-    text: "Тест у день звернення — +30% до вартості.",
-    textRus: "Тест в день обращения — +30% к стоимости.",
-    textEng: "Same-day testing — +30%.",
-  },
-  {
     text: "Терміновий тест без черги протягом години — +100% до вартості.",
     textRus: "Срочный тест без очереди в течение часа — +100% к стоимости.",
     textEng: "Urgent test within an hour, no queue — +100%.",
