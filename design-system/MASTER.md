@@ -34,6 +34,7 @@ Dials: Variance 2/10 · Motion 3/10 · Density 4/10.
 | Border | `#DCE3EC` | `$lineColor` | межі карток, роздільники |
 | Success / Error | `#047857` / `#B91C1C` | `$alert-success` / `$alert-error` | форма, результат «правдивий/обман» |
 | Text on dark | `#FFFFFF` (95% opacity for body) | `$textLightColor` | hero, футер |
+| Primary on dark (акцент на темному) | `#93C5FD` | `$primaryOnDark` | надзаголовок hero, посилання у підвалі при наведенні |
 
 Контраст усіх пар тексту ≥ 4.5:1.
 
