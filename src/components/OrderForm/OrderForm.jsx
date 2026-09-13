@@ -145,6 +145,7 @@ const OrderForm = ({ dictionary, service = "", compact = false }) => {
       </div>
 
       {!compact && (
+      <>
       <div className={styles.inputWrap}>
         <p className={styles.error}>{errors.email?.message}</p>
 
@@ -172,6 +173,7 @@ const OrderForm = ({ dictionary, service = "", compact = false }) => {
           {...register("comment")}
         />
       </div>
+      </>
       )}
 
       <button
