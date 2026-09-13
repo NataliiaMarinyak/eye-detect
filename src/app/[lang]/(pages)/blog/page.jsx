@@ -5,7 +5,6 @@ import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./blog.module.scss";
 
 const localHref = (lang, path) => (lang === i18n.defaultLocale ? path : `/${lang}${path}`);
-const fmtDate = (d, lang) => new Date(d).toLocaleDateString({ ru: "ru-RU", en: "en-GB" }[lang] || "uk-UA", { day: "numeric", month: "long", year: "numeric" });
 
 export async function generateMetadata({ params }) {
   const { lang } = params;
@@ -29,7 +28,6 @@ const BlogPage = ({ params }) => {
           <ul className={styles.list}>
             {posts.map((p) => (
               <li key={p.slug} className={styles.card}>
-                <p className={styles.date}>{fmtDate(p.date, lang)}</p>
                 <h2 className={styles.cardTitle}>
                   <Link href={localHref(lang, `/blog/${p.slug}`)}>{p.title}</Link>
                 </h2>

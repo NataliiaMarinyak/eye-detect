@@ -10,7 +10,6 @@ import { i18n } from "@/dictionaries/i18n.config";
 import styles from "../blog.module.scss";
 
 const localHref = (lang, path) => (lang === i18n.defaultLocale ? path : `/${lang}${path}`);
-const fmtDate = (d, lang) => new Date(d).toLocaleDateString({ ru: "ru-RU", en: "en-GB" }[lang] || "uk-UA", { day: "numeric", month: "long", year: "numeric" });
 
 export async function generateStaticParams() {
   return i18n.locales.flatMap((lang) => blogPosts.map((p) => ({ lang, slug: p.slug })));
@@ -57,7 +56,6 @@ const PostPage = ({ params }) => {
             <Link href={localHref(lang, "/blog")}>{t.crumb}</Link>
           </nav>
           <h1 className={styles.h1}>{p.h1}</h1>
-          <p className={styles.meta}>{t.published}: {fmtDate(p.date, lang)}</p>
           <p className={styles.lead}>{p.lead}</p>
           <div className={styles.prose}>
             {p.sections.map((s) => (
