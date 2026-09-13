@@ -1,10 +1,10 @@
 import Image from "next/image";
-import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
+import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import styles from "./HeroSection.module.scss";
 
 // Перший екран. Логіка: послуга → задачі клієнта → як це працює → хто проводить і що
 // отримаєте → одна дія з ціною → онлайн як додаткове посилання. Праворуч людина під час тесту.
-// Кнопки «Розрахувати вартість» тут немає навмисно.
+// Головна дія: квіз «Розрахувати точну вартість» (рішення замовника від 13.09.2026).
 const HeroSection = ({ dictionary }) => {
   const hero = dictionary.heroSection;
   const prefix = dictionary.lang === "uk" ? "" : `/${dictionary.lang}`;
@@ -33,7 +33,7 @@ const HeroSection = ({ dictionary }) => {
 
           <div className={styles.actions}>
             <div className={styles.action}>
-              <OpenModalBtn customClass={styles.btnPrimary} title={hero.cta} service="EyeDetect" />
+              <PriceQuizBtn customClass={styles.btnPrimary} title={dictionary.buttons.calculatePrice} />
               <span className={styles.actionNote}>{hero.priceLine}</span>
             </div>
           </div>
