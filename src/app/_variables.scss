@@ -50,17 +50,17 @@ $radiusBtn: 12px;
 }
 
 @mixin sectionTopBottomPadding {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 44px;
+  padding-bottom: 44px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
   @media screen and (min-width: $laptop) {
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
 }
 
