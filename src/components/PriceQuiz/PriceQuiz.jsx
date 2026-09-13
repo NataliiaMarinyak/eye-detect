@@ -99,13 +99,14 @@ const PriceQuiz = ({ lang = "uk" }) => {
 
   const back = () => setCur((c) => Math.max(0, c - 1));
 
-  const phoneDigits = form.phone.replace(/\D/g, "").replace(/^380/, "").replace(/^0/, "");
+  // Номер у вільному форматі, як у формі контактів: перевіряємо лише, що цифр достатньо.
+  const phoneDigits = form.phone.replace(/\D/g, "");
 
   const submit = async (e) => {
     e.preventDefault();
     const errs = {};
     if (!form.name.trim()) errs.name = t.contact.errName;
-    if (phoneDigits.length !== 9) errs.phone = t.contact.errPhone;
+    if (phoneDigits.length < 9) errs.phone = t.contact.errPhone;
     setErrors(errs);
     if (Object.keys(errs).length) return;
 
@@ -121,12 +122,10 @@ const PriceQuiz = ({ lang = "uk" }) => {
       `Відкрито на: ${openedFrom.current}`,
     ].filter(Boolean).join("\n");
 
-    const ok = await sendToTelegram({
-      name: form.name.trim(),
-      tel: `+380${phoneDigits}`,
-      comment,
-      service: "Квіз: розрахунок вартості",
-    });
+    const lead = { name: form.name.trim(), tel: form.phone.trim(), comment, service: "Квіз: розрахунок вартості" };
+    // Та сама відправка, що й у формі контактів (/api/lead → Telegram). Одна повторна спроба при збої мережі.
+    let ok = await sendToTelegram(lead);
+    if (!ok) { await new Promise((r) => setTimeout(r, 1200)); ok = await sendToTelegram(lead); }
     if (ok) {
       track("quiz_lead", { quiz_branch: branch, quiz_format: answers[3] || "" });
       setStatus("idle");
@@ -193,10 +192,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
 
             <label className={styles.field}>
               <span className={styles.label}>{t.contact.phone}</span>
-              <span className={styles.phoneRow}>
-                <span className={styles.prefix}>+380</span>
-                <input type="tel" inputMode="tel" autoComplete="tel-national" placeholder="67 123 45 67" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} aria-invalid={!!errors.phone} />
-              </span>
+              <input type="tel" inputMode="tel" autoComplete="tel" placeholder="+380 67 123 45 67" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} aria-invalid={!!errors.phone} />
               {errors.phone && <span className={styles.error}>{errors.phone}</span>}
             </label>
 
