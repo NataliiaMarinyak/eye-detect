@@ -143,3 +143,8 @@
 .btnLink {
   @include buttonPrimary;
 }
+
+.btnWide {
+  width: 100%;
+  text-align: center;
+}

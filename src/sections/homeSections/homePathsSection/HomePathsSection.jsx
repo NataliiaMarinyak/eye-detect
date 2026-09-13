@@ -1,5 +1,5 @@
 import Image from "next/image";
-import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
+import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import Reveal from "@/components/Reveal/Reveal";
 import styles from "./HomePathsSection.module.scss";
 
@@ -38,7 +38,6 @@ const PathCard = ({ data, cta, delay, photo, logo, logoW, logoH }) => (
         ))}
       </ul>
       <div className={styles.footer}>
-        <p className={styles.price}>{data.price}</p>
         {cta}
       </div>
     </div>
@@ -62,7 +61,7 @@ const HomePathsSection = ({ dictionary }) => {
             logo="/images/converus/logo-eyedetect.png"
             logoW={600}
             logoH={151}
-            cta={<OpenModalBtn customClass={styles.btn} title={d.office.cta} service="EyeDetect" />}
+            cta={<PriceQuizBtn customClass={`${styles.btn} ${styles.btnWide}`} title={dictionary.buttons.calculatePrice} />}
           />
           <PathCard
             data={d.online}
@@ -71,7 +70,7 @@ const HomePathsSection = ({ dictionary }) => {
             logo="/images/converus/logo-verifeye.png"
             logoW={600}
             logoH={192}
-            cta={<a href={`${dictionary.lang === "uk" ? "" : "/" + dictionary.lang}/online`} className={`${styles.btn} ${styles.btnLink}`}>{d.online.cta}</a>}
+            cta={<PriceQuizBtn customClass={`${styles.btn} ${styles.btnWide}`} title={dictionary.buttons.calculatePrice} />}
           />
         </ul>
       </div>
