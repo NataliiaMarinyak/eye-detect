@@ -14,9 +14,6 @@ const HomeOrderSection = ({ lang, dictionary }) => {
               <li className={styles.infoItem}>
                 {dictionary.homeOrderSection.question}
               </li>
-              <li className={styles.infoItem}>
-                {dictionary.homeOrderSection.answer}
-              </li>
             </ul>
             <address>
               <a
