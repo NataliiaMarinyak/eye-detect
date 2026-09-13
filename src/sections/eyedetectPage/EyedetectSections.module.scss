@@ -70,8 +70,7 @@
   @include card;
   overflow: hidden;
   padding: 16px;
-  background-color: #000;
-  border-color: #000;
+  background-color: $cardBgColor;
 
   & img {
     width: 100%;

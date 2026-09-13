@@ -24,7 +24,7 @@ const EyedetectSections = ({ d, lang }) => (
           </ul>
           <Reveal className={styles.stationPhoto}>
             <Image
-              src="/images/converus/eyedetect-station.webp"
+              src="/images/converus/eyedetect-station-white.webp"
               alt="EyeDetect"
               width={1000}
               height={1125}

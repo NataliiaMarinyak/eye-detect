@@ -7,8 +7,8 @@ import { i18n } from "@/dictionaries/i18n.config";
 
 const PHOTOS = {
   lawyers: "/images/converus/eyedetect-examinee.webp",
-  finance: "/images/converus/eyedetect-station-angle.webp",
-  security: "/images/converus/eyedetect-station.webp",
+  finance: "/images/converus/eyedetect-station-front.webp",
+  security: "/images/converus/eyedetect-station-white.webp",
   hr: "/images/converus/verifeye-test.webp",
   counselors: "/images/converus/eyedetect-examinee.webp",
 };

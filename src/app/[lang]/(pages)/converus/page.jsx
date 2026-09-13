@@ -28,7 +28,7 @@ const ConverusPage = ({ params }) => {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(org) }} />
-      <PageHero eyebrow={d.hero.eyebrow} title={d.hero.h1} sub={d.hero.sub} facts={d.hero.facts} photo="/images/converus/eyedetect-station.webp" photoAlt="EyeDetect" />
+      <PageHero eyebrow={d.hero.eyebrow} title={d.hero.h1} sub={d.hero.sub} facts={d.hero.facts} photo="/images/converus/eyedetect-station-front.webp" photoAlt="EyeDetect" />
       <InfoSections blocks={d.blocks} lang={lang} />
     </>
   );

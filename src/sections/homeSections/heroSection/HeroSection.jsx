@@ -39,10 +39,10 @@ const HeroSection = ({ dictionary }) => {
         <div className={styles.media}>
           <div className={styles.photo}>
             <Image
-              src="/images/converus/eyedetect-examinee.webp"
+              src="/images/converus/eye-blue.webp"
               alt={hero.title}
               width={1400}
-              height={1401}
+              height={1120}
               sizes="(max-width: 767px) 92vw, (max-width: 1023px) 60vw, 440px"
               quality={62}
               priority

@@ -76,7 +76,7 @@ const BusinessSections = ({ d, lang, dictionary }) => {
             </ol>
           </div>
           <Reveal className={styles.photo}>
-            <Image src="/images/converus/eyedetect-station-angle.webp" alt="EyeDetect" width={1000} height={1338} sizes="(max-width: 1023px) 70vw, 360px" />
+            <Image src="/images/converus/eyedetect-station-white.webp" alt="EyeDetect" width={1000} height={1338} sizes="(max-width: 1023px) 70vw, 360px" />
           </Reveal>
         </div>
       </section>

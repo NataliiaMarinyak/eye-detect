@@ -28,7 +28,7 @@ const BusinessPage = async ({ params }) => {
         facts={d.hero.facts}
         primary={d.hero.primary}
         service="EyeDetect для бізнесу"
-        photo="/images/converus/eyedetect-station-angle.webp"
+        photo="/images/converus/eyedetect-examinee.webp"
         photoAlt={d.hero.h1}
       />
       <BusinessSections d={d} lang={lang} dictionary={dictionary} />

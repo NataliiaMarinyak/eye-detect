@@ -59,7 +59,7 @@ const HomePathsSection = ({ dictionary }) => {
           <PathCard
             data={d.office}
             delay={0}
-            photo="/images/converus/eyedetect-station-angle.webp"
+            photo="/images/converus/eyedetect-station-white.webp"
             logo="/images/converus/logo-eyedetect.png"
             logoW={600}
             logoH={151}
