@@ -139,7 +139,6 @@ const PriceQuiz = ({ lang = "uk" }) => {
 
   if (!open) return null;
 
-  const progress = cur >= 5 ? 100 : Math.round((cur / 5) * 100);
 
   return (
     <div className={styles.overlay} onMouseDown={(e) => e.target === e.currentTarget && close()}>
@@ -148,9 +147,6 @@ const PriceQuiz = ({ lang = "uk" }) => {
           <span />
           <button type="button" className={styles.close} onClick={close} aria-label={t.close}>×</button>
         </div>
-        {cur < 6 && (
-          <div className={styles.bar} aria-hidden="true"><span style={{ width: `${progress}%` }} /></div>
-        )}
 
         {cur < 5 && (
           <div className={styles.body} key={cur}>
@@ -171,10 +167,12 @@ const PriceQuiz = ({ lang = "uk" }) => {
                 );
               })}
             </ul>
-            <div className={styles.footer}>
-              {cur > 0 ? <button type="button" className={styles.back} onClick={back}>← {t.back}</button> : <span />}
-              <span className={styles.gift}>🎁 {t.gift}</span>
-            </div>
+            <p className={styles.gift}>🎁 {t.gift}</p>
+            {cur > 0 && (
+              <div className={styles.footer}>
+                <button type="button" className={styles.back} onClick={back}>← {t.back}</button>
+              </div>
+            )}
           </div>
         )}
 
