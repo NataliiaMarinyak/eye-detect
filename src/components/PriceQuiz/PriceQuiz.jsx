@@ -10,7 +10,6 @@ import { OPEN_QUIZ_EVENT } from "./quizEvent";
 
 const TEL = "+380686833368";
 const TEL_H = "+380 68 68 333 68";
-const TELEGRAM = "https://t.me/Detecteye";
 const SOURCE_KEY = "eye_first_source";
 
 const track = (event, params = {}) => {
@@ -219,7 +218,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
             <h2 className={styles.q}>{t.done.title}</h2>
             <p className={styles.sub}>{t.done.text}<a href={`tel:${TEL}`}>{TEL_H}</a></p>
             <div className={styles.doneActions}>
-              <a className={styles.submit} href={TELEGRAM} target="_blank" rel="noopener noreferrer">{t.done.telegram}</a>
+              <a className={styles.submit} href={`tel:${TEL}`}>{t.done.call}</a>
               <button type="button" className={styles.secondary} onClick={close}>{t.done.close}</button>
             </div>
           </div>
