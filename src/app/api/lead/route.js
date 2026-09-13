@@ -5,6 +5,10 @@ import { NextResponse } from "next/server";
 export const runtime = "nodejs";
 
 const clean = (v, max) => String(v || "").replace(/\s+/g, " ").trim().slice(0, max);
+// Для повідомлення зберігаємо переноси рядків (квіз надсилає відповіді по рядку).
+const cleanMultiline = (v, max) => String(v || "").replace(//g, "").split("
+").map((l) => l.replace(/[ 	]+/g, " ").trim()).filter(Boolean).join("
+").slice(0, max);
 
 export async function POST(request) {
   let body;
@@ -17,7 +21,7 @@ export async function POST(request) {
   const name = clean(body.name, 60);
   const tel = clean(body.tel, 24);
   const email = clean(body.email, 120);
-  const comment = clean(body.comment, 1000);
+  const comment = cleanMultiline(body.comment, 1500);
   const page = clean(body.page, 200);
   const service = clean(body.service, 120);
 
@@ -41,7 +45,9 @@ export async function POST(request) {
     `Ім'я: ${name}`,
     `Телефон: ${tel}`,
     email ? `Email: ${email}` : null,
-    comment ? `Повідомлення: ${comment}` : null,
+    comment ? (comment.includes("
+") ? `
+${comment}` : `Повідомлення: ${comment}`) : null,
   ].filter(Boolean);
 
   try {
