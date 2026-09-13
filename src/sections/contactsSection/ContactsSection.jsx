@@ -46,7 +46,6 @@ const ContactsSection = ({ lang, dictionary }) => {
   }, []);
 
   const phone = socialMediaData.find((s) => s.name === "phone");
-  const telegram = socialMediaData.find((s) => s.name === "telegram");
   const email = socialMediaData.find((s) => s.name === "email");
   const socials = socialMediaData.filter((s) => ["facebook", "instagram", "tiktok"].includes(s.name));
   const address = isUk ? addressData.textAddress : addressData.textAddressRus;
@@ -67,13 +66,6 @@ const ContactsSection = ({ lang, dictionary }) => {
               </span>
               <span className={styles.cardLabel}>{t.call}</span>
               <span className={styles.cardValue}>{phone.contact}</span>
-            </a>
-            <a href={telegram.href} target="_blank" rel="noopener noreferrer" className={`${styles.card} ${styles.cardLink}`}>
-              <span className={styles.icon}>
-                <svg><use href={telegram.icon} /></svg>
-              </span>
-              <span className={styles.cardLabel}>{t.write} · Telegram</span>
-              <span className={styles.cardValue}>{telegram.contact}</span>
             </a>
             <a href={email.href} className={`${styles.card} ${styles.cardLink}`}>
               <span className={styles.icon}>

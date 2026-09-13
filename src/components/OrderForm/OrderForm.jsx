@@ -56,7 +56,7 @@ const OrderForm = ({ dictionary, service = "", compact = false }) => {
       toast.success(dictionary.notifications.success);
       closeModal();
     } else {
-      toast.error(dictionary.notifications.error || "Не вдалося надіслати. Напишіть у Telegram або зателефонуйте.");
+      toast.error(dictionary.notifications.error || "Не вдалося надіслати. Зателефонуйте нам, будь ласка.");
     }
   };
 
