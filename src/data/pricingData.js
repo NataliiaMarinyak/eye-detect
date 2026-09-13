@@ -235,9 +235,17 @@ export const pricingIncluded = [
   },
 ];
 
-// Порівняння зі світовими цінами — курс НБУ станом на 27.08.2026.
+// Порівняння зі світовими цінами. Курс НБУ станом на кінець серпня 2026.
+// Джерела: сайти сертифікованих партнерів Converus (liedetectors-uk.com, eyedetect.pl,
+// eyecanknow.com) і прайс партнера у Великій Британії за £595.
 export const pricingComparison = {
-  text: "У Великій Британії такий самий тест EyeDetect коштує £595 — це близько 36 000 ₴. У Львові — 5 500 ₴. Технологія, обладнання та сертифікація ті самі.",
-  textRus: "В Великобритании такой же тест EyeDetect стоит £595 — это около 36 000 ₴. Во Львове — 5 500 ₴. Технология, оборудование и сертификация те же.",
-  textEng: "In the UK the same EyeDetect test costs £595 — about UAH 36,000. In Lviv it is UAH 5,500. Same technology, same equipment, same certification.",
+  text: "Той самий тест EyeDetect на тому самому обладнанні й з тією самою сертифікацією Converus у інших країнах коштує помітно дорожче. У Львові тест на одне питання — 5 500 ₴, онлайн VerifEye — 2 500 ₴.",
+  textRus: "Тот же тест EyeDetect на том же оборудовании и с той же сертификацией Converus в других странах стоит заметно дороже. Во Львове тест на один вопрос — 5 500 ₴, онлайн VerifEye — 2 500 ₴.",
+  textEng: "The same EyeDetect test on the same equipment with the same Converus certification costs noticeably more abroad. In Lviv a single-issue test is UAH 5,500, VerifEye online UAH 2,500.",
+  rows: [
+    { country: "Велика Британія", countryRus: "Великобритания", countryEng: "United Kingdom", price: "£399–595", uah: "≈ 24 000–36 000 ₴", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
+    { country: "Польща", countryRus: "Польша", countryEng: "Poland", price: "1 290–1 590 zł", uah: "≈ 16 000–19 500 ₴", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
+    { country: "США", countryRus: "США", countryEng: "USA", price: "$69", uah: "≈ 3 200 ₴", note: "VerifEye онлайн", noteRus: "VerifEye онлайн", noteEng: "VerifEye online" },
+    { country: "Львів", countryRus: "Львов", countryEng: "Lviv", price: "5 500 ₴ / 2 500 ₴", uah: "", note: "EyeDetect у кабінеті / VerifEye онлайн", noteRus: "EyeDetect в кабинете / VerifEye онлайн", noteEng: "EyeDetect in office / VerifEye online" },
+  ],
 };

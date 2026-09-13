@@ -81,6 +81,18 @@ const PricesSection = ({ lang, dictionary }) => {
           <p className={styles.comparisonText}>
             {pick(pricingComparison, "text")}
           </p>
+          <ul className={styles.comparisonList}>
+            {pricingComparison.rows.map((r) => (
+              <li key={r.country} className={styles.comparisonRow}>
+                <span className={styles.comparisonCountry}>{pick(r, "country")}</span>
+                <span className={styles.comparisonNote}>{pick(r, "note")}</span>
+                <span className={styles.comparisonPrice}>
+                  {r.price}
+                  {r.uah && <small> {r.uah}</small>}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

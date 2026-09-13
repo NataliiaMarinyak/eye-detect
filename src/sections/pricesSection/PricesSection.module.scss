@@ -163,10 +163,68 @@
 }
 
 .comparisonText {
-  margin: 0;
+  margin: 0 0 16px;
   font-size: 16px;
   line-height: 1.6;
   color: $subTitleColor;
+}
+
+.comparisonList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comparisonRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 12px;
+  padding: 10px 0;
+  border-top: 1px solid $lineColor;
+  font-size: 15px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 160px 1fr auto;
+    align-items: baseline;
+  }
+}
+
+.comparisonCountry {
+  font-family: var(--font-bold);
+  font-weight: 700;
+  color: $textDarkColor;
+}
+
+.comparisonNote {
+  grid-column: 1;
+  font-size: 13px;
+  color: $subTitleColor;
+
+  @media screen and (min-width: $tablet) {
+    grid-column: auto;
+    font-size: 14px;
+  }
+}
+
+.comparisonPrice {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  text-align: right;
+  font-weight: 700;
+  color: $primary;
+  white-space: nowrap;
+
+  & small {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: $subTitleColor;
+  }
+
+  @media screen and (min-width: $tablet) {
+    grid-row: auto;
+    grid-column: auto;
+  }
 }
 
 .guarantee {
