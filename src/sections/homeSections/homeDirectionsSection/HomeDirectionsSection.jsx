@@ -62,10 +62,6 @@ const HomeDirectionsSection = ({ lang, dictionary }) => {
             </Reveal>
           ))}
         </ul>
-        {dictionary.homeDirectionsSection.conclusion && (
-          <Reveal>
-          </Reveal>
-        )}
         <div className={styles.ctaWrap}>
           <PriceQuizBtn
             customClass={styles.ctaBtn}
