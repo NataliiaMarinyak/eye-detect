@@ -46,7 +46,7 @@ export const freeTestPage = {
     },
     faq: [
       { q: "Це справді безкоштовно?", a: "Так. Тест на цифру ми даємо безкоштовно, щоб ви побачили технологію на собі. Платити не потрібно ні до, ні після." },
-      { q: "Чи дізнаєтесь ви щось особисте про мене?", a: "Ні. Тест лише про цифру, яку ви загадали. Ніяких особистих питань. На сервер Converus йдуть координати рухів очей, розмір зіниці та ваші відповіді, без імені та фото." },
+      { q: "Чи дізнаєтесь ви щось особисте про мене?", a: "Ні. Тест лише про цифру, яку ви загадали. Ніяких особистих питань. Застосунок робить фото для звіту, на сервер Converus йдуть реакції очей і ваші відповіді. Звіт бачите лише ви і спеціаліст." },
       { q: "Що, як алгоритм не вгадає?", a: "Таке трапляється, найчастіше через порушені умови: погане світло, окуляри, шум, розмову під час тесту. Тоді можна пройти ще раз." },
       { q: "Чи можна дати тест другові чи партнеру?", a: "Так. Залиште свій телефон, а посилання перешлете кому хочете. Проходити тест має та людина, яка загадала цифру." },
     ],
@@ -93,7 +93,7 @@ export const freeTestPage = {
     },
     faq: [
       { q: "Это действительно бесплатно?", a: "Да. Тест на цифру мы даём бесплатно, чтобы вы увидели технологию на себе. Платить не нужно ни до, ни после." },
-      { q: "Узнаете ли вы что-то личное обо мне?", a: "Нет. Тест только о цифре, которую вы загадали. Никаких личных вопросов. На сервер Converus идут координаты движений глаз, размер зрачка и ваши ответы, без имени и фото." },
+      { q: "Узнаете ли вы что-то личное обо мне?", a: "Нет. Тест только о цифре, которую вы загадали. Никаких личных вопросов. Приложение делает фото для отчёта, на сервер Converus идут реакции глаз и ваши ответы. Отчёт видите только вы и специалист." },
       { q: "Что, если алгоритм не угадает?", a: "Такое случается, чаще всего из-за нарушенных условий: плохой свет, очки, шум, разговор во время теста. Тогда можно пройти ещё раз." },
       { q: "Можно ли дать тест другу или партнёру?", a: "Да. Оставьте свой телефон, а ссылку перешлёте кому хотите. Проходить тест должен тот человек, который загадал цифру." },
     ],
@@ -140,7 +140,7 @@ export const freeTestPage = {
     },
     faq: [
       { q: "Is it really free?", a: "Yes. We give the number test for free so you can see the technology on yourself. No payment before or after." },
-      { q: "Will you learn anything personal about me?", a: "No. The test is only about the number you chose. No personal questions. Only eye-movement coordinates, pupil size and your answers go to the Converus server, without a name or photo." },
+      { q: "Will you learn anything personal about me?", a: "No. The test is only about the number you chose. No personal questions. The app takes a photo for the report; eye reactions and your answers go to the Converus server. Only you and the examiner see the report." },
       { q: "What if the algorithm gets it wrong?", a: "It happens, most often because the conditions were broken: poor light, glasses, noise, talking during the test. Then you can take it again." },
       { q: "Can I give the test to a friend or partner?", a: "Yes. Leave your phone number and forward the link to anyone you like. The person who chose the number must be the one taking the test." },
     ],

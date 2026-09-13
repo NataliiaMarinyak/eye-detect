@@ -90,7 +90,7 @@ export const situations = [
         { q: "Чи можна перевірити партнера без його згоди?", a: "Ні. Тест проходить лише добровільно, з письмовою згодою. Відмова від тесту теж інформація, але змусити людину неможливо." },
         { q: "Партнер в іншому місті. Що робити?", a: "VerifEye онлайн: ми надсилаємо посилання, людина проходить тест з телефона у тихій кімнаті, звіт приходить вам на пошту за 20 хвилин." },
         { q: "Що, як результат «невизначений»?", a: "Так буває не більше ніж у 10 випадках зі 100, найчастіше через втому або хвилювання. Повторний тест зі знижкою 50%." },
-        { q: "Чи дізнається хтось про тест?", a: "Ні. Тест можна пройти анонімно: без імені та фото, лише під номером. На сервер Converus для підрахунку йдуть тільки координати рухів очей, розмір зіниці та відповіді «правда/неправда». Це не фото і не біометрія, за цими даними людину неможливо впізнати. Ми не публікуємо фото й відгуки без дозволу, не обговорюємо перевірки і не зберігаємо звіти довше, ніж потрібно для видачі результату." },
+        { q: "Чи дізнається хтось про тест?", a: "Ні. Тест EyeDetect у кабінеті можна пройти анонімно: без імені та фото, лише під номером. На сервер Converus для підрахунку йдуть тільки координати рухів очей, розмір зіниці та відповіді «правда/неправда». Онлайн-тест VerifEye робить фото для звіту, і звіт бачите лише ви. Ми не публікуємо фото й відгуки без дозволу, не обговорюємо перевірки і не зберігаємо звіти довше, ніж потрібно для видачі результату." },
       ],
     },
     ru: {
@@ -119,7 +119,7 @@ export const situations = [
         { q: "Можно ли проверить партнёра без его согласия?", a: "Нет. Тест проходит только добровольно, с письменным согласием. Отказ от теста тоже информация, но заставить человека невозможно." },
         { q: "Партнёр в другом городе. Что делать?", a: "VerifEye онлайн: мы отправляем ссылку, человек проходит тест с телефона в тихой комнате, отчёт приходит вам на почту за 20 минут." },
         { q: "Что, если результат «неопределённый»?", a: "Так бывает не больше чем в 10 случаях из 100, чаще всего из-за усталости или волнения. Повторный тест со скидкой 50%." },
-        { q: "Узнает ли кто-то о тесте?", a: "Нет. Тест можно пройти анонимно: без имени и фото, только под номером. На сервер Converus для подсчёта идут только координаты движений глаз, размер зрачка и ответы «правда/неправда». Это не фото и не биометрия, по этим данным человека невозможно узнать. Мы не публикуем фото и отзывы без разрешения, не обсуждаем проверки и не храним отчёты дольше, чем нужно для выдачи результата." },
+        { q: "Узнает ли кто-то о тесте?", a: "Нет. Тест EyeDetect в кабинете можно пройти анонимно: без имени и фото, только под номером. На сервер Converus для подсчёта идут только координаты движений глаз, размер зрачка и ответы «правда/неправда». Онлайн-тест VerifEye делает фото для отчёта, и отчёт видите только вы. Мы не публикуем фото и отзывы без разрешения, не обсуждаем проверки и не храним отчёты дольше, чем нужно для выдачи результата." },
       ],
     },
     en: {
@@ -148,7 +148,7 @@ export const situations = [
         { q: "Can I test my partner without their consent?", a: "No. The test is taken voluntarily only, with written consent. A refusal is also information, but no one can be forced to take the test." },
         { q: "My partner is in another city. What can we do?", a: "VerifEye online: we send a link, the person takes the test from a phone in a quiet room, and the report arrives in your inbox within 20 minutes." },
         { q: "What if the result is “inconclusive”?", a: "This happens in no more than 10 cases out of 100, most often because of fatigue or nervousness. A repeat test is 50% off." },
-        { q: "Will anyone find out about the test?", a: "No. The test can be taken anonymously: no name or photo, only a number. Only eye-movement coordinates, pupil size, and the “true/false” answers are sent to the Converus server for scoring. This is not a photo and not biometrics; a person cannot be identified from this data. We do not publish photos or reviews without permission, do not discuss tests, and do not keep reports longer than needed to deliver the result." },
+        { q: "Will anyone find out about the test?", a: "No. The EyeDetect test in our office can be taken anonymously: no name or photo, only a number. Only eye-movement coordinates, pupil size, and the “true/false” answers are sent to the Converus server for scoring. The VerifEye online test takes a photo for the report, and only you see the report. We do not publish photos or reviews without permission, do not discuss tests, and do not keep reports longer than needed to deliver the result." },
       ],
     },
   },
