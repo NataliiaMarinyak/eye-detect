@@ -52,8 +52,8 @@ const PrivacyPolicyEn = () => {
         name and phone number. Together with the page name and the selected
         service, this data reaches us as a message from a Telegram bot and is
         stored only in that chat and in our working records. The price
-        calculator at price.eye-polygraph.com is a separate page with its own
-        form; we process data from it on the same terms.
+        quiz on the site sends your answers, name and phone number the same way
+        and on the same terms.
       </p>
       <p>
         <strong>EyeDetect test (in office or on site).</strong> During the test
