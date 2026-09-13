@@ -12,10 +12,12 @@ const HeroSection = ({ dictionary }) => {
   return (
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
-        {hero.eyebrow && <p className={styles.eyebrowMobile}>{hero.eyebrow}</p>}
-        <div className={styles.content}>
+        {/* Один H1 для всіх екранів: на телефоні по центру над фото, на комп'ютері ліворуч над текстом */}
+        <div className={styles.top}>
           {hero.eyebrow && <p className={styles.eyebrow}>{hero.eyebrow}</p>}
           <h1 className={styles.title}>{hero.h1 || hero.title}</h1>
+        </div>
+        <div className={styles.content}>
 
           {Array.isArray(hero.tasks) && hero.tasks.length > 0 && (
             <ul className={styles.tasks} aria-label={hero.tasksLabel}>
