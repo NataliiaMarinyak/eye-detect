@@ -56,7 +56,7 @@ const Modal = ({ dictionary }) => {
             )}
             <p className={styles.text}>{m.text}</p>
           </div>
-          <OrderForm dictionary={dictionary} service={modalService} />
+          <OrderForm dictionary={dictionary} service={modalService} compact />
           <p className={styles.privacy}>{m.privacy}</p>
         </div>
       </div>

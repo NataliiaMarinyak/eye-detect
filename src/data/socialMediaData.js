@@ -49,9 +49,8 @@ export const socialMediaData = [
 
 export const phone = socialMediaData.find((el) => el.name === "phone");
 
-export const headerSocLinks = socialMediaData.filter(
-  (el) => el.type === "socialMedia"
-);
+// У шапці лише месенджер для звернень; решта соцмереж у підвалі.
+export const headerSocLinks = socialMediaData.filter((el) => el.name === "telegram");
 export const footerSocLinks = socialMediaData.filter(
   (el) => el.name !== "email"
 );

@@ -11,7 +11,8 @@ import { orderFormSchema } from "@/yupSchemas/orderFormSchema";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
 import styles from "./OrderForm.module.scss";
 
-const OrderForm = ({ dictionary, service = "" }) => {
+// compact — лише ім'я і телефон (для спливаючого вікна, щоб кнопка була видна без прокрутки).
+const OrderForm = ({ dictionary, service = "", compact = false }) => {
   // console.log("dictionary in orderForm", dictionary);
   // const { t } = useTranslation();
   // const [isLoading, setIsLoading] = useState(true);
@@ -143,6 +144,7 @@ const OrderForm = ({ dictionary, service = "" }) => {
         />
       </div>
 
+      {!compact && (
       <div className={styles.inputWrap}>
         <p className={styles.error}>{errors.email?.message}</p>
 
@@ -170,6 +172,7 @@ const OrderForm = ({ dictionary, service = "" }) => {
           {...register("comment")}
         />
       </div>
+      )}
 
       <button
         type="submit"

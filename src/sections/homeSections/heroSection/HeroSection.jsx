@@ -19,14 +19,16 @@ const HeroSection = ({ dictionary }) => {
           <p className={styles.sub}>{hero.sub}</p>
 
           <div className={styles.actions}>
-            <a href={`${dictionary.lang === "uk" ? "" : "/" + dictionary.lang}/online`} className={styles.btnPrimary}>
-              {dictionary.buttons.testOnline}
-            </a>
-            <OpenModalBtn
-              customClass={styles.btnSecondary}
-              title={dictionary.buttons.bookLviv}
-              service="EyeDetect"
-            />
+            <div className={styles.action}>
+              <OpenModalBtn customClass={styles.btnPrimary} title={dictionary.buttons.bookLviv} service="EyeDetect" />
+              <span className={styles.actionNote}>{hero.bookNote}</span>
+            </div>
+            <div className={styles.action}>
+              <a href={`${dictionary.lang === "uk" ? "" : "/" + dictionary.lang}/online`} className={styles.btnSecondary}>
+                {dictionary.buttons.testOnline}
+              </a>
+              <span className={styles.actionNote}>{hero.onlineNote}</span>
+            </div>
           </div>
 
           <ul className={styles.trust}>
@@ -39,14 +41,15 @@ const HeroSection = ({ dictionary }) => {
         <div className={styles.media}>
           <div className={styles.photo}>
             <Image
-              src="/images/converus/eye-blue.webp"
+              src="/images/converus/eyedetect-station-white.webp"
               alt={hero.title}
-              width={1400}
-              height={1120}
+              width={1046}
+              height={1400}
               sizes="(max-width: 767px) 92vw, (max-width: 1023px) 60vw, 440px"
-              quality={62}
+              quality={70}
               priority
             />
+            {hero.photoCaption && <p className={styles.photoCaption}>{hero.photoCaption}</p>}
           </div>
         </div>
       </div>

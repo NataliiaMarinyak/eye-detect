@@ -47,17 +47,17 @@
   gap: 8px;
   font-family: var(--font-head);
   font-weight: 400;
-  font-size: 34px;
-  line-height: 1.06;
+  font-size: 32px;
+  line-height: 1.08;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
-    font-size: 48px;
+    font-size: 42px;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 58px;
+    font-size: 48px;
     margin-bottom: 20px;
   }
 }
@@ -92,10 +92,27 @@
   }
 }
 
+.action {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.actionNote {
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 2px;
+
+  @media screen and (min-width: $tablet) {
+    white-space: nowrap;
+  }
+}
+
 .actions {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
   margin-bottom: 24px;
 
   @media screen and (min-width: $tablet) {
@@ -169,20 +186,35 @@
 
 .photo {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 11;
   border-radius: 20px;
   overflow: hidden;
-  background-color: $navySoft;
+  background-color: #fff;
 
   & img {
     @include imageFillProp;
-    object-fit: cover;
-    object-position: 50% 35%;
+    object-fit: contain;
+    object-position: 50% 45%;
+    padding: 12px 12px 44px;
   }
 
   @media screen and (min-width: $laptop) {
-    aspect-ratio: 5 / 4;
+    aspect-ratio: 4 / 5;
   }
+}
+
+.photoCaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 10px 16px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: $subTitleColor;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid $lineColor;
 }
 
 
