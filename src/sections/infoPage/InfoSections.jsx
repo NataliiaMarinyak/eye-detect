@@ -41,6 +41,11 @@ const Block = ({ b, lang }) => {
                   {it.badge && <p className={styles.badge}>{it.badge}</p>}
                   <h3 className={styles.cardTitle}>{it.title}</h3>
                   <p className={styles.cardText}>{it.text}</p>
+                  {it.href && (
+                    <a href={localHref(lang, it.href)} className={styles.cardLink}>
+                      {{ uk: "Детальніше", ru: "Подробнее", en: "Learn more" }[lang] || "Детальніше"}
+                    </a>
+                  )}
                 </Reveal>
               ))}
             </ul>

@@ -10,19 +10,19 @@ const GROUPS = {
   uk: [
     { title: "Послуги", links: [["/eyedetect", "Детектор брехні EyeDetect"], ["/online", "Онлайн-тест VerifEye"], ["/business", "Для бізнесу"], ["/prices", "Ціни"]] },
     { title: "Ситуації", links: [["/situations/fidelity", "Перевірка на вірність"], ["/situations/theft", "Крадіжка"], ["/situations/leak", "Витік інформації"], ["/situations/hiring", "Кандидат на роботу"], ["/situations/dispute", "Спір без доказів"]] },
-    { title: "Для кого", links: [["/for/lawyers", "Юристам і детективам"], ["/for/finance", "Банкам і фінкомпаніям"], ["/for/security", "Охоронним компаніям"], ["/for/hr", "HR і рекрутерам"], ["/for/counselors", "Психологам"]] },
+    { title: "Для кого", links: [["/for/lawyers", "Юристам і детективам"], ["/for/finance", "Банкам і фінкомпаніям"], ["/for/security", "Охоронним компаніям"], ["/for/hr", "HR і рекрутерам"], ["/for/counselors", "Психологам"], ["/for", "Усі галузі →"]] },
     { title: "Знання", links: [["/faq", "Питання і відповіді"], ["/converus", "Про Converus і науку"], ["/blog", "Блог"], ["/about-us", "Про спеціаліста"], ["/contacts", "Контакти"], ["/privacy-policy", "Політика конфіденційності"]] },
   ],
   en: [
     { title: "Services", links: [["/eyedetect", "EyeDetect lie detector"], ["/online", "VerifEye online test"], ["/business", "For business"], ["/prices", "Prices"]] },
     { title: "Situations", links: [["/situations/fidelity", "Fidelity test"], ["/situations/theft", "Theft"], ["/situations/leak", "Information leak"], ["/situations/hiring", "Job candidate"], ["/situations/dispute", "Dispute without evidence"]] },
-    { title: "For whom", links: [["/for/lawyers", "Lawyers and detectives"], ["/for/finance", "Banks and finance"], ["/for/security", "Security companies"], ["/for/hr", "HR and recruiters"], ["/for/counselors", "Counselors"]] },
+    { title: "For whom", links: [["/for/lawyers", "Lawyers and detectives"], ["/for/finance", "Banks and finance"], ["/for/security", "Security companies"], ["/for/hr", "HR and recruiters"], ["/for/counselors", "Counselors"], ["/for", "All industries →"]] },
     { title: "Knowledge", links: [["/faq", "FAQ"], ["/converus", "Converus and the science"], ["/blog", "Blog"], ["/about-us", "About the examiner"], ["/contacts", "Contacts"], ["/privacy-policy", "Privacy policy"]] },
   ],
   ru: [
     { title: "Услуги", links: [["/eyedetect", "Детектор лжи EyeDetect"], ["/online", "Онлайн-тест VerifEye"], ["/business", "Для бизнеса"], ["/prices", "Цены"]] },
     { title: "Ситуации", links: [["/situations/fidelity", "Проверка на верность"], ["/situations/theft", "Кража"], ["/situations/leak", "Утечка информации"], ["/situations/hiring", "Кандидат на работу"], ["/situations/dispute", "Спор без доказательств"]] },
-    { title: "Для кого", links: [["/for/lawyers", "Юристам и детективам"], ["/for/finance", "Банкам и финкомпаниям"], ["/for/security", "Охранным компаниям"], ["/for/hr", "HR и рекрутерам"], ["/for/counselors", "Психологам"]] },
+    { title: "Для кого", links: [["/for/lawyers", "Юристам и детективам"], ["/for/finance", "Банкам и финкомпаниям"], ["/for/security", "Охранным компаниям"], ["/for/hr", "HR и рекрутерам"], ["/for/counselors", "Психологам"], ["/for", "Все отрасли →"]] },
     { title: "Знания", links: [["/faq", "Вопросы и ответы"], ["/converus", "О Converus и науке"], ["/blog", "Блог"], ["/about-us", "О специалисте"], ["/contacts", "Контакты"], ["/privacy-policy", "Политика конфиденциальности"]] },
   ],
 };

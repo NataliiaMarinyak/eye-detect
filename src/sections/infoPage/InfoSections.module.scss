@@ -78,6 +78,15 @@
   padding: 22px 20px;
 }
 
+.cardLink {
+  display: inline-block;
+  margin-top: 12px;
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 15px;
+}
+
 .badge {
   display: inline-block;
   margin: 0 0 10px;

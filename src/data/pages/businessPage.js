@@ -57,6 +57,8 @@ export const businessPage = {
         { title: "Охоронні компанії", text: "Ключі, коди, об'єкти замовників.", href: "/for/security" },
         { title: "HR і рекрутери", text: "Перевірка кандидатів зі смартфона до співбесіди.", href: "/for/hr" },
         { title: "Юристи і детективи", text: "Оцінка клієнтів, свідків і версій.", href: "/for/lawyers" },
+        { title: "Рекрутингові агенції", text: "Перевірка кандидатів як послуга для ваших клієнтів.", href: "/for/recruiting" },
+        { title: "Інші галузі", text: "Логістика, ритейл, мілтех, клініки, страхові, рекрутинг та інші.", href: "/for" },
       ],
     },
     legal: {
@@ -133,6 +135,8 @@ export const businessPage = {
         { title: "Охранные компании", text: "Ключи, коды, объекты заказчиков.", href: "/for/security" },
         { title: "HR и рекрутеры", text: "Проверка кандидатов со смартфона до собеседования.", href: "/for/hr" },
         { title: "Юристы и детективы", text: "Оценка клиентов, свидетелей и версий.", href: "/for/lawyers" },
+        { title: "Рекрутинговые агентства", text: "Проверка кандидатов как услуга для ваших клиентов.", href: "/for/recruiting" },
+        { title: "Другие отрасли", text: "Логистика, ритейл, милтех, клиники, страховые, рекрутинг и другие.", href: "/for" },
       ],
     },
     legal: {
@@ -209,6 +213,8 @@ export const businessPage = {
         { title: "Security companies", text: "Keys, codes, client sites.", href: "/for/security" },
         { title: "HR and recruiters", text: "Screening candidates from a smartphone before the interview.", href: "/for/hr" },
         { title: "Lawyers and private investigators", text: "Assessing clients, witnesses, and versions of events.", href: "/for/lawyers" },
+        { title: "Recruiting agencies", text: "Candidate screening as a service for your clients.", href: "/for/recruiting" },
+        { title: "Other industries", text: "Logistics, retail, miltech, clinics, insurers, recruiting and more.", href: "/for" },
       ],
     },
     legal: {

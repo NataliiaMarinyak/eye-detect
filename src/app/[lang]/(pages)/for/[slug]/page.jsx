@@ -11,6 +11,16 @@ const PHOTOS = {
   security: "/images/converus/eyedetect-station-white.webp",
   hr: "/images/converus/verifeye-test.webp",
   counselors: "/images/converus/eyedetect-examinee.webp",
+  recruiting: "/images/converus/verifeye-test.webp",
+  miltech: "/images/converus/eyedetect-station-angle.webp",
+  "remote-teams": "/images/converus/verifeye-phone.webp",
+  logistics: "/images/converus/eyedetect-station-white.webp",
+  retail: "/images/converus/eyedetect-examinee.webp",
+  "real-estate": "/images/converus/eyedetect-station-front.webp",
+  medical: "/images/converus/eyedetect-station-white.webp",
+  household: "/images/converus/verifeye-test-2.webp",
+  insurance: "/images/converus/eyedetect-examinee.webp",
+  franchise: "/images/converus/eyedetect-station-angle.webp",
 };
 
 export function generateStaticParams() {
@@ -43,7 +53,7 @@ const AudiencePage = ({ params }) => {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(service) }} />
-      <PageHero eyebrow={d.hero.eyebrow} title={d.hero.h1} sub={d.hero.sub} facts={d.hero.facts} primary={d.blocks.at(-1)?.button} service={d.blocks.at(-1)?.service} photo={PHOTOS[slug]} photoAlt={d.seo.crumb} />
+      <PageHero eyebrow={d.hero.eyebrow} title={d.hero.h1} sub={d.hero.sub} facts={d.hero.facts} primary={d.blocks.at(-1)?.button} service={d.blocks.at(-1)?.service} photo={PHOTOS[slug] || "/images/converus/eyedetect-examinee.webp"} photoAlt={d.seo.crumb} />
       <InfoSections blocks={d.blocks} lang={lang} />
     </>
   );
