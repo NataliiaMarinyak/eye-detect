@@ -36,8 +36,7 @@ const HeaderTop = ({ dictionary, lang }) => {
             <use href="/sprite.svg#icon-map_pin"></use>
           </svg>
           {t("Header.TopTitle")}
-           <span className={styles.full}>{dictionary.header.topTitle}</span>
-          <span className={styles.short}>{dictionary.header.topTitleShort || dictionary.header.topTitle}</span>
+           {dictionary.header.topTitle}
         </Link>
         )} */}
 
@@ -57,7 +56,8 @@ const HeaderTop = ({ dictionary, lang }) => {
               href="/sprite.svg#icon-map_pin"
             ></use>
           </svg>
-          {dictionary.header.topTitle}
+          <span className={styles.full}>{dictionary.header.topTitle}</span>
+          <span className={styles.short}>{dictionary.header.topTitleShort || dictionary.header.topTitle}</span>
         </Link>
 
         <ul className={styles.socLinks}>
