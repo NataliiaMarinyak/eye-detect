@@ -6,11 +6,11 @@ export const FAQDataHome = [
     questionRus: "Что такое EyeDetect и чем он отличается от классического полиграфа?",
     questionEng: "What is EyeDetect and how is it different from a classic polygraph?",
     answer:
-      "EyeDetect — це інноваційна автоматизована технологія перевірки правдивості від американської компанії Converus. На відміну від класичного поліграфа, до тіла людини не кріпляться жодні датчики чи дроти. Респондент просто сидить перед монітором із високоточною інфрачервоною камерою і відповідає на запитання «Так/Ні». Камера фіксує мимовільні реакції очей, які неможливо контролювати свідомо.",
+      "EyeDetect — це інноваційна автоматизована технологія перевірки правдивості від американської компанії Converus. На відміну від класичного поліграфа, до тіла людини не кріпляться жодні датчики чи дроти. Респондент просто сидить перед монітором із високоточною інфрачервоною камерою і відповідає на запитання «правда» або «неправда». Камера фіксує мимовільні реакції очей, які неможливо контролювати свідомо.",
     answerRus:
-      "EyeDetect — это инновационная автоматизированная технология проверки правдивости от американской компании Converus. В отличие от классического полиграфа, к телу человека не крепятся никакие датчики или провода. Респондент просто сидит перед монитором с высокоточной инфракрасной камерой и отвечает на вопросы «Да/Нет». Камера фиксирует непроизвольные реакции глаз, которые невозможно контролировать сознательно.",
+      "EyeDetect — это инновационная автоматизированная технология проверки правдивости от американской компании Converus. В отличие от классического полиграфа, к телу человека не крепятся никакие датчики или провода. Респондент просто сидит перед монитором с высокоточной инфракрасной камерой и отвечает на вопросы «правда» или «неправда». Камера фиксирует непроизвольные реакции глаз, которые невозможно контролировать сознательно.",
     answerEng:
-      "EyeDetect is an automated lie-detection technology developed by U.S. company Converus. Unlike a classic polygraph, no sensors or wires are attached to the body. The examinee simply sits in front of a monitor equipped with a high-precision infrared camera and answers Yes/No questions. The camera captures involuntary eye reactions that cannot be consciously controlled.",
+      "EyeDetect is an automated lie-detection technology developed by U.S. company Converus. Unlike a classic polygraph, no sensors or wires are attached to the body. The examinee simply sits in front of a monitor equipped with a high-precision infrared camera and answers “true” or “false” questions. The camera captures involuntary eye reactions that cannot be consciously controlled.",
   },
   {
     question: "На чому базується науковий принцип роботи EyeDetect?",

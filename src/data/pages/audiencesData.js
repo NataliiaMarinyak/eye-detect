@@ -34,7 +34,7 @@ export const audiences = [
         { type: "text", title: "Що варто знати юристу", paragraphs: [
           "Результат EyeDetect в Україні не є судовим доказом. Це інструмент оцінки, як і будь-який детектор брехні. Єдиний відомий випадок допуску результатів EyeDetect як доказу стався у суді штату Нью-Мексико у 2018 році.",
           "Тест перевіряє лише факти і події, а не наміри чи думки. Питання формулюються про конкретну дію за конкретний період, наприклад «чи брали ви гроші з сейфа після 1 березня».",
-          "Людина проходить тест лише за письмовою згодою. Перед тестом вона читає всі питання, тому несподіванок немає. Якщо клієнт хоче пройти тест і додатково класичний поліграф, ці два методи вимірюють різне і разом дають близько 97% упевненості, коли результати збігаються.",
+          "Людина проходить тест лише за письмовою згодою. Перед тестом вона читає всі питання, тому несподіванок немає. Якщо клієнт хоче пройти тест і додатково класичний поліграф, ці два методи вимірюють різне і, за даними Converus, разом дають близько 97% упевненості, коли результати збігаються.",
         ] },
         cta.uk("EyeDetect для юристів"),
       ],
@@ -56,7 +56,7 @@ export const audiences = [
         { type: "text", title: "Что стоит знать юристу", paragraphs: [
           "Результат EyeDetect в Украине не является судебным доказательством. Это инструмент оценки, как и любой детектор лжи. Единственный известный случай допуска результатов EyeDetect как доказательства произошёл в суде штата Нью-Мексико в 2018 году.",
           "Тест проверяет только факты и события, а не намерения или мысли. Вопросы формулируются о конкретном действии за конкретный период, например «брали ли вы деньги из сейфа после 1 марта».",
-          "Человек проходит тест только с письменного согласия. Перед тестом он читает все вопросы, поэтому неожиданностей нет. Если клиент хочет пройти тест и дополнительно классический полиграф, эти два метода измеряют разное и вместе дают около 97% уверенности, когда результаты совпадают.",
+          "Человек проходит тест только с письменного согласия. Перед тестом он читает все вопросы, поэтому неожиданностей нет. Если клиент хочет пройти тест и дополнительно классический полиграф, эти два метода измеряют разное и, по данным Converus, вместе дают около 97% уверенности, когда результаты совпадают.",
         ] },
         cta.ru("EyeDetect для юристов"),
       ],
@@ -78,7 +78,7 @@ export const audiences = [
         { type: "text", title: "What a lawyer should know", paragraphs: [
           "In Ukraine, an EyeDetect result is not admissible evidence in court. It is an assessment tool, like any lie detector. The only known case of EyeDetect results being admitted as evidence occurred in a New Mexico state court in 2018.",
           "The test checks only facts and events, not intentions or thoughts. Questions are phrased about a specific action within a specific period, for example “Did you take money from the safe after March 1?”",
-          "A person takes the test only with written consent. Before the test they read all the questions, so there are no surprises. If the client wants to take the test and additionally a classic polygraph, the two methods measure different things and together give about 97% confidence when the results agree.",
+          "A person takes the test only with written consent. Before the test they read all the questions, so there are no surprises. If the client wants to take the test and additionally a classic polygraph, the two methods measure different things and, according to Converus, together give about 97% confidence when the results agree.",
         ] },
         cta.en("EyeDetect for lawyers"),
       ],
@@ -252,7 +252,7 @@ export const audiences = [
       hero: { eyebrow: "HR и рекрутерам", h1: "Онлайн детектор лжи для проверки кандидатов", sub: "VerifEye — приложение Converus, которое за 10 минут проверяет кандидата на его собственном телефоне: честное ли резюме, были ли кражи на предыдущей работе, употребляет ли наркотики. Мы готовим вопросы, отправляем ссылку, вы получаете результат. Для удалённых команд и региональных филиалов.", facts: ["10 минут", "из любого города", "точность 84–89%", "от 2 500 ₴ за тест"] },
       blocks: [
         { type: "cards", title: "Четыре задачи HR, которые закрывает VerifEye", items: [
-          { title: "Найм", text: "Оценить правдивость кандидата ещё до оффера и не брать риск в команду. Особенно для позиций с доступом к деньгам, товару или данным." },
+          { title: "Найм", text: "Оценить правдивость кандидата ещё до офера и не брать риск в команду. Особенно для позиций с доступом к деньгам, товару или данным." },
           { title: "Предотвращение мошенничества", text: "Отсеять тех, кто уже крал или обманывал работодателя. Один тест дешевле одной недостачи." },
           { title: "Культура честности", text: "Когда проверка является стандартной частью найма, снижается количество внутренних конфликтов и «серых» схем." },
           { title: "Развитие сотрудников", text: "Проверка перед повышением на должность с большей ответственностью, чтобы решение опиралось на данные, а не на впечатления." },
@@ -334,7 +334,7 @@ export const audiences = [
     },
     en: {
       seo: { title: "EyeDetect for Psychologists and Family Counselors", description: "The EyeDetect test in work with infidelity and addiction: 15 minutes, no sensors, result in 45 minutes. It cuts through denial and gives the couple facts instead of guesses. For psychologists, family therapists, and rehabilitation centers.", keywords: ["lie detector for psychologists", "fidelity test psychologist", "EyeDetect addiction therapy", "test for family counselors"], crumbHome: "Home", crumb: "For psychologists and counselors" },
-      hero: { eyebrow: "For psychologists and family counselors", h1: "The EyeDetect Lie Detector for Psychologists", sub: "When one partner suspects and the other denies, therapy goes in circles. A 15-minute EyeDetect test gives both a specific answer to a specific question and lets you work with reality rather than competing versions. No sensors, no wired-up examiner breaking the trust in your office.", facts: ["15 minutes per question", "no sensors on the body", "result in 45 minutes", "Lviv or on-site"] },
+      hero: { eyebrow: "For psychologists and family counselors", h1: "The EyeDetect Lie Detector for Psychologists", sub: "When one partner suspects and the other denies, therapy goes in circles. A 15-minute EyeDetect test gives both a specific answer to a specific question and lets you work with reality rather than competing versions. No sensors on the person being tested, nothing that breaks the trust in your office.", facts: ["15 minutes per question", "no sensors on the body", "result in 45 minutes", "Lviv or on-site"] },
       blocks: [
         { type: "cards", title: "Where the test helps a therapist", items: [
           { title: "Infidelity", text: "Questions about specific facts within a specific period: contact, correspondence, hidden spending. The result gives the couple a point from which to move forward: toward rebuilding trust or toward an honest decision." },

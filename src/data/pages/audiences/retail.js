@@ -27,7 +27,7 @@ export const retail = {
       { type: "text", title: "Що варто знати власнику мережі", paragraphs: [
         "Перевірка проходить лише за письмовою згодою працівника, він може відмовитись. Результат в Україні не є доказом у суді, це підстава для внутрішнього рішення чи службового розслідування. Відмову від тесту не варто трактувати як визнання.",
         "Тест перевіряє лише конкретні факти за конкретний період, наприклад «чи брали ви гроші з каси магазину після 1 квітня». Ми не ставимо питань про здоров'я, політику, релігію чи приватне життя. Перед тестом людина читає всі питання, несподіванок немає.",
-        "Тест проводить Наталія Мариняк, психолог, сертифікований Converus Test Proctor. Кабінет у Львові, вул. Городоцька, 45. Ціни для бізнесу залежать від кількості осіб, тем і міста, розрахунок надсилаємо того ж дня.",
+        "Тест проводить Наталя Мариняк, психолог, сертифікований Converus Test Proctor. Кабінет у Львові, вул. Городоцька, 45. Ціни для бізнесу залежать від кількості осіб, тем і міста, розрахунок надсилаємо того ж дня.",
       ] },
       cta.uk("EyeDetect для ритейлу"),
     ],
@@ -78,7 +78,7 @@ export const retail = {
         { title: "Testing after a shortage", text: "We come to the store, warehouse, or chain office. A single-issue test about the specific shortage, 6–8 people a day. A report on each person right after the test." },
         { title: "Screening when hiring a cashier", text: "Candidate screening: theft, drugs, honesty of the application. In our Lviv office or on-site, 30–45 minutes. For candidates in other cities there is VerifEye: 10 minutes from a smartphone, from UAH 2,500." },
         { title: "Scheduled testing", text: "Every six months or once a year for cashiers, shift leads, and store managers. The fact of regular testing alone reduces the number of shortages." },
-        { title: "Chains with stores in different cities", text: "Travel within the Lviv region is included, Western Ukraine is +UAH 2,000, other regions from UAH 12,000 including the test. For remote locations VerifEye online is cheaper." },
+        { title: "Chains with stores in different cities", text: "Travel within Lviv and up to 50 km around it is included, Western Ukraine is +UAH 2,000, other regions from UAH 12,000 including the test. For remote locations VerifEye online is cheaper." },
       ], cols: 2 },
       { type: "text", title: "What a chain owner should know", paragraphs: [
         "Testing is done only with the employee's written consent, and they may refuse. In Ukraine the result is not admissible evidence in court; it is grounds for an internal decision or an internal investigation. Refusing the test should not be treated as an admission.",

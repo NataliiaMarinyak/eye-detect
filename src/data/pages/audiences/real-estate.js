@@ -28,7 +28,7 @@ export const realEstate = {
       { type: "text", title: "Що варто знати керівнику", paragraphs: [
         "Перевірка проходить лише за письмовою згодою працівника, він може відмовитись. Питання стосуються тільки роботи: гроші, документи, клієнти, підрядники. Ми не питаємо про здоров'я, політику, релігію чи приватне життя. Результат в Україні не є доказом у суді, це підстава для внутрішнього рішення чи службового розслідування.",
         "Для будівельної компанії зручніший виїзд на об'єкт або в офіс: 6–8 осіб за день, потрібна тиха кімната зі столом і розеткою. Виїзд по Львівській області входить у вартість, по Західній Україні +2 000 ₴, в інші регіони від 12 000 ₴ разом із тестом. Агенції з кількома менеджерами часто простіше прийти в кабінет у Львові.",
-        "Тест проводить Наталія Мариняк, психолог, сертифікований Converus Test Proctor. Кабінет у Львові, вул. Городоцька, 45. Тест від 5 500 ₴, ціни для бізнесу залежать від кількості осіб, тем і міста, розрахунок надсилаємо того ж дня.",
+        "Тест проводить Наталя Мариняк, психолог, сертифікований Converus Test Proctor. Кабінет у Львові, вул. Городоцька, 45. Тест від 5 500 ₴, ціни для бізнесу залежать від кількості осіб, тем і міста, розрахунок надсилаємо того ж дня.",
       ] },
       cta.uk("EyeDetect для забудовника чи агенції нерухомості"),
     ],
@@ -85,7 +85,7 @@ export const realEstate = {
       ] },
       { type: "text", title: "What a manager should know", paragraphs: [
         "Testing is done only with the employee's written consent, and they may refuse. Questions concern work only: money, documents, clients, contractors. We do not ask about health, politics, religion, or private life. In Ukraine the result is not admissible evidence in court; it is grounds for an internal decision or an internal investigation.",
-        "For a construction company, on-site testing at the project or office is more convenient: 6–8 people a day, and we need a quiet room with a table and a power outlet. Travel within the Lviv region is included, Western Ukraine is +UAH 2,000, other regions from UAH 12,000 including the test. For an agency with a few managers it is often simpler to come to our Lviv office.",
+        "For a construction company, on-site testing at the project or office is more convenient: 6–8 people a day, and we need a quiet room with a table and a power outlet. Travel within Lviv and up to 50 km around it is included, Western Ukraine is +UAH 2,000, other regions from UAH 12,000 including the test. For an agency with a few managers it is often simpler to come to our Lviv office.",
         "The test is conducted by Nataliia Marynyak, psychologist, certified Converus Test Proctor. Office in Lviv, 45 Horodotska St. Tests start from UAH 5,500; business pricing depends on the number of people, topics, and city, and we send a quote the same day.",
       ] },
       cta.en("EyeDetect for a developer or real estate agency"),

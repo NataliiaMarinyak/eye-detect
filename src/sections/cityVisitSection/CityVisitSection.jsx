@@ -1,18 +1,20 @@
 import Reveal from "@/components/Reveal/Reveal";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
+import { fill } from "@/data/pages/cityTexts";
 import styles from "./CityVisitSection.module.scss";
 
 // Блок «Як пройти тест у {місто}»: онлайн сьогодні або виїзд спеціаліста.
 // Тексти залежать від регіону (захід України / інша Україна / Європа).
-const CityVisitSection = ({ t, region, loc, km, dictionary, lang }) => {
+const CityVisitSection = ({ t, region, loc, km, vars, dictionary, lang }) => {
+  const v = vars || { loc, km: km || "", city: loc };
   const visitText = km ? t.visit.text[region] : t.visit.textNoKm[region];
 
   return (
     <section id="visit" className={styles.section}>
       <div className={`container ${styles.container}`}>
         <Reveal>
-          <h2 className={styles.title}>{t.visitTitle.replace("{loc}", loc)}</h2>
+          <h2 className={styles.title}>{fill(t.visitTitle, v)}</h2>
         </Reveal>
         <ul className={styles.grid}>
           <Reveal as="li" className={styles.card}>
@@ -25,7 +27,7 @@ const CityVisitSection = ({ t, region, loc, km, dictionary, lang }) => {
           </Reveal>
           <Reveal as="li" delay={0.08} className={`${styles.card} ${styles.cardAccent}`}>
             <p className={styles.badge}>{t.visit.title}</p>
-            <p className={styles.text}>{visitText.replace("{loc}", loc).replace("{km}", km || "")}</p>
+            <p className={styles.text}>{fill(visitText, v)}</p>
             <div className={styles.footer}>
               <p className={styles.price}>{t.visit.price[region]}</p>
               <OpenModalBtn customClass={styles.btnPrimary} title={t.visit.cta} service={`EyeDetect з виїздом · ${loc}`} />
@@ -33,7 +35,7 @@ const CityVisitSection = ({ t, region, loc, km, dictionary, lang }) => {
           </Reveal>
         </ul>
         <Reveal className={styles.noteRow}>
-          <p className={styles.note}>{t.lvivNote}</p>
+          <p className={styles.note}>{fill(t.lvivNote, v)}</p>
           <PriceQuizBtn customClass={styles.quiz} title={dictionary.buttons.calculatePrice} />
         </Reveal>
       </div>

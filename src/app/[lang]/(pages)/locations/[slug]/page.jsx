@@ -96,12 +96,12 @@ const LocationIdPage = async ({ params }) => {
         facts={t.facts}
         primary={t.visit.cta}
         service={lang === "en" ? `EyeDetect on-site · ${loc}` : `EyeDetect з виїздом · ${loc}`}
-        secondaryHref="#visit"
+        secondaryHref={`${lang === "uk" ? "" : "/" + lang}/online`}
         secondaryLabel={t.online.cta}
         photo="/images/converus/eyedetect-examinee.webp"
         photoAlt={fill(t.h1, vars)}
       />
-      <CityVisitSection t={t} region={region} loc={loc} km={km} dictionary={dictionary} lang={lang} />
+      <CityVisitSection t={t} region={region} loc={loc} km={km} vars={vars} dictionary={dictionary} lang={lang} />
       <DynamicServicesSection lang={lang} dictionary={dictionary} slug={slug} />
       {lang !== "en" && <DynamicVideoSection lang={lang} dictionary={dictionary} slug={slug} />}
       {lang !== "en" && <DynamicTownsSection lang={lang} slug={slug} />}

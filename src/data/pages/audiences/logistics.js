@@ -11,7 +11,7 @@ export const logistics = {
       { type: "cards", title: "Де це допомагає", items: [
         { title: "Недостача після інвентаризації", text: "Ревізія показала мінус, а доступ до зони мали десять людей. Тест на одне питання для кожного, хто мав доступ, за день показує, кого перевіряти далі, а кого зняти з підозри." },
         { title: "Злив пального і «ліві» рейси", text: "Витрата не сходиться з GPS і нормами, у маршруті з'являються зайві кілометри. Питання про конкретні дії за конкретний період: чи зливали пальне, чи перевозили вантаж не за накладною." },
-        { title: "Крадіжка зі складу", text: "Товар зникає з полиць, палет або під час прийомки. Перевірка комірників, вантажників і водіїв-експедиторів, які працювали у зміну." },
+        { title: "Крадіжка зі складу", text: "Товар зникає з полиць, палет або під час приймання. Перевірка комірників, вантажників і водіїв-експедиторів, які працювали у зміну." },
         { title: "Змова з клієнтом чи постачальником", text: "Водій або експедитор домовляється з точкою: недовіз оформлюють як повну поставку, різницю ділять. Тест перевіряє факт домовленості і отриманої вигоди." },
         { title: "Найм водіїв і комірників", text: "Перш ніж віддати людині фуру з товаром на мільйон, корисно знати, чи були крадіжки на попередній роботі і чи вживає вона наркотики або алкоголь за кермом." },
         { title: "Планові перевірки", text: "Раз на пів року або рік для матеріально відповідальних осіб. Коли команда знає про регулярну перевірку, кількість недостач падає ще до першого тесту." },
@@ -29,7 +29,7 @@ export const logistics = {
       { type: "text", title: "Що варто знати керівнику логістики", paragraphs: [
         "Перевірка проходить лише за письмовою згодою працівника, він може відмовитись. Питання стосуються тільки роботи: товар, пальне, накладні, маршрути, гроші. Ми не питаємо про здоров'я, політику, релігію чи приватне життя. Результат в Україні не є доказом у суді, це підстава для внутрішнього рішення чи службового розслідування.",
         "Для складу або автопарку зручніший виїзд: привозимо обладнання, потрібна тиха кімната зі столом і розеткою. Виїзд по Львівській області входить у вартість, по Західній Україні +2 000 ₴, в інші регіони від 12 000 ₴ разом із тестом. Для водіїв у рейсі і філій в інших містах є VerifEye: тест зі смартфона за 10 хвилин.",
-        "Тест проводить Наталія Мариняк, психолог, сертифікований Converus Test Proctor. Кабінет у Львові, вул. Городоцька, 45. Ціни для бізнесу залежать від кількості осіб, тем і міста, розрахунок надсилаємо того ж дня.",
+        "Тест проводить Наталя Мариняк, психолог, сертифікований Converus Test Proctor. Кабінет у Львові, вул. Городоцька, 45. Ціни для бізнесу залежать від кількості осіб, тем і міста, розрахунок надсилаємо того ж дня.",
       ] },
       cta.uk("EyeDetect для логістичної компанії"),
     ],
@@ -88,7 +88,7 @@ export const logistics = {
       ] },
       { type: "text", title: "What a logistics manager should know", paragraphs: [
         "Testing is done only with the employee's written consent, and they may refuse. Questions concern work only: goods, fuel, delivery notes, routes, money. We do not ask about health, politics, religion, or private life. In Ukraine the result is not admissible evidence in court; it is grounds for an internal decision or an internal investigation.",
-        "For a warehouse or fleet, on-site testing is more convenient: we bring the equipment and need a quiet room with a table and a power outlet. Travel within the Lviv region is included, Western Ukraine is +UAH 2,000, other regions from UAH 12,000 including the test. For drivers on the road and branches in other cities there is VerifEye: a 10-minute test from a smartphone.",
+        "For a warehouse or fleet, on-site testing is more convenient: we bring the equipment and need a quiet room with a table and a power outlet. Travel within Lviv and up to 50 km around it is included, Western Ukraine is +UAH 2,000, other regions from UAH 12,000 including the test. For drivers on the road and branches in other cities there is VerifEye: a 10-minute test from a smartphone.",
         "The test is conducted by Nataliia Marynyak, psychologist, certified Converus Test Proctor. Office in Lviv, 45 Horodotska St. Business pricing depends on the number of people, topics, and city; we send a quote the same day.",
       ] },
       cta.en("EyeDetect for a logistics company"),

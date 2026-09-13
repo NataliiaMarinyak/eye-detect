@@ -332,7 +332,7 @@
     "points": [
       "A Credibility Score from 1 to 99: 50 and above is “credible”, below 50 is “not credible”. In a multi-topic test, each topic gets its own score",
       "Answers to every statement, so you can see how the score was formed",
-      "If the algorithm could not score the test (instructions not followed, random answers, eye or lighting problems), the test is declared invalid and repeated at a 50% discount"
+      "If the algorithm could not score the test (instructions not followed, random answers, eye or lighting problems), the result is treated as inconclusive and the test is repeated at a 50% discount"
     ],
     "caption": "A real EyeDetect report, fidelity test. Personal data blurred."
   },

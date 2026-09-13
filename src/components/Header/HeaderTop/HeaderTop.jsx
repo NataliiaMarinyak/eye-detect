@@ -21,7 +21,7 @@ const HeaderTop = ({ dictionary, lang }) => {
       <div className={`container ${styles.headerTop}`}>
         <Link
           href={phone.href}
-          aria-label={phone.name}
+          aria-label={phone.contact}
           className={`${styles.link} ${styles.phone}`}
         >
           <svg>

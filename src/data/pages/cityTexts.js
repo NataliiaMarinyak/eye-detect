@@ -13,7 +13,7 @@ export const cityTexts = {
     visitTitle: "Як пройти тест {loc}",
     online: {
       title: "Онлайн сьогодні: VerifEye",
-      text: "Ви отримуєте посилання, людина проходить тест з телефона у тихій кімнаті, 15 хвилин. Звіт у PDF приходить на пошту за 20 хвилин. Підходить для перевірки на вірність і для кандидатів на роботу.",
+      text: "Ви отримуєте посилання, людина проходить тест з телефона у тихій кімнаті, близько 10 хвилин. Звіт у PDF і пояснення спеціаліста того ж дня. Підходить для перевірки на вірність і для кандидатів на роботу.",
       price: "від 2 500 ₴",
       cta: "Пройти онлайн",
     },
@@ -77,7 +77,7 @@ export const cityTexts = {
     visitTitle: "Как пройти тест {loc}",
     online: {
       title: "Онлайн сегодня: VerifEye",
-      text: "Вы получаете ссылку, человек проходит тест с телефона в тихой комнате, 15 минут. Отчёт в PDF приходит на почту за 20 минут. Подходит для проверки на верность и для кандидатов на работу.",
+      text: "Вы получаете ссылку, человек проходит тест с телефона в тихой комнате, около 10 минут. Отчёт в PDF и пояснение специалиста в тот же день. Подходит для проверки на верность и для кандидатов на работу.",
       price: "от 2 500 ₴",
       cta: "Пройти онлайн",
     },
@@ -141,7 +141,7 @@ export const cityTexts = {
     visitTitle: "How to take the test {loc}",
     online: {
       title: "Online today: VerifEye",
-      text: "You receive a link, the person takes the test from a phone in a quiet room, 15 minutes. The PDF report arrives by email within 20 minutes. Suitable for fidelity checks and job candidates.",
+      text: "You receive a link, the person takes the test from a phone in a quiet room, about 10 minutes. The PDF report and the examiner's explanation come the same day. Suitable for fidelity checks and job candidates.",
       price: "from UAH 2,500",
       cta: "Take the online test",
     },
