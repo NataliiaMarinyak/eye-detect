@@ -39,6 +39,9 @@ const HomeAboutSection = ({ lang, dictionary }) => {
                 );
               })}
             </ul>
+            <p className={styles.imgCaption}>
+              {dictionary.homeAboutSection.imgCaption}
+            </p>
           </div>
           <div className={styles.figure}>
             <div className={styles.imgWrapp}>
@@ -50,9 +53,6 @@ const HomeAboutSection = ({ lang, dictionary }) => {
                 sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 426px"
               />
             </div>
-            <p className={styles.imgCaption}>
-              {dictionary.homeAboutSection.imgCaption}
-            </p>
           </div>
         </div>
 
