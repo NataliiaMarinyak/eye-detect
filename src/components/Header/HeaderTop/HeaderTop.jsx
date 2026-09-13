@@ -36,7 +36,8 @@ const HeaderTop = ({ dictionary, lang }) => {
             <use href="/sprite.svg#icon-map_pin"></use>
           </svg>
           {t("Header.TopTitle")}
-           {dictionary.header.topTitle}
+           <span className={styles.full}>{dictionary.header.topTitle}</span>
+          <span className={styles.short}>{dictionary.header.topTitleShort || dictionary.header.topTitle}</span>
         </Link>
         )} */}
 
@@ -44,7 +45,7 @@ const HeaderTop = ({ dictionary, lang }) => {
           href={
             lang === i18n.defaultLocale ? "/locations" : `/${lang}/locations`
           }
-          className={styles.link}
+          className={`${styles.link} ${styles.travel}`}
         >
           <svg>
             <use

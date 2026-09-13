@@ -11,14 +11,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 12px;
+  gap: 8px;
+  font-size: 11.5px;
 
   & svg {
     stroke: $textLightColor;
     fill: transparent;
 
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
+
+    @media screen and (min-width: $tablet) {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -26,27 +32,47 @@
   }
 }
 
+// На телефоні видно і номер, і «Виїзд по Україні та Європі»
 .link {
-  display: none;
+  display: flex;
   align-items: center;
+  white-space: nowrap;
 
   & svg {
-    margin-right: 12px;
-  }
+    flex-shrink: 0;
+    margin-right: 6px;
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
+    @media screen and (min-width: $tablet) {
+      margin-right: 12px;
+    }
   }
 }
 
 .phone {
   display: flex;
-  margin-left: auto;
-
   height: 24px;
+}
+
+// На вузькому екрані іконка біля виїзду зайва: лишаємо місце для тексту
+.travel svg {
+  display: none;
 
   @media screen and (min-width: $tablet) {
-    margin-left: 0;
+    display: block;
+  }
+}
+
+.short {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.full {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: inline;
   }
 }
 
