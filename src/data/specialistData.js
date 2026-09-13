@@ -81,7 +81,7 @@ export const specialistData = [
         ],
       },
     ],
-    img: "/images/home-about.webp",
+    img: "/images/specialist-russ-natalia.webp",
 
     imgCaption: {
       Ua: "Russ Warner, комерційний директор Converus, і Наталя Мариняк",
