@@ -37,7 +37,7 @@ import { i18n } from "@/dictionaries/i18n.config";
 import { getDictionary } from "@/helpers/getDictionary";
 
 const DynamicModal = dynamic(() => import("@/components/Modal/Modal"));
-const DynamicPriceQuiz = dynamic(() => import("@/components/PriceQuiz/PriceQuiz"), { ssr: false });
+import PriceQuiz from "@/components/PriceQuiz/PriceQuiz";
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SEO_URL),
@@ -122,7 +122,7 @@ export default async function RootLayout({ children, params }) {
           <main>{children}</main>
           <Footer dictionary={dictionary} lang={lang} />
           <DynamicModal dictionary={dictionary} />
-          <DynamicPriceQuiz lang={lang} />
+          <PriceQuiz lang={lang} />
           <Toaster
             richColors
             position="top-center"
