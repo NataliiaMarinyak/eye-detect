@@ -28,3 +28,12 @@
   color: $primary;
   background-color: $primarySoft;
 }
+
+.soon {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: $subTitleColor;
+  opacity: 0.45;
+  cursor: default;
+}
