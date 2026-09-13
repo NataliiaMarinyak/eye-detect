@@ -167,6 +167,8 @@
 .bottom {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 8px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -175,7 +177,7 @@
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 }
