@@ -22,8 +22,8 @@ export const pricingGroups = [
         priceLabelEng: "UAH 5,500",
       },
       {
-        name: "Розширена перевірка — до трьох тем",
-        nameRus: "Расширенная проверка — до трёх тем",
+        name: "Розширена перевірка — до трьох запитань",
+        nameRus: "Расширенная проверка — до трёх вопросов",
         nameEng: "Extended test — up to three issues",
         price: 8500,
         priceLabel: "8 500 ₴",
@@ -31,8 +31,8 @@ export const pricingGroups = [
         priceLabelEng: "UAH 8,500",
       },
       {
-        name: "Перевірка для пари — по одному тесту EyeDetect кожному, до трьох тем",
-        nameRus: "Проверка для пары — по одному тесту EyeDetect каждому, до трёх тем",
+        name: "Перевірка для пари — по одному тесту EyeDetect кожному, до трьох запитань",
+        nameRus: "Проверка для пары — по одному тесту EyeDetect каждому, до трёх вопросов",
         nameEng: "Couples test — one EyeDetect test each, up to three issues",
         price: 15000,
         priceLabel: "15 000 ₴",
