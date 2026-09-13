@@ -11,9 +11,8 @@
 }
 
 .title {
-  @include sectionTitle;
+  @include sectionTitleCentered;
   margin-bottom: 12px;
-  text-align: center;
 }
 
 .subTitle {

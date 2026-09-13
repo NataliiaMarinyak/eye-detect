@@ -15,7 +15,6 @@ const HomeStepsSection = ({ dictionary }) => {
       <div className={`container ${styles.container}`}>
         <Reveal>
           <h2 className={styles.title}>{d.title}</h2>
-          <p className={styles.subTitle}>{d.subTitle}</p>
         </Reveal>
         <ol className={styles.steps}>
           {d.steps.map((s, i) => (
