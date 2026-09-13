@@ -7,7 +7,7 @@ import { useEffect } from "react";
 // Поки для en і ru не створено окремі віджети, вони беруть український.
 const WIDGETS = {
   uk: "m0jpnihbe0t19nh0h1iw",
-  en: "m0jpnihbe0t19nh0h1iw",
+  en: "2n6h4drp17vmpebhs4vj",
   ru: "m0jpnihbe0t19nh0h1iw",
 };
 
