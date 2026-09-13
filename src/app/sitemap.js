@@ -22,6 +22,7 @@ export default async function sitemap() {
           languages: {
             uk: `${baseUrl}locations/${el.slug}`,
             ru: `${baseUrl}ru/locations/${el.slug}`,
+            en: `${baseUrl}en/locations/${el.slug}`,
           },
         },
       }));
@@ -59,6 +60,7 @@ export default async function sitemap() {
         languages: {
           uk: `${baseUrl}${route.href}`,
           ru: `${baseUrl}ru/${route.href}`,
+          en: `${baseUrl}en/${route.href}`,
         },
       },
     }));

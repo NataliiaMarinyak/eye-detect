@@ -110,7 +110,7 @@ const Block = ({ b, lang }) => {
                 </tbody>
               </table>
             </Reveal>
-            <p className={styles.tableHint}>{lang === "uk" ? "Гортайте таблицю вбік →" : "Листайте таблицу вбок →"}</p>
+            <p className={styles.tableHint}>{{ uk: "Гортайте таблицю вбік →", ru: "Листайте таблицу вбок →", en: "Scroll the table sideways →" }[lang]}</p>
             {b.note && <p className={styles.note}>{b.note}</p>}
           </div>
         </section>

@@ -5,6 +5,7 @@ import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { i18n } from "@/dictionaries/i18n.config";
 import { addressData } from "@/data/addressData";
 import { socialMediaData } from "@/data/socialMediaData";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./ContactsSection.module.scss";
 
 const T = {
@@ -30,6 +31,17 @@ const T = {
     openMap: "Открыть в Google Maps",
     book: "Записаться на тест",
   },
+  en: {
+    sub: "Office in Lviv, on-site visits across Ukraine and Europe, VerifEye online test from any city. Choose the way to reach us: we reply within an hour during business hours.",
+    call: "Call",
+    write: "Write",
+    email: "Email",
+    social: "Social media",
+    office: "Office in Lviv",
+    officeText: "EyeDetect tests take place in our office at 45 Horodotska St. We work by appointment, so call first or leave a request.",
+    openMap: "Open in Google Maps",
+    book: "Book a test",
+  },
 };
 
 // Контакти: картки способів зв'язку і карта кабінету. Форма заявки йде окремою секцією нижче.
@@ -48,7 +60,7 @@ const ContactsSection = ({ lang, dictionary }) => {
   const phone = socialMediaData.find((s) => s.name === "phone");
   const email = socialMediaData.find((s) => s.name === "email");
   const socials = socialMediaData.filter((s) => ["facebook", "instagram", "tiktok"].includes(s.name));
-  const address = isUk ? addressData.textAddress : addressData.textAddressRus;
+  const address = getLocalizedField(addressData, "textAddress", lang);
 
   return (
     <section className={styles.section}>

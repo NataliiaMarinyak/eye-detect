@@ -1,68 +1,87 @@
 {
   "lang": "en",
   "header": {
-    "topTitle": "On-site service across Ukraine & Europe"
+    "topTitle": "On-site service across Ukraine and Europe"
   },
   "footer": {
     "policy": "Privacy Policy"
   },
   "heroSection": {
-    "title": "EyeDetect Lie Detection in Lviv, Ukraine & across Europe",
-    "text": "✓ Official Converus partner in Ukraine\n\n✓ Trusted by U.S. and European law enforcement\n\n✓ Captures 50+ involuntary eye reactions per second\n\n✓ 15–45 minute test with automated, tamper-proof results",
-    "priceNote": "From UAH 5,500 · report the same day",
-    "h1": "Lie detector in Lviv: EyeDetect in our office or online from your phone",
-    "sub": "Official Converus partner (USA). A 30–45 minute test with no body sensors, report the same day. We travel across Ukraine and Europe.",
+    "title": "EyeDetect Lie Detector in Lviv",
+    "text": "✓ Official Converus partner in Ukraine\n\n✓ The choice of US and European law enforcement\n\n✓ Captures 50+ involuntary eye reactions per second\n\n✓ 15–45 minute test with an automated result that cannot be falsified",
+    "h1": "Lie Detector in Lviv",
+    "photoCaption": "60 factors per second: changes in pupil size, eye movements, blink rate and other reactions that cannot be controlled.",
+    "eyebrow": "Scientifically validated US polygraph based on eye reactions",
+    "tasksLabel": "Typical situations",
+    "tasks": [
+      {
+        "label": "Employee screening",
+        "href": "/business"
+      },
+      {
+        "label": "Investigations",
+        "href": "/situations/theft"
+      },
+      {
+        "label": "Fidelity test",
+        "href": "/situations/fidelity"
+      },
+      {
+        "label": "Tests for court",
+        "href": "/for/lawyers"
+      }
+    ],
+    "onlineText": "Can't come in person?",
+    "onlineLink": "VerifEye online test from a smartphone",
     "trust": [
-      "Official Converus partner",
-      "Up to 90% accuracy",
-      "Report the same day"
+      "The choice of US and European law enforcement",
+      "Automated result that cannot be falsified",
+      "No body sensors, 30–45 minutes with the result"
     ]
   },
   "homeAboutSection": {
-    "title": "The EyeDetect Technology and the Expert Behind It",
-    "subTitle": "EyeDetect was developed by Converus (USA). It analyses involuntary micro-movements of the eyes — unlike a classic polygraph, there are no body sensors, no pressure on the examinee and no subjective scoring. Results are produced by an unbiased AI algorithm. Testing in Lviv is conducted by Nataliia Marynyak — psychologist and certified specialist in oculomotor deception detection.",
+    "title": "The EyeDetect technology and the expert behind it",
+    "subTitle": "EyeDetect was developed by Converus, a US company. It analyzes involuntary micro-movements of the eyes. Unlike a classic polygraph, there are no body sensors, no pressure and no subjective scoring. The result is produced by an unbiased AI algorithm. Testing is conducted by Nataliia Marynyak, a psychologist and certified specialist in ocular-motor deception detection.",
     "listIntro": "An expert approach that delivers results:",
-    "imgCaption": "Russ Warner, Chief Commercial Officer at Converus (USA), and Nataliia Marynyak — certified EyeDetect expert in Ukraine"
+    "imgCaption": "Russ Warner, Chief Commercial Officer at Converus (USA), and Nataliia Marynyak, certified EyeDetect expert in Ukraine"
   },
   "homeCertificatesSection": {
     "title": "Professional education and certification"
   },
   "homeAdvantagesSection": {
-    "title": "Why companies choose EyeDetect",
-    "subTitle": "EyeDetect is a next-generation polygraph that records involuntary micro-movements of the eyes. Unlike a traditional lie detector, the test is taken on a computer with no body sensors, and the result is produced by an unbiased algorithm. Automated scoring keeps our pricing for polygraph services in Lviv transparent for both corporate clients and private individuals."
+    "title": "Advantages of the EyeDetect technology",
+    "subTitle": "EyeDetect is a next-generation polygraph test that records involuntary micro-movements of the eyes. Unlike a classic lie detector in Lviv, the test is taken on a computer with no body sensors, and the result is produced by an unbiased algorithm. Thanks to automation, we offer reasonable prices for polygraph services in Lviv for both businesses and private clients."
   },
   "homeClientsSection": {
-    "title": "EyeDetect: 1,000+ clients and 500,000+ tests across 60 countries"
+    "title": "EyeDetect lie detector: 1,000+ clients and 500,000+ tests in 60 countries"
   },
   "homeDirectionsSection": {
-    "title": "When EyeDetect helps",
-    "subTitle": "EyeDetect in Lviv is used when you need to quickly verify the truthfulness of statements, narrow down possible scenarios and make decisions based on a structured assessment. It is not a substitute for an investigation or court proceedings, but an effective tool for corporate and private clients when it is critical to understand whether a person is concealing material information.",
-    "conclusion": "EyeDetect works best when questions are framed specifically: not “is this a good person?”, but “did you share this information?”, “did you take the money?”, “were you involved in the theft?”, “did you conceal material facts?”. This level of specificity makes the assessment valid and the result actionable."
+    "title": "Situations where EyeDetect helps",
+    "subTitle": "The EyeDetect lie detector in Lviv is used when you need to quickly verify whether a person is telling the truth, narrow down the possible scenarios and make a decision based on a structured test."
   },
   "homeCountriesSection": {
     "title": "Trusted in 60+ countries worldwide",
-    "subTitle": "EyeDetect is chosen by U.S. police departments, banks, universities and international corporations"
+    "subTitle": "EyeDetect is chosen by US police departments, banks, universities and international corporations"
   },
   "homeFAQSection": {
     "title": "Frequently asked questions"
   },
   "homeConditionsSection": {
-    "title": "Comfortable testing conditions for the EyeDetect polygraph (lie detector)"
+    "title": "Comfortable testing conditions on the EyeDetect polygraph (lie detector)"
   },
   "homeOrderSection": {
     "title": "Contact us",
-    "question": "To book an EyeDetect polygraph (lie detector) test, leave your details in the form or reach out via the contacts below.",
-    "answer": "Certified polygraph examiner and psychologist Nataliia Marynyak will get back to you shortly."
+    "question": "To book an EyeDetect polygraph (lie detector) test, leave your details in the form or reach us via the contacts listed."
   },
   "consultationSection": {
-    "title": "EyeDetect polygraph testing — a professional approach",
-    "subTitle": "Consultation with EyeDetect examiner Nataliia Marynyak"
+    "title": "EyeDetect polygraph testing: a professional approach",
+    "subTitle": "Consultation with EyeDetect polygraph examiner Nataliia Marynyak"
   },
   "specialistSection": {
-    "title": "Nataliia Marynyak — EyeDetect lie detection expert"
+    "title": "Nataliia Marynyak, EyeDetect lie detector expert"
   },
   "contactsSection": {
-    "title": "EyeDetect: contacts in Ukraine and Europe"
+    "title": "EyeDetect lie detector: contacts in Ukraine and Europe"
   },
   "locationSection": {
     "title": "Where to take an EyeDetect polygraph test: Ukraine and Europe"
@@ -80,7 +99,7 @@
     "name": "Your name",
     "tel": "Phone number",
     "email": "Email",
-    "textArea": "Message",
+    "textArea": "Comment",
     "formSubmitedMsg": "Your message has been sent."
   },
   "formErrors": {
@@ -88,22 +107,22 @@
     "shortName": "Too short",
     "onlyNumbers": "Numbers only",
     "onlyInteger": "Whole numbers only",
-    "shortNumber": "Number too short",
-    "longNumber": "Number too long",
+    "shortNumber": "Number is too short",
+    "longNumber": "Number is too long",
     "invalidEmail": "Invalid email address"
   },
   "buttons": {
-    "calculatePrice": "Get a quote",
-    "orderConsultation": "Book a consultation",
+    "calculatePrice": "Get an exact quote",
+    "orderConsultation": "Request a consultation",
     "askSpecialist": "Ask the specialist",
     "moreDetails": "Learn more",
-    "sendRequest": "Send",
+    "sendRequest": "Send request",
     "localeSwitcherUkr": "UA",
     "localeSwitcherRus": "RU",
     "localeSwitcherEn": "EN",
-    "testOnline": "Take the test online",
-    "bookLviv": "Book in Lviv",
-    "bookVisit": "Request a visit",
+    "testOnline": "Take the VerifEye online test",
+    "bookLviv": "Book an EyeDetect test",
+    "bookVisit": "Request an on-site visit",
     "learnHow": "How the test works"
   },
   "notifications": {
@@ -111,71 +130,73 @@
     "error": "Could not send the request. Please call us."
   },
   "seoMainPage": {
-    "seoMetaMainTitle": "EyeDetect Polygraph in Lviv, Ukraine & Europe | Corporate & Private Lie Detection",
-    "seoMetaMainDescription": "EyeDetect by Converus — automated, eye-tracking lie detection for pre-employment screening, corporate investigations and private cases. On-site testing in Lviv, across Ukraine and Europe.",
+    "seoMetaMainTitle": "Polygraph and Lie Detector in Lviv — EyeDetect and Online Test",
+    "seoMetaMainDescription": "EyeDetect lie detector in Lviv: a 30–45 minute test with no body sensors, result within 45 minutes. VerifEye online test from your phone. On-site polygraph service across Ukraine and Europe.",
     "seoMetaKeywords": [
       "EyeDetect",
       "Lviv",
       "lie detector",
-      "polygraph",
-      "pre-employment screening",
-      "corporate investigations",
-      "fidelity testing",
-      "Converus"
+      "consultation",
+      "test",
+      "reliable test",
+      "modern polygraph",
+      "polygraph testing"
     ],
-    "seoMetaTitleOpenGraph": "EyeDetect Polygraph in Lviv, Ukraine & Europe — fast, reliable lie detection ✅",
-    "seoMetaDescriptionOpenGraph": "EyeDetect by Converus 👆 automated, eye-tracking lie detection for pre-employment screening, corporate investigations and private cases. On-site testing in Lviv, Ukraine and Europe.",
-    "seoMetaNameJsonLd_1": "Home — EyeDetect Polygraph"
+    "seoMetaTitleOpenGraph": "Polygraph in Lviv: fast and reliable lie detector test with EyeDetect✅",
+    "seoMetaDescriptionOpenGraph": "EyeDetect lie detector in Lviv 👆 a modern polygraph method with guaranteed accuracy for any situation. Over 500 satisfied clients!",
+    "seoMetaNameJsonLd_1": "Polygraph home page"
   },
   "seoContactsPage": {
-    "seoMetaMainTitle": "Contact EyeDetect — polygraph in Lviv, Ukraine & Europe",
-    "seoMetaMainDescription": "Get in touch to book an EyeDetect lie detector test. Office in Lviv and on-site service across Ukraine and Europe. Consultations and on-location testing available.",
+    "seoMetaMainTitle": "EyeDetect Contacts — Polygraph and Lie Detector in Lviv, Ukraine and Europe",
+    "seoMetaMainDescription": "Contact us for an EyeDetect lie detector test. Polygraph office address in Lviv and on-site service across Ukraine and Europe. Consultations and on-site testing.",
     "seoMetaKeywords": [
       "EyeDetect",
       "on-site service",
       "lie detector",
       "consultation",
-      "polygraph test"
+      "test"
     ],
-    "seoMetaTitleOpenGraph": "EyeDetect Polygraph in Lviv, Ukraine & Europe — fast, reliable lie detection ✅",
-    "seoMetaDescriptionOpenGraph": "EyeDetect by Converus 👆 automated, eye-tracking lie detection for pre-employment screening, corporate investigations and private cases.",
-    "seoMetaNameJsonLd_1": "Home — EyeDetect Polygraph",
-    "seoMetaNameJsonLd_2": "EyeDetect Contacts"
+    "seoMetaTitleOpenGraph": "Polygraph in Lviv: fast and reliable lie detector test with EyeDetect✅",
+    "seoMetaDescriptionOpenGraph": "EyeDetect lie detector in Lviv 👆 a modern polygraph method with guaranteed accuracy for any situation. Over 500 satisfied clients!",
+    "seoMetaNameJsonLd_1": "Polygraph home page",
+    "seoMetaNameJsonLd_2": "EyeDetect contacts"
   },
   "seoAboutUsPage": {
-    "seoMetaMainTitle": "Nataliia Marynyak — professional EyeDetect polygraph examiner",
-    "seoMetaMainDescription": "Expert consultation and professional EyeDetect lie detection testing. Nataliia Marynyak guarantees quality and full confidentiality.",
+    "seoMetaMainTitle": "Nataliia Marynyak — Professional EyeDetect Polygraph Examiner in Lviv",
+    "seoMetaMainDescription": "Get an expert consultation and a professional EyeDetect lie detector test in Lviv. Polygraph examiner Nataliia Marynyak guarantees quality and confidentiality.",
     "seoMetaKeywords": [
       "EyeDetect",
       "Nataliia Marynyak",
       "lie detector",
       "consultation",
-      "polygraph",
-      "professional examiner"
+      "test",
+      "professional polygraph examiner",
+      "polygraph examiner"
     ],
-    "seoMetaTitleOpenGraph": "EyeDetect Polygraph in Lviv, Ukraine & Europe — fast, reliable lie detection ✅",
-    "seoMetaDescriptionOpenGraph": "EyeDetect by Converus 👆 automated, eye-tracking lie detection for pre-employment screening, corporate investigations and private cases.",
-    "seoMetaNameJsonLd_1": "Home — EyeDetect Polygraph",
+    "seoMetaTitleOpenGraph": "Polygraph in Lviv: fast and reliable lie detector test with EyeDetect✅",
+    "seoMetaDescriptionOpenGraph": "EyeDetect lie detector in Lviv 👆 a modern polygraph method with guaranteed accuracy for any situation. Over 500 satisfied clients!",
+    "seoMetaNameJsonLd_1": "Polygraph home page",
     "seoMetaNameJsonLd_2": "About us"
   },
   "seoPryvacyPolicyPage": {
-    "seoMetaMainTitle": "Privacy Policy | EyeDetect",
-    "seoMetaMainDescription": "All information provided by users of the website is processed in accordance with this Privacy Policy.",
+    "seoMetaMainTitle": "Privacy Policy | EyeDetect Lie Detector and Polygraph in Lviv",
+    "seoMetaMainDescription": "All information provided by users of the EyeDetect lie detector and polygraph website in Lviv is processed in accordance with this Privacy Policy.",
     "seoMetaKeywords": [
       "EyeDetect",
       "lie detector",
       "consultation",
-      "polygraph",
-      "professional examiner"
+      "test",
+      "professional polygraph examiner",
+      "polygraph examiner"
     ],
-    "seoMetaTitleOpenGraph": "EyeDetect Polygraph in Lviv, Ukraine & Europe — fast, reliable lie detection ✅",
-    "seoMetaDescriptionOpenGraph": "EyeDetect by Converus 👆 automated, eye-tracking lie detection for any situation.",
-    "seoMetaNameJsonLd_1": "Home — EyeDetect Polygraph",
+    "seoMetaTitleOpenGraph": "Polygraph in Lviv: fast and reliable lie detector test with EyeDetect✅",
+    "seoMetaDescriptionOpenGraph": "EyeDetect lie detector in Lviv 👆 a modern polygraph method with guaranteed accuracy for any situation.",
+    "seoMetaNameJsonLd_1": "Polygraph home page",
     "seoMetaNameJsonLd_2": "Privacy Policy"
   },
   "seoLocationsPage": {
-    "seoMetaMainTitle": "EyeDetect locations: polygraph testing in Ukraine & Europe",
-    "seoMetaMainDescription": "EyeDetect is available in your region. Find convenient testing locations in Ukraine and Europe for the EyeDetect lie detector. Easy booking and consultation.",
+    "seoMetaMainTitle": "EyeDetect Polygraph Locations: Lie Detector Testing in Lviv, Ukraine and Europe",
+    "seoMetaMainDescription": "EyeDetect is available in your region. Find convenient lie detector testing locations in Lviv, across Ukraine and Europe. Easy polygraph booking and consultation.",
     "seoMetaKeywords": [
       "EyeDetect",
       "locations",
@@ -185,65 +206,66 @@
       "polygraph locations",
       "locations in Europe"
     ],
-    "seoMetaTitleOpenGraph": "EyeDetect Polygraph in Lviv, Ukraine & Europe — fast, reliable lie detection ✅",
-    "seoMetaDescriptionOpenGraph": "EyeDetect by Converus 👆 automated, eye-tracking lie detection for any situation.",
-    "seoMetaNameJsonLd_1": "Home — EyeDetect Polygraph",
-    "seoMetaNameJsonLd_2": "EyeDetect Locations"
+    "seoMetaTitleOpenGraph": "Polygraph in Lviv: fast and reliable lie detector test with EyeDetect✅",
+    "seoMetaDescriptionOpenGraph": "EyeDetect lie detector in Lviv 👆 a modern polygraph method with guaranteed accuracy for any situation.",
+    "seoMetaNameJsonLd_1": "Polygraph home page",
+    "seoMetaNameJsonLd_2": "EyeDetect locations"
   },
   "seoLocationIdPage": {
     "seoMetaKeywords": [
       "EyeDetect",
-      "fidelity testing",
+      "fidelity test",
       "lie detector",
       "consultation",
       "testing in Ukraine",
-      "polygraph testing",
-      "pre-marriage testing",
-      "pre-employment screening",
+      "polygraph test",
+      "pre-wedding test",
+      "employee screening",
       "internal investigations",
-      "corporate polygraph",
+      "polygraph testing",
       "testing conditions"
     ],
-    "seoMetaTitleOpenGraph": "EyeDetect Polygraph in Lviv, Ukraine & Europe — fast, reliable lie detection ✅",
-    "seoMetaDescriptionOpenGraph": "EyeDetect by Converus 👆 automated, eye-tracking lie detection for any situation.",
-    "seoMetaNameJsonLd_1": "Home — EyeDetect Polygraph",
-    "seoMetaNameJsonLd_2": "EyeDetect Locations",
-    "seoMetaNameJsonLd_3": "Modern EyeDetect Polygraph"
+    "seoMetaTitleOpenGraph": "Polygraph in Lviv: fast and reliable lie detector test with EyeDetect✅",
+    "seoMetaDescriptionOpenGraph": "EyeDetect lie detector in Lviv 👆 a modern polygraph method with guaranteed accuracy for any situation.",
+    "seoMetaNameJsonLd_1": "Polygraph home page",
+    "seoMetaNameJsonLd_2": "EyeDetect locations",
+    "seoMetaNameJsonLd_3": "Modern EyeDetect polygraph"
   },
   "pricesSection": {
-    "title": "EyeDetect test prices in Lviv and the VerifEye online test",
-    "subTitle": "The price depends on the number of people and topics. Below are fixed prices for typical cases: in office, online and abroad. The quiz calculates the exact amount for your case in 30 seconds.",
-    "includedTitle": "What's included",
+    "title": "Lie detector prices in Lviv: EyeDetect polygraph and VerifEye online test",
+    "subTitle": "The price depends on the number of people and the number of topics tested. Below are fixed prices for typical cases: in our Lviv office, online and abroad.",
+    "includedTitle": "What the price includes",
     "notesTitle": "Additional",
-    "comparisonTitle": "What this costs elsewhere"
+    "comparisonTitle": "What this costs around the world"
   },
   "seoPricesPage": {
-    "seoMetaMainTitle": "Lie detector test prices in Lviv — EyeDetect from UAH 5,500, online from UAH 2,500",
-    "seoMetaMainDescription": "How much a lie detector test costs: EyeDetect in Lviv from UAH 5,500, VerifEye online from UAH 2,500, staff screening from UAH 3,200 per person, travel across Ukraine and Europe.",
+    "seoMetaMainTitle": "Lie Detector Prices in Lviv — EyeDetect Polygraph and Online Test",
+    "seoMetaMainDescription": "How much a lie detector test costs: EyeDetect polygraph in Lviv from UAH 5,500, VerifEye online test from UAH 2,500, business pricing on request, on-site service across Ukraine and Europe.",
     "seoMetaKeywords": [
-      "EyeDetect price",
-      "Lie detector cost",
-      "Polygraph Lviv price",
-      "EyeDetect"
+      "polygraph prices",
+      "lie detector",
+      "EyeDetect",
+      "test cost",
+      "polygraph Lviv price"
     ],
-    "seoMetaTitleOpenGraph": "Lie detector test prices in Lviv — EyeDetect from UAH 5,500, online from UAH 2,500",
-    "seoMetaDescriptionOpenGraph": "How much a lie detector test costs: EyeDetect in Lviv from UAH 5,500, VerifEye online from UAH 2,500, staff screening from UAH 3,200 per person, travel across Ukraine and Europe.",
+    "seoMetaTitleOpenGraph": "Lie detector prices in Lviv — EyeDetect polygraph from UAH 5,500 and online from UAH 2,500",
+    "seoMetaDescriptionOpenGraph": "How much a lie detector test costs: EyeDetect polygraph in Lviv from UAH 5,500, VerifEye online test from UAH 2,500, business pricing on request, on-site service across Ukraine and Europe.",
     "seoMetaNameJsonLd_1": "Polygraph home page",
     "seoMetaNameJsonLd_2": "EyeDetect prices"
   },
   "homeStats": {
     "items": [
       {
-        "value": 90,
-        "prefix": "up to ",
+        "value": 91,
+        "prefix": "88–",
         "suffix": "%",
-        "label": "accuracy according to Converus"
+        "label": "EyeDetect accuracy according to research"
       },
       {
         "value": 45,
         "prefix": "30–",
         "suffix": " min",
-        "label": "test duration, no sensors"
+        "label": "test duration, no body sensors"
       },
       {
         "value": 500000,
@@ -261,15 +283,13 @@
   },
   "homePaths": {
     "title": "Two ways to learn the truth",
-    "subTitle": "Both run on Converus technology. The difference is where the test takes place and how long it takes.",
     "office": {
-      "badge": "In office or on site",
+      "badge": "In our Lviv office or on-site",
       "title": "EyeDetect",
-      "text": "A test on dedicated equipment in Lviv or at your location. The camera captures 50+ eye reactions per second and the algorithm produces the result without human judgement.",
+      "text": "A test on Converus equipment in Lviv or on-site at your location, with the examiner present.",
       "facts": [
-        "30–45 minutes",
-        "no body sensors",
-        "report the same day"
+        "86–90% accuracy",
+        "test and report within 45 minutes"
       ],
       "price": "from UAH 5,500",
       "cta": "Book a test"
@@ -277,43 +297,48 @@
     "online": {
       "badge": "Online from a phone",
       "title": "VerifEye",
-      "text": "The same principle through a smartphone camera. You receive a link, the person takes the test in a quiet room, and the report arrives by email.",
+      "text": "The person opens a link in the VerifEye app on their smartphone, listens to the questions and answers out loud. The algorithm evaluates the eye reactions.",
       "facts": [
-        "15 minutes",
-        "from any city",
-        "PDF report in 20 minutes"
+        "about 10 minutes",
+        "84–89% accuracy",
+        "PDF report"
       ],
       "price": "from UAH 2,500",
-      "cta": "Take it online"
+      "cta": "Take the online test"
     }
   },
   "homeSteps": {
     "title": "How the test works",
-    "subTitle": "Three steps from the first call to a written report.",
     "steps": [
       {
         "title": "Conversation and question design",
-        "text": "You explain the situation and together we formulate 1–4 specific questions. There are no vague questions like “is this a good person”."
+        "text": "You explain the situation and together we formulate 1–3 specific questions."
       },
       {
         "title": "A 30–45 minute test",
-        "text": "The person sits in front of a monitor and answers “true” or “false” to statements. The equipment records eye reactions that cannot be controlled."
+        "text": "The person sits in front of a camera and answers “true” or “false” to statements. The equipment records eye reactions that cannot be controlled."
       },
       {
-        "title": "Report the same day",
-        "text": "The Converus algorithm calculates a credibility score from 1 to 99 for each question. You receive a PDF report with an explanation."
+        "title": "Report right after the test",
+        "text": "The Converus algorithm calculates the Credibility Score within 5 minutes. You receive an automated PDF report."
       }
     ]
   },
   "homeReport": {
     "title": "What you receive",
-    "subTitle": "A written EyeDetect report with a credibility score for each question. Below is a real report with the client’s data blurred.",
+    "subTitle": "A written EyeDetect report with a Credibility Score. Below is a real report with the client’s data blurred.",
     "points": [
-      "A score from 1 to 99 per question: 50–99 truthful, 1–49 deceptive",
-      "A separate overall verdict: credible or not credible",
-      "Answer details for every statement so you can see how the score was formed",
-      "A PDF report, ready on the day of the test"
+      "A Credibility Score from 1 to 99: 50 and above is “credible”, below 50 is “not credible”. In a multi-topic test, each topic gets its own score",
+      "Answers to every statement, so you can see how the score was formed",
+      "If the algorithm could not score the test (instructions not followed, random answers, eye or lighting problems), the test is declared invalid and repeated at a 50% discount"
     ],
     "caption": "A real EyeDetect report, fidelity test. Personal data blurred."
+  },
+  "modal": {
+    "title": "Consultation request",
+    "serviceLabel": "Service",
+    "text": "We will call or message you within an hour during business hours. Together we will agree on the questions and the date. Payment only after the booking is confirmed.",
+    "privacy": "Your name and phone number are used only to contact you about this request.",
+    "close": "Close"
   }
 }

@@ -8,6 +8,7 @@ import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import { getCityData } from "@/helpers/getCityData";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./MachineSection.module.scss";
 
 const MachineSection = ({ lang, dictionary, slug }) => {
@@ -23,7 +24,7 @@ const MachineSection = ({ lang, dictionary, slug }) => {
     <section className={styles.section}>
       <div className={`container ${styles.container}`}>
         <h1 className={styles.title}>
-          {lang === i18n.locales[0] ? data?.mainTitle : data?.mainTitleRus}
+          {getLocalizedField(data, "mainTitle", lang)}
         </h1>
 
         <div className={styles.imgWrapper}>

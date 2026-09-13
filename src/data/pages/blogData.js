@@ -3,6 +3,7 @@
 export const blogShared = {
   uk: { crumbHome: "Головна", crumb: "Блог", title: "Блог про детектор брехні", sub: "Як проходить тест, що можна перевірити, а що ні, і як не потрапити на застосунок-жарт. Пишемо просто, без міфів.", readMore: "Читати", published: "Опубліковано", related: "Ще з блогу", ctaTitle: "Є конкретне питання?", ctaText: "Напишіть нам, підкажемо, чи підходить тест для вашої ситуації.", ctaOnline: "Пройти онлайн", ctaBook: "Записатися" },
   ru: { crumbHome: "Главная", crumb: "Блог", title: "Блог о детекторе лжи", sub: "Как проходит тест, что можно проверить, а что нет, и как не попасть на приложение-шутку. Пишем просто, без мифов.", readMore: "Читать", published: "Опубликовано", related: "Ещё из блога", ctaTitle: "Есть конкретный вопрос?", ctaText: "Напишите нам, подскажем, подходит ли тест для вашей ситуации.", ctaOnline: "Пройти онлайн", ctaBook: "Записаться" },
+  en: { crumbHome: "Home", crumb: "Blog", title: "Lie Detector Blog", sub: "How the test works, what can and cannot be checked, and how to avoid falling for a joke app. Plain language, no myths.", readMore: "Read", published: "Published", related: "More from the blog", ctaTitle: "Have a specific question?", ctaText: "Write to us and we will tell you whether the test fits your situation.", ctaOnline: "Take the online test", ctaBook: "Book a test" },
 };
 
 import { blogPosts2 } from "@/data/pages/blogData2";
@@ -46,6 +47,23 @@ const blogPosts1 = [
         { q: "Что, если я когда-то взял что-то мелкое?", a: "Скажите об этом до теста. Мелкие эпизоды, названные заранее, не влияют на результат. Влияет сокрытие." },
       ],
     },
+    en: {
+      title: "What Questions Are Asked on a Pre-Employment Polygraph",
+      description: "Which topics a pre-employment lie detector test covers: theft, drugs, criminal records, résumé claims, ties to competitors. How the questions are worded and whether you can decline.",
+      h1: "What Questions Are Asked on a Pre-Employment Polygraph",
+      lead: "Candidates fear this test more than they should. The questions are not about your private life and not about whether you are “a good person”. They are about specific facts that matter for the position, and the candidate reads all of them in advance.",
+      sections: [
+        { h2: "Five standard topics", paragraphs: ["An employer usually picks 2–4 topics from this list. More cannot be covered in a single test, because accuracy drops."], list: ["Theft at previous jobs: cash, goods, company property.", "Use of hard drugs in the last 12 months.", "Concealed criminal convictions or pending criminal proceedings.", "False information on the résumé: education, experience, reasons for leaving.", "Ties to competitors or an intention to pass information to them."] },
+        { h2: "What a question actually sounds like", paragraphs: ["Not “are you honest”, but “In the last 5 years, have you taken money or goods from an employer without permission?”. Every question has a time period, a specific action and an unambiguous answer. Before the test the candidate reads an explanation: what counts as theft and what does not, for example, a pen from the desk does not count.", "Then the same question appears on the screen as statements: “I did not take money from an employer without permission” and “I took money from an employer without permission”. The person answers “true” or “false”. Each statement is repeated several times in different wordings."] },
+        { h2: "What is not asked", paragraphs: ["Religion, politics, sexual orientation, health, family plans. Such questions are unlawful and pointless for the test. If an employer insists on them, the candidate has the right to decline those specific topics rather than the test as a whole."] },
+        { h2: "Can you decline", paragraphs: ["Yes. The test is strictly voluntary and requires written consent. But the employer has the right not to hire someone who declined without explanation, if screening is part of the hiring process for the position. So the honest advice to a candidate: if there is nothing to hide, the test only helps."] },
+        { h2: "How long it takes and what the employer receives", paragraphs: ["An EyeDetect test takes 30–45 minutes, with no sensors on the body. The employer receives a report with a score from 1 to 99 on each topic the same day. The result is not evidence in court; it is a basis for a hiring decision."] },
+      ],
+      faq: [
+        { q: "Can I prepare for the questions?", a: "Yes, and it is encouraged: the candidate reads all the questions in advance. Preparation means getting a good night's sleep and staying calm, not “learning how to cheat”." },
+        { q: "What if I once took something minor?", a: "Say so before the test. Minor episodes disclosed in advance do not affect the result. Concealment does." },
+      ],
+    },
   },
   {
     slug: "chy-mozhna-obmanuty-detektor-brekhni",
@@ -81,6 +99,22 @@ const blogPosts1 = [
       faq: [
         { q: "А если человек очень волнуется, его признают лжецом?", a: "Нет. Волнение одинаково на все вопросы, а алгоритм сравнивает реакции на значимые и нейтральные утверждения между собой." },
         { q: "Можно ли обмануть онлайн-тест VerifEye?", a: "Тот же принцип, та же камера, только в телефоне. Попытки смотреть в сторону или читать не с экрана помечаются как недействительный тест." },
+      ],
+    },
+    en: {
+      title: "Can You Beat a Lie Detector: What Works and What Does Not",
+      description: "A tack in the shoe, sedatives, counting in your head, “believing your own lie”. Which of these work against a classic polygraph, and which work against EyeDetect.",
+      h1: "Can You Beat a Lie Detector",
+      lead: "The internet is full of tips on how to “pass a polygraph”. Most of them are about the classic device with sensors and about the 1990s. Let us go through them one by one: which still work, and why none of them work against a test based on eye movements.",
+      sections: [
+        { h2: "Tips from the internet and what is wrong with them", paragraphs: ["All the known countermeasures are designed for the classic polygraph: it measures breathing, blood pressure and sweating, and these can be changed deliberately."], list: ["A tack in the shoe, tensing muscles: creates an artificial reaction to control questions. An experienced polygraph examiner sees it on the chart, and EyeDetect does not measure the body at all.", "Sedatives or alcohol: blunt reactions evenly, and the test is declared invalid. On EyeDetect, a person under the influence is not admitted to the test.", "Counting in your head, recalling something unpleasant: affects only breathing and blood pressure. It has no effect on the pupil or reading time.", "“Believing your own lie”: sounds good, but the brain still spends more effort on a false answer. That effort is exactly what is recorded."] },
+        { h2: "Why the eyes do not lie", paragraphs: ["The pupil dilates by fractions of a millimeter when the brain works harder. This cannot be controlled consciously, just as you cannot order your heart to stop beating. EyeDetect also records reading speed, re-reading of words, response time and errors. More than 50 measurements per second, and the person controls none of them.", "There is one more detail. The statements on the screen are repeated many times in different wordings. You can lie once; you cannot lie consistently 60 times in a row."] },
+        { h2: "What happens if you try", paragraphs: ["The algorithm has a separate category, “random responding”: when a person presses the buttons at random, stalls for time or does not read the text. Such a test is declared invalid and does not look “truthful”. For the client, that is information too."] },
+        { h2: "What really affects the result", paragraphs: ["Not tricks, but condition: lack of sleep, severe anxiety, poorly worded questions. That is why before the test we explain every question, give a practice test and ask you to get a good night's sleep. An inconclusive result occurs in no more than 10 cases out of 100, and then we offer a retest at a discount."] },
+      ],
+      faq: [
+        { q: "If a person is very nervous, will they be called a liar?", a: "No. Nervousness is the same across all questions, while the algorithm compares reactions to relevant and neutral statements against each other." },
+        { q: "Can the VerifEye online test be beaten?", a: "Same principle, same camera, only in a phone. Attempts to look away or read from something other than the screen are flagged as an invalid test." },
       ],
     },
   },
@@ -122,6 +156,23 @@ const blogPosts1 = [
         { q: "Можно ли взять с собой поддержку?", a: "В кабинет да, в комнату теста нет. Во время теста в комнате только человек и специалист." },
       ],
     },
+    en: {
+      title: "How to Prepare for a Lie Detector Test",
+      description: "What to do the day before an EyeDetect or VerifEye test: sleep, food, medication, glasses, clothing. What to bring and what not to do. A short checklist from the examiner.",
+      h1: "How to Prepare for a Lie Detector Test",
+      lead: "Preparation is not about “passing”. It is about making the test valid on the first attempt. Half of all inconclusive results come down to lack of sleep and rushing.",
+      sections: [
+        { h2: "The day before", paragraphs: ["Three things that really matter."], list: ["Sleep at least 7 hours. Fatigue slows reading and throws off the algorithm.", "No alcohol for 24 hours, no drugs for 72 hours. Otherwise the test is not conducted.", "Do not change your regular medication unless necessary. If you take something daily, mention it before the test."] },
+        { h2: "On the day of the test", paragraphs: ["Eat 1–2 hours before, so you are neither hungry nor overly full. Your usual amount of coffee is fine. Bring your glasses or contact lenses if you wear them: the test is taken with them on. Arrive 10 minutes early so you are not stressed about being late."] },
+        { h2: "Right before the test", paragraphs: ["You will read all the questions with explanations. If anything is unclear, ask; that is normal and even necessary. If there is an episode related to a question, mention it right away: disclosed in advance, it does not affect the result. Then a 5-minute practice test to get used to the screen and the buttons."] },
+        { h2: "During the test", paragraphs: ["Keep your chin on the rest, move only your eyes, read each statement in full, answer honestly and do not stall. Do not talk, do not adjust the equipment. That is all that is required."] },
+        { h2: "For the VerifEye online test", paragraphs: ["A quiet room, even lighting with no window behind you, the phone on a stand at eye level, airplane mode with Wi-Fi on, 20 free minutes. Glasses with strong lenses can interfere with the camera; in that case the test in our Lviv office is the better option."] },
+      ],
+      faq: [
+        { q: "Can I take the test while sick?", a: "A common cold is not a problem. A fever, a heavy cough or an eye condition are, so it is better to reschedule." },
+        { q: "Can I bring someone for support?", a: "To the office, yes; into the test room, no. During the test only the examinee and the examiner are in the room." },
+      ],
+    },
   },
   {
     slug: "chy-ye-detektor-brekhni-dokazom-u-sudi",
@@ -157,6 +208,22 @@ const blogPosts1 = [
       faq: [
         { q: "Можно ли пройти тест по требованию адвоката?", a: "Да. Адвокаты заказывают тесты, чтобы понять позицию клиента до процесса или подготовить мировое соглашение." },
         { q: "Можно ли заставить другую сторону пройти тест?", a: "Нет, только добровольно. Отказ другой стороны тоже информация для переговоров." },
+      ],
+    },
+    en: {
+      title: "Is a Lie Detector Result Admissible as Evidence in a Ukrainian Court",
+      description: "The honest answer: no, the test result is not evidence. But it is used in settlement agreements, internal investigations and as a basis for decisions. What the law says.",
+      h1: "Is a Lie Detector Result Admissible as Evidence in Court",
+      lead: "In short: no. Neither the classic polygraph nor EyeDetect counts as evidence under Ukrainian criminal or civil procedure. The longer answer is more interesting, because the test still changes how cases play out.",
+      sections: [
+        { h2: "What the law says", paragraphs: ["Ukraine has no law that recognizes the results of psychophysiological examinations as evidence. A court may accept the report as one of the documents in the file, but it is not obliged to and usually does not base its decision on it. The same applies to most EU countries. In the US, practice varies by state, but even there a result is rarely admitted without the consent of both parties."] },
+        { h2: "Where the result actually works", paragraphs: ["Three situations where the test affects the outcome without a court."], list: ["Settlement agreements. When one party confirms its version with a test and the other refuses to take one, negotiations end quickly.", "Internal investigations in a company. The employer makes a personnel decision based on the report and its own investigation; no court is needed.", "Family decisions. Questions of fidelity or hidden finances are settled between people, not in court, and the test gives them a basis for the conversation."] },
+        { h2: "Why we say this openly", paragraphs: ["Some promise a “report for court”. We do not, because that is not true. The test gives a score from 1 to 99 on each question and shows which version of events holds up under scrutiny. What to do with that next is up to you, sometimes together with a lawyer."] },
+        { h2: "What you can get", paragraphs: ["A written report with scores, the date, the name of the test and the examiner's signature. It can be added to the case file as a document. It will not bind the court, but it will show your position and your willingness to be tested."] },
+      ],
+      faq: [
+        { q: "Can I take the test at my lawyer's request?", a: "Yes. Lawyers order tests to understand their client's position before proceedings or to prepare a settlement agreement." },
+        { q: "Can the other party be forced to take the test?", a: "No, only voluntarily. The other party's refusal is also information for the negotiations." },
       ],
     },
   },

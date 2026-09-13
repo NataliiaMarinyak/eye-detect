@@ -10,7 +10,7 @@ export const FAQDataHome = [
     answerRus:
       "EyeDetect — это инновационная автоматизированная технология проверки правдивости от американской компании Converus. В отличие от классического полиграфа, к телу человека не крепятся никакие датчики или провода. Респондент просто сидит перед монитором с высокоточной инфракрасной камерой и отвечает на вопросы «Да/Нет». Камера фиксирует непроизвольные реакции глаз, которые невозможно контролировать сознательно.",
     answerEng:
-      "EyeDetect is an automated lie-detection technology developed by U.S. company Converus. Unlike a classic polygraph, no sensors or wires are attached to the body. The examinee simply sits in front of a monitor equipped with a high-precision infrared camera and answers True/False questions. The camera captures involuntary eye reactions that cannot be consciously controlled.",
+      "EyeDetect is an automated lie-detection technology developed by U.S. company Converus. Unlike a classic polygraph, no sensors or wires are attached to the body. The examinee simply sits in front of a monitor equipped with a high-precision infrared camera and answers Yes/No questions. The camera captures involuntary eye reactions that cannot be consciously controlled.",
   },
   {
     question: "На чому базується науковий принцип роботи EyeDetect?",
@@ -32,7 +32,7 @@ export const FAQDataHome = [
     answerRus:
       "Сначала эксперт уточняет ситуацию и формулирует вопросы вместе с вами. Далее проводится краткий инструктаж и калибровка камеры. Сам тест проходит за компьютером, где вы отвечаете «Да» или «Нет» на серию вопросов. После завершения данные автоматически шифруются и отправляются на защищенный сервер Converus, где алгоритм формирует отчет. Весь визит обычно занимает до 60 минут.",
     answerEng:
-      "First, the examiner reviews the situation with you and formulates the test questions together. Next comes a brief instruction phase and camera calibration. The test itself takes place on a computer where you answer True or False to a series of questions. When finished, the data is encrypted automatically and transmitted to a secure Converus server, where the algorithm generates the report. The full visit typically takes up to 60 minutes.",
+      "First, the examiner reviews the situation with you and formulates the test questions together. Next comes a brief instruction phase and camera calibration. The test itself takes place on a computer where you answer Yes or No to a series of questions. When finished, the data is encrypted automatically and transmitted to a secure Converus server, where the algorithm generates the report. The full visit typically takes up to 60 minutes.",
   },
   {
     question: "Яка точність тесту EyeDetect?",
@@ -76,7 +76,7 @@ export const FAQDataHome = [
     answerRus:
       "Нет. В этом и заключается главное преимущество EyeDetect — полное отсутствие человеческого фактора. Зашифрованные данные автоматически загружаются на защищенный облачный сервер Converus, где математический алгоритм анализирует показатели и формирует отчет. Полиграфолог физически не может изменить или скорректировать результат, что гарантирует 100% объективность и беспристрастность.",
     answerEng:
-      "No. This is the key advantage of EyeDetect — the complete elimination of the human factor. Encrypted data is automatically uploaded to a secure Converus cloud server, where a mathematical algorithm analyses the metrics and generates the report. The examiner physically cannot alter or adjust the result, which guarantees full objectivity and impartiality.",
+      "No. This is the key advantage of EyeDetect — the complete elimination of the human factor. Encrypted data is automatically uploaded to a secure Converus cloud server, where a mathematical algorithm analyzes the metrics and generates the report. The examiner physically cannot alter or adjust the result, which guarantees 100% objectivity and impartiality.",
   },
   {
     question: "Який результат отримує клієнт після тесту?",
@@ -120,7 +120,7 @@ export const FAQDataHome = [
     answerRus:
       "Стоимость зависит от типа проверки, количества тем и формата тестирования (скрининг персонала, расследование инцидента, проверка партнера и т.д.). Чтобы узнать точную цену для вашей ситуации — воспользуйтесь калькулятором стоимости на сайте или позвоните нам для бесплатной консультации.",
     answerEng:
-      "The price depends on the type of examination, the number of topics covered and the test format (staff screening, incident investigation, partner verification, etc.). To get an exact quote for your situation, use the on-site price calculator or call us for a free consultation.",
+      "The price depends on the type of examination, the number of topics covered and the test format (staff screening, incident investigation, partner verification, etc.). To get an exact quote for your situation, use the price calculator on this site or call us for a free consultation.",
   },
   {
     question: "Де у Львові пройти тест на детекторі брехні EyeDetect?",

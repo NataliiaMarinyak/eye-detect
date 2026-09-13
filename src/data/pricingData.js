@@ -180,17 +180,17 @@ export const pricingNotes = [
   {
     text: "Доплати нижче стосуються тестів EyeDetect у кабінеті або з виїздом. Для VerifEye онлайн доплат немає.",
     textRus: "Доплаты ниже относятся к тестам EyeDetect в кабинете или с выездом. Для VerifEye онлайн доплат нет.",
-    textEng: "The surcharges below apply to EyeDetect tests in office or on-site. VerifEye online has no surcharges.",
+    textEng: "The surcharges below apply to EyeDetect tests in our Lviv office or on-site. VerifEye online has no surcharges.",
   },
   {
     text: "Терміновий тест без черги протягом години — +100% до вартості.",
     textRus: "Срочный тест без очереди в течение часа — +100% к стоимости.",
-    textEng: "Urgent test within an hour, no queue — +100%.",
+    textEng: "Urgent test within an hour, no queue — +100% of the price.",
   },
   {
     text: "Тест у неділю — +100% до вартості.",
     textRus: "Тест в воскресенье — +100% к стоимости.",
-    textEng: "Sunday testing — +100%.",
+    textEng: "Sunday testing — +100% of the price.",
   },
   {
     text: "Знижка 800 ₴ на заявку через сайт — код EYE25.",
@@ -208,7 +208,7 @@ export const pricingGuarantee = {
   textRus:
     "Если результат теста окажется неопределённым (алгоритм не смог оценить тест из-за нарушенных инструкций, ответов наугад, проблем с глазами или освещением) — повторный тест со скидкой 50%.",
   textEng:
-    "If the test result is inconclusive, the retest is 50% off.",
+    "If the test result is inconclusive (the algorithm could not score the test because of broken instructions, random answers, eye or lighting problems), the retest is 50% off.",
 };
 
 // Що клієнт отримує за ці гроші.
@@ -221,7 +221,7 @@ export const pricingIncluded = [
   {
     text: "Сам тест: EyeDetect 30–45 хвилин у кабінеті або з виїздом, VerifEye близько 10 хвилин зі смартфона. Без датчиків на тілі.",
     textRus: "Сам тест: EyeDetect 30–45 минут в кабинете или с выездом, VerifEye около 10 минут со смартфона. Без датчиков на теле.",
-    textEng: "The test itself: EyeDetect 30–45 minutes in office or on-site, VerifEye about 10 minutes on a smartphone. No body sensors.",
+    textEng: "The test itself: EyeDetect 30–45 minutes in our Lviv office or on-site, VerifEye about 10 minutes on a smartphone. No body sensors.",
   },
   {
     text: "Оцінку рахує алгоритм Converus однаково для всіх. Спеціаліст готує питання, стежить за умовами тесту і пояснює звіт.",
@@ -231,7 +231,7 @@ export const pricingIncluded = [
   {
     text: "Письмовий висновок із показником достовірності (Credibility Score).",
     textRus: "Письменное заключение с показателем достоверности (Credibility Score).",
-    textEng: "A written report with a Credibility Score.",
+    textEng: "A written report with a credibility indicator (Credibility Score).",
   },
 ];
 
@@ -243,9 +243,9 @@ export const pricingComparison = {
   textRus: "Тот же тест EyeDetect на том же оборудовании и с той же сертификацией Converus в других странах стоит заметно дороже. Во Львове тест на один вопрос — 5 500 ₴, онлайн VerifEye — 2 500 ₴.",
   textEng: "The same EyeDetect test on the same equipment with the same Converus certification costs noticeably more abroad. In Lviv a single-issue test is UAH 5,500, VerifEye online UAH 2,500.",
   rows: [
-    { country: "Велика Британія", countryRus: "Великобритания", countryEng: "United Kingdom", price: "£399–595", uah: "≈ 24 000–36 000 ₴", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
-    { country: "Польща", countryRus: "Польша", countryEng: "Poland", price: "1 290–1 590 zł", uah: "≈ 16 000–19 500 ₴", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
-    { country: "США", countryRus: "США", countryEng: "USA", price: "$69", uah: "≈ 3 200 ₴", note: "VerifEye онлайн", noteRus: "VerifEye онлайн", noteEng: "VerifEye online" },
-    { country: "Львів", countryRus: "Львов", countryEng: "Lviv", price: "5 500 ₴ / 2 500 ₴", uah: "", note: "EyeDetect у кабінеті / VerifEye онлайн", noteRus: "EyeDetect в кабинете / VerifEye онлайн", noteEng: "EyeDetect in office / VerifEye online" },
+    { country: "Велика Британія", countryRus: "Великобритания", countryEng: "United Kingdom", price: "£399–595", uah: "≈ 24 000–36 000 ₴", uahEng: "≈ UAH 24,000–36,000", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
+    { country: "Польща", countryRus: "Польша", countryEng: "Poland", price: "1 290–1 590 zł", priceEng: "PLN 1,290–1,590", uah: "≈ 16 000–19 500 ₴", uahEng: "≈ UAH 16,000–19,500", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
+    { country: "США", countryRus: "США", countryEng: "USA", price: "$69", uah: "≈ 3 200 ₴", uahEng: "≈ UAH 3,200", note: "VerifEye онлайн", noteRus: "VerifEye онлайн", noteEng: "VerifEye online" },
+    { country: "Львів", countryRus: "Львов", countryEng: "Lviv", price: "5 500 ₴ / 2 500 ₴", priceEng: "UAH 5,500 / UAH 2,500", uah: "", uahEng: "", note: "EyeDetect у кабінеті / VerifEye онлайн", noteRus: "EyeDetect в кабинете / VerifEye онлайн", noteEng: "EyeDetect in office / VerifEye online" },
   ],
 };

@@ -11,6 +11,7 @@ import { getContentFaqJsonLd } from "@/helpers/getContentFaqJsonLd";
 import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadata";
 import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getCityEn } from "@/data/cityEn";
 
 const DynamicServicesSection = dynamic(() => import("@/sections/servicesSection/ServicesSection"));
 const DynamicTownsSection = dynamic(() => import("@/sections/townsSection/TownsSection"));
@@ -27,11 +28,12 @@ const getCityPage = (slug, lang) => {
   const data = getCityData(slug);
   if (!data) return null;
   const isUk = lang === i18n.defaultLocale;
-  const t = cityTexts[isUk ? "uk" : "ru"];
+  const t = cityTexts[lang] || cityTexts.uk;
   const loc = getCityLocative(data, lang);
   const region = getCityRegion(slug, data.country);
   const km = getCityDistance(slug);
-  const vars = { loc, city: isUk ? data.city : data.cityRus, km: km || "" };
+  const cityLocal = lang === "en" ? getCityEn(slug) : isUk ? data.city : data.cityRus;
+  const vars = { loc, city: cityLocal, km: km || "" };
   return { data, t, loc, region, km, vars, isUk };
 };
 
@@ -44,7 +46,7 @@ export async function generateMetadata({ params }) {
     lang,
     path: `locations/${slug}`,
     title: fill(p.t.title, p.vars),
-    description: p.isUk ? p.data.mainDescription : p.data.mainDescriptionRus,
+    description: lang === "en" ? fill(p.t.sub[p.region], p.vars) : p.isUk ? p.data.mainDescription : p.data.mainDescriptionRus,
     keywords: seoLocationIdPage.seoMetaKeywords,
   });
 }
@@ -57,7 +59,7 @@ const LocationIdPage = async ({ params }) => {
   const { seoLocationIdPage } = dictionary;
   const { data, t, loc, region, km, vars, isUk } = p;
 
-  const cityName = isUk ? data.city : data.cityRus;
+  const cityName = vars.city;
   const faq = t.faq[region].map((f) => ({ q: fill(f.q, vars), a: fill(f.a, vars) }));
 
   const crumbs = breadcrumbsJsonLd(lang, [
@@ -70,13 +72,13 @@ const LocationIdPage = async ({ params }) => {
     "@context": "https://schema.org",
     "@type": "Service",
     name: fill(t.h1, vars),
-    serviceType: isUk ? "Детектор брехні EyeDetect" : "Детектор лжи EyeDetect",
+    serviceType: { uk: "Детектор брехні EyeDetect", ru: "Детектор лжи EyeDetect", en: "EyeDetect lie detector test" }[lang],
     areaServed: { "@type": "City", name: cityName },
     provider: {
       "@type": "LocalBusiness",
       name: "EyeDetect Lviv",
       telephone: "+380686833368",
-      address: { "@type": "PostalAddress", streetAddress: isUk ? "вул. Городоцька, 45" : "ул. Городоцкая, 45", addressLocality: isUk ? "Львів" : "Львов", postalCode: "79000", addressCountry: "UA" },
+      address: { "@type": "PostalAddress", streetAddress: { uk: "вул. Городоцька, 45", ru: "ул. Городоцкая, 45", en: "45 Horodotska St." }[lang], addressLocality: { uk: "Львів", ru: "Львов", en: "Lviv" }[lang], postalCode: "79000", addressCountry: "UA" },
       url: process.env.NEXT_PUBLIC_SEO_URL,
     },
     url: `${getSeoMetaPageUrl(lang)}locations/${slug}`,
@@ -93,7 +95,7 @@ const LocationIdPage = async ({ params }) => {
         sub={fill(t.sub[region], vars)}
         facts={t.facts}
         primary={t.visit.cta}
-        service={`EyeDetect з виїздом · ${loc}`}
+        service={lang === "en" ? `EyeDetect on-site · ${loc}` : `EyeDetect з виїздом · ${loc}`}
         secondaryHref="#visit"
         secondaryLabel={t.online.cta}
         photo="/images/converus/eyedetect-examinee.webp"
@@ -101,8 +103,8 @@ const LocationIdPage = async ({ params }) => {
       />
       <CityVisitSection t={t} region={region} loc={loc} km={km} dictionary={dictionary} lang={lang} />
       <DynamicServicesSection lang={lang} dictionary={dictionary} slug={slug} />
-      <DynamicVideoSection lang={lang} dictionary={dictionary} slug={slug} />
-      <DynamicTownsSection lang={lang} slug={slug} />
+      {lang !== "en" && <DynamicVideoSection lang={lang} dictionary={dictionary} slug={slug} />}
+      {lang !== "en" && <DynamicTownsSection lang={lang} slug={slug} />}
       <DynamicGuaranteeSection lang={lang} dictionary={dictionary} />
       <ContentFaq items={faq} lang={lang} title={fill(t.faqTitle, vars)} />
     </>

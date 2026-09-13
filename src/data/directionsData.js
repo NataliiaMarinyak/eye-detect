@@ -20,10 +20,10 @@ export const directionsData = [
   {
     title: "Перевірка персоналу на чесність",
     titleRus: "Проверка персонала на честность",
-    titleEng: "Periodic staff integrity screening",
+    titleEng: "Staff integrity screening",
     description: "EyeDetect використовують під час кадрового скринінгу або внутрішніх перевірок, коли потрібно оцінити ризики, повʼязані з чинним працівником. Перевірка зʼясовує, чи приховує людина важливі факти, які можуть вплинути на довіру до неї.",
     descriptionRus: "EyeDetect используют во время кадрового скрининга или внутренних проверок, когда нужно оценить риски, связанные с действующим сотрудником. Проверка выясняет, скрывает ли человек важные факты, которые могут повлиять на доверие к нему.",
-    descriptionEng: "EyeDetect is used during periodic staff screening or internal reviews to assess risks associated with current employees. The test clarifies whether the person is concealing material facts that could affect the trust placed in them.",
+    descriptionEng: "EyeDetect is used during HR screening or internal reviews when the risks associated with a current employee need to be assessed. The test clarifies whether the person is concealing material facts that could affect the trust placed in them.",
     href: "/sprite.svg#icon-search",
   },
   {

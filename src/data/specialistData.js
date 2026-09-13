@@ -24,8 +24,8 @@ export const specialistData = [
         ],
         listEng: [
           "Bachelor's degree (2010).",
-          "Master's degree with honours (2012).",
-          "Specialisation: Psychology of HR management.",
+          "Master's degree with honors (2012).",
+          "Specialization: Psychology of HR management.",
           "Qualification: Lecturer at a higher-education institution.",
           "Certification: Certified EyeDetect Test Proctor and System Administrator by Converus.",
         ],

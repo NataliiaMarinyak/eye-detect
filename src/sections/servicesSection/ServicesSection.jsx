@@ -5,8 +5,10 @@
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { getCityData } from "@/helpers/getCityData";
+import { getCityServicesEn } from "@/data/cityEn";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./ServicesSection.module.scss";
 
 const ServicesSection = ({ lang, dictionary, slug }) => {
@@ -16,13 +18,14 @@ const ServicesSection = ({ lang, dictionary, slug }) => {
 
   // const { slug } = useParams();
 
-  const data = getCityData(slug);
+  // Дані міст мають лише uk/ru; для англійської беремо спільний шаблон з назвою міста.
+  const data = lang === "en" ? getCityServicesEn(slug) : getCityData(slug);
 
   return (
     <section>
       <div className={`container ${styles.container}`}>
         <h2 className={styles.subTitle}>
-          {lang === i18n.locales[0] ? data?.subTitle : data?.subTitleRus}
+          {getLocalizedField(data, "subTitle", lang)}
         </h2>
         <ul className={styles.servicesList}>
           {data?.services.map((service, index) => (
@@ -30,7 +33,7 @@ const ServicesSection = ({ lang, dictionary, slug }) => {
               <div className={styles.areaWrapper}>
                 <span className={styles.figure}>{index + 1}</span>
                 <h3 className={styles.areaTitle}>
-                  {lang === i18n.locales[0] ? service.area : service.areaRus}
+                  {getLocalizedField(service, "area", lang)}
                 </h3>
               </div>
               <ul className={styles.directionList}>
@@ -42,24 +45,16 @@ const ServicesSection = ({ lang, dictionary, slug }) => {
                       </svg>
                       <p className={styles.directionDescription}>
                         <span className={styles.directionTitle}>
-                          {lang === i18n.locales[0]
-                            ? direction.title
-                            : direction.titleRus}
+                          {getLocalizedField(direction, "title", lang)}
                         </span>{" "}
-                        {lang === i18n.locales[0]
-                          ? direction.description
-                          : direction.descriptionRus}
+                        {getLocalizedField(direction, "description", lang)}
                       </p>
                     </div>
                     {direction.checks.length !== 0 && (
                       <ul className={styles.checksList}>
-                        {lang === i18n.locales[0]
-                          ? direction.checks.map((check, ind) => (
-                              <li key={ind}>{check}</li>
-                            ))
-                          : direction.checksRus.map((checkRus, ind) => (
-                              <li key={ind}>{checkRus}</li>
-                            ))}
+                        {(getLocalizedField(direction, "checks", lang) || []).map((check, ind) => (
+                          <li key={ind}>{check}</li>
+                        ))}
                       </ul>
                     )}
                   </li>

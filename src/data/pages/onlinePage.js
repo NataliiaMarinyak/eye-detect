@@ -122,6 +122,67 @@ export const onlinePage = {
     ],
     cta: { title: "Заказать онлайн-тест", text: "Напишите, кого и что нужно проверить. Ответим в течение часа в рабочее время, тест обычно можно пройти в тот же день.", button: "Заказать онлайн-тест" },
   },
+  en: {
+    seo: {
+      title: "Online lie detector — the VerifEye test from your smartphone in 10 minutes",
+      description: "VerifEye by Converus: a smartphone app records eye reactions, accuracy up to 84% according to the manufacturer. The test takes about 10 minutes, PDF report right after the test. From any city.",
+      keywords: ["online lie detector", "lie detector online", "online polygraph", "verifeye", "lie detector test from phone", "remote lie detector test"],
+      crumbHome: "Home",
+      crumb: "VerifEye online test",
+    },
+    hero: {
+      eyebrow: "VerifEye by Converus, USA",
+      h1: "Online lie detector: the VerifEye test from your phone",
+      sub: "VerifEye is a separate Converus product for smartphones. We prepare the questions, the person opens a link in the app, listens to the questions, and answers aloud for about 10 minutes. The PDF report is emailed to you. From any city or country.",
+      facts: ["about 10 minutes", "84–89% accuracy", "PDF report right after the test", "from UAH 2,500"],
+      primary: "Order an online test",
+    },
+    why: {
+      title: "What exactly you are ordering",
+      items: [
+        { title: "The VerifEye app by Converus", text: "The same developer as EyeDetect, but a different product: the test runs in an app on an iPhone or Android phone. The front camera records the pupil, eye movements, and blinking; the microphone records the answers." },
+        { title: "84–89% accuracy", text: "In a 2024 Converus validation study (123 participants, laboratory conditions, VerifEye 3R test) accuracy was 89%. Converus states 84–89% depending on conditions: 89% under an examiner's supervision in ideal conditions, closer to 84% without them; lighting, the phone, and adherence to instructions affect the result, so we provide detailed instructions before the test. EyeDetect in our Lviv office is more accurate (86–90%)." },
+        { title: "Report and the examiner's explanation", text: "You receive the Converus Credibility Score, a “credible / not credible” conclusion, and the person's answers. Our examiner prepares the questions, checks the test conditions, and explains the report." },
+      ],
+    },
+    steps: {
+      title: "How it works",
+      items: [
+        { title: "Order", text: "Call us or leave a request on the site: who is taking the test and what needs to be checked. Together we formulate 1–3 questions." },
+        { title: "Link to the phone", text: "The person receives a link and brief instructions: a quiet room, good lighting, 20 free minutes, the phone on a stand. The link opens the free VerifEye app (iOS or Android)." },
+        { title: "A test of about 10 minutes", text: "First a short training video. Then the app asks the questions by voice, the person answers aloud, the microphone records the answers, and the camera records the eye reactions." },
+        { title: "Report by email", text: "The same day you receive a PDF report with the Credibility Score and an explanation from the examiner of what it means for your situation." },
+      ],
+    },
+    prices: {
+      title: "Online test prices",
+      note: "Payment in hryvnias. The price is the same for Ukraine and abroad: there is no surcharge for distance.",
+      items: [
+        { name: "1 question", price: "UAH 2,500", desc: "One topic, for example fidelity over a specific period. About 10 minutes of testing." },
+        { name: "3 questions", price: "UAH 4,000", desc: "Up to three questions in one test. A slightly longer test, a detailed report.", featured: true },
+      ],
+      upgrade: "There is no surcharge for urgency or weekends with VerifEye. For serious decisions (theft, an investigation, a dispute over a large sum) we recommend EyeDetect in our Lviv office: it is more accurate.",
+    },
+    fit: {
+      title: "When online is a good fit, and when the office is better",
+      good: { title: "Online is a good fit", items: ["a fidelity check when the partner is in another city", "a job candidate from another region", "a quick answer to one to three specific questions", "a first introduction to the method before EyeDetect"] },
+      bad: { title: "EyeDetect in our Lviv office is better", items: ["theft and internal investigations involving large sums", "when maximum control over test conditions is needed", "the person wears glasses with strong lenses or has vision problems", "when 4 topics need to be checked in a single test"] },
+    },
+    requirements: {
+      title: "What is required from the person taking the test",
+      items: ["an iPhone or Android smartphone with a front camera, connected to Wi-Fi", "the free VerifEye app: the link opens the app store itself; access to the camera, microphone, and speaker must be granted", "a quiet room with no headphones, even moderate lighting, no window, TV, or monitor nearby", "glasses off; contact lenses can stay in", "20 free minutes with no calls", "consent to the test: no one can be tested against their will"],
+    },
+    faq: [
+      { q: "Can the online test be fooled?", a: "The pupil and the micro-movements of the eyes cannot be controlled consciously. If a person answers at random, looks away from the screen, or breaks the instructions, the test is declared invalid and repeated." },
+      { q: "What if the test is interrupted by a call?", a: "The test can be retaken via the same link. We recommend turning on airplane mode with Wi-Fi enabled." },
+      { q: "Will the person see the result?", a: "No, only the client receives the report. The person taking the test sees only that it has finished." },
+      { q: "Can the result be used in court?", a: "No. In Ukraine, lie detector test results are not admissible as evidence. This is a tool for your decision." },
+      { q: "Can it be taken on a laptop?", a: "The test is designed for an iOS or Android smartphone. It does not run on a laptop." },
+      { q: "Does the person have to read from the screen?", a: "No. The instructions and questions are spoken by a voice in the app, and the person answers aloud. No reading is required, so the test also suits people who have trouble seeing small text." },
+      { q: "How many questions are in the test?", a: "The test is built on the Converus protocol with three topics plus one comparison topic. So in one test we check one to three topics." },
+    ],
+    cta: { title: "Order an online test", text: "Tell us who and what needs to be checked. We reply within an hour during business hours; the test can usually be taken the same day.", button: "Order an online test" },
+  },
 };
 
 export const getOnlinePage = (lang) => onlinePage[lang] || onlinePage.uk;

@@ -1,6 +1,6 @@
 // Сторінка /faq: розгорнуті питання й відповіді про EyeDetect, VerifEye і класичний поліграф.
 // Джерело фактів — матеріали Converus (FAQ, сторінки продуктів, валідаційні звіти), переказані
-// своїми словами і доповнені тим, як це працює у нас. Ключі: uk, ru.
+// своїми словами і доповнені тим, як це працює у нас. Ключі: uk, ru, en.
 
 export const faqPage = {
   uk: {
@@ -199,6 +199,104 @@ export const faqPage = {
       },
     ],
     cta: { title: "Не нашли ответа?", text: "Напишите или позвоните, специалист ответит на конкретный вопрос о вашей ситуации.", button: "Задать вопрос специалисту" },
+  },
+  en: {
+    seo: {
+      title: "FAQ about EyeDetect and the Lie Detector",
+      description: "How EyeDetect works, how accurate it is, what affects the result, whether it can be beaten, how it differs from the polygraph, how data is stored. Answers based on Converus materials.",
+      keywords: ["EyeDetect questions", "lie detector questions and answers", "EyeDetect accuracy", "EyeDetect or polygraph", "can you beat a lie detector"],
+      crumbHome: "Home",
+      crumb: "FAQ",
+    },
+    hero: {
+      eyebrow: "Knowledge base",
+      h1: "Questions and answers about EyeDetect, VerifEye and the classic polygraph",
+      sub: "We collected everything people ask before a test: how it works, how accurate it is, what affects the result and how EyeDetect differs from the polygraph. The facts come from the materials of the developer, Converus, and are retold in plain language.",
+      facts: ["based on Converus materials", "updated September 2026", "no advertising or promises"],
+    },
+    sections: [
+      {
+        title: "About the technology",
+        items: [
+          { q: "What is EyeDetect?", a: "It is a lie detection test that evaluates involuntary eye behavior while a person reads statements on a screen and answers “true” or “false”. The idea was proposed in 2002 by the same University of Utah scientists who created the first computerized polygraph in 1991. The technology was named EyeDetect in 2013 and entered the market in 2014. The test takes 15–30 minutes, and there are no sensors on the body." },
+          { q: "Who developed EyeDetect?", a: "John Kircher and Doug Hacker of the University of Utah. Kircher spent decades researching the polygraph; Hacker studied the psychology of reading. In 2003 they were joined by Anne Cook and Dan Woltz, and in 2009 by David Raskin, one of the best-known polygraph researchers. Together they spent more than ten years refining the method before bringing it to market." },
+          { q: "What is Converus?", a: "An American company based in Lehi, Utah. It was founded in 2009 as Credibility Assessment Technologies and renamed Converus in December 2013, from the Latin con (“with”) and verus (“truth”). Converus develops EyeDetect, EyeDetect+ and VerifEye, and the tests are administered by certified partners in different countries. We are one of those partners in Ukraine." },
+          { q: "What is VerifEye and how does it differ from EyeDetect?", a: "VerifEye is a separate Converus product for smartphones. The person opens a link in a free app, listens to the questions and answers out loud, while the front camera records eye reactions. The test takes about 10 minutes. Its accuracy is lower than EyeDetect: 84–89% depending on conditions. EyeDetect is taken on dedicated equipment with a specialist present, which is why we recommend it for serious decisions." },
+          { q: "What is EyeDetect+?", a: "It is an automated polygraph: EyeDetect equipment plus polygraph sensors on the wrists and a finger instead of a cuff on the upper arm. It was created for countries and organizations where the law specifically requires a polygraph. The score is still computed by the algorithm. In Ukraine we administer EyeDetect and VerifEye tests; EyeDetect+ is not yet available in our office." },
+          { q: "What is the “secret” of EyeDetect?", a: "A statistical model that weighs several dozen measures: pupil size, answer accuracy and response time, gaze fixations, blink rate, reading behavior. A high-resolution camera records this data while the person answers. The output is the Converus Credibility Score from 1 to 99: 1 to 49 means deception, 50 to 99 means truthfulness. The closer to the ends of the scale, the more confident the result; a score of 51–53 means confidence is minimal." },
+        ],
+      },
+      {
+        title: "Accuracy and science",
+        items: [
+          { q: "How accurate is EyeDetect?", a: "According to Converus, in multi-issue screening tests EyeDetect correctly classifies 88 people out of 100, and in single-issue diagnostic tests 90 out of 100. In a 2020 University of Utah study, the multi-issue protocol reached 88% and for the first time allowed up to four issues to be evaluated in one test. That means out of 100 people tested, roughly 10 results may be inconclusive or wrong, and we always say so." },
+          { q: "How accurate is VerifEye?", a: "Converus states 84–89%. In a 2024 validation study (123 participants, laboratory conditions, a three-issue test with one comparison question) accuracy was 89%. That result was obtained under ideal conditions with a specialist supervising; without them the developer expects lower accuracy, closer to 84%. That is why we give detailed instructions on lighting, the phone and silence." },
+          { q: "Are there scientific publications about EyeDetect?", a: "Yes. The Converus research group led by John Kircher has published 19 papers and reports on the method, which the scientific literature calls the ocular-motor deception test (ODT). Ten of them are peer-reviewed. The first major publication appeared in the Journal of Experimental Psychology: Applied in 2012." },
+          { q: "Has EyeDetect been admitted as evidence in court?", a: "One such case is known: in May 2018 a court in Taos County, New Mexico, admitted EyeDetect results as evidence in a criminal case. In 2020 the test was mentioned in a case in Idaho, but not as evidence. In Ukraine the results of any lie detector are not evidence. The test helps make a decision; it does not replace an investigation or a court." },
+          { q: "How accurate are polygraphs that check many issues at once?", a: "Worse than single-event tests. A field study for the US Secret Service (1988) showed that when a person is truthful on some questions and lies on others, almost half of the polygraph results were inconclusive, and correct decisions were 74.5%. EyeDetect is built differently: answers on each issue are compared with answers on another, so multi-issue screening yields 86–88%." },
+          { q: "How accurate are EEG and fMRI as lie detectors?", a: "Studies show about 87%. But both methods require expensive medical equipment and long staff training, and they are uncomfortable for the person: they are covered in electrodes or placed in a scanner. For practical testing this is not an option." },
+        ],
+      },
+      {
+        title: "How the test works",
+        items: [
+          { q: "What does an EyeDetect test consist of?", a: "A pre-test interview, instructions, a short practice test and several question sessions. Each question is repeated in different wordings in random order. The statements change every 5–7 seconds, so the person has to stay focused the whole time." },
+          { q: "How long does the test take?", a: "The EyeDetect test itself takes 15 minutes when one issue is examined and about 30 minutes for multi-issue screening. Together with the interview and the explanation of the report, plan for 45–60 minutes. The score is ready less than five minutes after the test ends." },
+          { q: "Is a pre-test interview required?", a: "Yes, and we always conduct one. The specialist obtains written consent, checks whether the person is fit to take the test, explains how the equipment works and goes through every question together with them. After the test, if the result is negative, a conversation about the reasons is possible and, if needed, an additional single-issue test." },
+          { q: "Can a follow-up single-issue test be taken after screening?", a: "Yes. If, after multi-issue screening, one specific issue needs to be clarified, the person can take a single-issue diagnostic test after a break of about an hour." },
+          { q: "How long does it take to learn to administer the tests?", a: "Basic Test Proctor training at Converus takes about six hours, test author training up to two more days, and interview training one day. By comparison, a polygraph examiner trains for ten weeks. Our specialist holds current EyeDetect Test Proctor and administrator certificates from Converus." },
+          { q: "Can I test my husband, wife or partner?", a: "Yes, EyeDetect is used for questions of fidelity in marriage, partnership or engagement. There is one condition: the person agrees to the test voluntarily and in writing. More about fidelity testing is on a separate page." },
+          { q: "What is EyeDetect most often used for?", a: "Pre-employment screening of candidates, periodic screening of employees and investigations of specific events: theft, fraud, information leaks, bribery, drug use, ties to criminal groups. Outside the US it is used by companies of any profile, government agencies and investigators in criminal and civil cases." },
+        ],
+      },
+      {
+        title: "Who can take the test",
+        items: [
+          { q: "Do alcohol, medication or brain injuries affect the result?", a: "Yes. Anything that slows reaction, changes eye movements or pupil size affects the test. A person who is intoxicated is not tested. Before the test there are two short checks: the pupils' reaction to a change in screen brightness and memorizing numbers. They show whether the pupils respond normally and detect pupil-dilating drops, which are treated as an attempt to cheat." },
+          { q: "Which conditions and illnesses interfere with the test?", a: "Illnesses that affect the pupil and the autonomic nervous system: Parkinson's disease, diabetes, multiple sclerosis, brain or spinal cord injuries, conditions with sharp drops in blood pressure. Very dry eyes or heavy makeup can interfere with the camera, in which case calibration is performed. At the same time, EyeDetect has been successfully taken by people with ADHD, anxiety disorders, PTSD, pregnant women, people with asthma and arrhythmia, those taking antidepressants, and teenagers from age 11. For people who read poorly there is an audio version of the test." },
+          { q: "What happens if the person confesses before the test?", a: "The test becomes unnecessary. EyeDetect looks for signs of concealment, and a person who answers honestly about what they did does not show the same load as a person who is lying. So after a confession we do not run the test." },
+          { q: "What if the person honestly admits guilt right during the test?", a: "The result is hard to predict. Someone who honestly answers “yes, I did it” may not show the reaction typical of lying. The test is designed specifically to detect concealed deception, not to confirm confessions." },
+          { q: "Can the test be taken anonymously?", a: "Yes. Instead of a name, a number can be entered in the system, and no photo is taken. The result is then linked only to that number. For businesses this is a convenient way to avoid storing employees' personal data in reports." },
+        ],
+      },
+      {
+        title: "Can EyeDetect be beaten",
+        items: [
+          { q: "How does EyeDetect know a person is lying?", a: "Lying requires more mental effort than telling the truth. This changes eye behavior: during deceptive answers people blink less often, the pupil dilates more, and they read statements about their own act faster and with fewer fixations. The algorithm compares these measures across issues and computes the score." },
+          { q: "Do the tricks used to “beat” the polygraph work against EyeDetect?", a: "Polygraph countermeasures are designed to trigger a bodily reaction within 20 seconds after a question. In EyeDetect the statements change every 5–7 seconds, and the person has to think constantly to avoid mistakes. There is simply no time for tricks. That is how Charles Honts, one of the leading researchers of polygraph countermeasures, explains it." },
+          { q: "What happens if you close your eyes, answer at random or say “false” to everything?", a: "Closed eyes and squinting are seen by the specialist. Random answers, the same answer to everything or skipping many questions are recognized by the algorithm as a distinct pattern and receive a “not credible” score. So such attempts do not help; they hurt." },
+          { q: "Can you “make up a story” and pass?", a: "Inventing and maintaining a story is exactly what increases the load on the brain, and the pupil responds to it involuntarily. Only someone able to lie with no effort at all could get around the test, and such people practically do not exist. That is why EyeDetect shows better results than other available methods." },
+        ],
+      },
+      {
+        title: "Data security",
+        items: [
+          { q: "How is data stored on the equipment during the test?", a: "The EyeDetect station's disk is encrypted to the AES-256 standard and certified under FIPS 140-2. Test data is accessible only to whoever holds the disk key. Before transfer to the server it is encrypted with a separate client key, and after transfer it is deleted from the station's disk." },
+          { q: "How secure is the dashboard where results are stored?", a: "The Converus web dashboard opens only over a secure connection with two-factor authentication. Only authorized users have access. In our case that is one specialist who administers the tests." },
+          { q: "Where is the data physically stored?", a: "On Converus's own servers in a certified data center (SSAE 16 / ISAE 3402) in a locked rack. Entry to the hall is by card and biometrics, with round-the-clock monitoring, and incoming traffic is filtered by a firewall. The servers are not rented from the data center; they belong to the developer." },
+        ],
+      },
+      {
+        title: "EyeDetect and the classic polygraph",
+        items: [
+          { q: "Does EyeDetect replace the polygraph?", a: "Sometimes it replaces it, more often it complements it. For checking a specific event, a good polygraph examiner and EyeDetect give comparable accuracy: in field tests EyeDetect shows 86–88%, in single-issue diagnostic tests about 87–90%. For mass screening of employees EyeDetect is more convenient: faster, without sensors, and independent of the operator's skill." },
+          { q: "How is the polygraph usually used and how accurate is it?", a: "Two scenarios. The first is investigating a specific event, with questions about the incident itself and comparison questions such as “have you ever lied to management”. Under optimal conditions the accuracy of such tests is about 90%. The second is employee screening with general questions (“have you used drugs in the last 90 days”). Here the questions are vague, reactions to them are similar, and accuracy drops to 65–85%." },
+          { q: "What is the main difference between EyeDetect and the polygraph?", a: "The polygraph records the body's reactions to stress: breathing, pulse, sweating. Its logic: a liar reacts more emotionally to questions about their guilt. EyeDetect measures the pupil and eye movements, which reflect the brain's work while reading and answering. Its logic: lying requires more mental effort. These are two independent sources of information." },
+          { q: "Can EyeDetect and the polygraph be combined?", a: "Yes, and this sharply reduces the chance of missing a liar. Since the methods measure different things (emotion and cognition), their errors do not coincide. If the chance of missing a liar is 17% in one test and 20% in the other, the chance that they pass both is about 3%. That gives roughly 97% confidence, provided the tests are run separately and the results agree." },
+          { q: "Why does EyeDetect have advantages over the polygraph in screening?", a: "The test is automated and does not depend on the operator's skill; the person does not need to “appear honest” to an examiner. There are no trap comparison questions; instead, two issues control each other. The test can be run in any language without an interpreter. There are no sensors, and the test takes 15–30 minutes instead of 90 or more, so up to six people can be tested in the time of one polygraph exam." },
+          { q: "Why can't the specialist evaluate the eye data themselves?", a: "There is too much data and it arrives too fast: dozens of measures several times per second. Only an algorithm can weigh them, and it does so the same way for every person. That is why Converus recommends trusting the software for the score and leaves the specialist with preparing the questions, controlling the conditions and explaining the report." },
+        ],
+      },
+      {
+        title: "About lying",
+        items: [
+          { q: "How common is lying?", a: "In a University of Massachusetts study, 60% of people admitted they could not get through a ten-minute conversation without a single untruth. British researchers found that men lie roughly twice as often as women." },
+          { q: "Does lying harm the liar?", a: "Yes. Every story requires new details, and it becomes harder and harder to keep in mind. Stanford researchers noticed that after dishonest acts people perceived hills as steeper and distances as longer: the brain treats deception as a physical burden. Participants in a Notre Dame study who were asked not to lie for a week reported better sleep, less tension and fewer headaches." },
+          { q: "What kinds of lies are there?", a: "There are many ways, but the essence is one: the intent to mislead. Some lie to protect themselves, some to protect others, some embellish a story for effect or to save face. Then come lies for gain and lies to cause harm. The test does not evaluate motive: it checks only whether a specific answer about a specific fact is true." },
+        ],
+      },
+    ],
+    cta: { title: "Didn't find your answer?", text: "Write or call us, and the specialist will answer your specific question about your situation.", button: "Ask the specialist" },
   },
 };
 

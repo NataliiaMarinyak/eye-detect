@@ -168,6 +168,90 @@ export const eyedetectPage = {
     ],
     cta: { title: "Готовы проверить?", text: "Запишитесь на тест во Львове или пройдите VerifEye онлайн уже сегодня.", online: "Пройти онлайн", book: "Записаться на EyeDetect" },
   },
+  en: {
+    seo: {
+      title: "EyeDetect — the eye-movement lie detector: how it works and how accurate it is",
+      description:
+        "EyeDetect: a 60-frames-per-second camera records involuntary eye reactions. No sensors, 30–45 minutes, 86–90% accuracy according to Converus. Limitations and how it differs from a classic polygraph.",
+      keywords: ["EyeDetect", "eye detect", "eye-tracking lie detector", "how EyeDetect works", "EyeDetect accuracy", "EyeDetect vs polygraph"],
+      crumbHome: "Home",
+      crumb: "EyeDetect technology",
+    },
+    hero: {
+      eyebrow: "Converus technology, USA",
+      h1: "The EyeDetect lie detector: how it works",
+      sub: "A test with no sensors on the body: a camera records involuntary eye reactions, the Converus algorithm calculates a Credibility Score, and the examiner prepares the questions and explains the report. Below is an honest account of the principle, the accuracy, and the limitations.",
+      facts: ["30–45 minutes", "no sensors", "the algorithm forms the conclusion", "report right after the test"],
+    },
+    how: {
+      title: "What exactly EyeDetect records",
+      items: [
+        { title: "Pupil", text: "When a person lies, the brain works harder and the pupil involuntarily dilates by fractions of a millimeter. A camera running at 60 frames per second sees this; a human observer does not." },
+        { title: "Eye movements and fixations", text: "How fast a statement is read, returns to individual words, how long the eyes fixate. Lying changes the way a person reads." },
+        { title: "Response time and accuracy", text: "Time taken for each answer, the number of errors and time-outs. Together with the pupil and gaze data, this gives dozens of measures that the algorithm weighs into a single Credibility Score." },
+      ],
+    },
+    process: {
+      title: "How the test goes, step by step",
+      steps: [
+        { title: "Conversation and questions", text: "You explain the situation. Together we formulate one to three specific questions about facts, not about thoughts or intentions." },
+        { title: "Pre-test instructions", text: "The person reads what exactly each question means, which cases count and which do not. This removes ambiguity before the test starts." },
+        { title: "Practice test", text: "A few practice statements to get used to the screen, the pace, and the two buttons, “true” and “false”." },
+        { title: "Main test", text: "30–45 minutes in front of a monitor. Each question appears many times in different wordings; the chin rests on a support, the hands stay on the mouse." },
+        { title: "Report", text: "The Converus algorithm calculates a Credibility Score from 1 to 99: for the test as a whole, and in a multi-topic test for each topic. 50 and above means “credible”, below 50 means “not credible”. The PDF report is ready right after the test, and the examiner explains what to do with it." },
+      ],
+    },
+    compare: {
+      title: "EyeDetect, VerifEye, and the classic polygraph",
+      sub: "Three tools, three different situations. A plain table so you can choose correctly.",
+      columns: ["", "EyeDetect", "VerifEye", "Classic polygraph"],
+      rows: [
+        ["Where it takes place", "Our Lviv office or on-site", "Anywhere, from a phone", "Polygraph examiner's office"],
+        ["Duration", "30–45 minutes", "about 10 minutes", "2–4 hours"],
+        ["Sensors on the body", "None", "None", "Cuff, breathing sensors, electrodes"],
+        ["Who forms the conclusion", "The algorithm; the examiner prepares the questions and explains the report", "The algorithm; the examiner prepares the questions and explains the report", "The polygraph examiner"],
+        ["Accuracy (manufacturer data)", "86–90% depending on test type", "84–89%", "depends on the examiner"],
+        ["Number of questions", "1–3", "1–3", "1–4"],
+        ["Price from", "UAH 5,500", "UAH 2,500", "from UAH 6,000 at various offices"],
+        ["When to choose", "You need a more accurate result and a written report right after the test", "The person is in another city, or you need a quick answer to 1–3 questions", "When the classic method itself is required"],
+      ],
+    },
+    limits: {
+      title: "Limitations we state up front",
+      items: [
+        "An accuracy of 86–90% (88% in screening tests, 90% in single-issue diagnostic tests, Converus data) means that out of 100 people tested, roughly 10 results may be inconclusive or wrong. That is why we ask specific questions, and an inconclusive test is repeated at a 50% discount.",
+        "The test checks facts and events, not thoughts, intentions, or feelings. “Do you love me” cannot be tested; “have you had sexual contact with another person since March” can.",
+        "The result is not admissible as evidence in a Ukrainian court. It helps you make a decision; it does not replace an investigation.",
+        "We do not test people under the influence of alcohol or drugs. According to Converus, the result is affected by brain injuries and by illnesses or medications that alter the pupil or reaction speed: Parkinson's disease, diabetes, multiple sclerosis, certain drugs and eye drops. Anxiety disorders, PTSD, pregnancy, and antidepressants do not interfere with the test. Converus tests from age 11; we accept from age 14 with parental consent. If needed, we run a short pupil-response check before the test.",
+        "The person must consent to the test in writing. We do not conduct forced testing.",
+      ],
+    },
+    focus: {
+      title: "Why memories and associations do not distort the result",
+      paragraphs: [
+        "A classic polygraph reacts to emotion. And emotion is triggered not only by a lie but also by association: think of the taste of a lemon and your mouth waters, though there is no lemon. Memory works the same way. If a person was once cheated on, or cheated themselves in another relationship, a question about fidelity brings up that memory, the body reacts, and the polygraph records a reaction that has nothing to do with the current situation. In fidelity tests this is the main source of false results.",
+        "In EyeDetect the person is busy with something else. Statements change every 5–7 seconds; each one has to be read, understood, and answered “true” or “false”. Attention is locked on the text, and there is simply no time for associations and memories. The algorithm compares how the person reads and answers across different topics, not how nervous they are.",
+        "That is why EyeDetect is better suited to questions that touch on personal matters: fidelity, past relationships, family conflicts. We further reduce the risk through wording: questions cover only specific actions over a specific period, and the person reads them before the test.",
+      ],
+    },
+    science: {
+      title: "The science behind the technology",
+      text: "EyeDetect was developed at the University of Utah by professors John Kircher and David Raskin, who had spent decades researching the classic polygraph. The technology is patented, the results have been published in peer-reviewed journals, and since 2014 it has been used by police departments, banks, and corporations in more than 60 countries.",
+      links: [
+        { label: "Converus, developer of the technology", href: "https://converus.com/" },
+        { label: "List of certified Converus partners", href: "https://converus.com/find-a-partner/" },
+        { label: "All questions and answers about EyeDetect on our site", href: "/faq" },
+      ],
+    },
+    faq: [
+      { q: "Can EyeDetect be fooled?", a: "The pupil and the micro-movements of the eyes cannot be controlled consciously, and the statements change every 5–7 seconds, so there is simply no time for the countermeasures used against a classic polygraph. If a person answers at random, delays their answers, or does not read the statements, the test is declared invalid and repeated." },
+      { q: "How is EyeDetect better than a polygraph?", a: "It is faster, has no sensors on the body, and the score is calculated by an algorithm in the same way for everyone. It is not better in every respect: a classic polygraph allows more freedom in dialogue. For specific factual questions, EyeDetect is usually more convenient." },
+      { q: "How many questions can be tested in one session?", a: "One to three. The fewer the questions, the higher the accuracy for each. The protocol technically allows four topics, but for accuracy we recommend no more than three, and for complex situations we run two tests." },
+      { q: "What does the person see on the screen?", a: "Statements such as “I have not had sexual contact with another man since March 2023” and two buttons: true or false. Each question is repeated in different wordings." },
+      { q: "Is any preparation needed?", a: "Get a good night's sleep, avoid alcohol for 24 hours, and bring your glasses if you wear them. Before the test the person reads all the questions; there are no surprises." },
+    ],
+    cta: { title: "Ready to find out?", text: "Book a test in Lviv or take the VerifEye test online today.", online: "Take the online test", book: "Book an EyeDetect test" },
+  },
 };
 
 export const getEyedetectPage = (lang) => eyedetectPage[lang] || eyedetectPage.uk;

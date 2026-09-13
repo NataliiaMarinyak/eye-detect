@@ -2,6 +2,7 @@ import Link from "next/link";
 import { socialMediaData } from "@/data/socialMediaData";
 import { addressData } from "@/data/addressData";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./Footer.module.scss";
 
 // Підвал за принципом Converus: колонки за темами, без «Головна» (на неї веде логотип).
@@ -11,6 +12,12 @@ const GROUPS = {
     { title: "Ситуації", links: [["/situations/fidelity", "Перевірка на вірність"], ["/situations/theft", "Крадіжка"], ["/situations/leak", "Витік інформації"], ["/situations/hiring", "Кандидат на роботу"], ["/situations/dispute", "Спір без доказів"]] },
     { title: "Для кого", links: [["/for/lawyers", "Юристам і детективам"], ["/for/finance", "Банкам і фінкомпаніям"], ["/for/security", "Охоронним компаніям"], ["/for/hr", "HR і рекрутерам"], ["/for/counselors", "Психологам"]] },
     { title: "Знання", links: [["/faq", "Питання і відповіді"], ["/converus", "Про Converus і науку"], ["/blog", "Блог"], ["/about-us", "Про спеціаліста"], ["/contacts", "Контакти"], ["/privacy-policy", "Політика конфіденційності"]] },
+  ],
+  en: [
+    { title: "Services", links: [["/eyedetect", "EyeDetect lie detector"], ["/online", "VerifEye online test"], ["/business", "For business"], ["/prices", "Prices"]] },
+    { title: "Situations", links: [["/situations/fidelity", "Fidelity test"], ["/situations/theft", "Theft"], ["/situations/leak", "Information leak"], ["/situations/hiring", "Job candidate"], ["/situations/dispute", "Dispute without evidence"]] },
+    { title: "For whom", links: [["/for/lawyers", "Lawyers and detectives"], ["/for/finance", "Banks and finance"], ["/for/security", "Security companies"], ["/for/hr", "HR and recruiters"], ["/for/counselors", "Counselors"]] },
+    { title: "Knowledge", links: [["/faq", "FAQ"], ["/converus", "Converus and the science"], ["/blog", "Blog"], ["/about-us", "About the examiner"], ["/contacts", "Contacts"], ["/privacy-policy", "Privacy policy"]] },
   ],
   ru: [
     { title: "Услуги", links: [["/eyedetect", "Детектор лжи EyeDetect"], ["/online", "Онлайн-тест VerifEye"], ["/business", "Для бизнеса"], ["/prices", "Цены"]] },
@@ -23,6 +30,7 @@ const GROUPS = {
 const T = {
   uk: { about: "Детектор брехні EyeDetect у Львові та з виїздом, онлайн-тест VerifEye. Сертифікований партнер Converus в Україні.", contacts: "Контакти", rights: "Усі права захищено." },
   ru: { about: "Детектор лжи EyeDetect во Львове и с выездом, онлайн-тест VerifEye. Сертифицированный партнёр Converus в Украине.", contacts: "Контакты", rights: "Все права защищены." },
+  en: { about: "EyeDetect lie detector in Lviv and on-site, VerifEye online test. Certified Converus partner in Ukraine.", contacts: "Contacts", rights: "All rights reserved." },
 };
 
 const Footer = ({ lang, dictionary }) => {
@@ -52,11 +60,11 @@ const Footer = ({ lang, dictionary }) => {
               </a>
               <a href={addressData.hrefLink} target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                 <svg><use href="/sprite.svg#icon-map_pin" /></svg>
-                {isUk ? addressData.textAddress : addressData.textAddressRus}
+                {getLocalizedField(addressData, "textAddress", lang)}
               </a>
               <Link href={`${prefix}/locations`} className={styles.contactLink}>
                 <svg><use href="/sprite.svg#icon-map_pin" /></svg>
-                {isUk ? "Виїзд по Україні та Європі" : "Выезд по Украине и Европе"}
+                {{ uk: "Виїзд по Україні та Європі", ru: "Выезд по Украине и Европе", en: "On-site across Ukraine and Europe" }[lang]}
               </Link>
             </address>
             <ul className={styles.socials}>
@@ -85,7 +93,7 @@ const Footer = ({ lang, dictionary }) => {
         </div>
 
         <div className={styles.bottom}>
-          <p className={styles.copy}>© 2024–{new Date().getFullYear()} EyeDetect · {isUk ? "Львів" : "Львов"}. {t.rights}</p>
+          <p className={styles.copy}>© 2024–{new Date().getFullYear()} EyeDetect · {{ uk: "Львів", ru: "Львов", en: "Lviv" }[lang]}. {t.rights}</p>
         </div>
       </div>
     </footer>

@@ -87,7 +87,9 @@ section {
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
+  // clip, а не hidden: hidden робить контейнер прокручуваним по вертикалі,
+  // і на Android верх заголовків «ховався» після прокрутки.
+  overflow-x: clip;
 }
 
 a {

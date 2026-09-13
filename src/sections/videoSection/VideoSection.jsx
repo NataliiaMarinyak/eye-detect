@@ -9,6 +9,7 @@ import { getCityData } from "@/helpers/getCityData";
 import { getImageForYoutubePreload } from "@/helpers/getImageForYoutubePreload";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./VideoSection.module.scss";
 
 const VideoSection = ({ lang, dictionary, slug }) => {
@@ -37,9 +38,7 @@ const VideoSection = ({ lang, dictionary, slug }) => {
                 loading="lazy"
                 src={imageSrcForYoutube}
                 alt={
-                  lang === i18n.locales[0]
-                    ? data?.mainTitle
-                    : data?.mainTitleRus
+                  getLocalizedField(data, "mainTitle", lang)
                 }
                 sizes="(max-width: 1023px) 100vw, 960px"
                 width={960}
@@ -54,7 +53,7 @@ const VideoSection = ({ lang, dictionary, slug }) => {
               src={data?.videoLink}
               allowFullScreen
               title={
-                lang === i18n.locales[0] ? data?.mainTitle : data?.mainTitleRus
+                getLocalizedField(data, "mainTitle", lang)
               }
             />
           )}

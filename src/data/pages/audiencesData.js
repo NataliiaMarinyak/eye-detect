@@ -1,10 +1,11 @@
 // Сторінки для окремих аудиторій /for/[slug]: юристи, банки, охоронні компанії,
 // HR, психологи. Побудовано за галузевими флаєрами Converus, адаптовано до наших
-// послуг в Україні (EyeDetect у Львові або з виїздом, VerifEye онлайн). Ключі: uk, ru.
+// послуг в Україні (EyeDetect у Львові або з виїздом, VerifEye онлайн). Ключі: uk, ru, en.
 
 const cta = {
   uk: (service) => ({ type: "cta", title: "Обговорити вашу задачу", text: "Напишіть, кого і що потрібно перевірити. Відповімо протягом години в робочий час і запропонуємо формат тесту під вашу ситуацію.", button: "Отримати пропозицію", service, secondaryHref: "/faq", secondaryLabel: "Питання і відповіді" }),
   ru: (service) => ({ type: "cta", title: "Обсудить вашу задачу", text: "Напишите, кого и что нужно проверить. Ответим в течение часа в рабочее время и предложим формат теста под вашу ситуацию.", button: "Получить предложение", service, secondaryHref: "/faq", secondaryLabel: "Вопросы и ответы" }),
+  en: (service) => ({ type: "cta", title: "Discuss your case", text: "Tell us who and what needs to be checked. We reply within an hour during business hours and suggest a test format for your situation.", button: "Get a proposal", service, secondaryHref: "/faq", secondaryLabel: "Questions and answers" }),
 };
 
 const how = {
@@ -19,6 +20,12 @@ const how = {
     { title: "Тест 15–30 минут", text: "Человек отвечает «правда» или «неправда» на экране, камера фиксирует реакции глаз. Датчиков на теле нет." },
     { title: "Оценка за 5 минут", text: "Данные шифруются и отправляются на сервер Converus, алгоритм считает оценку достоверности от 1 до 99." },
     { title: "Отчёт и пояснение", text: "Вы получаете PDF-отчёт сразу после теста, специалист объясняет, что означают цифры и что делать дальше." },
+  ] },
+  en: { type: "steps", tone: "white", title: "How the test works", items: [
+    { title: "Agreeing on the questions", text: "Together we formulate specific questions about facts. You receive the wording in advance." },
+    { title: "Test: 15–30 minutes", text: "The person answers “true” or “false” on screen while the camera records eye reactions. No sensors on the body." },
+    { title: "Scoring in 5 minutes", text: "The data is encrypted and sent to the Converus server; the algorithm computes a Credibility Score from 1 to 99." },
+    { title: "Report and explanation", text: "You receive a PDF report right after the test, and the examiner explains what the numbers mean and what to do next." },
   ] },
 };
 
@@ -67,6 +74,28 @@ export const audiences = [
           "Человек проходит тест только с письменного согласия. Перед тестом он читает все вопросы, поэтому неожиданностей нет. Если клиент хочет пройти тест и дополнительно классический полиграф, эти два метода измеряют разное и вместе дают около 97% уверенности, когда результаты совпадают.",
         ] },
         cta.ru("EyeDetect для юристов"),
+      ],
+    },
+    en: {
+      seo: { title: "Lie Detector for Lawyers and Private Investigators — EyeDetect", description: "A 15-minute EyeDetect test to evaluate clients, witnesses, and versions of events in a case. 87–90% accuracy in single-issue tests. Report right after the test, in Lviv or on-site.", keywords: ["lie detector for lawyers", "polygraph for private investigators", "witness lie detector test", "EyeDetect investigation"], crumbHome: "Home", crumb: "For lawyers and investigators" },
+      hero: { eyebrow: "For lawyers and private investigators", h1: "Lie Detector for Lawyers and Private Investigators", sub: "EyeDetect gives a lawyer or investigator a fast answer: is a specific version of events true? A single-issue test takes 15 minutes, and the score is computed by an algorithm, not a person. The result is not admissible evidence in court, but it saves weeks of work in the wrong direction.", facts: ["15 minutes per question", "87–90% accuracy", "report right after the test", "Lviv or on-site"] },
+      blocks: [
+        { type: "cards", title: "Where it helps", items: [
+          { title: "Assessing a case at the start", text: "Before building a defense, it helps to know whether the client is telling the truth about the key fact. The test gives an answer in one meeting and lets you choose a realistic strategy." },
+          { title: "Witnesses and parties to a dispute", text: "When it is only one word against another, the test shows whose version holds up. Often that is enough for the parties to settle without going to court." },
+          { title: "Internal investigations", text: "Theft, a leak, or fraud at a client's company: testing those who had access narrows the circle in a single day." },
+          { title: "Family disputes", text: "Hidden assets in a divorce, infidelity, broken agreements. Questions about specific facts within a specific period." },
+          { title: "Negotiations", text: "A test result that confirms the client's version becomes an argument in pre-trial negotiations, even though it is not formally evidence." },
+          { title: "Accusations without evidence", text: "The test helps an innocent person show that their version is true when there is no other corroboration." },
+        ] },
+        { type: "list", title: "What can be tested", cols: 3, items: ["theft of money, goods, weapons, fuel", "fraud and forged documents", "leaks of confidential information", "bribes and improper benefits", "hidden assets and accounts", "drug use", "infidelity: physical contact, correspondence", "violence or threats", "involvement in an event: perpetrator, accomplice, witness"] },
+        how.en,
+        { type: "text", title: "What a lawyer should know", paragraphs: [
+          "In Ukraine, an EyeDetect result is not admissible evidence in court. It is an assessment tool, like any lie detector. The only known case of EyeDetect results being admitted as evidence occurred in a New Mexico state court in 2018.",
+          "The test checks only facts and events, not intentions or thoughts. Questions are phrased about a specific action within a specific period, for example “Did you take money from the safe after March 1?”",
+          "A person takes the test only with written consent. Before the test they read all the questions, so there are no surprises. If the client wants to take the test and additionally a classic polygraph, the two methods measure different things and together give about 97% confidence when the results agree.",
+        ] },
+        cta.en("EyeDetect for lawyers"),
       ],
     },
   },
@@ -130,6 +159,35 @@ export const audiences = [
         cta.ru("EyeDetect для банка / финкомпании"),
       ],
     },
+    en: {
+      seo: { title: "Lie Detector Screening for Bank and Financial Company Employees", description: "EyeDetect for banks, credit unions, financial and insurance companies: pre-employment screening and periodic testing of those with access to money and client data. 6–8 people per day, on-site at your office.", keywords: ["bank employee screening", "polygraph for financial companies", "employee screening lie detector", "EyeDetect bank"], crumbHome: "Home", crumb: "For banks and financial companies" },
+      hero: { eyebrow: "For banks and financial companies", h1: "Lie Detector Screening for Bank Employees", sub: "A seasoned manager with 25 years of service and a new teller have the same access to accounts. Pre-employment screening and periodic EyeDetect testing of employees reduce the risk of theft, fraud, and client data leaks.", facts: ["6–8 people per day", "on-site at your office", "report on each person right after the test", "employee's written consent"] },
+      blocks: [
+        { type: "cards", title: "Which risks screening covers", items: [
+          { title: "Theft from client accounts", text: "The most common scenario in banks worldwide: an employee skims small amounts from dormant accounts for years. Periodic testing of those with access stops it early." },
+          { title: "Loan and document fraud", text: "Loans issued to straw borrowers, forged certificates, “friendly” clients. Questions about specific actions within a specific period." },
+          { title: "Client database leaks", text: "Passing data to competitors or fraudsters. We test the fact of disclosure among those who had access to the database." },
+          { title: "Money laundering and bribes", text: "Processing suspicious transactions for a reward, ties to criminal groups. Standard EyeDetect topics for the financial sector." },
+          { title: "Hiring for positions with access", text: "Tellers, operations staff, loan officers, cash-in-transit staff, IT administrators. One test before signing the contract costs less than one theft after." },
+          { title: "Deterrent effect", text: "When the team knows that periodic testing is part of the rules, the number of violations drops before the first test is even run." },
+        ] },
+        { type: "table", title: "Why not a classic polygraph", columns: ["", "EyeDetect", "Classic polygraph"], rows: [
+          ["People per day with one device", "6–8", "2–3"],
+          ["Time per person", "30–45 minutes", "2–4 hours"],
+          ["Sensors on the body", "none", "cuff, tubes, electrodes"],
+          ["Who scores", "algorithm, the same for everyone", "polygraph examiner"],
+          ["Screening accuracy (Converus and APA data)", "86–88%", "85%"],
+          ["Report", "right after the test, on each person", "1–3 days"],
+        ] },
+        how.en,
+        { type: "text", title: "Confidentiality and legality", paragraphs: [
+          "Testing is conducted only with the employee's written consent. Questions concern work only: money, property, information, documents. We do not touch on private life.",
+          "Reports go only to the authorized person. On request, the test is linked to a number rather than a name, and no photo is taken. The result is not admissible evidence in court; it is grounds for an internal decision or an internal investigation.",
+          "Business pricing is individual and depends on the number of people, topics, and city. We send a quote the same day.",
+        ] },
+        cta.en("EyeDetect for a bank / financial company"),
+      ],
+    },
   },
   {
     slug: "security",
@@ -161,6 +219,21 @@ export const audiences = [
         { type: "list", title: "Типичные темы проверки", cols: 3, items: ["кражи на предыдущих местах работы", "употребление наркотиков", "связи с криминальными группами", "правдивость анкеты и резюме", "передача кодов и ключей посторонним", "оружие и незаконные действия", "взятки за пропуск на объект", "разглашение информации о клиентах"] },
         how.ru,
         cta.ru("EyeDetect для охранной компании"),
+      ],
+    },
+    en: {
+      seo: { title: "Screening Security Guards and Security Company Staff — EyeDetect", description: "A security guard candidate may have a past that does not show up in databases or certificates. EyeDetect checks for theft, drugs, and ties to criminal groups in 30 minutes. On-site at your office, 6–8 people per day.", keywords: ["security guard screening lie detector", "polygraph for security companies", "security staff screening", "EyeDetect security"], crumbHome: "Home", crumb: "For security companies" },
+      hero: { eyebrow: "For security companies", h1: "Lie Detector Screening for Security Guards", sub: "A clean criminal record certificate and a drug test do not show what a person was never caught for. In 30 minutes, EyeDetect checks a candidate for theft, drug use, ties to criminal groups, and the honesty of their application form. Investigating an incident at a site takes 15 minutes per person.", facts: ["30 minutes per candidate", "6–8 people per day", "86–88% accuracy", "on-site at your office"] },
+      blocks: [
+        { type: "cards", title: "When security companies come to us", items: [
+          { title: "Hiring guards", text: "Screening before handing over keys, codes, and access to client sites. One dishonest employee at a client's site costs the reputation of the whole company." },
+          { title: "Incident at a site", text: "Missing weapons, goods gone from a warehouse, someone let in outsiders. A single-issue test for those who were on shift narrows the circle in a day." },
+          { title: "Periodic testing", text: "Every six months or once a year for those working at sites with high-value property. The mere fact of testing deters violations." },
+          { title: "Tenders and client requirements", text: "Large clients increasingly ask for confirmation that staff have been screened. An EyeDetect report settles that question." },
+        ], cols: 2 },
+        { type: "list", title: "Typical screening topics", cols: 3, items: ["theft at previous jobs", "drug use", "ties to criminal groups", "truthfulness of the application form and resume", "passing codes and keys to outsiders", "weapons and illegal activity", "bribes for access to a site", "disclosure of client information"] },
+        how.en,
+        cta.en("EyeDetect for a security company"),
       ],
     },
   },
@@ -212,6 +285,29 @@ export const audiences = [
         cta.ru("VerifEye для HR"),
       ],
     },
+    en: {
+      seo: { title: "VerifEye for HR: Candidate Screening from a Smartphone in 10 Minutes", description: "The candidate takes the VerifEye test on their own phone before the interview: theft, drugs, resume honesty. 10 minutes, 84–89% accuracy, results within minutes. For remote teams and high-volume hiring.", keywords: ["online candidate screening", "VerifEye HR", "lie detector for hiring", "smartphone candidate screening"], crumbHome: "Home", crumb: "For HR and recruiters" },
+      hero: { eyebrow: "For HR and recruiters", h1: "Online Lie Detector for Candidate Screening", sub: "VerifEye is a Converus app that checks a candidate on their own phone in 10 minutes: is the resume honest, was there theft at a previous job, do they use drugs. We prepare the questions and send the link; you receive the result. For remote teams and regional branches.", facts: ["10 minutes", "from any city", "84–89% accuracy", "from UAH 2,500 per test"] },
+      blocks: [
+        { type: "cards", title: "Four HR tasks VerifEye covers", items: [
+          { title: "Hiring", text: "Assess a candidate's truthfulness before the offer and keep the risk out of your team. Especially for positions with access to money, goods, or data." },
+          { title: "Fraud prevention", text: "Screen out those who have already stolen from or deceived an employer. One test costs less than one shortfall." },
+          { title: "A culture of honesty", text: "When screening is a standard part of hiring, internal conflicts and “gray” schemes decrease." },
+          { title: "Employee development", text: "Testing before promotion to a position with more responsibility, so the decision rests on data rather than impressions." },
+        ], cols: 2 },
+        { type: "steps", tone: "white", title: "How it works for a remote candidate", items: [
+          { title: "You send us the topics", text: "For example: theft at a previous job, drug use, resume honesty. We formulate the questions following the Converus protocol." },
+          { title: "The candidate receives a link", text: "The link opens the free VerifEye app on iPhone or Android. They need a quiet room, Wi-Fi, and 20 free minutes." },
+          { title: "Test: 10 minutes", text: "The app reads the questions aloud, the candidate answers out loud, and the camera records eye reactions. There is nothing to read." },
+          { title: "You get the result", text: "The Credibility Score and conclusion arrive by email. The examiner explains the report and, if needed, recommends EyeDetect in our Lviv office for key positions." },
+        ] },
+        { type: "text", title: "When EyeDetect in our Lviv office is the better choice", paragraphs: [
+          "VerifEye gives 84–89% accuracy depending on conditions: lighting, phone, quiet. For high-volume hiring for entry-level positions, that is enough. For managers, financial positions, and internal investigations, we recommend EyeDetect on dedicated equipment with the examiner present: 86–88% in screening and 87–90% in single-issue tests.",
+          "Both tests are taken only with the candidate's written consent. Questions concern work only. The result is not admissible evidence in court; it is grounds for an HR decision.",
+        ] },
+        cta.en("VerifEye for HR"),
+      ],
+    },
   },
   {
     slug: "counselors",
@@ -249,6 +345,24 @@ export const audiences = [
         ] },
         how.ru,
         cta.ru("EyeDetect для психолога"),
+      ],
+    },
+    en: {
+      seo: { title: "EyeDetect for Psychologists and Family Counselors", description: "The EyeDetect test in work with infidelity and addiction: 15 minutes, no sensors, result in 45 minutes. It cuts through denial and gives the couple facts instead of guesses. For psychologists, family therapists, and rehabilitation centers.", keywords: ["lie detector for psychologists", "fidelity test psychologist", "EyeDetect addiction therapy", "test for family counselors"], crumbHome: "Home", crumb: "For psychologists and counselors" },
+      hero: { eyebrow: "For psychologists and family counselors", h1: "The EyeDetect Lie Detector for Psychologists", sub: "When one partner suspects and the other denies, therapy goes in circles. A 15-minute EyeDetect test gives both a specific answer to a specific question and lets you work with reality rather than competing versions. No sensors, no wired-up examiner breaking the trust in your office.", facts: ["15 minutes per question", "no sensors on the body", "result in 45 minutes", "Lviv or on-site"] },
+      blocks: [
+        { type: "cards", title: "Where the test helps a therapist", items: [
+          { title: "Infidelity", text: "Questions about specific facts within a specific period: contact, correspondence, hidden spending. The result gives the couple a point from which to move forward: toward rebuilding trust or toward an honest decision." },
+          { title: "Addiction", text: "Alcohol, drugs, gambling, pornography. A periodic test confirms sobriety and replaces constant checking and suspicion in the family." },
+          { title: "Rebuilding trust", text: "After an affair, a “clean” test at three, six, and twelve months shows the partner that promises are being kept. This works better than words." },
+          { title: "Denial and games", text: "A client who is determined to keep a secret can lead a therapist in circles for years. The test ends that game and brings the work back to the point." },
+        ], cols: 2 },
+        { type: "text", tone: "white", title: "Why not a classic polygraph", paragraphs: [
+          "A polygraph in a psychologist's office works against therapy: wires, a cuff, an outside examiner, and a 2–3 hour procedure destroy the atmosphere you have built. EyeDetect takes 15 minutes, the person simply reads statements on a screen, and an algorithm computes the score.",
+          "We run the test in our Lviv office or come to you. Questions are agreed with you and the client in advance; written consent is mandatory. The report goes to whoever the client designates.",
+        ] },
+        how.en,
+        cta.en("EyeDetect for psychologists"),
       ],
     },
   },

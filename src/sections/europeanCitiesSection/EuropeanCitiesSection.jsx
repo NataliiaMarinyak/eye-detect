@@ -4,8 +4,10 @@
 import Link from "next/link";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { europeanCitiesData } from "@/data/europeanCitiesData";
+import { getCityEn, getCountryEn } from "@/data/cityEn";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./EuropeanCitiesSection.module.scss";
 
 const EuropeanCitiesSection = ({ lang, dictionary }) => {
@@ -31,11 +33,11 @@ const EuropeanCitiesSection = ({ lang, dictionary }) => {
                 className={styles.locationLink}
               >
                 <p className={styles.country}>
-                  {lang === i18n.locales[0] ? item.country : item.countryRus}
+                  {lang === "en" ? getCountryEn(item.slug) : getLocalizedField(item, "country", lang)}
                 </p>
                 <span className={styles.arrow} aria-hidden="true" />
                 <p className={styles.city}>
-                  {lang === i18n.locales[0] ? item.city : item.cityRus}
+                  {lang === "en" ? getCityEn(item.slug) : getLocalizedField(item, "city", lang)}
                 </p>
               </Link>
             </li>

@@ -4,8 +4,10 @@
 import Link from "next/link";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { getUkrainianCities } from "@/helpers/getCityData";
+import { getCityEn } from "@/data/cityEn";
 const ukrainianCitiesData = getUkrainianCities();
 // import { languagesData } from "@/data/languagesData";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./UkrainianCitiesSection.module.scss";
 import { i18n } from "@/dictionaries/i18n.config";
 
@@ -30,7 +32,7 @@ const UkrainianCitiesSection = ({ lang, dictionary }) => {
                 href={item.slug === "lviv" ? `${prefix}/` : `${prefix}/locations/${item.slug}`}
                 className={styles.cityLink}
               >
-                {lang === i18n.locales[0] ? item.city : item.cityRus}
+                {lang === "en" ? getCityEn(item.slug) : getLocalizedField(item, "city", lang)}
               </Link>
             </li>
           ))}

@@ -39,23 +39,13 @@ const LocaleSwitcher = ({ changeLanguage, lang, dictionary }) => {
     }
   };
 
-  // Порядок у перемикачі: UA · EN · RU. Англійська поки готується: показуємо
-  // значок без посилання, щоб не вести на порожню сторінку.
+  // Порядок у перемикачі: UA · EN · RU.
   const order = ["uk", "en", "ru"];
-  const soon = lang === "ru" ? "Английская версия готовится" : "Англійська версія готується";
 
   return (
     <ul className={styles.langSwitch}>
       {order.map((locale) => {
-        if (!i18n.locales.includes(locale)) {
-          return (
-            <li key={locale}>
-              <span className={styles.soon} title={soon} aria-label={soon}>
-                {dictionary?.buttons?.[LOCALE_LABEL_KEY[locale]] || locale.toUpperCase()}
-              </span>
-            </li>
-          );
-        }
+        if (!i18n.locales.includes(locale)) return null;
         const labelKey = LOCALE_LABEL_KEY[locale];
         const label = labelKey && dictionary?.buttons?.[labelKey]
           ? dictionary.buttons[labelKey]

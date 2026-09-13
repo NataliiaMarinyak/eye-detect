@@ -11,7 +11,7 @@ export const confidentialityGuaranteeData = [
     textRus:
       "Не обсуждаю проверки с коллегами-полиграфологами на форумах или в чатах.",
     textEng:
-      "I do not discuss specific examinations with fellow polygraph examiners in forums or chats.",
+      "I do not discuss examinations with fellow polygraph examiners in forums or chats.",
   },
   {
     text: "Не розголошую інформацію про компанії або приватних осіб, з якими співпрацюю.",

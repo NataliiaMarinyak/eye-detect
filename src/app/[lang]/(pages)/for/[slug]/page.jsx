@@ -36,7 +36,7 @@ const AudiencePage = ({ params }) => {
     name: d.seo.crumb,
     description: d.seo.description,
     provider: { "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business` },
-    areaServed: { "@type": "Country", name: lang === "uk" ? "Україна" : "Украина" },
+    areaServed: { "@type": "Country", name: { uk: "Україна", ru: "Украина", en: "Ukraine" }[lang] || "Україна" },
   };
 
   return (

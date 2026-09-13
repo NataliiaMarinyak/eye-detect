@@ -5,6 +5,7 @@ import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
 import { pricingGroups } from "@/data/pricingData";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./BusinessSections.module.scss";
 
 const localHref = (lang, path) => (lang === i18n.defaultLocale ? path : `/${lang}${path}`);
@@ -54,7 +55,7 @@ const BusinessSections = ({ d, lang, dictionary }) => {
               </tbody>
             </table>
           </Reveal>
-          <p className={styles.tableHint}>{isUk ? "Гортайте таблицю вбік →" : "Листайте таблицу вбок →"}</p>
+          <p className={styles.tableHint}>{{ uk: "Гортайте таблицю вбік →", ru: "Листайте таблицу вбок →", en: "Scroll the table sideways →" }[lang]}</p>
         </div>
       </section>
 
@@ -92,8 +93,8 @@ const BusinessSections = ({ d, lang, dictionary }) => {
             <ul className={styles.priceList}>
               {business.items.map((it, i) => (
                 <li key={i} className={styles.priceRow}>
-                  <span>{isUk ? it.name : it.nameRus}</span>
-                  <span className={styles.priceVal}>{isUk ? it.priceLabel : it.priceLabelRus}</span>
+                  <span>{getLocalizedField(it, "name", lang)}</span>
+                  <span className={styles.priceVal}>{getLocalizedField(it, "priceLabel", lang)}</span>
                 </li>
               ))}
             </ul>

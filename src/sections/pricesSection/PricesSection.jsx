@@ -8,11 +8,12 @@ import {
   pricingGuarantee,
 } from "@/data/pricingData";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./PricesSection.module.scss";
 
 const PricesSection = ({ lang, dictionary }) => {
   const isUk = lang === i18n.defaultLocale;
-  const pick = (obj, key) => (isUk ? obj[key] : obj[`${key}Rus`]);
+  const pick = (obj, key) => getLocalizedField(obj, key, lang);
 
   return (
     <section className={styles.section}>
@@ -87,8 +88,8 @@ const PricesSection = ({ lang, dictionary }) => {
                 <span className={styles.comparisonCountry}>{pick(r, "country")}</span>
                 <span className={styles.comparisonNote}>{pick(r, "note")}</span>
                 <span className={styles.comparisonPrice}>
-                  {r.price}
-                  {r.uah && <small> {r.uah}</small>}
+                  {pick(r, "price")}
+                  {pick(r, "uah") && <small> {pick(r, "uah")}</small>}
                 </span>
               </li>
             ))}

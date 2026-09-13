@@ -3,6 +3,7 @@
 // import { useTranslation } from "react-i18next";
 import PrivacyPolicyUa from "./PrivacyPolicyUa";
 import PrivacyPolicyRu from "./PrivacyPolicyRu";
+import PrivacyPolicyEn from "./PrivacyPolicyEn";
 import { i18n } from "@/dictionaries/i18n.config";
 // import { languagesData } from "@/data/languagesData";
 import styles from "./PrivacyPolicySection.module.scss";
@@ -16,7 +17,7 @@ const PrivacyPolicySection = ({ lang }) => {
 
   return (
     <section className={styles.section}>
-      {lang === i18n.locales[0] ? <PrivacyPolicyUa /> : <PrivacyPolicyRu />}
+      {lang === "ru" ? <PrivacyPolicyRu /> : lang === "en" ? <PrivacyPolicyEn /> : <PrivacyPolicyUa />}
     </section>
   );
 };

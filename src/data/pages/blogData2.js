@@ -38,6 +38,23 @@ export const blogPosts2 = [
         { q: "Болит ли что-то после теста?", a: "Нет. Единственное, что бывает, лёгкая усталость глаз от чтения." },
       ],
     },
+    en: {
+      title: "How Long a Lie Detector Test Takes and What the Person Experiences",
+      description: "Minute by minute: how long an EyeDetect, VerifEye and classic polygraph test takes, what the person sees on the screen, and why there is nothing to fear.",
+      h1: "How Long a Lie Detector Test Takes and What the Person Experiences",
+      lead: "The most common fear before a test: “they will interrogate me for hours, wired up to sensors”. No. On EyeDetect the person sits in front of an ordinary laptop and reads statements. Here is how those 45 minutes go.",
+      sections: [
+        { h2: "How long it takes", paragraphs: ["Three tools, three different numbers."], list: ["EyeDetect in our Lviv office: 30–45 minutes for the test itself plus 20–30 minutes of conversation and reading the questions beforehand. About an hour and a half in total.", "VerifEye online: 10–15 minutes of testing from a phone. Report in 20 minutes.", "Classic polygraph: 2–4 hours with a pre-test interview, several series of questions and sensors."] },
+        { h2: "The first 20 minutes: conversation", paragraphs: ["The examiner explains how everything works and gives you every question to read, with explanations. What counts as, for example, sexual contact and what does not. Which time period is covered. This is where you can and should ask questions. If there is an episode related to the topic, it is mentioned right away."] },
+        { h2: "Five minutes: practice test", paragraphs: ["Simple statements appear on the screen, such as “2 + 2 = 4” or “I robbed a bank”. The person answers “true” or “false” with the two mouse buttons and gets used to the pace. Response time is limited, so at first there are usually a few “time expired” messages. That is normal."] },
+        { h2: "30–45 minutes: the main test", paragraphs: ["Chin on the rest, hands on the mouse, eyes on the screen. The statements come one after another: several wordings for each topic, and each is repeated several times. There are short pauses between series. The person feels nothing physically: no cuff, no electrodes, only a camera above the screen.", "What people actually feel: nervousness in the first minutes, then monotony. By the end of the test most people are simply tired of reading. That is exactly why we ask you to get a good night's sleep."] },
+        { h2: "After the test", paragraphs: ["The algorithm calculates the result in a few minutes. The client receives the report right after the test: a score from 1 to 99 on each question and an overall conclusion. The person who took the test does not see the result unless the client decides otherwise."] },
+      ],
+      faq: [
+        { q: "Can I take a break during the test?", a: "Between series, yes, a short one. In the middle of a series, no, because that breaks the structure of the test." },
+        { q: "Does anything hurt after the test?", a: "No. The only thing that happens is slight eye fatigue from reading." },
+      ],
+    },
   },
   {
     slug: "eyedetect-chy-klasychnyj-poligraf",
@@ -77,6 +94,23 @@ export const blogPosts2 = [
         { q: "Что такое EyeDetect+?", a: "Это EyeDetect с дополнительными датчиками, сочетание обоих методов в одном тесте. В Украине мы проводим только EyeDetect и VerifEye." },
       ],
     },
+    en: {
+      title: "EyeDetect or a Classic Polygraph: Which to Choose for Your Situation",
+      description: "A comparison without the sales pitch: time, accuracy, sensors, price, and when each method is better. For fidelity, staff screening, investigations and disputes.",
+      h1: "EyeDetect or a Classic Polygraph: Which to Choose",
+      lead: "Both methods work, and both have limits. We run EyeDetect, so we will say plainly where it wins and where the classic polygraph is still the better fit.",
+      sections: [
+        { h2: "The difference in principle", paragraphs: ["The classic polygraph measures the body: breathing, blood pressure, pulse, sweating. The examiner asks questions out loud and reads the charts. EyeDetect measures the eyes: the pupil, eye movements, reading time. The person reads the statements on their own, and an algorithm calculates the result. In other words, in the first case a human draws the conclusion, in the second a program does."] },
+        { h2: "When EyeDetect is better", paragraphs: ["Four cases where the advantages are obvious."], list: ["You need to screen many people: 6–8 per day instead of 2–3.", "The person is afraid of sensors or has blood pressure or heart problems.", "You need a report right after the test, with numbers on each question.", "The questions are specific and factual: did they take, did they pass on, did they have contact."] },
+        { h2: "When the classic polygraph is the better fit", paragraphs: ["Also said plainly."], list: ["The situation is tangled and needs dialogue: a polygraph examiner can change questions as they go, EyeDetect cannot.", "The person reads poorly or has vision problems: an eye-based test cannot be run.", "The client specifically wants a “polygraph”, out of habit or because a third party requires it."] },
+        { h2: "Accuracy", paragraphs: ["According to the manufacturer, EyeDetect delivers up to 90% in screening and 87–89% when checking a specific incident. For the classic polygraph, the literature reports figures from 70 to 90% depending on the technique and the examiner. The key difference is not the number, but the fact that an EyeDetect result does not depend on the mood or experience of the person running the test."] },
+        { h2: "Price and time", paragraphs: ["EyeDetect in Lviv from UAH 5,500 for 30–45 minutes. A classic polygraph at various providers from UAH 900 to UAH 5,000 for 2–4 hours. For a single question the classic test may be cheaper; for ten employees EyeDetect is cheaper and faster."] },
+      ],
+      faq: [
+        { q: "Can both tests be done?", a: "Yes, some clients do exactly that for important decisions. Two independent methods with the same result give a confidence level of about 97–99%." },
+        { q: "What is EyeDetect+?", a: "It is EyeDetect with additional sensors, a combination of both methods in a single test. In Ukraine we run only EyeDetect and VerifEye." },
+      ],
+    },
   },
   {
     slug: "yak-zrozumity-shcho-partner-zradzhuye",
@@ -114,6 +148,23 @@ export const blogPosts2 = [
       faq: [
         { q: "Можно ли проверить партнёра без его ведома?", a: "Нет. Тест только с письменного согласия. Скрытые проверки мы не проводим." },
         { q: "Партнёр в другом городе или за границей?", a: "Онлайн-тест VerifEye с телефона за 15 минут, отчёт за 20 минут." },
+      ],
+    },
+    en: {
+      title: "How to Tell Whether Your Partner Is Cheating, and What to Do Next",
+      description: "Not a list of 50 “signs of cheating”, but an honest conversation: which changes really mean something, why guessing does more damage than the truth, and how to get an answer in a single visit.",
+      h1: "How to Tell Whether Your Partner Is Cheating, and Whether a Lie Detector Can Help",
+      lead: "The internet is full of “10 signs of cheating” lists. Half of them describe a person who is simply tired. We see dozens of couples a year and know which suspicions are confirmed and which are not. No myths here.",
+      sections: [
+        { h2: "Signs that really mean something", paragraphs: ["None of these proves cheating on its own. But when several of them appear at the same time, it is a reason to talk."], list: ["The phone has become off-limits: a new password, face down, leaving the room to take calls.", "The schedule has changed without explanation: late returns, sudden business trips, new “meetings with friends”.", "Money: unexplained spending, a new card, cash.", "A sharp change in attitude: either unexpected coldness or unexpected attentiveness with gifts.", "A defensive reaction to simple questions: aggression where there used to be a calm answer."] },
+        { h2: "Signs that mean nothing", paragraphs: ["A new haircut, the gym, new clothes, less sex, more time on the phone. This can be a crisis, depression, work, age. People change without cheating, too."] },
+        { h2: "Why guessing is worse than the truth", paragraphs: ["A suspicion without an answer lives for months. It ruins sleep, work and the relationship regardless of whether there was any cheating. A partner who is suspected without grounds is worn down too. For most couples who come to us, the worst part was the waiting."] },
+        { h2: "How to get an answer", paragraphs: ["There are three ways. First: an honest conversation. It works if both are ready. Second: surveillance, checking the phone, a private detective. Expensive, humiliating and often illegal. Third: a lie detector test with the partner's consent. 45 minutes in our Lviv office or 15 minutes online from a phone, specific questions about a specific period, a report right after the test.", "Important: the test is strictly voluntary. But the offer to take a test clarifies a lot on its own. An innocent person usually agrees, because they have nothing to hide."] },
+        { h2: "What next, if the result is “truthful”", paragraphs: ["This is the best scenario, and it happens more often than people think: about half of fidelity tests confirm honesty. Then the couple gets a chance to repair trust instead of continuing to live in suspicion."] },
+      ],
+      faq: [
+        { q: "Can I have my partner tested without their knowledge?", a: "No. The test is only conducted with written consent. We do not run covert tests." },
+        { q: "Partner in another city or abroad?", a: "The VerifEye online test from a phone takes 15 minutes, with the report in 20 minutes." },
       ],
     },
   },
@@ -157,6 +208,24 @@ export const blogPosts2 = [
         { q: "Узнает ли партнёр результат?", a: "Только если вы так решите. Отчёт получает заказчик." },
       ],
     },
+    en: {
+      title: "Fidelity Test on a Lie Detector: How It Works and What You Get",
+      description: "Step by step: from the first call to the report. What questions are asked in a fidelity test, how long it takes, what it costs in Lviv and online, and what the report says.",
+      h1: "Fidelity Test on a Lie Detector: How the Test Works and What You Get",
+      lead: "This is the most common reason people contact us. So we describe it in detail, so that you know what to expect before you even call.",
+      sections: [
+        { h2: "Step 1. A call or a message", paragraphs: ["You briefly describe the situation: who will take the test, what exactly worries you, and over what period. We explain whether the test is suitable and suggest a format: our Lviv office, on-site (we come to you), or online from a phone."] },
+        { h2: "Step 2. We word the questions", paragraphs: ["Together we choose from one to three questions. Typical examples:"], list: ["Since the start of the relationship, have you had sexual contact with another person?", "In the last 6 months, have you had romantic correspondence or calls with another person?", "Do you have hidden accounts or chats that your partner does not know about?", "In the last year, have you secretly spent money on another person?"], },
+        { h2: "Step 3. The partner reads the questions", paragraphs: ["Before the test the person receives the full text of the questions with explanations: what counts as contact, what does not, which period. This removes every “I misunderstood”. It is also the moment when the person can disclose an episode themselves, and then the questions are adjusted."] },
+        { h2: "Step 4. The test", paragraphs: ["In our Lviv office: 30–45 minutes in front of a laptop with a camera, no sensors. Online: 15 minutes from a phone in a quiet room. In both cases statements appear on the screen and the person answers “true” or “false”."] },
+        { h2: "Step 5. The report", paragraphs: ["The same day you receive a PDF: a score from 1 to 99 on each question, an overall conclusion of “credible” or “not credible”, and the details of the answers. Only you see the report. We explain how to read it and what to do if the result is inconclusive: in that case a retest at a 50% discount."] },
+        { h2: "What it costs", paragraphs: ["In Lviv: EyeDetect UAH 5,500 for one question, UAH 8,500 for three, UAH 15,000 for a couple (both partners). Online VerifEye: UAH 2,500 for one question, UAH 4,000 for three, from any city with no extra charges. Abroad, EyeDetect from UAH 10,000 plus travel."] },
+      ],
+      faq: [
+        { q: "Can the person who suspects also take the test?", a: "Yes, and it is often useful: a test for the couple shows both that there is nothing to hide, or the opposite." },
+        { q: "Will my partner learn the result?", a: "Only if you decide so. The report goes to the client." },
+      ],
+    },
   },
   {
     slug: "kradizhka-na-roboti-yak-znajty-vynnoho",
@@ -198,6 +267,24 @@ export const blogPosts2 = [
         { q: "Можно ли проверять, если сотрудник уволился?", a: "Только с его согласия. На практике редко, но бывает, когда человек хочет снять с себя подозрение." },
       ],
     },
+    en: {
+      title: "Theft at Work: How to Find the Culprit Without Random Accusations",
+      description: "Money has gone missing from the till or goods from the warehouse. What a manager should do in the first days, how not to destroy the team with suspicion, and how a lie detector test narrows the circle in a single day.",
+      h1: "Theft at Work: How to Find the Culprit with a Lie Detector, Without Random Accusations",
+      lead: "The worst thing a manager can do after a theft is suspect everyone at once. A week later the best people quit, and the culprit stays. Here is a sequence of steps that works.",
+      sections: [
+        { h2: "The first two days: record the facts", paragraphs: ["What exactly went missing, when, how much, who had access. Camera footage, logs, shifts, keys. Without this, any check turns into “are you an honest person”, and the test does not answer that kind of question."] },
+        { h2: "Narrow the circle to those who had access", paragraphs: ["Usually that is 3–10 people. The rest of the team is left alone entirely. This matters: mass screening of “everyone” demotivates and achieves nothing."] },
+        { h2: "Announce the check", paragraphs: ["Calmly, without accusations: “We are running a lie detector test for everyone who had access to the till. This is standard procedure.” In a third of cases the culprit confesses or resigns at this stage. Sometimes that is enough."] },
+        { h2: "The test", paragraphs: ["We come to your office with the EyeDetect equipment. Each test takes 30–45 minutes, 6–8 people per day. The questions are only about the incident: “Did you take money from the till on August 14?”, “Do you know who took it?”. Everyone reads the questions in advance and signs a consent form. A refusal without explanation is information too."] },
+        { h2: "Report and decision", paragraphs: ["The same day you receive a report on each person: a score from 1 to 99, a conclusion, details. Very often it turns out that two people were involved, or that the “theft” was an accounting error. The result is not evidence in court, but it gives you a basis for a personnel decision, a conversation, or a police report with a clear version of events."] },
+        { h2: "How to prevent the next one", paragraphs: ["Scheduled checks every six months for those with access to money. The mere existence of checks reduces the number of incidents: people know that missing money will not go unanswered."] },
+      ],
+      faq: [
+        { q: "What does a check after a theft cost?", a: "An internal investigation from UAH 8,000; screening several employees is priced per person depending on the number. We will give you the exact figure after a short conversation." },
+        { q: "Can an employee be tested after they have left?", a: "Only with their consent. In practice it is rare, but it happens when a person wants to clear themselves of suspicion." },
+      ],
+    },
   },
   {
     slug: "onlajn-detektor-brekhni-yak-vidrizyty-spravzhnij",
@@ -235,6 +322,23 @@ export const blogPosts2 = [
       faq: [
         { q: "Можно ли пройти VerifEye самостоятельно, без специалиста?", a: "Технически производитель продаёт тесты и напрямую, но формулировка вопросов и объяснение отчёта делают результат полезным. Без этого легко получить правильный ответ на неправильный вопрос." },
         { q: "Видит ли Converus мои данные?", a: "Видео не сохраняется, данные обрабатываются обезличенно на серверах Converus в США по GDPR." },
+      ],
+    },
+    en: {
+      title: "Online Lie Detector: A Real Test or a Joke App",
+      description: "App stores have hundreds of “lie detectors” that work by placing a finger on the screen. The real online test from a lie detector manufacturer is VerifEye by Converus. Five signs that make them easy to tell apart.",
+      h1: "Online Lie Detector: How to Tell a Real Test from a Joke App",
+      lead: "A search for “online lie detector” returns both scientific technology and party games. Sometimes they look the same. Here is how not to get it wrong.",
+      sections: [
+        { h2: "What a joke app is", paragraphs: ["“Place your finger on the screen”, “speak into the microphone”, “3-second voice scan”. All of this is entertainment: the result is random or pre-programmed. None of them has published any research, because there is nothing to research."] },
+        { h2: "What a real online test is", paragraphs: ["VerifEye by Converus, the same company that developed EyeDetect. The smartphone's front camera records the pupil, eye movements and response times while the person reads statements. The algorithm is the same as in the office test, with 84–89% accuracy according to University of Utah studies. The test is ordered through a certified partner, not downloaded from an app store."] },
+        { h2: "Five signs of a real test", paragraphs: ["Check before you pay."], list: ["There is a manufacturer with scientific publications and patents, not an anonymous developer.", "The test is run by a certified examiner, not by the app itself: the examiner words the questions and explains the report.", "The questions are specific, about facts over a period, not “are you lying”.", "There are requirements for the conditions: a quiet room, lighting, a phone stand. Joke apps work anywhere.", "A report with scores on each question and an explanation, not “Lie 73%” across the whole screen."] },
+        { h2: "What the online test cannot do", paragraphs: ["It does not work from a laptop, it is not suitable for people with strong glasses, it is not evidence in court, and it does not check more than three topics at a time. For investigations involving large sums we recommend EyeDetect in our Lviv office."] },
+        { h2: "What it costs", paragraphs: ["VerifEye through us: UAH 2,500 for one question, UAH 4,000 for three. A PDF report in 20 minutes, from any city or country with no extra charges."] },
+      ],
+      faq: [
+        { q: "Can I take VerifEye on my own, without an examiner?", a: "Technically the manufacturer also sells tests directly, but it is the wording of the questions and the explanation of the report that make the result useful. Without that, it is easy to get the right answer to the wrong question." },
+        { q: "Does Converus see my data?", a: "The video is not stored; the data is processed in anonymized form on Converus servers in the US in compliance with GDPR." },
       ],
     },
   },

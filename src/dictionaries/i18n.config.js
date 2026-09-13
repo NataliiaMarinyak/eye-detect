@@ -4,6 +4,6 @@
 // };
 
 export const i18n = {
-    locales: ['uk', 'ru'],
+    locales: ['uk', 'ru', 'en'],
     defaultLocale: 'uk',
 };

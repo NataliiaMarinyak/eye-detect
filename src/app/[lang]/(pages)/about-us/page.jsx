@@ -35,6 +35,7 @@ export async function generateMetadata({ params }) {
       languages: {
         'uk': `${process.env.NEXT_PUBLIC_SEO_URL}about-us`,
         'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/about-us`,
+        en: `${process.env.NEXT_PUBLIC_SEO_URL}en/about-us`,
       },
     },
     openGraph: {

@@ -4,6 +4,7 @@
 // import { useParams } from "next/navigation";
 import { getCityData } from "@/helpers/getCityData";
 // import { languagesData } from "@/data/languagesData";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./TownsSection.module.scss";
 import { i18n } from "@/dictionaries/i18n.config";
 
@@ -22,24 +23,16 @@ const TownsSection = ({ lang, slug }) => {
     <section>
       <div className={`container ${styles.container}`}>
         <h2 className={styles.title}>
-          {lang === i18n.locales[0]
-            ? data?.townsInfo.title
-            : data?.townsInfo.titleRus}
+          {getLocalizedField(data?.townsInfo, "title", lang)}
         </h2>
         <p className={styles.preface}>
-          {lang === i18n.locales[0]
-            ? data?.townsInfo.preface
-            : data?.townsInfo.prefaceRus}
+          {getLocalizedField(data?.townsInfo, "preface", lang)}
         </p>
         <p className={styles.towns}>
-          {lang === i18n.locales[0]
-            ? data?.townsInfo.towns
-            : data?.townsInfo.townsRus}
+          {getLocalizedField(data?.townsInfo, "towns", lang)}
         </p>
         <p className={styles.afterword}>
-          {lang === i18n.locales[0]
-            ? data?.townsInfo.afterword
-            : data?.townsInfo.afterwordRus}
+          {getLocalizedField(data?.townsInfo, "afterword", lang)}
         </p>
       </div>
     </section>

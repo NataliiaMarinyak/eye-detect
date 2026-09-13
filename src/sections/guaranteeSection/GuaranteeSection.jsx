@@ -7,6 +7,7 @@ import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import { confidentialityGuaranteeData } from "@/data/confidentialityGuaranteeData";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./GuaranteeSection.module.scss";
 
 const GuaranteeSection = ({ lang, dictionary }) => {
@@ -27,7 +28,7 @@ const GuaranteeSection = ({ lang, dictionary }) => {
                   <use href="/sprite.svg#icon-cross-in-circle"></use>
                 </svg>
                 <p className={styles.text}>
-                  {lang === i18n.locales[0] ? el.text : el.textRus}
+                  {getLocalizedField(el, "text", lang)}
                 </p>
               </li>
             );
@@ -37,9 +38,7 @@ const GuaranteeSection = ({ lang, dictionary }) => {
           <Image
             src="/images/specialist3.webp"
             alt={
-              lang === i18n.locales[0]
-                ? "Гарантія конфіденційності тестування EyeDetect"
-                : "Гарантия конфиденциальности тестирования EyeDetect"
+              { uk: "Гарантія конфіденційності тестування EyeDetect", ru: "Гарантия конфиденциальности тестирования EyeDetect", en: "EyeDetect testing confidentiality guarantee" }[lang]
             }
             width={960}
             height={560}

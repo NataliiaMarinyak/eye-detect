@@ -128,6 +128,70 @@ export const cityTexts = {
     ctaTitle: "Готовы узнать правду {loc}?",
     ctaText: "Оставьте заявку или позвоните, ответим в течение часа в рабочее время.",
   },
+  en: {
+    title: "Lie detector {loc}: EyeDetect on-site visit or VerifEye online",
+    h1: "Lie detector {loc}: specialist visit or online test today",
+    sub: {
+      "ua-west": "Office in Lviv, visits to {city} by arrangement, or an online test from your phone today. Converus technology (USA), report in 45 minutes.",
+      "ua-other": "Specialist visit to {city} with EyeDetect equipment, or a VerifEye online test from your phone today. Converus technology (USA), report in 45 minutes.",
+      eu: "VerifEye online test from your phone today, or a specialist visit to {city} with EyeDetect equipment. Converus technology (USA), PDF report right after the test.",
+    },
+    facts: ["online today", "on-site with equipment", "6–8 people per day", "report right after the test"],
+    eyebrow: "On-site and online",
+    visitTitle: "How to take the test {loc}",
+    online: {
+      title: "Online today: VerifEye",
+      text: "You receive a link, the person takes the test from a phone in a quiet room, 15 minutes. The PDF report arrives by email within 20 minutes. Suitable for fidelity checks and job candidates.",
+      price: "from UAH 2,500",
+      cta: "Take the online test",
+    },
+    visit: {
+      title: "Specialist visit with EyeDetect",
+      text: {
+        "ua-west": "{city} is about {km} km from Lviv. We bring the equipment to your office or arrange a quiet room. 6–8 people can be tested in a day.",
+        "ua-other": "{city} is about {km} km from Lviv, so we plan the trip in advance and combine it with other requests in the region. We bring the equipment to your office or hotel. 6–8 people can be tested in a day.",
+        eu: "Visits to {city} are scheduled around requests: we collect several requests in the region and set a date. The test takes place in your office or a rented room. 6–8 people can be tested in a day.",
+      },
+      textNoKm: {
+        "ua-west": "We bring the equipment to your office or arrange a quiet room. 6–8 people can be tested in a day.",
+        "ua-other": "We plan the trip in advance and combine it with other requests in the region. We bring the equipment to your office or hotel. 6–8 people can be tested in a day.",
+        eu: "Visits are scheduled around requests: we collect several requests in the region and set a date. The test takes place in your office or a rented room. 6–8 people can be tested in a day.",
+      },
+      price: {
+        "ua-west": "test from UAH 5,500 + UAH 2,000 for the visit",
+        "ua-other": "from UAH 12,000 including the visit",
+        eu: "test from UAH 10,000 + travel and venue",
+      },
+      cta: "Request a visit",
+    },
+    lvivNote: "Another option: come to Lviv, 45 Horodotska St. Test from UAH 5,500 with no travel surcharge, and the date does not depend on other requests.",
+    faqTitle: "Questions about the test {loc}",
+    faq: {
+      "ua-west": [
+        { q: "How soon can you come to {city}?", a: "Usually within 2–5 business days after the questions are agreed and payment is made. The VerifEye online test is available today." },
+        { q: "Do we need a special room?", a: "No. A quiet room with a table, a chair and a power outlet is enough. We bring the equipment with us." },
+        { q: "How many people can be tested in one visit?", a: "6–8 people per day. For larger groups we plan two days." },
+        { q: "How much does a visit to {city} cost?", a: "The test is from UAH 5,500 per person plus UAH 2,000 for a visit within Western Ukraine. For several people the travel surcharge is charged once for the whole group." },
+        { q: "Can the test be taken online instead of a visit?", a: "Yes, VerifEye from a phone from UAH 2,500. For fidelity checks and job candidates this is often more convenient." },
+      ],
+      "ua-other": [
+        { q: "How soon can you come to {city}?", a: "Visits to distant regions are planned 1–2 weeks ahead and combined with several requests. The VerifEye online test is available today." },
+        { q: "Do we need a special room?", a: "No. A quiet room with a table, a chair and a power outlet is enough. We bring the equipment with us." },
+        { q: "How many people can be tested in one visit?", a: "6–8 people per day. For larger groups we plan two days." },
+        { q: "How much does a visit to {city} cost?", a: "From UAH 12,000 including the test for one person. For several people the travel cost is shared; the quiz or a manager will calculate the exact amount." },
+        { q: "Can the test be taken online instead of a visit?", a: "Yes, VerifEye from a phone from UAH 2,500, report within 20 minutes. For fidelity checks and job candidates this is often more convenient." },
+      ],
+      eu: [
+        { q: "How does a visit to {city} work?", a: "We collect several requests in the region and set a date. Travel from Lviv and the test venue are paid separately from the test price." },
+        { q: "How much does the test cost {loc}?", a: "EyeDetect from UAH 10,000 for one issue, UAH 15,000 for three. Plus tickets from Lviv and room rental. VerifEye online from UAH 2,500 with no surcharges." },
+        { q: "What language is the test in?", a: "Ukrainian or Russian. We formulate the questions together, and the person reads them in advance." },
+        { q: "Can the test be taken online without waiting for a visit?", a: "Yes, VerifEye from a phone is available today, PDF report within 20 minutes." },
+        { q: "Is this legal in the country where I live?", a: "We only conduct voluntary tests with the written consent of an adult. The result is not court evidence; whether it can be used in your country for a specific purpose, check with a local lawyer." },
+      ],
+    },
+    ctaTitle: "Ready to learn the truth {loc}?",
+    ctaText: "Send a request or call us; we reply within an hour during business hours.",
+  },
 };
 
 export const fill = (s, vars) => (s || "").replace(/\{(\w+)\}/g, (_, k) => (vars[k] ?? ""));

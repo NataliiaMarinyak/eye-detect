@@ -152,6 +152,82 @@ export const businessPage = {
     ],
     cta: { title: "Получить предложение для вашей компании", text: "Напишите, сколько людей и что нужно проверить. Отправим расчёт и даты в тот же день.", button: "Получить предложение" },
   },
+  en: {
+    seo: {
+      title: "Employee lie detector screening — EyeDetect for business",
+      description: "Screening candidates and employees with EyeDetect: 6–8 people per day, no sensors, report right after the test. Theft, information leaks, investigations. On-site visits to your office across Ukraine.",
+      keywords: ["employee polygraph screening", "employee lie detector test", "polygraph for business", "internal investigation polygraph", "candidate screening"],
+      crumbHome: "Home",
+      crumb: "For business",
+    },
+    hero: {
+      eyebrow: "For business",
+      h1: "Employee lie detector screening: 6–8 people in one day",
+      sub: "Hiring, periodic screening, theft, or a leak. We bring the EyeDetect equipment to your office, each test takes 30–45 minutes, and a report on each person is ready right after the test. No sensors on the body, with written consent from everyone.",
+      facts: ["6–8 people per day", "on-site at your office", "report on each person right after the test", "written consent from the employee"],
+      primary: "Get a proposal",
+    },
+    cases: {
+      title: "When businesses come to us",
+      items: [
+        { title: "Hiring for positions with access to money", text: "Cashiers, drivers, accountants, security staff, branch managers. One test before signing the contract costs less than one theft after it.", slug: "hiring" },
+        { title: "Periodic screening", text: "Every six months or once a year for those with access to cash, the warehouse, or the client database. The mere existence of screening reduces the number of violations.", slug: null },
+        { title: "Theft or shortage", text: "Money or goods have gone missing. We test those who had access and narrow the circle in one day instead of accusing people at random.", slug: "theft" },
+        { title: "Information leak", text: "Competitors know your prices or your client database. We check the specific fact of data being passed on among those who had access.", slug: "leak" },
+      ],
+    },
+    why: {
+      title: "Why EyeDetect is more cost-effective for mass screening",
+      rows: [
+        ["", "EyeDetect", "Classic polygraph"],
+        ["People per day", "6–8", "2–3"],
+        ["Time per person", "30–45 minutes", "2–4 hours"],
+        ["Sensors on the body", "none", "cuff, sensors, electrodes"],
+        ["Who evaluates", "the algorithm, the same for everyone", "the polygraph examiner"],
+        ["Report", "right after the test, for each person", "1–3 days"],
+        ["Time of the whole team", "one working day", "several days"],
+      ],
+    },
+    process: {
+      title: "How it is organized",
+      steps: [
+        { title: "Agreeing on the topics", text: "We discuss what exactly is being checked and formulate 2–4 questions, the same for everyone. You receive the text of the questions in advance." },
+        { title: "Employee consent", text: "Each person signs a consent form and reads the questions. Refusal is not proof of guilt, and no one may be forced." },
+        { title: "Testing at your office", text: "A quiet room with a table and a power outlet is needed. We bring the equipment. 6–8 people per working day." },
+        { title: "Reports and debrief", text: "The same day you receive a PDF on each person and an explanation of how to read the scores. The decision is then yours." },
+      ],
+    },
+    pricing: {
+      title: "What it costs",
+      note: "Business pricing is individual: it depends on the number of people, the topics, and the city. Tell us how many people and what needs to be checked, and we will send a quote the same day.",
+      travel: "Lviv and the region within 50 km are included. Western Ukraine +UAH 2,000 for the visit; other regions from UAH 12,000 including the test. Abroad, travel and premises are charged separately.",
+    },
+    industries: {
+      title: "Solutions for your industry",
+      items: [
+        { title: "Banks and financial companies", text: "Access to accounts, loans, the client database.", href: "/for/finance" },
+        { title: "Security companies", text: "Keys, codes, client sites.", href: "/for/security" },
+        { title: "HR and recruiters", text: "Screening candidates from a smartphone before the interview.", href: "/for/hr" },
+        { title: "Lawyers and private investigators", text: "Assessing clients, witnesses, and versions of events.", href: "/for/lawyers" },
+      ],
+    },
+    legal: {
+      title: "Legality and confidentiality",
+      items: [
+        "Screening is legal with the employee's written consent. Questions concern work only: money, property, information, documents. We do not touch private life.",
+        "The result is not admissible as evidence in court. It is grounds for an internal decision, a conversation, or an internal investigation.",
+        "Reports go only to the authorized person. We do not keep results longer than needed to deliver them, and we do not discuss screenings with third parties.",
+      ],
+    },
+    faq: [
+      { q: "Can an employee refuse the test?", a: "Yes. The test is strictly voluntary. A refusal without explanation is visible to the manager, who draws their own conclusions. An employment contract can provide for screening in positions with access to valuables." },
+      { q: "How many people per day?", a: "6–8 people for an on-site visit to your office. For larger numbers we plan two days or two visits." },
+      { q: "Can remote employees be tested?", a: "Yes, via VerifEye from a phone, from UAH 2,500 per person. For theft and investigations we recommend EyeDetect in our Lviv office or on-site." },
+      { q: "What does the manager receive?", a: "A PDF report on each person: a score from 1 to 99 for each question, an overall conclusion, and details of the answers. Plus an explanation from the examiner." },
+      { q: "Should the team be notified in advance?", a: "Yes. The announcement of a screening produces results by itself: some of the offenders confess or resign before the test." },
+    ],
+    cta: { title: "Get a proposal for your company", text: "Tell us how many people and what needs to be checked. We will send a quote and available dates the same day.", button: "Get a proposal" },
+  },
 };
 
 export const getBusinessPage = (lang) => businessPage[lang] || businessPage.uk;

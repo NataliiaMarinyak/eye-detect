@@ -6,6 +6,7 @@ import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
 import { addressData } from "@/data/addressData";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./LocationSection.module.scss";
 
 const LocationSection = ({ lang, dictionary }) => {
@@ -57,9 +58,7 @@ const LocationSection = ({ lang, dictionary }) => {
               height={108}
               allowFullScreen=""
               title={
-                lang === i18n.locales[0]
-                  ? addressData.textAddress
-                  : addressData.textAddressRus
+                getLocalizedField(addressData, "textAddress", lang)
               }
               loading="eager"
               referrerPolicy="no-referrer-when-downgrade"
@@ -76,9 +75,7 @@ const LocationSection = ({ lang, dictionary }) => {
           <svg className={styles.icon}>
             <use href="/sprite.svg#icon-map_pin"></use>
           </svg>
-          {lang === i18n.locales[0]
-            ? addressData.textAddress
-            : addressData.textAddressRus}
+          {getLocalizedField(addressData, "textAddress", lang)}
         </a>
 
         <OpenModalBtn

@@ -1,4 +1,5 @@
 import { i18n } from "@/dictionaries/i18n.config";
+import { getCityEn } from "@/data/cityEn";
 
 // Міста, куди виїзд неможливий: сторінки закриті, 308 на /locations.
 export const EXCLUDED_CITIES = ["donetsk", "luhansk"];
@@ -36,6 +37,7 @@ export const isTierA = (slug) => TIER_A.includes(slug);
 
 // «у Києві» / «в Одесі» з наявного seoTitle («Детектор брехні у Києві з EyeDetect…»).
 export const getCityLocative = (data, lang) => {
+  if (lang === "en") return `in ${getCityEn(data.slug)}`;
   const isUk = lang === i18n.defaultLocale;
   const title = (isUk ? data.seoTitle : data.seoTitleRus) || "";
   const m = isUk

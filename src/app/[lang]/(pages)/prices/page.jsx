@@ -1,6 +1,7 @@
 import PricesSection from "@/sections/pricesSection/PricesSection";
 import { pricingGroups, CURRENCY } from "@/data/pricingData";
 import { getDictionary } from "@/helpers/getDictionary";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
 import { i18n } from "@/dictionaries/i18n.config";
 
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }) {
       languages: {
         uk: `${process.env.NEXT_PUBLIC_SEO_URL}prices`,
         ru: `${process.env.NEXT_PUBLIC_SEO_URL}ru/prices`,
+        en: `${process.env.NEXT_PUBLIC_SEO_URL}en/prices`,
       },
     },
     openGraph: {
@@ -92,7 +94,7 @@ const PricesPage = async ({ params }) => {
         .filter((item) => typeof item.price === "number")
         .map((item) => ({
           "@type": "Offer",
-          name: isUk ? item.name : item.nameRus,
+          name: getLocalizedField(item, "name", lang),
           price: item.price,
           priceCurrency: CURRENCY,
           availability: "https://schema.org/InStock",
@@ -103,26 +105,22 @@ const PricesPage = async ({ params }) => {
   const serviceJsonLd = {
     "@context": "http://schema.org",
     "@type": "Service",
-    name: isUk
-      ? "Перевірка на поліграфі EyeDetect"
-      : "Проверка на полиграфе EyeDetect",
-    serviceType: isUk ? "Послуги поліграфа" : "Услуги полиграфа",
+    name: { uk: "Перевірка на поліграфі EyeDetect", ru: "Проверка на полиграфе EyeDetect", en: "EyeDetect polygraph test" }[lang],
+    serviceType: { uk: "Послуги поліграфа", ru: "Услуги полиграфа", en: "Polygraph services" }[lang],
     provider: {
       "@type": "LocalBusiness",
-      name: isUk
-        ? "Детектор брехні Львів. Поліграф EyeDetect"
-        : "Детектор лжи Львов. Полиграф EyeDetect",
+      name: { uk: "Детектор брехні Львів. Поліграф EyeDetect", ru: "Детектор лжи Львов. Полиграф EyeDetect", en: "Lie Detector Lviv. EyeDetect Polygraph" }[lang],
       telephone: "+380686833368",
       address: {
         "@type": "PostalAddress",
-        streetAddress: isUk ? "вул. Городоцька, 45" : "ул. Городоцкая, 45",
-        addressLocality: isUk ? "Львів" : "Львов",
+        streetAddress: { uk: "вул. Городоцька, 45", ru: "ул. Городоцкая, 45", en: "45 Horodotska St." }[lang],
+        addressLocality: { uk: "Львів", ru: "Львов", en: "Lviv" }[lang],
         postalCode: "79000",
         addressCountry: "UA",
       },
       url: process.env.NEXT_PUBLIC_SEO_URL,
     },
-    areaServed: isUk ? "Україна" : "Украина",
+    areaServed: { uk: "Україна", ru: "Украина", en: "Ukraine" }[lang],
     offers,
   };
 

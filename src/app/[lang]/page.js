@@ -69,7 +69,9 @@ export async function generateMetadata({ params }) {
       canonical: `${seoMetaPageUrl}`,
       languages: {
         'uk': `${process.env.NEXT_PUBLIC_SEO_URL}`,
-        'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/`,      },
+        'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/`,
+        'en': `${process.env.NEXT_PUBLIC_SEO_URL}en/`,
+      },
     },
     openGraph: {
       title: titleOpenGraph,
@@ -134,7 +136,7 @@ export default async function Home({ params }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business`,
-    name: isUk ? "Детектор брехні EyeDetect у Львові" : "Детектор лжи EyeDetect во Львове",
+    name: { uk: "Детектор брехні EyeDetect у Львові", ru: "Детектор лжи EyeDetect во Львове", en: "EyeDetect Lie Detector in Lviv" }[lang] || "Детектор брехні EyeDetect у Львові",
     url: process.env.NEXT_PUBLIC_SEO_URL,
     telephone: "+380686833368",
     image: `${process.env.NEXT_PUBLIC_SEO_URL}images/seo_images/opengraph-image-1200-630.png`,

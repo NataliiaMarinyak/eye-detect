@@ -5,6 +5,7 @@ import Image from "next/image";
 import { specialistData } from "@/data/specialistData";
 // import { languagesData } from "@/data/languagesData";
 import { i18n } from "@/dictionaries/i18n.config";
+import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./SpecialistSection.module.scss";
 
 const SpecialistSection = ({ lang, dictionary }) => {
@@ -23,7 +24,7 @@ const SpecialistSection = ({ lang, dictionary }) => {
               <li key={i} className={styles.contentWrapp}>
                 <div className={styles.textWrapp}>
                   <h3 className={styles.subtitle}>
-                    {lang === i18n.locales[0] ? el.title : el.titleRus}
+                    {getLocalizedField(el, "title", lang)}
                   </h3>
                   <ul>
                     {el.details.map((det, i) => {
@@ -33,18 +34,12 @@ const SpecialistSection = ({ lang, dictionary }) => {
                             <svg>
                               <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                             </svg>
-                            {lang === i18n.locales[0]
-                              ? det.subTitle
-                              : det.subTitleRus}
+                            {getLocalizedField(det, "subTitle", lang)}
                           </h4>
                           <ul className={styles.detailsList}>
-                            {lang === i18n.locales[0]
-                              ? det.list.map((item, i) => {
-                                  return <li key={i}>{item}</li>;
-                                })
-                              : det.listRus.map((item, i) => {
-                                  return <li key={i}>{item}</li>;
-                                })}
+                            {(getLocalizedField(det, "list", lang) || []).map((item, i) => (
+                              <li key={i}>{item}</li>
+                            ))}
                           </ul>
                         </li>
                       );
@@ -58,11 +53,9 @@ const SpecialistSection = ({ lang, dictionary }) => {
                   >
                     <Image
                       src={el.img}
-                      // alt={lang === i18n.locales[0] ? el.title : el.titleRus}
+                      // alt={getLocalizedField(el, "title", lang)}
                       alt={
-                        lang === i18n.locales[0]
-                          ? "Russ Warner і Наталя Мариняк"
-                          : "Russ Warner и Наталья Мариняк"
+                        { uk: "Russ Warner і Наталя Мариняк", ru: "Russ Warner и Наталья Мариняк", en: "Russ Warner and Nataliia Marynyak" }[lang]
                       }
                       width={943}
                       height={638}
@@ -70,16 +63,14 @@ const SpecialistSection = ({ lang, dictionary }) => {
                       loading="eager"
                     />
                     <figcaption className={styles.imgCaption}>
-                      {lang === i18n.locales[0]
-                        ? el.imgCaption.Ua
-                        : el.imgCaption.Ru}
+                      {{ uk: el.imgCaption.Ua, ru: el.imgCaption.Ru, en: el.imgCaption.En }[lang] || el.imgCaption.Ua}
                     </figcaption>
                   </figure>
                 ) : (
                   <div className={styles.imgWrapp}>
                     <Image
                       src={el.img}
-                      alt={lang === i18n.locales[0] ? el.title : el.titleRus}
+                      alt={getLocalizedField(el, "title", lang)}
                       width={943}
                       height={638}
                       sizes="(max-width: 1023px) 100vw, (max-width: 1440px) 50vw, 375px"

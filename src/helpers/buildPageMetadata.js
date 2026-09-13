@@ -32,6 +32,7 @@ export const buildPageMetadata = ({ lang, path, title, description, keywords, og
       languages: {
         uk: `${base}${path}`,
         ru: `${base}ru/${path}`,
+        en: `${base}en/${path}`,
         "x-default": `${base}${path}`,
       },
     },
