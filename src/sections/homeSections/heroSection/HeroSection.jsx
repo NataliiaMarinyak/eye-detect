@@ -47,6 +47,12 @@ const HeroSection = ({ dictionary }) => {
           <p className={styles.onlineLine}>
             {hero.onlineText}{" "}
             <a href={`${prefix}/online`} className={styles.onlineLink}>{hero.onlineLink}</a>
+            {hero.freeLink && (
+              <>
+                {" "}{hero.freeText}{" "}
+                <a href={`${prefix}/free-test`} className={styles.onlineLink}>{hero.freeLink}</a>
+              </>
+            )}
           </p>
         </div>
 

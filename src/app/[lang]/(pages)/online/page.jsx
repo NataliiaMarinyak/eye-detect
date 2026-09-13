@@ -41,6 +41,8 @@ const OnlinePage = async ({ params }) => {
         sub={d.hero.sub}
         facts={d.hero.facts}
         primary={d.hero.primary}
+        secondaryHref={`${lang === "uk" ? "" : "/" + lang}/free-test`}
+        secondaryLabel={{ uk: "Спробувати безкоштовно", ru: "Попробовать бесплатно", en: "Try it for free" }[lang]}
         service="VerifEye онлайн"
         photo="/images/converus/verifeye-test.webp"
         photoAlt="VerifEye"

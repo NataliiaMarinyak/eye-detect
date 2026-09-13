@@ -34,6 +34,7 @@ export default async function sitemap() {
       { href: "prices", priority: 0.9 },
       { href: "eyedetect", priority: 0.9 },
       { href: "online", priority: 0.9 },
+      { href: "free-test", priority: 0.8 },
       { href: "business", priority: 0.9 },
       { href: "situations", priority: 0.8 },
       ...situations.map((s) => ({ href: `situations/${s.slug}`, priority: 0.8 })),
