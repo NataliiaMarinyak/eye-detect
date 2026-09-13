@@ -3,7 +3,7 @@
 // кроки 4–5 спільні, далі форма контакту і подяка. Завжди «Крок N з 5».
 // Ціну клієнту не показуємо: мета квіза отримати телефон, суму називає спеціаліст на дзвінку.
 // Орієнтовний розрахунок і джерело трафіку йдуть лише в заявку в Telegram (рішення замовника 13.09.2026).
-// Мови: поки лише uk.
+// Мови: uk, ru, en. У заявку в Telegram відповіді йдуть українською (за індексами).
 
 import { pricingGroups } from "@/data/pricingData";
 
@@ -108,6 +108,124 @@ export const quizData = {
       close: "Закрити",
     },
   },
+  ru: {
+    stepOf: "Шаг {n} из 5",
+    lastStep: "Последний шаг",
+    headline: "Узнайте стоимость проверки на детекторе лжи за 30 секунд",
+    gift: "Скидка 800 ₴ за заявку через сайт",
+    giftNote: "Скидку учтём при подтверждении записи.",
+    back: "Назад",
+    close: "Закрыть",
+    q1: {
+      k: "Что проверить",
+      q: "Что нужно проверить?",
+      o: [
+        { v: "theft", l: "Кража или пропали деньги", i: "💸" },
+        { v: "fidelity", l: "Измена в отношениях", i: "💔" },
+        { v: "hiring", l: "Кандидат или сотрудник", i: "👔" },
+        { v: "personal", l: "Личная ситуация: обвинение, спор, зависимость", i: "💬" },
+      ],
+    },
+    branches: {
+      theft: [
+        { k: "Где произошло", q: "Где это произошло?", o: ["На работе, в компании", "Дома, в семье", "В другом месте", "Пока не ясно"] },
+        { k: "Под подозрением", q: "Сколько людей под подозрением?", o: ["1 человек", "2–5 человек", "Больше 5 человек", "Пока не знаю"] },
+      ],
+      fidelity: [
+        { k: "Кого проверяем", q: "Кого нужно проверить?", o: ["Партнёра или партнёршу", "Себя, чтобы доказать невиновность", "Обоих", "Пока не знаю"] },
+        { k: "Что выяснить", q: "Что именно хотите выяснить?", o: ["Физическая измена", "Скрытая переписка или знакомства", "Скрытые деньги или траты", "Всё вместе"] },
+      ],
+      hiring: [
+        { k: "Сколько людей", q: "Сколько кандидатов или сотрудников?", o: ["1 человек", "2–5 человек", "6–15 человек", "Больше 15 человек"] },
+        { k: "Что важно", q: "Что для вас важнее всего?", o: ["Кражи на прошлой работе", "Зависимости, долги, судимости", "Связи с конкурентами", "Полная проверка"] },
+      ],
+      personal: [
+        { k: "Кого проверяем", q: "Кого нужно проверить?", o: ["Себя, чтобы доказать правду", "Члена семьи", "Другого человека", "Пока не знаю"] },
+        { k: "О чём речь", q: "О чём идёт речь?", o: ["Подозрение на ложь", "Зависимость: алкоголь, наркотики, азартные игры", "Деньги или долги", "Другая тема"] },
+      ],
+    },
+    common: [
+      { k: "Формат", q: "Какой формат удобнее?", o: ["Онлайн со смартфона (VerifEye)", "В кабинете во Львове (EyeDetect)", "Выезд к вам (EyeDetect)", "Не знаю, посоветуйте"] },
+      { k: "Срочность", q: "Насколько срочно?", o: ["Срочно: сегодня или завтра", "На этой неделе", "В течение месяца", "Планирую заранее"] },
+    ],
+    contact: {
+      title: "Куда отправить стоимость и свободные даты?",
+      name: "Имя *",
+      phone: "Телефон",
+      channelTitle: "Как удобнее связаться?",
+      channels: ["Звонок", "Telegram", "Viber", "WhatsApp"],
+      errName: "Укажите, как к вам обращаться.",
+      button: "Получить стоимость и даты",
+      sending: "Отправляем…",
+      fail: "Не удалось отправить. Позвоните нам: ",
+      privacy: "Политика конфиденциальности",
+    },
+    done: {
+      title: "Спасибо! Заявка получена",
+      text: "Специалист рассчитает точную стоимость и свяжется с вами в течение 15–30 минут в рабочее время. Срочно: ",
+      call: "Позвонить сейчас",
+      close: "Закрыть",
+    },
+  },
+  en: {
+    stepOf: "Step {n} of 5",
+    lastStep: "Last step",
+    headline: "Find out the cost of a lie detector test in 30 seconds",
+    gift: "UAH 800 off when you request through the site",
+    giftNote: "The discount is applied when we confirm your booking.",
+    back: "Back",
+    close: "Close",
+    q1: {
+      k: "What to check",
+      q: "What needs to be checked?",
+      o: [
+        { v: "theft", l: "Theft or missing money", i: "💸" },
+        { v: "fidelity", l: "Infidelity in a relationship", i: "💔" },
+        { v: "hiring", l: "Job candidate or employee", i: "👔" },
+        { v: "personal", l: "Personal matter: accusation, dispute, addiction", i: "💬" },
+      ],
+    },
+    branches: {
+      theft: [
+        { k: "Where", q: "Where did it happen?", o: ["At work, in a company", "At home, in the family", "Somewhere else", "Not clear yet"] },
+        { k: "Suspects", q: "How many people are suspected?", o: ["1 person", "2–5 people", "More than 5 people", "Not sure yet"] },
+      ],
+      fidelity: [
+        { k: "Who is tested", q: "Who needs to be tested?", o: ["My partner", "Myself, to prove my innocence", "Both of us", "Not sure yet"] },
+        { k: "What to find out", q: "What exactly do you want to find out?", o: ["Physical infidelity", "Hidden chats or contacts", "Hidden money or spending", "All of the above"] },
+      ],
+      hiring: [
+        { k: "How many", q: "How many candidates or employees?", o: ["1 person", "2–5 people", "6–15 people", "More than 15 people"] },
+        { k: "Priority", q: "What matters most to you?", o: ["Theft at a previous job", "Addictions, debts, criminal record", "Links to competitors", "Full screening"] },
+      ],
+      personal: [
+        { k: "Who is tested", q: "Who needs to be tested?", o: ["Myself, to prove the truth", "A family member", "Another person", "Not sure yet"] },
+        { k: "Topic", q: "What is it about?", o: ["Suspected lying", "Addiction: alcohol, drugs, gambling", "Money or debts", "Something else"] },
+      ],
+    },
+    common: [
+      { k: "Format", q: "Which format suits you?", o: ["Online from a smartphone (VerifEye)", "In our Lviv office (EyeDetect)", "On-site, we come to you (EyeDetect)", "Not sure, please advise"] },
+      { k: "Urgency", q: "How urgent is it?", o: ["Urgent: today or tomorrow", "This week", "Within a month", "Planning ahead"] },
+    ],
+    contact: {
+      title: "Where should we send the price and available dates?",
+      name: "Name *",
+      phone: "Phone",
+      channelTitle: "How would you like us to contact you?",
+      channels: ["Call", "Telegram", "Viber", "WhatsApp"],
+      errName: "Please tell us your name.",
+      button: "Get the price and dates",
+      sending: "Sending…",
+      fail: "Could not send. Please call us: ",
+      privacy: "Privacy policy",
+    },
+    done: {
+      title: "Thank you! Request received",
+      text: "The examiner will calculate the exact price and contact you within 15–30 minutes during business hours. Urgent: ",
+      call: "Call now",
+      close: "Close",
+    },
+  },
 };
 
 export const getQuiz = (lang) => quizData[lang] || quizData.uk;
@@ -117,35 +235,30 @@ export const quizSteps = (t, branch) => [t.q1, ...(branch ? t.branches[branch] :
 
 const fmt = (n) => `${n.toLocaleString("uk-UA").replace(/ /g, " ")} ₴`;
 
-// Орієнтовна сума для спеціаліста (клієнт не бачить). answers: масив текстів відповідей по кроках.
-export const estimateQuiz = (branch, answers, t) => {
+// Орієнтовна сума для спеціаліста (клієнт не бачить). idx: індекси обраних варіантів по кроках.
+// Кроки: 0 гілка, 1–2 питання гілки, 3 формат (0 онлайн, 1 кабінет, 2 виїзд, 3 не знаю), 4 терміновість.
+export const estimateQuiz = (branch, idx) => {
   const P = QUIZ_PRICES;
-  const a2 = answers[1] || "";
-  const a3 = answers[2] || "";
-  const format = answers[3] || "";
-  const online = format.startsWith("Онлайн");
-  const visit = format.startsWith("Виїзд");
-
+  const format = idx[3];
+  const online = format === 0;
   let people = 1;
   let group = false;
   if (branch === "theft" || branch === "hiring") {
-    const n = branch === "theft" ? a3 : a2;
-    if (/^2–5/.test(n)) { people = 3; group = true; }
-    else if (/6–15|Більше/.test(n)) { people = 6; group = true; }
+    const n = branch === "theft" ? idx[2] : idx[1];
+    if (n === 1) { people = 3; group = true; }
+    else if (n === 2 || (branch === "hiring" && n === 3)) { people = 6; group = true; }
   }
-  const couple = branch === "fidelity" && a2 === "Обох";
+  const couple = branch === "fidelity" && idx[1] === 2;
   if (couple) people = 2;
-  const threeQ = (branch === "fidelity" && a3 === "Усе разом") || (branch === "hiring" && a3 === "Повна перевірка");
-
+  const threeQ = (branch === "fidelity" || branch === "hiring") && idx[2] === 3;
   const per = online ? (threeQ ? P.onlineThree : P.onlineOne) : threeQ ? P.officeThree : P.officeOne;
-  let sum = couple && !online ? P.couple : per * people;
+  const sum = couple && !online ? P.couple : per * people;
   const parts = [];
-  if (group) parts.push(`від ${fmt(per)} за людину, група ${people === 3 ? "2–5" : "6+"}`);
-  else parts.push(fmt(sum));
-  if (!group) parts.push(`зі знижкою ${fmt(Math.max(0, sum - P.siteDiscount))}`);
-  if (visit) parts.push("виїзд: Львівська обл. безкоштовно, інші області 12 000 ₴ під ключ");
+  if (group) parts.push("від " + fmt(per) + " за людину, група " + (people === 3 ? "2–5" : "6+"));
+  else parts.push(fmt(sum), "зі знижкою " + fmt(Math.max(0, sum - P.siteDiscount)));
+  if (format === 2) parts.push("виїзд: Львівська обл. безкоштовно, інші області 12 000 ₴ під ключ");
   if (threeQ) parts.push("до 3 питань");
-  if (format.startsWith("Не знаю")) parts.push("формат не обрано");
+  if (format === 3) parts.push("формат не обрано");
   return parts.join("; ");
 };
 

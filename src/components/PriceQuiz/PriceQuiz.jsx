@@ -25,6 +25,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
   const [cur, setCur] = useState(0); // 0..4 питання, 5 форма, 6 подяка
   const [branch, setBranch] = useState(null);
   const [answers, setAnswers] = useState([]);
+  const [idx, setIdx] = useState([]);
   const [form, setForm] = useState({ name: "", phone: "", channel: 0 });
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle"); // idle | sending | fail
@@ -44,6 +45,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
     setCur(0);
     setBranch(null);
     setAnswers([]);
+    setIdx([]);
     setErrors({});
     setStatus("idle");
   };
@@ -88,9 +90,9 @@ const PriceQuiz = ({ lang = "uk" }) => {
     };
   }, [open, close]);
 
-  const choose = (value, label) => {
-    const next = [...answers.slice(0, cur), label];
-    setAnswers(next);
+  const choose = (value, label, i) => {
+    setAnswers([...answers.slice(0, cur), label]);
+    setIdx([...idx.slice(0, cur), i]);
     if (cur === 0) setBranch(value);
     track("quiz_step", { step: cur + 1, answer: label });
     setTimeout(() => setCur((c) => c + 1), 180);
@@ -106,13 +108,18 @@ const PriceQuiz = ({ lang = "uk" }) => {
     if (Object.keys(errs).length) return;
 
     setStatus("sending");
-    const lines = steps.map((s, i) => `${s.k}: ${answers[i] || "—"}`);
+    // Заявка завжди українською, щоб спеціаліст читав однаково з будь-якої мовної версії
+    const uk = getQuiz("uk");
+    const ukSteps = quizSteps(uk, branch);
+    const optLabel = (o) => (typeof o === "string" ? o : o?.l);
+    const lines = ukSteps.map((st, i) => `${st.k}: ${optLabel(st.o?.[idx[i]]) || "—"}`);
     let source = "";
     try { source = sessionStorage.getItem(SOURCE_KEY) || ""; } catch {}
     const comment = [
       ...lines,
-      `Зв'язок: ${t.contact.channels[form.channel]}`,
-      `Розрахунок: ${estimateQuiz(branch, answers, t)}`,
+      `Зв'язок: ${uk.contact.channels[form.channel]}`,
+      lang !== "uk" ? `Мова сайту: ${lang.toUpperCase()}` : null,
+      `Розрахунок: ${estimateQuiz(branch, idx)}`,
       source ? `Джерело: ${source}` : null,
       `Відкрито на: ${openedFrom.current}`,
     ].filter(Boolean).join("\n");
@@ -122,7 +129,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
     let ok = await sendToTelegram(lead);
     if (!ok) { await new Promise((r) => setTimeout(r, 1200)); ok = await sendToTelegram(lead); }
     if (ok) {
-      track("quiz_lead", { quiz_branch: branch, quiz_format: answers[3] || "" });
+      track("quiz_lead", { quiz_branch: branch, quiz_format: idx[3] ?? "" });
       setStatus("idle");
       setCur(6);
     } else {
@@ -132,9 +139,6 @@ const PriceQuiz = ({ lang = "uk" }) => {
 
   if (!open) return null;
 
-  const formatKey = (answers[3] || "").startsWith("Онлайн") ? "online" : (answers[3] || "").startsWith("У кабінеті") ? "office" : (answers[3] || "").startsWith("Виїзд") ? "visit" : "unsure";
-  const isGroup = /2–5|6–15|Більше/.test(`${answers[1] || ""} ${answers[2] || ""}`);
-  const get = t.contact.whyGet[formatKey] + (isGroup ? t.contact.whyGroup : "");
   const progress = cur >= 5 ? 100 : Math.round((cur / 5) * 100);
 
   return (
@@ -153,13 +157,13 @@ const PriceQuiz = ({ lang = "uk" }) => {
             {cur === 0 && <p className={styles.headline}>{t.headline}</p>}
             <h2 className={styles.q}>{steps[cur].q}</h2>
             <ul className={styles.options}>
-              {steps[cur].o.map((opt) => {
+              {steps[cur].o.map((opt, oi) => {
                 const label = typeof opt === "string" ? opt : opt.l;
                 const value = typeof opt === "string" ? opt : opt.v;
                 const selected = answers[cur] === label;
                 return (
                   <li key={label}>
-                    <button type="button" className={`${styles.option} ${selected ? styles.selected : ""}`} onClick={() => choose(value, label)}>
+                    <button type="button" className={`${styles.option} ${selected ? styles.selected : ""}`} onClick={() => choose(value, label, oi)}>
                       {typeof opt !== "string" && <span className={styles.icon} aria-hidden="true">{opt.i}</span>}
                       <span>{label}</span>
                     </button>
