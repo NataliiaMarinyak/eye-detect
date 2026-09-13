@@ -104,6 +104,20 @@ const EyedetectSections = ({ d, lang }) => (
       </div>
     </section>
 
+    {/* Асоціації та хибні результати */}
+    {d.focus && (
+      <section>
+        <div className={`container ${styles.container}`}>
+          <Reveal className={styles.science}>
+            <h2 className={styles.title}>{d.focus.title}</h2>
+            {d.focus.paragraphs.map((t, i) => (
+              <p key={i} className={styles.scienceText}>{t}</p>
+            ))}
+          </Reveal>
+        </div>
+      </section>
+    )}
+
     {/* Наука */}
     <section className={styles.white}>
       <div className={`container ${styles.container}`}>
