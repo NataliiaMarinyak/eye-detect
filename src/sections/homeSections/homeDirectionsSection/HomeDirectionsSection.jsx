@@ -64,9 +64,6 @@ const HomeDirectionsSection = ({ lang, dictionary }) => {
         </ul>
         {dictionary.homeDirectionsSection.conclusion && (
           <Reveal>
-            <p className={styles.conclusion}>
-              {dictionary.homeDirectionsSection.conclusion}
-            </p>
           </Reveal>
         )}
         <div className={styles.ctaWrap}>

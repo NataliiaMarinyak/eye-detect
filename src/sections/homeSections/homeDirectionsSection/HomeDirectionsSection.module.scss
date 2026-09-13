@@ -15,12 +15,12 @@
 }
 
 .title {
-  @include sectionTitle;
+  @include sectionTitleCentered;
   margin-bottom: 12px;
 }
 
 .intro {
-  @include sectionSubTitle;
+  @include sectionSubTitleCentered;
 }
 
 .directionsWrapper {
