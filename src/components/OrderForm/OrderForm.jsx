@@ -12,7 +12,7 @@ import { sendToTelegram } from "@/helpers/sendToTelegram";
 import styles from "./OrderForm.module.scss";
 
 // compact — лише ім'я і телефон (для спливаючого вікна, щоб кнопка була видна без прокрутки).
-const OrderForm = ({ dictionary, service = "", compact = false }) => {
+const OrderForm = ({ dictionary, service = "", compact = true }) => {
   // console.log("dictionary in orderForm", dictionary);
   // const { t } = useTranslation();
   // const [isLoading, setIsLoading] = useState(true);
