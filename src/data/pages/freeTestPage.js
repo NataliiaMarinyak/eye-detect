@@ -33,6 +33,10 @@ export const freeTestPage = {
         { title: "Це демонстрація, а не перевірка", text: "Тест на цифру показує принцип. Справжня перевірка будується на ваших питаннях і триває до 15 хвилин онлайн або 30–45 хвилин у кабінеті." },
       ] },
       { type: "list", title: "Що потрібно від вас", cols: 3, items: ["смартфон iPhone або Android з фронтальною камерою", "стабільний Wi-Fi", "тиха кімната без вікна чи телевізора за спиною", "рівне освітлення обличчя", "без окулярів, лінзи можна лишити", "кілька вільних хвилин"] },
+      { type: "text", title: "Можна пройти і у Львові, без смартфона", paragraphs: [
+        "Тест на цифру можна пройти безкоштовно офлайн: у кабінеті у Львові на станції EyeDetect, за попереднім записом. Фото для цього не потрібні.",
+        "Щоб записатись, залиште ім'я і телефон у формі нижче та напишіть, що хочете пройти тест у кабінеті, або зателефонуйте: +380 68 68 333 68.",
+      ] },
       { type: "image", title: "Як виглядає звіт числового тесту", src: "/images/report-sample-verifeye-number.webp", alt: "Звіт числового тесту VerifEye", caption: "Справжній звіт VerifEye: чотири фото під час тесту, якість даних і перше місце для цифри, яку визначив алгоритм. Персональні дані розмито.", width: 1100, height: 1557 },
       { type: "text", tone: "white", title: "Що далі, якщо технологія переконала", paragraphs: [
         "Справжній онлайн-тест VerifEye на ваші питання коштує від 2 500 ₴ і триває до 15 хвилин, звіт у PDF до 5 хвилин після тесту. Точність 84–89% за даними Converus. Підходить для перевірки на вірність, кандидатів на роботу і людей в інших містах.",
@@ -47,6 +51,7 @@ export const freeTestPage = {
     },
     faq: [
       { q: "Це справді безкоштовно?", a: "Так. Тест на цифру ми даємо безкоштовно, щоб ви побачили технологію на собі. Платити не потрібно ні до, ні після." },
+      { q: "Чи можна пройти тест на цифру не зі смартфона?", a: "Так. У кабінеті у Львові тест на цифру можна пройти безкоштовно на станції EyeDetect за попереднім записом. Фото при цьому не робляться." },
       { q: "Чи дізнаєтесь ви щось особисте про мене?", a: "Ні. Тест лише про цифру, яку ви загадали. Ніяких особистих питань. Застосунок робить фото для звіту, на сервер Converus йдуть реакції очей і ваші відповіді. Звіт бачите лише ви і спеціаліст." },
       { q: "Що, як алгоритм не вгадає?", a: "Таке трапляється, найчастіше через порушені умови: погане світло, окуляри, шум, розмову під час тесту. Тоді можна пройти ще раз." },
       { q: "Чи можна дати тест другові чи партнеру?", a: "Так. Залиште свій телефон, а посилання перешлете кому хочете. Проходити тест має та людина, яка загадала цифру." },
@@ -81,6 +86,10 @@ export const freeTestPage = {
         { title: "Это демонстрация, а не проверка", text: "Тест на цифру показывает принцип. Настоящая проверка строится на ваших вопросах и длится до 15 минут онлайн или 30–45 минут в кабинете." },
       ] },
       { type: "list", title: "Что нужно от вас", cols: 3, items: ["смартфон iPhone или Android с фронтальной камерой", "стабильный Wi-Fi", "тихая комната без окна или телевизора за спиной", "ровное освещение лица", "без очков, линзы можно оставить", "несколько свободных минут"] },
+      { type: "text", title: "Можно пройти и во Львове, без смартфона", paragraphs: [
+        "Тест на цифру можно пройти бесплатно офлайн: в кабинете во Львове на станции EyeDetect, по предварительной записи. Фото для этого не нужны.",
+        "Чтобы записаться, оставьте имя и телефон в форме ниже и напишите, что хотите пройти тест в кабинете, или позвоните: +380 68 68 333 68.",
+      ] },
       { type: "image", title: "Как выглядит отчёт числового теста", src: "/images/report-sample-verifeye-number.webp", alt: "Отчёт числового теста VerifEye", caption: "Настоящий отчёт VerifEye: четыре фото во время теста, качество данных и первое место для цифры, которую определил алгоритм. Персональные данные размыты.", width: 1100, height: 1557 },
       { type: "text", tone: "white", title: "Что дальше, если технология убедила", paragraphs: [
         "Настоящий онлайн-тест VerifEye на ваши вопросы стоит от 2 500 ₴ и длится до 15 минут, отчёт в PDF до 5 минут после теста. Точность 84–89% по данным Converus. Подходит для проверки на верность, кандидатов на работу и людей в других городах.",
@@ -95,6 +104,7 @@ export const freeTestPage = {
     },
     faq: [
       { q: "Это действительно бесплатно?", a: "Да. Тест на цифру мы даём бесплатно, чтобы вы увидели технологию на себе. Платить не нужно ни до, ни после." },
+      { q: "Можно ли пройти тест на цифру не со смартфона?", a: "Да. В кабинете во Львове тест на цифру можно пройти бесплатно на станции EyeDetect по предварительной записи. Фото при этом не делаются." },
       { q: "Узнаете ли вы что-то личное обо мне?", a: "Нет. Тест только о цифре, которую вы загадали. Никаких личных вопросов. Приложение делает фото для отчёта, на сервер Converus идут реакции глаз и ваши ответы. Отчёт видите только вы и специалист." },
       { q: "Что, если алгоритм не угадает?", a: "Такое случается, чаще всего из-за нарушенных условий: плохой свет, очки, шум, разговор во время теста. Тогда можно пройти ещё раз." },
       { q: "Можно ли дать тест другу или партнёру?", a: "Да. Оставьте свой телефон, а ссылку перешлёте кому хотите. Проходить тест должен тот человек, который загадал цифру." },
@@ -129,6 +139,10 @@ export const freeTestPage = {
         { title: "A demonstration, not an examination", text: "The number test shows the principle. A real test is built on your questions and takes up to 15 minutes online or 30–45 minutes in the office." },
       ] },
       { type: "list", title: "What you need", cols: 3, items: ["an iPhone or Android smartphone with a front camera", "stable Wi-Fi", "a quiet room with no window or TV behind you", "even lighting on the face", "no glasses, contact lenses are fine", "a few free minutes"] },
+      { type: "text", title: "You can also try it in Lviv, without a smartphone", paragraphs: [
+        "The number test can also be taken for free offline: at the EyeDetect station in our Lviv office, by appointment. No photos are needed for it.",
+        "To book, leave your name and phone in the form below and mention that you want to take the test in the office, or call +380 68 68 333 68.",
+      ] },
       { type: "image", title: "What the number test report looks like", src: "/images/report-sample-verifeye-number.webp", alt: "VerifEye number test report", caption: "A real VerifEye report: four photos taken during the test, data quality, and first place for the digit the algorithm identified. Personal data blurred.", width: 1100, height: 1557 },
       { type: "text", tone: "white", title: "What comes next if the technology convinced you", paragraphs: [
         "A real VerifEye online test on your questions costs from UAH 2,500 and takes up to 15 minutes, with a PDF report within 5 minutes after the test. Accuracy 84–89% according to Converus. Suitable for fidelity checks, job candidates and people in other cities.",
@@ -143,6 +157,7 @@ export const freeTestPage = {
     },
     faq: [
       { q: "Is it really free?", a: "Yes. We give the number test for free so you can see the technology on yourself. No payment before or after." },
+      { q: "Can I take the number test without a smartphone?", a: "Yes. In our Lviv office the number test can be taken for free on the EyeDetect station by appointment. No photos are taken." },
       { q: "Will you learn anything personal about me?", a: "No. The test is only about the digit you chose. No personal questions. The app takes a photo for the report; eye reactions and your answers go to the Converus server. Only you and the examiner see the report." },
       { q: "What if the algorithm gets it wrong?", a: "It happens, most often because the conditions were broken: poor light, glasses, noise, talking during the test. Then you can take it again." },
       { q: "Can I give the test to a friend or partner?", a: "Yes. Leave your phone number and forward the link to anyone you like. The person who chose the digit must be the one taking the test." },
