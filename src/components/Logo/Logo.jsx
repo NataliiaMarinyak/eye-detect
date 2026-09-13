@@ -5,18 +5,23 @@ import { usePathname } from "next/navigation";
 import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./Logo.module.scss";
 
+// Логотип веде на головну. Якщо ми вже на головній, плавно прокручує вгору
+// без додавання #hero в адресу.
 const Logo = ({ className, lang }) => {
   const pathName = usePathname();
 
   const isDefaultLang = lang === i18n.defaultLocale;
-  const path = isDefaultLang ? "" : `${lang}`;
+  const home = isDefaultLang ? "/" : `/${lang}`;
+  const onHome = pathName === home || pathName === `/${lang}` || (isDefaultLang && pathName === "/uk");
+
+  const onClick = (e) => {
+    if (!onHome) return;
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
-    <Link
-      // href={pathName === "/" ? "#hero" : "/"}
-      href={pathName === `/${path}` ? `${path}#hero` : `/${path}`}
-      className={`${styles.logowrapp} ${className}`}
-    >
+    <Link href={home} onClick={onClick} className={`${styles.logowrapp} ${className}`}>
       <Image
         src="/images/Logo.png"
         width={175}
