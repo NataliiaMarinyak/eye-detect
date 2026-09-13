@@ -55,7 +55,7 @@ export function middleware(request) {
     pathname.startsWith("/favicon.ico") ||
     pathname.startsWith("/robots") ||
     pathname.startsWith("/sitemap") ||
-    pathname.match(/\.(png|jpg|jpeg|svg|gif|webp|ico|avif)$/)
+    pathname.match(/\.(png|jpg|jpeg|svg|gif|webp|ico|avif|txt|xml|json|webmanifest)$/)
   ) {
     return NextResponse.next();
   }
