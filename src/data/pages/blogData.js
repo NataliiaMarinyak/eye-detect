@@ -126,7 +126,7 @@ const blogPosts1 = [
       title: "Як підготуватися до тесту на детекторі брехні",
       description: "Що робити напередодні тесту EyeDetect або VerifEye: сон, їжа, ліки, окуляри, одяг. Що взяти з собою і чого не робити. Коротка пам'ятка від спеціаліста.",
       h1: "Як підготуватися до тесту на детекторі брехні",
-      lead: "Підготовка потрібна не для того, щоб «пройти», а щоб тест був дійсним з першого разу. Половина невизначених результатів це недосипання і поспіх.",
+      lead: "Підготовка потрібна не для того, щоб «пройти», а щоб тест був дійсним з першого разу. Більшість невизначених результатів це недосипання і поспіх.",
       sections: [
         { h2: "Напередодні", paragraphs: ["Три речі, які справді важливі."], list: ["Спати щонайменше 7 годин. Втома уповільнює читання і збиває алгоритм.", "Не вживати алкоголь за 24 години, наркотичні речовини за 72 години. Інакше тест не проводиться.", "Не міняти звичні ліки без потреби. Якщо приймаєте щось щодня, скажіть про це до тесту."] },
         { h2: "У день тесту", paragraphs: ["Поїсти за 1–2 години, щоб не було ні голоду, ні важкості. Кава в звичній кількості не заважає. Взяти окуляри або лінзи, якщо носите: тест проходить із ними. Прийти на 10 хвилин раніше, щоб не хвилюватися через запізнення."] },
@@ -143,7 +143,7 @@ const blogPosts1 = [
       title: "Как подготовиться к тесту на детекторе лжи",
       description: "Что делать накануне теста EyeDetect или VerifEye: сон, еда, лекарства, очки, одежда. Что взять с собой и чего не делать. Короткая памятка от специалиста.",
       h1: "Как подготовиться к тесту на детекторе лжи",
-      lead: "Подготовка нужна не для того, чтобы «пройти», а чтобы тест был действительным с первого раза. Половина неопределённых результатов это недосып и спешка.",
+      lead: "Подготовка нужна не для того, чтобы «пройти», а чтобы тест был действительным с первого раза. Большинство неопределённых результатов это недосып и спешка.",
       sections: [
         { h2: "Накануне", paragraphs: ["Три вещи, которые действительно важны."], list: ["Спать не менее 7 часов. Усталость замедляет чтение и сбивает алгоритм.", "Не употреблять алкоголь за 24 часа, наркотические вещества за 72 часа. Иначе тест не проводится.", "Не менять привычные лекарства без необходимости. Если принимаете что-то ежедневно, скажите об этом до теста."] },
         { h2: "В день теста", paragraphs: ["Поесть за 1–2 часа, чтобы не было ни голода, ни тяжести. Кофе в привычном количестве не мешает. Взять очки или линзы, если носите: тест проходит с ними. Прийти на 10 минут раньше, чтобы не волноваться из-за опоздания."] },
@@ -160,7 +160,7 @@ const blogPosts1 = [
       title: "How to Prepare for a Lie Detector Test",
       description: "What to do the day before an EyeDetect or VerifEye test: sleep, food, medication, glasses, clothing. What to bring and what not to do. A short checklist from the examiner.",
       h1: "How to Prepare for a Lie Detector Test",
-      lead: "Preparation is not about “passing”. It is about making the test valid on the first attempt. Half of all inconclusive results come down to lack of sleep and rushing.",
+      lead: "Preparation is not about “passing”. It is about making the test valid on the first attempt. Most inconclusive results come down to lack of sleep and rushing.",
       sections: [
         { h2: "The day before", paragraphs: ["Three things that really matter."], list: ["Sleep at least 7 hours. Fatigue slows reading and throws off the algorithm.", "No alcohol for 24 hours, no drugs for 72 hours. Otherwise the test is not conducted.", "Do not change your regular medication unless necessary. If you take something daily, mention it before the test."] },
         { h2: "On the day of the test", paragraphs: ["Eat 1–2 hours before, so you are neither hungry nor overly full. Your usual amount of coffee is fine. Bring your glasses or contact lenses if you wear them: the test is taken with them on. Arrive 10 minutes early so you are not stressed about being late."] },
@@ -186,7 +186,7 @@ const blogPosts1 = [
       sections: [
         { h2: "Що каже закон", paragraphs: ["В Україні немає закону, який визнає результати психофізіологічних досліджень доказом. Суд може прийняти висновок як один із документів, але не зобов'язаний і зазвичай не бере його за основу рішення. Те саме стосується більшості країн ЄС. У США практика різниться між штатами, але й там результат рідко приймається без згоди обох сторін."] },
         { h2: "Де результат працює насправді", paragraphs: ["Три ситуації, в яких тест впливає на результат без суду."], list: ["Мирова угода. Коли одна сторона підтверджує свою версію тестом, а інша відмовляється проходити, переговори швидко закінчуються.", "Внутрішні розслідування в компанії. Роботодавець ухвалює кадрове рішення на підставі звіту і власного розслідування, суд тут не потрібен.", "Сімейні рішення. Питання вірності чи прихованих фінансів вирішуються між людьми, а не в суді, і тест дає їм основу для розмови."] },
-        { h2: "Чому ми кажемо це чесно", paragraphs: ["Дехто обіцяє «висновок для суду». Ми ні, бо це неправда. Тест дає оцінку від 1 до 99 по кожному питанню і показує, яка версія подій витримує перевірку. Що з цим робити далі, вирішуєте ви, іноді з адвокатом."] },
+        { h2: "Чому ми кажемо це чесно", paragraphs: ["Дехто обіцяє «висновок для суду». Ми ні, бо це неправда. Замість «висновку для суду» ми готуємо до PDF-звіту супровідний лист спеціаліста: що перевіряли, як, і що означає результат. Тест дає оцінку від 1 до 99 по кожному питанню і показує, яка версія подій витримує перевірку. Що з цим робити далі, вирішуєте ви, іноді з адвокатом."] },
         { h2: "Що можна отримати", paragraphs: ["Письмовий звіт з оцінками, датою, назвою тесту і підписом спеціаліста. Його можна долучити до матеріалів як документ. Він не змусить суд, але покаже вашу позицію і готовність до перевірки."] },
       ],
       faq: [
@@ -202,7 +202,7 @@ const blogPosts1 = [
       sections: [
         { h2: "Что говорит закон", paragraphs: ["В Украине нет закона, который признаёт результаты психофизиологических исследований доказательством. Суд может принять заключение как один из документов, но не обязан и обычно не берёт его за основу решения. То же касается большинства стран ЕС. В США практика различается между штатами, но и там результат редко принимается без согласия обеих сторон."] },
         { h2: "Где результат работает на самом деле", paragraphs: ["Три ситуации, в которых тест влияет на результат без суда."], list: ["Мировое соглашение. Когда одна сторона подтверждает свою версию тестом, а другая отказывается проходить, переговоры быстро заканчиваются.", "Внутренние расследования в компании. Работодатель принимает кадровое решение на основании отчёта и собственного расследования, суд здесь не нужен.", "Семейные решения. Вопросы верности или скрытых финансов решаются между людьми, а не в суде, и тест даёт им основу для разговора."] },
-        { h2: "Почему мы говорим это честно", paragraphs: ["Некоторые обещают «заключение для суда». Мы нет, потому что это неправда. Тест даёт оценку от 1 до 99 по каждому вопросу и показывает, какая версия событий выдерживает проверку. Что с этим делать дальше, решаете вы, иногда с адвокатом."] },
+        { h2: "Почему мы говорим это честно", paragraphs: ["Некоторые обещают «заключение для суда». Мы нет, потому что это неправда. Вместо «заключения для суда» мы готовим к PDF-отчёту сопроводительное письмо специалиста: что проверяли, как и что означает результат. Тест даёт оценку от 1 до 99 по каждому вопросу и показывает, какая версия событий выдерживает проверку. Что с этим делать дальше, решаете вы, иногда с адвокатом."] },
         { h2: "Что можно получить", paragraphs: ["Письменный отчёт с оценками, датой, названием теста и подписью специалиста. Его можно приобщить к материалам как документ. Он не заставит суд, но покажет вашу позицию и готовность к проверке."] },
       ],
       faq: [
@@ -218,7 +218,7 @@ const blogPosts1 = [
       sections: [
         { h2: "What the law says", paragraphs: ["Ukraine has no law that recognizes the results of psychophysiological examinations as evidence. A court may accept the report as one of the documents in the file, but it is not obliged to and usually does not base its decision on it. The same applies to most EU countries. In the US, practice varies by state, but even there a result is rarely admitted without the consent of both parties."] },
         { h2: "Where the result actually works", paragraphs: ["Three situations where the test affects the outcome without a court."], list: ["Settlement agreements. When one party confirms its version with a test and the other refuses to take one, negotiations end quickly.", "Internal investigations in a company. The employer makes a personnel decision based on the report and its own investigation; no court is needed.", "Family decisions. Questions of fidelity or hidden finances are settled between people, not in court, and the test gives them a basis for the conversation."] },
-        { h2: "Why we say this openly", paragraphs: ["Some promise a “report for court”. We do not, because that is not true. The test gives a score from 1 to 99 on each question and shows which version of events holds up under scrutiny. What to do with that next is up to you, sometimes together with a lawyer."] },
+        { h2: "Why we say this openly", paragraphs: ["Some promise a “report for court”. We do not, because that is not true. Instead of a “court opinion” we prepare a cover letter from the examiner to accompany the PDF report: what was tested, how, and what the result means. The test gives a score from 1 to 99 on each question and shows which version of events holds up under scrutiny. What to do with that next is up to you, sometimes together with a lawyer."] },
         { h2: "What you can get", paragraphs: ["A written report with scores, the date, the name of the test and the examiner's signature. It can be added to the case file as a document. It will not bind the court, but it will show your position and your willingness to be tested."] },
       ],
       faq: [

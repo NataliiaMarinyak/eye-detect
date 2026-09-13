@@ -26,7 +26,7 @@ export const secondOpinion = {
     ],
     faq: [
       { q: "Роботодавець зробив висновок за чужим поліграфом. Чи допоможе повторний тест?", a: "Тест дає незалежний результат по тих самих питаннях. Чи візьме його до уваги роботодавець, вирішує він сам: юридично результат не скасовує попередній звіт. На практиці збіг або розбіжність двох методів є аргументом для розмови." },
-      { q: "Чи можна пройти повторну перевірку онлайн?", a: "Так, VerifEye з телефона за 15 хвилин, звіт на пошту за 20 хвилин, від 2 500 ₴. Якщо йдеться про роботу або спір, радимо EyeDetect у кабінеті у Львові або з виїздом: 30–45 хвилин, від 5 500 ₴, точність 86–90%." },
+      { q: "Чи можна пройти повторну перевірку онлайн?", a: "Так, VerifEye з телефона до 15 хвилин, звіт у PDF на пошту до 5 хвилин після тесту, від 2 500 ₴. Якщо йдеться про роботу або спір, радимо EyeDetect у кабінеті у Львові або з виїздом: 30–45 хвилин, від 5 500 ₴, точність 86–90%." },
       { q: "Що, як і цей результат «невизначений»?", a: "Так буває не більше ніж у 10 випадках зі 100, найчастіше через втому або хвилювання. Повторний тест зі знижкою 50%. Невизначений результат не означає «бреше»." },
       { q: "Хто побачить звіт і чи потрібна згода?", a: "Тест проходить лише добровільно, з письмовою згодою людини, яка його проходить. Звіт отримує ця людина або замовник, якого вона вказала у згоді. Тест можна пройти анонімно: під номером, без імені та фото. Ми не обговорюємо перевірки і не передаємо звіт третім особам." },
     ],
@@ -55,7 +55,7 @@ export const secondOpinion = {
     ],
     faq: [
       { q: "Работодатель сделал вывод по чужому полиграфу. Поможет ли повторный тест?", a: "Тест даёт независимый результат по тем же вопросам. Примет ли его во внимание работодатель, решает он сам: юридически результат не отменяет предыдущий отчёт. На практике совпадение или расхождение двух методов является аргументом для разговора." },
-      { q: "Можно ли пройти повторную проверку онлайн?", a: "Да, VerifEye с телефона за 15 минут, отчёт на почту за 20 минут, от 2 500 ₴. Если речь о работе или споре, советуем EyeDetect в кабинете во Львове или с выездом: 30–45 минут, от 5 500 ₴, точность 86–90%." },
+      { q: "Можно ли пройти повторную проверку онлайн?", a: "Да, VerifEye с телефона до 15 минут, отчёт в PDF на почту до 5 минут после теста, от 2 500 ₴. Если речь о работе или споре, советуем EyeDetect в кабинете во Львове или с выездом: 30–45 минут, от 5 500 ₴, точность 86–90%." },
       { q: "Что, если и этот результат «неопределённый»?", a: "Так бывает не больше чем в 10 случаях из 100, чаще всего из-за усталости или волнения. Повторный тест со скидкой 50%. Неопределённый результат не означает «врёт»." },
       { q: "Кто увидит отчёт и нужно ли согласие?", a: "Тест проходит только добровольно, с письменным согласием человека, который его проходит. Отчёт получает этот человек или заказчик, которого он указал в согласии. Тест можно пройти анонимно: под номером, без имени и фото. Мы не обсуждаем проверки и не передаём отчёт третьим лицам." },
     ],
@@ -84,7 +84,7 @@ export const secondOpinion = {
     ],
     faq: [
       { q: "My employer based a decision on someone else's polygraph. Will a retest help?", a: "The test gives an independent result on the same questions. Whether the employer takes it into account is up to them: legally, the result does not overturn the previous report. In practice, agreement or disagreement between two methods is an argument for a conversation." },
-      { q: "Can the retest be taken online?", a: "Yes, VerifEye from a phone in 15 minutes, report by email within 20 minutes, from UAH 2,500. If it concerns your job or a dispute, we recommend EyeDetect in our Lviv office or on-site (we come to you): 30–45 minutes, from UAH 5,500, accuracy 86–90%." },
+      { q: "Can the retest be taken online?", a: "Yes, VerifEye from a phone in up to 15 minutes, PDF report by email within 5 minutes after the test, from UAH 2,500. If it concerns your job or a dispute, we recommend EyeDetect in our Lviv office or on-site (we come to you): 30–45 minutes, from UAH 5,500, accuracy 86–90%." },
       { q: "What if this result is also “inconclusive”?", a: "This happens in no more than 10 cases out of 100, most often because of fatigue or nervousness. A repeat test is 50% off. An inconclusive result does not mean “lying”." },
       { q: "Who sees the report, and is consent required?", a: "The test is taken voluntarily only, with the written consent of the person taking it. The report goes to that person or to the client they named in the consent form. The test can be taken anonymously: under a number, with no name or photo. We do not discuss tests and do not pass the report to third parties." },
     ],

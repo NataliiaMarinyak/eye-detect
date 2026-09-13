@@ -20,7 +20,7 @@ export const logistics = {
       how.uk,
       { type: "table", title: "Який формат обрати", columns: ["", "EyeDetect з виїздом", "VerifEye онлайн"], rows: [
         ["Де проходить", "на вашому складі чи базі", "на телефоні водія, у будь-якому місті"],
-        ["Час на людину", "30–45 хвилин", "близько 10 хвилин"],
+        ["Час на людину", "30–45 хвилин", "до 15 хвилин"],
         ["Осіб за день", "6–8", "без обмеження, кожен у свій час"],
         ["Точність", "86–90%", "84–89%"],
         ["Кому підходить", "склад, автопарк, службове розслідування", "водії в рейсі, філії в інших містах, кандидати з регіонів"],
@@ -28,7 +28,7 @@ export const logistics = {
       ] },
       { type: "text", title: "Що варто знати керівнику логістики", paragraphs: [
         "Перевірка проходить лише за письмовою згодою працівника, він може відмовитись. Питання стосуються тільки роботи: товар, пальне, накладні, маршрути, гроші. Ми не питаємо про здоров'я, політику, релігію чи приватне життя. Результат в Україні не є доказом у суді, це підстава для внутрішнього рішення чи службового розслідування.",
-        "Для складу або автопарку зручніший виїзд: привозимо обладнання, потрібна тиха кімната зі столом і розеткою. Виїзд по Львівській області входить у вартість, по Західній Україні +2 000 ₴, в інші регіони від 12 000 ₴ разом із тестом. Для водіїв у рейсі і філій в інших містах є VerifEye: тест зі смартфона за 10 хвилин.",
+        "Для складу або автопарку зручніший виїзд: привозимо обладнання, потрібна тиха кімната зі столом і розеткою. Виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом. Для водіїв у рейсі і філій в інших містах є VerifEye: тест зі смартфона до 15 хвилин.",
         "Тест проводить Наталя Мариняк, психолог, сертифікований Converus Test Proctor. Кабінет у Львові, вул. Городоцька, 45. Ціни для бізнесу залежать від кількості осіб, тем і міста, розрахунок надсилаємо того ж дня.",
       ] },
       cta.uk("EyeDetect для логістичної компанії"),
@@ -50,7 +50,7 @@ export const logistics = {
       how.ru,
       { type: "table", title: "Какой формат выбрать", columns: ["", "EyeDetect с выездом", "VerifEye онлайн"], rows: [
         ["Где проходит", "на вашем складе или базе", "на телефоне водителя, в любом городе"],
-        ["Время на человека", "30–45 минут", "около 10 минут"],
+        ["Время на человека", "30–45 минут", "до 15 минут"],
         ["Человек в день", "6–8", "без ограничения, каждый в своё время"],
         ["Точность", "86–90%", "84–89%"],
         ["Кому подходит", "склад, автопарк, служебное расследование", "водители в рейсе, филиалы в других городах, кандидаты из регионов"],
@@ -58,7 +58,7 @@ export const logistics = {
       ] },
       { type: "text", title: "Что стоит знать руководителю логистики", paragraphs: [
         "Проверка проходит только с письменного согласия сотрудника, он может отказаться. Вопросы касаются только работы: товар, топливо, накладные, маршруты, деньги. Мы не спрашиваем о здоровье, политике, религии или частной жизни. Результат в Украине не является доказательством в суде, это основание для внутреннего решения или служебного расследования.",
-        "Для склада или автопарка удобнее выезд: привозим оборудование, нужна тихая комната со столом и розеткой. Выезд по Львовской области входит в стоимость, по Западной Украине +2 000 ₴, в другие регионы от 12 000 ₴ вместе с тестом. Для водителей в рейсе и филиалов в других городах есть VerifEye: тест со смартфона за 10 минут.",
+        "Для склада или автопарка удобнее выезд: привозим оборудование, нужна тихая комната со столом и розеткой. Выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом. Для водителей в рейсе и филиалов в других городах есть VerifEye: тест со смартфона до 15 минут.",
         "Тест проводит Наталия Мариняк, психолог, сертифицированный Converus Test Proctor. Кабинет во Львове, ул. Городоцкая, 45. Цены для бизнеса зависят от количества человек, тем и города, расчёт отправляем в тот же день.",
       ] },
       cta.ru("EyeDetect для логистической компании"),
@@ -80,7 +80,7 @@ export const logistics = {
       how.en,
       { type: "table", title: "Which format to choose", columns: ["", "EyeDetect on-site", "VerifEye online"], rows: [
         ["Where", "at your warehouse or depot", "on the driver's phone, in any city"],
-        ["Time per person", "30–45 minutes", "about 10 minutes"],
+        ["Time per person", "30–45 minutes", "up to 15 minutes"],
         ["People per day", "6–8", "no limit, each at their own time"],
         ["Accuracy", "86–90%", "84–89%"],
         ["Best for", "warehouse, fleet, internal investigation", "drivers on the road, branches in other cities, candidates from other regions"],
@@ -88,7 +88,7 @@ export const logistics = {
       ] },
       { type: "text", title: "What a logistics manager should know", paragraphs: [
         "Testing is done only with the employee's written consent, and they may refuse. Questions concern work only: goods, fuel, delivery notes, routes, money. We do not ask about health, politics, religion, or private life. In Ukraine the result is not admissible evidence in court; it is grounds for an internal decision or an internal investigation.",
-        "For a warehouse or fleet, on-site testing is more convenient: we bring the equipment and need a quiet room with a table and a power outlet. Travel within Lviv and up to 50 km around it is included, Western Ukraine is +UAH 2,000, other regions from UAH 12,000 including the test. For drivers on the road and branches in other cities there is VerifEye: a 10-minute test from a smartphone.",
+        "For a warehouse or fleet, on-site testing is more convenient: we bring the equipment and need a quiet room with a table and a power outlet. Travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included. For drivers on the road and branches in other cities there is VerifEye: a test from a smartphone, up to 15 minutes.",
         "The test is conducted by Nataliia Marynyak, psychologist, certified Converus Test Proctor. Office in Lviv, 45 Horodotska St. Business pricing depends on the number of people, topics, and city; we send a quote the same day.",
       ] },
       cta.en("EyeDetect for a logistics company"),

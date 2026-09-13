@@ -7,9 +7,9 @@ Office: 45 Horodotska St., Lviv, Ukraine. Phone: +380 68 68 333 68. Email: info@
 
 ## Key facts
 - EyeDetect (Converus, USA): 30–45 minute test, no sensors on the body, the algorithm scores the test (Credibility Score 1–99), accuracy 86–90% per Converus validation studies.
-- VerifEye (Converus): online test from a smartphone, about 10 minutes, accuracy 84–89%, PDF report after the test.
-- Prices (Lviv, 2026): EyeDetect single issue UAH 5,500; up to three issues UAH 8,500; VerifEye online UAH 2,500 / 4,000; business screening on request; on-site travel within Lviv region included.
-- Results are not court evidence in Ukraine; used for internal investigations, HR screening, fidelity checks and settlements.
+- VerifEye (Converus): online test from a smartphone, up to 15 minutes, accuracy 84–89%, PDF report within 5 minutes after the test.
+- Prices (Lviv, 2026): EyeDetect single issue UAH 5,500; up to three issues UAH 8,500; VerifEye online UAH 2,500 / 4,000; business screening on request; on-site travel within the Lviv region free, other regions of Ukraine UAH 12,000 all-inclusive.
+- Results are not court evidence in Ukraine (we do not issue a “court opinion”, but provide an examiner's cover letter with the report); used for internal investigations, HR screening, fidelity checks and settlements.
 
 ## Main pages
 - [Home (UK)](https://www.eye-polygraph.com/): lie detector in Lviv

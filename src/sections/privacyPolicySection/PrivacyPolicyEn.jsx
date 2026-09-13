@@ -8,246 +8,238 @@ const PrivacyPolicyEn = () => {
     <div className={`container ${styles.container}`}>
       <h1>Privacy Policy</h1>
 
-      <p>
-        All information provided by Users of the website{" "}
-        <span>{addressData.siteLink}</span> is processed in accordance with
-        this Personal Data Privacy Policy (hereinafter referred to as the
-        Policy).
-      </p>
-
-      <h2>1. Terms</h2>
-
-      <p>1.1 The following terms are used in this Policy:</p>
-      <p>
-        1.1.1. &rdquo;Site Administrator&rdquo; (hereinafter referred to as the
-        &rdquo;Administrator&rdquo;) – the authorized person or persons involved
-        in managing the website who process personal data and determine the
-        purposes of processing personal data, its composition, and the
-        operations performed with personal data.
-      </p>
+      <p>Updated 13 September 2026.</p>
 
       <p>
-        1.1.2. &rdquo;Personal data&rdquo; – information or a set of information
-        about an individual who is identified or can be specifically
-        identified.
-      </p>
-      <p>
-        1.1.3. &rdquo;Processing of personal data&rdquo; – any actions performed
-        with personal data, with or without the use of automated means
-        (including collection, recording, organization, accumulation, storage,
-        clarification (updating, modification), retrieval, use, transfer
-        (distribution, provision, access), anonymization, blocking, deletion,
-        and destruction of personal data).
-      </p>
-      <p>
-        1.1.4. &rdquo;Confidentiality of personal data&rdquo; – the mandatory
-        compliance by the Operator or any other person who has obtained access
-        to personal data with the requirement not to disclose such data without
-        the User&#39;s consent or another legal basis.
-      </p>
-      <p>
-        1.1.5. &rdquo;Site User (hereinafter – the User)&rdquo; – a person who
-        has access to the website via the Internet and uses the website.
-      </p>
-      <p>
-        1.1.6. &rdquo;Cookies&rdquo; – a small piece of data sent by a web server
-        and stored on the user&#39;s computer, which the web browser sends back
-        to the web server in an HTTP request each time it attempts to open a
-        page of the corresponding website.
-      </p>
-      <p>
-        1.1.7. &rdquo;IP address&rdquo; – a unique address of a node in a
-        computer network built on the IP protocol.
-      </p>
-      <p>
-        1.1.8. Website (hereinafter – the &rdquo;website&rdquo;) – the website
-        <a href={addressData.siteLink}>&rdquo;{addressData.siteLink}&rdquo;</a>.
-      </p>
-      <p>
-        1.1.9. Ordering services using the mechanisms of the website located at
-        the domain name <span>{addressData.siteDomain}</span> (hereinafter –
-        the &rdquo;Order&rdquo;) – the services specified by the Customer when
-        submitting an electronic request to purchase services, generated using
-        the mechanisms of the website in the online system based on the
-        Customer&#39;s intention to receive services, and transmitted to the
-        Contractor using the mechanisms of the website.
-      </p>
-      <p>
-        1.1.10. Customer (hereinafter – the &rdquo;Customer&rdquo;) – an
-        individual, a visitor of the website, who accepts the terms of the
-        agreement for the provision of services (performance of work) in the
-        field of information technology and places an order using the
-        mechanisms of the website solely for personal, family, household, and
-        other needs not related to business activities.
-      </p>
-      <p>
-        1.1.11. Services (hereinafter – the &rdquo;Services&rdquo;) – services
-        available for ordering by the Customer and provision by the Contractor,
-        information about which is published on the website for the Customer to
-        review.
+        This policy explains in plain language what data we receive when you use
+        the website <span>{addressData.siteLink}</span> or take an EyeDetect or
+        VerifEye test with us, why we process it, who we share it with and what
+        rights you have.
       </p>
 
-      <h2>2. General provisions</h2>
+      <h2>1. Who we are and what this policy covers</h2>
 
       <p>
-        2.1. The User&#39;s use of the website constitutes acceptance of this
-        Policy and of the terms of processing the User&#39;s personal data.
+        The data controller is the private practice (sole proprietor) of
+        Nataliia Marynyak, 45 Horodotska St., Lviv, Ukraine. We are an
+        authorized Service Provider of Converus, Inc. (USA) in Ukraine: we
+        administer EyeDetect tests in our office or on site and VerifEye tests
+        online.
       </p>
       <p>
-        2.2. If the User does not agree with the terms of the Policy, the User
-        must stop using the website.
+        For the data of people who take a test, we act as the data controller:
+        we decide which details are entered into the system and we are
+        responsible for their confidentiality. Converus acts as the data
+        processor: its servers process and score the test data on our
+        instructions.
       </p>
       <p>
-        2.3. This Policy applies only to the website. The website does not
-        control and is not responsible for third-party websites that the User
-        may visit via links available on the website.
-      </p>
-      <p>
-        2.4. The Administration does not verify the accuracy of the personal
-        data provided by the User of the website.
-      </p>
-
-      <h2>3. Subject of the Policy</h2>
-
-      <p>
-        3.1. This Policy establishes the obligations of the Administration
-        regarding non-disclosure and protection of the confidentiality of the
-        personal data that the User must provide at the request of the
-        Administration or when placing an Order.
-      </p>
-      <p>
-        3.2. The personal data permitted for processing under this Policy is
-        provided by the User by filling out a form on the website and includes
-        the following information:
-      </p>
-      <p>3.2.1. the User&#39;s name;</p>
-      <p>3.2.2. the User&#39;s contact phone number;</p>
-      <p>3.2.3. email address (optional);</p>
-      <p>
-        3.3. The website protects the Data that is automatically transmitted
-        while viewing advertising blocks and when visiting pages on which the
-        system&#39;s statistical script (&rdquo;pixel&rdquo;) is installed:
-      </p>
-      <p>a) IP address;</p>
-      <p>b) information from cookies;</p>
-      <p>
-        c) information about the browser (or another program that accesses the
-        display of advertising);
-      </p>
-      <p>d) time of access;</p>
-      <p>e) address of the page on which the advertising block is located;</p>
-      <p>f) referrer (address of the previous page).</p>
-      <p>
-        3.3.1. Disabling cookies may make it impossible to access parts of the
-        website that require authorization.
-      </p>
-      <p>
-        3.3.2. The website collects statistics on the IP addresses of its
-        visitors. This information is used to identify and resolve technical
-        issues, to verify the legality of financial payments, or for other
-        purposes of the Company that do not contradict the current legislation
-        of Ukraine.
-      </p>
-      <p>
-        3.4. Any other personal information not discussed above (purchase
-        history, browsers and operating systems used, etc.) is stored and not
-        distributed, except in the cases provided for in clauses 5.2 and 5.3 of
-        this Policy, and is used exclusively by the Administration in a
-        non-personalized form for the purpose of improving the quality of
-        customer service, promoting the Company&#39;s goods and services, and
-        other purposes of the Company that do not contradict the current
-        legislation of Ukraine.
+        We follow the Law of Ukraine &ldquo;On Personal Data Protection&rdquo;.
+        If you take a test online while in the European Union, the GDPR also
+        applies to you.
       </p>
 
-      <h2>4. Purposes of collecting the User&#39;s personal information</h2>
+      <h2>2. What data we collect</h2>
 
       <p>
-        4.1. The Administration may use the User&#39;s personal data for the
-        following purposes:
+        <strong>Website.</strong> When you browse the pages, technical data is
+        collected: IP address, browser and device type, pages viewed, time of
+        visit, referring source. This happens through cookies and analytics
+        tools (see section 8).
       </p>
       <p>
-        4.1.1. Identifying the User registered on the website in order to place
-        an Order and (or) conclude a service agreement remotely using the
-        mechanisms of the website.
+        <strong>Request form.</strong> In the form on the website you leave your
+        name and phone number. Together with the page name and the selected
+        service, this data reaches us as a message from a Telegram bot and is
+        stored only in that chat and in our working records. The price
+        calculator at price.eye-polygraph.com is a separate page with its own
+        form; we process data from it on the same terms.
       </p>
       <p>
-        4.1.2. Providing the User with access to the personalized resources of
-        the website.
+        <strong>EyeDetect test (in office or on site).</strong> During the test
+        the system records eye movements and pupil diameter 60 times per second,
+        as well as True/False answers with timestamps. These are physical
+        measurements, not photographs or video, and a person cannot be
+        identified from them, so they are not biometric data. By default the
+        examiner enters the test taker&#39;s name into the system and takes a
+        photo for the report. At your request an ID number can be used instead
+        of a name and no photo taken.
       </p>
       <p>
-        4.1.3. Establishing feedback with the User, including sending
-        notifications and requests related to the use of the website and the
-        provision of services, and processing requests and applications from
-        the User.
+        <strong>VerifEye test (online).</strong> The test runs in an app on your
+        phone. The app records eye reactions through the front camera, your
+        spoken answers to the questions, and takes several photos of your face
+        that appear in the report. The name or ID you enter and technical data
+        about the device are also recorded.
       </p>
       <p>
-        4.1.4. Determining the User&#39;s location to ensure security, prevent
-        fraud, and make the website more convenient to use.
-      </p>
-      <p>
-        4.1.5. Providing the User, with the User&#39;s consent, with product
-        updates, special offers, pricing information, newsletters, and other
-        information on behalf of the website or on behalf of the website&#39;s
-        partners.
-      </p>
-      <p> 4.1.6. Carrying out advertising activities with the User&#39;s consent.</p>
-
-      <h2>5. Methods and terms of processing personal information</h2>
-
-      <p>
-        5.1. The User&#39;s personal data is processed without any time limit
-        by any lawful means, including in personal data information systems
-        with or without the use of automated means.
-      </p>
-      <p>
-        5.2. The User agrees that the Administration has the right to transfer
-        the User&#39;s personal data to third parties, in particular courier
-        services, postal organizations, telecommunications operators,
-        advertising platforms, and CRM systems, solely for the purpose of
-        fulfilling the Order placed on the website, monitoring the quality of
-        customer service, and providing customers in a timely manner with
-        information about product updates, special offers, pricing
-        information, newsletters, and other information on behalf of the
-        website or on behalf of the website&#39;s partners, including cases in
-        which representatives of the Company take part in organizing the
-        provision of services to the Customer.
-      </p>
-      <p>
-        5.3. The User&#39;s personal data may be transferred to authorized
-        government authorities only on the grounds and in the manner
-        established by the legislation of Ukraine.
-      </p>
-      <p>
-        5.4. In the event of loss or disclosure of personal data, the
-        Administration informs the User of the loss or disclosure of the
-        personal data.
-      </p>
-      <p>
-        5.5. The Administration takes the necessary organizational and
-        technical measures to protect the User&#39;s personal information from
-        unlawful or accidental access, destruction, alteration, blocking,
-        copying, and distribution, as well as from other unlawful actions of
-        third parties.
+        Testing is carried out only with your written consent. Test questions
+        never concern health, religion, political views, sexual orientation or
+        ethnic origin. Converus likewise does not require or collect such
+        &ldquo;sensitive&rdquo; data.
       </p>
 
+      <h2>3. Why and on what basis</h2>
+
       <p>
-        The Company is not responsible for the use of the above data obtained
-        by third parties as a result of hacking (theft) of the Company&#39;s
-        website / the Company&#39;s servers or of the organizations hosting the
-        Company&#39;s websites. At the same time, the Company takes all possible
-        measures to keep the data intact.
+        We use request form data to contact you, agree on a time and terms, and
+        provide the service. Basis: your consent given by submitting the form,
+        and steps taken prior to entering into a contract.
+      </p>
+      <p>
+        We process test data to administer the test, obtain the result and
+        deliver the report to the client. Basis: your written consent to take
+        the test and the contract with the client.
+      </p>
+      <p>
+        We use website technical data to keep the site running reliably and to
+        understand which pages are useful to visitors. Basis: our legitimate
+        interest in maintaining the site; for analytics cookies, your consent
+        through your browser settings.
+      </p>
+      <p>
+        We do not use your data for newsletters, advertising or profiling, and
+        we do not sell it.
+      </p>
+
+      <h2>4. Who we share it with</h2>
+
+      <p>
+        <strong>Converus, Inc.</strong> (610 S. 850 E., Ste. 4, Lehi, Utah
+        84043, USA), the developer of EyeDetect and VerifEye. Test data is
+        transmitted in encrypted form to Converus servers in the USA, where the
+        algorithm scores it and produces a PDF report. This is an international
+        data transfer. Converus is certified under the EU-U.S. Data Privacy
+        Framework and processes data under its own privacy policy.
+      </p>
+      <p>
+        <strong>The client who ordered the test.</strong> The report goes to
+        whoever ordered the testing: the test taker themselves, or an employer
+        or other authorized person, with the test taker&#39;s knowledge. We do
+        not publish photos, reports or reviews without permission and do not
+        discuss test results with third parties.
+      </p>
+      <p>
+        <strong>Website services.</strong> Google (Tag Manager, Analytics) and
+        Binotel (call widget) receive technical data about visits within the
+        limits described in section 8.
+      </p>
+      <p>
+        We share data with anyone else only when the law requires it, for
+        example on a lawful request from a court or law enforcement.
+      </p>
+
+      <h2>5. How long we keep it</h2>
+
+      <p>
+        We keep request form data until the conversation is finished and the
+        service is provided, after which we delete it from the chat and our
+        records, or earlier at your request.
+      </p>
+      <p>
+        We keep test reports for as long as needed to deliver the result to the
+        client and answer possible follow-up questions. Our practice: up to 12
+        months after the test, after which reports are deleted routinely, or
+        earlier at your request. Retention on Converus servers is governed by
+        its policy.
+      </p>
+      <p>
+        Website analytics data is kept in Google Analytics for the period set in
+        the service settings, in anonymized form.
+      </p>
+
+      <h2>6. Your rights and how to use them</h2>
+
+      <p>You have the right to:</p>
+      <p>— find out what data we hold about you and receive a copy;</p>
+      <p>— correct inaccurate data;</p>
+      <p>— request deletion when there is no legal basis to keep the data;</p>
+      <p>
+        — withdraw consent at any time, including declining the test before it
+        starts or stopping it while it is in progress;
+      </p>
+      <p>
+        — object to or restrict processing, and, for EU residents, receive your
+        data in a portable format;
+      </p>
+      <p>
+        — lodge a complaint with the Ukrainian Parliament Commissioner for Human
+        Rights (Ombudsman) or, for EU residents, with the supervisory authority
+        of your country.
+      </p>
+      <p>
+        To exercise your rights, email or call us (contacts in section 10). We
+        will respond within 30 days. If the data is processed by Converus, we
+        will forward your request to them or help you contact them directly.
+      </p>
+
+      <h2>7. Security</h2>
+
+      <p>
+        The website runs over HTTPS. Test data is encrypted in transit and
+        stored on Converus servers in encrypted form. Only the examiner who
+        administered the test has access to the reports. We do not send reports
+        through open channels and do not leave them on shared devices.
+      </p>
+      <p>
+        No system can guarantee absolute security. If a breach occurs that could
+        harm you, we will notify you.
+      </p>
+
+      <h2>8. Cookies and analytics</h2>
+
+      <p>
+        The website uses Google Tag Manager to load Google Analytics, which
+        collects anonymized visit statistics using cookies. The Binotel call
+        widget loads its own script and may store its own technical cookies
+        needed for the call button to work.
+      </p>
+      <p>
+        You can block or delete cookies in your browser settings. The website
+        will keep working; data about your visit simply will not reach the
+        analytics.
+      </p>
+
+      <h2>9. Children</h2>
+
+      <p>
+        We do not test persons under 18 without the written consent of a parent
+        or guardian, and we do not knowingly collect children&#39;s data through
+        the website. Converus does not process data of children under 11 and
+        deletes it if received.
+      </p>
+
+      <h2>10. Changes to this policy and contacts</h2>
+
+      <p>
+        We may update this policy when our processes or the law change. The date
+        of the last update is shown at the top of the page. We will additionally
+        flag material changes on the website.
       </p>
 
       <address>
-        If you have any questions, please contact our manager by phone
+        For questions about personal data, call
         <a href={phone.href} target="_blank" rel="noopener noreferrer">
           {phone.contact}
         </a>
-        or by email
+        or email
         <a href={email.href} target="_blank">
           {email.contact}
         </a>
       </address>
+
+      <p>
+        This is our policy as a Converus Service Provider; the policy of Converus
+        itself is available at
+        <a
+          href="https://converus.com/privacy-policy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          converus.com/privacy-policy
+        </a>
+        .
+      </p>
     </div>
     // </section>
   );

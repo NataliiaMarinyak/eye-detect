@@ -48,7 +48,7 @@ export const businessPage = {
     pricing: {
       title: "Скільки коштує",
       note: "Ціни для бізнесу індивідуальні: залежать від кількості осіб, тем і міста. Напишіть, скільки людей і що потрібно перевірити, і ми надішлемо розрахунок того ж дня.",
-      travel: "Львів і область до 50 км включено. Західна Україна +2 000 ₴ за виїзд, інші області від 12 000 ₴ разом із тестом. За кордоном дорога і приміщення окремо.",
+      travel: "Виїзд по Львівській області безкоштовно. Інші області України — 12 000 ₴ під ключ, разом із тестом. За кордоном дорога і приміщення окремо.",
     },
     industries: {
       title: "Рішення для вашої галузі",
@@ -126,7 +126,7 @@ export const businessPage = {
     pricing: {
       title: "Сколько стоит",
       note: "Цены для бизнеса индивидуальные: зависят от количества людей, тем и города. Напишите, сколько людей и что нужно проверить, и мы отправим расчёт в тот же день.",
-      travel: "Львов и область до 50 км включено. Западная Украина +2 000 ₴ за выезд, другие области от 12 000 ₴ вместе с тестом. За границей дорога и помещение отдельно.",
+      travel: "Выезд по Львовской области бесплатно. Другие области Украины — 12 000 ₴ под ключ, вместе с тестом. За границей дорога и помещение отдельно.",
     },
     industries: {
       title: "Решения для вашей отрасли",
@@ -204,7 +204,7 @@ export const businessPage = {
     pricing: {
       title: "What it costs",
       note: "Business pricing is individual: it depends on the number of people, the topics, and the city. Tell us how many people and what needs to be checked, and we will send a quote the same day.",
-      travel: "Lviv and the region within 50 km are included. Western Ukraine +UAH 2,000 for the visit; other regions from UAH 12,000 including the test. Abroad, travel and premises are charged separately.",
+      travel: "Travel within the Lviv region is free. Other regions of Ukraine: UAH 12,000 all-inclusive, test included. Abroad, travel and premises are charged separately.",
     },
     industries: {
       title: "Solutions for your industry",

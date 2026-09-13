@@ -27,7 +27,7 @@
         "href": "/situations/fidelity"
       },
       {
-        "label": "Tests for court",
+        "label": "For lawyers and attorneys",
         "href": "/for/lawyers"
       }
     ],
@@ -258,8 +258,8 @@
   "homeStats": {
     "items": [
       {
-        "value": 91,
-        "prefix": "88–",
+        "value": 90,
+        "prefix": "86–",
         "suffix": "%",
         "label": "EyeDetect accuracy according to research"
       },
@@ -301,9 +301,9 @@
       "title": "VerifEye",
       "text": "The person opens a link in the VerifEye app on their smartphone, listens to the questions and answers out loud. The algorithm evaluates the eye reactions.",
       "facts": [
-        "about 10 minutes",
+        "up to 15 minutes",
         "84–89% accuracy",
-        "PDF report"
+        "PDF report within 5 minutes"
       ],
       "price": "from UAH 2,500",
       "cta": "Take the online test"

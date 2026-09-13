@@ -6,7 +6,7 @@ export const insurance = {
   slug: "insurance",
   uk: {
     seo: { title: "Детектор брехні для страхової компанії — перевірка заяв EyeDetect", description: "EyeDetect для відділів врегулювання: заяви про ДТП, викрадення авто, майно. Інсценування, завищення збитків, змова з СТО. Тест 30–45 хвилин, звіт одразу.", keywords: ["детектор брехні для страхової", "поліграф страховий випадок", "перевірка заяви про ДТП", "страхове шахрайство перевірка", "EyeDetect страхування"], crumbHome: "Головна", crumb: "Для страхових компаній" },
-    hero: { eyebrow: "Страховим компаніям і відділам врегулювання", h1: "Детектор брехні для страхової компанії", sub: "Частину заяв про страховий випадок не підтвердити і не спростувати документами: свідків немає, експертиза дає діапазон, а заявник наполягає. EyeDetect перевіряє конкретні факти події за 30–45 хвилин і дає оцінку від 1 до 99. Страхування було одним із перших сегментів, де Converus застосував EyeDetect у США.", facts: ["30–45 хвилин на заяву", "точність 90% на одне питання", "звіт одразу після тесту", "письмова згода заявника"] },
+    hero: { eyebrow: "Страховим компаніям і відділам врегулювання", h1: "Детектор брехні для страхової компанії", sub: "Частину заяв про страховий випадок не підтвердити і не спростувати документами: свідків немає, експертиза дає діапазон, а заявник наполягає. EyeDetect перевіряє конкретні факти події за 30–45 хвилин і дає оцінку від 1 до 99. Страхування було одним із перших сегментів, де Converus застосував EyeDetect у США.", facts: ["30–45 хвилин на заяву", "точність 86–90%", "звіт одразу після тесту", "письмова згода заявника"] },
     blocks: [
       { type: "cards", title: "Де це допомагає", items: [
         { title: "ДТП без свідків", text: "Хто був за кермом, чи був водій тверезий, чи сталась подія там і тоді, як зазначено в заяві. Питання про конкретні факти, на які експертиза не відповідає." },
@@ -21,12 +21,12 @@ export const insurance = {
       { type: "text", title: "Що варто знати відділу врегулювання", paragraphs: [
         "Результат EyeDetect в Україні не є доказом у суді. Це інструмент для внутрішнього рішення: пришвидшити виплату за чистою заявою, призначити додаткову експертизу чи передати матеріали до служби безпеки. Тест проходять лише за письмовою згодою заявника, і він може відмовитись. Питання формулюються про конкретні факти події, не про думки чи наміри.",
         "Пропозиція пройти тест сама по собі є фільтром: заявник із чистою справою зазвичай погоджується, бо це пришвидшує виплату. Ми допомагаємо сформулювати пропозицію так, щоб вона була коректною і не звучала як звинувачення.",
-        "Один заявник у Львові проходить тест у кабінеті на вул. Городоцькій, 45, від 5 500 ₴. Для регіональних філій є виїзд: 6–8 тестів за день, Львів і область до 50 км включено, Західна Україна +2 000 ₴, інші регіони від 12 000 ₴ разом із тестом. Для заявників в інших містах, де виїзд не окупається, є VerifEye: онлайн зі смартфона, близько 10 хвилин, точність 84–89%, від 2 500 ₴. Ціни для страхової компанії за запитом, залежать від обсягу заяв на місяць.",
+        "Один заявник у Львові проходить тест у кабінеті на вул. Городоцькій, 45, від 5 500 ₴. Для регіональних філій є виїзд: 6–8 тестів за день, виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом. Для заявників в інших містах, де виїзд не окупається, є VerifEye: онлайн зі смартфона, до 15 хвилин, точність 84–89%, від 2 500 ₴. Ціни для страхової компанії за запитом, залежать від обсягу заяв на місяць.",
       ] },
       { type: "table", title: "Який формат обрати", columns: ["Ситуація", "Формат", "Час і ціна"], rows: [
         ["Сумнівна заява на велику суму, заявник у Львові", "EyeDetect у кабінеті", "30–45 хвилин, від 5 500 ₴"],
         ["Кілька заяв у регіональній філії", "EyeDetect з виїздом", "6–8 тестів за день, ціна за запитом"],
-        ["Заявник в іншому місті, невелика сума", "VerifEye онлайн зі смартфона", "близько 10 хвилин, від 2 500 ₴"],
+        ["Заявник в іншому місті, невелика сума", "VerifEye онлайн зі смартфона", "до 15 хвилин, від 2 500 ₴"],
         ["Перевірка врегулювальників і комісарів", "EyeDetect з виїздом в офіс", "6–8 осіб за день, ціна за запитом"],
       ] },
       cta.uk("EyeDetect для страхової компанії"),
@@ -34,7 +34,7 @@ export const insurance = {
   },
   ru: {
     seo: { title: "Детектор лжи для страховой — проверка заявлений EyeDetect", description: "EyeDetect для отделов урегулирования: заявления о ДТП, угоне авто, имуществе. Инсценировка, завышение убытков, сговор с СТО. Тест 30–45 минут, отчёт сразу.", keywords: ["детектор лжи для страховой", "полиграф страховой случай", "проверка заявления о ДТП", "страховое мошенничество проверка", "EyeDetect страхование"], crumbHome: "Главная", crumb: "Для страховых компаний" },
-    hero: { eyebrow: "Страховым компаниям и отделам урегулирования", h1: "Детектор лжи для страховой компании", sub: "Часть заявлений о страховом случае не подтвердить и не опровергнуть документами: свидетелей нет, экспертиза даёт диапазон, а заявитель настаивает. EyeDetect проверяет конкретные факты события за 30–45 минут и даёт оценку от 1 до 99. Страхование было одним из первых сегментов, где Converus применил EyeDetect в США.", facts: ["30–45 минут на заявление", "точность 90% на один вопрос", "отчёт сразу после теста", "письменное согласие заявителя"] },
+    hero: { eyebrow: "Страховым компаниям и отделам урегулирования", h1: "Детектор лжи для страховой компании", sub: "Часть заявлений о страховом случае не подтвердить и не опровергнуть документами: свидетелей нет, экспертиза даёт диапазон, а заявитель настаивает. EyeDetect проверяет конкретные факты события за 30–45 минут и даёт оценку от 1 до 99. Страхование было одним из первых сегментов, где Converus применил EyeDetect в США.", facts: ["30–45 минут на заявление", "точность 86–90%", "отчёт сразу после теста", "письменное согласие заявителя"] },
     blocks: [
       { type: "cards", title: "Где это помогает", items: [
         { title: "ДТП без свидетелей", text: "Кто был за рулём, был ли водитель трезв, произошло ли событие там и тогда, как указано в заявлении. Вопросы о конкретных фактах, на которые экспертиза не отвечает." },
@@ -49,12 +49,12 @@ export const insurance = {
       { type: "text", title: "Что стоит знать отделу урегулирования", paragraphs: [
         "Результат EyeDetect в Украине не является доказательством в суде. Это инструмент для внутреннего решения: ускорить выплату по чистому заявлению, назначить дополнительную экспертизу или передать материалы в службу безопасности. Тест проходят только с письменного согласия заявителя, и он может отказаться. Вопросы формулируются о конкретных фактах события, не о мыслях или намерениях.",
         "Предложение пройти тест само по себе является фильтром: заявитель с чистым делом обычно соглашается, потому что это ускоряет выплату. Мы помогаем сформулировать предложение так, чтобы оно было корректным и не звучало как обвинение.",
-        "Один заявитель во Львове проходит тест в кабинете на ул. Городоцкой, 45, от 5 500 ₴. Для региональных филиалов есть выезд: 6–8 тестов в день, Львов и область до 50 км включено, Западная Украина +2 000 ₴, другие регионы от 12 000 ₴ вместе с тестом. Для заявителей в других городах, где выезд не окупается, есть VerifEye: онлайн со смартфона, около 10 минут, точность 84–89%, от 2 500 ₴. Цены для страховой компании по запросу, зависят от объёма заявлений в месяц.",
+        "Один заявитель во Львове проходит тест в кабинете на ул. Городоцкой, 45, от 5 500 ₴. Для региональных филиалов есть выезд: 6–8 тестов в день, выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом. Для заявителей в других городах, где выезд не окупается, есть VerifEye: онлайн со смартфона, до 15 минут, точность 84–89%, от 2 500 ₴. Цены для страховой компании по запросу, зависят от объёма заявлений в месяц.",
       ] },
       { type: "table", title: "Какой формат выбрать", columns: ["Ситуация", "Формат", "Время и цена"], rows: [
         ["Сомнительное заявление на крупную сумму, заявитель во Львове", "EyeDetect в кабинете", "30–45 минут, от 5 500 ₴"],
         ["Несколько заявлений в региональном филиале", "EyeDetect с выездом", "6–8 тестов в день, цена по запросу"],
-        ["Заявитель в другом городе, небольшая сумма", "VerifEye онлайн со смартфона", "около 10 минут, от 2 500 ₴"],
+        ["Заявитель в другом городе, небольшая сумма", "VerifEye онлайн со смартфона", "до 15 минут, от 2 500 ₴"],
         ["Проверка урегулировщиков и комиссаров", "EyeDetect с выездом в офис", "6–8 человек в день, цена по запросу"],
       ] },
       cta.ru("EyeDetect для страховой компании"),
@@ -62,7 +62,7 @@ export const insurance = {
   },
   en: {
     seo: { title: "Lie Detector for Insurance Companies — Claim Verification", description: "EyeDetect for claims departments: accident, car theft, and property claims. Staged events, inflated losses, repair shop collusion. 30–45 minutes per claim.", keywords: ["lie detector for insurers", "polygraph insurance claim", "car accident claim verification", "insurance fraud testing", "EyeDetect insurance"], crumbHome: "Home", crumb: "For insurance companies" },
-    hero: { eyebrow: "For insurance companies and claims departments", h1: "Lie Detector for Insurance Companies", sub: "Some claims can be neither confirmed nor refuted by documents: there are no witnesses, the expert gives a range, and the claimant insists. EyeDetect checks specific facts of the event in 30–45 minutes and returns a score from 1 to 99. Insurance was one of the first segments where Converus applied EyeDetect in the US.", facts: ["30–45 minutes per claim", "90% accuracy on a single issue", "report right after the test", "claimant's written consent"] },
+    hero: { eyebrow: "For insurance companies and claims departments", h1: "Lie Detector for Insurance Companies", sub: "Some claims can be neither confirmed nor refuted by documents: there are no witnesses, the expert gives a range, and the claimant insists. EyeDetect checks specific facts of the event in 30–45 minutes and returns a score from 1 to 99. Insurance was one of the first segments where Converus applied EyeDetect in the US.", facts: ["30–45 minutes per claim", "86–90% accuracy", "report right after the test", "claimant's written consent"] },
     blocks: [
       { type: "cards", title: "Where it helps", items: [
         { title: "Accidents without witnesses", text: "Who was driving, whether the driver was sober, whether the event happened where and when the claim says. Questions about specific facts that an expert report cannot answer." },
@@ -77,12 +77,12 @@ export const insurance = {
       { type: "text", title: "What a claims department should know", paragraphs: [
         "In Ukraine, an EyeDetect result is not admissible evidence in court. It is a tool for an internal decision: speed up payment on a clean claim, order an additional expert review, or pass the file to the security department. The test is taken only with the claimant's written consent, and they may refuse. Questions are phrased about specific facts of the event, not thoughts or intentions.",
         "The offer to take the test is itself a filter: a claimant with a clean case usually agrees, because it speeds up the payout. We help word the offer so that it is correct and does not sound like an accusation.",
-        "A single claimant in Lviv takes the test in our office at 45 Horodotska St., from UAH 5,500. For regional branches there is on-site testing: 6–8 tests per day, Lviv and up to 50 km around it included, Western Ukraine +UAH 2,000, other regions from UAH 12,000 including the test. For claimants in other cities where a visit does not pay off, there is VerifEye: online from a smartphone, about 10 minutes, 84–89% accuracy, from UAH 2,500. Pricing for an insurance company is on request and depends on the monthly volume of claims.",
+        "A single claimant in Lviv takes the test in our office at 45 Horodotska St., from UAH 5,500. For regional branches there is on-site testing: 6–8 tests per day, travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included. For claimants in other cities where a visit does not pay off, there is VerifEye: online from a smartphone, up to 15 minutes, 84–89% accuracy, from UAH 2,500. Pricing for an insurance company is on request and depends on the monthly volume of claims.",
       ] },
       { type: "table", title: "Which format to choose", columns: ["Situation", "Format", "Time and price"], rows: [
         ["A doubtful high-value claim, claimant in Lviv", "EyeDetect in our Lviv office", "30–45 minutes, from UAH 5,500"],
         ["Several claims at a regional branch", "EyeDetect on-site", "6–8 tests per day, price on request"],
-        ["Claimant in another city, small amount", "VerifEye online from a smartphone", "about 10 minutes, from UAH 2,500"],
+        ["Claimant in another city, small amount", "VerifEye online from a smartphone", "up to 15 minutes, from UAH 2,500"],
         ["Screening claims handlers and adjusters", "EyeDetect on-site at your office", "6–8 people per day, price on request"],
       ] },
       cta.en("EyeDetect for an insurance company"),

@@ -2,8 +2,8 @@
 export const onlinePage = {
   uk: {
     seo: {
-      title: "Детектор брехні онлайн (поліграф онлайн): VerifEye за 10 хвилин",
-      description: "VerifEye від Converus: застосунок на смартфоні фіксує реакції очей, точність 84–89% за даними виробника. Тест близько 10 хвилин, PDF-звіт того ж дня. З будь-якого міста.",
+      title: "Детектор брехні онлайн (поліграф онлайн): VerifEye до 15 хвилин",
+      description: "VerifEye від Converus: застосунок на смартфоні фіксує реакції очей, точність 84–89% за даними виробника. Тест до 15 хвилин, PDF-звіт до 5 хвилин після тесту. З будь-якого міста.",
       keywords: ["детектор брехні онлайн", "онлайн детектор брехні", "поліграф онлайн", "verifeye", "тест на брехню з телефона", "детектор лжи онлайн"],
       crumbHome: "Головна",
       crumb: "Онлайн-тест VerifEye",
@@ -11,8 +11,8 @@ export const onlinePage = {
     hero: {
       eyebrow: "Поліграф онлайн · VerifEye від Converus, США",
       h1: "Детектор брехні онлайн: тест VerifEye з вашого телефона",
-      sub: "VerifEye — це поліграф онлайн: окремий продукт Converus для смартфона. Ми готуємо питання, людина відкриває посилання у застосунку, слухає питання і відповідає вголос близько 10 хвилин. Звіт у PDF приходить вам на пошту. З будь-якого міста чи країни.",
-      facts: ["близько 10 хвилин", "точність 84–89%", "звіт у PDF того ж дня", "від 2 500 ₴"],
+      sub: "VerifEye — це поліграф онлайн: окремий продукт Converus для смартфона. Ми готуємо питання, людина відкриває посилання у застосунку, слухає питання і відповідає вголос до 15 хвилин. Звіт у PDF приходить вам на пошту. З будь-якого міста чи країни.",
+      facts: ["до 15 хвилин", "точність 84–89%", "звіт у PDF до 5 хвилин після тесту", "від 2 500 ₴"],
       primary: "Замовити онлайн-тест",
     },
     why: {
@@ -28,15 +28,15 @@ export const onlinePage = {
       items: [
         { title: "Замовлення", text: "Телефонуєте або залишаєте заявку на сайті: хто проходить тест і що треба перевірити. Разом формулюємо 1–3 питання." },
         { title: "Посилання на телефон", text: "Людина отримує посилання і коротку інструкцію: тиха кімната, добре освітлення, 20 вільних хвилин, телефон на підставці. Посилання відкриває безкоштовний застосунок VerifEye (iOS або Android)." },
-        { title: "Тест близько 10 хвилин", text: "Спочатку коротке навчальне відео. Далі застосунок ставить питання голосом, людина відповідає вголос, мікрофон записує відповіді, а камера фіксує реакції очей." },
-        { title: "Звіт на пошту", text: "Того ж дня ви отримуєте PDF-звіт з оцінкою достовірності і пояснення від спеціаліста, що вона означає для вашої ситуації." },
+        { title: "Тест до 15 хвилин", text: "Спочатку коротке навчальне відео. Далі застосунок ставить питання голосом, людина відповідає вголос, мікрофон записує відповіді, а камера фіксує реакції очей." },
+        { title: "Звіт на пошту", text: "До 5 хвилин після тесту ви отримуєте PDF-звіт з оцінкою достовірності, а того ж дня пояснення від спеціаліста, що вона означає для вашої ситуації." },
       ],
     },
     prices: {
       title: "Ціни на онлайн-тест",
       note: "Оплата в гривнях. Ціна однакова в Україні й за кордоном: доплат за відстань немає.",
       items: [
-        { name: "1 питання", price: "2 500 ₴", desc: "Одна тема, наприклад вірність за конкретний період. Близько 10 хвилин тесту." },
+        { name: "1 питання", price: "2 500 ₴", desc: "Одна тема, наприклад вірність за конкретний період. До 15 хвилин тесту." },
         { name: "3 питання", price: "4 000 ₴", desc: "До трьох запитань в одному тесті. Трохи довший тест, детальний звіт.", featured: true },
       ],
       upgrade: "Доплат за терміновість чи вихідні для VerifEye немає. Для серйозних рішень (крадіжка, розслідування, суперечка з великою сумою) радимо EyeDetect у кабінеті: він точніший.",
@@ -63,8 +63,8 @@ export const onlinePage = {
   },
   ru: {
     seo: {
-      title: "Детектор лжи онлайн (полиграф онлайн): VerifEye за 10 минут",
-      description: "VerifEye от Converus: приложение на смартфоне фиксирует реакции глаз, точность 84–89% по данным производителя. Тест около 10 минут, PDF-отчёт в тот же день. Из любого города.",
+      title: "Детектор лжи онлайн (полиграф онлайн): VerifEye до 15 минут",
+      description: "VerifEye от Converus: приложение на смартфоне фиксирует реакции глаз, точность 84–89% по данным производителя. Тест до 15 минут, PDF-отчёт до 5 минут после теста. Из любого города.",
       keywords: ["детектор лжи онлайн", "онлайн детектор лжи", "полиграф онлайн", "verifeye", "тест на ложь с телефона"],
       crumbHome: "Главная",
       crumb: "Онлайн-тест VerifEye",
@@ -72,8 +72,8 @@ export const onlinePage = {
     hero: {
       eyebrow: "Полиграф онлайн · VerifEye от Converus, США",
       h1: "Детектор лжи онлайн: тест VerifEye с вашего телефона",
-      sub: "VerifEye — это полиграф онлайн: отдельный продукт Converus для смартфона. Мы готовим вопросы, человек открывает ссылку в приложении, слушает вопросы и отвечает вслух около 10 минут. Отчёт в PDF приходит вам на почту. Из любого города или страны.",
-      facts: ["около 10 минут", "точность 84–89%", "отчёт в PDF в тот же день", "от 2 500 ₴"],
+      sub: "VerifEye — это полиграф онлайн: отдельный продукт Converus для смартфона. Мы готовим вопросы, человек открывает ссылку в приложении, слушает вопросы и отвечает вслух до 15 минут. Отчёт в PDF приходит вам на почту. Из любого города или страны.",
+      facts: ["до 15 минут", "точность 84–89%", "отчёт в PDF до 5 минут после теста", "от 2 500 ₴"],
       primary: "Заказать онлайн-тест",
     },
     why: {
@@ -89,15 +89,15 @@ export const onlinePage = {
       items: [
         { title: "Заказ", text: "Звоните или оставляете заявку на сайте: кто проходит тест и что нужно проверить. Вместе формулируем 1–3 вопроса." },
         { title: "Ссылка на телефон", text: "Человек получает ссылку и короткую инструкцию: тихая комната, хорошее освещение, 20 свободных минут, телефон на подставке. Ссылка открывает бесплатное приложение VerifEye (iOS или Android)." },
-        { title: "Тест около 10 минут", text: "Сначала короткое обучающее видео. Дальше приложение задаёт вопросы голосом, человек отвечает вслух, микрофон записывает ответы, а камера фиксирует реакции глаз." },
-        { title: "Отчёт на почту", text: "В тот же день вы получаете PDF-отчёт с оценкой достоверности и пояснение от специалиста, что она означает для вашей ситуации." },
+        { title: "Тест до 15 минут", text: "Сначала короткое обучающее видео. Дальше приложение задаёт вопросы голосом, человек отвечает вслух, микрофон записывает ответы, а камера фиксирует реакции глаз." },
+        { title: "Отчёт на почту", text: "До 5 минут после теста вы получаете PDF-отчёт с оценкой достоверности, а в тот же день пояснение от специалиста, что она означает для вашей ситуации." },
       ],
     },
     prices: {
       title: "Цены на онлайн-тест",
       note: "Оплата в гривнах. Цена одинакова для Украины и для заграницы: доплат за расстояние нет.",
       items: [
-        { name: "1 вопрос", price: "2 500 ₴", desc: "Одна тема, например верность за конкретный период. Около 10 минут теста." },
+        { name: "1 вопрос", price: "2 500 ₴", desc: "Одна тема, например верность за конкретный период. До 15 минут теста." },
         { name: "3 вопроса", price: "4 000 ₴", desc: "До трёх вопросов в одном тесте. Чуть более длинный тест, подробный отчёт.", featured: true },
       ],
       upgrade: "Доплат за срочность или выходные для VerifEye нет. Для серьёзных решений (кража, расследование, спор на крупную сумму) советуем EyeDetect в кабинете: он точнее.",
@@ -124,8 +124,8 @@ export const onlinePage = {
   },
   en: {
     seo: {
-      title: "Online Lie Detector (Online Polygraph): VerifEye in 10 Minutes",
-      description: "VerifEye by Converus: a smartphone app records eye reactions, accuracy 84–89% according to the manufacturer. The test takes about 10 minutes, PDF report the same day. From any city.",
+      title: "Online Lie Detector (Online Polygraph): VerifEye in up to 15 Minutes",
+      description: "VerifEye by Converus: a smartphone app records eye reactions, accuracy 84–89% according to the manufacturer. The test takes up to 15 minutes, PDF report within 5 minutes after the test. From any city.",
       keywords: ["online lie detector", "lie detector online", "online polygraph", "verifeye", "lie detector test from phone", "remote lie detector test"],
       crumbHome: "Home",
       crumb: "VerifEye online test",
@@ -133,8 +133,8 @@ export const onlinePage = {
     hero: {
       eyebrow: "Online polygraph · VerifEye by Converus, USA",
       h1: "Online lie detector: the VerifEye test from your phone",
-      sub: "VerifEye is an online polygraph: a separate Converus product for smartphones. We prepare the questions, the person opens a link in the app, listens to the questions, and answers aloud for about 10 minutes. The PDF report is emailed to you. From any city or country.",
-      facts: ["about 10 minutes", "84–89% accuracy", "PDF report the same day", "from UAH 2,500"],
+      sub: "VerifEye is an online polygraph: a separate Converus product for smartphones. We prepare the questions, the person opens a link in the app, listens to the questions, and answers aloud for up to 15 minutes. The PDF report is emailed to you. From any city or country.",
+      facts: ["up to 15 minutes", "84–89% accuracy", "PDF report within 5 minutes after the test", "from UAH 2,500"],
       primary: "Order an online test",
     },
     why: {
@@ -150,15 +150,15 @@ export const onlinePage = {
       items: [
         { title: "Order", text: "Call us or leave a request on the site: who is taking the test and what needs to be checked. Together we formulate 1–3 questions." },
         { title: "Link to the phone", text: "The person receives a link and brief instructions: a quiet room, good lighting, 20 free minutes, the phone on a stand. The link opens the free VerifEye app (iOS or Android)." },
-        { title: "A test of about 10 minutes", text: "First a short training video. Then the app asks the questions by voice, the person answers aloud, the microphone records the answers, and the camera records the eye reactions." },
-        { title: "Report by email", text: "The same day you receive a PDF report with the Credibility Score and an explanation from the examiner of what it means for your situation." },
+        { title: "A test of up to 15 minutes", text: "First a short training video. Then the app asks the questions by voice, the person answers aloud, the microphone records the answers, and the camera records the eye reactions." },
+        { title: "Report by email", text: "Within 5 minutes after the test you receive a PDF report with the Credibility Score, and the same day an explanation from the examiner of what it means for your situation." },
       ],
     },
     prices: {
       title: "Online test prices",
       note: "Payment in hryvnias. The price is the same for Ukraine and abroad: there is no surcharge for distance.",
       items: [
-        { name: "1 question", price: "UAH 2,500", desc: "One topic, for example fidelity over a specific period. About 10 minutes of testing." },
+        { name: "1 question", price: "UAH 2,500", desc: "One topic, for example fidelity over a specific period. Up to 15 minutes of testing." },
         { name: "3 questions", price: "UAH 4,000", desc: "Up to three questions in one test. A slightly longer test, a detailed report.", featured: true },
       ],
       upgrade: "There is no surcharge for urgency or weekends with VerifEye. For serious decisions (theft, an investigation, a dispute over a large sum) we recommend EyeDetect in our Lviv office: it is more accurate.",

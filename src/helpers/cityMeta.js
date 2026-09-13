@@ -12,7 +12,7 @@ export const TIER_A = [
   "berlin", "vienna", "dublin", "podgorica", "belgrade", "madrid",
 ];
 
-// Захід України: доплата за виїзд за таблицею цін (+2 000 ₴).
+// Захід України: окремий регіон лише для тексту про відстань; ціна виїзду однакова по Україні (12 000 ₴ під ключ).
 const UA_WEST = ["lutsk", "rivne", "ternopil", "ivano-frankivsk", "chernivtsi", "uzhgorod", "khmelnytskyi"];
 
 // Орієнтовна відстань від Львова автомобілем, км (для блоку «виїзд»).
