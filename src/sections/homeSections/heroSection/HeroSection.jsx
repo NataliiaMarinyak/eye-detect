@@ -34,7 +34,6 @@ const HeroSection = ({ dictionary }) => {
           <div className={styles.actions}>
             <div className={styles.action}>
               <PriceQuizBtn customClass={styles.btnPrimary} title={dictionary.buttons.calculatePrice} />
-              <span className={styles.actionNote}>{hero.priceLine}</span>
             </div>
           </div>
 
