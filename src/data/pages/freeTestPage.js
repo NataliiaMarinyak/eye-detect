@@ -24,7 +24,7 @@ export const freeTestPage = {
         { title: "Залишаєте ім'я і телефон", text: "Ми зв'язуємось у робочий час і надсилаємо посилання на тест у застосунку VerifEye для iPhone або Android." },
         { title: "Записуєте цифру від 1 до 6", text: "Нікому її не кажете. Сідаєте у тихій кімнаті з рівним освітленням, без окулярів, телефон перед обличчям, погляд трохи вище камери." },
         { title: "Проходите тест", text: "Спочатку короткий тренувальний тест з літерами, потім запитання про цифри. На всі ви відповідаєте «Неправда», тобто заперечуєте і свою цифру теж. Час на відповідь обмежений. Камера фіксує реакції очей: зіницю, рухи, моргання." },
-        { title: "Отримуєте звіт", text: "Алгоритм Converus рахує реакції і ставить вашу цифру на перше місце у звіті. Ми надсилаємо вам звіт того ж дня. Далі вирішуєте самі, чи потрібен справжній тест." },
+        { title: "Отримуєте звіт", text: "Алгоритм Converus ранжує цифри за реакціями. Найчастіше задумана цифра на першому місці, але система може й помилитися. Ми надсилаємо вам звіт того ж дня. Далі вирішуєте самі, чи потрібен справжній тест." },
       ] },
       { type: "cards", title: "Чому це чесний тест, а не фокус", cols: 2, items: [
         { title: "Те саме обладнання", text: "Тест на цифру проходить у тому самому застосунку VerifEye і на тому самому сервері Converus, що й платні перевірки на вірність чи для кандидатів." },
@@ -37,7 +37,7 @@ export const freeTestPage = {
         "Тест на цифру можна пройти безкоштовно офлайн: у кабінеті у Львові на станції EyeDetect, за попереднім записом. Фото для цього не потрібні.",
         "Щоб записатись, залиште ім'я і телефон у формі нижче та напишіть, що хочете пройти тест у кабінеті, або зателефонуйте: +380 68 68 333 68.",
       ] },
-      { type: "image", title: "Як виглядає звіт числового тесту", src: "/images/report-sample-verifeye-number.webp", alt: "Звіт числового тесту VerifEye", caption: "Справжній звіт VerifEye: чотири фото під час тесту, якість даних і перше місце для цифри, яку визначив алгоритм. Персональні дані розмито.", width: 1100, height: 1557 },
+      { type: "image", title: "Як виглядає звіт числового тесту", src: "/images/report-sample-verifeye-number.webp", alt: "Звіт числового тесту VerifEye", caption: "Справжній звіт VerifEye: чотири фото під час тесту, якість даних і цифри, впорядковані алгоритмом за реакціями. Персональні дані розмито.", width: 1100, height: 1557 },
       { type: "text", tone: "white", title: "Що далі, якщо технологія переконала", paragraphs: [
         "Справжній онлайн-тест VerifEye на ваші питання коштує від 2 500 ₴ і триває до 15 хвилин, звіт у PDF до 5 хвилин після тесту. Точність 84–89% за даними Converus. Підходить для перевірки на вірність, кандидатів на роботу і людей в інших містах.",
         "Якщо потрібна максимальна точність і письмовий звіт одразу після тесту, є EyeDetect у кабінеті у Львові або з виїздом: 30–45 хвилин, точність 86–90%, від 5 500 ₴.",
@@ -77,7 +77,7 @@ export const freeTestPage = {
         { title: "Оставляете имя и телефон", text: "Мы связываемся в рабочее время и отправляем ссылку на тест в приложении VerifEye для iPhone или Android." },
         { title: "Записываете цифру от 1 до 6", text: "Никому её не говорите. Садитесь в тихой комнате с ровным освещением, без очков, телефон перед лицом, взгляд чуть выше камеры." },
         { title: "Проходите тест", text: "Сначала короткий тренировочный тест с буквами, потом вопросы о цифрах. На все вы отвечаете «Неправда», то есть отрицаете и свою цифру тоже. Время на ответ ограничено. Камера фиксирует реакции глаз: зрачок, движения, моргание." },
-        { title: "Получаете отчёт", text: "Алгоритм Converus считает реакции и ставит вашу цифру на первое место в отчёте. Мы отправляем вам отчёт в тот же день. Дальше решаете сами, нужен ли настоящий тест." },
+        { title: "Получаете отчёт", text: "Алгоритм Converus ранжирует цифры по реакциям. Чаще всего задуманная цифра на первом месте, но система может и ошибиться. Мы отправляем вам отчёт в тот же день. Дальше решаете сами, нужен ли настоящий тест." },
       ] },
       { type: "cards", title: "Почему это честный тест, а не фокус", cols: 2, items: [
         { title: "То же оборудование", text: "Тест на цифру проходит в том же приложении VerifEye и на том же сервере Converus, что и платные проверки на верность или для кандидатов." },
@@ -90,7 +90,7 @@ export const freeTestPage = {
         "Тест на цифру можно пройти бесплатно офлайн: в кабинете во Львове на станции EyeDetect, по предварительной записи. Фото для этого не нужны.",
         "Чтобы записаться, оставьте имя и телефон в форме ниже и напишите, что хотите пройти тест в кабинете, или позвоните: +380 68 68 333 68.",
       ] },
-      { type: "image", title: "Как выглядит отчёт числового теста", src: "/images/report-sample-verifeye-number.webp", alt: "Отчёт числового теста VerifEye", caption: "Настоящий отчёт VerifEye: четыре фото во время теста, качество данных и первое место для цифры, которую определил алгоритм. Персональные данные размыты.", width: 1100, height: 1557 },
+      { type: "image", title: "Как выглядит отчёт числового теста", src: "/images/report-sample-verifeye-number.webp", alt: "Отчёт числового теста VerifEye", caption: "Настоящий отчёт VerifEye: четыре фото во время теста, качество данных и цифры, упорядоченные алгоритмом по реакциям. Персональные данные размыты.", width: 1100, height: 1557 },
       { type: "text", tone: "white", title: "Что дальше, если технология убедила", paragraphs: [
         "Настоящий онлайн-тест VerifEye на ваши вопросы стоит от 2 500 ₴ и длится до 15 минут, отчёт в PDF до 5 минут после теста. Точность 84–89% по данным Converus. Подходит для проверки на верность, кандидатов на работу и людей в других городах.",
         "Если нужна максимальная точность и письменный отчёт сразу после теста, есть EyeDetect в кабинете во Львове или с выездом: 30–45 минут, точность 86–90%, от 5 500 ₴.",
@@ -130,7 +130,7 @@ export const freeTestPage = {
         { title: "Leave your name and phone", text: "We contact you during business hours and send a link to the test in the VerifEye app for iPhone or Android." },
         { title: "Write down a digit from 1 to 6", text: "Tell no one. Sit in a quiet room with even lighting, no glasses, phone in front of your face, eyes slightly above the camera." },
         { title: "Take the test", text: "First a short practice test with letters, then questions about digits. You answer “False” to all of them, denying your own digit too. Answer time is limited. The camera records eye reactions: pupil, movements, blinks." },
-        { title: "Get the report", text: "The Converus algorithm scores the reactions and puts your digit in first place in the report. We send you the report the same day. Then you decide whether you need a real test." },
+        { title: "Get the report", text: "The Converus algorithm ranks the digits by your reactions. Usually the chosen digit comes first, but the system can be wrong. We send you the report the same day. Then you decide whether you need a real test." },
       ] },
       { type: "cards", title: "Why this is an honest test, not a trick", cols: 2, items: [
         { title: "The same equipment", text: "The number test runs in the same VerifEye app and on the same Converus server as paid fidelity or candidate tests." },
@@ -143,7 +143,7 @@ export const freeTestPage = {
         "The number test can also be taken for free offline: at the EyeDetect station in our Lviv office, by appointment. No photos are needed for it.",
         "To book, leave your name and phone in the form below and mention that you want to take the test in the office, or call +380 68 68 333 68.",
       ] },
-      { type: "image", title: "What the number test report looks like", src: "/images/report-sample-verifeye-number.webp", alt: "VerifEye number test report", caption: "A real VerifEye report: four photos taken during the test, data quality, and first place for the digit the algorithm identified. Personal data blurred.", width: 1100, height: 1557 },
+      { type: "image", title: "What the number test report looks like", src: "/images/report-sample-verifeye-number.webp", alt: "VerifEye number test report", caption: "A real VerifEye report: four photos taken during the test, data quality, and the digits ranked by the algorithm by reaction. Personal data blurred.", width: 1100, height: 1557 },
       { type: "text", tone: "white", title: "What comes next if the technology convinced you", paragraphs: [
         "A real VerifEye online test on your questions costs from UAH 2,500 and takes up to 15 minutes, with a PDF report within 5 minutes after the test. Accuracy 84–89% according to Converus. Suitable for fidelity checks, job candidates and people in other cities.",
         "If you need maximum accuracy and a written report right after the test, there is EyeDetect in our Lviv office or on-site: 30–45 minutes, 86–90% accuracy, from UAH 5,500.",

@@ -2,8 +2,8 @@ import { getVerifeyeStudy } from "@/data/verifeyeStudy";
 import styles from "./StudyLinks.module.scss";
 
 // Рядок з посиланнями на дослідження VerifEye
-const StudyLinks = ({ lang }) => {
-  const s = getVerifeyeStudy(lang);
+const StudyLinks = ({ lang, kind }) => {
+  const s = getVerifeyeStudy(lang, kind);
   return (
     <p className={styles.links}>
       {s.label}{" "}

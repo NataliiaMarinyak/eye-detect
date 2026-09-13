@@ -35,7 +35,7 @@ const ContentFaq = ({ items = [], lang = "uk", title }) => {
                 </h3>
                 <div id={`cfaq-${i}`} className={`${styles.panel} ${isOpen ? styles.isOpen : ""}`}>
                   <p className={styles.answer}>{it.a}</p>
-                  {it.study && <StudyLinks lang={lang} />}
+                  {it.study && <StudyLinks lang={lang} kind={it.study} />}
                 </div>
               </li>
             );
