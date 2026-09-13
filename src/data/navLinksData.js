@@ -1,8 +1,8 @@
 export const navLinksData = [
   {
-    title: "Головна",
-    titleRus: "Главная",
-    titleEng: "Home",
+    title: "Львів",
+    titleRus: "Львов",
+    titleEng: "Lviv",
     href: "/",
   },
   {
