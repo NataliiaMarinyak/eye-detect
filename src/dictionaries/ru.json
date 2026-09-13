@@ -93,7 +93,7 @@
     "invalidEmail": "Не валидный адрес"
   },
   "buttons": {
-    "calculatePrice": "Рассчитать стоимость",
+    "calculatePrice": "Рассчитать точную стоимость",
     "orderConsultation": "Заказать консультацию",
     "askSpecialist": "Задать вопрос специалисту",
     "moreDetails": "Узнать подробнее",

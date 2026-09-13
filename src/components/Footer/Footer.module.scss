@@ -2,86 +2,194 @@
 
 .footer {
   background-color: $footerBgColor;
-
+  color: $textLightColor;
   @include sectionSidePadding;
-  @include sectionTopBottomPadding;
+  padding-top: 48px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: $laptop) {
+    padding-top: 64px;
+    padding-bottom: 28px;
+  }
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  gap: 32px;
+}
 
-  color: $textLightColor;
-  font-size: 16px;
+.grid {
+  display: grid;
+  gap: 32px;
 
   @media screen and (min-width: $tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    align-items: normal;
-    font-size: 18px;
-    gap: 0;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media screen and (min-width: $laptop) {
-    font-size: 20px;
+    grid-template-columns: minmax(0, 1.6fr) repeat(4, minmax(0, 1fr));
+    gap: 32px;
   }
 }
 
-.list {
+.colBrand {
+  @media screen and (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+
+  @media screen and (min-width: $laptop) {
+    grid-column: auto;
+    padding-right: 24px;
+  }
+}
+
+.links {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 8px;
-
-  & svg {
-    stroke: $textLightColor;
-    fill: none;
-
-    width: 24px;
-    height: 24px;
-  }
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.socMedia {
-  flex-direction: row;
-
-  & span {
-    display: none;
-  }
-
-  @media screen and (min-width: $tablet) {
-    flex-direction: column;
-
-    & span {
-      display: inline-block;
-    }
-  }
-}
-
-.item {
+.col {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 12px;
+  font-size: 15px;
+}
 
+.brand {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: $textLightColor;
+}
+
+.about {
+  max-width: 380px;
+  margin: 0 0 4px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.colTitle {
+  margin: 0 0 4px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   font-style: normal;
 }
 
-.viber,
-.whatsapp {
+.contactLink,
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: $textLightColor;
+  font-size: 15px;
+  line-height: 1.4;
+  transition: color 200ms ease;
+
   & svg {
-    fill: $textLightColor;
-    stroke: none;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: #93c5fd;
   }
 }
 
-.nav {
-  display: none;
+.contactLink:first-child {
+  font-family: var(--font-bold);
+  font-size: 18px;
+}
 
-  @media screen and (min-width: $laptop) {
-    display: flex;
+.navLink {
+  font-size: 15px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 200ms ease;
+
+  &:hover,
+  &:focus-visible {
+    color: #93c5fd;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+.socialIcon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: $textLightColor;
+  transition: border-color 200ms ease, color 200ms ease;
+
+  & svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: #93c5fd;
+    border-color: #93c5fd;
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.copy {
+  margin: 0;
+}
+
+.privacy {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: $textLightColor;
   }
 }

@@ -93,7 +93,7 @@
     "invalidEmail": "Не валідна адреса"
   },
   "buttons": {
-    "calculatePrice": "Розрахувати вартість",
+    "calculatePrice": "Розрахувати точну вартість",
     "orderConsultation": "Замовити консультацію",
     "askSpecialist": "Задати питання спеціалісту",
     "moreDetails": "Дізнатись більше",

@@ -30,10 +30,12 @@
     }
 
     @media screen and (min-width: $laptop) {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
         align-items: start;
+        width: 100%;
         row-gap: 0px;
-        column-gap: 24px;
+        column-gap: 40px;
     }
 }
 
@@ -41,6 +43,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+    width: 100%;
 
     @media screen and (min-width: $tablet) {
         row-gap: 12px;
