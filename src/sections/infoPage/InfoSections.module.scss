@@ -286,6 +286,34 @@
   color: $subTitleColor;
 }
 
+.figure {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  width: 100%;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figureImg {
+  @include card;
+  overflow: hidden;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.figureCaption {
+  font-size: 14px;
+  text-align: center;
+  color: $subTitleColor;
+}
+
 .quote {
   margin: 0;
   padding: 24px 24px 24px 28px;

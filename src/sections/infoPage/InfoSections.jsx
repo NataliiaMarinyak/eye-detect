@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal/Reveal";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { i18n } from "@/dictionaries/i18n.config";
@@ -148,6 +149,20 @@ const Block = ({ b, lang }) => {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+      );
+    case "image":
+      return (
+        <section className={b.tone === "white" ? styles.white : ""}>
+          <div className={`container ${styles.container} ${styles.narrow}`}>
+            <Head title={b.title} sub={b.sub} />
+            <Reveal as="figure" className={styles.figure}>
+              <div className={styles.figureImg}>
+                <Image src={b.src} alt={b.alt || b.title || ""} width={b.width || 1100} height={b.height || 1557} sizes="(max-width: 1023px) 100vw, 860px" />
+              </div>
+              {b.caption && <figcaption className={styles.figureCaption}>{b.caption}</figcaption>}
+            </Reveal>
           </div>
         </section>
       );

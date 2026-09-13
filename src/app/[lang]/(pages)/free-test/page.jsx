@@ -34,7 +34,7 @@ const FreeTestPage = async ({ params }) => {
         facts={d.hero.facts}
         primary={d.hero.primary}
         service={d.form.service}
-        photo="/images/converus/verifeye-phone.webp"
+        photo="/images/converus/verifeye-test.webp"
         photoAlt="VerifEye"
       />
       <InfoSections blocks={d.blocks} lang={lang} />

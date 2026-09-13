@@ -13,7 +13,7 @@ const PHOTOS = {
   counselors: "/images/converus/eyedetect-examinee.webp",
   recruiting: "/images/converus/verifeye-test.webp",
   miltech: "/images/converus/eyedetect-station-angle.webp",
-  "remote-teams": "/images/converus/verifeye-phone.webp",
+  "remote-teams": "/images/converus/verifeye-test-2.webp",
   logistics: "/images/converus/eyedetect-station-white.webp",
   retail: "/images/converus/eyedetect-examinee.webp",
   "real-estate": "/images/converus/eyedetect-station-front.webp",
