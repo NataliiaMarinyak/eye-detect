@@ -28,11 +28,11 @@ export const FAQDataHome = [
     questionRus: "Как проходит процедура тестирования EyeDetect?",
     questionEng: "How does an EyeDetect examination work?",
     answer:
-      "Спочатку експерт уточнює ситуацію та формулює запитання разом із вами. Далі проводиться короткий інструктаж і калібрування камери. Сам тест триває за комп’ютером, де ви відповідаєте «Так» або «Ні» на серію запитань. Після завершення дані автоматично шифруються та надсилаються на захищений сервер Converus, де алгоритм формує звіт. Весь візит зазвичай займає до 60 хвилин.",
+      "Спочатку експерт уточнює ситуацію та формулює запитання разом із вами. Далі проводиться короткий інструктаж і калібрування камери. Сам тест триває за комп’ютером, де ви читаєте серію тверджень і відповідаєте «правда» або «неправда». Після завершення дані автоматично шифруються та надсилаються на захищений сервер Converus, де алгоритм формує звіт. Весь візит зазвичай займає до 60 хвилин.",
     answerRus:
-      "Сначала эксперт уточняет ситуацию и формулирует вопросы вместе с вами. Далее проводится краткий инструктаж и калибровка камеры. Сам тест проходит за компьютером, где вы отвечаете «Да» или «Нет» на серию вопросов. После завершения данные автоматически шифруются и отправляются на защищенный сервер Converus, где алгоритм формирует отчет. Весь визит обычно занимает до 60 минут.",
+      "Сначала эксперт уточняет ситуацию и формулирует вопросы вместе с вами. Далее проводится краткий инструктаж и калибровка камеры. Сам тест проходит за компьютером, где вы читаете серию утверждений и отвечаете «правда» или «неправда». После завершения данные автоматически шифруются и отправляются на защищенный сервер Converus, где алгоритм формирует отчет. Весь визит обычно занимает до 60 минут.",
     answerEng:
-      "First, the examiner reviews the situation with you and formulates the test questions together. Next comes a brief instruction phase and camera calibration. The test itself takes place on a computer where you answer Yes or No to a series of questions. When finished, the data is encrypted automatically and transmitted to a secure Converus server, where the algorithm generates the report. The full visit typically takes up to 60 minutes.",
+      "First, the examiner reviews the situation with you and formulates the test questions together. Next comes a brief instruction phase and camera calibration. The test itself takes place on a computer where you read a series of statements and answer true or false. When finished, the data is encrypted automatically and transmitted to a secure Converus server, where the algorithm generates the report. The full visit typically takes up to 60 minutes.",
   },
   {
     question: "Яка точність тесту EyeDetect?",

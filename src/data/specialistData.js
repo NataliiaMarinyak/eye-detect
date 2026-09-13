@@ -1,8 +1,8 @@
 export const specialistData = [
   {
-    title: "Освіта та кар’єра в сфері психології та поліграфії",
-    titleRus: "Образование и карьера в сфере психологии и полиграфии",
-    titleEng: "Education and career in psychology and polygraphy",
+    title: "Освіта та кар’єра: психологія і перевірки на поліграфі",
+    titleRus: "Образование и карьера: психология и проверки на полиграфе",
+    titleEng: "Education and career in psychology and polygraph testing",
     details: [
       {
         subTitle: "Львівський державний університет внутрішніх справ",
@@ -34,9 +34,9 @@ export const specialistData = [
     img: "/images/specialist1.webp",
   },
   {
-    title: "Практичний досвід у галузі поліграфії",
-    titleRus: "Практический опыт в области полиграфии",
-    titleEng: "Practical experience in polygraphy",
+    title: "Практичний досвід проведення перевірок на поліграфі",
+    titleRus: "Практический опыт проведения проверок на полиграфе",
+    titleEng: "Practical experience in polygraph testing",
     details: [
       {
         subTitle:
@@ -51,16 +51,16 @@ export const specialistData = [
         ],
         listRus: [
           "Диагностика, разработка и проведение лекций и практических занятий.",
-          "Проведение тестов для модульного управления.",
+          "Разработка тестов для модульного контроля.",
         ],
         listEng: [
           "Diagnostic work; designing and delivering lectures and practical classes.",
-          "Developing module-control tests for students.",
+          "Developing end-of-module assessments for students.",
         ],
       },
       {
         subTitle: "Практика \"Турківська районна державна адміністрація\"",
-        subTitleRus: 'Практика "Турковская районная державна администрация"',
+        subTitleRus: 'Практика "Турковская районная государственная администрация"',
         subTitleEng: "Internship: Turka District State Administration",
         list: ["Діагностика, проведення тренінгів і міні-лекцій."],
         listRus: ["Диагностика, проведение тренингов и мини-лекций."],

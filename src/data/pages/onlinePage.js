@@ -19,7 +19,7 @@ export const onlinePage = {
       title: "Що саме ви замовляєте",
       items: [
         { title: "Застосунок VerifEye від Converus", text: "Той самий розробник, що й EyeDetect, але інший продукт: тест проходить у застосунку на iPhone або Android. Фронтальна камера фіксує зіницю, рухи очей і моргання, мікрофон записує відповіді." },
-        { title: "Точність 84–89%", text: "У валідаційному дослідженні Converus 2024 року (123 учасники, лабораторні умови, тест VerifEye 3R) точність склала 89%. Converus заявляє 84–89% залежно від умов: 89% під наглядом спеціаліста за ідеальних умов, ближче до 84% без них; освітлення, телефон і дотримання інструкцій впливають на результат, тому ми даємо детальну інструкцію перед тестом. EyeDetect у кабінеті точніший (86–90%)." },
+        { title: "Точність 84–89%", study: true, text: "У валідаційному дослідженні Converus 2024 року (123 учасники, лабораторні умови, тест VerifEye 3R) точність склала 89%. Converus заявляє 84–89% залежно від умов: 89% під наглядом спеціаліста за ідеальних умов, ближче до 84% без них; освітлення, телефон і дотримання інструкцій впливають на результат, тому ми даємо детальну інструкцію перед тестом. EyeDetect у кабінеті точніший (86–90%)." },
         { title: "Звіт і пояснення спеціаліста", text: "Ви отримуєте оцінку достовірності Converus (Credibility Score), висновок «заслуговує / не заслуговує довіри» і відповіді людини. Наш спеціаліст готує питання, перевіряє умови тесту і пояснює звіт." },
       ],
     },
@@ -51,7 +51,7 @@ export const onlinePage = {
       items: ["смартфон iPhone або Android із фронтальною камерою, підключений до Wi-Fi", "безкоштовний застосунок VerifEye: посилання саме відкриє магазин застосунків, треба дати доступ до камери, мікрофона і динаміка", "тиха кімната без навушників, рівне помірне світло, без вікна, телевізора чи монітора поруч", "окуляри зняти, контактні лінзи можна лишити", "20 вільних хвилин без дзвінків", "згода на тест: примусово перевірити нікого не можна"],
     },
     faq: [
-      { q: "Чи можна обманути онлайн-тест?", a: "Зіниця і мікрорухи очей не контролюються свідомо. Якщо людина відповідає навмання, відводить погляд від екрана або порушує інструкції, тест визнається недійсним і проводиться повторно." },
+      { q: "Чи можна обманути онлайн-тест?", a: "Зіниця і мікрорухи очей не контролюються свідомо. Якщо людина відповідає навмання, відводить погляд від екрана або порушує інструкції, тест визнається невизначеним і проводиться повторно." },
       { q: "Що, як тест перервали дзвінком?", a: "Тест можна пройти повторно за тим самим посиланням. Радимо ввімкнути авіарежим із Wi-Fi." },
       { q: "Чи побачить людина результат?", a: "Ні, звіт отримує лише замовник. Людина, що проходить тест, бачить лише завершення." },
       { q: "Чи підходить результат для суду?", a: "Ні. В Україні результати тестів на детекторі брехні не є доказом. Це інструмент для вашого рішення." },
@@ -80,7 +80,7 @@ export const onlinePage = {
       title: "Что именно вы заказываете",
       items: [
         { title: "Приложение VerifEye от Converus", text: "Тот же разработчик, что и EyeDetect, но другой продукт: тест проходит в приложении на iPhone или Android. Фронтальная камера фиксирует зрачок, движения глаз и моргание, микрофон записывает ответы." },
-        { title: "Точность 84–89%", text: "В валидационном исследовании Converus 2024 года (123 участника, лабораторные условия, тест VerifEye 3R) точность составила 89%. Converus заявляет 84–89% в зависимости от условий: 89% под наблюдением специалиста при идеальных условиях, ближе к 84% без них; освещение, телефон и соблюдение инструкций влияют на результат, поэтому мы даём подробную инструкцию перед тестом. EyeDetect в кабинете точнее (86–90%)." },
+        { title: "Точность 84–89%", study: true, text: "В валидационном исследовании Converus 2024 года (123 участника, лабораторные условия, тест VerifEye 3R) точность составила 89%. Converus заявляет 84–89% в зависимости от условий: 89% под наблюдением специалиста при идеальных условиях, ближе к 84% без них; освещение, телефон и соблюдение инструкций влияют на результат, поэтому мы даём подробную инструкцию перед тестом. EyeDetect в кабинете точнее (86–90%)." },
         { title: "Отчёт и пояснение специалиста", text: "Вы получаете оценку достоверности Converus (Credibility Score), вывод «заслуживает / не заслуживает доверия» и ответы человека. Наш специалист готовит вопросы, проверяет условия теста и объясняет отчёт." },
       ],
     },
@@ -112,7 +112,7 @@ export const onlinePage = {
       items: ["смартфон iPhone или Android с фронтальной камерой, подключённый к Wi-Fi", "бесплатное приложение VerifEye: ссылка сама откроет магазин приложений, нужно дать доступ к камере, микрофону и динамику", "тихая комната без наушников, ровный умеренный свет, без окна, телевизора или монитора рядом", "очки снять, контактные линзы можно оставить", "20 свободных минут без звонков", "согласие на тест: принудительно проверить никого нельзя"],
     },
     faq: [
-      { q: "Можно ли обмануть онлайн-тест?", a: "Зрачок и микродвижения глаз не контролируются сознательно. Если человек отвечает наугад, отводит взгляд от экрана или нарушает инструкции, тест признаётся недействительным и проводится повторно." },
+      { q: "Можно ли обмануть онлайн-тест?", a: "Зрачок и микродвижения глаз не контролируются сознательно. Если человек отвечает наугад, отводит взгляд от экрана или нарушает инструкции, тест признаётся неопределённым и проводится повторно." },
       { q: "Что, если тест прервали звонком?", a: "Тест можно пройти повторно по той же ссылке. Советуем включить авиарежим с Wi-Fi." },
       { q: "Увидит ли человек результат?", a: "Нет, отчёт получает только заказчик. Человек, проходящий тест, видит только завершение." },
       { q: "Подходит ли результат для суда?", a: "Нет. В Украине результаты тестов на детекторе лжи не являются доказательством. Это инструмент для вашего решения." },
@@ -141,7 +141,7 @@ export const onlinePage = {
       title: "What exactly you are ordering",
       items: [
         { title: "The VerifEye app by Converus", text: "The same developer as EyeDetect, but a different product: the test runs in an app on an iPhone or Android phone. The front camera records the pupil, eye movements, and blinking; the microphone records the answers." },
-        { title: "84–89% accuracy", text: "In a 2024 Converus validation study (123 participants, laboratory conditions, VerifEye 3R test) accuracy was 89%. Converus states 84–89% depending on conditions: 89% under an examiner's supervision in ideal conditions, closer to 84% without them; lighting, the phone, and adherence to instructions affect the result, so we provide detailed instructions before the test. EyeDetect in our Lviv office is more accurate (86–90%)." },
+        { title: "84–89% accuracy", study: true, text: "In a 2024 Converus validation study (123 participants, laboratory conditions, VerifEye 3R test) accuracy was 89%. Converus states 84–89% depending on conditions: 89% under an examiner's supervision in ideal conditions, closer to 84% without them; lighting, the phone, and adherence to instructions affect the result, so we provide detailed instructions before the test. EyeDetect in our Lviv office is more accurate (86–90%)." },
         { title: "Report and the examiner's explanation", text: "You receive the Converus Credibility Score, a “credible / not credible” conclusion, and the person's answers. Our examiner prepares the questions, checks the test conditions, and explains the report." },
       ],
     },
@@ -173,7 +173,7 @@ export const onlinePage = {
       items: ["an iPhone or Android smartphone with a front camera, connected to Wi-Fi", "the free VerifEye app: the link opens the app store itself; access to the camera, microphone, and speaker must be granted", "a quiet room with no headphones, even moderate lighting, no window, TV, or monitor nearby", "glasses off; contact lenses can stay in", "20 free minutes with no calls", "consent to the test: no one can be tested against their will"],
     },
     faq: [
-      { q: "Can the online test be fooled?", a: "The pupil and the micro-movements of the eyes cannot be controlled consciously. If a person answers at random, looks away from the screen, or breaks the instructions, the test is declared invalid and repeated." },
+      { q: "Can the online test be fooled?", a: "The pupil and the micro-movements of the eyes cannot be controlled consciously. If a person answers at random, looks away from the screen, or breaks the instructions, the test is declared inconclusive and repeated." },
       { q: "What if the test is interrupted by a call?", a: "The test can be retaken via the same link. We recommend turning on airplane mode with Wi-Fi enabled." },
       { q: "Will the person see the result?", a: "No, only the client receives the report. The person taking the test sees only that it has finished." },
       { q: "Can the result be used in court?", a: "No. In Ukraine, lie detector test results are not admissible as evidence. This is a tool for your decision." },

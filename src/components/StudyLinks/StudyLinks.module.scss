@@ -1,0 +1,11 @@
+.links {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  a {
+    color: var(--color-primary, #1f5fbf);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}

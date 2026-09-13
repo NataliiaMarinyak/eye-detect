@@ -2,6 +2,7 @@ import Image from "next/image";
 import Reveal from "@/components/Reveal/Reveal";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
+import StudyLinks from "@/components/StudyLinks/StudyLinks";
 import styles from "./OnlineSections.module.scss";
 
 // Секції сторінки /online. Дані: src/data/pages/onlinePage.js
@@ -16,6 +17,7 @@ const OnlineSections = ({ d, lang, dictionary }) => (
             <Reveal as="li" key={it.title} delay={i * 0.06} className={styles.card}>
               <h3 className={styles.cardTitle}>{it.title}</h3>
               <p className={styles.cardText}>{it.text}</p>
+              {it.study && <StudyLinks lang={lang} />}
             </Reveal>
           ))}
         </ul>

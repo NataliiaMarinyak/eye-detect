@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import StudyLinks from "@/components/StudyLinks/StudyLinks";
 import styles from "./ContentFaq.module.scss";
 
 const TITLES = { uk: "Питання і відповіді", ru: "Вопросы и ответы", en: "Questions and answers" };
@@ -34,6 +35,7 @@ const ContentFaq = ({ items = [], lang = "uk", title }) => {
                 </h3>
                 <div id={`cfaq-${i}`} className={`${styles.panel} ${isOpen ? styles.isOpen : ""}`}>
                   <p className={styles.answer}>{it.a}</p>
+                  {it.study && <StudyLinks lang={lang} />}
                 </div>
               </li>
             );

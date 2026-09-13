@@ -70,10 +70,10 @@ export const logistics = {
     blocks: [
       { type: "cards", title: "Where it helps", items: [
         { title: "Shortage after a stock count", text: "The audit shows a loss, and ten people had access to the area. A single-issue test for everyone with access shows in one day whom to look at further and whom to clear." },
-        { title: "Fuel siphoning and off-the-books trips", text: "Consumption does not match GPS and norms, extra kilometers appear on the route. Questions about specific actions within a specific period: siphoning fuel, carrying cargo not listed on the delivery note." },
-        { title: "Warehouse theft", text: "Goods disappear from shelves, pallets, or during receiving. Testing of the warehouse staff, loaders, and driver-forwarders who worked the shift." },
+        { title: "Fuel siphoning and off-the-books trips", text: "Fuel consumption does not match GPS records and expected consumption rates, extra kilometers appear on the route. Questions about specific actions within a specific period: siphoning fuel, carrying cargo not listed on the delivery note." },
+        { title: "Warehouse theft", text: "Goods disappear from shelves, pallets, or during receiving. Testing of the warehouse staff, loaders, and delivery drivers responsible for the cargo who worked the shift." },
         { title: "Collusion with a customer or supplier", text: "A driver or forwarder makes a deal with the delivery point: a short delivery is recorded as complete and the difference is split. The test checks the fact of the deal and the benefit received." },
-        { title: "Hiring drivers and warehouse staff", text: "Before handing someone a truck with a million worth of goods, it helps to know whether they stole at a previous job and whether they use drugs or alcohol while driving." },
+        { title: "Hiring drivers and warehouse staff", text: "Before handing someone a truck with high-value cargo, it helps to know whether they stole at a previous job and whether they use drugs or alcohol while driving." },
         { title: "Scheduled testing", text: "Every six months or once a year for staff with material responsibility. When the team knows testing is regular, the number of shortages drops before the first test." },
       ] },
       { type: "list", title: "What can be tested", cols: 3, items: ["theft of goods from the warehouse or vehicle", "siphoning or selling fuel", "carrying cargo not on the delivery notes", "collusion with a customer or supplier", "substituting goods during receiving", "fake damage and write-offs", "drug or alcohol use while driving", "passing route and cargo data to outsiders", "theft at previous jobs"] },
