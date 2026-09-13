@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { getQuiz, quizSteps, estimateQuiz, trafficSource } from "@/data/quizData";
+import { getQuiz, quizSteps, estimateQuiz } from "@/data/quizData";
+import { track, attributionForLead } from "@/helpers/analytics";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
 import styles from "./PriceQuiz.module.scss";
 
@@ -10,14 +11,7 @@ import { OPEN_QUIZ_EVENT } from "./quizEvent";
 
 const TEL = "+380686833368";
 const TEL_H = "+380 68 68 333 68";
-const SOURCE_KEY = "eye_first_source";
 
-const track = (event, params = {}) => {
-  try {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event, ...params });
-  } catch {}
-};
 
 const PriceQuiz = ({ lang = "uk" }) => {
   const t = getQuiz(lang);
@@ -34,12 +28,6 @@ const PriceQuiz = ({ lang = "uk" }) => {
 
   const steps = useMemo(() => quizSteps(t, branch), [t, branch]);
 
-  // Перше джерело трафіку за сесію: зберігаємо на першій сторінці, де змонтовано квіз.
-  useEffect(() => {
-    try {
-      if (!sessionStorage.getItem(SOURCE_KEY)) sessionStorage.setItem(SOURCE_KEY, trafficSource());
-    } catch {}
-  }, []);
 
   const reset = () => {
     setCur(0);
@@ -113,14 +101,11 @@ const PriceQuiz = ({ lang = "uk" }) => {
     const ukSteps = quizSteps(uk, branch);
     const optLabel = (o) => (typeof o === "string" ? o : o?.l);
     const lines = ukSteps.map((st, i) => `${st.k}: ${optLabel(st.o?.[idx[i]]) || "—"}`);
-    let source = "";
-    try { source = sessionStorage.getItem(SOURCE_KEY) || ""; } catch {}
     const comment = [
       ...lines,
       `Зв'язок: ${uk.contact.channels[form.channel]}`,
       lang !== "uk" ? `Мова сайту: ${lang.toUpperCase()}` : null,
       `Розрахунок: ${estimateQuiz(branch, idx)}`,
-      source ? `Джерело: ${source}` : null,
       `Відкрито на: ${openedFrom.current}`,
     ].filter(Boolean).join("\n");
 
@@ -129,7 +114,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
     let ok = await sendToTelegram(lead);
     if (!ok) { await new Promise((r) => setTimeout(r, 1200)); ok = await sendToTelegram(lead); }
     if (ok) {
-      track("quiz_lead", { quiz_branch: branch, quiz_format: idx[3] ?? "" });
+      track("lead_quiz", { lead_branch: branch, lead_format: ["online", "office", "visit", "unsure"][idx[3]] || "", lead_source: attributionForLead().source });
       setStatus("idle");
       setCur(6);
     } else {

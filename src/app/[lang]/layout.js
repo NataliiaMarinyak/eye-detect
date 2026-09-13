@@ -26,6 +26,7 @@ const fontHead = localFont({
   variable: "--font-head",
 });
 import DeferredGtm from "@/components/DeferredGtm/DeferredGtm";
+import AnalyticsEvents from "@/components/AnalyticsEvents/AnalyticsEvents";
 import { Toaster } from "sonner";
 import { SiteProvider } from "@/context/SiteContext";
 // import TranslatorProvider from "@/translator/TranslatorProvider";
@@ -114,6 +115,7 @@ export default async function RootLayout({ children, params }) {
           ></iframe>
         </noscript>
         <DeferredGtm gtmId={GTM_ID} />
+        <AnalyticsEvents />
         <SiteProvider>
           {/* <TranslatorProvider> */}
           <Header lang={lang} dictionary={dictionary} />

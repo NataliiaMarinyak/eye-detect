@@ -1,5 +1,7 @@
 // Надсилає заявку на серверний маршрут /api/lead. Токен бота в браузер не потрапляє.
 // Повертає true, якщо заявка доставлена, інакше false.
+import { attributionForLead } from "@/helpers/analytics";
+
 export const sendToTelegram = async (formData) => {
   try {
     const response = await fetch("/api/lead", {
@@ -7,6 +9,7 @@ export const sendToTelegram = async (formData) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         ...formData,
+        attribution: typeof window !== "undefined" ? attributionForLead().text : "",
         page: typeof window !== "undefined" ? window.location.pathname : "",
       }),
     });

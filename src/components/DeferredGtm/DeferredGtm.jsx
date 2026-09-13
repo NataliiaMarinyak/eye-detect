@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { hasAdParams } from "@/helpers/analytics";
 
 // Google Tag Manager із відкладеним завантаженням.
 // Скрипт GTM важить ~400 КБ і блокує головний потік на слабких телефонах на 2–4 с,
@@ -28,6 +29,12 @@ export default function DeferredGtm({ gtmId }) {
       s.src = `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(gtmId)}`;
       document.head.appendChild(s);
     };
+
+    // Відвідувачі з реклами (gclid, fbclid, utm): вантажимо одразу, щоб не втратити клік і конверсію.
+    if (hasAdParams()) {
+      load();
+      return;
+    }
 
     EVENTS.forEach((e) => window.addEventListener(e, load, { passive: true, once: true }));
     const arm = () => {

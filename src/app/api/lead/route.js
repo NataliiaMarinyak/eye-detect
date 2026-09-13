@@ -28,6 +28,7 @@ export async function POST(request) {
   const email = clean(body.email, 120);
   const comment = cleanMultiline(body.comment, 1500);
   const page = clean(body.page, 200);
+  const attribution = cleanMultiline(body.attribution, 600);
   const service = clean(body.service, 120);
 
   if (!name || !tel) {
@@ -53,6 +54,7 @@ export async function POST(request) {
     `Телефон: ${tel}`,
     email ? `Email: ${email}` : null,
     comment ? (comment.includes("\n") ? `\n${comment}` : `Повідомлення: ${comment}`) : null,
+    attribution ? `\n${attribution}` : null,
   ].filter(Boolean);
 
   try {

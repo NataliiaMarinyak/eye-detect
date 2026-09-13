@@ -9,6 +9,7 @@ import { toast } from "sonner";
 import { useModalActions } from "@/hooks/modalActions";
 import { orderFormSchema } from "@/yupSchemas/orderFormSchema";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
+import { track, attributionForLead } from "@/helpers/analytics";
 import styles from "./OrderForm.module.scss";
 
 // compact — лише ім'я і телефон (для спливаючого вікна, щоб кнопка була видна без прокрутки).
@@ -53,6 +54,7 @@ const OrderForm = ({ dictionary, service = "", compact = true }) => {
   const onSubmit = async (data) => {
     const ok = await sendToTelegram({ ...data, service });
     if (ok) {
+      track("lead_form", { lead_service: service || "консультація", lead_source: attributionForLead().source });
       toast.success(dictionary.notifications.success);
       closeModal();
     } else {
