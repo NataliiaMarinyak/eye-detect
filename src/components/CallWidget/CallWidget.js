@@ -1,11 +1,19 @@
 "use client";
 import { useEffect } from "react";
 
+// Віджет дзвінка Binotel GetCall. Для кожної мови сайту свій віджет
+// (мова інтерфейсу задається в кабінеті Binotel: Get Call → Налаштування).
+// Хеш видно у коді для вставки після «getcall/widgets/».
+// Поки для en і ru не створено окремі віджети, вони беруть український.
+const WIDGETS = {
+  uk: "m0jpnihbe0t19nh0h1iw",
+  en: "m0jpnihbe0t19nh0h1iw",
+  ru: "m0jpnihbe0t19nh0h1iw",
+};
 
-export default function CallWidget() {
-
+export default function CallWidget({ lang = "uk" }) {
   useEffect(() => {
-    const widgetHash = "m0jpnihbe0t19nh0h1iw";
+    const widgetHash = WIDGETS[lang] || WIDGETS.uk;
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.async = true;
@@ -15,7 +23,7 @@ export default function CallWidget() {
     return () => {
       document.body.removeChild(script);
     };
-  }, []);
+  }, [lang]);
 
-  return null; // No UI, just loads the script
+  return null; // Без власного інтерфейсу, лише завантажує скрипт
 }

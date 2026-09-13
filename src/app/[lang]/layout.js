@@ -128,7 +128,7 @@ export default async function RootLayout({ children, params }) {
           />
           {/* </TranslatorProvider> */}
         </SiteProvider>
-        <CallWidget />
+        <CallWidget lang={lang} />
       </body>
     </html>
   );
