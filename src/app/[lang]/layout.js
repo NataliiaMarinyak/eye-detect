@@ -32,7 +32,6 @@ import { SiteProvider } from "@/context/SiteContext";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import CallWidget from "@/components/CallWidget/CallWidget";
-import PriceFloatBtn from "@/components/PriceFloatBtn/PriceFloatBtn";
 import { i18n } from "@/dictionaries/i18n.config";
 import { getDictionary } from "@/helpers/getDictionary";
 
@@ -129,7 +128,6 @@ export default async function RootLayout({ children, params }) {
           />
           {/* </TranslatorProvider> */}
         </SiteProvider>
-        <PriceFloatBtn title={dictionary.buttons.calculatePrice} />
         <CallWidget />
       </body>
     </html>
