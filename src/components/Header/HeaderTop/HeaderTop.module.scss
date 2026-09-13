@@ -98,3 +98,15 @@
     display: flex;
   }
 }
+
+// Дуже вузькі телефони (до 379px): без іконки телефону і трохи менший шрифт
+@media screen and (max-width: 379px) {
+  .headerTop {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .phone svg {
+    display: none;
+  }
+}
