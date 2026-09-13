@@ -12,6 +12,7 @@ const HeroSection = ({ dictionary }) => {
   return (
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
+        {hero.eyebrow && <p className={styles.eyebrowMobile}>{hero.eyebrow}</p>}
         <div className={styles.content}>
           {hero.eyebrow && <p className={styles.eyebrow}>{hero.eyebrow}</p>}
           <h1 className={styles.title}>{hero.h1 || hero.title}</h1>
