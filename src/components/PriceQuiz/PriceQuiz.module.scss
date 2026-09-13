@@ -290,10 +290,20 @@
   border: 1.5px solid $lineColor;
   border-radius: 100px;
   background: #fff;
+  color: $textDarkColor;
   font-size: 15px;
   cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
 
   &:hover { border-color: $primary; }
+
+  // Обраний канал: заливка кольором бренду, щоб вибір було добре видно
+  &.selected {
+    border-color: $primary;
+    background: $primary;
+    color: #fff;
+    font-weight: 700;
+  }
 }
 
 .error {

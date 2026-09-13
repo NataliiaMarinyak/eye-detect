@@ -142,7 +142,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
     <div className={styles.overlay} onMouseDown={(e) => e.target === e.currentTarget && close()}>
       <div className={styles.dialog} role="dialog" aria-modal="true" aria-label={t.headline} tabIndex={-1} ref={dialogRef}>
         <div className={styles.top}>
-          <span className={styles.stepOf}>{cur < 5 ? t.stepOf.replace("{n}", cur + 1) : cur === 5 ? t.lastStep : ""}</span>
+          <span />
           <button type="button" className={styles.close} onClick={close} aria-label={t.close}>×</button>
         </div>
         {cur < 6 && (
@@ -186,7 +186,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
 
             <label className={styles.field}>
               <span className={styles.label}>{t.contact.phone}</span>
-              <input type="text" autoComplete="tel" placeholder="+380 67 123 45 67 або @нікнейм" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} aria-invalid={!!errors.phone} />
+              <input type="text" autoComplete="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} aria-invalid={!!errors.phone} />
               {errors.phone && <span className={styles.error}>{errors.phone}</span>}
             </label>
 
