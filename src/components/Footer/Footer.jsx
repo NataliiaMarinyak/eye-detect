@@ -1,5 +1,4 @@
 import Link from "next/link";
-import PrivacyPolicy from "./PrivacyPolicy";
 import { socialMediaData } from "@/data/socialMediaData";
 import { addressData } from "@/data/addressData";
 import { i18n } from "@/dictionaries/i18n.config";
@@ -11,13 +10,13 @@ const GROUPS = {
     { title: "Послуги", links: [["/eyedetect", "Детектор брехні EyeDetect"], ["/online", "Онлайн-тест VerifEye"], ["/business", "Перевірка персоналу"], ["/prices", "Ціни"], ["/locations", "Виїзд по Україні та Європі"]] },
     { title: "Ситуації", links: [["/situations/fidelity", "Перевірка на вірність"], ["/situations/theft", "Крадіжка"], ["/situations/leak", "Витік інформації"], ["/situations/hiring", "Кандидат на роботу"], ["/situations/dispute", "Спір без доказів"]] },
     { title: "Для кого", links: [["/for/lawyers", "Юристам і детективам"], ["/for/finance", "Банкам і фінкомпаніям"], ["/for/security", "Охоронним компаніям"], ["/for/hr", "HR і рекрутерам"], ["/for/counselors", "Психологам"]] },
-    { title: "Знання", links: [["/faq", "Питання і відповіді"], ["/converus", "Про Converus і науку"], ["/blog", "Блог"], ["/about-us", "Про спеціаліста"], ["/contacts", "Контакти"]] },
+    { title: "Знання", links: [["/faq", "Питання і відповіді"], ["/converus", "Про Converus і науку"], ["/blog", "Блог"], ["/about-us", "Про спеціаліста"], ["/contacts", "Контакти"], ["/privacy-policy", "Політика конфіденційності"]] },
   ],
   ru: [
     { title: "Услуги", links: [["/eyedetect", "Детектор лжи EyeDetect"], ["/online", "Онлайн-тест VerifEye"], ["/business", "Проверка персонала"], ["/prices", "Цены"], ["/locations", "Выезд по Украине и Европе"]] },
     { title: "Ситуации", links: [["/situations/fidelity", "Проверка на верность"], ["/situations/theft", "Кража"], ["/situations/leak", "Утечка информации"], ["/situations/hiring", "Кандидат на работу"], ["/situations/dispute", "Спор без доказательств"]] },
     { title: "Для кого", links: [["/for/lawyers", "Юристам и детективам"], ["/for/finance", "Банкам и финкомпаниям"], ["/for/security", "Охранным компаниям"], ["/for/hr", "HR и рекрутерам"], ["/for/counselors", "Психологам"]] },
-    { title: "Знания", links: [["/faq", "Вопросы и ответы"], ["/converus", "О Converus и науке"], ["/blog", "Блог"], ["/about-us", "О специалисте"], ["/contacts", "Контакты"]] },
+    { title: "Знания", links: [["/faq", "Вопросы и ответы"], ["/converus", "О Converus и науке"], ["/blog", "Блог"], ["/about-us", "О специалисте"], ["/contacts", "Контакты"], ["/privacy-policy", "Политика конфиденциальности"]] },
   ],
 };
 
@@ -82,8 +81,7 @@ const Footer = ({ lang, dictionary }) => {
         </div>
 
         <div className={styles.bottom}>
-          <p className={styles.copy}>© {new Date().getFullYear()} EyeDetect · {isUk ? "Львів" : "Львов"}. {t.rights}</p>
-          <PrivacyPolicy className={styles.privacy} lang={lang} dictionary={dictionary} />
+          <p className={styles.copy}>© 2024–{new Date().getFullYear()} EyeDetect · {isUk ? "Львів" : "Львов"}. {t.rights}</p>
         </div>
       </div>
     </footer>
