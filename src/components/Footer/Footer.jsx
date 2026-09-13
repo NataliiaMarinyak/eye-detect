@@ -7,13 +7,13 @@ import styles from "./Footer.module.scss";
 // Підвал за принципом Converus: колонки за темами, без «Головна» (на неї веде логотип).
 const GROUPS = {
   uk: [
-    { title: "Послуги", links: [["/eyedetect", "Детектор брехні EyeDetect"], ["/online", "Онлайн-тест VerifEye"], ["/business", "Для бізнесу"], ["/prices", "Ціни"], ["/locations", "Виїзд по Україні та Європі"]] },
+    { title: "Послуги", links: [["/eyedetect", "Детектор брехні EyeDetect"], ["/online", "Онлайн-тест VerifEye"], ["/business", "Для бізнесу"], ["/prices", "Ціни"]] },
     { title: "Ситуації", links: [["/situations/fidelity", "Перевірка на вірність"], ["/situations/theft", "Крадіжка"], ["/situations/leak", "Витік інформації"], ["/situations/hiring", "Кандидат на роботу"], ["/situations/dispute", "Спір без доказів"]] },
     { title: "Для кого", links: [["/for/lawyers", "Юристам і детективам"], ["/for/finance", "Банкам і фінкомпаніям"], ["/for/security", "Охоронним компаніям"], ["/for/hr", "HR і рекрутерам"], ["/for/counselors", "Психологам"]] },
     { title: "Знання", links: [["/faq", "Питання і відповіді"], ["/converus", "Про Converus і науку"], ["/blog", "Блог"], ["/about-us", "Про спеціаліста"], ["/contacts", "Контакти"], ["/privacy-policy", "Політика конфіденційності"]] },
   ],
   ru: [
-    { title: "Услуги", links: [["/eyedetect", "Детектор лжи EyeDetect"], ["/online", "Онлайн-тест VerifEye"], ["/business", "Для бизнеса"], ["/prices", "Цены"], ["/locations", "Выезд по Украине и Европе"]] },
+    { title: "Услуги", links: [["/eyedetect", "Детектор лжи EyeDetect"], ["/online", "Онлайн-тест VerifEye"], ["/business", "Для бизнеса"], ["/prices", "Цены"]] },
     { title: "Ситуации", links: [["/situations/fidelity", "Проверка на верность"], ["/situations/theft", "Кража"], ["/situations/leak", "Утечка информации"], ["/situations/hiring", "Кандидат на работу"], ["/situations/dispute", "Спор без доказательств"]] },
     { title: "Для кого", links: [["/for/lawyers", "Юристам и детективам"], ["/for/finance", "Банкам и финкомпаниям"], ["/for/security", "Охранным компаниям"], ["/for/hr", "HR и рекрутерам"], ["/for/counselors", "Психологам"]] },
     { title: "Знания", links: [["/faq", "Вопросы и ответы"], ["/converus", "О Converus и науке"], ["/blog", "Блог"], ["/about-us", "О специалисте"], ["/contacts", "Контакты"], ["/privacy-policy", "Политика конфиденциальности"]] },
@@ -54,6 +54,10 @@ const Footer = ({ lang, dictionary }) => {
                 <svg><use href="/sprite.svg#icon-map_pin" /></svg>
                 {isUk ? addressData.textAddress : addressData.textAddressRus}
               </a>
+              <Link href={`${prefix}/locations`} className={styles.contactLink}>
+                <svg><use href="/sprite.svg#icon-map_pin" /></svg>
+                {isUk ? "Виїзд по Україні та Європі" : "Выезд по Украине и Европе"}
+              </Link>
             </address>
             <ul className={styles.socials}>
               {socials.map((s) => (
