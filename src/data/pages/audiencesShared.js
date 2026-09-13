@@ -6,6 +6,27 @@ export const cta = {
   en: (service) => ({ type: "cta", title: "Discuss your case", text: "Tell us who and what needs to be checked. We reply within an hour during business hours and suggest a test format for your situation.", button: "Get a proposal", service, secondaryHref: "/faq", secondaryLabel: "Questions and answers" }),
 };
 
+export const howVerifeye = {
+  uk: { type: "steps", tone: "white", title: "Як проходить VerifEye онлайн", items: [
+    { title: "Погодження питань", text: "Разом формулюємо питання про конкретні факти. Кандидат бачить їх заздалегідь і дає письмову згоду." },
+    { title: "Посилання на телефон", text: "Кандидат отримує посилання й інструкцію: тиха кімната, добре освітлення, телефон на підставці. Посилання відкриває безкоштовний застосунок VerifEye." },
+    { title: "Тест до 15 хвилин", text: "Питання звучать голосом, кандидат відповідає вголос. Фронтальна камера фіксує зіницю, рухи очей і моргання." },
+    { title: "PDF-звіт до 5 хвилин", text: "Алгоритм Converus рахує оцінку достовірності, звіт приходить на пошту. Спеціаліст пояснює результат." },
+  ] },
+  ru: { type: "steps", tone: "white", title: "Как проходит VerifEye онлайн", items: [
+    { title: "Согласование вопросов", text: "Вместе формулируем вопросы о конкретных фактах. Кандидат видит их заранее и даёт письменное согласие." },
+    { title: "Ссылка на телефон", text: "Кандидат получает ссылку и инструкцию: тихая комната, хорошее освещение, телефон на подставке. Ссылка открывает бесплатное приложение VerifEye." },
+    { title: "Тест до 15 минут", text: "Вопросы звучат голосом, кандидат отвечает вслух. Фронтальная камера фиксирует зрачок, движения глаз и моргание." },
+    { title: "PDF-отчёт до 5 минут", text: "Алгоритм Converus считает оценку достоверности, отчёт приходит на почту. Специалист объясняет результат." },
+  ] },
+  en: { type: "steps", tone: "white", title: "How VerifEye online works", items: [
+    { title: "Agreeing on the questions", text: "Together we formulate questions about specific facts. The candidate sees them in advance and gives written consent." },
+    { title: "A link to the phone", text: "The candidate receives a link and instructions: a quiet room, good lighting, the phone on a stand. The link opens the free VerifEye app." },
+    { title: "Test: up to 15 minutes", text: "The questions are spoken, and the candidate answers aloud. The front camera records the pupil, eye movements, and blinking." },
+    { title: "PDF report within 5 minutes", text: "The Converus algorithm computes a Credibility Score, and the report is emailed to you. The examiner explains the result." },
+  ] },
+};
+
 export const how = {
   uk: { type: "steps", tone: "white", title: "Як проходить перевірка", items: [
     { title: "Погодження питань", text: "Разом формулюємо конкретні питання про факти. Ви отримуєте текст заздалегідь." },

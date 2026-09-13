@@ -87,8 +87,8 @@ const PricesPage = async ({ params }) => {
 
   // Offer-розмітка: щоб ціна потрапляла у сніпет видачі й була читабельною
   // для пошукових систем та AI-асистентів.
-  const offers = pricingGroups
-    .filter((group) => group.id !== "travel")
+  const offersOf = (keep) => pricingGroups
+    .filter((group) => group.id !== "travel" && keep(group))
     .flatMap((group) =>
       group.items
         .filter((item) => typeof item.price === "number")
@@ -101,6 +101,8 @@ const PricesPage = async ({ params }) => {
           url: `${pageUrlJsonLd}prices`,
         }))
     );
+  const offers = offersOf((g) => g.id !== "online");
+  const onlineOffers = offersOf((g) => g.id === "online");
 
   const serviceJsonLd = {
     "@context": "http://schema.org",
@@ -124,6 +126,18 @@ const PricesPage = async ({ params }) => {
     offers,
   };
 
+  const verifeyeJsonLd = {
+    "@context": "http://schema.org",
+    "@type": "Service",
+    name: { uk: "Онлайн-тест VerifEye зі смартфона", ru: "Онлайн-тест VerifEye со смартфона", en: "VerifEye online smartphone test" }[lang],
+    serviceType: { uk: "Онлайн-детектор брехні", ru: "Онлайн-детектор лжи", en: "Online lie detection" }[lang],
+    brand: { "@type": "Brand", name: "Converus" },
+    provider: serviceJsonLd.provider,
+    areaServed: { uk: "Весь світ", ru: "Весь мир", en: "Worldwide" }[lang],
+    url: `${pageUrlJsonLd}online`,
+    offers: onlineOffers,
+  };
+
   return (
     <>
       <script
@@ -134,6 +148,9 @@ const PricesPage = async ({ params }) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
       />
+      {onlineOffers.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(verifeyeJsonLd) }} />
+      )}
       <PricesSection lang={lang} dictionary={dictionary} />
     </>
   );
