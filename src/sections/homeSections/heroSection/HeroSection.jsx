@@ -29,7 +29,6 @@ const HeroSection = ({ dictionary }) => {
             </ul>
           )}
 
-          <p className={styles.sub}>{hero.method}</p>
 
           <div className={styles.actions}>
             <div className={styles.action}>

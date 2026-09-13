@@ -122,6 +122,11 @@
 .onlineLine {
   order: 6;
   margin: 0;
+  text-align: center;
+
+  @media screen and (min-width: $laptop) {
+    text-align: left;
+  }
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
 }
