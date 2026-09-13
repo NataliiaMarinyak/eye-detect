@@ -104,6 +104,23 @@ const BusinessSections = ({ d, lang, dictionary }) => {
       </section>
 
       {/* Законність */}
+      {d.industries && (
+        <section>
+          <div className={`container ${styles.container}`}>
+            <Reveal><h2 className={styles.title}>{d.industries.title}</h2></Reveal>
+            <ul className={styles.cases}>
+              {d.industries.items.map((c, i) => (
+                <Reveal as="li" key={c.href} delay={i * 0.06} className={styles.card}>
+                  <h3 className={styles.cardTitle}>{c.title}</h3>
+                  <p className={styles.cardText}>{c.text}</p>
+                  <Link className={styles.more} href={localHref(lang, c.href)}>{MORE[lang] || MORE.uk}</Link>
+                </Reveal>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       <section className={styles.white}>
         <div className={`container ${styles.container}`}>
           <Reveal><h2 className={styles.title}>{d.legal.title}</h2></Reveal>

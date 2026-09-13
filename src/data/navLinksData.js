@@ -59,6 +59,12 @@ export const footerLinksData = [
     href: "/faq",
   },
   {
+    title: "Про Converus",
+    titleRus: "О Converus",
+    titleEng: "About Converus",
+    href: "/converus",
+  },
+  {
     title: "Блог",
     titleRus: "Блог",
     titleEng: "Blog",

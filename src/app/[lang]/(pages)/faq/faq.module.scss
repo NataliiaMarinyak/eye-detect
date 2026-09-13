@@ -4,6 +4,9 @@
   position: sticky;
   top: 0;
   z-index: 5;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
   background-color: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid $lineColor;
@@ -12,6 +15,9 @@
 .tocInner {
   display: flex;
   gap: 6px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
   padding-top: 10px;
   padding-bottom: 10px;
