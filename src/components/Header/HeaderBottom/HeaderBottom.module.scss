@@ -27,7 +27,7 @@
 
 .nav {
   display: none;
-  gap: 16px;
+  gap: 14px;
 
   @media screen and (min-width: $laptop) {
     display: flex;
@@ -36,7 +36,8 @@
 
 .navLink {
   padding: 6px 4px;
-  font-size: 17px;
+  font-size: 16px;
+  white-space: nowrap;
   border-bottom: 2px solid transparent;
   transition: color 200ms ease, border-color 200ms ease;
 

@@ -25,8 +25,8 @@ const OnlinePage = async ({ params }) => {
     description: d.seo.description,
     brand: { "@type": "Brand", name: "Converus" },
     offers: [
-      { "@type": "Offer", price: 2500, priceCurrency: "UAH", availability: "https://schema.org/InStock", url: `${getSeoMetaPageUrl(lang)}online` },
-      { "@type": "Offer", price: 4000, priceCurrency: "UAH", availability: "https://schema.org/InStock", url: `${getSeoMetaPageUrl(lang)}online` },
+      { "@type": "Offer", price: 2500, priceCurrency: "UAH", availability: "https://schema.org/InStock", url: `${getSeoMetaPageUrl(lang)}online`, seller: { "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business` } },
+      { "@type": "Offer", price: 4000, priceCurrency: "UAH", availability: "https://schema.org/InStock", url: `${getSeoMetaPageUrl(lang)}online`, seller: { "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business` } },
     ],
   };
 
@@ -41,6 +41,7 @@ const OnlinePage = async ({ params }) => {
         sub={d.hero.sub}
         facts={d.hero.facts}
         primary={d.hero.primary}
+        service="VerifEye онлайн"
         photo="/images/converus/verifeye-test.webp"
         photoAlt="VerifEye"
       />

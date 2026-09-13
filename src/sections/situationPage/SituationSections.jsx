@@ -65,7 +65,7 @@ const SituationSections = ({ s, lang, others, dictionary }) => {
                   {i === 0 ? (
                     <a href={`${lang === "uk" ? "" : "/" + lang}/online`} className={styles.btnSecondary}>{f.cta}</a>
                   ) : (
-                    <OpenModalBtn customClass={styles.btnPrimary} title={f.cta} />
+                    <OpenModalBtn customClass={styles.btnPrimary} title={f.cta} service={`EyeDetect · ${s.h1}`} />
                   )}
                 </div>
               </Reveal>

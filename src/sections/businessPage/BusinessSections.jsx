@@ -98,7 +98,7 @@ const BusinessSections = ({ d, lang, dictionary }) => {
               ))}
             </ul>
             <p className={styles.travel}>{d.pricing.travel}</p>
-            <OpenModalBtn customClass={styles.btn} title={d.hero.primary} />
+            <OpenModalBtn customClass={styles.btn} title={d.hero.primary} service="EyeDetect для бізнесу" />
           </Reveal>
         </div>
       </section>
@@ -126,7 +126,7 @@ const BusinessSections = ({ d, lang, dictionary }) => {
             <h2 className={styles.ctaTitle}>{d.cta.title}</h2>
             <p className={styles.ctaText}>{d.cta.text}</p>
           </Reveal>
-          <OpenModalBtn customClass={styles.ctaPrimary} title={d.cta.button} />
+          <OpenModalBtn customClass={styles.ctaPrimary} title={d.cta.button} service="EyeDetect для бізнесу" />
         </div>
       </section>
     </>

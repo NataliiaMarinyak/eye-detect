@@ -8,7 +8,7 @@ import { navLinksData } from "@/data/navLinksData";
 import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./Navigation.module.scss";
 
-const Navigation = ({ className, isInHeader, linkStyles, lang }) => {
+const Navigation = ({ className, isInHeader, linkStyles, lang, links = navLinksData }) => {
   const { setIsMobileMenu } = useContext(SiteContext);
 
   const pathname = usePathname();
@@ -18,7 +18,7 @@ const Navigation = ({ className, isInHeader, linkStyles, lang }) => {
 
   return (
     <nav className={className}>
-      {navLinksData.map((el) => {
+      {links.map((el) => {
         let checkedPath = `${path}${el.href}`;
         // For non-default locales, normalize the trailing slash so the active link logic works on the home page.
         const resultPath =

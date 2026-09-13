@@ -106,6 +106,7 @@
 
 .btnPrimary {
   @include buttonOnDark;
+  white-space: nowrap;
 
   @media screen and (min-width: $tablet) {
     width: auto;
@@ -115,6 +116,7 @@
 
 .btnSecondary {
   @include buttonOnDarkSecondary;
+  white-space: nowrap;
 
   @media screen and (min-width: $tablet) {
     width: auto;

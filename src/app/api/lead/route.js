@@ -19,6 +19,7 @@ export async function POST(request) {
   const email = clean(body.email, 120);
   const comment = clean(body.comment, 1000);
   const page = clean(body.page, 200);
+  const service = clean(body.service, 120);
 
   if (!name || !tel) {
     return NextResponse.json({ ok: false, error: "missing_fields" }, { status: 400 });
@@ -36,6 +37,7 @@ export async function POST(request) {
 
   const lines = [
     `Нова заявка з сайту${page ? ` (${page})` : ""}`,
+    service ? `Послуга: ${service}` : null,
     `Ім'я: ${name}`,
     `Телефон: ${tel}`,
     email ? `Email: ${email}` : null,

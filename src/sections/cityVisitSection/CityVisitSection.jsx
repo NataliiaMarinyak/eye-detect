@@ -28,7 +28,7 @@ const CityVisitSection = ({ t, region, loc, km, dictionary, lang }) => {
             <p className={styles.text}>{visitText.replace("{loc}", loc).replace("{km}", km || "")}</p>
             <div className={styles.footer}>
               <p className={styles.price}>{t.visit.price[region]}</p>
-              <OpenModalBtn customClass={styles.btnPrimary} title={t.visit.cta} />
+              <OpenModalBtn customClass={styles.btnPrimary} title={t.visit.cta} service={`EyeDetect з виїздом · ${loc}`} />
             </div>
           </Reveal>
         </ul>

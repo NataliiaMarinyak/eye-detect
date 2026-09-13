@@ -2,7 +2,8 @@
 
 .activeLink {
   padding: 6px 4px;
-  font-size: 17px;
+  font-size: 16px;
+  white-space: nowrap;
   color: $primary;
   border-bottom: 2px solid $primary;
 }

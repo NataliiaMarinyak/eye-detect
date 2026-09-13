@@ -59,11 +59,11 @@ const HomePathsSection = ({ dictionary }) => {
           <PathCard
             data={d.office}
             delay={0}
-            photo="/images/converus/eyedetect-police.webp"
+            photo="/images/converus/eyedetect-station-angle.webp"
             logo="/images/converus/logo-eyedetect.png"
             logoW={600}
             logoH={151}
-            cta={<OpenModalBtn customClass={styles.btn} title={d.office.cta} />}
+            cta={<OpenModalBtn customClass={styles.btn} title={d.office.cta} service="EyeDetect" />}
           />
           <PathCard
             data={d.online}

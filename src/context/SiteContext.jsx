@@ -9,6 +9,8 @@ export const SiteProvider = ({ children }) => {
 
   const [modalFrame, setModalFrame] = useState(false);
   const [backDrop, setBackDrop] = useState(false);
+  // Назва послуги, з якої відкрили форму: показуємо в заголовку і надсилаємо в заявці.
+  const [modalService, setModalService] = useState("");
 
   return (
     <SiteContext.Provider
@@ -19,6 +21,8 @@ export const SiteProvider = ({ children }) => {
         setModalFrame,
         backDrop,
         setBackDrop,
+        modalService,
+        setModalService,
       }}
     >
       {children}

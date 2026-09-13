@@ -11,7 +11,7 @@ import { orderFormSchema } from "@/yupSchemas/orderFormSchema";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
 import styles from "./OrderForm.module.scss";
 
-const OrderForm = ({ dictionary }) => {
+const OrderForm = ({ dictionary, service = "" }) => {
   // console.log("dictionary in orderForm", dictionary);
   // const { t } = useTranslation();
   // const [isLoading, setIsLoading] = useState(true);
@@ -50,7 +50,7 @@ const OrderForm = ({ dictionary }) => {
   }, [isSubmitSuccessful, reset]);
 
   const onSubmit = async (data) => {
-    const ok = await sendToTelegram(data);
+    const ok = await sendToTelegram({ ...data, service });
     if (ok) {
       toast.success(dictionary.notifications.success);
       closeModal();

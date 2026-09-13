@@ -25,6 +25,7 @@ const HeroSection = ({ dictionary }) => {
             <OpenModalBtn
               customClass={styles.btnSecondary}
               title={dictionary.buttons.bookLviv}
+              service="EyeDetect"
             />
           </div>
 
@@ -33,7 +34,6 @@ const HeroSection = ({ dictionary }) => {
               <li key={t}>{t}</li>
             ))}
           </ul>
-          <p className={styles.priceNote}>{hero.priceNote}</p>
         </div>
 
         <div className={styles.media}>

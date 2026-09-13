@@ -93,6 +93,7 @@ const LocationIdPage = async ({ params }) => {
         sub={fill(t.sub[region], vars)}
         facts={t.facts}
         primary={t.visit.cta}
+        service={`EyeDetect з виїздом · ${loc}`}
         secondaryHref="#visit"
         secondaryLabel={t.online.cta}
         photo="/images/converus/eyedetect-examinee.webp"

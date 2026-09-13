@@ -6,9 +6,15 @@ export const navLinksData = [
     href: "/",
   },
   {
-    title: "Онлайн-тест",
-    titleRus: "Онлайн-тест",
-    titleEng: "Online test",
+    title: "EyeDetect",
+    titleRus: "EyeDetect",
+    titleEng: "EyeDetect",
+    href: "/eyedetect",
+  },
+  {
+    title: "VerifEye онлайн",
+    titleRus: "VerifEye онлайн",
+    titleEng: "VerifEye online",
     href: "/online",
   },
   {
@@ -36,15 +42,20 @@ export const navLinksData = [
     href: "/locations",
   },
   {
-    title: "Блог",
-    titleRus: "Блог",
-    titleEng: "Blog",
-    href: "/blog",
-  },
-  {
     title: "Контакти",
     titleRus: "Контакты",
     titleEng: "Contact",
     href: "/contacts",
+  },
+];
+
+// Підвал: те саме меню плюс блог.
+export const footerLinksData = [
+  ...navLinksData,
+  {
+    title: "Блог",
+    titleRus: "Блог",
+    titleEng: "Blog",
+    href: "/blog",
   },
 ];

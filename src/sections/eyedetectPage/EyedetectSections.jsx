@@ -137,7 +137,7 @@ const EyedetectSections = ({ d, lang }) => (
           <a href={`${lang === "uk" ? "" : "/" + lang}/online`} className={styles.ctaSecondary}>
             {d.cta.online}
           </a>
-          <OpenModalBtn customClass={styles.ctaPrimary} title={d.cta.book} />
+          <OpenModalBtn customClass={styles.ctaPrimary} title={d.cta.book} service="EyeDetect" />
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import styles from "./PageHero.module.scss";
 
 // Перший екран для внутрішніх сторінок: темний фон, H1, підзаголовок,
 // факти, одна-дві кнопки, за потреби фото праворуч.
-const PageHero = ({ eyebrow, title, sub, facts = [], primary, secondaryHref, secondaryLabel, photo, photoAlt = "" }) => {
+const PageHero = ({ service = "", eyebrow, title, sub, facts = [], primary, secondaryHref, secondaryLabel, photo, photoAlt = "" }) => {
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.container}`}>
@@ -14,7 +14,7 @@ const PageHero = ({ eyebrow, title, sub, facts = [], primary, secondaryHref, sec
           {sub && <p className={styles.sub}>{sub}</p>}
           {(primary || secondaryHref) && (
             <div className={styles.actions}>
-              {primary && <OpenModalBtn customClass={styles.btnPrimary} title={primary} />}
+              {primary && <OpenModalBtn customClass={styles.btnPrimary} title={primary} service={service} />}
               {secondaryHref && (
                 <a href={secondaryHref} className={styles.btnSecondary}>
                   {secondaryLabel}

@@ -31,9 +31,9 @@ export const pricingGroups = [
         priceLabelEng: "UAH 8,500",
       },
       {
-        name: "Перевірка для пари — обидва партнери",
-        nameRus: "Проверка для пары — оба партнёра",
-        nameEng: "Couples test — both partners",
+        name: "Перевірка для пари — по одному тесту EyeDetect кожному, до трьох тем",
+        nameRus: "Проверка для пары — по одному тесту EyeDetect каждому, до трёх тем",
+        nameEng: "Couples test — one EyeDetect test each, up to three issues",
         price: 15000,
         priceLabel: "15 000 ₴",
         priceLabelRus: "15 000 ₴",
@@ -178,6 +178,11 @@ export const pricingGroups = [
 // Модифікатори — показуємо окремим рядком під таблицею.
 export const pricingNotes = [
   {
+    text: "Доплати нижче стосуються тестів EyeDetect у кабінеті або з виїздом. Для VerifEye онлайн доплат немає.",
+    textRus: "Доплаты ниже относятся к тестам EyeDetect в кабинете или с выездом. Для VerifEye онлайн доплат нет.",
+    textEng: "The surcharges below apply to EyeDetect tests in office or on-site. VerifEye online has no surcharges.",
+  },
+  {
     text: "Тест у день звернення — +30% до вартості.",
     textRus: "Тест в день обращения — +30% к стоимости.",
     textEng: "Same-day testing — +30%.",
@@ -201,10 +206,12 @@ export const pricingNotes = [
 
 // Зняття ризику: головне заперечення на цю суму — «а якщо результат
 // буде невизначеним». Показуємо відповідь одразу під таблицею.
+// «Невизначений» = алгоритм не зміг оцінити тест (порушені інструкції,
+// відповіді навмання, проблеми з очима чи освітленням). Це не «правда» і не «брехня».
 export const pricingGuarantee = {
-  text: "Якщо результат тесту виявиться невизначеним — повторний тест зі знижкою 50%.",
+  text: "Якщо результат тесту виявиться невизначеним (алгоритм не зміг оцінити тест через порушені інструкції, відповіді навмання, проблеми з очима чи освітленням) — повторний тест зі знижкою 50%.",
   textRus:
-    "Если результат теста окажется неопределённым — повторный тест со скидкой 50%.",
+    "Если результат теста окажется неопределённым (алгоритм не смог оценить тест из-за нарушенных инструкций, ответов наугад, проблем с глазами или освещением) — повторный тест со скидкой 50%.",
   textEng:
     "If the test result is inconclusive, the retest is 50% off.",
 };
@@ -217,14 +224,14 @@ export const pricingIncluded = [
     textEng: "Pre-test interview: we formulate the specific questions together.",
   },
   {
-    text: "Сам тест — 30–45 хвилин, без датчиків на тілі.",
-    textRus: "Сам тест — 30–45 минут, без датчиков на теле.",
-    textEng: "The test itself — 30–45 minutes, no body sensors.",
+    text: "Сам тест: EyeDetect 30–45 хвилин у кабінеті або з виїздом, VerifEye близько 10 хвилин зі смартфона. Без датчиків на тілі.",
+    textRus: "Сам тест: EyeDetect 30–45 минут в кабинете или с выездом, VerifEye около 10 минут со смартфона. Без датчиков на теле.",
+    textEng: "The test itself: EyeDetect 30–45 minutes in office or on-site, VerifEye about 10 minutes on a smartphone. No body sensors.",
   },
   {
-    text: "Автоматичний підрахунок результату алгоритмом, без людської оцінки.",
-    textRus: "Автоматический подсчёт результата алгоритмом, без человеческой оценки.",
-    textEng: "Automated algorithmic scoring, with no examiner judgement involved.",
+    text: "Оцінку рахує алгоритм Converus однаково для всіх. Спеціаліст готує питання, стежить за умовами тесту і пояснює звіт.",
+    textRus: "Оценку считает алгоритм Converus одинаково для всех. Специалист готовит вопросы, следит за условиями теста и объясняет отчёт.",
+    textEng: "The Converus algorithm scores every test the same way. The examiner prepares the questions, controls test conditions and explains the report.",
   },
   {
     text: "Письмовий висновок із показником достовірності (Credibility Score).",

@@ -46,6 +46,7 @@ const SituationPage = async ({ params }) => {
         sub={s.sub}
         facts={s.facts}
         primary={dictionary.buttons.orderConsultation}
+        service={`EyeDetect · ${s.h1}`}
         secondaryHref="/#paths"
         secondaryLabel={dictionary.buttons.testOnline}
       />

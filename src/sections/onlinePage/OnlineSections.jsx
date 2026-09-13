@@ -58,7 +58,7 @@ const OnlineSections = ({ d, lang, dictionary }) => (
               <p className={styles.priceName}>{p.name}</p>
               <p className={styles.priceValue}>{p.price}</p>
               <p className={styles.cardText}>{p.desc}</p>
-              <OpenModalBtn customClass={styles.btn} title={d.hero.primary} />
+              <OpenModalBtn customClass={styles.btn} title={d.hero.primary} service={`VerifEye онлайн · ${p.name}`} />
             </Reveal>
           ))}
         </ul>
@@ -111,7 +111,7 @@ const OnlineSections = ({ d, lang, dictionary }) => (
           <h2 className={styles.ctaTitle}>{d.cta.title}</h2>
           <p className={styles.ctaText}>{d.cta.text}</p>
         </Reveal>
-        <OpenModalBtn customClass={styles.ctaPrimary} title={d.cta.button} />
+        <OpenModalBtn customClass={styles.ctaPrimary} title={d.cta.button} service="VerifEye онлайн" />
       </div>
     </section>
   </>

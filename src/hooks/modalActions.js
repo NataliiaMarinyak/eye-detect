@@ -1,15 +1,14 @@
 "use client";
-const { SiteContext } = require("@/context/SiteContext");
-const { useContext } = require("react");
-
+import { useContext } from "react";
+import { SiteContext } from "@/context/SiteContext";
 
 export const useModalActions = () => {
-  const { setModalFrame } = useContext(SiteContext);
-  const { setBackDrop } = useContext(SiteContext);
+  const { setModalFrame, setBackDrop, setModalService } = useContext(SiteContext);
 
-  const openModal = () => {
+  // service — назва послуги, з якої відкрили форму (необов'язково).
+  const openModal = (service = "") => {
+    setModalService(typeof service === "string" ? service : "");
     setModalFrame(true);
-
     setTimeout(() => {
       setBackDrop(true);
     }, 100);
@@ -19,7 +18,8 @@ export const useModalActions = () => {
     setBackDrop(false);
     setTimeout(() => {
       setModalFrame(false);
-    }, 1000);
+      setModalService("");
+    }, 400);
   };
 
   return { openModal, closeModal };

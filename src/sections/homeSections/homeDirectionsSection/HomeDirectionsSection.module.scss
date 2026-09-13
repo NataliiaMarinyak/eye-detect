@@ -75,6 +75,10 @@
   font-size: 15px;
   line-height: 1.6;
   color: $subTitleColor;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .more {

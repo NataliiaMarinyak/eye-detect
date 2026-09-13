@@ -1,4 +1,5 @@
 import Navigation from "../Navigation/Navigation";
+import { footerLinksData } from "@/data/navLinksData";
 import styles from "./Footer.module.scss";
 import FooterSocMedia from "./FooterSocMedia/FooterSocMedia";
 import PrivacyPolicy from "./PrivacyPolicy";
@@ -11,7 +12,7 @@ const Footer = ({ lang, dictionary }) => {
           className={`${styles.list} ${styles.socMedia}`}
           itemStyles={styles.item}
         />
-        <Navigation className={`${styles.list} ${styles.nav}`} lang={lang} />
+        <Navigation className={`${styles.list} ${styles.nav}`} lang={lang} links={footerLinksData} />
 
         <PrivacyPolicy
           className={styles.privacy}
