@@ -2,49 +2,61 @@ import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import styles from "./HeroSection.module.scss";
 
-// Перший екран. H1 живе тут. Праворуч справжнє фото тестування (матеріали Converus).
-// Справжній звіт показуємо нижче у блоці «Що ви отримуєте». Кнопки «Розрахувати вартість» тут немає навмисно.
+// Перший екран. Логіка: послуга → задачі клієнта → як це працює → хто проводить і що
+// отримаєте → одна дія з ціною → онлайн як додаткове посилання. Праворуч людина під час тесту.
+// Кнопки «Розрахувати вартість» тут немає навмисно.
 const HeroSection = ({ dictionary }) => {
   const hero = dictionary.heroSection;
-  const [titleMain, titleRest] = splitTitle(hero.h1 || hero.title);
+  const prefix = dictionary.lang === "uk" ? "" : `/${dictionary.lang}`;
 
   return (
     <section id="hero" className={styles.hero}>
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
-          <h1 className={styles.title}>
-            {titleMain}
-            {titleRest && <span className={styles.titleSub}>{titleRest}</span>}
-          </h1>
-          <p className={styles.sub}>{hero.sub}</p>
+          {hero.eyebrow && <p className={styles.eyebrow}>{hero.eyebrow}</p>}
+          <h1 className={styles.title}>{hero.h1 || hero.title}</h1>
+
+          {Array.isArray(hero.tasks) && hero.tasks.length > 0 && (
+            <ul className={styles.tasks} aria-label={hero.tasksLabel}>
+              {hero.tasks.map((t) => (
+                <li key={t.label}>
+                  <a href={`${prefix}${t.href}`} className={styles.task}>{t.label}</a>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <p className={styles.sub}>{hero.method}</p>
+          <p className={styles.who}>{hero.who}</p>
 
           <div className={styles.actions}>
             <div className={styles.action}>
-              <OpenModalBtn customClass={styles.btnPrimary} title={dictionary.buttons.bookLviv} service="EyeDetect" />
-              <span className={styles.actionNote}>{hero.bookNote}</span>
-            </div>
-            <div className={styles.action}>
-              <a href={`${dictionary.lang === "uk" ? "" : "/" + dictionary.lang}/online`} className={styles.btnSecondary}>
-                {dictionary.buttons.testOnline}
-              </a>
-              <span className={styles.actionNote}>{hero.onlineNote}</span>
+              <OpenModalBtn customClass={styles.btnPrimary} title={hero.cta} service="EyeDetect" />
+              <span className={styles.actionNote}>{hero.priceLine}</span>
             </div>
           </div>
 
-          <ul className={styles.trust}>
-            {(hero.trust || []).map((t) => (
-              <li key={t}>{t}</li>
-            ))}
-          </ul>
+          {Array.isArray(hero.trust) && (
+            <ul className={styles.trust}>
+              {hero.trust.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          )}
+
+          <p className={styles.onlineLine}>
+            {hero.onlineText}{" "}
+            <a href={`${prefix}/online`} className={styles.onlineLink}>{hero.onlineLink}</a>
+          </p>
         </div>
 
         <div className={styles.media}>
           <div className={styles.photo}>
             <Image
-              src="/images/converus/eyedetect-station-white.webp"
-              alt={hero.title}
-              width={1046}
-              height={1400}
+              src="/images/converus/eyedetect-examinee.webp"
+              alt={hero.photoCaption || hero.h1}
+              width={1400}
+              height={1401}
               sizes="(max-width: 767px) 92vw, (max-width: 1023px) 60vw, 440px"
               quality={70}
               priority
@@ -56,13 +68,5 @@ const HeroSection = ({ dictionary }) => {
     </section>
   );
 };
-
-// «Детектор брехні у Львові: EyeDetect у кабінеті...» → перша частина великим,
-// друга (після двокрапки) меншим і світлішим. Один H1 для пошуковика.
-function splitTitle(t = "") {
-  const i = t.indexOf(":");
-  if (i === -1) return [t, ""];
-  return [t.slice(0, i).trim(), t.slice(i + 1).trim()];
-}
 
 export default HeroSection;

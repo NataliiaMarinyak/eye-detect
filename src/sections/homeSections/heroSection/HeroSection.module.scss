@@ -41,6 +41,74 @@
   max-width: 620px;
 }
 
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.task {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1.2;
+  color: $textLightColor;
+  transition: border-color 200ms ease, background-color 200ms ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+.who {
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 52ch;
+  margin: -12px 0 24px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+}
+
+.onlineLine {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.onlineLink {
+  color: $textLightColor;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: #93c5fd;
+  }
+}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -113,7 +181,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
@@ -145,6 +213,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px 20px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
 
   & li {
     display: flex;
@@ -189,13 +260,12 @@
   aspect-ratio: 16 / 11;
   border-radius: 20px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: $navySoft;
 
   & img {
     @include imageFillProp;
-    object-fit: contain;
-    object-position: 50% 45%;
-    padding: 12px 12px 44px;
+    object-fit: cover;
+    object-position: 50% 40%;
   }
 
   @media screen and (min-width: $laptop) {
