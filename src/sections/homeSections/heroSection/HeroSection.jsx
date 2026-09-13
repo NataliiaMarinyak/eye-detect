@@ -1,10 +1,9 @@
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
-import ReportCard from "@/components/ReportCard/ReportCard";
 import styles from "./HeroSection.module.scss";
 
-// Перший екран. H1 живе тут. Праворуч замість стокового фото компактний
-// фрагмент справжнього звіту з балами. Кнопки «Розрахувати вартість» тут немає навмисно.
+// Перший екран. H1 живе тут. Праворуч справжнє фото тестування (матеріали Converus).
+// Справжній звіт показуємо нижче у блоці «Що ви отримуєте». Кнопки «Розрахувати вартість» тут немає навмисно.
 const HeroSection = ({ dictionary }) => {
   const hero = dictionary.heroSection;
   const [titleMain, titleRest] = splitTitle(hero.h1 || hero.title);
@@ -48,9 +47,6 @@ const HeroSection = ({ dictionary }) => {
               quality={62}
               priority
             />
-          </div>
-          <div className={styles.cardWrap}>
-            <ReportCard dictionary={dictionary} />
           </div>
         </div>
       </div>

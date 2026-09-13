@@ -161,9 +161,7 @@
     display: block;
     justify-self: end;
     width: 100%;
-    max-width: 560px;
-    padding-left: 150px;
-    padding-bottom: 56px;
+    max-width: 520px;
   }
 }
 
@@ -181,18 +179,10 @@
   }
 
   @media screen and (min-width: $laptop) {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 5 / 4;
   }
 }
 
-.cardWrap {
-  @media screen and (min-width: $laptop) {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 320px;
-  }
-}
 
 .priceNote {
   margin-top: 20px;
