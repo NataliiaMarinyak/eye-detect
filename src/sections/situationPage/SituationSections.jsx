@@ -19,7 +19,7 @@ const SituationSections = ({ s, lang, others, dictionary }) => {
           <Reveal>
             <h2 className={styles.title}>{t.howTitle}</h2>
           </Reveal>
-          <ul className={styles.cards3}>
+          <ul className={s.how.length === 4 ? styles.cards2 : styles.cards3}>
             {s.how.map((it, i) => (
               <Reveal as="li" key={it.title} delay={i * 0.06} className={styles.card}>
                 <h3 className={styles.cardTitle}>{it.title}</h3>

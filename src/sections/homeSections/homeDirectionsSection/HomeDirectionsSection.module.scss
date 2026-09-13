@@ -60,6 +60,10 @@
 }
 
 .subTitle {
+  // Вирівнювання карток у ряду: заголовок займає місце під два рядки.
+  @media screen and (min-width: $laptop) {
+    min-height: 2.6em;
+  }
   font-family: var(--font-bold);
   font-weight: 700;
   font-size: 17px;

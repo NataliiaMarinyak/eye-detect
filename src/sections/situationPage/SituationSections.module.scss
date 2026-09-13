@@ -32,6 +32,15 @@
   @include sectionSubTitle;
 }
 
+.cards2 {
+  display: grid;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .cards3 {
   display: grid;
   gap: 16px;
@@ -52,6 +61,10 @@
 }
 
 .cardTitle {
+  // Вирівнювання карток у ряду: заголовок займає місце під два рядки.
+  @media screen and (min-width: $laptop) {
+    min-height: 2.6em;
+  }
   font-family: var(--font-bold);
   font-size: 18px;
   line-height: 1.3;

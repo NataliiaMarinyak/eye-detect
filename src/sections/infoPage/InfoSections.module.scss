@@ -90,6 +90,10 @@
 }
 
 .cardTitle {
+  // Вирівнювання карток у ряду: заголовок займає місце під два рядки.
+  @media screen and (min-width: $laptop) {
+    min-height: 2.6em;
+  }
   margin: 0 0 8px;
   font-family: var(--font-bold);
   font-size: 17px;
@@ -132,6 +136,10 @@
 }
 
 .stepTitle {
+  // Вирівнювання карток у ряду: заголовок займає місце під два рядки.
+  @media screen and (min-width: $laptop) {
+    min-height: 2.6em;
+  }
   margin: 0 0 6px;
   font-family: var(--font-bold);
   font-size: 17px;
