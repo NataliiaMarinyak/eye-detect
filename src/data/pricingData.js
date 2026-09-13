@@ -192,11 +192,6 @@ export const pricingNotes = [
     textRus: "Тест в воскресенье — +100% к стоимости.",
     textEng: "Sunday testing — +100% of the price.",
   },
-  {
-    text: "Знижка 800 ₴ на заявку через сайт — код EYE25.",
-    textRus: "Скидка 800 ₴ на заявку через сайт — код EYE25.",
-    textEng: "UAH 800 off when you book through the site — code EYE25.",
-  },
 ];
 
 // Зняття ризику: головне заперечення на цю суму — «а якщо результат

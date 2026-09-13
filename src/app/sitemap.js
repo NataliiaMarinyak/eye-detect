@@ -1,6 +1,7 @@
 import { getAllCities } from "@/helpers/getCityData";
 import { blogPosts } from "@/data/pages/blogData";
 import { audiences } from "@/data/pages/audiencesData";
+import { situations } from "@/data/pages/situationsData";
 
 // export const runtime = "edge"; // або 'node' якщо edge не підходить
 export const dynamic = "force-static";
@@ -34,11 +35,8 @@ export default async function sitemap() {
       { href: "eyedetect", priority: 0.9 },
       { href: "online", priority: 0.9 },
       { href: "business", priority: 0.9 },
-      { href: "situations/fidelity", priority: 0.8 },
-      { href: "situations/theft", priority: 0.8 },
-      { href: "situations/leak", priority: 0.8 },
-      { href: "situations/hiring", priority: 0.8 },
-      { href: "situations/dispute", priority: 0.7 },
+      { href: "situations", priority: 0.8 },
+      ...situations.map((s) => ({ href: `situations/${s.slug}`, priority: 0.8 })),
       { href: "faq", priority: 0.8 },
       { href: "converus", priority: 0.7 },
       { href: "for", priority: 0.8 },

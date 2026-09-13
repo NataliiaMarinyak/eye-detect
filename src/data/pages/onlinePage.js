@@ -2,16 +2,16 @@
 export const onlinePage = {
   uk: {
     seo: {
-      title: "Детектор брехні онлайн — тест VerifEye зі смартфона за 10 хвилин",
-      description: "VerifEye від Converus: застосунок на смартфоні фіксує реакції очей, точність до 84% за даними виробника. Тест близько 10 хвилин, PDF-звіт одразу після тесту. З будь-якого міста.",
+      title: "Детектор брехні онлайн (поліграф онлайн): VerifEye за 10 хвилин",
+      description: "VerifEye від Converus: застосунок на смартфоні фіксує реакції очей, точність 84–89% за даними виробника. Тест близько 10 хвилин, PDF-звіт одразу після тесту. З будь-якого міста.",
       keywords: ["детектор брехні онлайн", "онлайн детектор брехні", "поліграф онлайн", "verifeye", "тест на брехню з телефона", "детектор лжи онлайн"],
       crumbHome: "Головна",
       crumb: "Онлайн-тест VerifEye",
     },
     hero: {
-      eyebrow: "VerifEye від Converus, США",
+      eyebrow: "Поліграф онлайн · VerifEye від Converus, США",
       h1: "Детектор брехні онлайн: тест VerifEye з вашого телефона",
-      sub: "VerifEye — окремий продукт Converus для смартфона. Ми готуємо питання, людина відкриває посилання у застосунку, слухає питання і відповідає вголос близько 10 хвилин. Звіт у PDF приходить вам на пошту. З будь-якого міста чи країни.",
+      sub: "VerifEye — це поліграф онлайн: окремий продукт Converus для смартфона. Ми готуємо питання, людина відкриває посилання у застосунку, слухає питання і відповідає вголос близько 10 хвилин. Звіт у PDF приходить вам на пошту. З будь-якого міста чи країни.",
       facts: ["близько 10 хвилин", "точність 84–89%", "звіт у PDF одразу після тесту", "від 2 500 ₴"],
       primary: "Замовити онлайн-тест",
     },
@@ -63,16 +63,16 @@ export const onlinePage = {
   },
   ru: {
     seo: {
-      title: "Детектор лжи онлайн — тест VerifEye со смартфона за 10 минут",
-      description: "VerifEye от Converus: приложение на смартфоне фиксирует реакции глаз, точность до 84% по данным производителя. Тест около 10 минут, PDF-отчёт сразу после теста. Из любого города.",
+      title: "Детектор лжи онлайн (полиграф онлайн): VerifEye за 10 минут",
+      description: "VerifEye от Converus: приложение на смартфоне фиксирует реакции глаз, точность 84–89% по данным производителя. Тест около 10 минут, PDF-отчёт сразу после теста. Из любого города.",
       keywords: ["детектор лжи онлайн", "онлайн детектор лжи", "полиграф онлайн", "verifeye", "тест на ложь с телефона"],
       crumbHome: "Главная",
       crumb: "Онлайн-тест VerifEye",
     },
     hero: {
-      eyebrow: "VerifEye от Converus, США",
+      eyebrow: "Полиграф онлайн · VerifEye от Converus, США",
       h1: "Детектор лжи онлайн: тест VerifEye с вашего телефона",
-      sub: "VerifEye — отдельный продукт Converus для смартфона. Мы готовим вопросы, человек открывает ссылку в приложении, слушает вопросы и отвечает вслух около 10 минут. Отчёт в PDF приходит вам на почту. Из любого города или страны.",
+      sub: "VerifEye — это полиграф онлайн: отдельный продукт Converus для смартфона. Мы готовим вопросы, человек открывает ссылку в приложении, слушает вопросы и отвечает вслух около 10 минут. Отчёт в PDF приходит вам на почту. Из любого города или страны.",
       facts: ["около 10 минут", "точность 84–89%", "отчёт в PDF сразу после теста", "от 2 500 ₴"],
       primary: "Заказать онлайн-тест",
     },
@@ -124,16 +124,16 @@ export const onlinePage = {
   },
   en: {
     seo: {
-      title: "Online lie detector — the VerifEye test from your smartphone in 10 minutes",
-      description: "VerifEye by Converus: a smartphone app records eye reactions, accuracy up to 84% according to the manufacturer. The test takes about 10 minutes, PDF report right after the test. From any city.",
+      title: "Online Lie Detector (Online Polygraph): VerifEye in 10 Minutes",
+      description: "VerifEye by Converus: a smartphone app records eye reactions, accuracy 84–89% according to the manufacturer. The test takes about 10 minutes, PDF report right after the test. From any city.",
       keywords: ["online lie detector", "lie detector online", "online polygraph", "verifeye", "lie detector test from phone", "remote lie detector test"],
       crumbHome: "Home",
       crumb: "VerifEye online test",
     },
     hero: {
-      eyebrow: "VerifEye by Converus, USA",
+      eyebrow: "Online polygraph · VerifEye by Converus, USA",
       h1: "Online lie detector: the VerifEye test from your phone",
-      sub: "VerifEye is a separate Converus product for smartphones. We prepare the questions, the person opens a link in the app, listens to the questions, and answers aloud for about 10 minutes. The PDF report is emailed to you. From any city or country.",
+      sub: "VerifEye is an online polygraph: a separate Converus product for smartphones. We prepare the questions, the person opens a link in the app, listens to the questions, and answers aloud for about 10 minutes. The PDF report is emailed to you. From any city or country.",
       facts: ["about 10 minutes", "84–89% accuracy", "PDF report right after the test", "from UAH 2,500"],
       primary: "Order an online test",
     },

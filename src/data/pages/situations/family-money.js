@@ -1,0 +1,92 @@
+export const familyMoney = {
+  slug: "family-money",
+  icon: "/sprite.svg#icon-money",
+  report: "/images/report-sample-eyedetect.webp",
+  uk: {
+    nav: "Гроші в сім'ї",
+    seo: {
+      title: "Зникли гроші вдома: детектор брехні для сім'ї та партнерів",
+      description: "Пропали гроші з дому, сейфа чи спільної картки, борг між родичами, спільний бізнес. EyeDetect у Львові або VerifEye онлайн: усі, хто мав доступ, за один день.",
+      keywords: ["зникли гроші вдома", "детектор брехні сім'я", "хто вкрав гроші з дому", "перевірити родича на поліграфі", "пропали прикраси з дому"],
+    },
+    h1: "Зникли гроші в сім'ї: детектор брехні замість підозр",
+    sub: "Гроші зникли з дому, із сейфа чи зі спільної картки, а підозра падає на всіх одразу: на дітей, родичів, помічницю по дому, партнера по бізнесу. Тест перевіряє всіх, хто мав доступ, за один день і знімає підозру з невинних. Стосунки не руйнуються через здогадки.",
+    facts: ["усі, хто мав доступ, за один день", "від 5 500 ₴ за людину", "підозра з невинних знімається"],
+    how: [
+      { title: "Перевіряють усіх, хто мав доступ", text: "Не одну «підозрілу» людину, а всіх, хто міг узяти: так ніхто не почувається обраним для звинувачення. EyeDetect у кабінеті у Львові або з виїздом додому чи в офіс, 30–45 хвилин на людину. Сім'ю з чотирьох-п'яти осіб можна перевірити за один день." },
+      { title: "Одне конкретне питання про одну подію", text: "Питання стосується саме цієї події: чи брали ви гроші із сейфа між 3 і 10 травня, чи знаєте, хто взяв. Не «чи ви чесна людина». Ми не питаємо про почуття, здоров'я чи переконання. На питання про факт є точна відповідь, і тест її перевіряє." },
+      { title: "Невинний отримує документальне підтвердження", text: "Звіт з балом від 1 до 99 по кожному питанню. Для того, кого підозрювали безпідставно, це спосіб закрити тему раз і назавжди, а не роками чути натяки за сімейним столом." },
+      { title: "Онлайн для тих, хто далеко", text: "Якщо родич або партнер в іншому місті чи за кордоном, він проходить VerifEye з телефона за 15 хвилин, від 2 500 ₴. Звіт приходить вам на пошту за 20 хвилин. Так усіх, хто мав доступ, можна перевірити в один день незалежно від того, де вони зараз." },
+    ],
+    questions: [
+      "Між 3 і 10 травня 2025 року ви брали гроші із сейфа у спальні?",
+      "Ви знаєте, хто взяв золоті сережки з шухляди у вітальні?",
+      "За останні 3 місяці ви оплачували щось спільною карткою без відома партнера?",
+      "З 1 січня 2025 року ви переказували гроші фірми на свої рахунки без відома партнера по бізнесу?",
+    ],
+    faq: [
+      { q: "Чи можна перевірити дитину, родича або помічницю по дому?", a: "Лише добровільно і з письмової згоди самої людини. Змусити неможливо. Відмова теж інформація, але не доказ провини. Ми пояснюємо кожному, що тест насамперед знімає підозру з невинних, і саме тому на нього зазвичай погоджуються." },
+      { q: "Один із тих, хто мав доступ, зараз в іншому місті. Що робити?", a: "VerifEye онлайн: ми надсилаємо посилання, людина проходить тест з телефона у тихій кімнаті, звіт приходить на пошту за 20 хвилин. Точність онлайн 84–89%, у кабінеті на EyeDetect 86–90%." },
+      { q: "Що, як результат «невизначений»?", a: "Так буває не більше ніж у 10 випадках зі 100, найчастіше через втому або хвилювання. Повторний тест зі знижкою 50%." },
+      { q: "Чи піде звіт у поліцію або суд?", a: "Ні. В Україні результат тесту не є доказом у суді, і ми не передаємо звіти нікому, крім замовника. Хто побачить результат, вирішуєте ви. Тест можна пройти анонімно: під номером, без імені та фото. Ми не обговорюємо перевірки і не зберігаємо звіти довше, ніж потрібно для видачі результату." },
+    ],
+  },
+  ru: {
+    nav: "Деньги в семье",
+    seo: {
+      title: "Пропали деньги дома: детектор лжи для семьи и партнёров",
+      description: "Пропали деньги из дома, сейфа или с общей карты, долг между родными, общий бизнес. EyeDetect во Львове или VerifEye онлайн: все, кто имел доступ, за один день.",
+      keywords: ["пропали деньги дома", "детектор лжи семья", "кто украл деньги из дома", "проверить родственника на полиграфе", "пропали украшения из дома"],
+    },
+    h1: "Пропали деньги в семье: детектор лжи вместо подозрений",
+    sub: "Деньги пропали из дома, из сейфа или с общей карты, а подозрение падает на всех сразу: на детей, родственников, помощницу по дому, партнёра по бизнесу. Тест проверяет всех, кто имел доступ, за один день и снимает подозрение с невиновных. Отношения не рушатся из-за догадок.",
+    facts: ["все, кто имел доступ, за один день", "от 5 500 ₴ за человека", "подозрение с невиновных снимается"],
+    how: [
+      { title: "Проверяют всех, кто имел доступ", text: "Не одного «подозрительного» человека, а всех, кто мог взять: так никто не чувствует себя выбранным для обвинения. EyeDetect в кабинете во Львове или с выездом домой или в офис, 30–45 минут на человека. Семью из четырёх-пяти человек можно проверить за один день." },
+      { title: "Один конкретный вопрос об одном событии", text: "Вопрос касается именно этого события: брали ли вы деньги из сейфа между 3 и 10 мая, знаете ли, кто взял. Не «честный ли вы человек». Мы не спрашиваем о чувствах, здоровье или убеждениях. На вопрос о факте есть точный ответ, и тест его проверяет." },
+      { title: "Невиновный получает документальное подтверждение", text: "Отчёт с баллом от 1 до 99 по каждому вопросу. Для того, кого подозревали безосновательно, это способ закрыть тему раз и навсегда, а не годами слышать намёки за семейным столом." },
+      { title: "Онлайн для тех, кто далеко", text: "Если родственник или партнёр в другом городе или за границей, он проходит VerifEye с телефона за 15 минут, от 2 500 ₴. Отчёт приходит вам на почту за 20 минут. Так всех, кто имел доступ, можно проверить в один день независимо от того, где они сейчас." },
+    ],
+    questions: [
+      "Между 3 и 10 мая 2025 года вы брали деньги из сейфа в спальне?",
+      "Вы знаете, кто взял золотые серьги из ящика в гостиной?",
+      "За последние 3 месяца вы оплачивали что-либо общей картой без ведома партнёра?",
+      "С 1 января 2025 года вы переводили деньги фирмы на свои счета без ведома партнёра по бизнесу?",
+    ],
+    faq: [
+      { q: "Можно ли проверить ребёнка, родственника или помощницу по дому?", a: "Только добровольно и с письменного согласия самого человека. Заставить невозможно. Отказ тоже информация, но не доказательство вины. Мы объясняем каждому, что тест прежде всего снимает подозрение с невиновных, и именно поэтому на него обычно соглашаются." },
+      { q: "Один из тех, кто имел доступ, сейчас в другом городе. Что делать?", a: "VerifEye онлайн: мы отправляем ссылку, человек проходит тест с телефона в тихой комнате, отчёт приходит на почту за 20 минут. Точность онлайн 84–89%, в кабинете на EyeDetect 86–90%." },
+      { q: "Что, если результат «неопределённый»?", a: "Так бывает не больше чем в 10 случаях из 100, чаще всего из-за усталости или волнения. Повторный тест со скидкой 50%." },
+      { q: "Попадёт ли отчёт в полицию или суд?", a: "Нет. В Украине результат теста не является доказательством в суде, и мы не передаём отчёты никому, кроме заказчика. Кто увидит результат, решаете вы. Тест можно пройти анонимно: под номером, без имени и фото. Мы не обсуждаем проверки и не храним отчёты дольше, чем нужно для выдачи результата." },
+    ],
+  },
+  en: {
+    nav: "Family Money",
+    seo: {
+      title: "Money Missing at Home: Lie Detector Test for Family and Partners",
+      description: "Money gone from a house, safe, or joint card; a debt between relatives; a shared business. EyeDetect in Lviv or VerifEye online: everyone with access in a day.",
+      keywords: ["money missing from home lie detector", "lie detector test family", "who took money from the house", "polygraph test for a relative", "jewelry missing from home"],
+    },
+    h1: "Money Missing in the Family: a Lie Detector Instead of Suspicion",
+    sub: "Money disappeared from the house, a safe, or a joint card, and suspicion falls on everyone at once: children, relatives, the housekeeper, a business partner. The test checks everyone who had access in one day and clears the innocent. Relationships are not destroyed by guesswork.",
+    facts: ["everyone with access, in one day", "from UAH 5,500 per person", "the innocent are cleared"],
+    how: [
+      { title: "Everyone who had access is tested", text: "Not one “suspicious” person, but everyone who could have taken it: that way no one feels singled out for blame. EyeDetect in our Lviv office or on-site at your home or office, 30–45 minutes per person. A family of four or five can be tested in one day." },
+      { title: "One specific question about one event", text: "The question is about this exact event: did you take money from the safe between May 3 and May 10, do you know who took it. Not “are you an honest person”. We do not ask about feelings, health, or beliefs. A question about a fact has a precise answer, and the test checks it." },
+      { title: "The innocent get documented proof", text: "A report with a score from 1 to 99 for each question. For someone suspected without grounds, it is a way to close the topic once and for all instead of hearing hints at the family table for years." },
+      { title: "Online for those who are far away", text: "If a relative or partner is in another city or abroad, they take VerifEye from a phone in 15 minutes, from UAH 2,500. The report arrives in your inbox within 20 minutes. That way everyone who had access can be tested on the same day, wherever they are now." },
+    ],
+    questions: [
+      "Between May 3 and May 10, 2025, did you take money from the safe in the bedroom?",
+      "Do you know who took the gold earrings from the drawer in the living room?",
+      "In the last 3 months, have you paid for anything with the joint card without your partner's knowledge?",
+      "Since January 1, 2025, have you transferred company money to your own accounts without your business partner's knowledge?",
+    ],
+    faq: [
+      { q: "Can a child, a relative, or a housekeeper be tested?", a: "Only voluntarily and with the person's own written consent. No one can be forced. A refusal is also information, but not proof of guilt. We explain to everyone that the test first of all clears the innocent, and that is usually why people agree to it." },
+      { q: "One of the people who had access is now in another city. What can we do?", a: "VerifEye online: we send a link, the person takes the test from a phone in a quiet room, and the report arrives by email within 20 minutes. Online accuracy is 84–89%; in our Lviv office on EyeDetect it is 86–90%." },
+      { q: "What if the result is “inconclusive”?", a: "This happens in no more than 10 cases out of 100, most often because of fatigue or nervousness. A repeat test is 50% off." },
+      { q: "Will the report go to the police or a court?", a: "No. In Ukraine, the test result is not evidence in court, and we do not hand reports to anyone except the client. You decide who sees the result. The test can be taken anonymously: under a number, without a name or photo. We do not discuss tests and do not keep reports longer than needed to deliver the result." },
+    ],
+  },
+};

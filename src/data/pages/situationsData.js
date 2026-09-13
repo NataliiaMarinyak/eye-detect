@@ -1,4 +1,8 @@
-// Сторінки ситуацій /situations/[slug]. Ключі: uk, ru. en додамо, коли ввімкнемо мову.
+// Сторінки ситуацій /situations/[slug]. Ключі: uk, ru, en. Нові ситуації у ./situations/*.js.
+import { premarital } from "./situations/premarital";
+import { familyMoney } from "./situations/family-money";
+import { gambling } from "./situations/gambling";
+import { secondOpinion } from "./situations/second-opinion";
 // Приклади питань це формулювання того типу, що реально використовуються в тестах,
 // без даних клієнтів.
 const shared = {
@@ -498,6 +502,10 @@ export const situations = [
       ],
     },
   },
+  premarital,
+  familyMoney,
+  gambling,
+  secondOpinion,
 ];
 
 export const getSituation = (slug, lang) => {

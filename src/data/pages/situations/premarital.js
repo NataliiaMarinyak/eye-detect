@@ -1,0 +1,92 @@
+export const premarital = {
+  slug: "premarital",
+  icon: "/sprite.svg#icon-rings",
+  report: "/images/report-sample-eyedetect.webp",
+  uk: {
+    nav: "Перед шлюбом",
+    seo: {
+      title: "Детектор брехні перед шлюбом: тест для пари у Львові або онлайн",
+      description: "Тест перед весіллям, іпотекою чи спільним бізнесом: борги, діти, попередні шлюби, залежності. EyeDetect у Львові, 15 000 ₴ за двох, або VerifEye онлайн.",
+      keywords: ["перевірка перед шлюбом", "детектор брехні перед весіллям", "перевірити нареченого", "тест для пари на поліграфі", "приховані борги партнера"],
+    },
+    h1: "Перевірка перед шлюбом на детекторі брехні",
+    sub: "Перед весіллям, спільною іпотекою чи бізнесом лишаються питання, які незручно ставити вголос: борги, діти, минулі шлюби, залежності. Тест дає на них точну відповідь за один візит. Це не про підозру, а про те, щоб починати спільне життя без недомовок.",
+    facts: ["обоє проходять по одному тесту", "15 000 ₴ за двох", "звіт бачите лише ви двоє"],
+    how: [
+      { title: "По одному тесту кожному", text: "Формат «Перевірка для пари»: кожен партнер проходить свій тест EyeDetect, до трьох запитань кожному, 30–45 хвилин на людину. Питання складаються разом і однакові за суворістю для обох. Ніхто не почувається обвинуваченим: перевіряють обох." },
+      { title: "Питання про факти, що впливають на спільне життя", text: "Кредити й борги, про які не сказано; діти від інших стосунків; незавершені стосунки; судимості; вживання наркотиків; реальні доходи і майно; попередні шлюби. Кожне питання про конкретний факт і період, з відповіддю «так» чи «ні». Про почуття, здоров'я чи переконання ми не питаємо." },
+      { title: "Питання відомі заздалегідь", text: "Обидва читають повний текст питань і пояснення до них до тесту: що вважається боргом, з якої дати, що не враховується. Пасток немає. Якщо якесь питання людина хоче зняти або уточнити, це робиться до початку, а не під час тесту. Формулювати питання допомагає Наталія Мариняк, психолог, сертифікований Test Proctor Converus." },
+      { title: "Окремий бал по кожній темі", text: "Звіт показує бал від 1 до 99 по кожному питанню. Можна побачити, що за боргами все чисто, а за минулими стосунками є що обговорити. Це дає предметну розмову замість загального «ти щось приховуєш»." },
+    ],
+    questions: [
+      "На сьогодні у вас є кредити або борги на суму понад 50 000 гривень, про які партнер не знає?",
+      "У вас є діти, про яких ви не сказали партнерові?",
+      "З 1 січня 2025 року ви мали статевий контакт з іншою людиною?",
+      "За останні 12 місяців ви вживали наркотичні речовини?",
+    ],
+    faq: [
+      { q: "Чи не образить партнера пропозиція пройти тест?", a: "Тест проходять обоє на рівних умовах, і питання ви складаєте разом. Так це виглядає не як підозра до одного, а як спільне рішення закрити тему до весілля. Тест лише добровільний, з письмовою згодою кожного; змусити партнера неможливо." },
+      { q: "Ми в різних містах або один із нас за кордоном. Як пройти?", a: "VerifEye онлайн: кожен отримує посилання і проходить тест з телефона у тихій кімнаті, близько 15 хвилин. Звіт приходить на пошту за 20 хвилин. Вартість від 2 500 ₴ за людину. Точність онлайн 84–89%, у кабінеті на EyeDetect 86–90%." },
+      { q: "Що, як результат «невизначений»?", a: "Так буває не більше ніж у 10 випадках зі 100, зазвичай через втому чи хвилювання. Повторний тест зі знижкою 50%." },
+      { q: "Чи можна використати результат у суді або при розлученні?", a: "Ні. В Україні результат тесту не є доказом у суді. Це інформація для вас двох, і звіт бачите лише ви. За бажанням тест проходять анонімно, під номером, без імені та фото. Ми не обговорюємо перевірки і не зберігаємо звіти довше, ніж потрібно для видачі результату." },
+    ],
+  },
+  ru: {
+    nav: "Перед браком",
+    seo: {
+      title: "Детектор лжи перед браком: тест для пары во Львове или онлайн",
+      description: "Тест перед свадьбой, ипотекой или общим бизнесом: долги, дети, прошлые браки, зависимости. EyeDetect во Львове, 15 000 ₴ за двоих, или VerifEye онлайн.",
+      keywords: ["проверка перед браком", "детектор лжи перед свадьбой", "проверить жениха", "тест для пары на полиграфе", "скрытые долги партнёра"],
+    },
+    h1: "Проверка перед браком на детекторе лжи",
+    sub: "Перед свадьбой, совместной ипотекой или бизнесом остаются вопросы, которые неудобно задавать вслух: долги, дети, прошлые браки, зависимости. Тест даёт на них точный ответ за один визит. Это не о подозрении, а о том, чтобы начинать совместную жизнь без недомолвок.",
+    facts: ["оба проходят по одному тесту", "15 000 ₴ за двоих", "отчёт видите только вы двое"],
+    how: [
+      { title: "По одному тесту каждому", text: "Формат «Проверка для пары»: каждый партнёр проходит свой тест EyeDetect, до трёх вопросов каждому, 30–45 минут на человека. Вопросы составляются вместе и одинаковы по строгости для обоих. Никто не чувствует себя обвиняемым: проверяют обоих." },
+      { title: "Вопросы о фактах, влияющих на совместную жизнь", text: "Кредиты и долги, о которых не сказано; дети от других отношений; незавершённые отношения; судимости; употребление наркотиков; реальные доходы и имущество; прошлые браки. Каждый вопрос о конкретном факте и периоде, с ответом «да» или «нет». О чувствах, здоровье или убеждениях мы не спрашиваем." },
+      { title: "Вопросы известны заранее", text: "Оба читают полный текст вопросов и пояснения к ним до теста: что считается долгом, с какой даты, что не учитывается. Ловушек нет. Если какой-то вопрос человек хочет снять или уточнить, это делается до начала, а не во время теста. Формулировать вопросы помогает Наталия Мариняк, психолог, сертифицированный Test Proctor Converus." },
+      { title: "Отдельный балл по каждой теме", text: "Отчёт показывает балл от 1 до 99 по каждому вопросу. Можно увидеть, что по долгам всё чисто, а по прошлым отношениям есть что обсудить. Это даёт предметный разговор вместо общего «ты что-то скрываешь»." },
+    ],
+    questions: [
+      "На сегодня у вас есть кредиты или долги на сумму более 50 000 гривен, о которых партнёр не знает?",
+      "У вас есть дети, о которых вы не сказали партнёру?",
+      "С 1 января 2025 года вы имели половой контакт с другим человеком?",
+      "За последние 12 месяцев вы употребляли наркотические вещества?",
+    ],
+    faq: [
+      { q: "Не обидит ли партнёра предложение пройти тест?", a: "Тест проходят оба на равных условиях, и вопросы вы составляете вместе. Так это выглядит не как подозрение к одному, а как совместное решение закрыть тему до свадьбы. Тест только добровольный, с письменным согласием каждого; заставить партнёра невозможно." },
+      { q: "Мы в разных городах или один из нас за границей. Как пройти?", a: "VerifEye онлайн: каждый получает ссылку и проходит тест с телефона в тихой комнате, около 15 минут. Отчёт приходит на почту за 20 минут. Стоимость от 2 500 ₴ за человека. Точность онлайн 84–89%, в кабинете на EyeDetect 86–90%." },
+      { q: "Что, если результат «неопределённый»?", a: "Так бывает не больше чем в 10 случаях из 100, обычно из-за усталости или волнения. Повторный тест со скидкой 50%." },
+      { q: "Можно ли использовать результат в суде или при разводе?", a: "Нет. В Украине результат теста не является доказательством в суде. Это информация для вас двоих, и отчёт видите только вы. По желанию тест проходят анонимно, под номером, без имени и фото. Мы не обсуждаем проверки и не храним отчёты дольше, чем нужно для выдачи результата." },
+    ],
+  },
+  en: {
+    nav: "Before Marriage",
+    seo: {
+      title: "Premarital Lie Detector Test for Couples — Lviv or Online",
+      description: "A test before a wedding, mortgage, or shared business: debts, children, past marriages, addictions. EyeDetect in Lviv, UAH 15,000 for two, or VerifEye online.",
+      keywords: ["premarital lie detector test", "lie detector test before marriage", "polygraph test for couples", "hidden debts partner test", "check fiance before wedding"],
+    },
+    h1: "Premarital Test on a Lie Detector",
+    sub: "Before a wedding, a joint mortgage, or a shared business, some questions are awkward to ask out loud: debts, children, past marriages, addictions. The test gives a precise answer to them in one visit. It is not about suspicion; it is about starting a life together with nothing left unsaid.",
+    facts: ["one test for each partner", "UAH 15,000 for two", "only the two of you see the report"],
+    how: [
+      { title: "One test for each partner", text: "The “Couple test” format: each partner takes their own EyeDetect test, up to three questions each, 30–45 minutes per person. The questions are written together and are equally strict for both. No one feels accused: both partners are tested." },
+      { title: "Questions about facts that affect life together", text: "Undisclosed loans and debts; children from other relationships; unfinished relationships; criminal records; drug use; real income and property; previous marriages. Each question is about a specific fact and period, with a yes-or-no answer. We do not ask about feelings, health, or beliefs." },
+      { title: "The questions are known in advance", text: "Both partners read the full text of the questions and their explanations before the test: what counts as a debt, from which date, what is excluded. There are no traps. If a person wants to drop or clarify a question, it is done before the start, not during the test. Nataliia Marynyak, psychologist and certified Converus Test Proctor, helps word the questions." },
+      { title: "A separate score for each topic", text: "The report shows a score from 1 to 99 for each question. You may see that debts are clean while past relationships need a conversation. That gives you a specific discussion instead of a vague “you are hiding something”." },
+    ],
+    questions: [
+      "As of today, do you have loans or debts of more than 50,000 hryvnias that your partner does not know about?",
+      "Do you have children you have not told your partner about?",
+      "Since January 1, 2025, have you had sexual contact with another person?",
+      "In the last 12 months, have you used narcotic drugs?",
+    ],
+    faq: [
+      { q: "Will my partner be offended by the suggestion to take a test?", a: "Both partners take the test on equal terms, and you write the questions together. That makes it a joint decision to close the topic before the wedding, not a suspicion aimed at one person. The test is voluntary only, with written consent from each partner; no one can be forced." },
+      { q: "We live in different cities, or one of us is abroad. How do we take it?", a: "VerifEye online: each partner receives a link and takes the test from a phone in a quiet room, about 15 minutes. The report arrives by email within 20 minutes. The price is from UAH 2,500 per person. Online accuracy is 84–89%; in our Lviv office on EyeDetect it is 86–90%." },
+      { q: "What if the result is “inconclusive”?", a: "This happens in no more than 10 cases out of 100, usually because of fatigue or nervousness. A repeat test is 50% off." },
+      { q: "Can the result be used in court or in a divorce?", a: "No. In Ukraine, the test result is not evidence in court. It is information for the two of you, and only you see the report. On request, the test is taken anonymously, under a number, without a name or photo. We do not discuss tests and do not keep reports longer than needed to deliver the result." },
+    ],
+  },
+};
