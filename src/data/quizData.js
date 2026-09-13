@@ -88,7 +88,7 @@ export const quizData = {
         "Заявка ні до чого не зобов'язує і безкоштовна.",
       ],
       name: "Ім'я *",
-      phone: "Телефон *",
+      phone: "Телефон або нікнейм у Telegram",
       channelTitle: "Як зручніше зв'язатись?",
       channels: ["Дзвінок", "Telegram", "Viber"],
       comment: "Коментар (за бажанням)",

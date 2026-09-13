@@ -39,7 +39,9 @@ export async function POST(request) {
   }
 
   const api = process.env.TELEGRAM_API;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
+  // Заявки з квіза можна слати в окремий чат (TELEGRAM_QUIZ_CHAT_ID), інакше в загальний.
+  const isQuiz = service.startsWith("Квіз");
+  const chatId = (isQuiz && process.env.TELEGRAM_QUIZ_CHAT_ID) || process.env.TELEGRAM_CHAT_ID;
   if (!api || !chatId) {
     return NextResponse.json({ ok: false, error: "not_configured" }, { status: 500 });
   }

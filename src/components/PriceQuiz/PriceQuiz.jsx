@@ -99,14 +99,10 @@ const PriceQuiz = ({ lang = "uk" }) => {
 
   const back = () => setCur((c) => Math.max(0, c - 1));
 
-  // Номер у вільному форматі, як у формі контактів: перевіряємо лише, що цифр достатньо.
-  const phoneDigits = form.phone.replace(/\D/g, "");
-
   const submit = async (e) => {
     e.preventDefault();
     const errs = {};
     if (!form.name.trim()) errs.name = t.contact.errName;
-    if (phoneDigits.length < 9) errs.phone = t.contact.errPhone;
     setErrors(errs);
     if (Object.keys(errs).length) return;
 
@@ -122,7 +118,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
       `Відкрито на: ${openedFrom.current}`,
     ].filter(Boolean).join("\n");
 
-    const lead = { name: form.name.trim(), tel: form.phone.trim(), comment, service: "Квіз: розрахунок вартості" };
+    const lead = { name: form.name.trim(), tel: form.phone.trim() || "не вказано", comment, service: "Квіз: розрахунок вартості" };
     // Та сама відправка, що й у формі контактів (/api/lead → Telegram). Одна повторна спроба при збої мережі.
     let ok = await sendToTelegram(lead);
     if (!ok) { await new Promise((r) => setTimeout(r, 1200)); ok = await sendToTelegram(lead); }
@@ -182,8 +178,6 @@ const PriceQuiz = ({ lang = "uk" }) => {
         {cur === 5 && (
           <form className={styles.body} onSubmit={submit} noValidate>
             <h2 className={styles.q}>{t.contact.title}</h2>
-            <p className={styles.sub}>{t.contact.sub}</p>
-
             <label className={styles.field}>
               <span className={styles.label}>{t.contact.name}</span>
               <input type="text" autoComplete="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} aria-invalid={!!errors.name} />
@@ -192,7 +186,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
 
             <label className={styles.field}>
               <span className={styles.label}>{t.contact.phone}</span>
-              <input type="tel" inputMode="tel" autoComplete="tel" placeholder="+380 67 123 45 67" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} aria-invalid={!!errors.phone} />
+              <input type="text" autoComplete="tel" placeholder="+380 67 123 45 67 або @нікнейм" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} aria-invalid={!!errors.phone} />
               {errors.phone && <span className={styles.error}>{errors.phone}</span>}
             </label>
 
@@ -212,27 +206,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
             {status === "fail" && (
               <p className={styles.error}>{t.contact.fail}<a href={`tel:${TEL}`}>{TEL_H}</a></p>
             )}
-            <p className={styles.gift}>🎁 {t.gift}. {t.giftNote}</p>
-            <p className={styles.note}>
-              {t.contact.note} <a href={lang === "uk" ? "/privacy-policy" : `/${lang}/privacy-policy`} target="_blank" rel="noopener noreferrer">{t.contact.privacy}</a>
-            </p>
-            <div className={styles.summary}>
-              <p className={styles.summaryTitle}>{t.contact.summary}</p>
-              <ul>
-                {steps.map((s, i) => (
-                  <li key={s.k}><span>{s.k}:</span> {answers[i]}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div className={styles.why}>
-              <p className={styles.whyTitle}>{t.contact.whyTitle}</p>
-              <p>{t.contact.whyText}</p>
-              <ul>
-                {t.contact.whyPoints.map((p) => <li key={p}>{p.replace("{get}", get)}</li>)}
-              </ul>
-            </div>
-
+            <p className={styles.note}>🎁 {t.gift}. <a href={lang === "uk" ? "/privacy-policy" : `/${lang}/privacy-policy`} target="_blank" rel="noopener noreferrer">{t.contact.privacy}</a></p>
             <div className={styles.footer}>
               <button type="button" className={styles.back} onClick={back}>← {t.back}</button>
             </div>
