@@ -158,3 +158,9 @@ ol {
   right: auto !important;
   left: 0 !important;
 }
+
+/* Поки відкрите вікно квіза, ховаємо плаваючий віджет дзвінка Binotel */
+html.quiz-open [id^="bingc"],
+html.quiz-open [class*="bingc"] {
+  display: none !important;
+}
