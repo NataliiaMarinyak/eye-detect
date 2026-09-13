@@ -1,0 +1,91 @@
+@import "../../../_variables";
+
+.toc {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid $lineColor;
+}
+
+.tocInner {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tocLink {
+  flex: 0 0 auto;
+  padding: 8px 14px;
+  border: 1px solid $lineColor;
+  border-radius: 999px;
+  font-size: 14px;
+  white-space: nowrap;
+  color: $textDarkColor;
+  background-color: $cardBgColor;
+  transition: border-color 200ms ease, color 200ms ease;
+
+  &:hover,
+  &:focus-visible {
+    color: $primary;
+    border-color: $primary;
+  }
+}
+
+.group {
+  scroll-margin-top: 72px;
+
+  &:nth-child(even) {
+    background-color: $panelBgColor;
+  }
+}
+
+.cta {
+  background-color: $deepNavy;
+  color: $textLightColor;
+}
+
+.ctaInner {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
+.ctaTitle {
+  margin: 0 0 12px;
+  font-family: var(--font-head);
+  font-size: 28px;
+  line-height: 1.15;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 36px;
+  }
+}
+
+.ctaText {
+  max-width: 560px;
+  margin: 0 auto 24px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.ctaBtn {
+  @include buttonOnDark;
+  width: auto;
+  min-width: 260px;
+}

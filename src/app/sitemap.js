@@ -37,6 +37,7 @@ export default async function sitemap() {
       { href: "situations/leak", priority: 0.8 },
       { href: "situations/hiring", priority: 0.8 },
       { href: "situations/dispute", priority: 0.7 },
+      { href: "faq", priority: 0.8 },
       { href: "blog", priority: 0.7 },
       ...blogPosts.map((p) => ({ href: `blog/${p.slug}`, priority: 0.6 })),
       { href: "about-us", priority: 0.8 },

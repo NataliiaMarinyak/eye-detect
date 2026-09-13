@@ -53,6 +53,12 @@ export const navLinksData = [
 export const footerLinksData = [
   ...navLinksData,
   {
+    title: "Питання і відповіді",
+    titleRus: "Вопросы и ответы",
+    titleEng: "FAQ",
+    href: "/faq",
+  },
+  {
     title: "Блог",
     titleRus: "Блог",
     titleEng: "Blog",

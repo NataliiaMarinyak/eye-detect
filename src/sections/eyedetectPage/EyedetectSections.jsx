@@ -113,9 +113,13 @@ const EyedetectSections = ({ d, lang }) => (
           <ul className={styles.links}>
             {d.science.links.map((l) => (
               <li key={l.href}>
-                <a href={l.href} target="_blank" rel="noopener noreferrer">
-                  {l.label}
-                </a>
+                {l.href.startsWith("/") ? (
+                  <a href={`${lang === "uk" ? "" : "/" + lang}${l.href}`}>{l.label}</a>
+                ) : (
+                  <a href={l.href} target="_blank" rel="noopener noreferrer">
+                    {l.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
