@@ -53,7 +53,6 @@ const HomePathsSection = ({ dictionary }) => {
       <div className={`container ${styles.container}`}>
         <Reveal>
           <h2 className={styles.title}>{d.title}</h2>
-          <p className={styles.subTitle}>{d.subTitle}</p>
         </Reveal>
         <ul className={styles.grid}>
           <PathCard
