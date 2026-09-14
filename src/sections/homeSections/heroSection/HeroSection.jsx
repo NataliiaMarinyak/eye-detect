@@ -19,15 +19,6 @@ const HeroSection = ({ dictionary }) => {
         </div>
         <div className={styles.content}>
 
-          {Array.isArray(hero.tasks) && hero.tasks.length > 0 && (
-            <ul className={styles.tasks} aria-label={hero.tasksLabel}>
-              {hero.tasks.map((t) => (
-                <li key={t.label}>
-                  <a href={`${prefix}${t.href}`} className={styles.task}>{t.label}</a>
-                </li>
-              ))}
-            </ul>
-          )}
 
 
           <div className={styles.actions}>
