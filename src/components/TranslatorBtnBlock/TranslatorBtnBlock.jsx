@@ -5,24 +5,18 @@ import { useState, useEffect } from "react";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import Cookies from "js-cookie";
 // import { languagesData } from "@/data/languagesData";
-import { i18n } from "@/dictionaries/i18n.config";
 
 const TranslatorBtnBlock = ({ className, lang, dictionary }) => {
   // const { i18n } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = useState(
-    // (prev) => !prev || prev === undefined ? languagesData.UA : prev
-    lang
-  );
-
   const [isLoading, setIsLoading] = useState(true);
 
+  // Запам'ятовуємо мову поточної сторінки. Раніше ефект читав і писав мову по колу
+  // (стан ↔ localStorage), і на ru/en сторінка безкінечно перерендерювалась.
   useEffect(() => {
-    const language = localStorage.getItem("lang");
-    setCurrentLanguage(() => (language ? language : i18n.defaultLocale));
-    localStorage.setItem("lang", currentLanguage);
-    Cookies.set("language", language);
+    localStorage.setItem("lang", lang);
+    Cookies.set("language", lang);
     setIsLoading(false);
-  }, [currentLanguage]);
+  }, [lang]);
 
   const changeLanguage = (languageUser) => {
     localStorage.setItem("lang", languageUser);

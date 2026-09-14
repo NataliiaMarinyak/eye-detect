@@ -77,7 +77,7 @@ export const situations = [
       how: [
         { title: "Питання про факти, а не про почуття", text: "Ми не питаємо «чи кохаєш». Ми питаємо, чи був статевий контакт з іншою людиною з конкретної дати, чи було романтичне листування, чи були приховані витрати. На такі питання є однозначна відповідь." },
         { title: "Обидва партнери читають питання заздалегідь", text: "Перед тестом людина читає повне пояснення кожного питання: що вважається контактом, що ні, за який період. Несподіванок і пасток немає: обидва партнери розуміють питання однаково ще до тесту." },
-        { title: "Спогади не спотворюють результат", text: "Класичний поліграф реагує на емоцію, а її може викликати й спогад про зраду в минулих стосунках. В EyeDetect увага прикута до тексту: твердження змінюються кожні 5–7 секунд, на асоціації не лишається часу. Тому для тестів на вірність ризик хибного результату нижчий." },
+        { title: "Спогади не спотворюють результат", text: "Класичний поліграф реєструє фізіологічні реакції, на які можуть впливати тривога, страх та емоційно значущі спогади. EyeDetect використовує інший принцип: аналізує когнітивне навантаження за рухами очей, зміною зіниці, швидкістю читання та відповідей. Тому емоційна реакція сама по собі не є основним показником, за яким EyeDetect визначає результат." },
         { title: "Оцінка по кожному питанню окремо", text: "Звіт показує бал від 1 до 99 по кожній темі. Буває, що за статевим контактом людина чиста, а за листуванням ні. Ви бачите повну картину, а не одне слово «брехав»." },
       ],
       questions: [
@@ -106,7 +106,7 @@ export const situations = [
       how: [
         { title: "Вопросы о фактах, а не о чувствах", text: "Мы не спрашиваем «любишь ли». Мы спрашиваем, был ли половой контакт с другим человеком с конкретной даты, была ли романтическая переписка, были ли скрытые траты. На такие вопросы есть однозначный ответ." },
         { title: "Оба партнёра читают вопросы заранее", text: "Перед тестом человек читает полное объяснение каждого вопроса: что считается контактом, что нет, за какой период. Неожиданностей и ловушек нет: оба партнёра понимают вопросы одинаково ещё до теста." },
-        { title: "Воспоминания не искажают результат", text: "Классический полиграф реагирует на эмоцию, а её может вызвать и воспоминание об измене в прошлых отношениях. В EyeDetect внимание приковано к тексту: утверждения меняются каждые 5–7 секунд, на ассоциации не остаётся времени. Поэтому для тестов на верность риск ложного результата ниже." },
+        { title: "Воспоминания не искажают результат", text: "Классический полиграф регистрирует физиологические реакции, на которые могут влиять тревога, страх и эмоционально значимые воспоминания. EyeDetect использует другой принцип: анализирует когнитивную нагрузку по движениям глаз, изменению зрачка, скорости чтения и ответов. Поэтому эмоциональная реакция сама по себе не является основным показателем, по которому EyeDetect определяет результат." },
         { title: "Оценка по каждому вопросу отдельно", text: "Отчёт показывает балл от 1 до 99 по каждой теме. Бывает, что по половому контакту человек чист, а по переписке нет. Вы видите полную картину, а не одно слово «врал»." },
       ],
       questions: [
@@ -135,7 +135,7 @@ export const situations = [
       how: [
         { title: "Questions about facts, not feelings", text: "We do not ask “do you love me”. We ask whether there was sexual contact with another person since a specific date, whether there was romantic correspondence, whether there were hidden expenses. Such questions have a clear yes-or-no answer." },
         { title: "Both partners read the questions in advance", text: "Before the test, the person reads a full explanation of every question: what counts as contact, what does not, and for which period. There are no surprises or traps: both partners understand the questions the same way before the test begins." },
-        { title: "Memories do not distort the result", text: "A classic polygraph reacts to emotion, and emotion can also be triggered by the memory of cheating in a past relationship. In EyeDetect, attention is locked on the text: statements change every 5–7 seconds, leaving no time for associations. That is why the risk of a false result is lower in fidelity tests." },
+        { title: "Memories do not distort the result", text: "A classic polygraph records physiological reactions that can be influenced by anxiety, fear, and emotionally significant memories. EyeDetect works on a different principle: it analyzes cognitive load through eye movements, pupil changes, and reading and response speed. That is why an emotional reaction on its own is not the main indicator EyeDetect uses to determine the result." },
         { title: "A separate score for each question", text: "The report shows a score from 1 to 99 for each topic. It happens that a person is clean on sexual contact but not on correspondence. You see the full picture, not a single word: “lied”." },
       ],
       questions: [
