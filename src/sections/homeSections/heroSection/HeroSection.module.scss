@@ -280,14 +280,15 @@
   }
 }
 
+// На мобільному переваги стоять на місці тем (над кнопкою), з планшета — під кнопкою.
 .trust {
-  order: 5;
+  order: 2;
   display: flex;
   flex-wrap: wrap;
   gap: 8px 20px;
   margin: 0 0 16px;
 
-  @media screen and (min-width: $laptop) {
+  @media screen and (min-width: $tablet) {
     order: 5;
   }
   padding: 0;
