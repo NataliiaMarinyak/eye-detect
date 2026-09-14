@@ -74,9 +74,15 @@
 
 }
 
+// На мобільному теми не показуємо: відсувають головну кнопку за перший екран.
 .tasks {
   order: 2;
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
   flex-wrap: wrap;
   gap: 8px;
   margin: 0 0 20px;
