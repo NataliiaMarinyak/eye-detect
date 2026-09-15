@@ -66,9 +66,9 @@ export const pricingGroups = [
         priceLabelEng: "UAH 4,000",
       },
       {
-        name: "Онлайн-тест — до шести питань",
-        nameRus: "Онлайн-тест — до шести вопросов",
-        nameEng: "Online test — up to six issues",
+        name: "Онлайн-тест — два тести по 3 питання",
+        nameRus: "Онлайн-тест — два теста по 3 вопроса",
+        nameEng: "Online test — two tests of 3 issues each",
         price: 6000,
         priceLabel: "6 000 ₴",
         priceLabelRus: "6 000 ₴",
@@ -200,11 +200,11 @@ export const pricingNotes = [
 // «Невизначений» = алгоритм не зміг оцінити тест (порушені інструкції,
 // відповіді навмання, проблеми з очима чи освітленням). Це не «правда» і не «брехня».
 export const pricingGuarantee = {
-  text: "Якщо результат тесту виявиться невизначеним (алгоритм не зміг оцінити тест через порушені інструкції, відповіді навмання, проблеми з очима чи освітленням) — повторний тест зі знижкою 50%.",
+  text: "Якщо результат тесту виявиться невизначеним (алгоритм не зміг оцінити тест через порушені інструкції, відповіді навмання, проблеми з очима чи освітленням) — повторний тест за наш рахунок.",
   textRus:
-    "Если результат теста окажется неопределённым (алгоритм не смог оценить тест из-за нарушенных инструкций, ответов наугад, проблем с глазами или освещением) — повторный тест со скидкой 50%.",
+    "Если результат теста окажется неопределённым (алгоритм не смог оценить тест из-за нарушенных инструкций, ответов наугад, проблем с глазами или освещением) — повторный тест за наш счёт.",
   textEng:
-    "If the test result is inconclusive (the algorithm could not score the test because of broken instructions, random answers, eye or lighting problems), the retest is 50% off.",
+    "If the test result is inconclusive (the algorithm could not score the test because of broken instructions, random answers, eye or lighting problems), we run the retest at our expense.",
 };
 
 // Що клієнт отримує за ці гроші.
@@ -215,9 +215,9 @@ export const pricingIncluded = [
     textEng: "Pre-test interview: we formulate the specific questions together.",
   },
   {
-    text: "Сам тест: EyeDetect 30–45 хвилин у кабінеті або з виїздом, VerifEye до 15 хвилин зі смартфона. Без датчиків на тілі.",
-    textRus: "Сам тест: EyeDetect 30–45 минут в кабинете или с выездом, VerifEye до 15 минут со смартфона. Без датчиков на теле.",
-    textEng: "The test itself: EyeDetect 30–45 minutes in our Lviv office or on-site, VerifEye up to 15 minutes on a smartphone. No body sensors.",
+    text: "Сам тест: EyeDetect 30–45 хвилин у кабінеті або з виїздом, VerifEye 15–20 хвилин зі смартфона. Без датчиків на тілі.",
+    textRus: "Сам тест: EyeDetect 30–45 минут в кабинете или с выездом, VerifEye 15–20 минут со смартфона. Без датчиков на теле.",
+    textEng: "The test itself: EyeDetect 30–45 minutes in our Lviv office or on-site, VerifEye 15–20 minutes on a smartphone. No body sensors.",
   },
   {
     text: "Оцінку рахує алгоритм Converus однаково для всіх. Спеціаліст готує питання, стежить за умовами тесту і пояснює звіт.",
@@ -231,17 +231,24 @@ export const pricingIncluded = [
   },
 ];
 
-// Порівняння зі світовими цінами. Курс НБУ станом на кінець серпня 2026.
-// Джерела: сайти сертифікованих партнерів Converus (liedetectors-uk.com, eyedetect.pl,
-// eyecanknow.com) і прайс партнера у Великій Британії за £595.
+// Порівняння зі світовими цінами. Курс НБУ на 15.09.2026: 1 PLN = 11,8663 ₴, 1 USD = 44,618 ₴.
+// Джерела: eyedetect.pl (1 290 zł скринінг до 4 тем, 1 590 zł діагностичний тест на 1 тему)
+// і eyecanknow.com (VerifEye від $69), перевірено у вересні 2026.
+// Рядок Великої Британії прибрано за рішенням власника 15.09.2026.
 export const pricingComparison = {
   text: "Той самий тест EyeDetect на тому самому обладнанні й з тією самою сертифікацією Converus у інших країнах коштує помітно дорожче. У Львові тест на одне питання — 5 500 ₴, онлайн VerifEye — 2 500 ₴.",
   textRus: "Тот же тест EyeDetect на том же оборудовании и с той же сертификацией Converus в других странах стоит заметно дороже. Во Львове тест на один вопрос — 5 500 ₴, онлайн VerifEye — 2 500 ₴.",
   textEng: "The same EyeDetect test on the same equipment with the same Converus certification costs noticeably more abroad. In Lviv a single-issue test is UAH 5,500, VerifEye online UAH 2,500.",
   rows: [
-    { country: "Велика Британія", countryRus: "Великобритания", countryEng: "United Kingdom", price: "£399–595", uah: "≈ 24 000–36 000 ₴", uahEng: "≈ UAH 24,000–36,000", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
-    { country: "Польща", countryRus: "Польша", countryEng: "Poland", price: "1 290–1 590 zł", priceEng: "PLN 1,290–1,590", uah: "≈ 16 000–19 500 ₴", uahEng: "≈ UAH 16,000–19,500", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
-    { country: "США", countryRus: "США", countryEng: "USA", price: "$69", uah: "≈ 3 200 ₴", uahEng: "≈ UAH 3,200", note: "VerifEye онлайн", noteRus: "VerifEye онлайн", noteEng: "VerifEye online" },
+    { country: "Польща", countryRus: "Польша", countryEng: "Poland", price: "1 290–1 590 zł", priceEng: "PLN 1,290–1,590", uah: "≈ 15 300–18 900 ₴", uahEng: "≈ UAH 15,300–18,900", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
+    { country: "США", countryRus: "США", countryEng: "USA", price: "$69", uah: "≈ 3 100 ₴", uahEng: "≈ UAH 3,100", note: "VerifEye онлайн", noteRus: "VerifEye онлайн", noteEng: "VerifEye online" },
     { country: "Львів", countryRus: "Львов", countryEng: "Lviv", price: "5 500 ₴ / 2 500 ₴", priceEng: "UAH 5,500 / UAH 2,500", uah: "", uahEng: "", note: "EyeDetect у кабінеті / VerifEye онлайн", noteRus: "EyeDetect в кабинете / VerifEye онлайн", noteEng: "EyeDetect in office / VerifEye online" },
   ],
+};
+
+// Підпис під таблицею порівняння: джерела і дата курсу.
+export const pricingComparisonNote = {
+  uk: "Ціни з сайтів eyedetect.pl і eyecanknow.com, вересень 2026. Гривневі суми за курсом НБУ на 15.09.2026.",
+  ru: "Цены с сайтов eyedetect.pl и eyecanknow.com, сентябрь 2026. Суммы в гривнах по курсу НБУ на 15.09.2026.",
+  en: "Prices from eyedetect.pl and eyecanknow.com, September 2026. UAH amounts at the National Bank of Ukraine rate on 15.09.2026.",
 };

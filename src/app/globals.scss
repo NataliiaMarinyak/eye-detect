@@ -144,12 +144,18 @@ ol {
   left: 20px !important;
 }
 
-#bingc-passive,
-#bingc-active {
+#bingc-passive {
   top: auto !important;
   bottom: 110px !important;
   right: auto !important;
   left: 20px !important;
+}
+
+/* Автоматична форма Binotel (широка смуга, що сама відкривається і перекриває сторінку й вікно заявки).
+   Основне вимкнення — activeFormStatus: 0 у CallWidget.js; це правило лише запасне.
+   Маленька кнопка зворотного дзвінка і форма, що відкривається по кліку на неї, лишаються. */
+#bingc-active {
+  display: none !important;
 }
 
 #bingc-phone-button-tooltip {
@@ -159,8 +165,9 @@ ol {
   left: 0 !important;
 }
 
-/* Поки відкрите вікно квіза, ховаємо плаваючий віджет дзвінка Binotel */
+/* Поки відкрите вікно розрахунку (quiz-open) або вікно заявки (modal-open), ховаємо плаваючий віджет дзвінка Binotel */
 html.quiz-open [id^="bingc"],
-html.quiz-open [class*="bingc"] {
+html.quiz-open [class*="bingc"],
+html.modal-open [id^="bingc"] {
   display: none !important;
 }

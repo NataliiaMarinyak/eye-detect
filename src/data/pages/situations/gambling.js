@@ -6,17 +6,17 @@ export const gambling = {
     nav: "Азартні ігри",
     seo: {
       title: "Азартні ігри і приховані борги: перевірка на детекторі брехні",
-      description: "Партнер підозрює ставки, онлайн-казино або приховані кредити. EyeDetect у Львові за 30–45 хв або VerifEye онлайн за 15 хв: питання лише про факти, без осуду.",
+      description: "Партнер підозрює ставки, онлайн-казино або приховані кредити. EyeDetect у Львові за 30–45 хв або VerifEye онлайн за 15–20 хв: питання лише про факти, без осуду.",
       keywords: ["перевірка партнера на ставки", "детектор брехні азартні ігри", "приховані кредити партнера", "поліграф ігрова залежність", "чи грає чоловік онлайн казино"],
     },
     h1: "Азартні ігри та приховані витрати: перевірка на детекторі брехні",
     sub: "Ставки, онлайн-казино, мікропозики й продані речі рідко видно одразу, а підозра руйнує довіру швидше, ніж сам борг. Тест відповідає на конкретні питання про конкретний період. Для того, хто лікується від залежності, це спосіб підтвердити партнеру не словами, а результатом, що не грає.",
-    facts: ["питання лише про факти", "результат за 45 хвилин", "періодична перевірка як підтримка"],
+    facts: ["питання лише про факти", "звіт до 5 хвилин після тесту", "періодична перевірка як підтримка"],
     how: [
       { title: "Питання про ставки, кредити й рахунки, а не про «залежність»", text: "Ми не питаємо, чи є в людини проблема. Ми питаємо, чи робила вона ставки з конкретної дати, чи брала кредит або мікропозику без відома партнера, чи має приховані картки або рахунки. На кожне питання є відповідь «так» або «ні»." },
       { title: "Обидва партнери читають питання заздалегідь", text: "Перед тестом ви разом узгоджуєте формулювання: що вважається ставкою, з якої дати рахуємо, про які суми йдеться. Людина знає кожне питання до початку. Це не пастка, а перевірка, про яку домовилися обоє." },
       { title: "Оцінка по кожній темі окремо", text: "Звіт показує бал від 1 до 99 по кожній темі. Може виявитися, що ставок не було, а прихований кредит є, або навпаки. Ви бачите, де саме проблема, і говорите про неї, а не про все одразу." },
-      { title: "Періодична перевірка для того, хто лікується", text: "Людина, яка перестала грати, часто не має як це довести: партнер уже чув обіцянки. Тест раз на кілька місяців з тими самими питаннями дає партнеру факт замість обіцянки. Онлайн з телефона це 15 хвилин, без візиту в кабінет." },
+      { title: "Періодична перевірка для того, хто лікується", text: "Людина, яка перестала грати, часто не має як це довести: партнер уже чув обіцянки. Тест раз на кілька місяців з тими самими питаннями дає партнеру факт замість обіцянки. Онлайн з телефона це 15–20 хвилин, без візиту в кабінет." },
     ],
     questions: [
       "З 1 січня 2026 року ви робили ставки на спорт або грали в онлайн-казино на реальні гроші?",
@@ -27,7 +27,7 @@ export const gambling = {
     faq: [
       { q: "Чи можна перевірити партнера без його згоди?", a: "Ні. Тест проходить лише добровільно, з письмовою згодою. Якщо людина сама пропонує перевірку, це вже частина відновлення довіри." },
       { q: "Партнер лікується від залежності. Чи не зашкодить тест?", a: "Питання лише про факти: ставки, кредити, рахунки за конкретний період. Ми не питаємо про почуття, потяг чи стан здоров'я. Наталя Мариняк, психолог і сертифікований Converus Test Proctor, узгоджує з вами формулювання так, щоб тест не звучав як допит." },
-      { q: "Що, як результат «невизначений»?", a: "Так буває не більше ніж у 10 випадках зі 100, найчастіше через втому або хвилювання. Повторний тест зі знижкою 50%. Невизначений результат не означає «грає»." },
+      { q: "Що, як результат «невизначений»?", a: "Таке буває, найчастіше через втому або хвилювання. Повторний тест — за наш рахунок. Невизначений результат не означає «грає»." },
       { q: "Чи можна використати результат у суді або в банку?", a: "Ні. В Україні результат тесту не є доказом у суді, і банк його не бере до уваги. Це інструмент для розмови між вами двома. Звіт бачите лише ви, а тест можна пройти анонімно: під номером, без імені та фото." },
     ],
   },
@@ -35,17 +35,17 @@ export const gambling = {
     nav: "Азартные игры",
     seo: {
       title: "Азартные игры и скрытые долги: проверка на детекторе лжи",
-      description: "Партнёр подозревает ставки, онлайн-казино или скрытые кредиты. EyeDetect во Львове за 30–45 мин или VerifEye онлайн за 15 мин: вопросы о фактах, без осуждения.",
+      description: "Партнёр подозревает ставки, онлайн-казино или скрытые кредиты. EyeDetect во Львове за 30–45 мин или VerifEye онлайн за 15–20 мин: вопросы о фактах, без осуждения.",
       keywords: ["проверка партнёра на ставки", "детектор лжи азартные игры", "скрытые кредиты партнёра", "полиграф игровая зависимость", "играет ли муж в онлайн казино"],
     },
     h1: "Азартные игры и скрытые траты: проверка на детекторе лжи",
     sub: "Ставки, онлайн-казино, микрозаймы и проданные вещи редко видны сразу, а подозрение разрушает доверие быстрее, чем сам долг. Тест отвечает на конкретные вопросы о конкретном периоде. Для того, кто лечится от зависимости, это способ подтвердить партнёру не словами, а результатом, что не играет.",
-    facts: ["вопросы только о фактах", "результат за 45 минут", "периодическая проверка как поддержка"],
+    facts: ["вопросы только о фактах", "отчёт до 5 минут после теста", "периодическая проверка как поддержка"],
     how: [
       { title: "Вопросы о ставках, кредитах и счетах, а не о «зависимости»", text: "Мы не спрашиваем, есть ли у человека проблема. Мы спрашиваем, делал ли он ставки с конкретной даты, брал ли кредит или микрозайм без ведома партнёра, есть ли у него скрытые карты или счета. На каждый вопрос есть ответ «да» или «нет»." },
       { title: "Оба партнёра читают вопросы заранее", text: "Перед тестом вы вместе согласовываете формулировки: что считается ставкой, с какой даты считаем, о каких суммах речь. Человек знает каждый вопрос до начала. Это не ловушка, а проверка, о которой договорились оба." },
       { title: "Оценка по каждой теме отдельно", text: "Отчёт показывает балл от 1 до 99 по каждой теме. Может оказаться, что ставок не было, а скрытый кредит есть, или наоборот. Вы видите, где именно проблема, и говорите о ней, а не обо всём сразу." },
-      { title: "Периодическая проверка для того, кто лечится", text: "Человек, который перестал играть, часто не может это доказать: партнёр уже слышал обещания. Тест раз в несколько месяцев с теми же вопросами даёт партнёру факт вместо обещания. Онлайн с телефона это 15 минут, без визита в кабинет." },
+      { title: "Периодическая проверка для того, кто лечится", text: "Человек, который перестал играть, часто не может это доказать: партнёр уже слышал обещания. Тест раз в несколько месяцев с теми же вопросами даёт партнёру факт вместо обещания. Онлайн с телефона это 15–20 минут, без визита в кабинет." },
     ],
     questions: [
       "С 1 января 2026 года вы делали ставки на спорт или играли в онлайн-казино на реальные деньги?",
@@ -56,7 +56,7 @@ export const gambling = {
     faq: [
       { q: "Можно ли проверить партнёра без его согласия?", a: "Нет. Тест проходит только добровольно, с письменным согласием. Если человек сам предлагает проверку, это уже часть восстановления доверия." },
       { q: "Партнёр лечится от зависимости. Не навредит ли тест?", a: "Вопросы только о фактах: ставки, кредиты, счета за конкретный период. Мы не спрашиваем о чувствах, тяге или состоянии здоровья. Наталия Мариняк, психолог и сертифицированный Converus Test Proctor, согласовывает с вами формулировки так, чтобы тест не звучал как допрос." },
-      { q: "Что, если результат «неопределённый»?", a: "Так бывает не больше чем в 10 случаях из 100, чаще всего из-за усталости или волнения. Повторный тест со скидкой 50%. Неопределённый результат не означает «играет»." },
+      { q: "Что, если результат «неопределённый»?", a: "Такое бывает, чаще всего из-за усталости или волнения. Повторный тест — за наш счёт. Неопределённый результат не означает «играет»." },
       { q: "Можно ли использовать результат в суде или в банке?", a: "Нет. В Украине результат теста не является доказательством в суде, и банк его не принимает во внимание. Это инструмент для разговора между вами двумя. Отчёт видите только вы, а тест можно пройти анонимно: под номером, без имени и фото." },
     ],
   },
@@ -64,17 +64,17 @@ export const gambling = {
     nav: "Gambling",
     seo: {
       title: "Gambling and Hidden Debts: A Lie Detector Test for Couples",
-      description: "Suspect betting, online casinos, or hidden loans? EyeDetect in Lviv in 30–45 minutes or VerifEye online in 15 minutes. Questions about facts only, no judgment.",
+      description: "Suspect betting, online casinos, or hidden loans? EyeDetect in Lviv in 30–45 minutes or VerifEye online in 15–20 minutes. Questions about facts only, no judgment.",
       keywords: ["gambling lie detector test", "is my partner gambling", "hidden loans partner polygraph", "gambling addiction polygraph test", "hidden debt lie detector"],
     },
     h1: "Gambling and Hidden Spending: A Lie Detector Test",
     sub: "Bets, online casinos, payday loans, and sold belongings are rarely visible right away, and suspicion destroys trust faster than the debt itself. The test answers specific questions about a specific period. For someone in recovery from gambling addiction, it is a way to show a partner, with a result rather than words, that they are not gambling.",
-    facts: ["questions about facts only", "result in 45 minutes", "periodic testing as support"],
+    facts: ["questions about facts only", "report within 5 minutes after the test", "periodic testing as support"],
     how: [
       { title: "Questions about bets, loans, and accounts, not about “addiction”", text: "We do not ask whether a person has a problem. We ask whether they placed bets since a specific date, whether they took a loan or a payday loan without the partner's knowledge, whether they have hidden cards or accounts. Every question has a yes-or-no answer." },
       { title: "Both partners read the questions in advance", text: "Before the test, you agree on the wording together: what counts as a bet, from which date we count, which amounts are meant. The person knows every question before the test begins. It is not a trap but a check both partners agreed to." },
       { title: "A separate score for each topic", text: "The report shows a score from 1 to 99 for each topic. It may turn out that there were no bets but there is a hidden loan, or the other way around. You see exactly where the problem is and talk about that, not about everything at once." },
-      { title: "Periodic testing for someone in recovery", text: "A person who has stopped gambling often has no way to prove it: the partner has already heard promises. A test every few months with the same questions gives the partner a fact instead of a promise. Online from a phone it takes 15 minutes, with no visit to the office." },
+      { title: "Periodic testing for someone in recovery", text: "A person who has stopped gambling often has no way to prove it: the partner has already heard promises. A test every few months with the same questions gives the partner a fact instead of a promise. Online from a phone it takes 15–20 minutes, with no visit to the office." },
     ],
     questions: [
       "Since January 1, 2026, have you placed sports bets or played in an online casino for real money?",
@@ -85,7 +85,7 @@ export const gambling = {
     faq: [
       { q: "Can I test my partner without their consent?", a: "No. The test is taken voluntarily only, with written consent. If the person offers to take the test themselves, that is already part of rebuilding trust." },
       { q: "My partner is in recovery from addiction. Could the test do harm?", a: "The questions are about facts only: bets, loans, accounts within a specific period. We do not ask about feelings, cravings, or health. Nataliia Marynyak, psychologist and certified Converus Test Proctor, agrees the wording with you so that the test does not sound like an interrogation." },
-      { q: "What if the result is “inconclusive”?", a: "This happens in no more than 10 cases out of 100, most often because of fatigue or nervousness. A repeat test is 50% off. An inconclusive result does not mean “gambling”." },
+      { q: "What if the result is “inconclusive”?", a: "It happens, most often because of fatigue or nervousness. A repeat test is at our expense. An inconclusive result does not mean “gambling”." },
       { q: "Can the result be used in court or with a bank?", a: "No. In Ukraine, the test result is not evidence in court, and a bank does not take it into account. It is a tool for a conversation between the two of you. Only you see the report, and the test can be taken anonymously: under a number, with no name or photo." },
     ],
   },

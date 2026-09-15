@@ -37,7 +37,7 @@ const EyedetectPage = async ({ params }) => {
         sub={d.hero.sub}
         facts={d.hero.facts}
         primary={dictionary.buttons.bookLviv}
-        secondaryHref="/#paths"
+        secondaryHref={`${lang === "uk" ? "" : "/" + lang}/online`}
         secondaryLabel={dictionary.buttons.testOnline}
         photo="/images/converus/eyedetect-examinee.webp"
         photoAlt="EyeDetect"

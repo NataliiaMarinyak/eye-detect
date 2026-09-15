@@ -10,7 +10,7 @@ import styles from "./ContactsSection.module.scss";
 
 const T = {
   uk: {
-    sub: "Кабінет у Львові, виїзд по Україні та Європі, онлайн-тест VerifEye з будь-якого міста. Оберіть зручний спосіб зв'язку: відповідаємо протягом години в робочий час.",
+    sub: "Кабінет у Львові, виїзд по Україні та Європі, онлайн-тест VerifEye з будь-якого міста. Оберіть зручний спосіб зв'язку. Працюємо цілодобово і відповідаємо протягом 15–30 хвилин.",
     call: "Зателефонувати",
     write: "Написати",
     email: "Електронна пошта",
@@ -21,7 +21,7 @@ const T = {
     book: "Записатися на тест",
   },
   ru: {
-    sub: "Кабинет во Львове, выезд по Украине и Европе, онлайн-тест VerifEye из любого города. Выберите удобный способ связи: отвечаем в течение часа в рабочее время.",
+    sub: "Кабинет во Львове, выезд по Украине и Европе, онлайн-тест VerifEye из любого города. Выберите удобный способ связи. Работаем круглосуточно и отвечаем в течение 15–30 минут.",
     call: "Позвонить",
     write: "Написать",
     email: "Электронная почта",
@@ -32,7 +32,7 @@ const T = {
     book: "Записаться на тест",
   },
   en: {
-    sub: "Office in Lviv, on-site visits across Ukraine and Europe, VerifEye online test from any city. Choose the way to reach us: we reply within an hour during business hours.",
+    sub: "Office in Lviv, on-site visits across Ukraine and Europe, VerifEye online test from any city. Choose the way to reach us. We work 24/7 and reply within 15–30 minutes.",
     call: "Call",
     write: "Write",
     email: "Email",

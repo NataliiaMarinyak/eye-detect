@@ -313,6 +313,11 @@
   & a { color: inherit; font-weight: 700; }
 }
 
+.hint {
+  font-size: 13px;
+  color: $subTitleColor;
+}
+
 .submit {
   display: flex;
   align-items: center;

@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { isValidPhone, isValidTelegram, normalizePhone } from "@/yupSchemas/phoneRules";
 
 // Приймає заявку з форми і надсилає її в Telegram із сервера.
 // Токен бота і chat_id живуть лише тут, у змінних середовища, і не потрапляють у браузер.
@@ -24,19 +25,32 @@ export async function POST(request) {
   }
 
   const name = clean(body.name, 60);
-  const tel = clean(body.tel, 24);
+  // Контакт беремо з запасом (64 символи): формат і кількість цифр перевіряємо нижче.
+  const rawTel = clean(body.tel, 64);
   const email = clean(body.email, 120);
   const comment = cleanMultiline(body.comment, 1500);
   const page = clean(body.page, 200);
   const attribution = cleanMultiline(body.attribution, 600);
   const service = clean(body.service, 120);
 
-  if (!name || !tel) {
+  if (!name || !rawTel) {
     return NextResponse.json({ ok: false, error: "missing_fields" }, { status: 400 });
   }
   // Пастка для ботів: приховане поле має лишатися порожнім.
   if (body.website) {
     return NextResponse.json({ ok: true });
+  }
+
+  // Та сама перевірка, що й у формах: телефон 9–15 цифр («+» лише першим, пробіли, дужки й дефіси прибираємо).
+  // @username приймаємо лише із заявки, де обрано зв'язок у Telegram (channel: "telegram").
+  let tel = "";
+  if (isValidPhone(rawTel)) {
+    tel = normalizePhone(rawTel);
+  } else if (body.channel === "telegram" && isValidTelegram(rawTel)) {
+    tel = rawTel;
+  }
+  if (!tel) {
+    return NextResponse.json({ ok: false, error: "invalid_tel" }, { status: 400 });
   }
 
   const api = process.env.TELEGRAM_API;
@@ -51,7 +65,7 @@ export async function POST(request) {
     `Нова заявка з сайту${page ? ` (${page})` : ""}`,
     service ? `Послуга: ${service}` : null,
     `Ім'я: ${name}`,
-    `Телефон: ${tel}`,
+    tel.startsWith("@") ? `Telegram: ${tel}` : `Телефон: ${tel}`,
     email ? `Email: ${email}` : null,
     comment ? (comment.includes("\n") ? `\n${comment}` : `Повідомлення: ${comment}`) : null,
     attribution ? `\n${attribution}` : null,

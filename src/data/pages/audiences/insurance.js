@@ -21,12 +21,12 @@ export const insurance = {
       { type: "text", title: "Що варто знати відділу врегулювання", paragraphs: [
         "Результат EyeDetect в Україні не є доказом у суді. Це інструмент для внутрішнього рішення: пришвидшити виплату за чистою заявою, призначити додаткову експертизу чи передати матеріали до служби безпеки. Тест проходять лише за письмовою згодою заявника, і він може відмовитись. Питання формулюються про конкретні факти події, не про думки чи наміри.",
         "Пропозиція пройти тест сама по собі є фільтром: заявник із чистою справою зазвичай погоджується, бо це пришвидшує виплату. Ми допомагаємо сформулювати пропозицію так, щоб вона була коректною і не звучала як звинувачення.",
-        "Один заявник у Львові проходить тест у кабінеті на вул. Городоцькій, 45, від 5 500 ₴. Для регіональних філій є виїзд: 6–8 тестів за день, виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом. Для заявників в інших містах, де виїзд не окупається, є VerifEye: онлайн зі смартфона, до 15 хвилин, точність 84–89%, від 2 500 ₴. Ціни для страхової компанії за запитом, залежать від обсягу заяв на місяць.",
+        "Один заявник у Львові проходить тест у кабінеті на вул. Городоцькій, 45, від 5 500 ₴. Для регіональних філій є виїзд: 6–8 тестів за день, виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом. Для заявників в інших містах, де виїзд не окупається, є VerifEye: онлайн зі смартфона, 15–20 хвилин, точність 84–89%, від 2 500 ₴. Ціни для страхової компанії за запитом, залежать від обсягу заяв на місяць.",
       ] },
       { type: "table", title: "Який формат обрати", columns: ["Ситуація", "Формат", "Час і ціна"], rows: [
         ["Сумнівна заява на велику суму, заявник у Львові", "EyeDetect у кабінеті", "30–45 хвилин, від 5 500 ₴"],
         ["Кілька заяв у регіональній філії", "EyeDetect з виїздом", "6–8 тестів за день, ціна за запитом"],
-        ["Заявник в іншому місті, невелика сума", "VerifEye онлайн зі смартфона", "до 15 хвилин, від 2 500 ₴"],
+        ["Заявник в іншому місті, невелика сума", "VerifEye онлайн зі смартфона", "15–20 хвилин, від 2 500 ₴"],
         ["Перевірка врегулювальників і комісарів", "EyeDetect з виїздом в офіс", "6–8 осіб за день, ціна за запитом"],
       ] },
       cta.uk("EyeDetect для страхової компанії"),
@@ -49,12 +49,12 @@ export const insurance = {
       { type: "text", title: "Что стоит знать отделу урегулирования", paragraphs: [
         "Результат EyeDetect в Украине не является доказательством в суде. Это инструмент для внутреннего решения: ускорить выплату по чистому заявлению, назначить дополнительную экспертизу или передать материалы в службу безопасности. Тест проходят только с письменного согласия заявителя, и он может отказаться. Вопросы формулируются о конкретных фактах события, не о мыслях или намерениях.",
         "Предложение пройти тест само по себе является фильтром: заявитель с чистым делом обычно соглашается, потому что это ускоряет выплату. Мы помогаем сформулировать предложение так, чтобы оно было корректным и не звучало как обвинение.",
-        "Один заявитель во Львове проходит тест в кабинете на ул. Городоцкой, 45, от 5 500 ₴. Для региональных филиалов есть выезд: 6–8 тестов в день, выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом. Для заявителей в других городах, где выезд не окупается, есть VerifEye: онлайн со смартфона, до 15 минут, точность 84–89%, от 2 500 ₴. Цены для страховой компании по запросу, зависят от объёма заявлений в месяц.",
+        "Один заявитель во Львове проходит тест в кабинете на ул. Городоцкой, 45, от 5 500 ₴. Для региональных филиалов есть выезд: 6–8 тестов в день, выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом. Для заявителей в других городах, где выезд не окупается, есть VerifEye: онлайн со смартфона, 15–20 минут, точность 84–89%, от 2 500 ₴. Цены для страховой компании по запросу, зависят от объёма заявлений в месяц.",
       ] },
       { type: "table", title: "Какой формат выбрать", columns: ["Ситуация", "Формат", "Время и цена"], rows: [
         ["Сомнительное заявление на крупную сумму, заявитель во Львове", "EyeDetect в кабинете", "30–45 минут, от 5 500 ₴"],
         ["Несколько заявлений в региональном филиале", "EyeDetect с выездом", "6–8 тестов в день, цена по запросу"],
-        ["Заявитель в другом городе, небольшая сумма", "VerifEye онлайн со смартфона", "до 15 минут, от 2 500 ₴"],
+        ["Заявитель в другом городе, небольшая сумма", "VerifEye онлайн со смартфона", "15–20 минут, от 2 500 ₴"],
         ["Проверка урегулировщиков и комиссаров", "EyeDetect с выездом в офис", "6–8 человек в день, цена по запросу"],
       ] },
       cta.ru("EyeDetect для страховой компании"),
@@ -77,12 +77,12 @@ export const insurance = {
       { type: "text", title: "What a claims department should know", paragraphs: [
         "In Ukraine, an EyeDetect result is not admissible evidence in court. It is a tool for an internal decision: speed up payment on a clean claim, order an additional expert review, or pass the file to the security department. The test is taken only with the claimant's written consent, and they may refuse. Questions are phrased about specific facts of the event, not thoughts or intentions.",
         "The offer to take the test is itself a filter: a claimant with a clean case usually agrees, because it speeds up the payout. We help word the offer so that it is correct and does not sound like an accusation.",
-        "A single claimant in Lviv takes the test in our office at 45 Horodotska St., from UAH 5,500. For regional branches there is on-site testing: 6–8 tests per day, travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included. For claimants in other cities where a visit does not pay off, there is VerifEye: online from a smartphone, up to 15 minutes, 84–89% accuracy, from UAH 2,500. Pricing for an insurance company is on request and depends on the monthly volume of claims.",
+        "A single claimant in Lviv takes the test in our office at 45 Horodotska St., from UAH 5,500. For regional branches there is on-site testing: 6–8 tests per day, travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included. For claimants in other cities where a visit does not pay off, there is VerifEye: online from a smartphone, 15–20 minutes, 84–89% accuracy, from UAH 2,500. Pricing for an insurance company is on request and depends on the monthly volume of claims.",
       ] },
       { type: "table", title: "Which format to choose", columns: ["Situation", "Format", "Time and price"], rows: [
         ["A doubtful high-value claim, claimant in Lviv", "EyeDetect in our Lviv office", "30–45 minutes, from UAH 5,500"],
         ["Several claims at a regional branch", "EyeDetect on-site", "6–8 tests per day, price on request"],
-        ["Claimant in another city, small amount", "VerifEye online from a smartphone", "up to 15 minutes, from UAH 2,500"],
+        ["Claimant in another city, small amount", "VerifEye online from a smartphone", "15–20 minutes, from UAH 2,500"],
         ["Screening claims handlers and adjusters", "EyeDetect on-site at your office", "6–8 people per day, price on request"],
       ] },
       cta.en("EyeDetect for an insurance company"),

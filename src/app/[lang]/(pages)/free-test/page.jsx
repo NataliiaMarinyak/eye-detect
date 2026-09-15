@@ -2,7 +2,7 @@ import PageHero from "@/sections/pageHero/PageHero";
 import InfoSections from "@/sections/infoPage/InfoSections";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
 import OrderForm from "@/components/OrderForm/OrderForm";
-import { getFreeTestPage } from "@/data/pages/freeTestPage";
+import { getFreeTestPage, getFreeTestForm } from "@/data/pages/freeTestPage";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getContentFaqJsonLd } from "@/helpers/getContentFaqJsonLd";
 import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadata";
@@ -15,10 +15,14 @@ export async function generateMetadata({ params }) {
 }
 
 // Лендинг безкоштовного тесту VerifEye «на цифру»: герой, як це відбувається,
-// форма заявки (ім'я + телефон), FAQ.
+// форма заявки (ім'я, телефон, обов'язковий вибір: онлайн чи в кабінеті), FAQ.
+// Кнопка героя відкриває вікно заявки у варіанті «безкоштовний тест»:
+// modalVariant="freeTest" (запасний шлях: Modal також впізнає послугу f.service) — свій заголовок,
+// текст без оплати і той самий вибір формату.
 const FreeTestPage = async ({ params }) => {
   const { lang } = params;
   const d = getFreeTestPage(lang);
+  const f = getFreeTestForm(lang);
   const dictionary = await getDictionary(lang);
   const crumbs = breadcrumbsJsonLd(lang, [["", d.seo.crumbHome], ["free-test", d.seo.crumb]]);
   const faqTitle = { uk: "Питання і відповіді", ru: "Вопросы и ответы", en: "Questions and answers" }[lang] || "Питання і відповіді";
@@ -33,7 +37,8 @@ const FreeTestPage = async ({ params }) => {
         sub={d.hero.sub}
         facts={d.hero.facts}
         primary={d.hero.primary}
-        service={d.form.service}
+        service={f.service}
+        modalVariant="freeTest"
         photo="/images/converus/verifeye-test.webp"
         photoAlt="VerifEye"
       />
@@ -43,7 +48,7 @@ const FreeTestPage = async ({ params }) => {
           <h2 className={styles.formTitle}>{d.form.title}</h2>
           <p className={styles.formText}>{d.form.text}</p>
           <div className={styles.formWrap}>
-            <OrderForm dictionary={dictionary} service={d.form.service} />
+            <OrderForm dictionary={dictionary} service={f.service} choice={f.choice} lang={lang} />
           </div>
         </div>
       </section>

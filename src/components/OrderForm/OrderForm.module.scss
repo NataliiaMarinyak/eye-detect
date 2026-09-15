@@ -11,6 +11,8 @@
 .inputWrap {
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .inputWrap:not(:last-of-type) {
@@ -33,14 +35,22 @@
     }
 }
 
+// Помилка під полем (у розмітці стоїть перед полем, order переносить її вниз).
+// Довгий текст з прикладом номера переноситься і не накладається на введене.
 .error {
-    position: absolute;
-    bottom: 2px;
-    right: 100px;
+    order: 2;
+    margin-top: 4px;
+    padding: 0 14px;
     color: $alert-error;
+    text-align: left;
 
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+
+    &:empty {
+        display: none;
+    }
 }
 
 .input {
@@ -167,6 +177,99 @@
         max-width: 100%;
         height: 60px;
         font-size: 20px;
+    }
+}
+
+// Обов'язковий вибір формату (безкоштовний тест): дві кнопки-перемикачі.
+.choice {
+    width: 100%;
+    margin: 0 0 16px;
+    padding: 0;
+    border: 0;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 20px;
+    }
+}
+
+.choiceTitle {
+    margin-bottom: 8px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: $textDarkColor;
+}
+
+.choiceOptions {
+    display: grid;
+    gap: 8px;
+
+    @media screen and (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.choiceOption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 51px;
+    padding: 10px 14px;
+    border: 1.5px solid $lineColor;
+    border-radius: 8px;
+    background-color: $cardBgColor;
+    color: $textDarkColor;
+    font-size: 16px;
+    line-height: 1.35;
+    cursor: pointer;
+    transition: border-color 150ms ease, background-color 150ms ease;
+
+    & input {
+        flex-shrink: 0;
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        accent-color: $primary;
+    }
+
+    &:hover {
+        border-color: $primary;
+    }
+
+    &:focus-within {
+        outline: 3px solid $btnBgColor;
+        outline-offset: 2px;
+    }
+}
+
+.choiceSelected {
+    border-color: $primary;
+    background-color: $primarySoft;
+    font-weight: 700;
+}
+
+.choice[data-invalid="true"] .choiceOption {
+    border-color: $alert-error;
+}
+
+.choiceError {
+    margin-top: 6px;
+    padding: 0 14px;
+    color: $alert-error;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.privacy {
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: $subTitleColor;
+    text-align: center;
+
+    & a {
+        color: $primary;
+        text-decoration: underline;
     }
 }
 

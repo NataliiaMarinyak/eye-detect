@@ -16,7 +16,7 @@ export const familyMoney = {
       { title: "Перевіряють усіх, хто мав доступ", text: "Не одну «підозрілу» людину, а всіх, хто міг узяти: так ніхто не почувається обраним для звинувачення. EyeDetect у кабінеті у Львові або з виїздом додому чи в офіс, 30–45 хвилин на людину. Сім'ю з чотирьох-п'яти осіб можна перевірити за один день." },
       { title: "Одне конкретне питання про одну подію", text: "Питання стосується саме цієї події: чи брали ви гроші із сейфа між 3 і 10 травня, чи знаєте, хто взяв. Не «чи ви чесна людина». Ми не питаємо про почуття, здоров'я чи переконання. На питання про факт є точна відповідь, і тест її перевіряє." },
       { title: "Невинний отримує документальне підтвердження", text: "Звіт з балом від 1 до 99 по кожному питанню. Для того, кого підозрювали безпідставно, це спосіб закрити тему раз і назавжди, а не роками чути натяки за сімейним столом." },
-      { title: "Онлайн для тих, хто далеко", text: "Якщо родич або партнер в іншому місті чи за кордоном, він проходить VerifEye з телефона до 15 хвилин, від 2 500 ₴. Звіт у PDF приходить вам на пошту до 5 хвилин після тесту. Так усіх, хто мав доступ, можна перевірити в один день незалежно від того, де вони зараз." },
+      { title: "Онлайн для тих, хто далеко", text: "Якщо родич або партнер в іншому місті чи за кордоном, він проходить VerifEye з телефона за 15–20 хвилин, від 2 500 ₴. Звіт у PDF приходить вам на пошту до 5 хвилин після тесту. Так усіх, хто мав доступ, можна перевірити в один день незалежно від того, де вони зараз." },
     ],
     questions: [
       "Між 3 і 10 травня 2025 року ви брали гроші із сейфа у спальні?",
@@ -27,7 +27,7 @@ export const familyMoney = {
     faq: [
       { q: "Чи можна перевірити дитину, родича або помічницю по дому?", a: "Лише добровільно і з письмової згоди самої людини. Змусити неможливо. Відмова теж інформація, але не доказ провини. Ми пояснюємо кожному, що тест насамперед знімає підозру з невинних, і саме тому на нього зазвичай погоджуються." },
       { q: "Один із тих, хто мав доступ, зараз в іншому місті. Що робити?", a: "VerifEye онлайн: ми надсилаємо посилання, людина проходить тест з телефона у тихій кімнаті, звіт у PDF приходить на пошту до 5 хвилин після тесту. Точність онлайн 84–89%, у кабінеті на EyeDetect 86–90%." },
-      { q: "Що, як результат «невизначений»?", a: "Так буває не більше ніж у 10 випадках зі 100, найчастіше через втому або хвилювання. Повторний тест зі знижкою 50%." },
+      { q: "Що, як результат «невизначений»?", a: "Таке буває, найчастіше через втому або хвилювання. Повторний тест — за наш рахунок." },
       { q: "Чи піде звіт у поліцію або суд?", a: "Ні. В Україні результат тесту не є доказом у суді, і ми не передаємо звіти нікому, крім замовника. Хто побачить результат, вирішуєте ви. Тест можна пройти анонімно: під номером, без імені та фото. Ми не обговорюємо перевірки і не зберігаємо звіти довше, ніж потрібно для видачі результату." },
     ],
   },
@@ -45,7 +45,7 @@ export const familyMoney = {
       { title: "Проверяют всех, кто имел доступ", text: "Не одного «подозрительного» человека, а всех, кто мог взять: так никто не чувствует себя выбранным для обвинения. EyeDetect в кабинете во Львове или с выездом домой или в офис, 30–45 минут на человека. Семью из четырёх-пяти человек можно проверить за один день." },
       { title: "Один конкретный вопрос об одном событии", text: "Вопрос касается именно этого события: брали ли вы деньги из сейфа между 3 и 10 мая, знаете ли, кто взял. Не «честный ли вы человек». Мы не спрашиваем о чувствах, здоровье или убеждениях. На вопрос о факте есть точный ответ, и тест его проверяет." },
       { title: "Невиновный получает документальное подтверждение", text: "Отчёт с баллом от 1 до 99 по каждому вопросу. Для того, кого подозревали безосновательно, это способ закрыть тему раз и навсегда, а не годами слышать намёки за семейным столом." },
-      { title: "Онлайн для тех, кто далеко", text: "Если родственник или партнёр в другом городе или за границей, он проходит VerifEye с телефона до 15 минут, от 2 500 ₴. Отчёт в PDF приходит вам на почту до 5 минут после теста. Так всех, кто имел доступ, можно проверить в один день независимо от того, где они сейчас." },
+      { title: "Онлайн для тех, кто далеко", text: "Если родственник или партнёр в другом городе или за границей, он проходит VerifEye с телефона за 15–20 минут, от 2 500 ₴. Отчёт в PDF приходит вам на почту до 5 минут после теста. Так всех, кто имел доступ, можно проверить в один день независимо от того, где они сейчас." },
     ],
     questions: [
       "Между 3 и 10 мая 2025 года вы брали деньги из сейфа в спальне?",
@@ -56,7 +56,7 @@ export const familyMoney = {
     faq: [
       { q: "Можно ли проверить ребёнка, родственника или помощницу по дому?", a: "Только добровольно и с письменного согласия самого человека. Заставить невозможно. Отказ тоже информация, но не доказательство вины. Мы объясняем каждому, что тест прежде всего снимает подозрение с невиновных, и именно поэтому на него обычно соглашаются." },
       { q: "Один из тех, кто имел доступ, сейчас в другом городе. Что делать?", a: "VerifEye онлайн: мы отправляем ссылку, человек проходит тест с телефона в тихой комнате, отчёт в PDF приходит на почту до 5 минут после теста. Точность онлайн 84–89%, в кабинете на EyeDetect 86–90%." },
-      { q: "Что, если результат «неопределённый»?", a: "Так бывает не больше чем в 10 случаях из 100, чаще всего из-за усталости или волнения. Повторный тест со скидкой 50%." },
+      { q: "Что, если результат «неопределённый»?", a: "Такое бывает, чаще всего из-за усталости или волнения. Повторный тест — за наш счёт." },
       { q: "Попадёт ли отчёт в полицию или суд?", a: "Нет. В Украине результат теста не является доказательством в суде, и мы не передаём отчёты никому, кроме заказчика. Кто увидит результат, решаете вы. Тест можно пройти анонимно: под номером, без имени и фото. Мы не обсуждаем проверки и не храним отчёты дольше, чем нужно для выдачи результата." },
     ],
   },
@@ -74,7 +74,7 @@ export const familyMoney = {
       { title: "Everyone who had access is tested", text: "Not one “suspicious” person, but everyone who could have taken it: that way no one feels singled out for blame. EyeDetect in our Lviv office or on-site at your home or office, 30–45 minutes per person. A family of four or five can be tested in one day." },
       { title: "One specific question about one event", text: "The question is about this exact event: did you take money from the safe between May 3 and May 10, do you know who took it. Not “are you an honest person”. We do not ask about feelings, health, or beliefs. A question about a fact has a precise answer, and the test checks it." },
       { title: "The innocent get documented proof", text: "A report with a score from 1 to 99 for each question. For someone suspected without grounds, it is a way to close the topic once and for all instead of hearing hints at the family table for years." },
-      { title: "Online for those who are far away", text: "If a relative or partner is in another city or abroad, they take VerifEye from a phone in up to 15 minutes, from UAH 2,500. The PDF report arrives in your inbox within 5 minutes after the test. That way everyone who had access can be tested on the same day, wherever they are now." },
+      { title: "Online for those who are far away", text: "If a relative or partner is in another city or abroad, they take VerifEye from a phone in 15–20 minutes, from UAH 2,500. The PDF report arrives in your inbox within 5 minutes after the test. That way everyone who had access can be tested on the same day, wherever they are now." },
     ],
     questions: [
       "Between May 3 and May 10, 2025, did you take money from the safe in the bedroom?",
@@ -85,7 +85,7 @@ export const familyMoney = {
     faq: [
       { q: "Can a child, a relative, or a housekeeper be tested?", a: "Only voluntarily and with the person's own written consent. No one can be forced. A refusal is also information, but not proof of guilt. We explain to everyone that the test first of all clears the innocent, and that is usually why people agree to it." },
       { q: "One of the people who had access is now in another city. What can we do?", a: "VerifEye online: we send a link, the person takes the test from a phone in a quiet room, and the PDF report arrives by email within 5 minutes after the test. Online accuracy is 84–89%; in our Lviv office on EyeDetect it is 86–90%." },
-      { q: "What if the result is “inconclusive”?", a: "This happens in no more than 10 cases out of 100, most often because of fatigue or nervousness. A repeat test is 50% off." },
+      { q: "What if the result is “inconclusive”?", a: "It happens, most often because of fatigue or nervousness. A repeat test is at our expense." },
       { q: "Will the report go to the police or a court?", a: "No. In Ukraine, the test result is not evidence in court, and we do not hand reports to anyone except the client. You decide who sees the result. The test can be taken anonymously: under a number, without a name or photo. We do not discuss tests and do not keep reports longer than needed to deliver the result." },
     ],
   },

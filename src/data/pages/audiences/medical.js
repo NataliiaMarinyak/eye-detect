@@ -20,13 +20,13 @@ export const medical = {
       how.uk,
       { type: "text", title: "Що варто знати керівнику клініки", paragraphs: [
         "Тест проводиться лише за письмовою згодою працівника, і він може відмовитись. Питання стосуються лише конкретних дій за конкретний період: препарати, гроші, документи, дані пацієнтів. Не питаємо про здоров'я, приватне життя, переконання. Результат EyeDetect в Україні не є доказом у суді, це підстава для внутрішнього рішення чи службової перевірки.",
-        "Для інциденту в одній клініці зручніший виїзд: 6–8 осіб за день у вашому приміщенні, без відриву персоналу на пів дня. Для одного кандидата підходить кабінет у Львові на вул. Городоцькій, 45. Для аптечної мережі з філіями в різних містах є VerifEye: онлайн-тест зі смартфона, до 15 хвилин, точність 84–89%, від 2 500 ₴.",
+        "Для інциденту в одній клініці зручніший виїзд: 6–8 осіб за день у вашому приміщенні, без відриву персоналу на пів дня. Для одного кандидата підходить кабінет у Львові на вул. Городоцькій, 45. Для аптечної мережі з філіями в різних містах є VerifEye: онлайн-тест зі смартфона, 15–20 хвилин, точність 84–89%, від 2 500 ₴.",
         "Звіт по кожній людині отримує лише уповноважена особа. За бажанням тест прив'язується до номера, а не до імені. Тест на EyeDetect від 5 500 ₴, ціни для мережі залежать від кількості осіб, тем і міста, розрахунок надсилаємо того ж дня.",
       ] },
       { type: "table", title: "Який формат обрати", columns: ["Ситуація", "Формат", "Час і ціна"], rows: [
         ["Нестача препаратів, коло з 3–8 осіб", "EyeDetect з виїздом у клініку", "1 день, ціна за запитом"],
         ["Один кандидат на посаду з доступом", "EyeDetect у кабінеті, Львів", "30–45 хвилин, від 5 500 ₴"],
-        ["Персонал філій в інших містах", "VerifEye онлайн зі смартфона", "до 15 хвилин, від 2 500 ₴"],
+        ["Персонал філій в інших містах", "VerifEye онлайн зі смартфона", "15–20 хвилин, від 2 500 ₴"],
         ["Періодична перевірка мережі", "EyeDetect з виїздом, графік", "6–8 осіб за день, ціна за запитом"],
       ] },
       cta.uk("EyeDetect для клініки"),
@@ -48,13 +48,13 @@ export const medical = {
       how.ru,
       { type: "text", title: "Что стоит знать руководителю клиники", paragraphs: [
         "Тест проводится только с письменного согласия сотрудника, и он может отказаться. Вопросы касаются только конкретных действий за конкретный период: препараты, деньги, документы, данные пациентов. Не спрашиваем о здоровье, частной жизни, убеждениях. Результат EyeDetect в Украине не является доказательством в суде, это основание для внутреннего решения или служебной проверки.",
-        "Для инцидента в одной клинике удобнее выезд: 6–8 человек в день в вашем помещении, без отрыва персонала на полдня. Для одного кандидата подходит кабинет во Львове на ул. Городоцкой, 45. Для аптечной сети с филиалами в разных городах есть VerifEye: онлайн-тест со смартфона, до 15 минут, точность 84–89%, от 2 500 ₴.",
+        "Для инцидента в одной клинике удобнее выезд: 6–8 человек в день в вашем помещении, без отрыва персонала на полдня. Для одного кандидата подходит кабинет во Львове на ул. Городоцкой, 45. Для аптечной сети с филиалами в разных городах есть VerifEye: онлайн-тест со смартфона, 15–20 минут, точность 84–89%, от 2 500 ₴.",
         "Отчёт по каждому человеку получает только уполномоченное лицо. По желанию тест привязывается к номеру, а не к имени. Тест на EyeDetect от 5 500 ₴, цены для сети зависят от количества людей, тем и города, расчёт отправляем в тот же день.",
       ] },
       { type: "table", title: "Какой формат выбрать", columns: ["Ситуация", "Формат", "Время и цена"], rows: [
         ["Недостача препаратов, круг из 3–8 человек", "EyeDetect с выездом в клинику", "1 день, цена по запросу"],
         ["Один кандидат на должность с доступом", "EyeDetect в кабинете, Львов", "30–45 минут, от 5 500 ₴"],
-        ["Персонал филиалов в других городах", "VerifEye онлайн со смартфона", "до 15 минут, от 2 500 ₴"],
+        ["Персонал филиалов в других городах", "VerifEye онлайн со смартфона", "15–20 минут, от 2 500 ₴"],
         ["Периодическая проверка сети", "EyeDetect с выездом, график", "6–8 человек в день, цена по запросу"],
       ] },
       cta.ru("EyeDetect для клиники"),
@@ -76,13 +76,13 @@ export const medical = {
       how.en,
       { type: "text", title: "What a clinic director should know", paragraphs: [
         "The test is conducted only with the employee's written consent, and they may refuse. Questions concern only specific actions within a specific period: drugs, money, documents, patient data. We do not ask about health, private life, or beliefs. In Ukraine, an EyeDetect result is not admissible evidence in court; it is grounds for an internal decision or an internal review.",
-        "For an incident at a single clinic, on-site testing is more convenient: 6–8 people per day at your premises, without pulling staff away for half a day. For a single candidate, our Lviv office at 45 Horodotska St. works well. For a pharmacy chain with branches in different cities there is VerifEye: an online test from a smartphone, up to 15 minutes, 84–89% accuracy, from UAH 2,500.",
+        "For an incident at a single clinic, on-site testing is more convenient: 6–8 people per day at your premises, without pulling staff away for half a day. For a single candidate, our Lviv office at 45 Horodotska St. works well. For a pharmacy chain with branches in different cities there is VerifEye: an online test from a smartphone, 15–20 minutes, 84–89% accuracy, from UAH 2,500.",
         "The report on each person goes only to the authorized person. On request, the test is linked to a number rather than a name. An EyeDetect test starts from UAH 5,500; pricing for a chain depends on the number of people, topics, and city, and we send a quote the same day.",
       ] },
       { type: "table", title: "Which format to choose", columns: ["Situation", "Format", "Time and price"], rows: [
         ["Missing drugs, a circle of 3–8 people", "EyeDetect on-site at the clinic", "1 day, price on request"],
         ["One candidate for a position with access", "EyeDetect in our Lviv office", "30–45 minutes, from UAH 5,500"],
-        ["Branch staff in other cities", "VerifEye online from a smartphone", "up to 15 minutes, from UAH 2,500"],
+        ["Branch staff in other cities", "VerifEye online from a smartphone", "15–20 minutes, from UAH 2,500"],
         ["Periodic testing across the chain", "EyeDetect on-site, on a schedule", "6–8 people per day, price on request"],
       ] },
       cta.en("EyeDetect for a clinic"),

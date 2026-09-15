@@ -6,8 +6,8 @@ import { cta, how, howVerifeye } from "../audiencesShared";
 export const recruiting = {
   slug: "recruiting",
   uk: {
-    seo: { title: "Детектор брехні для рекрутингової агенції: перевірка кандидатів", description: "Перевірка кандидатів як послуга для клієнтів агенції. VerifEye онлайн до співбесіди, до 15 хвилин, EyeDetect для ключових позицій, 6–8 людей за день.", keywords: ["детектор брехні для рекрутингової агенції", "перевірка кандидатів для кадрової агенції", "поліграф аутстафінг персоналу", "перевірка кандидатів онлайн VerifEye", "EyeDetect масовий підбір"], crumbHome: "Головна", crumb: "Для рекрутингових агенцій" },
-    hero: { eyebrow: "Рекрутинговим, кадровим і аутстафінговим агенціям", h1: "Детектор брехні для рекрутингової агенції", sub: "Агенція додає перевірку кандидата до своєї послуги і передає клієнту звіт разом із резюме. VerifEye проходять онлайн з телефона до співбесіди, EyeDetect у Львові або з виїздом до клієнта закриває ключові позиції. Кандидат читає всі питання заздалегідь і проходить тест лише за письмовою згодою.", facts: ["VerifEye до співбесіди, до 15 хвилин", "6–8 кандидатів за день з виїздом", "точність 84–90%", "звіт по кожному одразу після тесту"] },
+    seo: { title: "Детектор брехні для рекрутингової агенції: перевірка кандидатів", description: "Перевірка кандидатів як послуга для клієнтів агенції. VerifEye онлайн до співбесіди, 15–20 хвилин, EyeDetect для ключових позицій, 6–8 людей за день.", keywords: ["детектор брехні для рекрутингової агенції", "перевірка кандидатів для кадрової агенції", "поліграф аутстафінг персоналу", "перевірка кандидатів онлайн VerifEye", "EyeDetect масовий підбір"], crumbHome: "Головна", crumb: "Для рекрутингових агенцій" },
+    hero: { eyebrow: "Рекрутинговим, кадровим і аутстафінговим агенціям", h1: "Детектор брехні для рекрутингової агенції", sub: "Агенція додає перевірку кандидата до своєї послуги і передає клієнту звіт разом із резюме. VerifEye проходять онлайн з телефона до співбесіди, EyeDetect у Львові або з виїздом до клієнта закриває ключові позиції. Кандидат читає всі питання заздалегідь і проходить тест лише за письмовою згодою.", facts: ["VerifEye до співбесіди, 15–20 хвилин", "6–8 кандидатів за день з виїздом", "точність: EyeDetect 86–90%, VerifEye 84–89%", "звіт по кожному одразу після тесту"] },
     blocks: [
       { type: "cards", title: "Де це допомагає", items: [
         { title: "Перевірка як частина послуги", text: "Клієнт отримує від агенції не лише резюме і рекомендації, а й результат тесту по фінальних кандидатах. Це аргумент у тендері на підбір і причина обрати саме вашу агенцію." },
@@ -22,12 +22,12 @@ export const recruiting = {
       { ...how.uk, tone: undefined, title: "Як проходить EyeDetect" },
       { type: "text", title: "Партнерська модель для агенції", paragraphs: [
         "Агенція перепродає перевірку клієнту як частину пакета або окрему опцію і сама визначає ціну для клієнта. Ми працюємо через агенцію: погоджуємо теми з рекрутером, надсилаємо посилання кандидатам, повертаємо звіти. Ціни для бізнесу індивідуальні і залежать від кількості тестів на місяць. Розрахунок надсилаємо того ж дня.",
-        "Два формати. VerifEye: кандидат проходить тест на своєму смартфоні з будь-якого міста, до 15 хвилин, точність 84–89%, від 2 500 ₴. EyeDetect: 30–45 хвилин у кабінеті у Львові або з виїздом до клієнта, 6–8 людей за день, точність 86–90%, від 5 500 ₴. Виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом.",
+        "Два формати. VerifEye: кандидат проходить тест на своєму смартфоні з будь-якого міста, 15–20 хвилин, точність 84–89%, від 2 500 ₴. EyeDetect: 30–45 хвилин у кабінеті у Львові або з виїздом до клієнта, 6–8 людей за день, точність 86–90%, від 5 500 ₴. Виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом.",
         "Кандидат проходить тест лише за письмовою згодою і може відмовитись. Питання стосуються конкретних фактів і періодів: гроші, майно, документи, робота. Теми здоров'я, політики, релігії та приватного життя не перевіряються. Результат не є доказом у суді, це підстава для кадрового рішення клієнта.",
       ] },
       { type: "table", title: "Який формат обрати", columns: ["", "VerifEye онлайн", "EyeDetect"], rows: [
         ["Де проходить", "на телефоні кандидата, будь-яке місто", "кабінет у Львові або виїзд до клієнта"],
-        ["Час на людину", "до 15 хвилин", "30–45 хвилин"],
+        ["Час на людину", "15–20 хвилин", "30–45 хвилин"],
         ["Точність", "84–89%", "86–90%"],
         ["Ціна за тест", "від 2 500 ₴", "від 5 500 ₴"],
         ["Для кого", "масовий підбір, лінійні позиції, інші міста", "керівники, фінансові посади, доступ до грошей і даних"],
@@ -36,8 +36,8 @@ export const recruiting = {
     ],
   },
   ru: {
-    seo: { title: "Детектор лжи для рекрутингового агентства: проверка кандидатов", description: "Проверка кандидатов как услуга для клиентов агентства. VerifEye онлайн до собеседования, до 15 минут, EyeDetect для ключевых позиций, 6–8 человек в день.", keywords: ["детектор лжи для рекрутингового агентства", "проверка кандидатов для кадрового агентства", "полиграф аутстаффинг персонала", "проверка кандидатов онлайн VerifEye", "EyeDetect массовый подбор"], crumbHome: "Главная", crumb: "Для рекрутинговых агентств" },
-    hero: { eyebrow: "Рекрутинговым, кадровым и аутстаффинговым агентствам", h1: "Детектор лжи для рекрутингового агентства", sub: "Агентство добавляет проверку кандидата к своей услуге и передаёт клиенту отчёт вместе с резюме. VerifEye проходят онлайн с телефона до собеседования, EyeDetect во Львове или с выездом к клиенту закрывает ключевые позиции. Кандидат читает все вопросы заранее и проходит тест только с письменного согласия.", facts: ["VerifEye до собеседования, до 15 минут", "6–8 кандидатов в день с выездом", "точность 84–90%", "отчёт по каждому сразу после теста"] },
+    seo: { title: "Детектор лжи для рекрутингового агентства: проверка кандидатов", description: "Проверка кандидатов как услуга для клиентов агентства. VerifEye онлайн до собеседования, 15–20 минут, EyeDetect для ключевых позиций, 6–8 человек в день.", keywords: ["детектор лжи для рекрутингового агентства", "проверка кандидатов для кадрового агентства", "полиграф аутстаффинг персонала", "проверка кандидатов онлайн VerifEye", "EyeDetect массовый подбор"], crumbHome: "Главная", crumb: "Для рекрутинговых агентств" },
+    hero: { eyebrow: "Рекрутинговым, кадровым и аутстаффинговым агентствам", h1: "Детектор лжи для рекрутингового агентства", sub: "Агентство добавляет проверку кандидата к своей услуге и передаёт клиенту отчёт вместе с резюме. VerifEye проходят онлайн с телефона до собеседования, EyeDetect во Львове или с выездом к клиенту закрывает ключевые позиции. Кандидат читает все вопросы заранее и проходит тест только с письменного согласия.", facts: ["VerifEye до собеседования, 15–20 минут", "6–8 кандидатов в день с выездом", "точность: EyeDetect 86–90%, VerifEye 84–89%", "отчёт по каждому сразу после теста"] },
     blocks: [
       { type: "cards", title: "Где это помогает", items: [
         { title: "Проверка как часть услуги", text: "Клиент получает от агентства не только резюме и рекомендации, но и результат теста по финальным кандидатам. Это аргумент в тендере на подбор и причина выбрать именно ваше агентство." },
@@ -52,12 +52,12 @@ export const recruiting = {
       { ...how.ru, tone: undefined, title: "Как проходит EyeDetect" },
       { type: "text", title: "Партнёрская модель для агентства", paragraphs: [
         "Агентство перепродаёт проверку клиенту как часть пакета или отдельную опцию и само определяет цену для клиента. Мы работаем через агентство: согласовываем темы с рекрутером, отправляем ссылки кандидатам, возвращаем отчёты. Цены для бизнеса индивидуальные и зависят от количества тестов в месяц. Расчёт отправляем в тот же день.",
-        "Два формата. VerifEye: кандидат проходит тест на своём смартфоне из любого города, до 15 минут, точность 84–89%, от 2 500 ₴. EyeDetect: 30–45 минут в кабинете во Львове или с выездом к клиенту, 6–8 человек в день, точность 86–90%, от 5 500 ₴. Выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом.",
+        "Два формата. VerifEye: кандидат проходит тест на своём смартфоне из любого города, 15–20 минут, точность 84–89%, от 2 500 ₴. EyeDetect: 30–45 минут в кабинете во Львове или с выездом к клиенту, 6–8 человек в день, точность 86–90%, от 5 500 ₴. Выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом.",
         "Кандидат проходит тест только с письменного согласия и может отказаться. Вопросы касаются конкретных фактов и периодов: деньги, имущество, документы, работа. Темы здоровья, политики, религии и частной жизни не проверяются. Результат не является доказательством в суде, это основание для кадрового решения клиента.",
       ] },
       { type: "table", title: "Какой формат выбрать", columns: ["", "VerifEye онлайн", "EyeDetect"], rows: [
         ["Где проходит", "на телефоне кандидата, любой город", "кабинет во Львове или выезд к клиенту"],
-        ["Время на человека", "до 15 минут", "30–45 минут"],
+        ["Время на человека", "15–20 минут", "30–45 минут"],
         ["Точность", "84–89%", "86–90%"],
         ["Цена за тест", "от 2 500 ₴", "от 5 500 ₴"],
         ["Для кого", "массовый подбор, линейные позиции, другие города", "руководители, финансовые должности, доступ к деньгам и данным"],
@@ -66,8 +66,8 @@ export const recruiting = {
     ],
   },
   en: {
-    seo: { title: "Lie Detector for Recruiting Agencies: Candidate Screening", description: "Candidate screening as a service for your agency's clients. VerifEye online before the interview, up to 15 minutes, EyeDetect for key roles, 6–8 people a day.", keywords: ["lie detector for recruiting agencies", "candidate screening for staffing agencies", "polygraph for outstaffing personnel", "online candidate screening VerifEye", "EyeDetect high-volume hiring"], crumbHome: "Home", crumb: "For recruiting agencies" },
-    hero: { eyebrow: "For recruiting, staffing, and outstaffing agencies", h1: "Lie Detector for Recruiting Agencies", sub: "The agency adds candidate screening to its service and hands the client a report along with the resume. Candidates take VerifEye online from a phone before the interview; EyeDetect in Lviv or on-site at the client covers key positions. The candidate reads all questions in advance and takes the test only with written consent.", facts: ["VerifEye before the interview, up to 15 minutes", "6–8 candidates a day on-site", "84–90% accuracy", "report on each person right after the test"] },
+    seo: { title: "Lie Detector for Recruiting Agencies: Candidate Screening", description: "Candidate screening as a service for your agency's clients. VerifEye online before the interview, 15–20 minutes, EyeDetect for key roles, 6–8 people a day.", keywords: ["lie detector for recruiting agencies", "candidate screening for staffing agencies", "polygraph for outstaffing personnel", "online candidate screening VerifEye", "EyeDetect high-volume hiring"], crumbHome: "Home", crumb: "For recruiting agencies" },
+    hero: { eyebrow: "For recruiting, staffing, and outstaffing agencies", h1: "Lie Detector for Recruiting Agencies", sub: "The agency adds candidate screening to its service and hands the client a report along with the resume. Candidates take VerifEye online from a phone before the interview; EyeDetect in Lviv or on-site at the client covers key positions. The candidate reads all questions in advance and takes the test only with written consent.", facts: ["VerifEye before the interview, 15–20 minutes", "6–8 candidates a day on-site", "accuracy: EyeDetect 86–90%, VerifEye 84–89%", "report on each person right after the test"] },
     blocks: [
       { type: "cards", title: "Where it helps", items: [
         { title: "Screening as part of the service", text: "The client receives from the agency not only resumes and references, but also test results for the final candidates. It is an argument in a recruiting tender and a reason to choose your agency." },
@@ -82,12 +82,12 @@ export const recruiting = {
       { ...how.en, tone: undefined, title: "How EyeDetect works" },
       { type: "text", title: "Partner model for agencies", paragraphs: [
         "The agency resells the screening to the client as part of a package or as a separate option and sets its own price for the client. We work through the agency: we agree on topics with the recruiter, send links to candidates, and return the reports. Business pricing is individual and depends on the number of tests per month. We send a quote the same day.",
-        "Two formats. VerifEye: the candidate takes the test on their own smartphone from any city, up to 15 minutes, 84–89% accuracy, from UAH 2,500. EyeDetect: 30–45 minutes in our Lviv office or on-site at the client, 6–8 people a day, 86–90% accuracy, from UAH 5,500. Travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included.",
+        "Two formats. VerifEye: the candidate takes the test on their own smartphone from any city, 15–20 minutes, 84–89% accuracy, from UAH 2,500. EyeDetect: 30–45 minutes in our Lviv office or on-site at the client, 6–8 people a day, 86–90% accuracy, from UAH 5,500. Travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included.",
         "The candidate takes the test only with written consent and may refuse. Questions concern specific facts and periods: money, property, documents, work. Health, politics, religion, and private life are not tested. The result is not admissible evidence in court; it is a basis for the client's hiring decision.",
       ] },
       { type: "table", title: "Which format to choose", columns: ["", "VerifEye online", "EyeDetect"], rows: [
         ["Where", "on the candidate's phone, any city", "our Lviv office or on-site at the client"],
-        ["Time per person", "up to 15 minutes", "30–45 minutes"],
+        ["Time per person", "15–20 minutes", "30–45 minutes"],
         ["Accuracy", "84–89%", "86–90%"],
         ["Price per test", "from UAH 2,500", "from UAH 5,500"],
         ["Best for", "high-volume hiring, entry-level roles, other cities", "managers, finance roles, access to money and data"],

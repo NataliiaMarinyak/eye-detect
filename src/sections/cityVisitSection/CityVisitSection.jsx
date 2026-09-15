@@ -4,6 +4,9 @@ import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import { fill, keepShortWords } from "@/data/pages/cityTexts";
 import styles from "./CityVisitSection.module.scss";
 
+// Назва послуги для форми заявки і Telegram — мовою сторінки.
+const VISIT_SERVICE = { uk: "EyeDetect з виїздом", ru: "EyeDetect с выездом", en: "EyeDetect on-site" };
+
 // Блок «Як пройти тест у {місто}»: онлайн сьогодні або виїзд спеціаліста.
 // Тексти залежать від регіону (захід України / інша Україна / Європа).
 // quizCta: кнопка картки виїзду відкриває розрахунок вартості замість вікна консультації.
@@ -35,7 +38,7 @@ const CityVisitSection = ({ t, region, loc, km, vars, dictionary, lang, quizCta 
               {quizCta ? (
                 <PriceQuizBtn customClass={styles.btnPrimary} title={t.visit.cta} />
               ) : (
-                <OpenModalBtn customClass={styles.btnPrimary} title={t.visit.cta} service={`EyeDetect з виїздом · ${loc}`} />
+                <OpenModalBtn customClass={styles.btnPrimary} title={t.visit.cta} service={`${VISIT_SERVICE[lang] || VISIT_SERVICE.uk} · ${loc}`} />
               )}
             </div>
           </Reveal>

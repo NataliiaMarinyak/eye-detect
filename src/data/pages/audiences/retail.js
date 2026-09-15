@@ -20,7 +20,7 @@ export const retail = {
       how.uk,
       { type: "cards", title: "Три формати для ритейлу", items: [
         { title: "Перевірка при недостачі", text: "Виїжджаємо в магазин, на склад чи в офіс мережі. Тест на одне питання про конкретну недостачу, 6–8 осіб за день. Звіт по кожному одразу після тесту." },
-        { title: "Перевірка при прийомі на касу", text: "Скринінг кандидата: крадіжки, наркотики, чесність анкети. У кабінеті у Львові або на виїзді, 30–45 хвилин. Для кандидатів в інших містах є VerifEye: до 15 хвилин зі смартфона, від 2 500 ₴." },
+        { title: "Перевірка при прийомі на касу", text: "Скринінг кандидата: крадіжки, наркотики, чесність анкети. У кабінеті у Львові або на виїзді, 30–45 хвилин. Для кандидатів в інших містах є VerifEye: 15–20 хвилин зі смартфона, від 2 500 ₴." },
         { title: "Планова перевірка", text: "Раз на пів року або рік для касирів, старших зміни і завідувачів. Сам факт регулярної перевірки знижує кількість недостач." },
         { title: "Мережа з точками в різних містах", text: "Виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом. Для віддалених точок дешевше VerifEye онлайн." },
       ], cols: 2 },
@@ -48,7 +48,7 @@ export const retail = {
       how.ru,
       { type: "cards", title: "Три формата для ритейла", items: [
         { title: "Проверка при недостаче", text: "Выезжаем в магазин, на склад или в офис сети. Тест на один вопрос о конкретной недостаче, 6–8 человек в день. Отчёт по каждому сразу после теста." },
-        { title: "Проверка при приёме на кассу", text: "Скрининг кандидата: кражи, наркотики, честность анкеты. В кабинете во Львове или на выезде, 30–45 минут. Для кандидатов в других городах есть VerifEye: до 15 минут со смартфона, от 2 500 ₴." },
+        { title: "Проверка при приёме на кассу", text: "Скрининг кандидата: кражи, наркотики, честность анкеты. В кабинете во Львове или на выезде, 30–45 минут. Для кандидатов в других городах есть VerifEye: 15–20 минут со смартфона, от 2 500 ₴." },
         { title: "Плановая проверка", text: "Раз в полгода или год для кассиров, старших смены и заведующих. Сам факт регулярной проверки снижает количество недостач." },
         { title: "Сеть с точками в разных городах", text: "Выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом. Для удалённых точек дешевле VerifEye онлайн." },
       ], cols: 2 },
@@ -76,7 +76,7 @@ export const retail = {
       how.en,
       { type: "cards", title: "Three formats for retail", items: [
         { title: "Testing after a shortage", text: "We come to the store, warehouse, or chain office. A single-issue test about the specific shortage, 6–8 people a day. A report on each person right after the test." },
-        { title: "Screening when hiring a cashier", text: "Candidate screening: theft, drugs, honesty of the application. In our Lviv office or on-site, 30–45 minutes. For candidates in other cities there is VerifEye: up to 15 minutes from a smartphone, from UAH 2,500." },
+        { title: "Screening when hiring a cashier", text: "Candidate screening: theft, drugs, honesty of the application. In our Lviv office or on-site, 30–45 minutes. For candidates in other cities there is VerifEye: 15–20 minutes from a smartphone, from UAH 2,500." },
         { title: "Scheduled testing", text: "Every six months or once a year for cashiers, shift leads, and store managers. The fact of regular testing alone reduces the number of shortages." },
         { title: "Chains with stores in different cities", text: "Travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included. For remote locations VerifEye online is cheaper." },
       ], cols: 2 },

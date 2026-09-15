@@ -1,8 +1,9 @@
 import * as yup from "yup";
+import { isValidPhone } from "./phoneRules";
 
-const regexPhone2 = /^[+\d](?:.*\d)?$/;
-
-export const orderFormSchema = (dictionary) => {
+// texts.phone — повідомлення з прикладом номера мовою сторінки.
+// texts.choice — текст помилки для обов'язкового вибору (якщо у формі є вибір формату).
+export const orderFormSchema = (dictionary, texts = {}) => {
   return yup.object({
     name: yup
       .string()
@@ -11,13 +12,11 @@ export const orderFormSchema = (dictionary) => {
     tel: yup
       .string()
       .required(dictionary.formErrors.requiredField)
-      .matches(regexPhone2, "+380XXXXXXXXX")
-      .test(
-        "moreThanEight",
-        dictionary.formErrors.shortNumber,
-        (value) => !value || value.toString().length > 8
-      ),
+      .test("phone", texts.phone || dictionary.formErrors.shortNumber, (value) => !value || isValidPhone(value)),
     email: yup.string().email(dictionary.formErrors.invalidEmail),
     comment: yup.string(),
+    ...(texts.choice
+      ? { format: yup.string().typeError(texts.choice).required(texts.choice) }
+      : {}),
   });
 };

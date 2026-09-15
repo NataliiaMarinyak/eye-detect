@@ -5,6 +5,10 @@ import ContentFaq from "@/components/ContentFaq/ContentFaq";
 import StudyLinks from "@/components/StudyLinks/StudyLinks";
 import styles from "./OnlineSections.module.scss";
 
+// Назва послуги для форми заявки і Telegram — мовою сторінки.
+const SERVICE = { uk: "VerifEye онлайн", ru: "VerifEye онлайн", en: "VerifEye online" };
+const serviceName = (lang) => SERVICE[lang] || SERVICE.uk;
+
 // Секції сторінки /online. Дані: src/data/pages/onlinePage.js
 const OnlineSections = ({ d, lang, dictionary }) => (
   <>
@@ -60,7 +64,7 @@ const OnlineSections = ({ d, lang, dictionary }) => (
               <p className={styles.priceName}>{p.name}</p>
               <p className={styles.priceValue}>{p.price}</p>
               <p className={styles.cardText}>{p.desc}</p>
-              <OpenModalBtn customClass={styles.btn} title={d.hero.primary} service={`VerifEye онлайн · ${p.name}`} />
+              <OpenModalBtn customClass={styles.btn} title={d.hero.primary} service={`${serviceName(lang)} · ${p.name}`} />
             </Reveal>
           ))}
         </ul>
@@ -113,7 +117,7 @@ const OnlineSections = ({ d, lang, dictionary }) => (
           <h2 className={styles.ctaTitle}>{d.cta.title}</h2>
           <p className={styles.ctaText}>{d.cta.text}</p>
         </Reveal>
-        <OpenModalBtn customClass={styles.ctaPrimary} title={d.cta.button} service="VerifEye онлайн" />
+        <OpenModalBtn customClass={styles.ctaPrimary} title={d.cta.button} service={serviceName(lang)} />
       </div>
     </section>
   </>

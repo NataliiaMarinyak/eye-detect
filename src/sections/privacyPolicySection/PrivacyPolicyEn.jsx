@@ -8,7 +8,7 @@ const PrivacyPolicyEn = () => {
     <div className={`container ${styles.container}`}>
       <h1>Privacy Policy</h1>
 
-      <p>Updated 13 September 2026.</p>
+      <p>Updated 15 September 2026.</p>
 
       <p>
         This policy explains in plain language what data we receive when you use
@@ -52,7 +52,8 @@ const PrivacyPolicyEn = () => {
         name and phone number. Together with the page name and the selected
         service, this data reaches us as a message from a Telegram bot and is
         stored only in that chat and in our working records. The price
-        calculation form on the site sends your answers, name and phone number the same way
+        calculation form on the site sends your answers, name and phone number
+        (or Telegram username) the same way
         and on the same terms.
       </p>
       <p>
@@ -203,9 +204,9 @@ const PrivacyPolicyEn = () => {
       <h2>9. Children</h2>
 
       <p>
-        We do not test persons under 18 without the written consent of a parent
-        or guardian, and we do not knowingly collect children&#39;s data through
-        the website. Converus does not process data of children under 11 and
+        We test persons under 18 only with the written consent and in the
+        presence of a parent or guardian. We do not knowingly collect
+        children&#39;s data through the website. Converus does not process data of children under 11 and
         deletes it if received.
       </p>
 

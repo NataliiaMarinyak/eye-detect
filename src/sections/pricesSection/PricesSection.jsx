@@ -5,15 +5,24 @@ import {
   pricingNotes,
   pricingIncluded,
   pricingComparison,
+  pricingComparisonNote,
   pricingGuarantee,
 } from "@/data/pricingData";
-import { i18n } from "@/dictionaries/i18n.config";
 import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./PricesSection.module.scss";
 
+const BOOK = { uk: "Записатися", ru: "Записаться", en: "Book" };
+
+// Рядок має кнопку запису, якщо в ньому є конкретна ціна:
+// числове поле price або сума в підписі (наприклад «12 000 ₴ під ключ»).
+// Рядки «за запитом», «безкоштовно», «оплачуються окремо» — без кнопки.
+const isBookable = (item) =>
+  typeof item.price === "number" || /\d/.test(item.priceLabel || "");
+
 const PricesSection = ({ lang, dictionary }) => {
-  const isUk = lang === i18n.defaultLocale;
   const pick = (obj, key) => getLocalizedField(obj, key, lang);
+  const bookLabel = BOOK[lang] || BOOK.uk;
+  const comparisonNote = pricingComparisonNote?.[lang] ?? pricingComparisonNote?.uk;
 
   return (
     <section className={styles.section}>
@@ -21,22 +30,43 @@ const PricesSection = ({ lang, dictionary }) => {
         <h1 className={styles.title}>{dictionary.pricesSection.title}</h1>
         <p className={styles.subTitle}>{dictionary.pricesSection.subTitle}</p>
 
-        {pricingGroups.map((group) => (
-          <div key={group.id} className={styles.group}>
-            <h2 className={styles.groupTitle}>{pick(group, "title")}</h2>
-            <ul className={styles.list}>
-              {group.items.map((item, i) => (
-                <li key={i} className={styles.row}>
-                  <span className={styles.name}>{pick(item, "name")}</span>
-                  <span className={styles.dots} aria-hidden="true"></span>
-                  <span className={styles.price}>
-                    {pick(item, "priceLabel")}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        {pricingGroups.map((group) => {
+          const groupTitle = pick(group, "title");
+          // Порожнє місце замість кнопки, щоб ціни в картці стояли в один стовпчик.
+          const hasBookable = group.items.some(isBookable);
+
+          return (
+            <div key={group.id} className={styles.group}>
+              <h2 className={styles.groupTitle}>{groupTitle}</h2>
+              <ul className={styles.list}>
+                {group.items.map((item, i) => {
+                  const name = pick(item, "name");
+                  const priceLabel = pick(item, "priceLabel");
+
+                  return (
+                    <li key={i} className={styles.row}>
+                      <div className={styles.line}>
+                        <span className={styles.name}>{name}</span>
+                        <span className={styles.dots} aria-hidden="true"></span>
+                        <span className={styles.price}>{priceLabel}</span>
+                      </div>
+                      {isBookable(item) ? (
+                        <OpenModalBtn
+                          customClass={styles.book}
+                          title={bookLabel}
+                          ariaLabel={`${bookLabel}: ${name}, ${priceLabel}`}
+                          service={`${groupTitle} · ${name} · ${priceLabel}`}
+                        />
+                      ) : (
+                        hasBookable && <span className={styles.bookSpacer} aria-hidden="true"></span>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })}
 
         <p className={styles.guarantee}>
           <svg className={styles.guaranteeIcon} aria-hidden="true">
@@ -94,6 +124,9 @@ const PricesSection = ({ lang, dictionary }) => {
               </li>
             ))}
           </ul>
+          {comparisonNote && (
+            <p className={styles.comparisonFootnote}>{comparisonNote}</p>
+          )}
         </div>
       </div>
     </section>

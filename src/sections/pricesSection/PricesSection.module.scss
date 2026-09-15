@@ -50,21 +50,71 @@
   border-top: 0;
 }
 
+// На телефоні: назва … ціна в одному рядку, кнопка запису під ціною праворуч.
+// З планшета: кнопка в тому ж рядку, у фіксованій колонці.
 .row {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
   gap: 8px;
   padding: 14px 0;
   border-bottom: 1px solid $lineColor;
   font-size: 16px;
+  line-height: 1.4;
 
   &:last-child {
     border-bottom: 0;
   }
-  line-height: 1.4;
 
   @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
     font-size: 17px;
+  }
+}
+
+.line {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+// Два класи: перебиваємо базовий .btn кнопки незалежно від порядку CSS.
+.row .book {
+  align-self: flex-end;
+  width: auto;
+  max-width: none;
+  min-height: 40px;
+  padding: 8px 18px;
+  font-size: 15px;
+  white-space: nowrap;
+  color: $primary;
+  background-color: transparent;
+  border: 1px solid $primary;
+
+  &:hover {
+    color: $primary;
+    background-color: $primarySoft;
+    border-color: $primary;
+  }
+
+  @media screen and (min-width: $tablet) {
+    align-self: center;
+    flex: 0 0 132px;
+    min-height: 38px;
+    padding: 6px 12px;
+    font-size: 15px;
+  }
+}
+
+.bookSpacer {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    flex: 0 0 132px;
   }
 }
 
@@ -225,6 +275,19 @@
   @media screen and (min-width: $tablet) {
     grid-row: auto;
     grid-column: auto;
+  }
+}
+
+.comparisonFootnote {
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid $lineColor;
+  font-size: 13px;
+  line-height: 1.5;
+  color: $subTitleColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
   }
 }
 

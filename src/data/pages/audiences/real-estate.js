@@ -22,7 +22,7 @@ export const realEstate = {
         ["Прораб, керівник проєкту", "після аудиту кошторису, перед новим об'єктом", "EyeDetect на об'єкті або у Львові, 30–45 хвилин"],
         ["Менеджер із продажу, рієлтор", "після витоку бази або підозри на угоду повз агенцію", "EyeDetect у кабінеті, тест на одне питання"],
         ["Бухгалтер, керівник керуючої компанії", "після скарг мешканців або розбіжностей в аудиті", "EyeDetect у Львові або з виїздом"],
-        ["Кандидати на ключові позиції", "до підписання договору", "EyeDetect 30–45 хвилин або VerifEye онлайн до 15 хвилин"],
+        ["Кандидати на ключові позиції", "до підписання договору", "EyeDetect 30–45 хвилин або VerifEye онлайн 15–20 хвилин"],
         ["Філії і рієлтори в інших містах", "планова перевірка раз на пів року чи рік", "VerifEye зі смартфона, від 2 500 ₴"],
       ] },
       { type: "text", title: "Що варто знати керівнику", paragraphs: [
@@ -51,7 +51,7 @@ export const realEstate = {
         ["Прораб, руководитель проекта", "после аудита сметы, перед новым объектом", "EyeDetect на объекте или во Львове, 30–45 минут"],
         ["Менеджер по продажам, риелтор", "после утечки базы или подозрения на сделку мимо агентства", "EyeDetect в кабинете, тест на один вопрос"],
         ["Бухгалтер, руководитель управляющей компании", "после жалоб жильцов или расхождений в аудите", "EyeDetect во Львове или с выездом"],
-        ["Кандидаты на ключевые позиции", "до подписания договора", "EyeDetect 30–45 минут или VerifEye онлайн до 15 минут"],
+        ["Кандидаты на ключевые позиции", "до подписания договора", "EyeDetect 30–45 минут или VerifEye онлайн 15–20 минут"],
         ["Филиалы и риелторы в других городах", "плановая проверка раз в полгода или год", "VerifEye со смартфона, от 2 500 ₴"],
       ] },
       { type: "text", title: "Что стоит знать руководителю", paragraphs: [
@@ -80,7 +80,7 @@ export const realEstate = {
         ["Foreman, project manager", "after an estimate audit, before a new project", "EyeDetect on-site or in Lviv, 30–45 minutes"],
         ["Sales manager, real estate agent", "after a database leak or a suspected deal behind the agency's back", "EyeDetect in our office, single-issue test"],
         ["Accountant, head of a property management company", "after residents' complaints or audit discrepancies", "EyeDetect in Lviv or on-site"],
-        ["Candidates for key positions", "before signing the contract", "EyeDetect 30–45 minutes or VerifEye online up to 15 minutes"],
+        ["Candidates for key positions", "before signing the contract", "EyeDetect 30–45 minutes or VerifEye online 15–20 minutes"],
         ["Branches and agents in other cities", "scheduled testing every six months or once a year", "VerifEye from a smartphone, from UAH 2,500"],
       ] },
       { type: "text", title: "What a manager should know", paragraphs: [

@@ -5,7 +5,8 @@ import styles from "./PageHero.module.scss";
 
 // Перший екран для внутрішніх сторінок: темний фон, H1, підзаголовок,
 // факти, одна-дві кнопки, за потреби фото праворуч.
-const PageHero = ({ service = "", eyebrow, title, sub, facts = [], primary, quizLabel, secondaryHref, secondaryLabel, photo, photoAlt = "" }) => {
+// modalVariant — варіант вікна заявки для головної кнопки ("" або "freeTest").
+const PageHero = ({ service = "", modalVariant = "", eyebrow, title, sub, facts = [], primary, quizLabel, secondaryHref, secondaryLabel, photo, photoAlt = "" }) => {
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.container}`}>
@@ -15,7 +16,7 @@ const PageHero = ({ service = "", eyebrow, title, sub, facts = [], primary, quiz
           {sub && <p className={styles.sub}>{sub}</p>}
           {(primary || quizLabel || secondaryHref) && (
             <div className={styles.actions}>
-              {quizLabel ? <PriceQuizBtn customClass={styles.btnPrimary} title={quizLabel} /> : primary && <OpenModalBtn customClass={styles.btnPrimary} title={primary} service={service} />}
+              {quizLabel ? <PriceQuizBtn customClass={styles.btnPrimary} title={quizLabel} /> : primary && <OpenModalBtn customClass={styles.btnPrimary} title={primary} service={service} variant={modalVariant} />}
               {secondaryHref && (
                 <a href={secondaryHref} className={styles.btnSecondary}>
                   {secondaryLabel}

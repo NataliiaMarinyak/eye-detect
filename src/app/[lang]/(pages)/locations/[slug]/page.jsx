@@ -130,7 +130,7 @@ const LocationIdPage = async ({ params }) => {
         facts={t.facts}
         primary={t.visit.cta}
         quizLabel={t.quiz.heroCta}
-        service={lang === "en" ? `EyeDetect on-site · ${loc}` : `EyeDetect з виїздом · ${loc}`}
+        service={`${{ uk: "EyeDetect з виїздом", ru: "EyeDetect с выездом", en: "EyeDetect on-site" }[lang] || "EyeDetect з виїздом"} · ${loc}`}
         secondaryHref={`${lang === "uk" ? "" : "/" + lang}/online`}
         secondaryLabel={t.online.cta}
         photo="/images/converus/eyedetect-examinee.webp"

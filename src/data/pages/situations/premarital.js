@@ -26,8 +26,8 @@ export const premarital = {
     ],
     faq: [
       { q: "Чи не образить партнера пропозиція пройти тест?", a: "Тест проходять обоє на рівних умовах, і питання ви складаєте разом. Так це виглядає не як підозра до одного, а як спільне рішення закрити тему до весілля. Тест лише добровільний, з письмовою згодою кожного; змусити партнера неможливо." },
-      { q: "Ми в різних містах або один із нас за кордоном. Як пройти?", a: "VerifEye онлайн: кожен отримує посилання і проходить тест з телефона у тихій кімнаті, до 15 хвилин. Звіт у PDF приходить на пошту до 5 хвилин після тесту. Вартість від 2 500 ₴ за людину. Точність онлайн 84–89%, у кабінеті на EyeDetect 86–90%." },
-      { q: "Що, як результат «невизначений»?", a: "Так буває не більше ніж у 10 випадках зі 100, зазвичай через втому чи хвилювання. Повторний тест зі знижкою 50%." },
+      { q: "Ми в різних містах або один із нас за кордоном. Як пройти?", a: "VerifEye онлайн: кожен отримує посилання і проходить тест з телефона у тихій кімнаті, 15–20 хвилин. Звіт у PDF приходить на пошту до 5 хвилин після тесту. Вартість від 2 500 ₴ за людину. Точність онлайн 84–89%, у кабінеті на EyeDetect 86–90%." },
+      { q: "Що, як результат «невизначений»?", a: "Таке буває, зазвичай через втому чи хвилювання. Повторний тест — за наш рахунок." },
       { q: "Чи можна використати результат у суді або при розлученні?", a: "Ні. В Україні результат тесту не є доказом у суді. Це інформація для вас двох, і звіт бачите лише ви. За бажанням тест проходять анонімно, під номером, без імені та фото. Ми не обговорюємо перевірки і не зберігаємо звіти довше, ніж потрібно для видачі результату." },
     ],
   },
@@ -55,8 +55,8 @@ export const premarital = {
     ],
     faq: [
       { q: "Не обидит ли партнёра предложение пройти тест?", a: "Тест проходят оба на равных условиях, и вопросы вы составляете вместе. Так это выглядит не как подозрение к одному, а как совместное решение закрыть тему до свадьбы. Тест только добровольный, с письменным согласием каждого; заставить партнёра невозможно." },
-      { q: "Мы в разных городах или один из нас за границей. Как пройти?", a: "VerifEye онлайн: каждый получает ссылку и проходит тест с телефона в тихой комнате, до 15 минут. Отчёт в PDF приходит на почту до 5 минут после теста. Стоимость от 2 500 ₴ за человека. Точность онлайн 84–89%, в кабинете на EyeDetect 86–90%." },
-      { q: "Что, если результат «неопределённый»?", a: "Так бывает не больше чем в 10 случаях из 100, обычно из-за усталости или волнения. Повторный тест со скидкой 50%." },
+      { q: "Мы в разных городах или один из нас за границей. Как пройти?", a: "VerifEye онлайн: каждый получает ссылку и проходит тест с телефона в тихой комнате, 15–20 минут. Отчёт в PDF приходит на почту до 5 минут после теста. Стоимость от 2 500 ₴ за человека. Точность онлайн 84–89%, в кабинете на EyeDetect 86–90%." },
+      { q: "Что, если результат «неопределённый»?", a: "Такое бывает, обычно из-за усталости или волнения. Повторный тест — за наш счёт." },
       { q: "Можно ли использовать результат в суде или при разводе?", a: "Нет. В Украине результат теста не является доказательством в суде. Это информация для вас двоих, и отчёт видите только вы. По желанию тест проходят анонимно, под номером, без имени и фото. Мы не обсуждаем проверки и не храним отчёты дольше, чем нужно для выдачи результата." },
     ],
   },
@@ -84,8 +84,8 @@ export const premarital = {
     ],
     faq: [
       { q: "Will my partner be offended by the suggestion to take a test?", a: "Both partners take the test on equal terms, and you write the questions together. That makes it a joint decision to close the topic before the wedding, not a suspicion aimed at one person. The test is voluntary only, with written consent from each partner; no one can be forced." },
-      { q: "We live in different cities, or one of us is abroad. How do we take it?", a: "VerifEye online: each partner receives a link and takes the test from a phone in a quiet room, up to 15 minutes. The PDF report arrives by email within 5 minutes after the test. The price is from UAH 2,500 per person. Online accuracy is 84–89%; in our Lviv office on EyeDetect it is 86–90%." },
-      { q: "What if the result is “inconclusive”?", a: "This happens in no more than 10 cases out of 100, usually because of fatigue or nervousness. A repeat test is 50% off." },
+      { q: "We live in different cities, or one of us is abroad. How do we take it?", a: "VerifEye online: each partner receives a link and takes the test from a phone in a quiet room, in 15–20 minutes. The PDF report arrives by email within 5 minutes after the test. The price is from UAH 2,500 per person. Online accuracy is 84–89%; in our Lviv office on EyeDetect it is 86–90%." },
+      { q: "What if the result is “inconclusive”?", a: "It happens, usually because of fatigue or nervousness. A repeat test is at our expense." },
       { q: "Can the result be used in court or in a divorce?", a: "No. In Ukraine, the test result is not evidence in court. It is information for the two of you, and only you see the report. On request, the test is taken anonymously, under a number, without a name or photo. We do not discuss tests and do not keep reports longer than needed to deliver the result." },
     ],
   },

@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getQuiz, quizSteps, estimateQuiz } from "@/data/quizData";
 import { track, attributionForLead } from "@/helpers/analytics";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
+import { isValidPhone, isValidTelegram, normalizeTelegram } from "@/yupSchemas/phoneRules";
 import styles from "./PriceQuiz.module.scss";
 
 // Вікно квіза. Відкривається подією window "eye:open-quiz" (кнопки PriceQuizBtn)
@@ -11,6 +12,19 @@ import { OPEN_QUIZ_EVENT } from "./quizEvent";
 
 const TEL = "+380686833368";
 const TEL_H = "+380 68 68 333 68";
+// Індекс каналу Telegram у t.contact.channels (однаковий для всіх мов).
+const TELEGRAM = 1;
+
+// Контакт для заявки: телефон (9–15 цифр) або, якщо обрано Telegram, @username. Порожній рядок — контакт невалідний.
+const pickContact = (raw, channel) => {
+  const v = raw.trim();
+  if (isValidPhone(v)) return v;
+  if (channel === TELEGRAM) {
+    const tg = normalizeTelegram(v);
+    if (isValidTelegram(tg)) return tg;
+  }
+  return "";
+};
 
 
 const PriceQuiz = ({ lang = "uk" }) => {
@@ -92,6 +106,9 @@ const PriceQuiz = ({ lang = "uk" }) => {
     e.preventDefault();
     const errs = {};
     if (!form.name.trim()) errs.name = t.contact.errName;
+    // Без контакту заявку не надсилаємо: телефон обов'язковий (для Telegram можна @username).
+    const contact = pickContact(form.phone, form.channel);
+    if (!contact) errs.phone = true;
     setErrors(errs);
     if (Object.keys(errs).length) return;
 
@@ -109,7 +126,13 @@ const PriceQuiz = ({ lang = "uk" }) => {
       `Відкрито на: ${openedFrom.current}`,
     ].filter(Boolean).join("\n");
 
-    const lead = { name: form.name.trim(), tel: form.phone.trim() || "не вказано", comment, service: "Квіз: розрахунок вартості" };
+    const lead = {
+      name: form.name.trim(),
+      tel: contact,
+      channel: form.channel === TELEGRAM ? "telegram" : "",
+      comment,
+      service: "Квіз: розрахунок вартості",
+    };
     // Та сама відправка, що й у формі контактів (/api/lead → Telegram). Одна повторна спроба при збої мережі.
     let ok = await sendToTelegram(lead);
     if (!ok) { await new Promise((r) => setTimeout(r, 1200)); ok = await sendToTelegram(lead); }
@@ -166,14 +189,26 @@ const PriceQuiz = ({ lang = "uk" }) => {
             <h2 className={styles.q}>{t.contact.title}</h2>
             <label className={styles.field}>
               <span className={styles.label}>{t.contact.name}</span>
-              <input type="text" autoComplete="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} aria-invalid={!!errors.name} />
+              <input type="text" autoComplete="name" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} aria-invalid={!!errors.name} />
               {errors.name && <span className={styles.error}>{errors.name}</span>}
             </label>
 
             <label className={styles.field}>
               <span className={styles.label}>{t.contact.phone}</span>
-              <input type="text" autoComplete="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} aria-invalid={!!errors.phone} />
-              {errors.phone && <span className={styles.error}>{errors.phone}</span>}
+              <input
+                type="text"
+                inputMode={form.channel === TELEGRAM ? "text" : "tel"}
+                autoComplete="tel"
+                maxLength={40}
+                required
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                aria-invalid={!!errors.phone}
+              />
+              {errors.phone && (
+                <span className={styles.error}>{form.channel === TELEGRAM ? t.contact.errPhoneTg : t.contact.errPhone}</span>
+              )}
+              {!errors.phone && form.channel === TELEGRAM && <span className={styles.hint}>{t.contact.phoneTgHint}</span>}
             </label>
 
             <div className={styles.field}>

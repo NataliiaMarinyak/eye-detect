@@ -131,7 +131,7 @@ export default async function Home({ params }) {
   const dictionary = await getDictionary(lang);
 
   // Організація і місцевий бізнес: адреса, телефон, соцмережі, послуги.
-  const isUk = lang === "uk";
+  const byLang = (values) => values[lang] || values.uk;
   const businessJsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -142,12 +142,15 @@ export default async function Home({ params }) {
     image: `${process.env.NEXT_PUBLIC_SEO_URL}images/seo_images/opengraph-image-1200-630.png`,
     address: {
       "@type": "PostalAddress",
-      streetAddress: isUk ? "вул. Городоцька, 45" : "ул. Городоцкая, 45",
-      addressLocality: isUk ? "Львів" : "Львов",
+      streetAddress: byLang({ uk: "вул. Городоцька, 45", ru: "ул. Городоцкая, 45", en: "45 Horodotska St." }),
+      addressLocality: byLang({ uk: "Львів", ru: "Львов", en: "Lviv" }),
       postalCode: "79000",
       addressCountry: "UA",
     },
-    areaServed: [{ "@type": "Country", name: isUk ? "Україна" : "Украина" }, { "@type": "Place", name: isUk ? "Європа" : "Европа" }],
+    areaServed: [
+      { "@type": "Country", name: byLang({ uk: "Україна", ru: "Украина", en: "Ukraine" }) },
+      { "@type": "Place", name: byLang({ uk: "Європа", ru: "Европа", en: "Europe" }) },
+    ],
     sameAs: ["https://t.me/Detecteye", "https://www.facebook.com/share/1527nF4Rwh/", "https://www.instagram.com/eye_detect", "https://www.tiktok.com/@www.eyepolygraph"],
     makesOffer: [
       { "@type": "Offer", name: "EyeDetect", price: 5500, priceCurrency: "UAH", url: `${pageUrlJsonLd}prices` },
@@ -172,7 +175,7 @@ export default async function Home({ params }) {
         }}
       />
       <HeroSection dictionary={dictionary} />
-      <DynamicHomeStatsSection dictionary={dictionary} />
+      <DynamicHomeStatsSection lang={lang} dictionary={dictionary} />
       <DynamicHomePathsSection dictionary={dictionary} />
       <DynamicHomeStepsSection dictionary={dictionary} />
       <DynamicHomeDirectionsSection lang={lang} dictionary={dictionary} />

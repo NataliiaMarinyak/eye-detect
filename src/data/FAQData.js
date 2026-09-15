@@ -4,11 +4,11 @@ export const FAQData = [
     questionRus: "Какова точность работы детектора лжи EyeDetect?",
     questionEng: "How accurate is the EyeDetect lie detector?",
     answer:
-      "EyeDetect — це сучасний інструмент, який вражає своєю точністю. За статистикою, він визначає брехню з вражаючою точністю до 90%. Звісно, кожен випадок індивідуальний, але це дійсно один із найнадійніших способів перевірки правди.",
+      "За даними Converus, точність EyeDetect становить 86–90% залежно від типу тесту. Це частка правильних серед тестів із визначеним результатом. Невизначені результати в цей відсоток не входять, їх повторюємо за наш рахунок.",
     answerRus:
-      "EyeDetect - это современный инструмент, который поражает своей точностью. По статистике, он определяет ложь с поразительной точностью до 90%. Конечно, каждый случай индивидуален, но это действительно один из самых надежных способов проверки правды.",
+      "По данным Converus, точность EyeDetect составляет 86–90% в зависимости от типа теста. Это доля правильных среди тестов с определённым результатом. Неопределённые результаты в этот процент не входят, их повторяем за наш счёт.",
     answerEng:
-      "EyeDetect is a modern tool with remarkable accuracy. Statistically, it detects deception with an accuracy of up to 90%. Every case is individual, of course, but this is one of the most reliable ways to verify the truth.",
+      "According to Converus, EyeDetect accuracy is 86–90% depending on the test type. This is the share of correct results among tests with a definite result. Inconclusive results are not included in this figure; we repeat those tests at our expense.",
   },
 
   {
@@ -40,11 +40,11 @@ export const FAQData = [
     questionRus: "Какая цена на услуги полиграфа EyeDetect?",
     questionEng: "How much do EyeDetect polygraph services cost?",
     answer:
-      "Ціна залежить від складності перевірки та кількості питань. Але я завжди пропоную конкурентні ціни. Вартість обговорюємо індивідуально, щоб ви залишились задоволені і результатами, і умовами.",
+      "Ціна залежить від складності перевірки та кількості питань. Ми пропонуємо чесні ціни. Вартість обговорюємо індивідуально, щоб ви залишились задоволені і результатами, і умовами.",
     answerRus:
-      "Цена зависит от сложности проверки и количества вопросов. Но я всегда предлагаю конкурентные цены. Стоимость обсуждаем индивидуально, чтобы вы остались довольны и результатами, и условиями.",
+      "Цена зависит от сложности проверки и количества вопросов. Мы предлагаем честные цены. Стоимость обсуждаем индивидуально, чтобы вы остались довольны и результатами, и условиями.",
     answerEng:
-      "The price depends on the complexity of the examination and the number of questions. But I always offer competitive prices. We discuss the cost individually so that you are satisfied with both the results and the terms.",
+      "The price depends on the complexity of the examination and the number of questions. We offer fair prices. We discuss the cost individually so that you are satisfied with both the results and the terms.",
   },
 
   {

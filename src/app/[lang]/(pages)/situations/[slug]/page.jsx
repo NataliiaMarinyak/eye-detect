@@ -47,7 +47,7 @@ const SituationPage = async ({ params }) => {
         facts={s.facts}
         primary={dictionary.buttons.orderConsultation}
         service={`EyeDetect · ${s.h1}`}
-        secondaryHref="/#paths"
+        secondaryHref={`${lang === "uk" ? "" : "/" + lang}/online`}
         secondaryLabel={dictionary.buttons.testOnline}
       />
       <SituationSections s={s} lang={lang} others={others} dictionary={dictionary} />

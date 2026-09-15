@@ -4,8 +4,8 @@ export const cityTexts = {
     title: "Детектор брехні {loc}: виїзд EyeDetect або онлайн VerifEye",
     h1: "Детектор брехні {loc}: виїзд спеціаліста або тест онлайн сьогодні",
     sub: {
-      "ua-west": "Кабінет у Львові, тест {loc} з виїздом спеціаліста за домовленістю або онлайн-тест з телефона вже сьогодні. Технологія Converus (США), висновок за 45 хвилин.",
-      "ua-other": "Тест EyeDetect {loc} з виїздом спеціаліста або онлайн-тест VerifEye з телефона вже сьогодні. Технологія Converus (США), висновок за 45 хвилин.",
+      "ua-west": "Кабінет у Львові, тест {loc} з виїздом спеціаліста за домовленістю або онлайн-тест з телефона вже сьогодні. Технологія Converus (США), звіт до 5 хвилин після тесту.",
+      "ua-other": "Тест EyeDetect {loc} з виїздом спеціаліста або онлайн-тест VerifEye з телефона вже сьогодні. Технологія Converus (США), звіт до 5 хвилин після тесту.",
       eu: "Онлайн-тест VerifEye з телефона вже сьогодні або виїзд спеціаліста з обладнанням EyeDetect {loc}. Технологія Converus (США), звіт у PDF до 5 хвилин.",
     },
     facts: ["онлайн сьогодні", "виїзд з обладнанням", "6–8 осіб за день", "PDF до 5 хвилин"],
@@ -13,7 +13,7 @@ export const cityTexts = {
     visitTitle: "Як пройти тест {loc}",
     online: {
       title: "Онлайн сьогодні: VerifEye",
-      text: "Ви отримуєте посилання, людина проходить тест з телефона у тихій кімнаті, до 15 хвилин. Звіт у PDF до 5 хвилин після тесту, пояснення спеціаліста того ж дня. Підходить для перевірки на вірність і для кандидатів на роботу.",
+      text: "Ви отримуєте посилання, людина проходить тест з телефона у тихій кімнаті, 15–20 хвилин. Звіт у PDF до 5 хвилин після тесту, пояснення спеціаліста того ж дня. Підходить для перевірки на вірність і для кандидатів на роботу.",
       price: "від 2 500 ₴",
       cta: "Пройти онлайн",
     },
@@ -74,14 +74,14 @@ export const cityTexts = {
     },
     uniqueTitle: "Детектор брехні {loc}: що варто знати",
     ctaTitle: "Готові дізнатися правду {loc}?",
-    ctaText: "Залиште заявку або зателефонуйте, відповімо протягом години в робочий час.",
+    ctaText: "Залиште заявку або зателефонуйте. Відповімо цілодобово, протягом 15–30 хвилин.",
   },
   ru: {
     title: "Детектор лжи {loc}: выезд EyeDetect или онлайн VerifEye",
     h1: "Детектор лжи {loc}: выезд специалиста или тест онлайн сегодня",
     sub: {
-      "ua-west": "Кабинет во Львове, тест {loc} с выездом специалиста по договорённости или онлайн-тест с телефона уже сегодня. Технология Converus (США), заключение за 45 минут.",
-      "ua-other": "Тест EyeDetect {loc} с выездом специалиста или онлайн-тест VerifEye с телефона уже сегодня. Технология Converus (США), заключение за 45 минут.",
+      "ua-west": "Кабинет во Львове, тест {loc} с выездом специалиста по договорённости или онлайн-тест с телефона уже сегодня. Технология Converus (США), отчёт до 5 минут после теста.",
+      "ua-other": "Тест EyeDetect {loc} с выездом специалиста или онлайн-тест VerifEye с телефона уже сегодня. Технология Converus (США), отчёт до 5 минут после теста.",
       eu: "Онлайн-тест VerifEye с телефона уже сегодня или выезд специалиста с оборудованием EyeDetect {loc}. Технология Converus (США), отчёт в PDF до 5 минут.",
     },
     facts: ["онлайн сегодня", "выезд с оборудованием", "6–8 человек в день", "PDF до 5 минут"],
@@ -89,7 +89,7 @@ export const cityTexts = {
     visitTitle: "Как пройти тест {loc}",
     online: {
       title: "Онлайн сегодня: VerifEye",
-      text: "Вы получаете ссылку, человек проходит тест с телефона в тихой комнате, до 15 минут. Отчёт в PDF до 5 минут после теста, пояснение специалиста в тот же день. Подходит для проверки на верность и для кандидатов на работу.",
+      text: "Вы получаете ссылку, человек проходит тест с телефона в тихой комнате, 15–20 минут. Отчёт в PDF до 5 минут после теста, пояснение специалиста в тот же день. Подходит для проверки на верность и для кандидатов на работу.",
       price: "от 2 500 ₴",
       cta: "Пройти онлайн",
     },
@@ -149,14 +149,14 @@ export const cityTexts = {
     },
     uniqueTitle: "Детектор лжи {loc}: что стоит знать",
     ctaTitle: "Готовы узнать правду {loc}?",
-    ctaText: "Оставьте заявку или позвоните, ответим в течение часа в рабочее время.",
+    ctaText: "Оставьте заявку или позвоните. Ответим круглосуточно, в течение 15–30 минут.",
   },
   en: {
     title: "Lie detector {loc}: EyeDetect on-site visit or VerifEye online",
     h1: "Lie detector {loc}: specialist visit or online test today",
     sub: {
-      "ua-west": "Office in Lviv, visits to {city} by arrangement, or an online test from your phone today. Converus technology (USA), report in 45 minutes.",
-      "ua-other": "Specialist visit to {city} with EyeDetect equipment, or a VerifEye online test from your phone today. Converus technology (USA), report in 45 minutes.",
+      "ua-west": "Office in Lviv, visits to {city} by arrangement, or an online test from your phone today. Converus technology (USA), report within 5 minutes after the test.",
+      "ua-other": "Specialist visit to {city} with EyeDetect equipment, or a VerifEye online test from your phone today. Converus technology (USA), report within 5 minutes after the test.",
       eu: "VerifEye online test from your phone today, or a specialist visit to {city} with EyeDetect equipment. Converus technology (USA), PDF report within 5 minutes.",
     },
     facts: ["online today", "on-site with equipment", "6–8 people per day", "PDF within 5 minutes"],
@@ -164,7 +164,7 @@ export const cityTexts = {
     visitTitle: "How to take the test {loc}",
     online: {
       title: "Online today: VerifEye",
-      text: "You receive a link, the person takes the test from a phone in a quiet room, up to 15 minutes. The PDF report comes within 5 minutes after the test, the examiner's explanation the same day. Suitable for fidelity checks and job candidates.",
+      text: "You receive a link, the person takes the test from a phone in a quiet room, in 15–20 minutes. The PDF report comes within 5 minutes after the test, the examiner's explanation the same day. Suitable for fidelity checks and job candidates.",
       price: "from UAH 2,500",
       cta: "Take the online test",
     },
@@ -224,7 +224,7 @@ export const cityTexts = {
     },
     uniqueTitle: "Lie detector test {loc}: what to know",
     ctaTitle: "Ready to learn the truth {loc}?",
-    ctaText: "Send a request or call us; we reply within an hour during business hours.",
+    ctaText: "Send a request or call us. We reply 24/7, within 15–30 minutes.",
   },
 };
 

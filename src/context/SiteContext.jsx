@@ -11,6 +11,8 @@ export const SiteProvider = ({ children }) => {
   const [backDrop, setBackDrop] = useState(false);
   // Назва послуги, з якої відкрили форму: показуємо в заголовку і надсилаємо в заявці.
   const [modalService, setModalService] = useState("");
+  // Варіант вікна заявки: "" — консультація, "freeTest" — безкоштовний тест (свій заголовок і текст).
+  const [modalVariant, setModalVariant] = useState("");
 
   return (
     <SiteContext.Provider
@@ -23,6 +25,8 @@ export const SiteProvider = ({ children }) => {
         setBackDrop,
         modalService,
         setModalService,
+        modalVariant,
+        setModalVariant,
       }}
     >
       {children}

@@ -21,10 +21,10 @@ export const franchise = {
       { type: "text", title: "Що варто знати франчайзеру", paragraphs: [
         "Тест проходять лише за письмовою згодою, і партнер може відмовитись. Питання формулюються про конкретні факти за конкретний період: борги, бізнес, гроші, документи. Не питаємо про плани, переконання чи приватне життя. Результат EyeDetect в Україні не є доказом у суді, це підстава для рішення: підписати договір, запросити додаткові документи чи відмовити.",
         "Пункт про перевірку на EyeDetect можна включити у стандартну процедуру відбору франчайзі та у договір на випадок підозри в заниженні виручки. Тоді сам тест сприймається як частина правил мережі, а не як особисте звинувачення. Ми допомагаємо сформулювати такий пункт і набір питань.",
-        "Кандидат у Львові проходить тест у кабінеті на вул. Городоцькій, 45, від 5 500 ₴, звіт одразу. Для перевірки керуючих у кількох точках є виїзд: 6–8 осіб за день, виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом. Для кандидатів у франчайзі з інших міст на етапі попереднього відбору підходить VerifEye: онлайн зі смартфона, до 15 хвилин, точність 84–89%, від 2 500 ₴. Ціни для мережі за запитом.",
+        "Кандидат у Львові проходить тест у кабінеті на вул. Городоцькій, 45, від 5 500 ₴, звіт одразу. Для перевірки керуючих у кількох точках є виїзд: 6–8 осіб за день, виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом. Для кандидатів у франчайзі з інших міст на етапі попереднього відбору підходить VerifEye: онлайн зі смартфона, 15–20 хвилин, точність 84–89%, від 2 500 ₴. Ціни для мережі за запитом.",
       ] },
       { type: "table", title: "На якому етапі перевіряти", columns: ["Етап", "Кого і що", "Формат"], rows: [
-        ["Попередній відбір кандидатів", "Кандидат у франчайзі: борги, судимості, досвід", "VerifEye онлайн, до 15 хвилин"],
+        ["Попередній відбір кандидатів", "Кандидат у франчайзі: борги, судимості, досвід", "VerifEye онлайн, 15–20 хвилин"],
         ["Перед підписанням договору", "Кандидат: паралельний бізнес, джерело внеску", "EyeDetect у кабінеті або з виїздом"],
         ["Підозра в заниженні виручки", "Партнер і керуючий точки: продажі повз облік", "EyeDetect з виїздом, 1 день"],
         ["Найм і періодична перевірка", "Керуючі точок, старші зміни, закупівельники", "EyeDetect з виїздом, 6–8 осіб за день"],
@@ -49,10 +49,10 @@ export const franchise = {
       { type: "text", title: "Что стоит знать франчайзеру", paragraphs: [
         "Тест проходят только с письменного согласия, и партнёр может отказаться. Вопросы формулируются о конкретных фактах за конкретный период: долги, бизнес, деньги, документы. Не спрашиваем о планах, убеждениях или частной жизни. Результат EyeDetect в Украине не является доказательством в суде, это основание для решения: подписать договор, запросить дополнительные документы или отказать.",
         "Пункт о проверке на EyeDetect можно включить в стандартную процедуру отбора франчайзи и в договор на случай подозрения в занижении выручки. Тогда сам тест воспринимается как часть правил сети, а не как личное обвинение. Мы помогаем сформулировать такой пункт и набор вопросов.",
-        "Кандидат во Львове проходит тест в кабинете на ул. Городоцкой, 45, от 5 500 ₴, отчёт сразу. Для проверки управляющих в нескольких точках есть выезд: 6–8 человек в день, выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом. Для кандидатов во франчайзи из других городов на этапе предварительного отбора подходит VerifEye: онлайн со смартфона, до 15 минут, точность 84–89%, от 2 500 ₴. Цены для сети по запросу.",
+        "Кандидат во Львове проходит тест в кабинете на ул. Городоцкой, 45, от 5 500 ₴, отчёт сразу. Для проверки управляющих в нескольких точках есть выезд: 6–8 человек в день, выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом. Для кандидатов во франчайзи из других городов на этапе предварительного отбора подходит VerifEye: онлайн со смартфона, 15–20 минут, точность 84–89%, от 2 500 ₴. Цены для сети по запросу.",
       ] },
       { type: "table", title: "На каком этапе проверять", columns: ["Этап", "Кого и что", "Формат"], rows: [
-        ["Предварительный отбор кандидатов", "Кандидат во франчайзи: долги, судимости, опыт", "VerifEye онлайн, до 15 минут"],
+        ["Предварительный отбор кандидатов", "Кандидат во франчайзи: долги, судимости, опыт", "VerifEye онлайн, 15–20 минут"],
         ["Перед подписанием договора", "Кандидат: параллельный бизнес, источник взноса", "EyeDetect в кабинете или с выездом"],
         ["Подозрение в занижении выручки", "Партнёр и управляющий точки: продажи мимо учёта", "EyeDetect с выездом, 1 день"],
         ["Найм и периодическая проверка", "Управляющие точек, старшие смены, закупщики", "EyeDetect с выездом, 6–8 человек в день"],
@@ -77,10 +77,10 @@ export const franchise = {
       { type: "text", title: "What a franchisor should know", paragraphs: [
         "The test is taken only with written consent, and the partner may refuse. Questions are phrased about specific facts within a specific period: debts, business, money, documents. We do not ask about plans, beliefs, or private life. In Ukraine, an EyeDetect result is not admissible evidence in court; it is grounds for a decision: sign the agreement, request additional documents, or decline.",
         "A clause on EyeDetect testing can be included in the standard franchisee selection procedure and in the agreement for cases of suspected underreporting. Then the test is seen as part of the network's rules, not as a personal accusation. We help draft such a clause and the set of questions.",
-        "A candidate in Lviv takes the test in our office at 45 Horodotska St., from UAH 5,500, report right away. To test managers at several units there is on-site testing: 6–8 people per day, travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included. For franchisee candidates from other cities at the pre-screening stage, VerifEye works well: online from a smartphone, up to 15 minutes, 84–89% accuracy, from UAH 2,500. Pricing for a chain is on request.",
+        "A candidate in Lviv takes the test in our office at 45 Horodotska St., from UAH 5,500, report right away. To test managers at several units there is on-site testing: 6–8 people per day, travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included. For franchisee candidates from other cities at the pre-screening stage, VerifEye works well: online from a smartphone, 15–20 minutes, 84–89% accuracy, from UAH 2,500. Pricing for a chain is on request.",
       ] },
       { type: "table", title: "At which stage to test", columns: ["Stage", "Who and what", "Format"], rows: [
-        ["Pre-screening of candidates", "Franchisee candidate: debts, convictions, experience", "VerifEye online, up to 15 minutes"],
+        ["Pre-screening of candidates", "Franchisee candidate: debts, convictions, experience", "VerifEye online, 15–20 minutes"],
         ["Before signing the agreement", "Candidate: parallel business, source of the fee", "EyeDetect in our Lviv office or on-site"],
         ["Suspected underreporting of revenue", "Partner and unit manager: sales outside the books", "EyeDetect on-site, 1 day"],
         ["Hiring and periodic testing", "Unit managers, shift leads, purchasing staff", "EyeDetect on-site, 6–8 people per day"],

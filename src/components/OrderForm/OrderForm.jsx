@@ -1,8 +1,6 @@
 "use client";
-// import { useEffect, useState, useMemo } from "react";
-// import { useEffect, useMemo } from "react";
-import { useEffect } from "react";
-// import { useTranslation } from 'react-i18next';
+import { useEffect, useMemo } from "react";
+import { usePathname } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { toast } from "sonner";
@@ -10,40 +8,39 @@ import { useModalActions } from "@/hooks/modalActions";
 import { orderFormSchema } from "@/yupSchemas/orderFormSchema";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
 import { track, attributionForLead } from "@/helpers/analytics";
+import { getFormTexts, langFromPath, privacyHref } from "./formTexts";
 import styles from "./OrderForm.module.scss";
 
 // compact — лише ім'я і телефон (для спливаючого вікна, щоб кнопка була видна без прокрутки).
-const OrderForm = ({ dictionary, service = "", compact = true }) => {
-  // console.log("dictionary in orderForm", dictionary);
-  // const { t } = useTranslation();
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => setIsLoading(false), []);
-
-  // const schema = useMemo(() => orderFormSchema(), []);
+// choice — обов'язковий вибір з кількох варіантів (наприклад, формат безкоштовного тесту):
+//   { title, options: [підписи мовою сторінки], error, leadKey, leadOptions: [підписи українською для заявки] }.
+// showPrivacy — рядок про Політику конфіденційності під кнопкою (у вікні заявки його показує саме вікно).
+const OrderForm = ({ dictionary, service = "", compact = true, choice = null, showPrivacy = true, lang: langProp }) => {
+  const pathname = usePathname();
+  const lang = langProp || langFromPath(pathname);
+  const ft = getFormTexts(lang);
 
   const { closeModal } = useModalActions();
 
-  const initialValues = {
+  const schema = useMemo(
+    () => orderFormSchema(dictionary, { phone: ft.phoneError, choice: choice?.error }),
+    [dictionary, ft.phoneError, choice?.error]
+  );
+
+  const form = useForm({
     defaultValues: {
       name: "",
       tel: "",
       email: "",
       comment: "",
+      format: "",
     },
-    resolver: yupResolver(orderFormSchema(dictionary)),
+    resolver: yupResolver(schema),
     mode: "onChange",
-  };
-
-  const form = useForm(initialValues);
-  const { register, handleSubmit, formState, reset } = form;
-  const {
-    errors,
-    isSubmitSuccessful,
-    isValid,
-    isSubmitting,
-    isSubmitted,
-    dirtyFields,
-  } = formState;
+  });
+  const { register, handleSubmit, formState, reset, watch } = form;
+  const { errors, isSubmitSuccessful, isValid, isSubmitting, isSubmitted, dirtyFields } = formState;
+  const format = watch("format");
 
   useEffect(() => {
     if (isSubmitSuccessful) {
@@ -51,8 +48,10 @@ const OrderForm = ({ dictionary, service = "", compact = true }) => {
     }
   }, [isSubmitSuccessful, reset]);
 
-  const onSubmit = async (data) => {
-    const ok = await sendToTelegram({ ...data, service });
+  const onSubmit = async ({ format: formatIdx, ...data }) => {
+    const picked = choice ? (choice.leadOptions || choice.options)[Number(formatIdx)] : "";
+    const comment = [data.comment, picked ? `${choice.leadKey || choice.title}: ${picked}` : ""].filter(Boolean).join("\n");
+    const ok = await sendToTelegram({ ...data, comment, service });
     if (ok) {
       track("lead_form", { lead_service: service || "консультація", lead_source: attributionForLead().source });
       toast.success(dictionary.notifications.success);
@@ -99,6 +98,7 @@ const OrderForm = ({ dictionary, service = "", compact = true }) => {
           {...register("name")}
           placeholder={dictionary.form.name}
           aria-label={dictionary.form.name}
+          aria-invalid={!!errors.name}
           maxLength="30"
           autoComplete="name"
           className={
@@ -136,7 +136,8 @@ const OrderForm = ({ dictionary, service = "", compact = true }) => {
           {...register("tel")}
           placeholder={dictionary.form.tel}
           aria-label={dictionary.form.tel}
-          maxLength="16"
+          aria-invalid={!!errors.tel}
+          maxLength="20"
           autoComplete="tel"
           className={
             dirtyFields.tel && !errors.tel
@@ -178,6 +179,21 @@ const OrderForm = ({ dictionary, service = "", compact = true }) => {
       </>
       )}
 
+      {choice && (
+        <fieldset className={styles.choice} data-invalid={errors.format ? "true" : undefined}>
+          <legend className={styles.choiceTitle}>{choice.title}</legend>
+          <div className={styles.choiceOptions}>
+            {choice.options.map((label, i) => (
+              <label key={label} className={`${styles.choiceOption} ${format === String(i) ? styles.choiceSelected : ""}`}>
+                <input type="radio" value={String(i)} {...register("format")} />
+                <span>{label}</span>
+              </label>
+            ))}
+          </div>
+          {errors.format && <p className={styles.choiceError}>{errors.format.message}</p>}
+        </fieldset>
+      )}
+
       <button
         type="submit"
         disabled={isSubmitting}
@@ -189,6 +205,14 @@ const OrderForm = ({ dictionary, service = "", compact = true }) => {
       >
         {dictionary.buttons.sendRequest}
       </button>
+
+      {showPrivacy && (
+        <p className={styles.privacy}>
+          {ft.privacyBefore}
+          <a href={privacyHref(lang)} target="_blank" rel="noopener noreferrer">{ft.privacyLink}</a>
+          {ft.privacyAfter}
+        </p>
+      )}
     </form>
   );
 };

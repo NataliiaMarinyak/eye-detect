@@ -39,7 +39,7 @@ export const eyedetectPage = {
       columns: ["", "EyeDetect", "VerifEye", "Класичний поліграф"],
       rows: [
         ["Де проходить", "Кабінет у Львові або виїзд", "Будь-де, з телефона", "Кабінет поліграфолога"],
-        ["Тривалість", "30–45 хвилин", "до 15 хвилин", "2–4 години"],
+        ["Тривалість", "30–45 хвилин", "15–20 хвилин", "2–4 години"],
         ["Датчики на тілі", "Немає", "Немає", "Манжета, датчики дихання, електроди"],
         ["Хто формує висновок", "Алгоритм; спеціаліст готує питання і пояснює звіт", "Алгоритм; спеціаліст готує питання і пояснює звіт", "Поліграфолог"],
         ["Точність (дані виробника)", "86–90% залежно від типу тесту", "84–89%", "залежить від спеціаліста"],
@@ -51,10 +51,10 @@ export const eyedetectPage = {
     limits: {
       title: "Обмеження, про які кажемо одразу",
       items: [
-        "Точність 86–90% (88% у скринінгових тестах, 90% у діагностичних на одне питання, дані Converus) означає, що зі 100 перевірених людей приблизно 10 результатів можуть бути невизначеними або помилковими. Тому ми ставимо конкретні питання, а невизначений тест проводимо повторно зі знижкою 50%.",
+        "Точність 86–90% (88% у скринінгових тестах, 90% у діагностичних на одне питання, дані Converus) — це частка правильних серед тестів із визначеним результатом. Отже, 10–14 зі 100 визначених результатів можуть бути хибними, тому ми ставимо конкретні питання. Невизначені результати в цей відсоток не входять, їх повторюємо за наш рахунок.",
         "Тест перевіряє факти й події, а не думки, наміри чи почуття. «Чи любиш ти мене» перевірити неможливо, «чи був статевий контакт з іншою людиною з березня» можливо.",
         "Результат не є доказом у суді в Україні. Він допомагає ухвалити рішення, а не замінює слідство.",
-        "Не тестуємо людей у стані сп'яніння. За даними Converus, на результат впливають травми мозку та хвороби або ліки, що змінюють зіницю чи швидкість реакції: хвороба Паркінсона, діабет, розсіяний склероз, деякі препарати і краплі для очей. Тривожні розлади, ПТСР, вагітність, антидепресанти тесту не заважають. Converus тестує з 11 років, ми приймаємо з 14 за згодою батьків. За потреби перед тестом проводимо коротку перевірку реакції зіниць.",
+        "Не тестуємо людей у стані сп'яніння. За даними Converus, на результат впливають травми мозку та хвороби або ліки, що змінюють зіницю чи швидкість реакції: хвороба Паркінсона, діабет, розсіяний склероз, деякі препарати і краплі для очей. Тривожні розлади, ПТСР, вагітність, антидепресанти тесту не заважають. Converus тестує з 11 років, ми приймаємо з 14 лише за письмовою згодою і в присутності батьків. За потреби перед тестом проводимо коротку перевірку реакції зіниць.",
         "Людина має погодитися на тест письмово. Примусова перевірка не проводиться.",
       ],
     },
@@ -76,7 +76,7 @@ export const eyedetectPage = {
       ],
     },
     faq: [
-      { q: "Чи можна обманути EyeDetect?", a: "Свідомо контролювати зіницю і мікрорухи очей неможливо, а твердження змінюються кожні 5–7 секунд, тому на прийоми проти класичного поліграфа просто немає часу. Якщо людина відповідає навмання, затягує відповіді або не читає твердження, тест визнається недійсним і проводиться повторно." },
+      { q: "Чи можна обманути EyeDetect?", a: "Свідомо контролювати зіницю і мікрорухи очей неможливо, а твердження змінюються кожні 5–7 секунд, тому на прийоми проти класичного поліграфа просто немає часу. Якщо людина відповідає навмання, затягує відповіді або не читає твердження, тест визнається недійсним, і ми проводимо його повторно за наш рахунок." },
       { q: "Чим EyeDetect кращий за поліграф?", a: "Він швидший, без датчиків на тілі, а оцінку рахує алгоритм однаково для всіх. Він не кращий у всьому: класичний поліграф дає більше свободи в діалозі. Для конкретних фактичних питань EyeDetect зазвичай зручніший." },
       { q: "Скільки питань можна перевірити за один тест?", a: "Від одного до трьох. Чим менше питань, тим вища точність по кожному. Протокол технічно дозволяє чотири теми, але для точності ми радимо не більше трьох, а для складних ситуацій проводимо два тести." },
       { q: "Що людина бачить на екрані?", a: "Твердження на кшталт «Я не мала статевого контакту з іншим чоловіком з березня 2023 року» і дві кнопки: правда або неправда. Кожне питання повторюється у різних формулюваннях." },
@@ -88,7 +88,7 @@ export const eyedetectPage = {
     seo: {
       title: "EyeDetect — детектор лжи по движениям глаз: как работает и точность",
       description:
-        "EyeDetect от Converus фиксирует 50+ непроизвольных реакций глаз в секунду. Без датчиков, 30–45 минут, заключение формирует алгоритм. Точность, ограничения и отличия от классического полиграфа.",
+        "EyeDetect: камера 60 кадров в секунду фиксирует непроизвольные реакции глаз. Без датчиков, 30–45 минут, точность 86–90% по данным Converus. Ограничения и отличия от классического полиграфа.",
       keywords: ["EyeDetect", "eye detect", "детектор лжи по глазам", "как работает EyeDetect", "точность EyeDetect", "EyeDetect или полиграф"],
       crumbHome: "Главная",
       crumb: "Технология EyeDetect",
@@ -123,7 +123,7 @@ export const eyedetectPage = {
       columns: ["", "EyeDetect", "VerifEye", "Классический полиграф"],
       rows: [
         ["Где проходит", "Кабинет во Львове или выезд", "Где угодно, с телефона", "Кабинет полиграфолога"],
-        ["Длительность", "30–45 минут", "до 15 минут", "2–4 часа"],
+        ["Длительность", "30–45 минут", "15–20 минут", "2–4 часа"],
         ["Датчики на теле", "Нет", "Нет", "Манжета, датчики дыхания, электроды"],
         ["Кто формирует заключение", "Алгоритм; специалист готовит вопросы и объясняет отчёт", "Алгоритм; специалист готовит вопросы и объясняет отчёт", "Полиграфолог"],
         ["Точность (данные производителя)", "86–90% в зависимости от типа теста", "84–89%", "зависит от специалиста"],
@@ -135,10 +135,10 @@ export const eyedetectPage = {
     limits: {
       title: "Ограничения, о которых говорим сразу",
       items: [
-        "Точность 86–90% (88% в скрининговых тестах, 90% в диагностических на один вопрос, данные Converus) означает, что из 100 проверенных людей примерно 10 результатов могут быть неопределёнными или ошибочными. Поэтому мы ставим конкретные вопросы, а неопределённый тест проводим повторно со скидкой 50%.",
+        "Точность 86–90% (88% в скрининговых тестах, 90% в диагностических на один вопрос, данные Converus) — это доля правильных среди тестов с определённым результатом. Значит, 10–14 из 100 определённых результатов могут быть ошибочными, поэтому мы ставим конкретные вопросы. Неопределённые результаты в этот процент не входят, их повторяем за наш счёт.",
         "Тест проверяет факты и события, а не мысли, намерения или чувства. «Любишь ли ты меня» проверить невозможно, «был ли половой контакт с другим человеком с марта» возможно.",
         "Результат не является доказательством в суде в Украине. Он помогает принять решение, а не заменяет следствие.",
-        "Не тестируем людей в состоянии опьянения. По данным Converus, на результат влияют травмы мозга и болезни или лекарства, меняющие зрачок или скорость реакции: болезнь Паркинсона, диабет, рассеянный склероз, некоторые препараты и капли для глаз. Тревожные расстройства, ПТСР, беременность, антидепрессанты тесту не мешают. Converus тестирует с 11 лет, мы принимаем с 14 с согласия родителей. При необходимости перед тестом проводим короткую проверку реакции зрачков.",
+        "Не тестируем людей в состоянии опьянения. По данным Converus, на результат влияют травмы мозга и болезни или лекарства, меняющие зрачок или скорость реакции: болезнь Паркинсона, диабет, рассеянный склероз, некоторые препараты и капли для глаз. Тревожные расстройства, ПТСР, беременность, антидепрессанты тесту не мешают. Converus тестирует с 11 лет, мы принимаем с 14 только с письменного согласия и в присутствии родителей. При необходимости перед тестом проводим короткую проверку реакции зрачков.",
         "Человек должен согласиться на тест письменно. Принудительная проверка не проводится.",
       ],
     },
@@ -160,7 +160,7 @@ export const eyedetectPage = {
       ],
     },
     faq: [
-      { q: "Можно ли обмануть EyeDetect?", a: "Сознательно контролировать зрачок и микродвижения глаз невозможно, а утверждения меняются каждые 5–7 секунд, поэтому на приёмы против классического полиграфа просто нет времени. Если человек отвечает наугад, затягивает ответы или не читает утверждения, тест признаётся недействительным и проводится повторно." },
+      { q: "Можно ли обмануть EyeDetect?", a: "Сознательно контролировать зрачок и микродвижения глаз невозможно, а утверждения меняются каждые 5–7 секунд, поэтому на приёмы против классического полиграфа просто нет времени. Если человек отвечает наугад, затягивает ответы или не читает утверждения, тест признаётся недействительным, и мы проводим его повторно за наш счёт." },
       { q: "Чем EyeDetect лучше полиграфа?", a: "Он быстрее, без датчиков на теле, а оценку считает алгоритм одинаково для всех. Он не лучше во всём: классический полиграф даёт больше свободы в диалоге. Для конкретных фактических вопросов EyeDetect обычно удобнее." },
       { q: "Сколько вопросов можно проверить за один тест?", a: "От одного до трёх. Чем меньше вопросов, тем выше точность по каждому. Протокол технически позволяет четыре темы, но для точности мы советуем не больше трёх, а для сложных ситуаций проводим два теста." },
       { q: "Что человек видит на экране?", a: "Утверждения вроде «Я не имела полового контакта с другим мужчиной с марта 2023 года» и две кнопки: правда или неправда. Каждый вопрос повторяется в разных формулировках." },
@@ -207,7 +207,7 @@ export const eyedetectPage = {
       columns: ["", "EyeDetect", "VerifEye", "Classic polygraph"],
       rows: [
         ["Where it takes place", "Our Lviv office or on-site", "Anywhere, from a phone", "Polygraph examiner's office"],
-        ["Duration", "30–45 minutes", "up to 15 minutes", "2–4 hours"],
+        ["Duration", "30–45 minutes", "15–20 minutes", "2–4 hours"],
         ["Sensors on the body", "None", "None", "Cuff, breathing sensors, electrodes"],
         ["Who forms the conclusion", "The algorithm; the examiner prepares the questions and explains the report", "The algorithm; the examiner prepares the questions and explains the report", "The polygraph examiner"],
         ["Accuracy (manufacturer data)", "86–90% depending on test type", "84–89%", "depends on the examiner"],
@@ -219,10 +219,10 @@ export const eyedetectPage = {
     limits: {
       title: "Limitations we state up front",
       items: [
-        "An accuracy of 86–90% (88% in screening tests, 90% in single-issue diagnostic tests, Converus data) means that out of 100 people tested, roughly 10 results may be inconclusive or wrong. That is why we ask specific questions, and an inconclusive test is repeated at a 50% discount.",
+        "An accuracy of 86–90% (88% in screening tests, 90% in single-issue diagnostic tests, Converus data) is the share of correct results among tests with a definite result. So 10–14 out of 100 definite results may be wrong, which is why we ask specific questions. Inconclusive results are not included in this figure; we repeat those tests at our expense.",
         "The test checks facts and events, not thoughts, intentions, or feelings. “Do you love me” cannot be tested; “have you had sexual contact with another person since March” can.",
         "The result is not admissible as evidence in a Ukrainian court. It helps you make a decision; it does not replace an investigation.",
-        "We do not test people under the influence of alcohol or drugs. According to Converus, the result is affected by brain injuries and by illnesses or medications that alter the pupil or reaction speed: Parkinson's disease, diabetes, multiple sclerosis, certain drugs and eye drops. Anxiety disorders, PTSD, pregnancy, and antidepressants do not interfere with the test. Converus tests from age 11; we accept from age 14 with parental consent. If needed, we run a short pupil-response check before the test.",
+        "We do not test people under the influence of alcohol or drugs. According to Converus, the result is affected by brain injuries and by illnesses or medications that alter the pupil or reaction speed: Parkinson's disease, diabetes, multiple sclerosis, certain drugs and eye drops. Anxiety disorders, PTSD, pregnancy, and antidepressants do not interfere with the test. Converus tests from age 11; we accept from age 14 only with written parental consent and a parent present. If needed, we run a short pupil-response check before the test.",
         "The person must consent to the test in writing. We do not conduct forced testing.",
       ],
     },
@@ -244,7 +244,7 @@ export const eyedetectPage = {
       ],
     },
     faq: [
-      { q: "Can EyeDetect be fooled?", a: "The pupil and the micro-movements of the eyes cannot be controlled consciously, and the statements change every 5–7 seconds, so there is simply no time for the countermeasures used against a classic polygraph. If a person answers at random, delays their answers, or does not read the statements, the test is declared invalid and repeated." },
+      { q: "Can EyeDetect be fooled?", a: "The pupil and the micro-movements of the eyes cannot be controlled consciously, and the statements change every 5–7 seconds, so there is simply no time for the countermeasures used against a classic polygraph. If a person answers at random, delays their answers, or does not read the statements, the test is declared invalid and we repeat it at our expense." },
       { q: "How is EyeDetect better than a polygraph?", a: "It is faster, has no sensors on the body, and the score is calculated by an algorithm in the same way for everyone. It is not better in every respect: a classic polygraph allows more freedom in dialogue. For specific factual questions, EyeDetect is usually more convenient." },
       { q: "How many questions can be tested in one session?", a: "One to three. The fewer the questions, the higher the accuracy for each. The protocol technically allows four topics, but for accuracy we recommend no more than three, and for complex situations we run two tests." },
       { q: "What does the person see on the screen?", a: "Statements such as “I have not had sexual contact with another man since March 2023” and two buttons: true or false. Each question is repeated in different wordings." },

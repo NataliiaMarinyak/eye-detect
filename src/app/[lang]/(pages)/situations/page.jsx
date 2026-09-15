@@ -8,19 +8,19 @@ import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadat
 const T = {
   uk: {
     seo: { title: "Детектор брехні: у яких ситуаціях допомагає тест EyeDetect", description: "Вірність, крадіжка, витік, кандидат на роботу, спір без доказів, гроші в сім'ї, азартні ігри, перевірка перед шлюбом, повторна перевірка. Львів, виїзд, онлайн.", keywords: ["детектор брехні ситуації", "коли потрібен поліграф", "перевірка на поліграфі випадки", "EyeDetect ситуації"], crumbHome: "Головна", crumb: "Ситуації" },
-    hero: { eyebrow: "Ситуації", h1: "У яких ситуаціях допомагає детектор брехні", sub: "Оберіть свій випадок. На кожній сторінці: як тест вирішує саме цю проблему, приклади питань, формат і ціна, відповіді на типові запитання.", facts: ["питання про факти, не про почуття", "онлайн або в кабінеті", "результат за 45 хвилин"] },
+    hero: { eyebrow: "Ситуації", h1: "У яких ситуаціях допомагає детектор брехні", sub: "Оберіть свій випадок. На кожній сторінці: як тест вирішує саме цю проблему, приклади питань, формат і ціна, відповіді на типові запитання.", facts: ["питання про факти, не про почуття", "онлайн або в кабінеті", "звіт до 5 хвилин після тесту"] },
     listTitle: "Оберіть свою ситуацію",
     service: "EyeDetect",
   },
   ru: {
     seo: { title: "Детектор лжи: в каких ситуациях помогает тест EyeDetect", description: "Верность, кража, утечка, кандидат на работу, спор без доказательств, деньги в семье, азартные игры, проверка перед браком, повторная проверка. Львов, выезд, онлайн.", keywords: ["детектор лжи ситуации", "когда нужен полиграф", "проверка на полиграфе случаи", "EyeDetect ситуации"], crumbHome: "Главная", crumb: "Ситуации" },
-    hero: { eyebrow: "Ситуации", h1: "В каких ситуациях помогает детектор лжи", sub: "Выберите свой случай. На каждой странице: как тест решает именно эту проблему, примеры вопросов, формат и цена, ответы на типичные вопросы.", facts: ["вопросы о фактах, не о чувствах", "онлайн или в кабинете", "результат за 45 минут"] },
+    hero: { eyebrow: "Ситуации", h1: "В каких ситуациях помогает детектор лжи", sub: "Выберите свой случай. На каждой странице: как тест решает именно эту проблему, примеры вопросов, формат и цена, ответы на типичные вопросы.", facts: ["вопросы о фактах, не о чувствах", "онлайн или в кабинете", "отчёт до 5 минут после теста"] },
     listTitle: "Выберите свою ситуацию",
     service: "EyeDetect",
   },
   en: {
     seo: { title: "Lie Detector: Situations Where an EyeDetect Test Helps", description: "Fidelity, theft, leaks, job candidates, disputes without evidence, family money, gambling, premarital checks, second opinion. Lviv office, on-site, online.", keywords: ["lie detector situations", "when to use a polygraph", "polygraph test cases", "EyeDetect situations"], crumbHome: "Home", crumb: "Situations" },
-    hero: { eyebrow: "Situations", h1: "Situations where a lie detector helps", sub: "Pick your case. Each page explains how the test solves that specific problem, gives sample questions, the format and price, and answers to common questions.", facts: ["questions about facts, not feelings", "online or in our Lviv office", "result in 45 minutes"] },
+    hero: { eyebrow: "Situations", h1: "Situations where a lie detector helps", sub: "Pick your case. Each page explains how the test solves that specific problem, gives sample questions, the format and price, and answers to common questions.", facts: ["questions about facts, not feelings", "online or in our Lviv office", "report within 5 minutes after the test"] },
     listTitle: "Choose your situation",
     service: "EyeDetect",
   },

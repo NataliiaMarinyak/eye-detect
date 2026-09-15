@@ -109,4 +109,9 @@
   line-height: 1.5;
   color: $subTitleColor;
   text-align: center;
+
+  & a {
+    color: $primary;
+    text-decoration: underline;
+  }
 }

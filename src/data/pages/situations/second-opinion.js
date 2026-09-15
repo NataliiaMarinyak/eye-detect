@@ -6,16 +6,16 @@ export const secondOpinion = {
     nav: "Повторна перевірка",
     seo: {
       title: "Повторна перевірка результатів поліграфа на детекторі брехні",
-      description: "Не згодні з висновком поліграфа або сумніваєтеся у чужому звіті? EyeDetect: інший метод, ті самі питання, результат за 45 хвилин у Львові або онлайн.",
+      description: "Не згодні з висновком поліграфа або сумніваєтеся у чужому звіті? EyeDetect: інший метод, ті самі питання, звіт до 5 хвилин після тесту. У Львові або онлайн.",
       keywords: ["повторна перевірка на поліграфі", "не згоден з результатом поліграфа", "незалежна перевірка детектор брехні", "оскаржити результат поліграфа", "другий поліграф інший спеціаліст"],
     },
     h1: "Повторна перевірка результатів поліграфа на детекторі брехні",
     sub: "Ви пройшли класичний поліграф на роботі або в приватного поліграфолога і не згодні з висновком. Або ви роботодавець чи партнер і сумніваєтеся у звіті іншого спеціаліста. EyeDetect перевіряє ті самі питання іншим методом: реакції очей оцінює алгоритм, а не людина.",
-    facts: ["інший метод, ті самі питання", "результат рахує алгоритм", "результат за 45 хвилин"],
+    facts: ["інший метод, ті самі питання", "результат рахує алгоритм", "звіт до 5 хвилин після тесту"],
     how: [
       { title: "Інший принцип вимірювання", text: "Класичний поліграф записує дихання, пульс і потовиділення, а висновок робить поліграфолог за діаграмами. EyeDetect фіксує рухи очей, зміну зіниці, швидкість читання й помилки у відповідях, а бал від 1 до 99 рахує алгоритм Converus. Людина не інтерпретує результат." },
       { title: "Ті самі питання, узгоджені заздалегідь", text: "Ми беремо теми з попереднього тесту і формулюємо їх як твердження про факти за той самий період. Ви читаєте всі питання до тесту. Так результати двох методів можна порівняти по кожній темі окремо." },
-      { title: "Що означає збіг і що означає розбіжність", text: "Якщо два незалежні методи дають однаковий висновок, упевненість у ньому, за даними Converus, близько 97%. Якщо висновки різні, це означає, що питання треба розбирати далі: перевірити формулювання, період, стан людини під час першого тесту. Розбіжність сама по собі не доводить, що хтось «бреше», у тому числі перший спеціаліст." },
+      { title: "Що означає збіг і що означає розбіжність", text: "Якщо класичний поліграф і EyeDetect проведено окремо і вони дають однаковий висновок, упевненість у ньому, за даними Converus, близько 97%. Це не точність одного тесту EyeDetect. Якщо висновки різні, це означає, що питання треба розбирати далі: перевірити формулювання, період, стан людини під час першого тесту. Розбіжність сама по собі не доводить, що хтось «бреше», у тому числі перший спеціаліст." },
       { title: "Чесно про межі", text: "Результат EyeDetect не скасовує попередній звіт юридично і не є доказом у суді в Україні. Це незалежна друга думка, з якою ви йдете до роботодавця, партнера або адвоката. Точність EyeDetect 86–90%, VerifEye онлайн 84–89%: помилки можливі в обох методах." },
     ],
     questions: [
@@ -26,8 +26,8 @@ export const secondOpinion = {
     ],
     faq: [
       { q: "Роботодавець зробив висновок за чужим поліграфом. Чи допоможе повторний тест?", a: "Тест дає незалежний результат по тих самих питаннях. Чи візьме його до уваги роботодавець, вирішує він сам: юридично результат не скасовує попередній звіт. На практиці збіг або розбіжність двох методів є аргументом для розмови." },
-      { q: "Чи можна пройти повторну перевірку онлайн?", a: "Так, VerifEye з телефона до 15 хвилин, звіт у PDF на пошту до 5 хвилин після тесту, від 2 500 ₴. Якщо йдеться про роботу або спір, радимо EyeDetect у кабінеті у Львові або з виїздом: 30–45 хвилин, від 5 500 ₴, точність 86–90%." },
-      { q: "Що, як і цей результат «невизначений»?", a: "Так буває не більше ніж у 10 випадках зі 100, найчастіше через втому або хвилювання. Повторний тест зі знижкою 50%. Невизначений результат не означає «бреше»." },
+      { q: "Чи можна пройти повторну перевірку онлайн?", a: "Так, VerifEye з телефона за 15–20 хвилин, звіт у PDF на пошту до 5 хвилин після тесту, від 2 500 ₴. Якщо йдеться про роботу або спір, радимо EyeDetect у кабінеті у Львові або з виїздом: 30–45 хвилин, від 5 500 ₴, точність 86–90%." },
+      { q: "Що, як і цей результат «невизначений»?", a: "Таке буває, найчастіше через втому або хвилювання. Повторний тест — за наш рахунок. Невизначений результат не означає «бреше»." },
       { q: "Хто побачить звіт і чи потрібна згода?", a: "Тест проходить лише добровільно, з письмовою згодою людини, яка його проходить. Звіт отримує ця людина або замовник, якого вона вказала у згоді. Тест можна пройти анонімно: під номером, без імені та фото. Ми не обговорюємо перевірки і не передаємо звіт третім особам." },
     ],
   },
@@ -35,16 +35,16 @@ export const secondOpinion = {
     nav: "Повторная проверка",
     seo: {
       title: "Повторная проверка результатов полиграфа на детекторе лжи",
-      description: "Не согласны с выводом полиграфа или сомневаетесь в чужом отчёте? EyeDetect: другой метод, те же вопросы, результат за 45 минут во Львове или онлайн.",
+      description: "Не согласны с выводом полиграфа или сомневаетесь в чужом отчёте? EyeDetect: другой метод, те же вопросы, отчёт до 5 минут после теста. Во Львове или онлайн.",
       keywords: ["повторная проверка на полиграфе", "не согласен с результатом полиграфа", "независимая проверка детектор лжи", "оспорить результат полиграфа", "второй полиграф другой специалист"],
     },
     h1: "Повторная проверка результатов полиграфа на детекторе лжи",
     sub: "Вы прошли классический полиграф на работе или у частного полиграфолога и не согласны с выводом. Или вы работодатель или партнёр и сомневаетесь в отчёте другого специалиста. EyeDetect проверяет те же вопросы другим методом: реакции глаз оценивает алгоритм, а не человек.",
-    facts: ["другой метод, те же вопросы", "результат считает алгоритм", "результат за 45 минут"],
+    facts: ["другой метод, те же вопросы", "результат считает алгоритм", "отчёт до 5 минут после теста"],
     how: [
       { title: "Другой принцип измерения", text: "Классический полиграф записывает дыхание, пульс и потоотделение, а вывод делает полиграфолог по диаграммам. EyeDetect фиксирует движения глаз, изменение зрачка, скорость чтения и ошибки в ответах, а балл от 1 до 99 считает алгоритм Converus. Человек не интерпретирует результат." },
       { title: "Те же вопросы, согласованные заранее", text: "Мы берём темы из предыдущего теста и формулируем их как утверждения о фактах за тот же период. Вы читаете все вопросы до теста. Так результаты двух методов можно сравнить по каждой теме отдельно." },
-      { title: "Что означает совпадение и что означает расхождение", text: "Если два независимых метода дают одинаковый вывод, уверенность в нём, по данным Converus, около 97%. Если выводы разные, это означает, что вопрос нужно разбирать дальше: проверить формулировки, период, состояние человека во время первого теста. Расхождение само по себе не доказывает, что кто-то «врёт», в том числе первый специалист." },
+      { title: "Что означает совпадение и что означает расхождение", text: "Если классический полиграф и EyeDetect проведены отдельно и дают одинаковый вывод, уверенность в нём, по данным Converus, около 97%. Это не точность одного теста EyeDetect. Если выводы разные, это означает, что вопрос нужно разбирать дальше: проверить формулировки, период, состояние человека во время первого теста. Расхождение само по себе не доказывает, что кто-то «врёт», в том числе первый специалист." },
       { title: "Честно о границах", text: "Результат EyeDetect не отменяет предыдущий отчёт юридически и не является доказательством в суде в Украине. Это независимое второе мнение, с которым вы идёте к работодателю, партнёру или адвокату. Точность EyeDetect 86–90%, VerifEye онлайн 84–89%: ошибки возможны в обоих методах." },
     ],
     questions: [
@@ -55,8 +55,8 @@ export const secondOpinion = {
     ],
     faq: [
       { q: "Работодатель сделал вывод по чужому полиграфу. Поможет ли повторный тест?", a: "Тест даёт независимый результат по тем же вопросам. Примет ли его во внимание работодатель, решает он сам: юридически результат не отменяет предыдущий отчёт. На практике совпадение или расхождение двух методов является аргументом для разговора." },
-      { q: "Можно ли пройти повторную проверку онлайн?", a: "Да, VerifEye с телефона до 15 минут, отчёт в PDF на почту до 5 минут после теста, от 2 500 ₴. Если речь о работе или споре, советуем EyeDetect в кабинете во Львове или с выездом: 30–45 минут, от 5 500 ₴, точность 86–90%." },
-      { q: "Что, если и этот результат «неопределённый»?", a: "Так бывает не больше чем в 10 случаях из 100, чаще всего из-за усталости или волнения. Повторный тест со скидкой 50%. Неопределённый результат не означает «врёт»." },
+      { q: "Можно ли пройти повторную проверку онлайн?", a: "Да, VerifEye с телефона за 15–20 минут, отчёт в PDF на почту до 5 минут после теста, от 2 500 ₴. Если речь о работе или споре, советуем EyeDetect в кабинете во Львове или с выездом: 30–45 минут, от 5 500 ₴, точность 86–90%." },
+      { q: "Что, если и этот результат «неопределённый»?", a: "Такое бывает, чаще всего из-за усталости или волнения. Повторный тест — за наш счёт. Неопределённый результат не означает «врёт»." },
       { q: "Кто увидит отчёт и нужно ли согласие?", a: "Тест проходит только добровольно, с письменным согласием человека, который его проходит. Отчёт получает этот человек или заказчик, которого он указал в согласии. Тест можно пройти анонимно: под номером, без имени и фото. Мы не обсуждаем проверки и не передаём отчёт третьим лицам." },
     ],
   },
@@ -64,16 +64,16 @@ export const secondOpinion = {
     nav: "Second Opinion",
     seo: {
       title: "Second Opinion on a Polygraph Result: Lie Detector Retest",
-      description: "Disagree with a polygraph result, or doubt another examiner's report? EyeDetect: different method, the same questions, result in 45 minutes in Lviv or online.",
+      description: "Disagree with a polygraph result, or doubt another examiner's report? EyeDetect: a different method, the same questions, a report within 5 minutes after the test. In Lviv or online.",
       keywords: ["polygraph second opinion", "disagree with polygraph result", "independent lie detector retest", "challenge polygraph result", "retake polygraph different examiner"],
     },
     h1: "Second Opinion on a Polygraph Result: A Lie Detector Retest",
     sub: "You took a classic polygraph at work or with a private examiner and disagree with the conclusion. Or you are an employer or a partner and doubt another examiner's report. EyeDetect tests the same questions with a different method: eye reactions are scored by an algorithm, not a person.",
-    facts: ["different method, same questions", "scored by an algorithm", "result in 45 minutes"],
+    facts: ["different method, same questions", "scored by an algorithm", "report within 5 minutes after the test"],
     how: [
       { title: "A different measurement principle", text: "A classic polygraph records breathing, pulse, and sweating, and the examiner draws the conclusion from the charts. EyeDetect records eye movements, pupil change, reading speed, and answer errors, and the score from 1 to 99 is calculated by the Converus algorithm. No person interprets the result." },
       { title: "The same questions, agreed in advance", text: "We take the topics from the previous test and phrase them as statements about facts within the same period. You read all the questions before the test. This way the results of the two methods can be compared topic by topic." },
-      { title: "What agreement means and what disagreement means", text: "If two independent methods reach the same conclusion, confidence in it is, according to Converus, about 97%. If the conclusions differ, the question needs further work: checking the wording, the period, and the person's condition during the first test. A disagreement by itself does not prove that anyone is “lying”, including the first examiner." },
+      { title: "What agreement means and what disagreement means", text: "If a classic polygraph and EyeDetect are run separately and reach the same conclusion, confidence in it is, according to Converus, about 97%. This is not the accuracy of a single EyeDetect test. If the conclusions differ, the question needs further work: checking the wording, the period, and the person's condition during the first test. A disagreement by itself does not prove that anyone is “lying”, including the first examiner." },
       { title: "Honest about the limits", text: "An EyeDetect result does not legally overturn the previous report and is not evidence in court in Ukraine. It is an independent second opinion you bring to an employer, a partner, or a lawyer. EyeDetect accuracy is 86–90%, VerifEye online 84–89%: errors are possible in both methods." },
     ],
     questions: [
@@ -84,8 +84,8 @@ export const secondOpinion = {
     ],
     faq: [
       { q: "My employer based a decision on someone else's polygraph. Will a retest help?", a: "The test gives an independent result on the same questions. Whether the employer takes it into account is up to them: legally, the result does not overturn the previous report. In practice, agreement or disagreement between two methods is an argument for a conversation." },
-      { q: "Can the retest be taken online?", a: "Yes, VerifEye from a phone in up to 15 minutes, PDF report by email within 5 minutes after the test, from UAH 2,500. If it concerns your job or a dispute, we recommend EyeDetect in our Lviv office or on-site (we come to you): 30–45 minutes, from UAH 5,500, accuracy 86–90%." },
-      { q: "What if this result is also “inconclusive”?", a: "This happens in no more than 10 cases out of 100, most often because of fatigue or nervousness. A repeat test is 50% off. An inconclusive result does not mean “lying”." },
+      { q: "Can the retest be taken online?", a: "Yes, VerifEye from a phone in 15–20 minutes, PDF report by email within 5 minutes after the test, from UAH 2,500. If it concerns your job or a dispute, we recommend EyeDetect in our Lviv office or on-site (we come to you): 30–45 minutes, from UAH 5,500, accuracy 86–90%." },
+      { q: "What if this result is also “inconclusive”?", a: "It happens, most often because of fatigue or nervousness. A repeat test is at our expense. An inconclusive result does not mean “lying”." },
       { q: "Who sees the report, and is consent required?", a: "The test is taken voluntarily only, with the written consent of the person taking it. The report goes to that person or to the client they named in the consent form. The test can be taken anonymously: under a number, with no name or photo. We do not discuss tests and do not pass the report to third parties." },
     ],
   },

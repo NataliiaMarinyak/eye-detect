@@ -2,12 +2,15 @@ import Counter from "@/components/Counter/Counter";
 import Reveal from "@/components/Reveal/Reveal";
 import styles from "./HomeStatsSection.module.scss";
 
+// Підпис секції для екранних читалок мовою сторінки.
+const LABEL = { uk: "EyeDetect у цифрах", ru: "EyeDetect в цифрах", en: "EyeDetect in numbers" };
+
 // Смуга з чотирма цифрами під першим екраном.
-const HomeStatsSection = ({ dictionary }) => {
+const HomeStatsSection = ({ dictionary, lang = "uk" }) => {
   const items = dictionary.homeStats?.items || [];
 
   return (
-    <section className={styles.section} aria-label="EyeDetect у цифрах">
+    <section className={styles.section} aria-label={LABEL[lang] || LABEL.uk}>
       <div className="container">
         <ul className={styles.list}>
           {items.map((it, i) => (
