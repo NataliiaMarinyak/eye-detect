@@ -31,7 +31,7 @@ export const specialistData = [
         ],
       },
     ],
-    img: "/images/specialist1.webp",
+    img: "/images/specialist-natalia-portrait.webp",
   },
   {
     title: "Практичний досвід проведення перевірок на поліграфі",

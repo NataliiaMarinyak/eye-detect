@@ -14,10 +14,10 @@ const ConsultationSection = ({ dictionary }) => {
         </div>
         <div className={styles.photo}>
           <Image
-            src="/images/about-us-bg.webp"
+            src="/images/about-hero-natalia.webp"
             alt={dictionary.consultationSection.title}
             width={1440}
-            height={900}
+            height={1087}
             sizes="(max-width: 1023px) 100vw, 520px"
             priority
           />

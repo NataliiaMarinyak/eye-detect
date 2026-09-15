@@ -37,7 +37,7 @@ const GuaranteeSection = ({ lang, dictionary, compact = false, items }) => {
         </ul>
         <div className={`${styles.imgWrapp} ${compact ? styles.imgCompact : ""}`}>
           <Image
-            src="/images/specialist3.webp"
+            src="/images/guarantee-consultation.webp"
             alt={
               { uk: "Гарантія конфіденційності тестування EyeDetect", ru: "Гарантия конфиденциальности тестирования EyeDetect", en: "EyeDetect testing confidentiality guarantee" }[lang]
             }
