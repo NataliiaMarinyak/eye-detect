@@ -38,6 +38,7 @@ $sectionGapsLaptop: 32px;
 .item {
   width: 100%;
   padding: 16px 8px;
+  text-align: center;
   background-color: $cardBgColor;
 
   @media screen and (min-width: $tablet) {
@@ -106,6 +107,14 @@ $sectionGapsLaptop: 32px;
     margin-bottom: $sectionGapsLaptop;
     aspect-ratio: 960/560;
   }
+}
+
+// Компактне фото: не ширше 720px, по центру, із заокругленням
+.imgCompact {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: $radiusCard;
 }
 
 .btn {

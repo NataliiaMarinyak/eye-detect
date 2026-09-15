@@ -27,6 +27,7 @@ const OnlinePage = async ({ params }) => {
     offers: [
       { "@type": "Offer", price: 2500, priceCurrency: "UAH", availability: "https://schema.org/InStock", url: `${getSeoMetaPageUrl(lang)}online`, seller: { "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business` } },
       { "@type": "Offer", price: 4000, priceCurrency: "UAH", availability: "https://schema.org/InStock", url: `${getSeoMetaPageUrl(lang)}online`, seller: { "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business` } },
+      { "@type": "Offer", price: 6000, priceCurrency: "UAH", availability: "https://schema.org/InStock", url: `${getSeoMetaPageUrl(lang)}online`, seller: { "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business` } },
     ],
   };
 

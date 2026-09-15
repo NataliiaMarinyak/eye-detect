@@ -34,11 +34,19 @@
 .prices {
   display: grid;
   gap: 16px;
+  width: 100%;
+  margin-inline: auto;
 
+  // Три тарифи: на планшеті стовпчиком, від ноутбука в ряд
   @media screen and (min-width: $tablet) {
-    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 520px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    max-width: 760px;
+    max-width: 1080px;
   }
 }
 

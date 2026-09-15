@@ -4,11 +4,14 @@ import PageHero from "@/sections/pageHero/PageHero";
 import CityVisitSection from "@/sections/cityVisitSection/CityVisitSection";
 import CityQuizBanner from "@/sections/cityQuizBanner/CityQuizBanner";
 import CityUniqueSection from "@/sections/cityUniqueSection/CityUniqueSection";
-import { getCityUnique } from "@/data/cityUnique";
+import CitySituationsSection from "@/sections/citySituationsSection/CitySituationsSection";
+import CityTownsSection from "@/sections/cityTownsSection/CityTownsSection";
+import { getCityUnique, mergeCityFaq } from "@/data/cityUnique";
+import { getCitySections } from "@/data/pages/citySections";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
 import { getCityData, getAllCities } from "@/helpers/getCityData";
 import { getCityLocative, getCityRegion, getCityDistance } from "@/helpers/cityMeta";
-import { cityTexts, fill } from "@/data/pages/cityTexts";
+import { cityTexts, fill, keepShortWords } from "@/data/pages/cityTexts";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getContentFaqJsonLd } from "@/helpers/getContentFaqJsonLd";
 import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadata";
@@ -18,8 +21,14 @@ import { getCityEn } from "@/data/cityEn";
 
 const DynamicServicesSection = dynamic(() => import("@/sections/servicesSection/ServicesSection"));
 const DynamicTownsSection = dynamic(() => import("@/sections/townsSection/TownsSection"));
-const DynamicVideoSection = dynamic(() => import("@/sections/videoSection/VideoSection"));
 const DynamicGuaranteeSection = dynamic(() => import("@/sections/guaranteeSection/GuaranteeSection"));
+
+// Опис фото в герої для міст з унікальним блоком (замість повтору H1).
+const heroPhotoAlt = {
+  uk: "Людина проходить тест на детекторі брехні EyeDetect",
+  ru: "Человек проходит тест на детекторе лжи EyeDetect",
+  en: "Person taking an EyeDetect lie detector test",
+};
 
 // Усі міста рендеряться на етапі збірки, невідомий slug дає 404.
 export async function generateStaticParams() {
@@ -65,12 +74,14 @@ const LocationIdPage = async ({ params }) => {
 
   const cityName = vars.city;
   const unique = getCityUnique(slug, lang);
-  const faq = [...(unique?.faq || []), ...t.faq[region].map((f) => ({ q: fill(f.q, vars), a: fill(f.a, vars) }))];
+  // Унікальні питання міста першими; шаблонні з тим самим key (replaces) не дублюються.
+  const faq = mergeCityFaq(unique?.faq, t.faq[region].map((f) => ({ key: f.key, q: fill(f.q, vars), a: fill(f.a, vars) })));
+  const sections = unique ? getCitySections(lang) : null;
 
   const crumbs = breadcrumbsJsonLd(lang, [
     ["", seoLocationIdPage.seoMetaNameJsonLd_1],
     ["locations", seoLocationIdPage.seoMetaNameJsonLd_2],
-    [`locations/${slug}`, `${seoLocationIdPage.seoMetaNameJsonLd_3} ${cityName}`],
+    [`locations/${slug}`, unique ? cityName : `${seoLocationIdPage.seoMetaNameJsonLd_3} ${cityName}`],
   ]);
 
   const serviceJsonLd = {
@@ -105,16 +116,15 @@ const LocationIdPage = async ({ params }) => {
         secondaryHref={`${lang === "uk" ? "" : "/" + lang}/online`}
         secondaryLabel={t.online.cta}
         photo="/images/converus/eyedetect-examinee.webp"
-        photoAlt={fill(t.h1, vars)}
+        photoAlt={unique ? heroPhotoAlt[lang] : fill(t.h1, vars)}
       />
       {unique && <CityUniqueSection title={fill(t.uniqueTitle, vars)} intro={unique.intro} facts={unique.facts} />}
-      <CityVisitSection t={t} region={region} loc={loc} km={km} vars={vars} dictionary={dictionary} lang={lang} />
+      <CityVisitSection t={t} region={region} loc={loc} km={km} vars={vars} dictionary={dictionary} lang={lang} quizCta={!!unique} />
       <CityQuizBanner title={fill(t.quiz.title, vars)} text={t.quiz.text} button={t.quiz.button} phoneLabel={t.quiz.phone} />
-      <DynamicServicesSection lang={lang} dictionary={dictionary} slug={slug} />
-      {lang !== "en" && <DynamicTownsSection lang={lang} slug={slug} />}
-      <DynamicGuaranteeSection lang={lang} dictionary={dictionary} />
-      <ContentFaq items={faq} lang={lang} title={fill(t.faqTitle, vars)} />
-      {lang !== "en" && <DynamicVideoSection lang={lang} dictionary={dictionary} slug={slug} />}
+      {unique ? <CitySituationsSection lang={lang} {...sections.situations} /> : <DynamicServicesSection lang={lang} dictionary={dictionary} slug={slug} />}
+      {unique ? <CityTownsSection lang={lang} towns={unique.towns} /> : lang !== "en" && <DynamicTownsSection lang={lang} slug={slug} />}
+      <DynamicGuaranteeSection lang={lang} dictionary={dictionary} compact={!!unique} items={sections?.guarantee} />
+      <ContentFaq items={faq} lang={lang} title={keepShortWords(fill(t.faqTitle, vars))} />
       <CityQuizBanner title={fill(t.quiz.finalTitle, vars)} text={t.quiz.finalText} button={t.quiz.button} phoneLabel={t.quiz.phone} variant="dark" />
     </>
   );

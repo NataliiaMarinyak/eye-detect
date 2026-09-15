@@ -10,10 +10,13 @@ import { i18n } from "@/dictionaries/i18n.config";
 import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./GuaranteeSection.module.scss";
 
-const GuaranteeSection = ({ lang, dictionary }) => {
+// compact: без кнопки консультації, фото вужче (сторінки міст з унікальним блоком).
+// items: власні тексти пунктів (масив рядків), інакше спільні дані confidentialityGuaranteeData.
+const GuaranteeSection = ({ lang, dictionary, compact = false, items }) => {
   // const { t, i18n } = useTranslation();
   // const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => setIsLoading(false), []);
+  const texts = items?.length ? items : confidentialityGuaranteeData.map((el) => getLocalizedField(el, "text", lang));
 
   return (
     <section>
@@ -21,20 +24,18 @@ const GuaranteeSection = ({ lang, dictionary }) => {
         <h2 className={styles.title}>{dictionary.guaranteeSection.title}</h2>
 
         <ul className={styles.list}>
-          {confidentialityGuaranteeData.map((el, i) => {
+          {texts.map((text, i) => {
             return (
               <li key={i} className={styles.item}>
                 <svg className={styles.icon}>
                   <use href="/sprite.svg#icon-cross-in-circle"></use>
                 </svg>
-                <p className={styles.text}>
-                  {getLocalizedField(el, "text", lang)}
-                </p>
+                <p className={styles.text}>{text}</p>
               </li>
             );
           })}
         </ul>
-        <div className={styles.imgWrapp}>
+        <div className={`${styles.imgWrapp} ${compact ? styles.imgCompact : ""}`}>
           <Image
             src="/images/specialist3.webp"
             alt={
@@ -42,15 +43,17 @@ const GuaranteeSection = ({ lang, dictionary }) => {
             }
             width={960}
             height={560}
-            sizes="(max-width: 1023px) 100vw, 960px"
+            sizes={compact ? "(max-width: 767px) 100vw, 720px" : "(max-width: 1023px) 100vw, 960px"}
           />
         </div>
         <div className={styles.ctaGroup}>
           <PriceQuizBtn title={dictionary.buttons.calculatePrice} />
-          <OpenModalBtn
-            customClass={styles.btn}
-            title={dictionary.buttons.orderConsultation}
-          />
+          {!compact && (
+            <OpenModalBtn
+              customClass={styles.btn}
+              title={dictionary.buttons.orderConsultation}
+            />
+          )}
         </div>
       </div>
     </section>

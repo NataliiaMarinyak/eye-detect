@@ -33,19 +33,33 @@
   display: grid;
   width: 100%;
   max-width: 900px;
-  gap: 12px;
   margin-top: 8px;
+  // На телефоні факти в одній картці рядками, щоб не займали пів екрана
+  background-color: $cardBgColor;
+  border: 1px solid $lineColor;
+  border-radius: $radiusCard;
 
   @media screen and (min-width: $tablet) {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
   }
 }
 
 .fact {
-  @include card;
-  padding: 18px 20px;
+  padding: 12px 16px;
   text-align: center;
+
+  & + & {
+    border-top: 1px solid $lineColor;
+  }
+
+  @media screen and (min-width: $tablet) {
+    @include card;
+    padding: 18px 20px;
+  }
 }
 
 .label {

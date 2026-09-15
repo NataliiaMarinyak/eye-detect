@@ -11,6 +11,13 @@ const CityQuizBanner = ({ title, text, button, phoneLabel, variant = "light" }) 
       <p className={styles.text}>{text}</p>
       <div className={styles.actions}>
         <PriceQuizBtn customClass={styles.btn} title={button} />
+        {/* На телефоні проста кнопка з номером, на ширших екранах блок з підписом */}
+        <a href="tel:+380686833368" className={styles.phoneBtn}>
+          <svg aria-hidden="true">
+            <use href="/sprite.svg#icon-call" />
+          </svg>
+          +380 68 68 333 68
+        </a>
         <a href="tel:+380686833368" className={styles.phone}>
           <span className={styles.phoneIcon} aria-hidden="true">
             <svg>

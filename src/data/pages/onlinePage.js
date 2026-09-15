@@ -38,6 +38,7 @@ export const onlinePage = {
       items: [
         { name: "1 питання", price: "2 500 ₴", desc: "Одна тема, наприклад вірність за конкретний період. До 15 хвилин тесту." },
         { name: "3 питання", price: "4 000 ₴", desc: "До трьох запитань в одному тесті. Трохи довший тест, детальний звіт.", featured: true },
+        { name: "6 питань", price: "6 000 ₴", desc: "До шести запитань. Кілька тем за один раз, детальний звіт." },
       ],
       upgrade: "Доплат за терміновість чи вихідні для VerifEye немає. Для серйозних рішень (крадіжка, розслідування, суперечка з великою сумою) радимо EyeDetect у кабінеті: він точніший.",
     },
@@ -99,6 +100,7 @@ export const onlinePage = {
       items: [
         { name: "1 вопрос", price: "2 500 ₴", desc: "Одна тема, например верность за конкретный период. До 15 минут теста." },
         { name: "3 вопроса", price: "4 000 ₴", desc: "До трёх вопросов в одном тесте. Чуть более длинный тест, подробный отчёт.", featured: true },
+        { name: "6 вопросов", price: "6 000 ₴", desc: "До шести вопросов. Несколько тем за один раз, подробный отчёт." },
       ],
       upgrade: "Доплат за срочность или выходные для VerifEye нет. Для серьёзных решений (кража, расследование, спор на крупную сумму) советуем EyeDetect в кабинете: он точнее.",
     },
@@ -160,6 +162,7 @@ export const onlinePage = {
       items: [
         { name: "1 question", price: "UAH 2,500", desc: "One topic, for example fidelity over a specific period. Up to 15 minutes of testing." },
         { name: "3 questions", price: "UAH 4,000", desc: "Up to three questions in one test. A slightly longer test, a detailed report.", featured: true },
+        { name: "6 questions", price: "UAH 6,000", desc: "Up to six questions. Several topics at once, a detailed report." },
       ],
       upgrade: "There is no surcharge for urgency or weekends with VerifEye. For serious decisions (theft, an investigation, a dispute over a large sum) we recommend EyeDetect in our Lviv office: it is more accurate.",
     },

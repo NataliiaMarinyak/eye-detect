@@ -1,0 +1,80 @@
+@import "../../app/variables";
+
+.section {
+  @include sectionTopBottomPadding;
+  background-color: $cardBgColor;
+  border-bottom: 1px solid $lineColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.title {
+  @include sectionTitleCentered;
+  margin-bottom: 4px;
+}
+
+.text {
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $subTitleColor;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 17px;
+  }
+}
+
+// Рядок міст через « · »
+.list {
+  max-width: 760px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: $textDarkColor;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 16px;
+  }
+}
+
+.nearby {
+  width: 100%;
+  max-width: 760px;
+  margin-top: 4px;
+  padding-top: 16px;
+  border-top: 1px solid $lineColor;
+  font-size: 15px;
+  line-height: 1.7;
+  color: $subTitleColor;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 16px;
+  }
+}
+
+.nearbyLabel {
+  color: $textDarkColor;
+}
+
+.link {
+  color: $primary;
+  text-decoration: underline;
+  text-decoration-color: rgba(30, 58, 138, 0.35);
+  text-underline-offset: 3px;
+  border-radius: 4px;
+  outline: none;
+  transition: text-decoration-color 200ms ease;
+
+  &:hover {
+    text-decoration-color: $primary;
+  }
+
+  &:focus-visible {
+    box-shadow: $focusRing;
+  }
+}

@@ -26,6 +26,18 @@
     }
   }
 
+  .phoneBtn {
+    @include buttonOnDarkSecondary;
+
+    & svg {
+      stroke: $textLightColor;
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
   .phone {
     &::before {
       background-color: rgba(255, 255, 255, 0.16);
@@ -113,9 +125,35 @@
   }
 }
 
-// Телефон: іконка в колі + підпис і номер у два рядки
+// Телефон на мобільному: контурна кнопка тієї ж ширини, що й основна
+.phoneBtn {
+  @include buttonSecondary;
+  min-width: 260px;
+  gap: 10px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: $primary;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+// Телефон від планшета: іконка в колі + підпис і номер у два рядки
 .phone {
-  display: inline-flex;
+  display: none;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+  }
   align-items: center;
   gap: 12px;
   text-align: left;
