@@ -62,7 +62,7 @@ export const cityTexts = {
         { key: "legal", q: "Чи законно це в країні, де я живу?", a: "Ми проводимо лише добровільні тести за письмовою згодою. Неповнолітні проходять тест тільки за письмовою згодою батьків і в їхній присутності. Результат не є судовим доказом; чи можна використати його у вашій країні для конкретної мети, уточніть у місцевого юриста." },
       ],
     },
-    noOffice: "Офісу {loc} у нас немає. Ми чесно працюємо лише виїздом до клієнта з обладнанням EyeDetect або онлайн через VerifEye. Єдиний кабінет — у Львові.",
+    noOffice: "Офісу {loc} у нас немає. Ми працюємо лише виїздом до клієнта з обладнанням EyeDetect або онлайн через VerifEye.",
     quiz: {
       heroCta: "Розрахувати точну вартість",
       title: "Скільки коштуватиме тест {loc}?",
@@ -137,7 +137,7 @@ export const cityTexts = {
         { key: "legal", q: "Законно ли это в стране, где я живу?", a: "Мы проводим только добровольные тесты с письменного согласия. Несовершеннолетние проходят тест только с письменного согласия родителей и в их присутствии. Результат не является судебным доказательством; можно ли использовать его в вашей стране для конкретной цели, уточните у местного юриста." },
       ],
     },
-    noOffice: "Офиса {loc} у нас нет. Мы честно работаем только выездом к клиенту с оборудованием EyeDetect или онлайн через VerifEye. Единственный кабинет — во Львове.",
+    noOffice: "Офиса {loc} у нас нет. Мы работаем только выездом к клиенту с оборудованием EyeDetect или онлайн через VerifEye.",
     quiz: {
       heroCta: "Рассчитать точную стоимость",
       title: "Сколько будет стоить тест {loc}?",
@@ -212,7 +212,7 @@ export const cityTexts = {
         { key: "legal", q: "Is this legal in the country where I live?", a: "We only conduct voluntary tests with written consent. Minors take the test only with written consent from their parents and with the parents present. The result is not court evidence; please check with a local lawyer whether it can be used for a specific purpose in your country." },
       ],
     },
-    noOffice: "We have no office {loc}. To be honest, we only work by travelling to the client with EyeDetect equipment or online via VerifEye. Our only office is in Lviv.",
+    noOffice: "We have no office {loc}. We only work by travelling to the client with EyeDetect equipment or online via VerifEye.",
     quiz: {
       heroCta: "Calculate the exact price",
       title: "How much will the test {loc} cost?",
