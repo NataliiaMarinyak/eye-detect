@@ -6,6 +6,7 @@ import CityQuizBanner from "@/sections/cityQuizBanner/CityQuizBanner";
 import CityUniqueSection from "@/sections/cityUniqueSection/CityUniqueSection";
 import CitySituationsSection from "@/sections/citySituationsSection/CitySituationsSection";
 import CityTownsSection from "@/sections/cityTownsSection/CityTownsSection";
+import CityCasesSection from "@/sections/cityCasesSection/CityCasesSection";
 import { getCityUnique, mergeCityFaq } from "@/data/cityUnique";
 import { getCitySections } from "@/data/pages/citySections";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
@@ -122,6 +123,7 @@ const LocationIdPage = async ({ params }) => {
       <CityVisitSection t={t} region={region} loc={loc} km={km} vars={vars} dictionary={dictionary} lang={lang} quizCta={!!unique} />
       <CityQuizBanner title={fill(t.quiz.title, vars)} text={t.quiz.text} button={t.quiz.button} phoneLabel={t.quiz.phone} />
       {unique ? <CitySituationsSection lang={lang} {...sections.situations} /> : <DynamicServicesSection lang={lang} dictionary={dictionary} slug={slug} />}
+      {unique && <CityCasesSection cases={unique.cases} />}
       {unique ? <CityTownsSection lang={lang} towns={unique.towns} /> : lang !== "en" && <DynamicTownsSection lang={lang} slug={slug} />}
       <DynamicGuaranteeSection lang={lang} dictionary={dictionary} compact={!!unique} items={sections?.guarantee} />
       <ContentFaq items={faq} lang={lang} title={keepShortWords(fill(t.faqTitle, vars))} />

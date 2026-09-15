@@ -1,0 +1,90 @@
+@import "../../app/variables";
+
+.section {
+  @include sectionTopBottomPadding;
+  background-color: $panelBgColor;
+  border-bottom: 1px solid $lineColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width: $laptop) {
+    gap: 20px;
+  }
+}
+
+.title {
+  @include sectionTitleCentered;
+  margin-bottom: 0;
+}
+
+.note {
+  max-width: 640px;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: $subTitleColor;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 16px;
+  }
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  gap: 16px;
+  margin-top: 8px;
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.card {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 20px;
+
+  @media screen and (min-width: $laptop) {
+    padding: 24px;
+  }
+}
+
+// Хто звернувся і формат: дрібний підпис над заголовком
+.label {
+  font-family: var(--font-bold);
+  font-size: 14px;
+  color: $primary;
+}
+
+.cardTitle {
+  font-family: var(--font-bold);
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: $subTitleColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.disclaimer {
+  max-width: 640px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  color: $langColor;
+}
