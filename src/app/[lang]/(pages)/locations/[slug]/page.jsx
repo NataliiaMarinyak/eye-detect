@@ -2,6 +2,9 @@ import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 import PageHero from "@/sections/pageHero/PageHero";
 import CityVisitSection from "@/sections/cityVisitSection/CityVisitSection";
+import CityQuizBanner from "@/sections/cityQuizBanner/CityQuizBanner";
+import CityUniqueSection from "@/sections/cityUniqueSection/CityUniqueSection";
+import { getCityUnique } from "@/data/cityUnique";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
 import { getCityData, getAllCities } from "@/helpers/getCityData";
 import { getCityLocative, getCityRegion, getCityDistance } from "@/helpers/cityMeta";
@@ -42,11 +45,12 @@ export async function generateMetadata({ params }) {
   const p = getCityPage(slug, lang);
   if (!p) return {};
   const { seoLocationIdPage } = await getDictionary(lang);
+  const u = getCityUnique(slug, lang);
   return buildPageMetadata({
     lang,
     path: `locations/${slug}`,
-    title: fill(p.t.title, p.vars),
-    description: lang === "en" ? fill(p.t.sub[p.region], p.vars) : p.isUk ? p.data.mainDescription : p.data.mainDescriptionRus,
+    title: u?.seoTitle || fill(p.t.title, p.vars),
+    description: u?.seoDescription || (lang === "en" ? fill(p.t.sub[p.region], p.vars) : p.isUk ? p.data.mainDescription : p.data.mainDescriptionRus),
     keywords: seoLocationIdPage.seoMetaKeywords,
   });
 }
@@ -60,7 +64,8 @@ const LocationIdPage = async ({ params }) => {
   const { data, t, loc, region, km, vars, isUk } = p;
 
   const cityName = vars.city;
-  const faq = t.faq[region].map((f) => ({ q: fill(f.q, vars), a: fill(f.a, vars) }));
+  const unique = getCityUnique(slug, lang);
+  const faq = [...(unique?.faq || []), ...t.faq[region].map((f) => ({ q: fill(f.q, vars), a: fill(f.a, vars) }))];
 
   const crumbs = breadcrumbsJsonLd(lang, [
     ["", seoLocationIdPage.seoMetaNameJsonLd_1],
@@ -95,18 +100,22 @@ const LocationIdPage = async ({ params }) => {
         sub={fill(t.sub[region], vars)}
         facts={t.facts}
         primary={t.visit.cta}
+        quizLabel={t.quiz.heroCta}
         service={lang === "en" ? `EyeDetect on-site · ${loc}` : `EyeDetect з виїздом · ${loc}`}
         secondaryHref={`${lang === "uk" ? "" : "/" + lang}/online`}
         secondaryLabel={t.online.cta}
         photo="/images/converus/eyedetect-examinee.webp"
         photoAlt={fill(t.h1, vars)}
       />
+      {unique && <CityUniqueSection title={fill(t.uniqueTitle, vars)} intro={unique.intro} facts={unique.facts} />}
       <CityVisitSection t={t} region={region} loc={loc} km={km} vars={vars} dictionary={dictionary} lang={lang} />
+      <CityQuizBanner title={fill(t.quiz.title, vars)} text={t.quiz.text} button={t.quiz.button} phoneLabel={t.quiz.phone} />
       <DynamicServicesSection lang={lang} dictionary={dictionary} slug={slug} />
-      {lang !== "en" && <DynamicVideoSection lang={lang} dictionary={dictionary} slug={slug} />}
       {lang !== "en" && <DynamicTownsSection lang={lang} slug={slug} />}
       <DynamicGuaranteeSection lang={lang} dictionary={dictionary} />
       <ContentFaq items={faq} lang={lang} title={fill(t.faqTitle, vars)} />
+      {lang !== "en" && <DynamicVideoSection lang={lang} dictionary={dictionary} slug={slug} />}
+      <CityQuizBanner title={fill(t.quiz.finalTitle, vars)} text={t.quiz.finalText} button={t.quiz.button} phoneLabel={t.quiz.phone} variant="dark" />
     </>
   );
 };

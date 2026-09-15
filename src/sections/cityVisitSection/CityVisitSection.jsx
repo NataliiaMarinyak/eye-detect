@@ -1,6 +1,5 @@
 import Reveal from "@/components/Reveal/Reveal";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
-import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import { fill } from "@/data/pages/cityTexts";
 import styles from "./CityVisitSection.module.scss";
 
@@ -16,6 +15,7 @@ const CityVisitSection = ({ t, region, loc, km, vars, dictionary, lang }) => {
         <Reveal>
           <h2 className={styles.title}>{fill(t.visitTitle, v)}</h2>
         </Reveal>
+        {t.noOffice && <p className={styles.noOffice}>{fill(t.noOffice, v)}</p>}
         <ul className={styles.grid}>
           <Reveal as="li" className={styles.card}>
             <p className={styles.badge}>{t.online.title}</p>
@@ -34,10 +34,6 @@ const CityVisitSection = ({ t, region, loc, km, vars, dictionary, lang }) => {
             </div>
           </Reveal>
         </ul>
-        <Reveal className={styles.noteRow}>
-          <p className={styles.note}>{fill(t.lvivNote, v)}</p>
-          <PriceQuizBtn customClass={styles.quiz} title={dictionary.buttons.calculatePrice} />
-        </Reveal>
       </div>
     </section>
   );

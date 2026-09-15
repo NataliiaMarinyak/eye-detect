@@ -1,0 +1,64 @@
+@import "../../app/variables";
+
+.section {
+  @include sectionTopBottomPadding;
+  border-bottom: 1px solid $lineColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  @include sectionTitleCentered;
+  margin-bottom: 0;
+}
+
+.intro {
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $subTitleColor;
+  text-align: center;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 17px;
+  }
+}
+
+.facts {
+  display: grid;
+  width: 100%;
+  max-width: 900px;
+  gap: 12px;
+  margin-top: 8px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+.fact {
+  @include card;
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.label {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $subTitleColor;
+}
+
+.value {
+  margin-top: 6px;
+  font-family: var(--font-bold);
+  font-size: 17px;
+  line-height: 1.35;
+  color: $primary;
+}

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
+import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
 import styles from "./PageHero.module.scss";
 
 // Перший екран для внутрішніх сторінок: темний фон, H1, підзаголовок,
 // факти, одна-дві кнопки, за потреби фото праворуч.
-const PageHero = ({ service = "", eyebrow, title, sub, facts = [], primary, secondaryHref, secondaryLabel, photo, photoAlt = "" }) => {
+const PageHero = ({ service = "", eyebrow, title, sub, facts = [], primary, quizLabel, secondaryHref, secondaryLabel, photo, photoAlt = "" }) => {
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.container}`}>
@@ -12,9 +13,9 @@ const PageHero = ({ service = "", eyebrow, title, sub, facts = [], primary, seco
           {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
           <h1 className={styles.title}>{title}</h1>
           {sub && <p className={styles.sub}>{sub}</p>}
-          {(primary || secondaryHref) && (
+          {(primary || quizLabel || secondaryHref) && (
             <div className={styles.actions}>
-              {primary && <OpenModalBtn customClass={styles.btnPrimary} title={primary} service={service} />}
+              {quizLabel ? <PriceQuizBtn customClass={styles.btnPrimary} title={quizLabel} /> : primary && <OpenModalBtn customClass={styles.btnPrimary} title={primary} service={service} />}
               {secondaryHref && (
                 <a href={secondaryHref} className={styles.btnSecondary}>
                   {secondaryLabel}

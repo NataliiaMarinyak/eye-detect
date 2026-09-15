@@ -1,6 +1,8 @@
 @import "../../app/variables";
 
 .container {
+    padding-top: 8px;
+    padding-bottom: 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,8 +18,8 @@
 }
 
 .videoWrapper {
-
     width: 100%;
+    max-width: 720px;
     aspect-ratio: 16/9;
 }
 

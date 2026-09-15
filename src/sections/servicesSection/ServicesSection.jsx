@@ -2,7 +2,6 @@
 // import { useEffect, useState } from "react";
 // import { useTranslation } from "react-i18next";
 // import { useParams } from "next/navigation";
-import Image from "next/image";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import { getCityData } from "@/helpers/getCityData";
 import { getCityServicesEn } from "@/data/cityEn";
@@ -60,17 +59,6 @@ const ServicesSection = ({ lang, dictionary, slug }) => {
                   </li>
                 ))}
               </ul>
-              <div className={styles.imgWrapper}>
-                <Image
-                  className={styles.img}
-                  src={service.image}
-                  alt={service.imageAlt}
-                  sizes="(max-width: 1023px) 100vw, 960px"
-                  width={960}
-                  height={494}
-                  loading="lazy"
-                />
-              </div>
               <OpenModalBtn
                 customClass={styles.openModalBtn}
                 title={dictionary.buttons.orderConsultation}

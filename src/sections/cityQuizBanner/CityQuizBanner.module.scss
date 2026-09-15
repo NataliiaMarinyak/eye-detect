@@ -1,0 +1,76 @@
+@import "../../app/variables";
+
+.section {
+  @include sectionTopBottomPadding;
+  background-color: $primarySoft;
+  border-bottom: 1px solid $lineColor;
+}
+
+.dark {
+  background-color: $navySoft;
+  border-bottom: 0;
+
+  .title {
+    color: #fff;
+  }
+
+  .text {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .btn {
+    @include buttonOnDark;
+  }
+
+  .phone {
+    color: $primaryOnDark;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.title {
+  @include sectionTitleCentered;
+  margin-bottom: 0;
+}
+
+.text {
+  max-width: 640px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $subTitleColor;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 17px;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.btn {
+  @include buttonPrimary;
+  min-width: 260px;
+}
+
+.phone {
+  font-family: var(--font-bold);
+  font-size: 16px;
+  color: $primary;
+}

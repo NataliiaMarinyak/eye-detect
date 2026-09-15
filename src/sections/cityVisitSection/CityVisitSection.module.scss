@@ -127,3 +127,15 @@
     min-width: 220px;
   }
 }
+
+.noOffice {
+  max-width: 760px;
+  margin: -8px auto 0;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background-color: $primarySoft;
+  font-size: 15px;
+  line-height: 1.55;
+  color: $primary;
+  text-align: center;
+}
