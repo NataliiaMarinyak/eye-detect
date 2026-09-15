@@ -46,6 +46,17 @@
   }
 }
 
+// Чотири картки: 2 в ряд на планшеті, 4 від ноутбука
+.grid4 {
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .card {
   @include card;
   display: flex;

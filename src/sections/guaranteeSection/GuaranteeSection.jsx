@@ -37,13 +37,13 @@ const GuaranteeSection = ({ lang, dictionary, compact = false, items }) => {
         </ul>
         <div className={`${styles.imgWrapp} ${compact ? styles.imgCompact : ""}`}>
           <Image
-            src="/images/guarantee-consultation.webp"
+            src="/images/guarantee-natalia.webp"
             alt={
               { uk: "Гарантія конфіденційності тестування EyeDetect", ru: "Гарантия конфиденциальности тестирования EyeDetect", en: "EyeDetect testing confidentiality guarantee" }[lang]
             }
             width={960}
             height={560}
-            sizes={compact ? "(max-width: 767px) 100vw, 720px" : "(max-width: 1023px) 100vw, 960px"}
+            sizes={compact ? "(max-width: 767px) 100vw, 560px" : "(max-width: 1023px) 100vw, 960px"}
           />
         </div>
         <div className={styles.ctaGroup}>

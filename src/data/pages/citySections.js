@@ -13,6 +13,18 @@ export const citySections = {
       ],
     },
     // Пункти гарантії від «ми» (у спільних даних confidentialityGuaranteeData вони від першої особи).
+    // Типові звернення для міст без власних випадків (власник: «в загальному, не по кожній країні»).
+    commonCases: {
+      title: "З чим до нас звертаються",
+      note: "Типові звернення з різних міст і країн, без імен і деталей.",
+      items: [
+        { label: "Компанії", title: "Арбітраж трафіку", text: "Перевірка кандидатів і працівників: чи не передають вони офери компанії конкурентам." },
+        { label: "Компанії", title: "Колцентри", text: "Перевірка операторів перед наймом і службові розслідування, коли у працівників є доступ до грошей чи бази клієнтів." },
+        { label: "Бізнес і сім'ї", title: "Крадіжка на роботі чи вдома", text: "Коли під підозрою кілька людей, кожен проходить тест з тими самими питаннями. Неповнолітні — лише за письмовою згодою батьків і в їхній присутності." },
+        { label: "Пари", title: "Підозра у зраді", text: "Тест перевіряє одну конкретну підозру за певний період. Питання формулюємо разом, людина читає їх заздалегідь." },
+      ],
+      disclaimer: "Результат тесту не є судовим доказом.",
+    },
     guarantee: [
       "Не публікуємо фото чи відео перевірок на сайті чи в соцмережах.",
       "Не обговорюємо перевірки з колегами на форумах чи в чатах.",
@@ -30,6 +42,17 @@ export const citySections = {
         { slug: "dispute", title: "Спор без доказательств", text: "Долг, договорённость или обвинение, когда есть только слово против слова: тест проверяет конкретную версию событий. Результат не является судебным доказательством." },
       ],
     },
+    commonCases: {
+      title: "С чем к нам обращаются",
+      note: "Типичные обращения из разных городов и стран, без имён и деталей.",
+      items: [
+        { label: "Компании", title: "Арбитраж трафика", text: "Проверка кандидатов и сотрудников: не передают ли они офферы компании конкурентам." },
+        { label: "Компании", title: "Колл-центры", text: "Проверка операторов перед наймом и служебные расследования, когда у сотрудников есть доступ к деньгам или базе клиентов." },
+        { label: "Бизнес и семьи", title: "Кража на работе или дома", text: "Когда под подозрением несколько человек, каждый проходит тест с одними и теми же вопросами. Несовершеннолетние — только с письменного согласия родителей и в их присутствии." },
+        { label: "Пары", title: "Подозрение в измене", text: "Тест проверяет одно конкретное подозрение за определённый период. Вопросы формулируем вместе, человек читает их заранее." },
+      ],
+      disclaimer: "Результат теста не является судебным доказательством.",
+    },
     guarantee: [
       "Не публикуем фото или видео проверок на сайте или в соцсетях.",
       "Не обсуждаем проверки с коллегами на форумах или в чатах.",
@@ -46,6 +69,17 @@ export const citySections = {
         { slug: "hiring", title: "Job candidate or employee", text: "Screening before hiring or during employment on agreed topics, such as theft at a previous job or ties to competitors." },
         { slug: "dispute", title: "Dispute without evidence", text: "A debt, an agreement or an accusation where it is one person's word against another's: the test checks a specific version of events. The result is not court evidence." },
       ],
+    },
+    commonCases: {
+      title: "What people come to us with",
+      note: "Typical requests from different cities and countries, without names or details.",
+      items: [
+        { label: "Companies", title: "Traffic arbitrage", text: "Screening candidates and employees to check whether they pass the company's offers to competitors." },
+        { label: "Companies", title: "Call centres", text: "Screening operators before hiring, and internal investigations when staff have access to money or the client database." },
+        { label: "Businesses and families", title: "Theft at work or at home", text: "When several people are under suspicion, each takes the test with the same questions. Minors take it only with written consent from their parents and with the parents present." },
+        { label: "Couples", title: "Suspected infidelity", text: "The test checks one specific suspicion over a certain period. We draw up the questions together, and the person reads them in advance." },
+      ],
+      disclaimer: "The test result is not court evidence.",
     },
     guarantee: [
       "We do not publish photos or videos of tests on our website or social media.",

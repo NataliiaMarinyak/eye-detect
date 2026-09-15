@@ -11,7 +11,7 @@ const CityCasesSection = ({ cases }) => {
       <div className={`container ${styles.container}`}>
         <h2 className={styles.title}>{keepShortWords(title)}</h2>
         {note && <p className={styles.note}>{note}</p>}
-        <ul className={styles.grid}>
+        <ul className={`${styles.grid} ${items.length === 4 ? styles.grid4 : ""}`}>
           {items.map((item) => (
             <li key={item.title} className={styles.card}>
               {item.label && <p className={styles.label}>{item.label}</p>}
