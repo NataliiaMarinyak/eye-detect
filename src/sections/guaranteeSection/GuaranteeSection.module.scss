@@ -111,8 +111,8 @@ $sectionGapsLaptop: 32px;
 
 // Компактне фото: не ширше 720px, по центру, із заокругленням
 .imgCompact {
-  max-width: 560px;
-  aspect-ratio: 1 / 1;
+  max-width: 600px;
+  aspect-ratio: 5 / 4;
   margin-left: auto;
   margin-right: auto;
   border-radius: $radiusCard;
