@@ -43,14 +43,14 @@ export const cityTexts = {
         { q: "Як швидко можете приїхати {loc}?", a: "Зазвичай протягом 2–5 робочих днів після узгодження питань і оплати. Онлайн-тест VerifEye доступний уже сьогодні." },
         { q: "Чи потрібне спеціальне приміщення?", a: "Ні. Достатньо тихої кімнати зі столом, стільцем і розеткою. Обладнання привозимо з собою." },
         { q: "Скільки людей можна перевірити за один виїзд?", a: "6–8 осіб за день. Для більшої кількості плануємо два дні." },
-        { q: "Скільки коштує виїзд {loc}?", a: "12 000 ₴ під ключ, разом із тестом для однієї людини. Для кількох осіб вартість виїзду ділиться, точну суму порахує квіз або менеджер." },
+        { q: "Скільки коштує виїзд {loc}?", a: "12 000 ₴ під ключ, разом із тестом для однієї людини. Для кількох осіб вартість виїзду ділиться, точну суму назве спеціаліст." },
         { q: "Чи можна пройти тест онлайн замість виїзду?", a: "Так, VerifEye з телефона від 2 500 ₴. Для перевірок на вірність і кандидатів це часто зручніше." },
       ],
       "ua-other": [
         { q: "Як швидко можете приїхати {loc}?", a: "Виїзд у далекі регіони плануємо за 1–2 тижні і поєднуємо кілька заявок. Онлайн-тест VerifEye доступний уже сьогодні." },
         { q: "Чи потрібне спеціальне приміщення?", a: "Ні. Достатньо тихої кімнати зі столом, стільцем і розеткою. Обладнання привозимо з собою." },
         { q: "Скільки людей можна перевірити за один виїзд?", a: "6–8 осіб за день. Для більшої кількості плануємо два дні." },
-        { q: "Скільки коштує виїзд {loc}?", a: "12 000 ₴ під ключ, разом із тестом для однієї людини. Для кількох осіб вартість виїзду ділиться, точну суму порахує квіз або менеджер." },
+        { q: "Скільки коштує виїзд {loc}?", a: "12 000 ₴ під ключ, разом із тестом для однієї людини. Для кількох осіб вартість виїзду ділиться, точну суму назве спеціаліст." },
         { q: "Чи можна пройти тест онлайн замість виїзду?", a: "Так, VerifEye з телефона від 2 500 ₴, звіт у PDF до 5 хвилин після тесту. Для перевірок на вірність і кандидатів це часто зручніше." },
       ],
       eu: [
@@ -68,8 +68,8 @@ export const cityTexts = {
       text: "Дайте відповідь на 5 коротких питань — спеціаліст порахує точну вартість виїзду або онлайн-тесту і передзвонить. Це безкоштовно і ні до чого не зобов'язує.",
       button: "Розрахувати вартість",
       finalTitle: "Не знаєте, з чого почати {loc}?",
-      finalText: "Пройдіть квіз: підберемо формат — виїзд до вас чи онлайн — і назвемо ціну.",
-      phone: "або телефонуйте",
+      finalText: "Кілька коротких питань — і ми підберемо формат, виїзд до вас чи онлайн, та назвемо ціну.",
+      phone: "Або телефонуйте",
     },
     uniqueTitle: "Детектор брехні {loc}: що варто знати",
     ctaTitle: "Готові дізнатися правду {loc}?",
@@ -118,14 +118,14 @@ export const cityTexts = {
         { q: "Как быстро можете приехать {loc}?", a: "Обычно в течение 2–5 рабочих дней после согласования вопросов и оплаты. Онлайн-тест VerifEye доступен уже сегодня." },
         { q: "Нужно ли специальное помещение?", a: "Нет. Достаточно тихой комнаты со столом, стулом и розеткой. Оборудование привозим с собой." },
         { q: "Сколько людей можно проверить за один выезд?", a: "6–8 человек в день. Для большего количества планируем два дня." },
-        { q: "Сколько стоит выезд {loc}?", a: "12 000 ₴ под ключ, вместе с тестом для одного человека. Для нескольких человек стоимость выезда делится, точную сумму посчитает квиз или менеджер." },
+        { q: "Сколько стоит выезд {loc}?", a: "12 000 ₴ под ключ, вместе с тестом для одного человека. Для нескольких человек стоимость выезда делится, точную сумму назовёт специалист." },
         { q: "Можно ли пройти тест онлайн вместо выезда?", a: "Да, VerifEye с телефона от 2 500 ₴. Для проверок на верность и кандидатов это часто удобнее." },
       ],
       "ua-other": [
         { q: "Как быстро можете приехать {loc}?", a: "Выезд в дальние регионы планируем за 1–2 недели и объединяем несколько заявок. Онлайн-тест VerifEye доступен уже сегодня." },
         { q: "Нужно ли специальное помещение?", a: "Нет. Достаточно тихой комнаты со столом, стулом и розеткой. Оборудование привозим с собой." },
         { q: "Сколько людей можно проверить за один выезд?", a: "6–8 человек в день. Для большего количества планируем два дня." },
-        { q: "Сколько стоит выезд {loc}?", a: "12 000 ₴ под ключ, вместе с тестом для одного человека. Для нескольких человек стоимость выезда делится, точную сумму посчитает квиз или менеджер." },
+        { q: "Сколько стоит выезд {loc}?", a: "12 000 ₴ под ключ, вместе с тестом для одного человека. Для нескольких человек стоимость выезда делится, точную сумму назовёт специалист." },
         { q: "Можно ли пройти тест онлайн вместо выезда?", a: "Да, VerifEye с телефона от 2 500 ₴, отчёт в PDF до 5 минут после теста. Для проверок на верность и кандидатов это часто удобнее." },
       ],
       eu: [
@@ -143,8 +143,8 @@ export const cityTexts = {
       text: "Ответьте на 5 коротких вопросов — специалист посчитает точную стоимость выезда или онлайн-теста и перезвонит. Это бесплатно и ни к чему не обязывает.",
       button: "Рассчитать стоимость",
       finalTitle: "Не знаете, с чего начать {loc}?",
-      finalText: "Пройдите квиз: подберём формат — выезд к вам или онлайн — и назовём цену.",
-      phone: "или звоните",
+      finalText: "Несколько коротких вопросов — и мы подберём формат, выезд к вам или онлайн, и назовём цену.",
+      phone: "Или звоните",
     },
     uniqueTitle: "Детектор лжи {loc}: что стоит знать",
     ctaTitle: "Готовы узнать правду {loc}?",
@@ -193,14 +193,14 @@ export const cityTexts = {
         { q: "How soon can you come to {city}?", a: "Usually within 2–5 business days after the questions are agreed and payment is made. The VerifEye online test is available today." },
         { q: "Do we need a special room?", a: "No. A quiet room with a table, a chair and a power outlet is enough. We bring the equipment with us." },
         { q: "How many people can be tested in one visit?", a: "6–8 people per day. For larger groups we plan two days." },
-        { q: "How much does a visit to {city} cost?", a: "UAH 12,000 all-inclusive, test included, for one person. For several people the travel cost is shared; the quiz or a manager will calculate the exact amount." },
+        { q: "How much does a visit to {city} cost?", a: "UAH 12,000 all-inclusive, test included, for one person. For several people the travel cost is shared; a specialist will tell you the exact amount." },
         { q: "Can the test be taken online instead of a visit?", a: "Yes, VerifEye from a phone from UAH 2,500. For fidelity checks and job candidates this is often more convenient." },
       ],
       "ua-other": [
         { q: "How soon can you come to {city}?", a: "Visits to distant regions are planned 1–2 weeks ahead and combined with several requests. The VerifEye online test is available today." },
         { q: "Do we need a special room?", a: "No. A quiet room with a table, a chair and a power outlet is enough. We bring the equipment with us." },
         { q: "How many people can be tested in one visit?", a: "6–8 people per day. For larger groups we plan two days." },
-        { q: "How much does a visit to {city} cost?", a: "UAH 12,000 all-inclusive, test included, for one person. For several people the travel cost is shared; the quiz or a manager will calculate the exact amount." },
+        { q: "How much does a visit to {city} cost?", a: "UAH 12,000 all-inclusive, test included, for one person. For several people the travel cost is shared; a specialist will tell you the exact amount." },
         { q: "Can the test be taken online instead of a visit?", a: "Yes, VerifEye from a phone from UAH 2,500, PDF report within 5 minutes after the test. For fidelity checks and job candidates this is often more convenient." },
       ],
       eu: [
@@ -218,8 +218,8 @@ export const cityTexts = {
       text: "Answer 5 short questions and a specialist will calculate the exact price of a visit or an online test and call you back. Free and with no obligation.",
       button: "Calculate the price",
       finalTitle: "Not sure where to start {loc}?",
-      finalText: "Take the quiz: we will suggest the format — a visit to you or online — and give you a price.",
-      phone: "or call",
+      finalText: "A few short questions, and we will suggest the format, a visit to you or online, and give you a price.",
+      phone: "Or call",
     },
     uniqueTitle: "Lie detector test {loc}: what to know",
     ctaTitle: "Ready to learn the truth {loc}?",
@@ -228,3 +228,7 @@ export const cityTexts = {
 };
 
 export const fill = (s, vars) => (s || "").replace(/\{(\w+)\}/g, (_, k) => (vars[k] ?? ""));
+
+// Короткі прийменники не лишаються в кінці рядка заголовка: «у Таллінні» переноситься разом.
+export const keepShortWords = (s) =>
+  (s || "").replace(/(?<=^|[\s«(])(у|в|і|й|з|із|та|до|на|о|а|и|к|с|по|за|от|in|to|a|an|of|or)\s+/giu, "$1 ");

@@ -20,10 +20,46 @@
 
   .btn {
     @include buttonOnDark;
+
+    @media screen and (min-width: $tablet) {
+      width: auto;
+    }
   }
 
   .phone {
-    color: $primaryOnDark;
+    &::before {
+      background-color: rgba(255, 255, 255, 0.16);
+    }
+
+    &:hover .phoneIcon {
+      background-color: $textLightColor;
+      border-color: $textLightColor;
+
+      & svg {
+        stroke: $deepNavy;
+      }
+    }
+
+    &:hover .phoneNum {
+      color: $primaryOnDark;
+    }
+  }
+
+  .phoneIcon {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+
+    & svg {
+      stroke: $primaryOnDark;
+    }
+  }
+
+  .phoneLabel {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .phoneNum {
+    color: $textLightColor;
   }
 }
 
@@ -55,22 +91,117 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
+  width: 100%;
   margin-top: 8px;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
-    gap: 24px;
+    justify-content: center;
+    gap: 28px;
+    width: auto;
   }
 }
 
 .btn {
   @include buttonPrimary;
   min-width: 260px;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    flex-shrink: 0;
+  }
 }
 
+// Телефон: іконка в колі + підпис і номер у два рядки
 .phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: $radiusBtn;
+  outline: none;
+
+  &:focus-visible {
+    box-shadow: $focusRing;
+  }
+
+  // Тонка вертикальна лінія між кнопкою і телефоном (лише в рядок)
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    flex-shrink: 0;
+    padding-left: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: 0;
+      width: 1px;
+      background-color: #c9d3e0;
+    }
+  }
+
+  &:hover .phoneIcon {
+    background-color: $primary;
+    border-color: $primary;
+
+    & svg {
+      stroke: $textLightColor;
+    }
+  }
+
+  &:hover .phoneNum {
+    color: $primary;
+  }
+}
+
+.phoneIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $cardBgColor;
+  border: 1px solid $lineColor;
+  transition: background-color 200ms ease, border-color 200ms ease;
+
+  & svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: $primary;
+    transition: stroke 200ms ease;
+  }
+}
+
+.phoneText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.phoneLabel {
+  font-size: 13px;
+  line-height: 1.2;
+  color: $subTitleColor;
+}
+
+.phoneNum {
   font-family: var(--font-bold);
-  font-size: 16px;
-  color: $primary;
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: $textDarkColor;
+  transition: color 200ms ease;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 19px;
+  }
 }
