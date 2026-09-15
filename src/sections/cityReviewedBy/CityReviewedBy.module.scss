@@ -1,0 +1,22 @@
+@import "../../app/variables";
+
+// Рядок під FAQ: дрібний, по центру, не перебиває основний текст
+.line {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  color: $langColor;
+
+  @media screen and (min-width: $laptop) {
+    padding-bottom: 56px;
+  }
+}
+
+.link {
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

@@ -16,13 +16,14 @@ export const TIER_A = [
 const UA_WEST = ["lutsk", "rivne", "ternopil", "ivano-frankivsk", "chernivtsi", "uzhgorod", "khmelnytskyi"];
 
 // Орієнтовна відстань від Львова автомобілем, км (для блоку «виїзд»).
+// Для міст з унікальним контентом звірено з маршрутами 15.09.2026.
 const DISTANCE_KM = {
   lutsk: 150, rivne: 210, ternopil: 130, "ivano-frankivsk": 135, chernivtsi: 270, uzhgorod: 265,
   khmelnytskyi: 240, vinnytsia: 365, zhytomyr: 400, kyiv: 540, cherkasy: 580, kropyvnytskyi: 640,
-  odesa: 800, mykolaiv: 760, kherson: 830, dnipro: 900, zaporizhzhia: 950, poltava: 870,
+  odesa: 800, mykolaiv: 760, kherson: 830, dnipro: 950, zaporizhzhia: 950, poltava: 870,
   kharkiv: 1000, sumy: 1000, chernihiv: 650,
-  warsaw: 390, krakow: 330, bratislava: 640, prague: 750, budapest: 560, vienna: 700, berlin: 900,
-  chisinau: 620, vilnius: 750, riga: 1000, tallinn: 1300, belgrade: 1100, podgorica: 1400,
+  warsaw: 390, krakow: 330, bratislava: 670, prague: 860, budapest: 560, vienna: 790, berlin: 920,
+  chisinau: 570, vilnius: 800, riga: 1000, tallinn: 1300, belgrade: 1000, podgorica: 1350,
 };
 
 export const getCityRegion = (slug, country = "") => {

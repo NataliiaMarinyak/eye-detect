@@ -7,6 +7,7 @@ import CityUniqueSection from "@/sections/cityUniqueSection/CityUniqueSection";
 import CitySituationsSection from "@/sections/citySituationsSection/CitySituationsSection";
 import CityTownsSection from "@/sections/cityTownsSection/CityTownsSection";
 import CityCasesSection from "@/sections/cityCasesSection/CityCasesSection";
+import CityReviewedBy, { getReviewer } from "@/sections/cityReviewedBy/CityReviewedBy";
 import { getCityUnique, mergeCityFaq } from "@/data/cityUnique";
 import { getCitySections } from "@/data/pages/citySections";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
@@ -23,6 +24,9 @@ import { getCityEn } from "@/data/cityEn";
 const DynamicServicesSection = dynamic(() => import("@/sections/servicesSection/ServicesSection"));
 const DynamicTownsSection = dynamic(() => import("@/sections/townsSection/TownsSection"));
 const DynamicGuaranteeSection = dynamic(() => import("@/sections/guaranteeSection/GuaranteeSection"));
+
+// Дата останньої перевірки текстів міст з унікальним контентом (якщо в місті не вказано updated).
+const CITY_UPDATED = "2026-09-15";
 
 // Опис фото в герої для міст з унікальним блоком (замість повтору H1).
 const heroPhotoAlt = {
@@ -101,11 +105,24 @@ const LocationIdPage = async ({ params }) => {
     url: `${getSeoMetaPageUrl(lang)}locations/${slug}`,
   };
 
+  // Хто перевірив відповіді і коли (лише для сторінок з унікальним контентом).
+  const reviewer = getReviewer(lang);
+  const webPageJsonLd = unique && {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url: `${getSeoMetaPageUrl(lang)}locations/${slug}`,
+    name: unique.seoTitle,
+    inLanguage: lang,
+    dateModified: unique.updated || CITY_UPDATED,
+    reviewedBy: { "@type": "Person", name: reviewer.name, jobTitle: reviewer.role, url: `${getSeoMetaPageUrl(lang)}about-us` },
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getContentFaqJsonLd(faq)) }} />
+      {webPageJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />}
       <PageHero
         eyebrow={t.eyebrow}
         title={fill(t.h1, vars)}
@@ -127,6 +144,7 @@ const LocationIdPage = async ({ params }) => {
       {unique ? <CityTownsSection lang={lang} towns={unique.towns} /> : lang !== "en" && <DynamicTownsSection lang={lang} slug={slug} />}
       <DynamicGuaranteeSection lang={lang} dictionary={dictionary} compact items={getCitySections(lang).guarantee} />
       <ContentFaq items={faq} lang={lang} title={keepShortWords(fill(t.faqTitle, vars))} />
+      {unique && <CityReviewedBy lang={lang} updated={unique.updated || CITY_UPDATED} />}
       <CityQuizBanner title={fill(t.quiz.finalTitle, vars)} text={t.quiz.finalText} button={t.quiz.button} phoneLabel={t.quiz.phone} variant="dark" />
     </>
   );

@@ -78,21 +78,39 @@
   transform: rotate(45deg);
 }
 
+// Згортання: сітка 0fr → 1fr, усередині один блок (відповідь + посилання), щоб закрита панель мала висоту 0
 .panel {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 300ms ease;
-
-  & > p {
-    overflow: hidden;
-  }
 }
 
 .isOpen {
   grid-template-rows: 1fr;
+}
 
-  & > p {
-    padding: 0 4px 20px;
+.inner {
+  min-height: 0;
+  overflow: hidden;
+  padding: 0 4px;
+}
+
+.isOpen .inner {
+  padding-bottom: 20px;
+}
+
+// Джерела під відповіддю
+.sources {
+  max-width: 62ch;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $langColor;
+
+  a {
+    color: $primary;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 }
 

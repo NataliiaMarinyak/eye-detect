@@ -1,0 +1,70 @@
+// Унікальний контент сторінки Дніпра (uk/ru/en). Закон і дорога — з перевірених фактів на 15.09.2026; випадки — спільний блок.
+// faq[].replaces — ключі шаблонних питань (cityTexts faq), які це питання замінює.
+export const dnipro = {
+  uk: {
+    seoTitle: "Поліграф і детектор брехні у Дніпрі: ціна, виїзд",
+    seoDescription: "Поліграф у Дніпрі: офісу в місті немає. Онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ або виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ.",
+    intro: "Дніпро — одне з найбільших міст України, і від Львова до нього близько 950 км. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст їде зі Львова з обладнанням нічним поїздом, близько 13 годин: поїздів Інтерсіті на цьому маршруті немає.",
+    facts: [["Від Львова", "≈ 950 км, 13 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
+    faq: [
+      { q: "Де пройти поліграф у Дніпрі?", a: "Офісу в Дніпрі немає, єдиний кабінет — у Львові. Тест EyeDetect проводимо під час виїзду: спеціаліст приїжджає зі Львова з обладнанням у ваш офіс або в іншу тиху кімнату. Онлайн-тест VerifEye можна пройти вже сьогодні з телефона, вдома чи в офісі." },
+      { q: "Скільки коштує поліграф у Дніпрі?", a: "Виїзд з EyeDetect до Дніпра — 12 000 ₴ під ключ, разом із тестом для однієї людини. Якщо тест проходять кілька людей, вартість виїзду ділиться, точну суму назве спеціаліст. Онлайн-тест VerifEye: 2 500 ₴ за одне питання, 4 000 ₴ за три, 6 000 ₴ за шість, без доплат.", replaces: ["price"] },
+      { q: "Як швидко спеціаліст може приїхати до Дніпра?", a: "Виїзд до Дніпра плануємо за 1–2 тижні й поєднуємо з іншими заявками в регіоні. Дорога зі Львова займає близько 13 годин найшвидшим поїздом, а автомобілем — 14 годин і більше, не рахуючи зупинок. Під час воєнного стану військові адміністрації можуть вводити комендантську годину й обмежувати рух, тому дорога може тривати довше. Якщо відповідь потрібна швидше, онлайн-тест VerifEye можна пройти вже сьогодні.", replaces: ["speed"], sources: [["Укрзалізниця: розклад Львів — Дніпро", "https://uz.gov.ua/passengers/timetable/?from_station=23200&to_station=22700&by_route=1"], ["Poizdato: поїзди Львів — Дніпро", "https://poizdato.net/rozklad-poizdiv/lviv--dnipro/"], ["Закон про правовий режим воєнного стану", "https://zakon.rada.gov.ua/laws/show/389-19"]] },
+      { q: "Поліграф на вірність: чи можна перевірити партнера?", a: "Так. Тест перевіряє одну конкретну підозру, наприклад зраду за певний період. Його проходить партнер, якого підозрюють, або обидва партнери, кожен окремо. Тест добровільний, за письмовою згодою. Онлайн-тест VerifEye коштує від 2 500 ₴, і виїзд для нього не потрібен." },
+      { q: "Чи можна перевірити працівників на поліграфі у Дніпрі?", a: "Спеціаліст може приїхати з EyeDetect у ваш офіс у Дніпрі, а кандидати можуть пройти онлайн-тест VerifEye з телефона. Тест проходить лише людина, яка дала письмову згоду. Для перевірки працівників і кандидатів правила суворіші, ніж для приватного тесту, тому перед такою перевіркою порадьтеся з юристом." },
+      { q: "Якою мовою можна пройти тест у Дніпрі?", a: "Українською, російською, англійською або німецькою. Питання формулюємо разом, і людина читає їх заздалегідь." },
+      { q: "Чи законна перевірка на поліграфі в Україні?", a: "Жоден закон України не забороняє приватний добровільний тест на поліграфі й не регулює його окремо. Діють загальні правила про персональні дані: потрібна добровільна й поінформована згода людини. Ми проводимо тест лише за письмовою згодою, а неповнолітніх — тільки за письмовою згодою батьків і в їхній присутності. Для перевірки працівників і кандидатів правила суворіші, тому порадьтеся з юристом. Верховний Суд у кримінальних справах 2023–2024 років не визнавав висновок поліграфолога самостійним доказом, і наш результат теж не є судовим доказом.", sources: [["Закон про захист персональних даних", "https://zakon.rada.gov.ua/laws/show/2297-17"], ["Верховний Суд, справа 183/3452/19 (2023)", "https://reyestr.court.gov.ua/Review/108686155"], ["Верховний Суд, справа 760/23990/17 (2024)", "https://reyestr.court.gov.ua/Review/117757884"]] },
+    ],
+    towns: {
+      title: "Кривий Ріг, Кам'янське та інші міста Дніпропетровської області",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і всюди в Україні, крім Львівської області.",
+      list: "Кривий Ріг · Павлоград · Кам'янське · Жовті Води",
+      nearbyLabel: "Інші міста регіону:",
+      nearby: [["zaporizhzhia", "Запоріжжя"], ["poltava", "Полтава"], ["kharkiv", "Харків"]],
+    },
+  },
+  ru: {
+    seoTitle: "Полиграф и детектор лжи в Днепре: цена, выезд",
+    seoDescription: "Пройти полиграф в Днепре: офиса в городе нет. Онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ или выезд специалиста с EyeDetect — 12 000 ₴ под ключ.",
+    intro: "Днепр — один из крупнейших городов Украины, и от Львова до него около 950 км. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист едет из Львова с оборудованием ночным поездом, около 13 часов: поездов Интерсити на этом маршруте нет.",
+    facts: [["От Львова", "≈ 950 км, 13 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
+    faq: [
+      { q: "Где пройти полиграф в Днепре?", a: "Офиса в Днепре нет, единственный кабинет — во Львове. Тест EyeDetect проводим во время выезда: специалист приезжает из Львова с оборудованием в ваш офис или в другую тихую комнату. Онлайн-тест VerifEye можно пройти уже сегодня с телефона, дома или в офисе." },
+      { q: "Сколько стоит детектор лжи в Днепре?", a: "Выезд с EyeDetect в Днепр — 12 000 ₴ под ключ, вместе с тестом для одного человека. Если тест проходят несколько человек, стоимость выезда делится, точную сумму назовёт специалист. Онлайн-тест VerifEye: 2 500 ₴ за один вопрос, 4 000 ₴ за три, 6 000 ₴ за шесть, без доплат.", replaces: ["price"] },
+      { q: "Как быстро специалист может приехать в Днепр?", a: "Выезд в Днепр планируем за 1–2 недели и объединяем с другими заявками в регионе. Дорога из Львова занимает около 13 часов на самом быстром поезде, а на машине — 14 часов и больше, не считая остановок. Во время военного положения военные администрации могут вводить комендантский час и ограничивать движение, поэтому дорога может занять больше времени. Если ответ нужен быстрее, онлайн-тест VerifEye можно пройти уже сегодня.", replaces: ["speed"], sources: [["Укрзализныця: расписание Львов — Днепр", "https://uz.gov.ua/passengers/timetable/?from_station=23200&to_station=22700&by_route=1"], ["Poizdato: поезда Львов — Днепр", "https://poizdato.net/rozklad-poizdiv/lviv--dnipro/"], ["Закон о правовом режиме военного положения", "https://zakon.rada.gov.ua/laws/show/389-19"]] },
+      { q: "Полиграф на верность: можно ли проверить партнёра?", a: "Да. Тест проверяет одно конкретное подозрение, например измену за определённый период. Его проходит партнёр, которого подозревают, или оба партнёра, каждый отдельно. Тест добровольный, с письменного согласия. Онлайн-тест VerifEye стоит от 2 500 ₴, и выезд для него не нужен." },
+      { q: "Можно ли проверить сотрудников на полиграфе в Днепре?", a: "Специалист может приехать с EyeDetect в ваш офис в Днепре, а кандидаты могут пройти онлайн-тест VerifEye с телефона. Тест проходит только человек, который дал письменное согласие. Для проверки сотрудников и кандидатов правила строже, чем для частного теста, поэтому перед такой проверкой посоветуйтесь с юристом." },
+      { q: "На каком языке можно пройти тест в Днепре?", a: "На украинском, русском, английском или немецком. Вопросы формулируем вместе, и человек читает их заранее." },
+      { q: "Законна ли проверка на полиграфе в Украине?", a: "Ни один закон Украины не запрещает частный добровольный тест на полиграфе и не регулирует его отдельно. Действуют общие правила о персональных данных: нужно добровольное и информированное согласие человека. Мы проводим тест только с письменного согласия, а несовершеннолетних — только с письменного согласия родителей и в их присутствии. Для проверки сотрудников и кандидатов правила строже, поэтому посоветуйтесь с юристом. Верховный Суд в уголовных делах 2023–2024 годов не признавал заключение полиграфолога самостоятельным доказательством, и наш результат тоже не является судебным доказательством.", sources: [["Закон о защите персональных данных", "https://zakon.rada.gov.ua/laws/show/2297-17"], ["Верховный Суд, дело 183/3452/19 (2023)", "https://reyestr.court.gov.ua/Review/108686155"], ["Верховный Суд, дело 760/23990/17 (2024)", "https://reyestr.court.gov.ua/Review/117757884"]] },
+    ],
+    towns: {
+      title: "Кривой Рог, Каменское и другие города Днепропетровской области",
+      text: "Онлайн-тест VerifEye можно пройти из любого города области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и везде в Украине, кроме Львовской области.",
+      list: "Кривой Рог · Павлоград · Каменское · Жёлтые Воды",
+      nearbyLabel: "Другие города региона:",
+      nearby: [["zaporizhzhia", "Запорожье"], ["poltava", "Полтава"], ["kharkiv", "Харьков"]],
+    },
+  },
+  en: {
+    seoTitle: "Lie Detector Test in Dnipro: Price, Visit or Online",
+    seoDescription: "Polygraph test in Dnipro: no office in the city. VerifEye phone test today from UAH 2,500, or an EyeDetect visit for UAH 12,000 all-inclusive.",
+    intro: "Dnipro is one of Ukraine's largest cities, about 950 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment on an overnight train of about 13 hours, as there are no Intercity trains on this route.",
+    facts: [["From Lviv", "≈ 950 km, 13 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
+    faq: [
+      { q: "Where can I take a polygraph test in Dnipro?", a: "We have no office in Dnipro; our only office is in Lviv. The EyeDetect test takes place during a visit: a specialist comes from Lviv with the equipment to your office or another quiet room. You can take the VerifEye online test today on your phone, at home or at work." },
+      { q: "How much does a lie detector test cost in Dnipro?", a: "An EyeDetect visit to Dnipro costs UAH 12,000 all-inclusive, test included, for one person. For several people the travel cost is shared; a specialist will tell you the exact amount. VerifEye online test: UAH 2,500 for one question, UAH 4,000 for three, UAH 6,000 for six, with no extra charges.", replaces: ["price"] },
+      { q: "How soon can a specialist come to Dnipro?", a: "Visits to Dnipro are planned 1–2 weeks ahead and combined with other requests in the region. The trip from Lviv takes about 13 hours by the fastest train, or 14 hours or more by car, not counting stops. Under martial law, military administrations may impose a curfew and restrict movement, so the trip can take longer. If you need an answer sooner, you can take the VerifEye online test today.", replaces: ["speed"], sources: [["Ukrzaliznytsia: Lviv — Dnipro timetable", "https://uz.gov.ua/passengers/timetable/?from_station=23200&to_station=22700&by_route=1"], ["Poizdato: Lviv — Dnipro trains", "https://poizdato.net/rozklad-poizdiv/lviv--dnipro/"], ["Law on the Legal Regime of Martial Law", "https://zakon.rada.gov.ua/laws/show/389-19"]] },
+      { q: "Can my partner take a lie detector test for infidelity?", a: "Yes. The test checks one specific suspicion, for example infidelity over a certain period. The partner under suspicion takes it, or both partners take separate tests. The test is voluntary and requires written consent. The VerifEye online test costs from UAH 2,500 and needs no visit." },
+      { q: "Can we test employees with a polygraph in Dnipro?", a: "A specialist can bring EyeDetect to your office in Dnipro, and job candidates can take the VerifEye online test on a phone. Only a person who has given written consent takes the test. The rules for testing employees and job candidates are stricter than for a private test, so talk to a lawyer before such a test." },
+      { q: "What languages can I take the test in?", a: "Ukrainian, Russian, English or German. We draw up the questions together with you, and the person reads them in advance." },
+      { q: "Is a polygraph test legal in Ukraine?", a: "No Ukrainian law bans private voluntary polygraph tests or regulates them specifically. General personal data rules apply, so the person must give voluntary, informed consent. We test only with written consent, and minors only with written consent from their parents and with the parents present. The rules for testing employees and job candidates are stricter, so talk to a lawyer. In criminal cases in 2023–2024, Ukraine's Supreme Court did not accept a polygraph examiner's conclusion as independent evidence, and our result is not court evidence either.", sources: [["Law on Personal Data Protection", "https://zakon.rada.gov.ua/laws/show/2297-17"], ["Supreme Court, case 183/3452/19 (2023)", "https://reyestr.court.gov.ua/Review/108686155"], ["Supreme Court, case 760/23990/17 (2024)", "https://reyestr.court.gov.ua/Review/117757884"]] },
+    ],
+    towns: {
+      title: "Kryvyi Rih, Kamianske and other towns in Dnipropetrovsk Oblast",
+      text: "The VerifEye online test can be taken from any town in the oblast. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine except Lviv Oblast.",
+      list: "Kryvyi Rih · Pavlohrad · Kamianske · Zhovti Vody",
+      nearbyLabel: "Other cities in the region:",
+      nearby: [["zaporizhzhia", "Zaporizhzhia"], ["poltava", "Poltava"], ["kharkiv", "Kharkiv"]],
+    },
+  },
+};
