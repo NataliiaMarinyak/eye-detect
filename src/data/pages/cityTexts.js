@@ -209,7 +209,7 @@ export const cityTexts = {
         { key: "price", q: "How much does the test cost {loc}?", a: "EyeDetect from UAH 10,000 for one issue, UAH 15,000 for three. Plus tickets from Lviv and room rental. VerifEye online from UAH 2,500 with no surcharges." },
         { key: "language", q: "What language is the test in?", a: "Ukrainian, Russian, English or German. We formulate the questions together, and the person reads them in advance." },
         { key: "online", q: "Can the test be taken online without waiting for a visit?", a: "Yes, VerifEye from a phone is available today, PDF report within 5 minutes after the test." },
-        { key: "legal", q: "Is this legal in the country where I live?", a: "We only conduct voluntary tests with written consent. Minors take the test only with their parents’ written consent and in their presence. The result is not court evidence; please check with a local lawyer whether it can be used for a specific purpose in your country." },
+        { key: "legal", q: "Is this legal in the country where I live?", a: "We only conduct voluntary tests with written consent. Minors take the test only with written consent from their parents and with the parents present. The result is not court evidence; please check with a local lawyer whether it can be used for a specific purpose in your country." },
       ],
     },
     noOffice: "We have no office {loc}. To be honest, we only work by travelling to the client with EyeDetect equipment or online via VerifEye. Our only office is in Lviv.",
