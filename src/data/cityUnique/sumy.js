@@ -1,0 +1,70 @@
+// Унікальний контент сторінки Сум (uk/ru/en). Закон і дорога — з перевірених фактів на 16.09.2026; випадки — спільний блок.
+// faq[].replaces — ключі шаблонних питань (cityTexts faq), які це питання замінює.
+export const sumy = {
+  uk: {
+    seoTitle: "Поліграф у Сумах: детектор брехні з виїздом або онлайн",
+    seoDescription: "Поліграф у Сумах: офісу в місті немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴.",
+    updated: "2026-09-16",
+    intro: "Суми — центр Сумської області, приблизно за 870 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст їде зі Львова з обладнанням 13,5–15 годин поїздом, тому виїзд плануємо за 1–2 тижні й поєднуємо з іншими заявками.",
+    facts: [["Від Львова", "≈ 870 км, 13,5–15 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
+    faq: [
+      { q: "Де пройти поліграф у Сумах?", a: "Офісу в Сумах немає, тому є два варіанти. Онлайн-тест VerifEye можна пройти вже сьогодні з телефона, у тихій кімнаті вдома чи в офісі. Тест EyeDetect проводимо під час виїзду: спеціаліст приїжджає зі Львова з обладнанням у ваш офіс або в іншу тиху кімнату. Тест призначаємо на денний час: у Сумській області діє комендантська година, зараз — з 00:00 до 05:00.", sources: [["Сумська ОВА про комендантську годину", "https://t.me/Sumy_news_ODA/44827"]] },
+      { q: "Скільки коштує детектор брехні в Сумах?", a: "Виїзд спеціаліста з EyeDetect до Сум коштує 12 000 ₴ під ключ, разом із тестом для однієї людини. Якщо тест проходять кілька людей, вартість виїзду ділиться, точну суму назве спеціаліст. Онлайн-тест VerifEye: 2 500 ₴ за одне питання, 4 000 ₴ за три, 6 000 ₴ за шість, без доплат.", replaces: ["price"] },
+      { q: "Як швидко спеціаліст може приїхати до Сум?", a: "Виїзд до Сум плануємо за 1–2 тижні й поєднуємо з іншими заявками. Прямий поїзд зі Львова ходить через день і йде близько 15 годин, з пересадкою в Києві — близько 13,5 години. Найшвидший автобус доїжджає за 11 годин, автомобілем це 11–13 годин без зупинок. Поїзди сумського напрямку часто затримуються на кілька годин, тому дату узгоджуємо із запасом. Онлайн-тест VerifEye доступний уже сьогодні.", replaces: ["speed"], sources: [["Укрзалізниця: розклад Львів — Суми", "https://www.uz.gov.ua/passengers/timetable/?from_station=23200&to_station=22450&by_route=1"], ["Rubikon: автобуси Львів — Суми", "https://rubikon.com.ua/direction/lviv/sumi"], ["Укрзалізниця про затримки поїздів, УП 10.09.2026", "https://www.pravda.com.ua/news/2026/09/10/8052744/"]] },
+      { q: "Чи можна перевірити партнера на зраду в Сумах?", a: "Так. Тест перевіряє одну конкретну підозру, наприклад зраду за певний період. Його проходить партнер, якого підозрюють, або обидва партнери, кожен окремо. Тест добровільний, за письмовою згодою. Онлайн-тест VerifEye коштує від 2 500 ₴, і виїзд для нього не потрібен." },
+      { q: "Якою мовою можна пройти тест у Сумах?", a: "Тест можна пройти українською, російською, англійською або німецькою. Питання формулюємо разом із вами, і людина читає їх заздалегідь." },
+      { q: "Чи законна перевірка на поліграфі в Україні?", a: "Жоден закон України не забороняє приватний добровільний тест на поліграфі й не регулює його окремо. Діють загальні правила про персональні дані: потрібна добровільна й поінформована згода людини. Ми проводимо тест лише за письмовою згодою, а неповнолітніх — тільки за письмовою згодою батьків і в їхній присутності. Для перевірки працівників і кандидатів правила суворіші, тому спершу порадьтеся з юристом. Верховний Суд у кримінальних справах 2023–2024 років не визнавав висновок поліграфолога самостійним доказом, і наш результат теж не є судовим доказом.", sources: [["Закон про захист персональних даних", "https://zakon.rada.gov.ua/laws/show/2297-17"], ["Верховний Суд, справа 183/3452/19 (2023)", "https://reyestr.court.gov.ua/Review/108686155"], ["Верховний Суд, справа 760/23990/17 (2024)", "https://reyestr.court.gov.ua/Review/117757884"]] },
+    ],
+    towns: {
+      title: "Ромни, Конотоп та інші міста Сумської області",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Сумської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і всюди в Україні, крім Львівської області.",
+      list: "Конотоп · Охтирка · Ромни",
+      nearbyLabel: "Інші міста регіону:",
+      nearby: [["poltava", "Полтава"], ["kharkiv", "Харків"], ["chernihiv", "Чернігів"]],
+    },
+  },
+  ru: {
+    seoTitle: "Полиграф в Сумах: детектор лжи с выездом или онлайн",
+    seoDescription: "Полиграф в Сумах: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴.",
+    updated: "2026-09-16",
+    intro: "Сумы — центр Сумской области, примерно в 870 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист едет из Львова с оборудованием 13,5–15 часов поездом, поэтому выезд планируем за 1–2 недели и объединяем с другими заявками.",
+    facts: [["От Львова", "≈ 870 км, 13,5–15 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
+    faq: [
+      { q: "Где пройти полиграф в Сумах?", a: "Офиса в Сумах нет, поэтому есть два варианта. Онлайн-тест VerifEye можно пройти уже сегодня с телефона, в тихой комнате дома или в офисе. Тест EyeDetect проводим во время выезда: специалист приезжает из Львова с оборудованием в ваш офис или в другую тихую комнату. Тест назначаем на дневное время: в Сумской области действует комендантский час, сейчас — с 00:00 до 05:00.", sources: [["Сумская ОВА о комендантском часе", "https://t.me/Sumy_news_ODA/44827"]] },
+      { q: "Сколько стоит детектор лжи в Сумах?", a: "Выезд специалиста с EyeDetect в Сумы стоит 12 000 ₴ под ключ, вместе с тестом для одного человека. Если тест проходят несколько человек, стоимость выезда делится, точную сумму назовёт специалист. Онлайн-тест VerifEye: 2 500 ₴ за один вопрос, 4 000 ₴ за три, 6 000 ₴ за шесть, без доплат.", replaces: ["price"] },
+      { q: "Как быстро специалист может приехать в Сумы?", a: "Выезд в Сумы планируем за 1–2 недели и объединяем с другими заявками. Прямой поезд из Львова ходит через день и идёт около 15 часов, с пересадкой в Киеве — около 13,5 часа. Самый быстрый автобус доезжает за 11 часов, на машине это 11–13 часов без остановок. Поезда сумского направления часто задерживаются на несколько часов, поэтому дату согласовываем с запасом. Онлайн-тест VerifEye доступен уже сегодня.", replaces: ["speed"], sources: [["Укрзализныця: расписание Львов — Сумы", "https://www.uz.gov.ua/passengers/timetable/?from_station=23200&to_station=22450&by_route=1"], ["Rubikon: автобусы Львов — Сумы", "https://rubikon.com.ua/direction/lviv/sumi"], ["Укрзализныця о задержках поездов, УП 10.09.2026", "https://www.pravda.com.ua/news/2026/09/10/8052744/"]] },
+      { q: "Можно ли проверить партнёра на измену в Сумах?", a: "Да. Тест проверяет одно конкретное подозрение, например измену за определённый период. Его проходит партнёр, которого подозревают, или оба партнёра, каждый отдельно. Тест добровольный, с письменного согласия. Онлайн-тест VerifEye стоит от 2 500 ₴, и выезд для него не нужен." },
+      { q: "На каком языке можно пройти тест в Сумах?", a: "Тест можно пройти на украинском, русском, английском или немецком. Вопросы формулируем вместе с вами, и человек читает их заранее." },
+      { q: "Законна ли проверка на полиграфе в Украине?", a: "Ни один закон Украины не запрещает частный добровольный тест на полиграфе и не регулирует его отдельно. Действуют общие правила о персональных данных: нужно добровольное и информированное согласие человека. Мы проводим тест только с письменного согласия, а несовершеннолетних — только с письменного согласия родителей и в их присутствии. Для проверки сотрудников и кандидатов правила строже, поэтому сначала посоветуйтесь с юристом. Верховный Суд в уголовных делах 2023–2024 годов не признавал заключение полиграфолога самостоятельным доказательством, и наш результат тоже не является судебным доказательством.", sources: [["Закон о защите персональных данных", "https://zakon.rada.gov.ua/laws/show/2297-17"], ["Верховный Суд, дело 183/3452/19 (2023)", "https://reyestr.court.gov.ua/Review/108686155"], ["Верховный Суд, дело 760/23990/17 (2024)", "https://reyestr.court.gov.ua/Review/117757884"]] },
+    ],
+    towns: {
+      title: "Ромны, Конотоп и другие города Сумской области",
+      text: "Онлайн-тест VerifEye можно пройти из любого города Сумской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и везде в Украине, кроме Львовской области.",
+      list: "Ахтырка · Конотоп · Ромны",
+      nearbyLabel: "Другие города региона:",
+      nearby: [["poltava", "Полтава"], ["kharkiv", "Харьков"], ["chernihiv", "Чернигов"]],
+    },
+  },
+  en: {
+    seoTitle: "Lie Detector Test in Sumy: Visit from Lviv or Online",
+    seoDescription: "Lie detector test in Sumy: no local office. An EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500.",
+    updated: "2026-09-16",
+    intro: "Sumy is the administrative centre of the Sumy region, about 870 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment for 13.5–15 hours by train, so visits are planned 1–2 weeks ahead and combined with other requests.",
+    facts: [["From Lviv", "≈ 870 km, 13.5–15 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
+    faq: [
+      { q: "Where can I take a polygraph test in Sumy?", a: "We have no office in Sumy, so there are two options. You can take the VerifEye online test today on your phone, in a quiet room at home or at work. The EyeDetect test takes place during a visit: a specialist comes from Lviv with the equipment to your office or another quiet room. We schedule the test for daytime: a curfew is in force in the Sumy region, currently from 00:00 to 05:00.", sources: [["Sumy Regional Military Administration on the curfew", "https://t.me/Sumy_news_ODA/44827"]] },
+      { q: "How much does a lie detector test cost in Sumy?", a: "An EyeDetect specialist visit to Sumy costs UAH 12,000 all-inclusive, test included, for one person. If several people take the test, the travel cost is shared; a specialist will tell you the exact amount. VerifEye online test: UAH 2,500 for one question, UAH 4,000 for three, UAH 6,000 for six, with no extra charges.", replaces: ["price"] },
+      { q: "How soon can a specialist come to Sumy?", a: "Visits to Sumy are planned 1–2 weeks ahead and combined with other requests. The direct train from Lviv runs every other day and takes about 15 hours; with a change in Kyiv the trip takes about 13.5 hours. The fastest bus covers the route in 11 hours, and by car it is 11–13 hours without stops. Trains on the Sumy line are often several hours late, so we allow extra time when agreeing the date. The VerifEye online test is available today.", replaces: ["speed"], sources: [["Ukrzaliznytsia: Lviv — Sumy timetable", "https://www.uz.gov.ua/passengers/timetable/?from_station=23200&to_station=22450&by_route=1"], ["Rubikon: Lviv — Sumy buses", "https://rubikon.com.ua/direction/lviv/sumi"], ["Ukrzaliznytsia on train delays, UP 10.09.2026", "https://www.pravda.com.ua/news/2026/09/10/8052744/"]] },
+      { q: "Can my partner take a lie detector test for infidelity in Sumy?", a: "Yes. The test checks one specific suspicion, for example infidelity over a certain period. The partner under suspicion takes it, or both partners take separate tests. The test is voluntary and requires written consent. The VerifEye online test costs from UAH 2,500 and needs no visit." },
+      { q: "What languages can I take the test in?", a: "The test can be taken in Ukrainian, Russian, English or German. We draw up the questions together with you, and the person reads them in advance." },
+      { q: "Is a lie detector test legal in Ukraine?", a: "No Ukrainian law bans private voluntary polygraph tests or regulates them specifically. The general rules on personal data apply: a person's consent must be voluntary and informed. We test only with written consent, and minors only with written consent from their parents and with the parents present. The rules for testing employees and job candidates are stricter, so talk to a lawyer first. In criminal cases in 2023–2024, Ukraine's Supreme Court did not accept a polygraph examiner's conclusion as stand-alone evidence, and our result is not court evidence either.", sources: [["Law on Personal Data Protection", "https://zakon.rada.gov.ua/laws/show/2297-17"], ["Supreme Court, case 183/3452/19 (2023)", "https://reyestr.court.gov.ua/Review/108686155"], ["Supreme Court, case 760/23990/17 (2024)", "https://reyestr.court.gov.ua/Review/117757884"]] },
+    ],
+    towns: {
+      title: "Romny, Konotop and other towns in the Sumy region",
+      text: "The VerifEye online test can be taken from any town in the Sumy region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine outside the Lviv region.",
+      list: "Konotop · Okhtyrka · Romny",
+      nearbyLabel: "Other cities in the region:",
+      nearby: [["poltava", "Poltava"], ["kharkiv", "Kharkiv"], ["chernihiv", "Chernihiv"]],
+    },
+  },
+};
