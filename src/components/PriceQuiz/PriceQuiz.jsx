@@ -3,7 +3,6 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getQuiz, quizSteps, estimateQuiz } from "@/data/quizData";
 import { track, attributionForLead } from "@/helpers/analytics";
 import { sendToTelegram } from "@/helpers/sendToTelegram";
-import { isValidPhone, isValidTelegram, normalizeTelegram } from "@/yupSchemas/phoneRules";
 import styles from "./PriceQuiz.module.scss";
 
 // Вікно квіза. Відкривається подією window "eye:open-quiz" (кнопки PriceQuizBtn)
@@ -12,19 +11,11 @@ import { OPEN_QUIZ_EVENT } from "./quizEvent";
 
 const TEL = "+380686833368";
 const TEL_H = "+380 68 68 333 68";
+// Позначка в заявці, коли людина не залишила контакт.
+const NO_CONTACT = "Контакт не вказано";
 // Індекс каналу Telegram у t.contact.channels (однаковий для всіх мов).
 const TELEGRAM = 1;
 
-// Контакт для заявки: телефон (9–15 цифр) або, якщо обрано Telegram, @username. Порожній рядок — контакт невалідний.
-const pickContact = (raw, channel) => {
-  const v = raw.trim();
-  if (isValidPhone(v)) return v;
-  if (channel === TELEGRAM) {
-    const tg = normalizeTelegram(v);
-    if (isValidTelegram(tg)) return tg;
-  }
-  return "";
-};
 
 
 const PriceQuiz = ({ lang = "uk" }) => {
@@ -106,9 +97,9 @@ const PriceQuiz = ({ lang = "uk" }) => {
     e.preventDefault();
     const errs = {};
     if (!form.name.trim()) errs.name = t.contact.errName;
-    // Без контакту заявку не надсилаємо: телефон обов'язковий (для Telegram можна @username).
-    const contact = pickContact(form.phone, form.channel);
-    if (!contact) errs.phone = true;
+    // Рішення власника 16.09.2026: обов'язкове лише ім'я, телефон без перевірок
+    // (у різних країнах формати різні). Контакт іде в заявку так, як його ввели.
+    const contact = form.phone.trim();
     setErrors(errs);
     if (Object.keys(errs).length) return;
 
@@ -128,7 +119,7 @@ const PriceQuiz = ({ lang = "uk" }) => {
 
     const lead = {
       name: form.name.trim(),
-      tel: contact,
+      tel: contact || NO_CONTACT,
       channel: form.channel === TELEGRAM ? "telegram" : "",
       comment,
       service: "Квіз: розрахунок вартості",
@@ -200,7 +191,6 @@ const PriceQuiz = ({ lang = "uk" }) => {
                 inputMode={form.channel === TELEGRAM ? "text" : "tel"}
                 autoComplete="tel"
                 maxLength={40}
-                required
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 aria-invalid={!!errors.phone}

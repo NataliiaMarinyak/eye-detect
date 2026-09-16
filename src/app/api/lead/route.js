@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { isValidPhone, isValidTelegram, normalizePhone } from "@/yupSchemas/phoneRules";
 
 // Приймає заявку з форми і надсилає її в Telegram із сервера.
 // Токен бота і chat_id живуть лише тут, у змінних середовища, і не потрапляють у браузер.
@@ -33,7 +32,7 @@ export async function POST(request) {
   const attribution = cleanMultiline(body.attribution, 600);
   const service = clean(body.service, 120);
 
-  if (!name || !rawTel) {
+  if (!name) {
     return NextResponse.json({ ok: false, error: "missing_fields" }, { status: 400 });
   }
   // Пастка для ботів: приховане поле має лишатися порожнім.
@@ -43,15 +42,9 @@ export async function POST(request) {
 
   // Та сама перевірка, що й у формах: телефон 9–15 цифр («+» лише першим, пробіли, дужки й дефіси прибираємо).
   // @username приймаємо лише із заявки, де обрано зв'язок у Telegram (channel: "telegram").
-  let tel = "";
-  if (isValidPhone(rawTel)) {
-    tel = normalizePhone(rawTel);
-  } else if (body.channel === "telegram" && isValidTelegram(rawTel)) {
-    tel = rawTel;
-  }
-  if (!tel) {
-    return NextResponse.json({ ok: false, error: "invalid_tel" }, { status: 400 });
-  }
+  // Рішення власника 16.09.2026: телефон без перевірок (формати різні в різних країнах).
+  // Порожній контакт приймаємо і позначаємо в заявці.
+  const tel = rawTel && rawTel !== "Контакт не вказано" ? rawTel : "контакт не вказано";
 
   const api = process.env.TELEGRAM_API;
   // Заявки з квіза можна слати в окремий чат (TELEGRAM_QUIZ_CHAT_ID), інакше в загальний.

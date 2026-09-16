@@ -88,7 +88,7 @@ export const quizData = {
         "Заявка ні до чого не зобов'язує і безкоштовна.",
       ],
       name: "Ім'я *",
-      phone: "Телефон *",
+      phone: "Телефон",
       channelTitle: "Як зручніше зв'язатись?",
       channels: ["Дзвінок", "Telegram", "Viber", "WhatsApp"],
       comment: "Коментар (за бажанням)",
@@ -153,7 +153,7 @@ export const quizData = {
     contact: {
       title: "Куда отправить стоимость и свободные даты?",
       name: "Имя *",
-      phone: "Телефон *",
+      phone: "Телефон",
       channelTitle: "Как удобнее связаться?",
       channels: ["Звонок", "Telegram", "Viber", "WhatsApp"],
       errName: "Укажите, как к вам обращаться.",
@@ -215,7 +215,7 @@ export const quizData = {
     contact: {
       title: "Where should we send the price and available dates?",
       name: "Name *",
-      phone: "Phone *",
+      phone: "Phone",
       channelTitle: "How would you like us to contact you?",
       channels: ["Call", "Telegram", "Viber", "WhatsApp"],
       errName: "Please tell us your name.",
