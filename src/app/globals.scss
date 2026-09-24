@@ -151,6 +151,23 @@ ol {
   left: 20px !important;
 }
 
+/* На комп'ютері кнопка дзвінка — праворуч: зліва вона закривала текст
+   першого екрана («Онлайн-тест VerifEye…»). На телефоні лишається зліва. */
+@media (min-width: 1024px) {
+  #bingc-phone-button {
+    left: auto !important;
+    right: 24px !important;
+  }
+  #bingc-passive {
+    left: auto !important;
+    right: 24px !important;
+  }
+  #bingc-phone-button-tooltip {
+    left: auto !important;
+    right: 0 !important;
+  }
+}
+
 /* Автоматична форма Binotel (широка смуга, що сама відкривається і перекриває сторінку й вікно заявки).
    Основне вимкнення — activeFormStatus: 0 у CallWidget.js; це правило лише запасне.
    Маленька кнопка зворотного дзвінка і форма, що відкривається по кліку на неї, лишаються. */
