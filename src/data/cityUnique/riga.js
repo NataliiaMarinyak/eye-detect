@@ -3,7 +3,7 @@
 export const riga = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Ризі: ціна, онлайн або виїзд",
-    seoDescription: "Детектор брехні в Ризі: офісу в Латвії немає. Онлайн-тест VerifEye з телефона сьогодні, ціна від 2 500 ₴ (≈ 49 €), або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні в Ризі: онлайн-тест VerifEye з телефона сьогодні, ціна від 2 500 ₴ (≈ 49 €), або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Рига — столиця Латвії, де велика російськомовна громада і багато українців, тому тест тут часто потрібен рідною мовою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 000 км, 22 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const riga = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Риге: цена, онлайн или выезд",
-    seoDescription: "Детектор лжи в Риге: офиса в Латвии нет. Онлайн-тест VerifEye с телефона сегодня, цена от 2 500 ₴ (≈ 49 €), или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Риге: онлайн-тест VerifEye с телефона сегодня, цена от 2 500 ₴ (≈ 49 €), или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Рига — столица Латвии, где большая русскоязычная община и много украинцев, поэтому тест здесь часто нужен на родном языке. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 000 км, 22 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const riga = {
   },
   en: {
     seoTitle: "Lie Detector Test in Riga, Latvia: Price, Online or On-Site",
-    seoDescription: "Lie detector test in Riga: we have no office in Latvia. Take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Riga: take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Riga is Latvia's capital, home to a large Russian-speaking community and many Ukrainians, so people here often need the test in their native language. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,000 km, 22 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

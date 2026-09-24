@@ -3,7 +3,7 @@
 export const lisbon = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Лісабоні: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Лісабоні: офісу в Португалії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Лісабоні: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Лісабон — столиця Португалії і найзахідніша столиця континентальної Європи, близько 3 560 км дороги від Львова. Автобусом це 65–69 годин, через Краків із перельотом — помітно швидше. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 3 560 км, 65–69 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const lisbon = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Лиссабоне: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Лиссабоне: офиса в Португалии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Лиссабоне: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Лиссабон — столица Португалии и самая западная столица континентальной Европы, около 3 560 км дороги от Львова. Автобусом это 65–69 часов, через Краков с перелётом — заметно быстрее. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 3 560 км, 65–69 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const lisbon = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Lisbon: Online or Visit",
-    seoDescription: "Lie detector test in Lisbon: no office in Portugal. Take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit.",
+    seoDescription: "Lie detector test in Lisbon: take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit. Report in 5 minutes.",
     intro: "Lisbon is the capital of Portugal and the westernmost capital in mainland Europe, about 3,560 km by road from Lviv. The bus takes 65–69 hours; going via Kraków with a flight is much faster. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 3,560 km, 65–69 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

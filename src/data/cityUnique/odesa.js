@@ -3,7 +3,7 @@
 export const odesa = {
   uk: {
     seoTitle: "Поліграф і детектор брехні в Одесі: ціна, виїзд",
-    seoDescription: "Перевірка на поліграфі в Одесі: офісу в місті немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye сьогодні від 2 500 ₴.",
+    seoDescription: "Перевірка на поліграфі в Одесі: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye сьогодні від 2 500 ₴. Звіт за 5 хвилин.",
     intro: "Одеса — місто на Чорному морі, приблизно за 800 км від Львова. Поїздів Інтерсіті зі Львова сюди немає, найшвидший поїзд нічний і їде близько 10,5 години. Тому виїзд з EyeDetect плануємо заздалегідь. Якщо відповідь потрібна швидше, онлайн-тест VerifEye зі смартфона можна пройти вже сьогодні.",
     facts: [["Від Львова", "≈ 800 км, 10,5 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -25,7 +25,7 @@ export const odesa = {
   },
   ru: {
     seoTitle: "Полиграф и детектор лжи в Одессе: цена, выезд",
-    seoDescription: "Детектор лжи в Одессе: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня от 2 500 ₴.",
+    seoDescription: "Детектор лжи в Одессе: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня от 2 500 ₴. Отчёт за 5 минут.",
     intro: "Одесса — город на Чёрном море, примерно в 800 км от Львова. Поездов Интерсити из Львова сюда нет, самый быстрый поезд ночной и идёт около 10,5 часа. Поэтому выезд с EyeDetect планируем заранее. Если ответ нужен быстрее, онлайн-тест VerifEye со смартфона можно пройти уже сегодня.",
     facts: [["От Львова", "≈ 800 км, 10,5 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -47,7 +47,7 @@ export const odesa = {
   },
   en: {
     seoTitle: "Lie Detector Test in Odesa: Price, Visit or Online",
-    seoDescription: "Polygraph test in Odesa: no local office. Book an EyeDetect visit for UAH 12,000 all-inclusive or take the VerifEye online test today from UAH 2,500.",
+    seoDescription: "Polygraph test in Odesa: book an EyeDetect visit for UAH 12,000 all-inclusive or take the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
     intro: "Odesa is a city on the Black Sea, about 800 km from Lviv. There are no Intercity trains from Lviv, and the fastest train runs overnight and takes about 10.5 hours. So we plan EyeDetect visits in advance. If you need an answer sooner, you can take the VerifEye smartphone test today.",
     facts: [["From Lviv", "≈ 800 km, 10.5 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

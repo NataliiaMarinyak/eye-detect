@@ -3,7 +3,7 @@
 export const paris = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Парижі: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Парижі: офісу у Франції немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Парижі: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд з EyeDetect. Звіт за 5 хвилин.",
     intro: "Париж — столиця Франції, і зі Львова туди не літають літаки: дорога починається автобусом або поїздом до Польщі. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 874 км, від 31 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const paris = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Париже: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Париже: офиса во Франции нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Париже: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд с EyeDetect. Отчёт за 5 минут.",
     intro: "Париж — столица Франции, и из Львова туда самолёты не летают: дорога начинается автобусом или поездом до Польши. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 874 км, от 31 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const paris = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Paris: Online or Visit",
-    seoDescription: "Lie detector test in Paris: we have no office in France. Take the VerifEye online test today from UAH 2,500 (≈ €49), or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Paris: take the VerifEye online test today from UAH 2,500 (≈ €49), or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Paris is the capital of France, and there are no flights from Lviv: the trip starts with a bus or a train to Poland. So the fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,874 km, from 31 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

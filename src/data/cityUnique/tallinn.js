@@ -3,7 +3,7 @@
 export const tallinn = {
   uk: {
     seoTitle: "Детектор брехні в Таллінні: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Таллінні: офісу в Естонії немає. Онлайн-тест VerifEye з телефона сьогодні або виїзд з EyeDetect, коли збереться кілька заявок.",
+    seoDescription: "Детектор брехні в Таллінні: онлайн-тест VerifEye з телефона сьогодні або виїзд з EyeDetect. Звіт за 5 хвилин.",
     intro: "Таллінн — столиця Естонії з великими російськомовною та українською громадами, тому тест тут часто потрібен рідною мовою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 300 км, 30–40 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -35,7 +35,7 @@ export const tallinn = {
   },
   ru: {
     seoTitle: "Детектор лжи в Таллинне: онлайн или выезд",
-    seoDescription: "Детектор лжи в Таллинне: офиса в Эстонии нет. Онлайн-тест VerifEye с телефона сегодня или выезд с EyeDetect, когда соберётся несколько заявок.",
+    seoDescription: "Детектор лжи в Таллинне: онлайн-тест VerifEye с телефона сегодня или выезд с EyeDetect. Отчёт за 5 минут.",
     intro: "Таллинн (также пишут «Таллин») — столица Эстонии с большими русскоязычной и украинской общинами, поэтому тест здесь часто нужен на родном языке. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 300 км, 30–40 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -67,7 +67,7 @@ export const tallinn = {
   },
   en: {
     seoTitle: "Lie Detector Test in Tallinn: Online or On-Site",
-    seoDescription: "Lie detector test in Tallinn: no office in Estonia. Take the VerifEye smartphone test today or book an EyeDetect visit once several requests come in.",
+    seoDescription: "Lie detector test in Tallinn: take the VerifEye smartphone test today or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Tallinn is Estonia's capital with large Russian-speaking and Ukrainian communities, so people here often need the test in their native language. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,300 km, 30–40 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

@@ -3,7 +3,7 @@
 export const london = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Лондоні: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Лондоні: офісу в Британії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 42 £) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Лондоні: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 42 £) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Лондон — столиця Великої Британії, де живе і працює багато українців, тож тест тут часто потрібен рідною мовою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст везе обладнання зі Львова автобусом і літаком; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 10 год автобусом і літаком"], ["Онлайн-тест", "≈ 42 £ (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const london = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Лондоне: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Лондоне: офиса в Британии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 42 £) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Лондоне: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 42 £) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Лондон — столица Великобритании, где живёт и работает много украинцев, поэтому тест здесь часто нужен на родном языке. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист везёт оборудование из Львова автобусом и самолётом; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 10 ч автобусом и самолётом"], ["Онлайн-тест", "≈ 42 £ (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const london = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in London: Online or Visit",
-    seoDescription: "Lie detector and polygraph test in London: no office in the UK. Take the VerifEye online test today from UAH 2,500 (≈ £42) or book an EyeDetect visit.",
+    seoDescription: "Lie detector and polygraph test in London: take the VerifEye online test today from UAH 2,500 (≈ £42) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "London is the capital of the United Kingdom, where many Ukrainians live and work, so people here often need the test in their native language. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment by bus and plane; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 10 h by bus and plane"], ["Online test", "≈ £42 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

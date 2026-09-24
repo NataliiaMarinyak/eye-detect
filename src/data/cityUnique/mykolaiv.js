@@ -3,7 +3,7 @@
 export const mykolaiv = {
   uk: {
     seoTitle: "Поліграф у Миколаєві: детектор брехні, виїзд і ціна",
-    seoDescription: "Поліграф у Миколаєві: офісу в місті немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴.",
+    seoDescription: "Поліграф у Миколаєві: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴. Звіт за 5 хвилин.",
     intro: "Миколаїв — центр Миколаївської області на півдні України, приблизно за 800 км від Львова. Прямий поїзд зі Львова їде понад 17 годин і курсує не щодня. Тому спеціаліст з EyeDetect зазвичай їде автомобілем, а дату виїзду узгоджуємо заздалегідь. Якщо відповідь потрібна швидше, онлайн-тест VerifEye зі смартфона можна пройти вже сьогодні.",
     facts: [["Від Львова", "≈ 800 км, 10–13 год машиною"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -25,7 +25,7 @@ export const mykolaiv = {
   },
   ru: {
     seoTitle: "Полиграф в Николаеве: детектор лжи, выезд и цена",
-    seoDescription: "Детектор лжи в Николаеве: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴.",
+    seoDescription: "Детектор лжи в Николаеве: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴. Отчёт за 5 минут.",
     intro: "Николаев — центр Николаевской области на юге Украины, примерно в 800 км от Львова. Прямой поезд из Львова идёт больше 17 часов и ходит не каждый день. Поэтому специалист с EyeDetect обычно едет на машине, а дату выезда согласовываем заранее. Если ответ нужен быстрее, онлайн-тест VerifEye со смартфона можно пройти уже сегодня.",
     facts: [["От Львова", "≈ 800 км, 10–13 ч на машине"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -47,7 +47,7 @@ export const mykolaiv = {
   },
   en: {
     seoTitle: "Lie Detector Test in Mykolaiv: Price, Visit or Online",
-    seoDescription: "Lie detector test in Mykolaiv: no local office. An EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500.",
+    seoDescription: "Lie detector test in Mykolaiv: an EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
     intro: "Mykolaiv is the administrative centre of the Mykolaiv region in southern Ukraine, about 800 km from Lviv. The direct train from Lviv takes more than 17 hours and does not run every day. So an EyeDetect specialist usually drives, and we arrange the date in advance. If you need an answer sooner, you can take the VerifEye smartphone test today.",
     facts: [["From Lviv", "≈ 800 km, 10–13 h by car"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

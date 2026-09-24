@@ -3,7 +3,7 @@
 export const bucharest = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Бухаресті: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Бухаресті: офісу в Румунії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 255 леїв) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні в Бухаресті: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 255 леїв) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Бухарест — столиця Румунії і найбільше місто країни. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 805 км, 15,5 год автобусом"], ["Онлайн-тест", "≈ 255 леїв (2 500 ₴)"], ["Мова тесту", "укр., рос., англ., нім."]],
     faq: [
@@ -25,7 +25,7 @@ export const bucharest = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Бухаресте: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Бухаресте: офиса в Румынии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 255 леев) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Бухаресте: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 255 леев) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Бухарест — столица Румынии и крупнейший город страны. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 805 км, 15,5 ч автобусом"], ["Онлайн-тест", "≈ 255 леев (2 500 ₴)"], ["Язык теста", "укр., рус., англ., нем."]],
     faq: [
@@ -47,7 +47,7 @@ export const bucharest = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph in Bucharest: Online or Visit",
-    seoDescription: "Lie detector test in Bucharest: no office in Romania. Take the VerifEye online test today from UAH 2,500 (≈ 255 lei), or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Bucharest: take the VerifEye online test today from UAH 2,500 (≈ 255 lei), or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Bucharest is the capital of Romania and the country's largest city. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 805 km, 15.5 h by bus"], ["Online test", "≈ 255 lei (UAH 2,500)"], ["Test language", "Ukr., Rus., Eng., Ger."]],
     faq: [

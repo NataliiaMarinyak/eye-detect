@@ -3,7 +3,7 @@
 export const oslo = {
   uk: {
     seoTitle: "Детектор брехні та поліграф в Осло: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф в Осло: офісу в Норвегії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 522 kr) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф в Осло: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 522 kr) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Осло — столиця Норвегії, і від Львова до неї близько 2 290 км дороги. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона: його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням, а дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 2 290 км, 40–46 год автобусом"], ["Онлайн-тест", "≈ 522 kr (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const oslo = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Осло: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Осло: офиса в Норвегии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 522 kr) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Осло: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 522 kr) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Осло — столица Норвегии, и от Львова до неё около 2 290 км дороги. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона: его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием, а дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 2 290 км, 40–46 ч автобусом"], ["Онлайн-тест", "≈ 522 kr (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const oslo = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Oslo: Online or Visit",
-    seoDescription: "Lie detector test in Oslo: no office in Norway. Take the VerifEye online test today from UAH 2,500 (≈ NOK 522) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Oslo: take the VerifEye online test today from UAH 2,500 (≈ NOK 522) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Oslo is the capital of Norway, about 2,290 km of road from Lviv. So the fastest option is the VerifEye test from a smartphone: you can take it today. For an EyeDetect test a specialist travels from Lviv with the equipment, and we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 2,290 km, 40–46 h by bus"], ["Online test", "≈ NOK 522 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

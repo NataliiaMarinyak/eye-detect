@@ -3,7 +3,7 @@
 export const sofia = {
   uk: {
     seoTitle: "Детектор брехні в Софії: поліграф онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Софії: офісу в Болгарії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Софії: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Софія — столиця Болгарії; автобусом зі Львова сюди їхати за розкладом близько 23 годин. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 200 км, 23 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const sofia = {
   },
   ru: {
     seoTitle: "Полиграф в Софии: детектор лжи онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Софии: офиса в Болгарии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Софии: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "София — столица Болгарии; автобусом из Львова сюда ехать по расписанию около 23 часов. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 200 км, 23 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const sofia = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Sofia: Online or Visit",
-    seoDescription: "Lie detector test in Sofia: no office in Bulgaria. Take the VerifEye online test today from UAH 2,500 (≈ EUR 49) or book an EyeDetect specialist visit.",
+    seoDescription: "Lie detector test in Sofia: take the VerifEye online test today from UAH 2,500 (≈ EUR 49) or book an EyeDetect specialist visit. Report in 5 minutes.",
     intro: "Sofia is the capital of Bulgaria, and the bus from Lviv takes about 23 hours by timetable. So the fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,200 km, 23 h by bus"], ["Online test", "≈ EUR 49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

@@ -3,7 +3,7 @@
 export const skopje = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Скоп’є: онлайн або виїзд",
-    seoDescription: "Детектор брехні у Скоп’є: офісу в Північній Македонії немає. Онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні у Скоп’є: онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Скоп’є — столиця Північної Македонії, і прямого автобуса зі Львова сюди немає: у FlixBus усі маршрути — з однією-двома пересадками, а дорога займає від 28 годин. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням через Будапешт; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 370 км, 28–47 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const skopje = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Скопье: онлайн или выезд",
-    seoDescription: "Детектор лжи в Скопье: офиса в Северной Македонии нет. Онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Скопье: онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Скопье — столица Северной Македонии, и прямого автобуса из Львова сюда нет: у FlixBus все маршруты — с одной-двумя пересадками, а дорога занимает от 28 часов. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием через Будапешт; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 370 км, 28–47 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const skopje = {
   },
   en: {
     seoTitle: "Lie Detector Test in Skopje: Online or Specialist Visit",
-    seoDescription: "Lie detector test in Skopje: no office in North Macedonia. Take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Skopje: take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Skopje is the capital of North Macedonia, and there is no direct bus from Lviv: on FlixBus every route has one or two changes, and the journey takes at least 28 hours. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment via Budapest; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,370 km, 28–47 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

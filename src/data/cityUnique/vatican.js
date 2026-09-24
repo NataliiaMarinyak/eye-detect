@@ -3,7 +3,7 @@
 export const vatican = {
   uk: {
     seoTitle: "Поліграф і детектор брехні у Ватикані: онлайн або виїзд",
-    seoDescription: "Детектор брехні у Ватикані: офісу там немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect до Рима.",
+    seoDescription: "Детектор брехні у Ватикані: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect до Рима. Звіт за 5 хвилин.",
     intro: "Ватикан — найменша держава світу: 0,44 км² і 882 мешканці. З усіх боків його оточує Рим. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням, а сам тест зазвичай проводимо в Римі; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 880 км, 32 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -24,7 +24,7 @@ export const vatican = {
   },
   ru: {
     seoTitle: "Полиграф и детектор лжи в Ватикане: онлайн или выезд",
-    seoDescription: "Детектор лжи в Ватикане: офиса там нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect в Рим.",
+    seoDescription: "Детектор лжи в Ватикане: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect в Рим. Отчёт за 5 минут.",
     intro: "Ватикан — самое маленькое государство мира: 0,44 км² и 882 жителя. Со всех сторон его окружает Рим. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием, а сам тест обычно проводим в Риме; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 880 км, 32 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -45,7 +45,7 @@ export const vatican = {
   },
   en: {
     seoTitle: "Lie Detector Test in Vatican City: Online or Visit",
-    seoDescription: "Lie detector test in Vatican City: we have no office there. Take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Vatican City: take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Vatican City is the smallest state in the world: 0.44 km² and 882 residents. Rome surrounds it on all sides. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment, and the test itself usually takes place in Rome; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,880 km, 32 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

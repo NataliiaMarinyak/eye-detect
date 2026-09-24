@@ -45,7 +45,7 @@ export const zhytomyr = {
   },
   en: {
     seoTitle: "Lie Detector Test in Zhytomyr: Visit or Online",
-    seoDescription: "Lie detector test in Zhytomyr: no local office. Book an EyeDetect visit for UAH 12,000 all-inclusive, or take the VerifEye online test from UAH 2,500.",
+    seoDescription: "Lie detector test in Zhytomyr: book an EyeDetect visit for UAH 12,000 all-inclusive, or take the VerifEye online test from UAH 2,500. Report in 5 minutes.",
     intro: "Zhytomyr is the administrative centre of the Zhytomyr region, about 400 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the bus takes 6–7 hours, and the drive takes about 5–6 hours.",
     facts: [["From Lviv", "≈ 400 km, 6–7 h by bus"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

@@ -3,7 +3,7 @@
 export const brussels = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Брюсселі: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Брюсселі: офісу в Бельгії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Брюсселі: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд з EyeDetect. Звіт за 5 хвилин.",
     intro: "Брюссель — столиця Бельгії, офіційно двомовне місто: тут говорять французькою і нідерландською. Ми проводимо тест українською, російською, англійською або німецькою, і найшвидший варіант — онлайн-тест VerifEye зі смартфона вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 650 км, 28–38 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const brussels = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Брюсселе: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Брюсселе: офиса в Бельгии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Брюсселе: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд с EyeDetect. Отчёт за 5 минут.",
     intro: "Брюссель — столица Бельгии, официально двуязычный город: здесь говорят по-французски и по-нидерландски. Мы проводим тест на украинском, русском, английском или немецком, и самый быстрый вариант — онлайн-тест VerifEye со смартфона уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 650 км, 28–38 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const brussels = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Brussels: Online or Visit",
-    seoDescription: "Lie detector test in Brussels: no office in Belgium. Take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Brussels: take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Brussels is the capital of Belgium and an officially bilingual city, where people speak French and Dutch. We run the test in Ukrainian, Russian, English or German, and the fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,650 km, 28–38 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

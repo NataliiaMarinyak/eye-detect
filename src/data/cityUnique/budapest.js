@@ -3,7 +3,7 @@
 export const budapest = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Будапешті: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Будапешті: офісу в Угорщині немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 17 700 Ft) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні в Будапешті: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 17 700 Ft) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Будапешт — столиця Угорщини, куди зі Львова щодня ходить прямий автобус. Ходить і прямий нічний поїзд. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 580 км, 13 год автобусом"], ["Онлайн-тест", "≈ 17 700 Ft (2 500 ₴)"], ["Мова тесту", "укр., рос., англ., нім."]],
     faq: [
@@ -25,7 +25,7 @@ export const budapest = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Будапеште: онлайн или выезд",
-    seoDescription: "Детектор лжи в Будапеште: офиса в Венгрии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 17 700 Ft) или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Будапеште: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 17 700 Ft) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Будапешт — столица Венгрии, куда из Львова ежедневно ходит прямой автобус. Ходит и прямой ночной поезд. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 580 км, 13 ч автобусом"], ["Онлайн-тест", "≈ 17 700 Ft (2 500 ₴)"], ["Язык теста", "укр., рус., англ., нем."]],
     faq: [
@@ -47,7 +47,7 @@ export const budapest = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph in Budapest: Online or Visit",
-    seoDescription: "Lie detector test in Budapest: no office in Hungary. Take the VerifEye online test today from UAH 2,500 (≈ HUF 17,700) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Budapest: take the VerifEye online test today from UAH 2,500 (≈ HUF 17,700) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Budapest is the capital of Hungary, with a daily direct bus from Lviv. There is also a direct night train. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 580 km, 13 h by bus"], ["Online test", "≈ HUF 17,700 (UAH 2,500)"], ["Test language", "Ukr., Rus., Eng., Ger."]],
     faq: [

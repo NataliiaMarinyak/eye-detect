@@ -3,7 +3,7 @@
 export const sumy = {
   uk: {
     seoTitle: "Поліграф у Сумах: детектор брехні з виїздом або онлайн",
-    seoDescription: "Поліграф у Сумах: офісу в місті немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴.",
+    seoDescription: "Поліграф у Сумах: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴. Звіт за 5 хвилин.",
     updated: "2026-09-16",
     intro: "Суми — центр Сумської області, приблизно за 870 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст їде зі Львова з обладнанням 13,5–15 годин поїздом, тому виїзд плануємо за 1–2 тижні й поєднуємо з іншими заявками.",
     facts: [["Від Львова", "≈ 870 км, 13,5–15 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
@@ -25,7 +25,7 @@ export const sumy = {
   },
   ru: {
     seoTitle: "Полиграф в Сумах: детектор лжи с выездом или онлайн",
-    seoDescription: "Полиграф в Сумах: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴.",
+    seoDescription: "Полиграф в Сумах: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴. Отчёт за 5 минут.",
     updated: "2026-09-16",
     intro: "Сумы — центр Сумской области, примерно в 870 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист едет из Львова с оборудованием 13,5–15 часов поездом, поэтому выезд планируем за 1–2 недели и объединяем с другими заявками.",
     facts: [["От Львова", "≈ 870 км, 13,5–15 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
@@ -47,7 +47,7 @@ export const sumy = {
   },
   en: {
     seoTitle: "Lie Detector Test in Sumy: Visit from Lviv or Online",
-    seoDescription: "Lie detector test in Sumy: no local office. An EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500.",
+    seoDescription: "Lie detector test in Sumy: an EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
     updated: "2026-09-16",
     intro: "Sumy is the administrative centre of the Sumy region, about 870 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment for 13.5–15 hours by train, so visits are planned 1–2 weeks ahead and combined with other requests.",
     facts: [["From Lviv", "≈ 870 km, 13.5–15 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],

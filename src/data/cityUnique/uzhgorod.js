@@ -3,7 +3,7 @@
 export const uzhgorod = {
   uk: {
     seoTitle: "Поліграф в Ужгороді: детектор брехні, виїзд і онлайн",
-    seoDescription: "Поліграф і детектор брехні в Ужгороді: офісу тут немає. Виїзд спеціаліста зі Львова з EyeDetect — 12 000 ₴ під ключ, онлайн-тест VerifEye — від 2 500 ₴.",
+    seoDescription: "Поліграф і детектор брехні в Ужгороді: виїзд спеціаліста зі Львова з EyeDetect — 12 000 ₴ під ключ, онлайн-тест VerifEye — від 2 500 ₴. Звіт за 5 хвилин.",
     intro: "Ужгород — центр Закарпатської області, і дорога сюди зі Львова йде через Карпати. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: найшвидший поїзд їде близько 5 годин, автомобілем — 4,5–5 годин без зупинок.",
     facts: [["Від Львова", "≈ 265 км, 5 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -24,7 +24,7 @@ export const uzhgorod = {
   },
   ru: {
     seoTitle: "Полиграф в Ужгороде: детектор лжи, выезд и онлайн",
-    seoDescription: "Полиграф и детектор лжи в Ужгороде: офиса в городе нет. Выезд специалиста из Львова с EyeDetect — 12 000 ₴ под ключ, онлайн-тест VerifEye — от 2 500 ₴.",
+    seoDescription: "Полиграф и детектор лжи в Ужгороде: выезд специалиста из Львова с EyeDetect — 12 000 ₴ под ключ, онлайн-тест VerifEye — от 2 500 ₴. Отчёт за 5 минут.",
     intro: "Ужгород — центр Закарпатской области, и дорога сюда из Львова идёт через Карпаты. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: самый быстрый поезд идёт около 5 часов, на машине — 4,5–5 часов без остановок.",
     facts: [["От Львова", "≈ 265 км, 5 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -45,7 +45,7 @@ export const uzhgorod = {
   },
   en: {
     seoTitle: "Lie Detector Test in Uzhhorod: EyeDetect Visit or Online",
-    seoDescription: "Polygraph and lie detector test in Uzhhorod: no local office. EyeDetect visit from Lviv, UAH 12,000 all-inclusive, or VerifEye online test from UAH 2,500.",
+    seoDescription: "Polygraph and lie detector test in Uzhhorod: EyeDetect visit from Lviv, UAH 12,000 all-inclusive, or VerifEye online test from UAH 2,500. Report in 5 minutes.",
     intro: "Uzhhorod is the centre of the Zakarpattia region, and the route from Lviv crosses the Carpathians. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: about 5 hours by the fastest train or 4.5–5 hours by car without stops.",
     facts: [["From Lviv", "≈ 265 km, 5 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

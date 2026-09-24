@@ -3,7 +3,7 @@
 export const berlin = {
   uk: {
     seoTitle: "Детектор брехні в Берліні та Німеччині: ціна, онлайн, виїзд",
-    seoDescription: "Детектор брехні в Берліні та Німеччині: офісу там немає. Онлайн-тест VerifEye сьогодні, ціна від 2 500 ₴ (≈ 49 €), або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні в Берліні та Німеччині: онлайн-тест VerifEye сьогодні, ціна від 2 500 ₴ (≈ 49 €), або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Берлін — столиця Німеччини з великою українською громадою, тож багато хто тут може пройти тест рідною мовою, а також німецькою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 920 км, 15–16,5 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const berlin = {
   },
   ru: {
     seoTitle: "Детектор лжи в Берлине и Германии: цена, онлайн, выезд",
-    seoDescription: "Детектор лжи в Германии и Берлине: офиса там нет. Онлайн-тест VerifEye сегодня, цена от 2 500 ₴ (≈ 49 €), или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Германии и Берлине: онлайн-тест VerifEye сегодня, цена от 2 500 ₴ (≈ 49 €), или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Берлин — столица Германии с большой украинской общиной, поэтому многие здесь могут пройти тест на родном языке, а также на немецком. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 920 км, 15–16,5 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const berlin = {
   },
   en: {
     seoTitle: "Lie Detector Test in Berlin, Germany: Price, Online, Visit",
-    seoDescription: "Lie detector test in Berlin and Germany: we have no office there. VerifEye online test today, price from UAH 2,500 (≈ €49), or an EyeDetect visit.",
+    seoDescription: "Lie detector test in Berlin and Germany: VerifEye online test today, price from UAH 2,500 (≈ €49), or an EyeDetect visit. Report in 5 minutes.",
     intro: "Berlin is Germany's capital with a large Ukrainian community, so many people here can take the test in their native language, and the test is also available in German. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 920 km, 15–16.5 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

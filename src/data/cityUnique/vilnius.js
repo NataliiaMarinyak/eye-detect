@@ -3,7 +3,7 @@
 export const vilnius = {
   uk: {
     seoTitle: "Поліграф у Вільнюсі: детектор брехні онлайн або виїзд",
-    seoDescription: "Детектор брехні у Вільнюсі: офісу в Литві немає. Онлайн-тест VerifEye з телефона сьогодні, ціна від 2 500 ₴ (≈ 49 €), або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні у Вільнюсі: онлайн-тест VerifEye з телефона сьогодні, ціна від 2 500 ₴ (≈ 49 €), або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Вільнюс — столиця Литви, а в Литві діє окремий закон про поліграф. Він дозволяє перевірку поліграфом лише державним органам. Що це означає для тесту за реакціями очей, пояснюємо нижче, у відповіді про законність. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 800 км, 17,5–19 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const vilnius = {
   },
   ru: {
     seoTitle: "Полиграф в Вильнюсе: детектор лжи онлайн или выезд",
-    seoDescription: "Детектор лжи в Вильнюсе: офиса в Литве нет. Онлайн-тест VerifEye с телефона сегодня, стоимость от 2 500 ₴ (≈ 49 €), или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Вильнюсе: онлайн-тест VerifEye с телефона сегодня, стоимость от 2 500 ₴ (≈ 49 €), или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Вильнюс — столица Литвы, а в Литве действует отдельный закон о полиграфе. Он разрешает проверку на полиграфе только государственным органам. Что это значит для теста по реакциям глаз, объясняем ниже, в ответе о законности. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 800 км, 17,5–19 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const vilnius = {
   },
   en: {
     seoTitle: "Lie Detector Test in Vilnius: Online or On-Site",
-    seoDescription: "Lie detector test in Vilnius: we have no office in Lithuania. Take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Vilnius: take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Vilnius is the capital of Lithuania, and Lithuania has a dedicated law on polygraph use. It allows polygraph examinations only by state bodies. We explain what this means for an eye-based test below, in the answer about legality. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 800 km, 17.5–19 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

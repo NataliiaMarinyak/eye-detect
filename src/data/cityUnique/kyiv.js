@@ -3,7 +3,7 @@
 export const kyiv = {
   uk: {
     seoTitle: "Пройти поліграф у Києві: ціна, виїзд або онлайн",
-    seoDescription: "Детектор брехні в Києві: офісу в місті немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye сьогодні від 2 500 ₴.",
+    seoDescription: "Детектор брехні в Києві: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye сьогодні від 2 500 ₴. Звіт за 5 хвилин.",
     intro: "Київ — столиця України, приблизно за 540 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: найшвидшим поїздом Інтерсіті дорога займає близько 6 годин.",
     facts: [["Від Львова", "≈ 540 км, 6 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -24,7 +24,7 @@ export const kyiv = {
   },
   ru: {
     seoTitle: "Пройти полиграф в Киеве: цена, выезд или онлайн",
-    seoDescription: "Проверка на детекторе лжи в Киеве: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye сегодня от 2 500 ₴.",
+    seoDescription: "Проверка на детекторе лжи в Киеве: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye сегодня от 2 500 ₴. Отчёт за 5 минут.",
     intro: "Киев — столица Украины, примерно в 540 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: на самом быстром поезде Интерсити дорога занимает около 6 часов.",
     facts: [["От Львова", "≈ 540 км, 6 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -45,7 +45,7 @@ export const kyiv = {
   },
   en: {
     seoTitle: "Lie Detector Test in Kyiv: Price, Visit or Online",
-    seoDescription: "Lie detector test in Kyiv: no local office. Book an EyeDetect visit for UAH 12,000 all-inclusive or take the VerifEye online test today from UAH 2,500.",
+    seoDescription: "Lie detector test in Kyiv: book an EyeDetect visit for UAH 12,000 all-inclusive or take the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
     intro: "Kyiv is the capital of Ukraine, about 540 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the fastest Intercity train takes about 6 hours.",
     facts: [["From Lviv", "≈ 540 km, 6 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

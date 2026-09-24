@@ -3,7 +3,7 @@
 export const zagreb = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Загребі: онлайн або виїзд",
-    seoDescription: "Перевірка на поліграфі в Загребі: офісу в Хорватії немає. Онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ (≈ 49 €) або виїзд з EyeDetect.",
+    seoDescription: "Перевірка на поліграфі в Загребі: онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ (≈ 49 €) або виїзд з EyeDetect. Звіт за 5 хвилин.",
     intro: "Загреб — столиця Хорватії, країни ЄС. Прямого автобуса зі Львова сюди немає: з пересадкою дорога займає 21–29 годин за розкладом. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 920 км, 21–29 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const zagreb = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Загребе: онлайн или выезд",
-    seoDescription: "Проверка на полиграфе в Загребе: офиса в Хорватии нет. Онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ (≈ 49 €) или выезд с EyeDetect.",
+    seoDescription: "Проверка на полиграфе в Загребе: онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ (≈ 49 €) или выезд с EyeDetect. Отчёт за 5 минут.",
     intro: "Загреб — столица Хорватии, страны ЕС. Прямого автобуса из Львова сюда нет: с пересадкой дорога занимает 21–29 часов по расписанию. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 920 км, 21–29 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const zagreb = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Zagreb: Online or Visit",
-    seoDescription: "Polygraph test in Zagreb: no office in Croatia. Take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Polygraph test in Zagreb: take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Zagreb is the capital of Croatia, an EU country. There is no direct bus from Lviv: with a change the trip takes 21–29 hours by timetable. So the fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 920 km, 21–29 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

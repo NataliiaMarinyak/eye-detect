@@ -3,7 +3,7 @@
 export const athens = {
   uk: {
     seoTitle: "Детектор брехні та поліграф в Афінах: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Афінах: офісу в Греції немає. Онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні в Афінах: онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Афіни — столиця Греції, і прямого автобуса зі Львова сюди немає: FlixBus продає цей маршрут лише з трьома пересадками, від 80 годин у дорозі. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням через Катовиці або Краків; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 2 030 км, автобус + літак"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const athens = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Афинах: онлайн или выезд",
-    seoDescription: "Детектор лжи в Афинах: офиса в Греции нет. Онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Афинах: онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Афины — столица Греции, и прямого автобуса из Львова сюда нет: FlixBus продаёт этот маршрут только с тремя пересадками, от 80 часов в пути. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием через Катовице или Краков; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 2 030 км, автобус + самолёт"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const athens = {
   },
   en: {
     seoTitle: "Lie Detector Test in Athens, Greece: Online or Visit",
-    seoDescription: "Lie detector test in Athens: no office in Greece. Take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit.",
+    seoDescription: "Lie detector test in Athens: take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit. Report in 5 minutes.",
     intro: "Athens is the capital of Greece, and there is no direct bus from Lviv: FlixBus sells this route only with three changes, from 80 hours on the road. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment via Katowice or Kraków; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 2,030 km, bus + flight"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

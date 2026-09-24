@@ -3,7 +3,7 @@
 export const cherkasy = {
   uk: {
     seoTitle: "Поліграф Черкаси: детектор брехні з виїздом або онлайн",
-    seoDescription: "Детектор брехні в Черкасах: офісу в місті немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye від 2 500 ₴.",
+    seoDescription: "Детектор брехні в Черкасах: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye від 2 500 ₴. Звіт за 5 хвилин.",
     intro: "Черкаси — обласний центр на Дніпрі, приблизно за 700 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: прямий нічний поїзд іде близько 11 годин, автомобілем дорога займає 11–12 годин.",
     facts: [["Від Львова", "≈ 700 км, 11 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -24,7 +24,7 @@ export const cherkasy = {
   },
   ru: {
     seoTitle: "Полиграф Черкассы: детектор лжи с выездом или онлайн",
-    seoDescription: "Детектор лжи в Черкассах: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye от 2 500 ₴.",
+    seoDescription: "Детектор лжи в Черкассах: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye от 2 500 ₴. Отчёт за 5 минут.",
     intro: "Черкассы — областной центр на Днепре, примерно в 700 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: прямой ночной поезд идёт около 11 часов, на машине дорога занимает 11–12 часов.",
     facts: [["От Львова", "≈ 700 км, 11 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -45,7 +45,7 @@ export const cherkasy = {
   },
   en: {
     seoTitle: "Lie Detector Test in Cherkasy: Visit or Online",
-    seoDescription: "Lie detector test in Cherkasy: no office in the city. An EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test from UAH 2,500.",
+    seoDescription: "Lie detector test in Cherkasy: an EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test from UAH 2,500. Report in 5 minutes.",
     intro: "Cherkasy is a regional centre on the Dnipro, about 700 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the direct night train takes about 11 hours, and the drive takes 11–12 hours.",
     facts: [["From Lviv", "≈ 700 km, 11 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

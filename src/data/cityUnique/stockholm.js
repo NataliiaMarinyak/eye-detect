@@ -3,7 +3,7 @@
 export const stockholm = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Стокгольмі: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Стокгольмі: офісу у Швеції немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 547 kr) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Стокгольмі: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 547 kr) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Стокгольм — столиця Швеції, до неї від Львова близько 2 200 км дороги. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона: його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням, а дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 2 214 км, 39 год автобусом"], ["Онлайн-тест", "≈ 547 kr (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const stockholm = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Стокгольме: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Стокгольме: офиса в Швеции нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 547 kr) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Стокгольме: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 547 kr) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Стокгольм — столица Швеции, до неё от Львова около 2 200 км дороги. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона: его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием, а дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 2 214 км, 39 ч автобусом"], ["Онлайн-тест", "≈ 547 kr (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const stockholm = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph in Stockholm: Online or Visit",
-    seoDescription: "Lie detector test in Stockholm: no office in Sweden. Take the VerifEye online test today from UAH 2,500 (≈ SEK 547) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Stockholm: take the VerifEye online test today from UAH 2,500 (≈ SEK 547) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Stockholm is the capital of Sweden, about 2,200 km of road from Lviv. So the fastest option is the VerifEye test from a smartphone: you can take it today. For an EyeDetect test a specialist travels from Lviv with the equipment, and we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 2,214 km, 39 h by bus"], ["Online test", "≈ SEK 547 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

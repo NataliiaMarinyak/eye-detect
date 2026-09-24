@@ -3,7 +3,7 @@
 export const belgrade = {
   uk: {
     seoTitle: "Поліграф і детектор брехні в Белграді: онлайн або виїзд",
-    seoDescription: "Перевірка на поліграфі в Белграді: офісу в Сербії немає. Онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ (≈ 5 695 динарів) або виїзд з EyeDetect.",
+    seoDescription: "Перевірка на поліграфі в Белграді: онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ (≈ 5 695 динарів) або виїзд з EyeDetect. Звіт за 5 хвилин.",
     intro: "Белград — столиця Сербії; автобус FlixBus зі Львова їде сюди з двома пересадками, за розкладом 27–29 годин. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 000 км, 27–29 год автобусом"], ["Онлайн-тест", "≈ 5 695 динарів (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const belgrade = {
   },
   ru: {
     seoTitle: "Проверка на полиграфе в Белграде: онлайн или выезд",
-    seoDescription: "Проверка на полиграфе в Белграде: офиса в Сербии нет. Закажите онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ (≈ 5 695 динаров) или выезд с EyeDetect.",
+    seoDescription: "Проверка на полиграфе в Белграде: закажите онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ (≈ 5 695 динаров) или выезд с EyeDetect. Отчёт за 5 минут.",
     intro: "Белград — столица Сербии; автобус FlixBus из Львова идёт сюда с двумя пересадками, по расписанию 27–29 часов. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 000 км, 27–29 ч автобусом"], ["Онлайн-тест", "≈ 5 695 динаров (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const belgrade = {
   },
   en: {
     seoTitle: "Polygraph Test in Belgrade, Serbia: Online or On-Site",
-    seoDescription: "Polygraph test in Belgrade: no office in Serbia. Take the VerifEye phone test today from UAH 2,500 (≈ 5,695 dinars) or book an EyeDetect visit.",
+    seoDescription: "Polygraph test in Belgrade: take the VerifEye phone test today from UAH 2,500 (≈ 5,695 dinars) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Belgrade is the capital of Serbia; FlixBus from Lviv takes 27–29 hours by timetable, with two changes. So the fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,000 km, 27–29 h by bus"], ["Online test", "≈ 5,695 dinars (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

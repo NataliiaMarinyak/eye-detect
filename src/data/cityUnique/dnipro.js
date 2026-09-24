@@ -3,7 +3,7 @@
 export const dnipro = {
   uk: {
     seoTitle: "Поліграф і детектор брехні у Дніпрі: ціна, виїзд",
-    seoDescription: "Поліграф у Дніпрі: офісу в місті немає. Онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ або виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ.",
+    seoDescription: "Поліграф у Дніпрі: онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ або виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ. Звіт за 5 хвилин.",
     intro: "Дніпро — одне з найбільших міст України, і від Львова до нього близько 950 км. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст їде зі Львова з обладнанням нічним поїздом, близько 13 годин: поїздів Інтерсіті на цьому маршруті немає.",
     facts: [["Від Львова", "≈ 950 км, 13 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -25,7 +25,7 @@ export const dnipro = {
   },
   ru: {
     seoTitle: "Полиграф и детектор лжи в Днепре: цена, выезд",
-    seoDescription: "Пройти полиграф в Днепре: офиса в городе нет. Онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ или выезд специалиста с EyeDetect — 12 000 ₴ под ключ.",
+    seoDescription: "Пройти полиграф в Днепре: онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ или выезд специалиста с EyeDetect — 12 000 ₴ под ключ. Отчёт за 5 минут.",
     intro: "Днепр — один из крупнейших городов Украины, и от Львова до него около 950 км. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист едет из Львова с оборудованием ночным поездом, около 13 часов: поездов Интерсити на этом маршруте нет.",
     facts: [["От Львова", "≈ 950 км, 13 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -47,7 +47,7 @@ export const dnipro = {
   },
   en: {
     seoTitle: "Lie Detector Test in Dnipro: Price, Visit or Online",
-    seoDescription: "Polygraph test in Dnipro: no office in the city. VerifEye phone test today from UAH 2,500, or an EyeDetect visit for UAH 12,000 all-inclusive.",
+    seoDescription: "Polygraph test in Dnipro: verifEye phone test today from UAH 2,500, or an EyeDetect visit for UAH 12,000 all-inclusive. Report in 5 minutes.",
     intro: "Dnipro is one of Ukraine's largest cities, about 950 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment on an overnight train of about 13 hours, as there are no Intercity trains on this route.",
     facts: [["From Lviv", "≈ 950 km, 13 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

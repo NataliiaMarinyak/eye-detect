@@ -3,7 +3,7 @@
 export const andorraLaVella = {
   uk: {
     seoTitle: "Детектор брехні в Андоррі-ла-Вельї: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Андоррі-ла-Вельї: офісу в Андоррі немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні в Андоррі-ла-Вельї: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Андорра-ла-Велья — столиця Андорри в Піренеях, зі Львова до неї близько 2 550 км дорогою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням через Барселону або Тулузу; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 2 550 км, 51–59 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const andorraLaVella = {
   },
   ru: {
     seoTitle: "Детектор лжи в Андорре-ла-Велье: онлайн или выезд",
-    seoDescription: "Детектор лжи в Андорре-ла-Велье: офиса в Андорре нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Андорре-ла-Велье: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Андорра-ла-Велья — столица Андорры в Пиренеях, из Львова до неё около 2 550 км по дороге. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием через Барселону или Тулузу; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 2 550 км, 51–59 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const andorraLaVella = {
   },
   en: {
     seoTitle: "Lie Detector Test in Andorra la Vella: Online or Visit",
-    seoDescription: "Lie detector test in Andorra la Vella: no office in Andorra. Take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Andorra la Vella: take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Andorra la Vella is the capital of Andorra, in the Pyrenees, about 2,550 km by road from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment via Barcelona or Toulouse; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 2,550 km, 51–59 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

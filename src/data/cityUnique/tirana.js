@@ -3,7 +3,7 @@
 export const tirana = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Тирані: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Тирані: офісу в Албанії немає. Онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні в Тирані: онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Тирана — столиця Албанії, і прямого автобуса зі Львова сюди немає: у FlixBus усі маршрути мають дві пересадки і тривають від 42 годин. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням через Краків; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 570 км, автобус + літак"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const tirana = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Тиране: онлайн или выезд",
-    seoDescription: "Детектор лжи в Тиране: офиса в Албании нет. Онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Тиране: онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Тирана — столица Албании, и прямого автобуса из Львова сюда нет: у FlixBus все маршруты идут с двумя пересадками и занимают от 42 часов. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием через Краков; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 570 км, автобус + самолёт"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const tirana = {
   },
   en: {
     seoTitle: "Lie Detector Test in Tirana, Albania: Online or Visit",
-    seoDescription: "Lie detector test in Tirana: no office in Albania. Take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit.",
+    seoDescription: "Lie detector test in Tirana: take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit. Report in 5 minutes.",
     intro: "Tirana is the capital of Albania, and there is no direct bus from Lviv: on FlixBus every route has two changes and takes at least 42 hours. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment via Kraków; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,570 km, bus + flight"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

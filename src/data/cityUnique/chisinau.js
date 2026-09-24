@@ -3,7 +3,7 @@
 export const chisinau = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Кишиневі: ціна, онлайн",
-    seoDescription: "Ціна детектора брехні в Кишиневі: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 969 леїв) або виїзд спеціаліста з EyeDetect. Офісу в Молдові немає.",
+    seoDescription: "Ціна детектора брехні в Кишиневі: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 969 леїв) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Кишинів — столиця Молдови, тут багато хто говорить російською, тому тест часто потрібен саме цією мовою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 570 км, 13–17 год автобусом"], ["Онлайн-тест", "≈ 969 леїв (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const chisinau = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Кишинёве: цена, онлайн или выезд",
-    seoDescription: "Цена детектора лжи в Кишинёве: онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ (≈ 969 леев) или выезд специалиста с EyeDetect. Офиса в Молдове нет.",
+    seoDescription: "Цена детектора лжи в Кишинёве: онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ (≈ 969 леев) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Кишинёв — столица Молдовы, здесь многие говорят по-русски, поэтому тест часто нужен именно на русском. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 570 км, 13–17 ч автобусом"], ["Онлайн-тест", "≈ 969 леев (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const chisinau = {
   },
   en: {
     seoTitle: "Polygraph Test in Chisinau, Moldova: Online or On-Site",
-    seoDescription: "Polygraph test in Chisinau: no office in Moldova. Take the VerifEye phone test today from UAH 2,500 (≈ 969 lei) or book an EyeDetect specialist visit.",
+    seoDescription: "Polygraph test in Chisinau: take the VerifEye phone test today from UAH 2,500 (≈ 969 lei) or book an EyeDetect specialist visit. Report in 5 minutes.",
     intro: "Chisinau is the capital of Moldova, and many people here speak Russian, so they often need the test in Russian. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 570 km, 13–17 h by bus"], ["Online test", "≈ 969 lei (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

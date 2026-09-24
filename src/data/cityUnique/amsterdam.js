@@ -3,7 +3,7 @@
 export const amsterdam = {
   uk: {
     seoTitle: "Детектор брехні та поліграф в Амстердамі: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф в Амстердамі: офісу в Нідерландах немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф в Амстердамі: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд з EyeDetect. Звіт за 5 хвилин.",
     intro: "Амстердам — столиця Нідерландів, і прямого сполучення зі Львова туди немає: і автобус, і поїзд ідуть з пересадками. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 550 км, 20–25 год поїздом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const amsterdam = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Амстердаме: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Амстердаме: офиса в Нидерландах нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Амстердаме: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд с EyeDetect. Отчёт за 5 минут.",
     intro: "Амстердам — столица Нидерландов, и прямого сообщения из Львова туда нет: и автобус, и поезд идут с пересадками. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 550 км, 20–25 ч поездом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const amsterdam = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph in Amsterdam: Online or Visit",
-    seoDescription: "Lie detector test in Amsterdam: no office in the Netherlands. Take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Amsterdam: take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Amsterdam is the capital of the Netherlands, and there is no direct connection from Lviv: both the bus and the train run with changes. So the fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,550 km, 20–25 h by train"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

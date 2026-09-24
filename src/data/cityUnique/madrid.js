@@ -3,7 +3,7 @@
 export const madrid = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Мадриді: ціна, онлайн, виїзд",
-    seoDescription: "Детектор брехні та поліграф у Мадриді: офісу в Іспанії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Мадриді: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Мадрид — столиця Іспанії, до нього зі Львова близько 3 000 км. Дорога спеціаліста в один бік триває приблизно від 17 годин автобусом і літаком до майже 3 діб автобусами. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 3 000 км, 49–68 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const madrid = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Мадриде: цена, онлайн, выезд",
-    seoDescription: "Полиграф и детектор лжи в Мадриде: офиса в Испании нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Мадриде: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Мадрид — столица Испании, до него из Львова около 3 000 км. Дорога специалиста в одну сторону занимает примерно от 17 часов автобусом и самолётом до почти 3 суток автобусами. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 3 000 км, 49–68 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const madrid = {
   },
   en: {
     seoTitle: "Polygraph and Lie Detector Test in Madrid: Online or Visit",
-    seoDescription: "Polygraph and lie detector test in Madrid: no office in Spain. Take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Polygraph and lie detector test in Madrid: take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Madrid is the capital of Spain, about 3,000 km from Lviv. The specialist's one-way trip takes from about 17 hours by bus and plane to almost 3 days by bus alone. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 3,000 km, 49–68 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

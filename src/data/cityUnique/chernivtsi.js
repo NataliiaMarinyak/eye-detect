@@ -3,7 +3,7 @@
 export const chernivtsi = {
   uk: {
     seoTitle: "Поліграф у Чернівцях: детектор брехні, виїзд і онлайн",
-    seoDescription: "Поліграф і детектор брехні в Чернівцях: офісу тут немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ, онлайн-тест VerifEye сьогодні — від 2 500 ₴.",
+    seoDescription: "Поліграф і детектор брехні в Чернівцях: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ, онлайн-тест VerifEye сьогодні — від 2 500 ₴. Звіт за 5 хвилин.",
     intro: "Чернівці — центр Буковини, і поїздів Інтерсіті зі Львова сюди немає. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: найшвидший поїзд їде близько 4,5 години, автомобілем — близько 5 годин без зупинок.",
     facts: [["Від Львова", "≈ 270 км, 4,5 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -24,7 +24,7 @@ export const chernivtsi = {
   },
   ru: {
     seoTitle: "Полиграф в Черновцах: детектор лжи, выезд и онлайн",
-    seoDescription: "Полиграф и детектор лжи в Черновцах: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ, онлайн-тест VerifEye сегодня — от 2 500 ₴.",
+    seoDescription: "Полиграф и детектор лжи в Черновцах: выезд специалиста с EyeDetect — 12 000 ₴ под ключ, онлайн-тест VerifEye сегодня — от 2 500 ₴. Отчёт за 5 минут.",
     intro: "Черновцы — центр Буковины, и поездов Интерсити из Львова сюда нет. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: самый быстрый поезд идёт около 4,5 часа, на машине — около 5 часов без остановок.",
     facts: [["От Львова", "≈ 270 км, 4,5 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -45,7 +45,7 @@ export const chernivtsi = {
   },
   en: {
     seoTitle: "Lie Detector Test in Chernivtsi: EyeDetect Visit or Online",
-    seoDescription: "Lie detector test in Chernivtsi: no local office. EyeDetect visit from Lviv for UAH 12,000 all-inclusive, or VerifEye online test today from UAH 2,500.",
+    seoDescription: "Lie detector test in Chernivtsi: EyeDetect visit from Lviv for UAH 12,000 all-inclusive, or VerifEye online test today from UAH 2,500. Report in 5 minutes.",
     intro: "Chernivtsi is the main city of Bukovina, and there are no Intercity trains to it from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: about 4.5 hours by the fastest train or about 5 hours by car without stops.",
     facts: [["From Lviv", "≈ 270 km, 4.5 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

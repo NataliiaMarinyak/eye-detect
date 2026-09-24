@@ -3,7 +3,7 @@
 export const warsaw = {
   uk: {
     seoTitle: "Детектор брехні у Варшаві та Польщі: ціна, онлайн, виїзд",
-    seoDescription: "Детектор брехні у Варшаві та Польщі: офісу немає. Ціна онлайн-тесту VerifEye — від 2 500 ₴ (≈ 211 zł), пройти можна сьогодні. Або виїзд з EyeDetect.",
+    seoDescription: "Детектор брехні у Варшаві та Польщі: ціна онлайн-тесту VerifEye — від 2 500 ₴ (≈ 211 zł), пройти можна сьогодні. Або виїзд з EyeDetect. Звіт за 5 хвилин.",
     intro: "Варшава — столиця Польщі з великою українською громадою, тому тест тут часто потрібен рідною мовою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 390 км, 10–11 год автобусом"], ["Онлайн-тест", "≈ 211 zł (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const warsaw = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Варшаве: цена, онлайн, выезд",
-    seoDescription: "Детектор лжи в Варшаве и Польше: офиса нет. Цена онлайн-теста VerifEye — от 2 500 ₴ (≈ 211 zł), пройти можно сегодня. Или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Варшаве и Польше: цена онлайн-теста VerifEye — от 2 500 ₴ (≈ 211 zł), пройти можно сегодня. Или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Варшава — столица Польши с большой украинской общиной, поэтому тест здесь часто нужен на родном языке. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 390 км, 10–11 ч автобусом"], ["Онлайн-тест", "≈ 211 zł (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const warsaw = {
   },
   en: {
     seoTitle: "Lie Detector Test in Warsaw: Price, Online or On-Site",
-    seoDescription: "Lie detector test in Warsaw: we have no office in Poland. Take the VerifEye smartphone test today from UAH 2,500 (≈ PLN 211) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Warsaw: take the VerifEye smartphone test today from UAH 2,500 (≈ PLN 211) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Warsaw is Poland's capital with a large Ukrainian community, so people here often need the test in their native language. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 390 km, 10–11 h by bus"], ["Online test", "≈ PLN 211 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

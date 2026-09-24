@@ -3,7 +3,7 @@
 export const poltava = {
   uk: {
     seoTitle: "Поліграф у Полтаві: детектор брехні з виїздом або онлайн",
-    seoDescription: "Детектор брехні в Полтаві: офісу в місті немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye від 2 500 ₴ уже сьогодні.",
+    seoDescription: "Детектор брехні в Полтаві: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye від 2 500 ₴ уже сьогодні. Звіт за 5 хвилин.",
     intro: "Полтава — центр Полтавської області, приблизно за 870 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: найшвидший прямий поїзд іде близько 11 годин, автомобілем дорога займає 11–12 годин без зупинок.",
     facts: [["Від Львова", "≈ 870 км, 11 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -23,7 +23,7 @@ export const poltava = {
   },
   ru: {
     seoTitle: "Полиграф в Полтаве: детектор лжи с выездом или онлайн",
-    seoDescription: "Детектор лжи в Полтаве: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye от 2 500 ₴ уже сегодня.",
+    seoDescription: "Детектор лжи в Полтаве: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye от 2 500 ₴ уже сегодня. Отчёт за 5 минут.",
     intro: "Полтава — центр Полтавской области, примерно в 870 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: самый быстрый прямой поезд идёт около 11 часов, на машине дорога занимает 11–12 часов без остановок.",
     facts: [["От Львова", "≈ 870 км, 11 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -43,7 +43,7 @@ export const poltava = {
   },
   en: {
     seoTitle: "Lie Detector Test in Poltava: Visit or Online",
-    seoDescription: "Lie detector test in Poltava: no local office. An EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500.",
+    seoDescription: "Lie detector test in Poltava: an EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
     intro: "Poltava is the administrative centre of the Poltava region, about 870 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the fastest direct train takes about 11 hours, and the drive takes 11–12 hours without stops.",
     facts: [["From Lviv", "≈ 870 km, 11 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

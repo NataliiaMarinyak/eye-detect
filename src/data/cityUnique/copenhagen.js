@@ -3,7 +3,7 @@
 export const copenhagen = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Копенгагені: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Копенгагені: офісу в Данії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 363 kr) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Копенгагені: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 363 kr) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Копенгаген — столиця Данії, і від Львова до нього близько 1 700 км дороги. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона: його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням, а дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 700 км, 29–35 год автобусом"], ["Онлайн-тест", "≈ 363 kr (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const copenhagen = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Копенгагене: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Копенгагене: офиса в Дании нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 363 kr) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Копенгагене: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 363 kr) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Копенгаген — столица Дании, и от Львова до него около 1 700 км дороги. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона: его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием, а дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 700 км, 29–35 ч автобусом"], ["Онлайн-тест", "≈ 363 kr (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const copenhagen = {
   },
   en: {
     seoTitle: "Lie Detector Test in Copenhagen: Online or Visit",
-    seoDescription: "Lie detector test in Copenhagen: no office in Denmark. Take the VerifEye online test today from UAH 2,500 (≈ DKK 363) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Copenhagen: take the VerifEye online test today from UAH 2,500 (≈ DKK 363) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Copenhagen is the capital of Denmark, about 1,700 km of road from Lviv. The fastest option is therefore the VerifEye smartphone test, which you can take today. For an EyeDetect test a specialist travels from Lviv with the equipment, and we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,700 km, 29–35 h by bus"], ["Online test", "≈ DKK 363 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

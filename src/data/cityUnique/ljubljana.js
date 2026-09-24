@@ -3,7 +3,7 @@
 export const ljubljana = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Любляні: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Любляні: офісу в Словенії немає. Онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні в Любляні: онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Любляна — столиця Словенії, і прямої дороги зі Львова сюди немає: автобус і поїзд ідуть з пересадками, близько 22 годин у дорозі. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням через Будапешт або Відень; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 040 км, 22 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const ljubljana = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Любляне: онлайн или выезд",
-    seoDescription: "Детектор лжи в Любляне: офиса в Словении нет. Онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Любляне: онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Любляна — столица Словении, и прямой дороги из Львова сюда нет: автобус и поезд идут с пересадками, около 22 часов в пути. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием через Будапешт или Вену; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 040 км, 22 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const ljubljana = {
   },
   en: {
     seoTitle: "Lie Detector Test in Ljubljana, Slovenia: Online or Visit",
-    seoDescription: "Lie detector test in Ljubljana: no office in Slovenia. Take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Ljubljana: take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Ljubljana is the capital of Slovenia, and there is no direct link from Lviv: buses and trains run with changes, about 22 hours on the road. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment via Budapest or Vienna; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,040 km, 22 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

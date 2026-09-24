@@ -3,7 +3,7 @@
 export const khmelnytskyi = {
   uk: {
     seoTitle: "Поліграф у Хмельницькому: детектор брехні з виїздом",
-    seoDescription: "Детектор брехні в Хмельницькому: офісу в місті немає. Виїзд з EyeDetect — 12 000 ₴ під ключ, онлайн-тест VerifEye з телефона вже сьогодні, від 2 500 ₴.",
+    seoDescription: "Детектор брехні в Хмельницькому: виїзд з EyeDetect — 12 000 ₴ під ключ, онлайн-тест VerifEye з телефона вже сьогодні, від 2 500 ₴. Звіт за 5 хвилин.",
     intro: "Хмельницький — обласний центр на заході України, приблизно за 240 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: прямий поїзд Intercity+ іде близько 3 годин, автомобілем дорога займає близько 4 годин, автобусом — 4–5 годин.",
     facts: [["Від Львова", "≈ 240 км, 3 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -23,7 +23,7 @@ export const khmelnytskyi = {
   },
   ru: {
     seoTitle: "Полиграф в Хмельницком: детектор лжи с выездом",
-    seoDescription: "Детектор лжи в Хмельницком: офиса в городе нет. Выезд с EyeDetect — 12 000 ₴ под ключ, онлайн-тест VerifEye с телефона уже сегодня, от 2 500 ₴.",
+    seoDescription: "Детектор лжи в Хмельницком: выезд с EyeDetect — 12 000 ₴ под ключ, онлайн-тест VerifEye с телефона уже сегодня, от 2 500 ₴. Отчёт за 5 минут.",
     intro: "Хмельницкий — областной центр на западе Украины, примерно в 240 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: прямой поезд Intercity+ идёт около 3 часов, на машине дорога занимает около 4 часов, на автобусе — 4–5 часов.",
     facts: [["От Львова", "≈ 240 км, 3 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -43,7 +43,7 @@ export const khmelnytskyi = {
   },
   en: {
     seoTitle: "Polygraph in Khmelnytskyi: Lie Detector Test On-Site",
-    seoDescription: "Lie detector test in Khmelnytskyi: no local office. EyeDetect visit for UAH 12,000 all-inclusive, or the VerifEye phone test today from UAH 2,500.",
+    seoDescription: "Lie detector test in Khmelnytskyi: EyeDetect visit for UAH 12,000 all-inclusive, or the VerifEye phone test today from UAH 2,500. Report in 5 minutes.",
     intro: "Khmelnytskyi is a regional centre in western Ukraine, about 240 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the direct Intercity+ train takes about 3 hours, the drive about 4 hours, and the bus 4–5 hours.",
     facts: [["From Lviv", "≈ 240 km, 3 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

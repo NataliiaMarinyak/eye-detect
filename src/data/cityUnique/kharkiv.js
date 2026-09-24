@@ -3,7 +3,7 @@
 export const kharkiv = {
   uk: {
     seoTitle: "Поліграф і детектор брехні в Харкові: ціна, виїзд, онлайн",
-    seoDescription: "Поліграф у Харкові: офісу в місті немає. Онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ або виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ.",
+    seoDescription: "Поліграф у Харкові: онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ або виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ. Звіт за 5 хвилин.",
     intro: "Харків — друге за величиною місто України, і зі Львова до нього близько 1 000 км. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст їде зі Львова з обладнанням близько 13 годин поїздом; виїзд плануємо за 1–2 тижні й поєднуємо з іншими заявками.",
     facts: [["Від Львова", "≈ 1 000 км, 13 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -24,7 +24,7 @@ export const kharkiv = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Харькове: цена, выезд, онлайн",
-    seoDescription: "Полиграф в Харькове: офиса в городе нет. Онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ или выезд специалиста с EyeDetect — 12 000 ₴ под ключ.",
+    seoDescription: "Полиграф в Харькове: онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ или выезд специалиста с EyeDetect — 12 000 ₴ под ключ. Отчёт за 5 минут.",
     intro: "Харьков — второй по величине город Украины, и из Львова до него около 1 000 км. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист едет из Львова с оборудованием около 13 часов поездом; выезд планируем за 1–2 недели и объединяем с другими заявками.",
     facts: [["От Львова", "≈ 1 000 км, 13 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -45,7 +45,7 @@ export const kharkiv = {
   },
   en: {
     seoTitle: "Lie Detector Test in Kharkiv: Price, Visit or Online",
-    seoDescription: "Lie detector test in Kharkiv: no local office. Take the VerifEye phone test today from UAH 2,500 or book an EyeDetect visit for UAH 12,000 all-inclusive.",
+    seoDescription: "Lie detector test in Kharkiv: take the VerifEye phone test today from UAH 2,500 or book an EyeDetect visit for UAH 12,000 all-inclusive. Report in 5 minutes.",
     intro: "Kharkiv is Ukraine's second-largest city, about 1,000 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment, about 13 hours by train; we plan the visit 1–2 weeks ahead and combine it with other requests.",
     facts: [["From Lviv", "≈ 1,000 km, 13 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

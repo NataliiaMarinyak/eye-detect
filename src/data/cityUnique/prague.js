@@ -3,7 +3,7 @@
 export const prague = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Празі: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Празі: офісу в Чехії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 1 179 Kč) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Празі: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 1 179 Kč) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Прага — столиця Чехії з великою українською громадою, тож багато хто тут може пройти тест рідною мовою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 860 км, 13,5 год поїздом"], ["Онлайн-тест", "≈ 1 179 Kč (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const prague = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Праге: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Праге: офиса в Чехии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 1 179 Kč) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Праге: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 1 179 Kč) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Прага — столица Чехии с большой украинской общиной, поэтому многие здесь могут пройти тест на родном языке. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 860 км, 13,5 ч поездом"], ["Онлайн-тест", "≈ 1 179 Kč (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const prague = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Prague: Online or Visit",
-    seoDescription: "Lie detector test in Prague: no office in the Czech Republic. Take the VerifEye online test today from UAH 2,500 (≈ CZK 1,179) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Prague: take the VerifEye online test today from UAH 2,500 (≈ CZK 1,179) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Prague is the Czech capital with a large Ukrainian community, so many people here can take the test in their native language. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 860 km, 13.5 h by train"], ["Online test", "≈ CZK 1,179 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

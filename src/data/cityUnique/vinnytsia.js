@@ -3,7 +3,7 @@
 export const vinnytsia = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Вінниці: ціна, виїзд",
-    seoDescription: "Перевірка на поліграфі у Вінниці: офісу в місті немає. Онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ або виїзд з EyeDetect — 12 000 ₴ під ключ.",
+    seoDescription: "Перевірка на поліграфі у Вінниці: онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ або виїзд з EyeDetect — 12 000 ₴ під ключ. Звіт за 5 хвилин.",
     intro: "Вінниця — обласний центр, через який ходять поїзди Інтерсіті+ зі Львова до Києва. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: це близько 365 км, 4 год 40 хв поїздом Інтерсіті+ або 6 годин автомобілем без зупинок.",
     facts: [["Від Львова", "≈ 365 км, 4 год 40 хв поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -24,7 +24,7 @@ export const vinnytsia = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Виннице: цена, выезд",
-    seoDescription: "Проверка на полиграфе в Виннице: офиса в городе нет. Онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ или выезд с EyeDetect — 12 000 ₴ под ключ.",
+    seoDescription: "Проверка на полиграфе в Виннице: онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ или выезд с EyeDetect — 12 000 ₴ под ключ. Отчёт за 5 минут.",
     intro: "Винница — областной центр, через который ходят поезда Интерсити+ из Львова в Киев. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: это около 365 км, 4 ч 40 мин поездом Интерсити+ или 6 часов на машине без остановок.",
     facts: [["От Львова", "≈ 365 км, 4 ч 40 мин поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -45,7 +45,7 @@ export const vinnytsia = {
   },
   en: {
     seoTitle: "Lie Detector Test in Vinnytsia: Price, Visit or Online",
-    seoDescription: "Polygraph test in Vinnytsia: no office in the city. VerifEye phone test today from UAH 2,500, or an EyeDetect visit for UAH 12,000 all-inclusive.",
+    seoDescription: "Polygraph test in Vinnytsia: verifEye phone test today from UAH 2,500, or an EyeDetect visit for UAH 12,000 all-inclusive. Report in 5 minutes.",
     intro: "Vinnytsia is a regional centre on the route of the Intercity+ trains from Lviv to Kyiv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: about 365 km, which takes 4 h 40 min by Intercity+ train or 6 hours by car without stops.",
     facts: [["From Lviv", "≈ 365 km, 4 h 40 min by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

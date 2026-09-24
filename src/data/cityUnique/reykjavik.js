@@ -3,7 +3,7 @@
 export const reykjavik = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Рейк’явіку: онлайн або виїзд",
-    seoDescription: "Детектор брехні у Рейк’явіку: офісу в Ісландії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 6 793 крони) або виїзд з EyeDetect.",
+    seoDescription: "Детектор брехні у Рейк’явіку: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 6 793 крони) або виїзд з EyeDetect. Звіт за 5 хвилин.",
     intro: "Рейк’явік — столиця Ісландії, і дістатися сюди зі Львова можна автобусом до Польщі, а далі літаком. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст везе обладнання зі Львова; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 16 год автобусом і літаком"], ["Онлайн-тест", "≈ 6 793 крони (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const reykjavik = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Рейкьявике: онлайн или выезд",
-    seoDescription: "Детектор лжи в Рейкьявике: офиса в Исландии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 6 793 кроны) или выезд с EyeDetect.",
+    seoDescription: "Детектор лжи в Рейкьявике: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 6 793 кроны) или выезд с EyeDetect. Отчёт за 5 минут.",
     intro: "Рейкьявик — столица Исландии, и добраться сюда из Львова можно автобусом до Польши, а дальше самолётом. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист везёт оборудование из Львова; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 16 ч автобусом и самолётом"], ["Онлайн-тест", "≈ 6 793 кроны (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const reykjavik = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph in Reykjavik: Online or Visit",
-    seoDescription: "Lie detector test in Reykjavik: no office in Iceland. Take the VerifEye online test today from UAH 2,500 (≈ ISK 6,793) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Reykjavik: take the VerifEye online test today from UAH 2,500 (≈ ISK 6,793) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Reykjavik is the capital of Iceland, and getting here from Lviv means a bus to Poland and then a flight. So the fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist brings the equipment from Lviv; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 16 h by bus and plane"], ["Online test", "≈ ISK 6,793 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

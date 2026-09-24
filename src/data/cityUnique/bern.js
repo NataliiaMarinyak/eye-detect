@@ -3,7 +3,7 @@
 export const bern = {
   uk: {
     seoTitle: "Поліграф і детектор брехні в Берні: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Берні: офісу у Швейцарії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 46 CHF) або виїзд спеціаліста зі Львова з EyeDetect.",
+    seoDescription: "Детектор брехні в Берні: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 46 CHF) або виїзд спеціаліста зі Львова з EyeDetect. Звіт за 5 хвилин.",
     intro: "Берн — столиця Швейцарії, і головна мова міста німецька, тож тест тут можна пройти німецькою або українською. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 660 км, 34–45 год автобусом"], ["Онлайн-тест", "≈ 46 CHF (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const bern = {
   },
   ru: {
     seoTitle: "Полиграф и детектор лжи в Берне: онлайн или выезд",
-    seoDescription: "Детектор лжи в Берне: офиса в Швейцарии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 46 CHF) или выезд специалиста из Львова с EyeDetect.",
+    seoDescription: "Детектор лжи в Берне: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 46 CHF) или выезд специалиста из Львова с EyeDetect. Отчёт за 5 минут.",
     intro: "Берн — столица Швейцарии, и главный язык города немецкий, поэтому тест здесь можно пройти на немецком или на украинском. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 660 км, 34–45 ч автобусом"], ["Онлайн-тест", "≈ 46 CHF (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const bern = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Bern: Online or Visit",
-    seoDescription: "Lie detector test in Bern: no office in Switzerland. Take the VerifEye online test today from UAH 2,500 (≈ CHF 46) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Bern: take the VerifEye online test today from UAH 2,500 (≈ CHF 46) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Bern is the capital of Switzerland, and the city's main language is German, so the test here can be taken in German or in Ukrainian. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,660 km, 34–45 h by bus"], ["Online test", "≈ CHF 46 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

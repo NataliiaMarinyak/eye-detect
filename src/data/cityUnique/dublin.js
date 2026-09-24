@@ -3,7 +3,7 @@
 export const dublin = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Дубліні: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Дубліні: офісу в Ірландії немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Дубліні: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Дублін — столиця Ірландії, куди з 2022 року переїхало багато українців, тож тест тут часто потрібен рідною мовою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст везе обладнання зі Львова автобусом і літаком; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 10 год автобусом і літаком"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const dublin = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Дублине: онлайн или выезд",
-    seoDescription: "Полиграф и детектор лжи в Дублине: офиса в Ирландии нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect.",
+    seoDescription: "Полиграф и детектор лжи в Дублине: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Дублин — столица Ирландии, куда с 2022 года переехало много украинцев, поэтому тест здесь часто нужен на родном языке. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист везёт оборудование из Львова автобусом и самолётом; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 10 ч автобусом и самолётом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const dublin = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Dublin: Online or Visit",
-    seoDescription: "Lie detector and polygraph test in Dublin: no office in Ireland. Take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector and polygraph test in Dublin: take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Dublin is the capital of Ireland, where many Ukrainians have moved since 2022, so people here often need the test in their native language. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment by bus and plane; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 10 h by bus and plane"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

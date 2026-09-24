@@ -3,7 +3,7 @@
 export const sanMarino = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Сан-Марино: онлайн або виїзд",
-    seoDescription: "Детектор брехні та поліграф у Сан-Марино: офісу в країні немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні та поліграф у Сан-Марино: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Сан-Марино — невелика республіка, з усіх боків оточена Італією; зі Львова до неї близько 1 630 км дорогою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням через Болонью або Ріміні; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 630 км, 29–39 год дороги"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const sanMarino = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Сан-Марино: онлайн или выезд",
-    seoDescription: "Детектор лжи и полиграф в Сан-Марино: офиса в стране нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи и полиграф в Сан-Марино: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Сан-Марино — небольшая республика, со всех сторон окружённая Италией; из Львова до неё около 1 630 км по дороге. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием через Болонью или Римини; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 630 км, 29–39 ч в пути"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const sanMarino = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph in San Marino: Online or Visit",
-    seoDescription: "Lie detector test in San Marino: we have no office in the country. Take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in San Marino: take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "San Marino is a small republic completely surrounded by Italy, about 1,630 km by road from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment via Bologna or Rimini; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,630 km, 29–39 h travel"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

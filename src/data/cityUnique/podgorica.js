@@ -3,7 +3,7 @@
 export const podgorica = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Подгориці: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Подгориці: офісу в Чорногорії немає. Онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд з EyeDetect, коли буде кілька заявок.",
+    seoDescription: "Детектор брехні в Подгориці: онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд з EyeDetect, коли буде кілька заявок. Звіт за 5 хвилин.",
     intro: "Подгориця — столиця Чорногорії. Прямого рейсу FlixBus зі Львова сюди немає: за розкладом дорога з пересадками в Будапешті й Белграді триває 34–35 годин. Тому найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 350 км, 34–35 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const podgorica = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Подгорице: онлайн или выезд",
-    seoDescription: "Детектор лжи в Подгорице: офиса в Черногории нет. Онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд с EyeDetect, когда соберётся несколько заявок.",
+    seoDescription: "Детектор лжи в Подгорице: онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд с EyeDetect. Отчёт за 5 минут.",
     intro: "Подгорица — столица Черногории. Прямого рейса FlixBus из Львова сюда нет: по расписанию дорога с пересадками в Будапеште и Белграде занимает 34–35 часов. Поэтому самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 350 км, 34–35 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const podgorica = {
   },
   en: {
     seoTitle: "Lie Detector Test in Podgorica, Montenegro: Online or Visit",
-    seoDescription: "Lie detector test in Podgorica: no office in Montenegro. Take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit.",
+    seoDescription: "Lie detector test in Podgorica: take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit. Report in 5 minutes.",
     intro: "Podgorica is the capital of Montenegro. FlixBus has no direct service from Lviv, and the trip with changes in Budapest and Belgrade takes 34–35 hours by timetable. So the fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,350 km, 34–35 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

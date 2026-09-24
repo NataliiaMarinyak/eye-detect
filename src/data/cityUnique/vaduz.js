@@ -3,7 +3,7 @@
 export const vaduz = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Вадуці: онлайн або виїзд",
-    seoDescription: "Детектор брехні у Вадуці: офісу в Ліхтенштейні немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 46 CHF) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні у Вадуці: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 46 CHF) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Вадуц — столиця Ліхтенштейну між Швейцарією та Австрією, зі Львова до нього близько 1 470 км дорогою. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням через Мюнхен або Меммінген; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 470 км, 35 год автобусом"], ["Онлайн-тест", "≈ 46 CHF (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const vaduz = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Вадуце: онлайн или выезд",
-    seoDescription: "Детектор лжи в Вадуце: офиса в Лихтенштейне нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 46 CHF) или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Вадуце: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 46 CHF) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Вадуц — столица Лихтенштейна между Швейцарией и Австрией, из Львова до него около 1 470 км по дороге. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием через Мюнхен или Мемминген; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 470 км, 35 ч автобусом"], ["Онлайн-тест", "≈ 46 CHF (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const vaduz = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Vaduz: Online or Visit",
-    seoDescription: "Lie detector test in Vaduz: no office in Liechtenstein. Take the VerifEye online test today from UAH 2,500 (≈ CHF 46) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Vaduz: take the VerifEye online test today from UAH 2,500 (≈ CHF 46) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Vaduz is the capital of Liechtenstein, between Switzerland and Austria, about 1,470 km by road from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment via Munich or Memmingen; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,470 km, 35 h by bus"], ["Online test", "≈ CHF 46 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

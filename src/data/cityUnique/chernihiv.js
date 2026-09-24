@@ -3,7 +3,7 @@
 export const chernihiv = {
   uk: {
     seoTitle: "Поліграф у Чернігові: ціна тесту, виїзд або онлайн",
-    seoDescription: "Поліграф у Чернігові: офісу в місті немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye сьогодні, ціна від 2 500 ₴.",
+    seoDescription: "Поліграф у Чернігові: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye сьогодні, ціна від 2 500 ₴. Звіт за 5 хвилин.",
     updated: "2026-09-16",
     intro: "Чернігів — центр Чернігівської області, приблизно за 690 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст їде зі Львова з обладнанням 10–12 годин поїздом, тому виїзд плануємо за 1–2 тижні й поєднуємо з іншими заявками.",
     facts: [["Від Львова", "≈ 690 км, 10–12 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
@@ -24,7 +24,7 @@ export const chernihiv = {
   },
   ru: {
     seoTitle: "Полиграф в Чернигове: цена, выезд специалиста или онлайн",
-    seoDescription: "Полиграф в Чернигове: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye сегодня, цена от 2 500 ₴.",
+    seoDescription: "Полиграф в Чернигове: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye сегодня, цена от 2 500 ₴. Отчёт за 5 минут.",
     updated: "2026-09-16",
     intro: "Чернигов — центр Черниговской области, примерно в 690 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист едет из Львова с оборудованием 10–12 часов поездом, поэтому выезд планируем за 1–2 недели и объединяем с другими заявками.",
     facts: [["От Львова", "≈ 690 км, 10–12 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
@@ -45,7 +45,7 @@ export const chernihiv = {
   },
   en: {
     seoTitle: "Lie Detector Test in Chernihiv: Price, Visit or Online",
-    seoDescription: "Lie detector test in Chernihiv: no local office. An EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500.",
+    seoDescription: "Lie detector test in Chernihiv: an EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
     updated: "2026-09-16",
     intro: "Chernihiv is the administrative centre of the Chernihiv region, about 690 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment for 10–12 hours by train, so we plan the visit 1–2 weeks ahead and combine it with other requests.",
     facts: [["From Lviv", "≈ 690 km, 10–12 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],

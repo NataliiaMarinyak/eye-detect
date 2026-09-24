@@ -4,7 +4,7 @@
 export const kherson = {
   uk: {
     seoTitle: "Поліграф у Херсоні: детектор брехні, виїзд і ціна",
-    seoDescription: "Детектор брехні в Херсоні: офісу в місті немає. Виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye сьогодні, від 2 500 ₴.",
+    seoDescription: "Детектор брехні в Херсоні: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye сьогодні, від 2 500 ₴. Звіт за 5 хвилин.",
     intro: "Херсон — центр Херсонської області на півдні України, приблизно за 880 км від Львова. Прямого поїзда зі Львова немає, тому спеціаліст з EyeDetect їде автомобілем. Виїзд плануємо заздалегідь, а онлайн-тест VerifEye зі смартфона можна пройти вже сьогодні.",
     facts: [["Від Львова", "≈ 880 км, 11–14 год машиною"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -24,7 +24,7 @@ export const kherson = {
   },
   ru: {
     seoTitle: "Полиграф в Херсоне: детектор лжи, выезд и цена",
-    seoDescription: "Детектор лжи в Херсоне: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye сегодня, от 2 500 ₴.",
+    seoDescription: "Детектор лжи в Херсоне: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye сегодня, от 2 500 ₴. Отчёт за 5 минут.",
     intro: "Херсон — центр Херсонской области на юге Украины, примерно в 880 км от Львова. Прямого поезда из Львова нет, поэтому специалист с EyeDetect едет на машине. Выезд планируем заранее, а онлайн-тест VerifEye со смартфона можно пройти уже сегодня.",
     facts: [["От Львова", "≈ 880 км, 11–14 ч машиной"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -44,7 +44,7 @@ export const kherson = {
   },
   en: {
     seoTitle: "Lie Detector Test in Kherson: Visit, Price or Online",
-    seoDescription: "Lie detector test in Kherson: no office in the city. An EyeDetect visit for UAH 12,000 all-inclusive, or the VerifEye online test today from UAH 2,500.",
+    seoDescription: "Lie detector test in Kherson: an EyeDetect visit for UAH 12,000 all-inclusive, or the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
     intro: "Kherson is the administrative centre of the Kherson region in southern Ukraine, about 880 km from Lviv. There is no direct train from Lviv, so an EyeDetect specialist travels by car. We plan the trip in advance, and you can take the VerifEye smartphone test today.",
     facts: [["From Lviv", "≈ 880 km, 11–14 h by car"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [

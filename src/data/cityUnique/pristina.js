@@ -3,7 +3,7 @@
 export const pristina = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Приштині: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Приштині: офісу в Косові немає. Онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд з EyeDetect, коли буде кілька заявок.",
+    seoDescription: "Детектор брехні в Приштині: онлайн-тест VerifEye від 2 500 ₴ (≈ 49 €) сьогодні або виїзд з EyeDetect, коли буде кілька заявок. Звіт за 5 хвилин.",
     intro: "Приштина — столиця Косова. Прямого автобуса зі Львова сюди немає: дорога з пересадками через Белград триває за розкладом 34–40 годин, а швидший шлях — автобус до Кракова, переліт до Тирани й автобус звідти. Тому найшвидше отримати відповідь онлайн: тест VerifEye зі смартфона можна пройти вже сьогодні, а для EyeDetect спеціаліст приїжджає зі Львова з обладнанням, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 300 км, 34–40 год автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const pristina = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Приштине: онлайн или выезд",
-    seoDescription: "Детектор лжи в Приштине: офиса в Косове нет. Онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд с EyeDetect, когда соберётся несколько заявок.",
+    seoDescription: "Детектор лжи в Приштине: онлайн-тест VerifEye от 2 500 ₴ (≈ 49 €) сегодня или выезд с EyeDetect. Отчёт за 5 минут.",
     intro: "Приштина — столица Косова. Прямого автобуса из Львова сюда нет: дорога с пересадками через Белград занимает по расписанию 34–40 часов, а более быстрый путь — автобус до Кракова, перелёт в Тирану и автобус оттуда. Поэтому быстрее всего получить ответ онлайн: тест VerifEye со смартфона можно пройти уже сегодня, а для EyeDetect специалист приезжает из Львова с оборудованием, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 300 км, 34–40 ч автобусом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const pristina = {
   },
   en: {
     seoTitle: "Lie Detector Test in Pristina, Kosovo: Online or Visit",
-    seoDescription: "Lie detector test in Pristina: no office in Kosovo. Take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit.",
+    seoDescription: "Lie detector test in Pristina: take the VerifEye phone test today from UAH 2,500 (≈ €49) or book an EyeDetect specialist visit. Report in 5 minutes.",
     intro: "Pristina is the capital of Kosovo. There is no direct bus from Lviv: the route with changes via Belgrade takes 34–40 hours by timetable, and the faster way is a bus to Kraków, a flight to Tirana and a bus from there. So the quickest answer comes online: you can take the VerifEye smartphone test today, while for EyeDetect a specialist travels from Lviv with the equipment once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,300 km, 34–40 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

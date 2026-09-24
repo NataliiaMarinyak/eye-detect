@@ -3,7 +3,7 @@
 export const valletta = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Валлетті: онлайн або виїзд",
-    seoDescription: "Детектор брехні у Валлетті: офісу на Мальті немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні у Валлетті: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Валлетта — столиця Мальти, острівної держави в Середземному морі, тому дістатися сюди можна тільки літаком або поромом. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст добирається зі Львова з обладнанням через аеропорт у Кракові; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 3,8 год дорогою + 2,6 год літаком"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const valletta = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Валлетте: онлайн или выезд",
-    seoDescription: "Детектор лжи в Валлетте: офиса на Мальте нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Валлетте: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Валлетта — столица Мальты, островного государства в Средиземном море, поэтому добраться сюда можно только самолётом или паромом. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист добирается из Львова с оборудованием через аэропорт в Кракове; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 3,8 ч дорогой + 2,6 ч самолётом"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const valletta = {
   },
   en: {
     seoTitle: "Lie Detector Test in Valletta, Malta: Online or Visit",
-    seoDescription: "Lie detector test in Valletta: we have no office in Malta. Take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit.",
+    seoDescription: "Lie detector test in Valletta: take the VerifEye online test today from UAH 2,500 (≈ €49) or book an EyeDetect visit. Report in 5 minutes.",
     intro: "Valletta is the capital of Malta, an island state in the Mediterranean, so the only ways in are by plane or by ferry. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment via Kraków airport; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 3.8 h by road + 2.6 h by air"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

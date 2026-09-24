@@ -3,7 +3,7 @@
 export const monaco = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Монако: онлайн або виїзд",
-    seoDescription: "Детектор брехні в Монако: офісу в князівстві немає. Онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect.",
+    seoDescription: "Детектор брехні в Монако: онлайн-тест VerifEye сьогодні від 2 500 ₴ (≈ 49 €) або виїзд спеціаліста з EyeDetect. Звіт за 5 хвилин.",
     intro: "Монако — князівство на Середземному морі, найменша держава світу після Ватикану. На суші її з усіх боків оточує Франція. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням через аеропорт Ніцци; дату погоджуємо заздалегідь, коли в регіоні збирається кілька заявок.",
     facts: [["Від Львова", "≈ 1 900 км, від 15 год дороги"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Мова тесту", "українська, російська, англійська, німецька"]],
     faq: [
@@ -25,7 +25,7 @@ export const monaco = {
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Монако: онлайн или выезд",
-    seoDescription: "Детектор лжи в Монако: офиса в княжестве нет. Онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect.",
+    seoDescription: "Детектор лжи в Монако: онлайн-тест VerifEye сегодня от 2 500 ₴ (≈ 49 €) или выезд специалиста с EyeDetect. Отчёт за 5 минут.",
     intro: "Монако — княжество на Средиземном море, самое маленькое государство мира после Ватикана. На суше его со всех сторон окружает Франция. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием через аэропорт Ниццы; дату согласовываем заранее, когда в регионе собирается несколько заявок.",
     facts: [["От Львова", "≈ 1 900 км, от 15 ч в пути"], ["Онлайн-тест", "≈ 49 € (2 500 ₴)"], ["Язык теста", "украинский, русский, английский, немецкий"]],
     faq: [
@@ -47,7 +47,7 @@ export const monaco = {
   },
   en: {
     seoTitle: "Lie Detector and Polygraph Test in Monaco: Online or Visit",
-    seoDescription: "Lie detector test in Monaco: we have no office in the principality. VerifEye online test today from UAH 2,500 (≈ €49), or an EyeDetect visit.",
+    seoDescription: "Lie detector test in Monaco: VerifEye online test today from UAH 2,500 (≈ €49), or an EyeDetect visit. Report in 5 minutes.",
     intro: "Monaco is a principality on the Mediterranean, the smallest state in the world after the Vatican. On land it is surrounded by France on every side. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment through Nice airport; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,900 km, from 15 h travel"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

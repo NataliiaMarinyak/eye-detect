@@ -3,7 +3,7 @@
 export const ternopil = {
   uk: {
     seoTitle: "Поліграф у Тернополі: детектор брехні з виїздом або онлайн",
-    seoDescription: "Детектор брехні в Тернополі: офісу в місті немає. Виїзд з EyeDetect — 12 000 ₴ під ключ. Онлайн-тест VerifEye з телефона вже сьогодні, від 2 500 ₴.",
+    seoDescription: "Детектор брехні в Тернополі: виїзд з EyeDetect — 12 000 ₴ під ключ. Онлайн-тест VerifEye з телефона вже сьогодні, від 2 500 ₴. Звіт за 5 хвилин.",
     intro: "Тернопіль — один із найближчих до Львова обласних центрів: близько 130 км трасою М-09, і через місто ходять поїзди Intercity+. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: поїздом Intercity+ дорога займає приблизно півтори години, автомобілем — приблизно 2 години 15 хвилин.",
     facts: [["Від Львова", "≈ 130 км, 1,5–2 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -23,7 +23,7 @@ export const ternopil = {
   },
   ru: {
     seoTitle: "Полиграф в Тернополе: детектор лжи с выездом или онлайн",
-    seoDescription: "Детектор лжи в Тернополе: офиса в городе нет. Выезд специалиста с EyeDetect — 12 000 ₴ под ключ. Онлайн-тест VerifEye с телефона уже сегодня, от 2 500 ₴.",
+    seoDescription: "Детектор лжи в Тернополе: выезд специалиста с EyeDetect — 12 000 ₴ под ключ. Онлайн-тест VerifEye с телефона уже сегодня, от 2 500 ₴. Отчёт за 5 минут.",
     intro: "Тернополь — один из ближайших ко Львову областных центров: около 130 км по трассе М-09, и через город ходят поезда Intercity+. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: поездом Intercity+ дорога занимает примерно полтора часа, на машине — примерно 2 часа 15 минут.",
     facts: [["От Львова", "≈ 130 км, 1,5–2 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -43,7 +43,7 @@ export const ternopil = {
   },
   en: {
     seoTitle: "Lie Detector Test in Ternopil: On-Site Visit or Online",
-    seoDescription: "Polygraph test in Ternopil: no local office. An EyeDetect specialist visit for UAH 12,000 all-inclusive, or the VerifEye phone test today, from UAH 2,500.",
+    seoDescription: "Polygraph test in Ternopil: an EyeDetect specialist visit for UAH 12,000 all-inclusive, or the VerifEye phone test today, from UAH 2,500. Report in 5 minutes.",
     intro: "Ternopil is one of the closest regional capitals to Lviv: about 130 km along the M-09 highway, with Intercity+ trains running through the city. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the trip takes about an hour and a half by Intercity+ train, or about 2 hours 15 minutes by car.",
     facts: [["From Lviv", "≈ 130 km, 1.5–2 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
