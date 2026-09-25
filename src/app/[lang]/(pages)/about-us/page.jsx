@@ -115,9 +115,9 @@ const AboutUsPage = async ({ params }) => {
     "@id": `${siteUrl}#nataliia-marynyak`,
     name: byLang({ uk: "Наталя Мариняк", ru: "Наталья Мариняк", en: "Nataliia Marynyak" }),
     jobTitle: byLang({
-      uk: "Поліграфолог, сертифікований спеціаліст EyeDetect",
-      ru: "Полиграфолог, сертифицированный специалист EyeDetect",
-      en: "Certified EyeDetect examiner",
+      uk: "Дипломований психолог, сертифікований спеціаліст EyeDetect (Converus), VerifEye",
+      ru: "Дипломированный психолог, сертифицированный специалист EyeDetect (Converus), VerifEye",
+      en: "Qualified psychologist, certified EyeDetect (Converus) and VerifEye specialist",
     }),
     url: `${pageUrlJsonLd}about-us`,
     image: `${siteUrl}images/specialist-natalia-portrait.webp`,
