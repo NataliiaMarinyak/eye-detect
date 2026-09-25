@@ -1,8 +1,8 @@
 export const specialistData = [
   {
-    title: "Освіта та кар’єра: психологія і перевірки на поліграфі",
-    titleRus: "Образование и карьера: психология и проверки на полиграфе",
-    titleEng: "Education and career in psychology and polygraph testing",
+    title: "Освіта і сертифікація: психологія та EyeDetect",
+    titleRus: "Образование и сертификация: психология и EyeDetect",
+    titleEng: "Education and certification: psychology and EyeDetect",
     details: [
       {
         subTitle: "Львівський державний університет внутрішніх справ",
@@ -34,9 +34,9 @@ export const specialistData = [
     img: "/images/specialist-natalia-portrait.webp",
   },
   {
-    title: "Практичний досвід проведення перевірок на поліграфі",
-    titleRus: "Практический опыт проведения проверок на полиграфе",
-    titleEng: "Practical experience in polygraph testing",
+    title: "Практичний досвід психолога",
+    titleRus: "Практический опыт психолога",
+    titleEng: "Practical experience as a psychologist",
     details: [
       {
         subTitle:
