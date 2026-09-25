@@ -2,8 +2,9 @@ import dynamic from "next/dynamic";
 import HeroSection from "@/sections/homeSections/heroSection/HeroSection";
 import { FAQDataHome } from "@/data/FAQDataHome";
 import { getDictionary } from "@/helpers/getDictionary";
-import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
 import { getFaqJsonLd } from "@/helpers/getFaqJsonLd";
+import { getBusinessJsonLd } from "@/helpers/getBusinessJsonLd";
 
 const DynamicHomeAboutSection = dynamic(() =>
   import("@/sections/homeSections/homeAboutSection/HomeAboutSection")
@@ -66,16 +67,17 @@ export async function generateMetadata({ params }) {
     description,
     keywords,
     alternates: {
-      canonical: `${seoMetaPageUrl}`,
+      canonical: getHomeUrl(lang),
       languages: {
         'uk': `${process.env.NEXT_PUBLIC_SEO_URL}`,
-        'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/`,
-        'en': `${process.env.NEXT_PUBLIC_SEO_URL}en/`,
+        'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru`,
+        'en': `${process.env.NEXT_PUBLIC_SEO_URL}en`,
+        'x-default': `${process.env.NEXT_PUBLIC_SEO_URL}`,
       },
     },
     openGraph: {
       title: titleOpenGraph,
-      url: `${seoMetaPageUrl}`,
+      url: getHomeUrl(lang),
       description: descriptionOpenGraph,
       siteName: "EyeDetect",
       type: "website",
@@ -122,7 +124,7 @@ export default async function Home({ params }) {
       "@type": "ListItem",
       position: 1,
       item: {
-        "@id": pageUrlJsonLd,
+        "@id": getHomeUrl(lang),
         name: name_01,
       },
     },
@@ -130,33 +132,7 @@ export default async function Home({ params }) {
 
   const dictionary = await getDictionary(lang);
 
-  // Організація і місцевий бізнес: адреса, телефон, соцмережі, послуги.
-  const byLang = (values) => values[lang] || values.uk;
-  const businessJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business`,
-    name: { uk: "Детектор брехні EyeDetect у Львові", ru: "Детектор лжи EyeDetect во Львове", en: "EyeDetect Lie Detector in Lviv" }[lang] || "Детектор брехні EyeDetect у Львові",
-    url: process.env.NEXT_PUBLIC_SEO_URL,
-    telephone: "+380686833368",
-    image: `${process.env.NEXT_PUBLIC_SEO_URL}images/seo_images/opengraph-image-1200-630.png`,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: byLang({ uk: "вул. Городоцька, 45", ru: "ул. Городоцкая, 45", en: "45 Horodotska St." }),
-      addressLocality: byLang({ uk: "Львів", ru: "Львов", en: "Lviv" }),
-      postalCode: "79000",
-      addressCountry: "UA",
-    },
-    areaServed: [
-      { "@type": "Country", name: byLang({ uk: "Україна", ru: "Украина", en: "Ukraine" }) },
-      { "@type": "Place", name: byLang({ uk: "Європа", ru: "Европа", en: "Europe" }) },
-    ],
-    sameAs: ["https://t.me/Detecteye", "https://www.facebook.com/share/1527nF4Rwh/", "https://www.instagram.com/eye_detect", "https://www.tiktok.com/@www.eyepolygraph"],
-    makesOffer: [
-      { "@type": "Offer", name: "EyeDetect", price: 5500, priceCurrency: "UAH", url: `${pageUrlJsonLd}prices` },
-      { "@type": "Offer", name: "VerifEye", price: 2500, priceCurrency: "UAH", url: `${pageUrlJsonLd}online` },
-    ],
-  };
+  const businessJsonLd = getBusinessJsonLd(lang);
 
   return (
     <>

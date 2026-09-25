@@ -12,58 +12,50 @@ const baseUrl = process.env.NEXT_PUBLIC_SEO_URL;
 const allCitiesArray = getAllCities().filter((el) => el.slug !== "lviv");
 
 
+// Кожна мовна версія — окремий запис у sitemap з посиланнями на всі три версії
+// (так радить Google для hreflang у sitemap).
+const withLanguages = (path, priority, lastModified) => {
+  const languages = {
+    uk: `${baseUrl}${path}`,
+    // головна мови — без кінцевого слеша (/ru/ віддає 308 на /ru)
+    ru: path ? `${baseUrl}ru/${path}` : `${baseUrl}ru`,
+    en: path ? `${baseUrl}en/${path}` : `${baseUrl}en`,
+  };
+  return Object.values(languages).map((url) => ({
+    url,
+    lastModified,
+    changeFrequency: "monthly",
+    priority,
+    alternates: { languages },
+  }));
+};
+
 export default async function sitemap() {
   const today = new Date().toISOString().split("T")[0];
 
-    const oneCity = allCitiesArray?.map((el) => ({
-        url: `${baseUrl}locations/${el.slug}`,
-        lastModified: today,
-        changeFrequency: "monthly",
-        priority: 0.5,
-        alternates: {
-          languages: {
-            uk: `${baseUrl}locations/${el.slug}`,
-            ru: `${baseUrl}ru/locations/${el.slug}`,
-            en: `${baseUrl}en/locations/${el.slug}`,
-          },
-        },
-      }));
+  const routes = [
+    { href: "", priority: 1.0 },
+    { href: "prices", priority: 0.9 },
+    { href: "eyedetect", priority: 0.9 },
+    { href: "online", priority: 0.9 },
+    { href: "free-test", priority: 0.8 },
+    { href: "business", priority: 0.9 },
+    { href: "situations", priority: 0.8 },
+    ...situations.map((s) => ({ href: `situations/${s.slug}`, priority: 0.8 })),
+    { href: "faq", priority: 0.8 },
+    { href: "converus", priority: 0.7 },
+    { href: "for", priority: 0.8 },
+    ...audiences.map((a) => ({ href: `for/${a.slug}`, priority: 0.7 })),
+    { href: "blog", priority: 0.7 },
+    ...blogPosts.map((p) => ({ href: `blog/${p.slug}`, priority: 0.6 })),
+    { href: "about-us", priority: 0.8 },
+    { href: "locations", priority: 0.8 },
+    { href: "contacts", priority: 0.6 },
+    { href: "privacy-policy", priority: 0.6 },
+    ...allCitiesArray.map((el) => ({ href: `locations/${el.slug}`, priority: 0.5 })),
+  ];
 
-    const routes = [
-      { href: "", priority: 1.0 },
-      { href: "prices", priority: 0.9 },
-      { href: "eyedetect", priority: 0.9 },
-      { href: "online", priority: 0.9 },
-      { href: "free-test", priority: 0.8 },
-      { href: "business", priority: 0.9 },
-      { href: "situations", priority: 0.8 },
-      ...situations.map((s) => ({ href: `situations/${s.slug}`, priority: 0.8 })),
-      { href: "faq", priority: 0.8 },
-      { href: "converus", priority: 0.7 },
-      { href: "for", priority: 0.8 },
-      ...audiences.map((a) => ({ href: `for/${a.slug}`, priority: 0.7 })),
-      { href: "blog", priority: 0.7 },
-      ...blogPosts.map((p) => ({ href: `blog/${p.slug}`, priority: 0.6 })),
-      { href: "about-us", priority: 0.8 },
-      { href: "locations", priority: 0.8 },
-      { href: "contacts", priority: 0.6 },
-      { href: "privacy-policy", priority: 0.6 },
-    ]?.map((route) => ({
-      url: `${baseUrl}${route.href}`,
-      lastModified: today,
-      changeFrequency: "monthly",
-      priority: route.priority,
-      alternates: {
-        languages: {
-          uk: `${baseUrl}${route.href}`,
-          ru: `${baseUrl}ru/${route.href}`,
-          en: `${baseUrl}en/${route.href}`,
-        },
-      },
-    }));
-
-    return [...routes, ...oneCity];
-
+  return routes.flatMap((route) => withLanguages(route.href, route.priority, today));
 }
 
 // todo new code

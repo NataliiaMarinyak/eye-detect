@@ -2,7 +2,7 @@ import PricesSection from "@/sections/pricesSection/PricesSection";
 import { pricingGroups, CURRENCY } from "@/data/pricingData";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getLocalizedField } from "@/helpers/getLocalizedField";
-import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
 import { i18n } from "@/dictionaries/i18n.config";
 
 export async function generateMetadata({ params }) {
@@ -72,7 +72,7 @@ const PricesPage = async ({ params }) => {
       {
         "@type": "ListItem",
         position: 1,
-        item: { "@id": pageUrlJsonLd, name: seoPricesPage.seoMetaNameJsonLd_1 },
+        item: { "@id": getHomeUrl(lang), name: seoPricesPage.seoMetaNameJsonLd_1 },
       },
       {
         "@type": "ListItem",

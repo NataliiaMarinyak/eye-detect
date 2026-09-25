@@ -1,6 +1,6 @@
 import PrivacyPolicySection from "@/sections/privacyPolicySection/PrivacyPolicySection";
 import { getDictionary } from "@/helpers/getDictionary";
-import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
 
 export async function generateMetadata({ params }) {
   const { lang } = params;
@@ -78,7 +78,7 @@ const PryvacyPolicyPage = async ({ params }) => {
         "@type": "ListItem",
         position: 1,
         item: {
-          "@id": pageUrlJsonLd,
+          "@id": getHomeUrl(lang),
           name: name_01,
         },
       },

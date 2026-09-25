@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import ConsultationSection from "@/sections/consultationSection/ConsultationSection";
 import { getDictionary } from "@/helpers/getDictionary";
-import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
 
 
 const DynamicSpecialistSection = dynamic(() =>
@@ -91,7 +91,7 @@ const AboutUsPage = async ({ params }) => {
         "@type": "ListItem",
         position: 1,
         item: {
-          "@id": pageUrlJsonLd,
+          "@id": getHomeUrl(lang),
           name: name_01,
         },
       },
@@ -106,11 +106,53 @@ const AboutUsPage = async ({ params }) => {
     ],
   };
 
+  // Хто проводить тести: для Google це сигнал експертності сторінки.
+  const byLang = (v) => v[lang] || v.uk;
+  const siteUrl = process.env.NEXT_PUBLIC_SEO_URL;
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${siteUrl}#nataliia-marynyak`,
+    name: byLang({ uk: "Наталя Мариняк", ru: "Наталья Мариняк", en: "Nataliia Marynyak" }),
+    jobTitle: byLang({
+      uk: "Поліграфолог, сертифікований спеціаліст EyeDetect",
+      ru: "Полиграфолог, сертифицированный специалист EyeDetect",
+      en: "Certified EyeDetect examiner",
+    }),
+    url: `${pageUrlJsonLd}about-us`,
+    image: `${siteUrl}images/specialist-natalia-portrait.webp`,
+    telephone: "+380686833368",
+    worksFor: { "@id": `${siteUrl}#business` },
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: byLang({
+        uk: "Львівський державний університет внутрішніх справ",
+        ru: "Львовский государственный университет внутренних дел",
+        en: "Lviv State University of Internal Affairs",
+      }),
+    },
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "certification",
+      name: byLang({
+        uk: "Сертифікований тестувальник та адміністратор системи EyeDetect",
+        ru: "Сертифицированный тестер и системный администратор EyeDetect",
+        en: "Certified EyeDetect Test Proctor and System Administrator",
+      }),
+      recognizedBy: { "@type": "Organization", name: "Converus", url: "https://converus.com" },
+    },
+    knowsAbout: ["EyeDetect", "VerifEye", byLang({ uk: "детектор брехні", ru: "детектор лжи", en: "lie detection" })],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
       <ConsultationSection dictionary={dictionary} />
       <DynamicSpecialistSection lang={lang} dictionary={dictionary} />

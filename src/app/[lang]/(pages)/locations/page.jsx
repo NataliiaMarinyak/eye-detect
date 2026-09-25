@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import LocationSection from "@/sections/locationSection/LocationSection";
 import { getDictionary } from "@/helpers/getDictionary";
 // import { i18n } from "@/dictionaries/i18n.config";
-import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
 
 const DynamicUkrainianCitiesSection = dynamic(() =>
   import("@/sections/ukrainianCitiesSection/UkrainianCitiesSection")
@@ -88,7 +88,7 @@ const LocationsPage = async ({ params }) => {
         "@type": "ListItem",
         position: 1,
         item: {
-          "@id": pageUrlJsonLd,
+          "@id": getHomeUrl(lang),
           name: name_01,
         },
       },

@@ -1,4 +1,4 @@
-import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
 
 const OG_IMAGES = [
   { url: "images/seo_images/opengraph-image-400x300.png", type: "image/png", width: 400, height: 300, alt: "EyeDetect" },
@@ -54,6 +54,6 @@ export const breadcrumbsJsonLd = (lang, items) => ({
   itemListElement: items.map(([path, name], i) => ({
     "@type": "ListItem",
     position: i + 1,
-    item: { "@id": `${getSeoMetaPageUrl(lang)}${path}`, name },
+    item: { "@id": path ? `${getSeoMetaPageUrl(lang)}${path}` : getHomeUrl(lang), name },
   })),
 });

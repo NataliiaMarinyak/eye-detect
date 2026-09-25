@@ -1,7 +1,8 @@
 import ContactsSection from "@/sections/contactsSection/ContactsSection";
 import HomeOrderSection from "@/sections/homeSections/homeOrderSection/HomeOrderSection";
 import { getDictionary } from "@/helpers/getDictionary";
-import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
+import { getBusinessJsonLd } from "@/helpers/getBusinessJsonLd";
 
 
 export async function generateMetadata({ params }) {
@@ -80,7 +81,7 @@ const ContactsPage = async ({ params }) => {
         "@type": "ListItem",
         position: 1,
         item: {
-          "@id": pageUrlJsonLd,
+          "@id": getHomeUrl(lang),
           name: name_01,
         },
       },
@@ -99,6 +100,10 @@ const ContactsPage = async ({ params }) => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getBusinessJsonLd(lang)) }}
       />
       <ContactsSection lang={lang} dictionary={dictionary} />
       <HomeOrderSection lang={lang} dictionary={dictionary} />
