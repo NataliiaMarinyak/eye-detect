@@ -8,8 +8,9 @@ export const orderFormSchema = (dictionary, texts = {}) => {
       .string()
       .required(dictionary.formErrors.requiredField)
       .min(2, dictionary.formErrors.shortName),
-    // Формат телефону не перевіряємо: у різних країнах він різний (рішення власника 16.09.2026).
-    tel: yup.string().required(dictionary.formErrors.requiredField),
+    // Телефон необов'язковий і без перевірки формату (рішення власника 16.09 і 26.09.2026):
+    // обов'язкове лише ім'я, порожній контакт сервер позначає в заявці.
+    tel: yup.string(),
     email: yup.string().email(dictionary.formErrors.invalidEmail),
     comment: yup.string(),
     ...(texts.choice

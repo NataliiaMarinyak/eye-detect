@@ -46,6 +46,13 @@ export async function generateMetadata({ params }) {
       type: "website",
       images: [
         {
+          url: "images/seo_images/opengraph-image-1200-630.png",
+          type: "image/png",
+          width: 1200,
+          height: 630,
+          alt: "EyeDetect",
+        },
+        {
           url: "images/seo_images/opengraph-image-400x300.png",
           type: "image/png",
           width: 400,
@@ -57,13 +64,6 @@ export async function generateMetadata({ params }) {
           type: "image/png",
           width: 800,
           height: 600,
-          alt: "EyeDetect",
-        },
-        {
-          url: "images/seo_images/opengraph-image-1200-630.png",
-          type: "image/png",
-          width: 1200,
-          height: 630,
           alt: "EyeDetect",
         },
       ],

@@ -110,12 +110,6 @@ const OrderForm = ({ dictionary, service = "", compact = true, choice = null, sh
       </div>
 
       <div className={styles.inputWrap}>
-        {!dirtyFields.tel && !errors.tel && (
-          <svg className={styles.iconMark}>
-            <use href="/sprite.svg#icon-important"></use>
-          </svg>
-        )}
-
         {errors.tel && (
           <svg className={styles.iconError}>
             <use href="/sprite.svg#icon-error" />

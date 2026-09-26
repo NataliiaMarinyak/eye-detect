@@ -105,11 +105,11 @@ export const FAQDataHome = [
     questionRus: "Безопасно ли тестирование EyeDetect для здоровья?",
     questionEng: "Is the EyeDetect test safe?",
     answer:
-      "Абсолютно безпечне. Технологія повністю безконтактна та пасивна — до вас не підключають жодних датчиків. Інфрачервона підсвітка камери відповідає міжнародним стандартам безпеки і за впливом не відрізняється від системи Face ID у сучасних смартфонах чи звичайної роботи за ноутбуком.",
+      "Так, безпечне. Технологія повністю безконтактна та пасивна — до вас не підключають жодних датчиків. Інфрачервона підсвітка камери відповідає міжнародним стандартам безпеки і за впливом не відрізняється від системи Face ID у сучасних смартфонах чи звичайної роботи за ноутбуком.",
     answerRus:
-      "Абсолютно безопасно. Технология полностью бесконтактная и пассивная — к вам не подключают никаких датчиков. Инфракрасная подсветка камеры соответствует международным стандартам безопасности и по воздействию не отличается от системы Face ID в современных смартфонах или обычной работы за ноутбуком.",
+      "Да, безопасно. Технология полностью бесконтактная и пассивная — к вам не подключают никаких датчиков. Инфракрасная подсветка камеры соответствует международным стандартам безопасности и по воздействию не отличается от системы Face ID в современных смартфонах или обычной работы за ноутбуком.",
     answerEng:
-      "Completely safe. The technology is fully contactless and passive — no sensors are attached to the body. The camera's infrared illumination meets international safety standards and is comparable in exposure to the Face ID system in modern smartphones or routine laptop use.",
+      "Yes, it is safe. The technology is fully contactless and passive — no sensors are attached to the body. The camera's infrared illumination meets international safety standards and is comparable in exposure to the Face ID system in modern smartphones or routine laptop use.",
   },
   {
     question: "Скільки коштує перевірка EyeDetect у Львові?",
