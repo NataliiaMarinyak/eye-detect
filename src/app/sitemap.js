@@ -21,12 +21,13 @@ const withLanguages = (path, priority, lastModified) => {
     ru: path ? `${baseUrl}ru/${path}` : `${baseUrl}ru`,
     en: path ? `${baseUrl}en/${path}` : `${baseUrl}en`,
   };
+  const withDefault = { ...languages, "x-default": languages.uk };
   return Object.values(languages).map((url) => ({
     url,
     lastModified,
     changeFrequency: "monthly",
     priority,
-    alternates: { languages },
+    alternates: { languages: withDefault },
   }));
 };
 

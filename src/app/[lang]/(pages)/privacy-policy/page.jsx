@@ -22,6 +22,7 @@ export async function generateMetadata({ params }) {
       canonical: `${seoMetaPageUrl}privacy-policy`,
       languages: {
         'uk': `${process.env.NEXT_PUBLIC_SEO_URL}privacy-policy`,
+        'x-default': `${process.env.NEXT_PUBLIC_SEO_URL}privacy-policy`,
         'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/privacy-policy`,
         en: `${process.env.NEXT_PUBLIC_SEO_URL}en/privacy-policy`,
       },

@@ -1,0 +1,241 @@
+# EyeDetect Lviv — full reference for AI assistants
+
+> Certified Converus partner in Ukraine. EyeDetect eye-tracking lie detector in our Lviv office and on-site across Ukraine and Europe; VerifEye online test from a smartphone from anywhere. Examiner: Nataliia Marynyak, psychologist, certified EyeDetect Test Proctor.
+
+Site: https://www.eye-polygraph.com/ (Ukrainian), https://www.eye-polygraph.com/ru (Russian), https://www.eye-polygraph.com/en (English)
+Office: 45 Horodotska St., Lviv, Ukraine. Phone: +380 68 68 333 68. Email: info@eye-polygraph.com
+Hours: we answer 24/7, usually within 15–30 minutes. Tests by appointment.
+Test languages: Ukrainian, Russian, English, German.
+
+## Key facts
+- EyeDetect (Converus, USA): 30–45 minute test in front of a camera, no sensors on the body; the Converus algorithm scores the test (Credibility Score 1–99); accuracy 86–90% per Converus validation studies (≈88% screening, ≈90% single-issue diagnostic).
+- VerifEye (Converus): online test from a smartphone, 15–20 minutes, accuracy 84–89%, PDF report within 5 minutes after the test.
+- Free VerifEye "number test" (≈5 minutes) to try the technology before ordering.
+- If the algorithm cannot score a test (inconclusive), the repeat test is at our expense.
+- Participation is voluntary, with written consent. Minors only with parents' written consent and in their presence.
+- Results are not court evidence in Ukraine: we do not issue a "court opinion"; we provide an examiner's cover letter with the PDF report. Used for internal investigations, HR screening, fidelity checks and dispute settlement.
+
+## Prices (2026, UAH)
+- EyeDetect in Lviv: one issue 5,500; up to three issues 8,500; couples (one test each, up to three issues) 15,000.
+- VerifEye online: one issue 2,500; up to three issues 4,000; two tests of three issues 6,000. Same price worldwide, no surcharges.
+- Business screening and internal investigations: on request; groups of 3+ on-site get a lower per-person rate.
+- On-site EyeDetect: Lviv region free; other regions of Ukraine 12,000 all-inclusive (test included). Abroad: 10,000 one issue / 15,000 up to three issues, travel and venue paid separately.
+- EyeDetect surcharges: urgent test within an hour +100%, Sunday +100%.
+
+## Main pages
+- [Home](https://www.eye-polygraph.com/en): lie detector in Lviv
+- [EyeDetect: how it works](https://www.eye-polygraph.com/en/eyedetect)
+- [VerifEye online test](https://www.eye-polygraph.com/en/online)
+- [Free number test](https://www.eye-polygraph.com/en/free-test)
+- [For business](https://www.eye-polygraph.com/en/business)
+- [Prices](https://www.eye-polygraph.com/en/prices)
+- [FAQ](https://www.eye-polygraph.com/en/faq): questions about EyeDetect, VerifEye and the classic polygraph
+- [Converus and the science](https://www.eye-polygraph.com/en/converus)
+- [Situations](https://www.eye-polygraph.com/en/situations): fidelity, theft, leak, hiring, dispute and more
+- [Industries](https://www.eye-polygraph.com/en/for): lawyers, banks, security, HR, counselors and more
+- [Blog](https://www.eye-polygraph.com/en/blog)
+- [Locations: Ukraine and Europe](https://www.eye-polygraph.com/en/locations)
+- [About the examiner](https://www.eye-polygraph.com/en/about-us)
+- [Contacts](https://www.eye-polygraph.com/en/contacts)
+
+## Optional
+- [Sitemap](https://www.eye-polygraph.com/sitemap.xml)
+- [Privacy policy](https://www.eye-polygraph.com/en/privacy-policy)
+
+## Frequently asked questions (from https://www.eye-polygraph.com/en/faq)
+
+### About the technology
+
+Q: What is EyeDetect?
+A: It is a lie detection test that evaluates involuntary eye behavior while a person reads statements on a screen and answers “true” or “false”. The idea was proposed in 2002 by the same University of Utah scientists who created the first computerized polygraph in 1991. The technology was named EyeDetect in 2013 and entered the market in 2014. The test takes 30–45 minutes, and there are no sensors on the body.
+
+Q: Who developed EyeDetect?
+A: John Kircher and Doug Hacker of the University of Utah. Kircher spent decades researching the polygraph; Hacker studied the psychology of reading. In 2003 they were joined by Anne Cook and Dan Woltz, and in 2009 by David Raskin, one of the best-known polygraph researchers. Together they spent more than ten years refining the method before bringing it to market.
+
+Q: What is Converus?
+A: An American company based in Lehi, Utah. It was founded in 2009 as Credibility Assessment Technologies and renamed Converus in December 2013, from the Latin con (“with”) and verus (“truth”). Converus develops EyeDetect, EyeDetect+ and VerifEye, and the tests are administered by certified partners in different countries. We are one of those partners in Ukraine.
+
+Q: What is VerifEye and how does it differ from EyeDetect?
+A: VerifEye is a separate Converus product for smartphones. The person opens a link in a free app, listens to the questions and answers out loud, while the front camera records eye reactions. The test takes 15–20 minutes, with a PDF report within 5 minutes after the test. Its accuracy is lower than EyeDetect: 84–89% depending on conditions. EyeDetect is taken on dedicated equipment with a specialist present, which is why we recommend it for serious decisions.
+
+Q: What is EyeDetect+?
+A: It is an automated polygraph: EyeDetect equipment plus polygraph sensors on the wrists and a finger instead of a cuff on the upper arm. It was created for countries and organizations where the law specifically requires a polygraph. The score is still computed by the algorithm. In Ukraine we administer EyeDetect and VerifEye tests; EyeDetect+ is not yet available in our office.
+
+Q: What is the “secret” of EyeDetect?
+A: A statistical model that weighs several dozen measures: pupil size, answer accuracy and response time, gaze fixations, blink rate, reading behavior. A high-resolution camera records this data while the person answers. The output is the Converus Credibility Score from 1 to 99: 1 to 49 means deception, 50 to 99 means truthfulness. The closer to the ends of the scale, the more confident the result; a score of 51–53 means confidence is minimal.
+
+### Accuracy and science
+
+Q: How accurate is EyeDetect?
+A: According to Converus, in multi-issue screening tests EyeDetect correctly classifies 88 people out of 100, and in single-issue diagnostic tests 90 out of 100. In a 2020 University of Utah study, the multi-issue protocol reached 88% and for the first time allowed up to four issues to be evaluated in one test. 86–90% is the share of correct results among tests with a definite result, so 10–14 out of 100 definite results may be wrong. Inconclusive results are not included in this figure; we repeat those tests at our expense.
+
+Q: How accurate is VerifEye?
+A: Converus states 84–89%. In a 2024 validation study (123 participants, laboratory conditions, a three-issue test with one comparison question) accuracy was 89%. That result was obtained under ideal conditions with a specialist supervising; without them the developer expects lower accuracy, closer to 84%. That is why we give detailed instructions on lighting, the phone and silence.
+
+Q: Are there scientific publications about EyeDetect?
+A: Yes. The Converus research group led by John Kircher has published more than 20 papers and reports on the method, which the scientific literature calls the ocular-motor deception test (ODT). Twelve of them are peer-reviewed (Converus research catalog, September 2026). The first major publication appeared in the Journal of Experimental Psychology: Applied in 2012.
+
+Q: Has EyeDetect been admitted as evidence in court?
+A: One such case is known: in May 2018 a court in Taos County, New Mexico, admitted EyeDetect results as evidence in a criminal case. In 2020 the test was mentioned in a case in Idaho, but not as evidence. In Ukraine the results of any lie detector are not evidence. The test helps make a decision; it does not replace an investigation or a court.
+
+Q: How accurate are polygraphs that check many issues at once?
+A: Worse than single-event tests. A field study for the US Secret Service (1988) showed that when a person is truthful on some questions and lies on others, almost half of the polygraph results were inconclusive, and correct decisions were 74.5%. EyeDetect is built differently: answers on each issue are compared with answers on another, so multi-issue screening yields 86–88%.
+
+Q: How accurate are EEG and fMRI as lie detectors?
+A: Studies show about 87%. But both methods require expensive medical equipment and long staff training, and they are uncomfortable for the person: they are covered in electrodes or placed in a scanner. For practical testing this is not an option.
+
+### How the test works
+
+Q: What does an EyeDetect test consist of?
+A: A pre-test interview, instructions, a short practice test and several question sessions. Each question is repeated in different wordings in random order. The statements change every 5–7 seconds, so the person has to stay focused the whole time.
+
+Q: How long does the test take?
+A: The EyeDetect test itself takes 30–45 minutes. Together with the interview and the explanation of the report, plan for about an hour. The score is ready less than five minutes after the test ends.
+
+Q: Is a pre-test interview required?
+A: Yes, and we always conduct one. The specialist obtains written consent, checks whether the person is fit to take the test, explains how the equipment works and goes through every question together with them. After the test, if the result is negative, a conversation about the reasons is possible and, if needed, an additional single-issue test.
+
+Q: Can a follow-up single-issue test be taken after screening?
+A: Yes. If, after multi-issue screening, one specific issue needs to be clarified, the person can take a single-issue diagnostic test after a break of about an hour.
+
+Q: How long does it take to learn to administer the tests?
+A: Basic Test Proctor training at Converus takes about six hours, test author training up to two more days, and interview training one day. By comparison, a polygraph examiner trains for ten weeks. Our specialist holds current EyeDetect Test Proctor and administrator certificates from Converus.
+
+Q: Can I test my husband, wife or partner?
+A: Yes, EyeDetect is used for questions of fidelity in marriage, partnership or engagement. There is one condition: the person agrees to the test voluntarily and in writing. More about fidelity testing is on a separate page.
+
+Q: What is EyeDetect most often used for?
+A: Pre-employment screening of candidates, periodic screening of employees and investigations of specific events: theft, fraud, information leaks, bribery, drug use, ties to criminal groups. Outside the US it is used by companies of any profile, government agencies and investigators in criminal and civil cases.
+
+### Who can take the test
+
+Q: Do alcohol, medication or brain injuries affect the result?
+A: Yes. Anything that slows reaction, changes eye movements or pupil size affects the test. A person who is intoxicated is not tested. Before the test there are two short checks: the pupils' reaction to a change in screen brightness and memorizing numbers. They show whether the pupils respond normally and detect pupil-dilating drops, which are treated as an attempt to cheat.
+
+Q: Which conditions and illnesses interfere with the test?
+A: Illnesses that affect the pupil and the autonomic nervous system: Parkinson's disease, diabetes, multiple sclerosis, brain or spinal cord injuries, conditions with sharp drops in blood pressure. Very dry eyes or heavy makeup can interfere with the camera, in which case calibration is performed. At the same time, EyeDetect has been successfully taken by people with ADHD, anxiety disorders, PTSD, pregnant women, people with asthma and arrhythmia, those taking antidepressants, and teenagers from age 11. We test minors only with written parental consent and a parent present. For people who read poorly there is an audio version of the test.
+
+Q: What happens if the person confesses before the test?
+A: The test becomes unnecessary. EyeDetect looks for signs of concealment, and a person who answers honestly about what they did does not show the same load as a person who is lying. So after a confession we do not run the test.
+
+Q: What if the person honestly admits guilt right during the test?
+A: The result is hard to predict. Someone who honestly answers “yes, I did it” may not show the reaction typical of lying. The test is designed specifically to detect concealed deception, not to confirm confessions.
+
+Q: Can the test be taken anonymously?
+A: Yes. Instead of a name, a number can be entered in the system, and no photo is taken. The result is then linked only to that number. For businesses this is a convenient way to avoid storing employees' personal data in reports.
+
+### Can EyeDetect be beaten
+
+Q: How does EyeDetect know a person is lying?
+A: Lying requires more mental effort than telling the truth. This changes eye behavior: during deceptive answers people blink less often, the pupil dilates more, and they read statements about their own act faster and with fewer fixations. The algorithm compares these measures across issues and computes the score.
+
+Q: Do the tricks used to “beat” the polygraph work against EyeDetect?
+A: Polygraph countermeasures are designed to trigger a bodily reaction within 20 seconds after a question. In EyeDetect the statements change every 5–7 seconds, and the person has to think constantly to avoid mistakes. There is simply no time for tricks. That is how Charles Honts, one of the leading researchers of polygraph countermeasures, explains it.
+
+Q: What happens if you close your eyes, answer at random or say “false” to everything?
+A: Closed eyes and squinting are seen by the specialist. Random answers, the same answer to everything or skipping many questions are recognized by the algorithm as a distinct pattern. Such a test will not produce a “credible” result, so these attempts do not help.
+
+Q: Can you “make up a story” and pass?
+A: Inventing and maintaining a story is exactly what increases the load on the brain, and the pupil responds to it involuntarily. Only someone able to lie with no effort at all could get around the test, and such people practically do not exist. That is why EyeDetect shows better results than other available methods.
+
+### Data security
+
+Q: How is data stored on the equipment during the test?
+A: The EyeDetect station's disk is encrypted to the AES-256 standard and certified under FIPS 140-2. Test data is accessible only to whoever holds the disk key. Before transfer to the server it is encrypted with a separate client key, and after transfer it is deleted from the station's disk.
+
+Q: How secure is the dashboard where results are stored?
+A: The Converus web dashboard opens only over a secure connection with two-factor authentication. Only authorized users have access. In our case that is one specialist who administers the tests.
+
+Q: Where is the data physically stored?
+A: On Converus's own servers in a certified data center (SSAE 16 / ISAE 3402) in a locked rack. Entry to the hall is by card and biometrics, with round-the-clock monitoring, and incoming traffic is filtered by a firewall. The servers are not rented from the data center; they belong to the developer.
+
+### EyeDetect and the classic polygraph
+
+Q: Does EyeDetect replace the polygraph?
+A: Sometimes it replaces it, more often it complements it. For checking a specific event, a good polygraph examiner and EyeDetect give comparable accuracy: EyeDetect shows 86–90% depending on the test type. For mass screening of employees EyeDetect is more convenient: faster, without sensors, and independent of the operator's skill.
+
+Q: How is the polygraph usually used and how accurate is it?
+A: Two scenarios. The first is investigating a specific event, with questions about the incident itself and comparison questions such as “have you ever lied to management”. Under optimal conditions the accuracy of such tests is about 90%. The second is employee screening with general questions (“have you used drugs in the last 90 days”). Here the questions are vague, reactions to them are similar, and accuracy drops to 65–85%.
+
+Q: What is the main difference between EyeDetect and the polygraph?
+A: The polygraph records the body's reactions to stress: breathing, pulse, sweating. Its logic: a liar reacts more emotionally to questions about their guilt. EyeDetect measures the pupil and eye movements, which reflect the brain's work while reading and answering. Its logic: lying requires more mental effort. These are two independent sources of information.
+
+Q: Can EyeDetect and the polygraph be combined?
+A: Yes. The methods measure different things: the polygraph reacts to emotion, EyeDetect to cognitive load. According to Converus, when both tests are run separately and their results agree, confidence in the conclusion is about 97%. This is not the accuracy of a single EyeDetect test.
+
+Q: Why does EyeDetect have advantages over the polygraph in screening?
+A: The test is automated and does not depend on the operator's skill; the person does not need to “appear honest” to an examiner. There are no trap comparison questions; instead, two issues control each other. The test can be run in any language without an interpreter. There are no sensors, and the test takes 30–45 minutes instead of 90 or more, so more people can be tested in the same time.
+
+Q: Why can't the specialist evaluate the eye data themselves?
+A: There is too much data and it arrives too fast: dozens of measures several times per second. Only an algorithm can weigh them, and it does so the same way for every person. That is why Converus recommends trusting the software for the score and leaves the specialist with preparing the questions, controlling the conditions and explaining the report.
+
+### About lying
+
+Q: How common is lying?
+A: In a University of Massachusetts study, 60% of people admitted they could not get through a ten-minute conversation without a single untruth. British researchers found that men lie roughly twice as often as women.
+
+Q: Does lying harm the liar?
+A: Yes. Every story requires new details, and it becomes harder and harder to keep in mind. Stanford researchers noticed that after dishonest acts people perceived hills as steeper and distances as longer: the brain treats deception as a physical burden. Participants in a Notre Dame study who were asked not to lie for a week reported better sleep, less tension and fewer headaches.
+
+Q: What kinds of lies are there?
+A: There are many ways, but the essence is one: the intent to mislead. Some lie to protect themselves, some to protect others, some embellish a story for effect or to save face. Then come lies for gain and lies to cause harm. The test does not evaluate motive: it checks only whether a specific answer about a specific fact is true.
+
+## Situations we test (https://www.eye-polygraph.com/en/situations)
+
+- [Fidelity Test on a Lie Detector](https://www.eye-polygraph.com/en/situations/fidelity): When suspicion makes life unbearable and every conversation goes in circles, the test gives a specific answer to specific questions. Specific questions about a specific period, a report within 5 minutes after the test, and no one but you will see it.
+
+- [Workplace Theft: Lie Detector Test](https://www.eye-polygraph.com/en/situations/theft): Revenue is missing, goods are gone from the warehouse, or money is gone from the safe. You suspect everyone and no one. A 30–45 minute test per person gives a clear answer for each: involved or not.
+
+- [Information Leak: Find the Source with a Lie Detector](https://www.eye-polygraph.com/en/situations/leak): A competitor knows your prices, a client received an offer from someone in your database, or plans became known before the announcement. The test checks a specific act of disclosure, not “loyalty in general”.
+
+- [Pre-Employment Lie Detector Test for Job Candidates](https://www.eye-polygraph.com/en/situations/hiring): Cashier, driver, accountant, security guard, nanny, manager with access to money. One test before the contract is signed costs less than one theft after.
+
+- [Word Against Word: A Lie Detector as the Basis for a Decision](https://www.eye-polygraph.com/en/situations/dispute): One says the debt was repaid, the other says it was not. A partner alleges a breach of an agreement. A relative denies what others saw. The test checks a specific version of events.
+
+- [Premarital Test on a Lie Detector](https://www.eye-polygraph.com/en/situations/premarital): Before a wedding, a joint mortgage, or a shared business, some questions are awkward to ask out loud: debts, children, past marriages, addictions. The test gives a precise answer to them in one visit. It is not about suspicion; it is about starting a life together with nothing left unsaid.
+
+- [Money Missing in the Family: a Lie Detector Instead of Suspicion](https://www.eye-polygraph.com/en/situations/family-money): Money disappeared from the house, a safe, or a joint card, and suspicion falls on everyone at once: children, relatives, the housekeeper, a business partner. The test checks everyone who had access in one day and clears the innocent. Relationships are not destroyed by guesswork.
+
+- [Gambling and Hidden Spending: A Lie Detector Test](https://www.eye-polygraph.com/en/situations/gambling): Bets, online casinos, payday loans, and sold belongings are rarely visible right away, and suspicion destroys trust faster than the debt itself. The test answers specific questions about a specific period. For someone in recovery from gambling addiction, it is a way to show a partner, with a result rather than words, that they are not gambling.
+
+- [Second Opinion on a Polygraph Result: A Lie Detector Retest](https://www.eye-polygraph.com/en/situations/second-opinion): You took a classic polygraph at work or with a private examiner and disagree with the conclusion. Or you are an employer or a partner and doubt another examiner's report. EyeDetect tests the same questions with a different method: eye reactions are scored by an algorithm, not a person.
+
+- [Money Missing in the Family: a Lie Detector Instead of Suspicion](https://www.eye-polygraph.com/en/situations/family-money): Money disappeared from the house, a safe, or a joint card, and suspicion falls on everyone at once: children, relatives, the housekeeper, a business partner. The test checks everyone who had access in one day and clears the innocent. Relationships are not destroyed by guesswork.
+
+- [Gambling and Hidden Spending: A Lie Detector Test](https://www.eye-polygraph.com/en/situations/gambling): Bets, online casinos, payday loans, and sold belongings are rarely visible right away, and suspicion destroys trust faster than the debt itself. The test answers specific questions about a specific period. For someone in recovery from gambling addiction, it is a way to show a partner, with a result rather than words, that they are not gambling.
+
+- [Premarital Test on a Lie Detector](https://www.eye-polygraph.com/en/situations/premarital): Before a wedding, a joint mortgage, or a shared business, some questions are awkward to ask out loud: debts, children, past marriages, addictions. The test gives a precise answer to them in one visit. It is not about suspicion; it is about starting a life together with nothing left unsaid.
+
+- [Second Opinion on a Polygraph Result: A Lie Detector Retest](https://www.eye-polygraph.com/en/situations/second-opinion): You took a classic polygraph at work or with a private examiner and disagree with the conclusion. Or you are an employer or a partner and doubt another examiner's report. EyeDetect tests the same questions with a different method: eye reactions are scored by an algorithm, not a person.
+
+## Industries (https://www.eye-polygraph.com/en/for)
+
+- [Lie Detector for Lawyers and Private Investigators](https://www.eye-polygraph.com/en/for/lawyers): EyeDetect gives a lawyer or investigator a fast answer: is a specific version of events true? A single-issue test takes 30–45 minutes, and the score is computed by an algorithm, not a person. The result is not admissible evidence in court, but it saves weeks of work in the wrong direction.
+
+- [Lie Detector Screening for Bank Employees](https://www.eye-polygraph.com/en/for/finance): A seasoned manager with 25 years of service and a new teller have the same access to accounts. Pre-employment screening and periodic EyeDetect testing of employees reduce the risk of theft, fraud, and client data leaks.
+
+- [Lie Detector Screening for Security Guards](https://www.eye-polygraph.com/en/for/security): A clean criminal record certificate and a drug test do not show what a person was never caught for. In 30–45 minutes, EyeDetect checks a candidate for theft, drug use, ties to criminal groups, and the honesty of their application form. Investigating an incident at a site takes 30–45 minutes per person.
+
+- [Online Lie Detector for Candidate Screening](https://www.eye-polygraph.com/en/for/hr): VerifEye is a Converus app that checks a candidate on their own phone in 15–20 minutes: is the resume honest, was there theft at a previous job, do they use drugs. We prepare the questions and send the link; you receive the result. For remote teams and regional branches.
+
+- [The EyeDetect Lie Detector for Psychologists](https://www.eye-polygraph.com/en/for/counselors): When one partner suspects and the other denies, therapy goes in circles. A 30–45 minute EyeDetect test gives both a specific answer to a specific question and lets you work with reality rather than competing versions. No sensors on the person being tested, nothing that breaks the trust in your office.
+
+- [Lie Detector for Recruiting Agencies](https://www.eye-polygraph.com/en/for/recruiting): The agency adds candidate screening to its service and hands the client a report along with the resume. Candidates take VerifEye online from a phone before the interview; EyeDetect in Lviv or on-site at the client covers key positions. The candidate reads all questions in advance and takes the test only with written consent.
+
+- [Lie Detector for Defense Tech Companies and Contractors](https://www.eye-polygraph.com/en/for/miltech): Drawings, suppliers, volumes, and delivery dates interest the enemy no less than the finished product. EyeDetect checks facts: contacts with Russia and occupied territories, passing files to outsiders, theft of components. The test complements your security department's internal vetting and is run at your site.
+
+- [Online Lie Detector for Remote Teams](https://www.eye-polygraph.com/en/for/remote-teams): A media buyer in Warsaw, a developer in Dnipro, a team lead in Kyiv. All of them have access to ad accounts, budgets, databases, and code, and there is no way to meet them in one office. VerifEye tests a person on their own phone in 15–20 minutes from any city. For key people there is EyeDetect in Lviv or on-site.
+
+- [Lie Detector for a Logistics Company](https://www.eye-polygraph.com/en/for/logistics): Drivers, forwarders, and warehouse staff are alone with goods, fuel, and delivery notes every day. In 30–45 minutes EyeDetect checks specific facts: siphoning fuel, carrying off-the-books cargo, taking goods out of the warehouse. We come to your warehouse or depot and test 6–8 people a day.
+
+- [Lie Detector for Retail and Cash-Handling Positions](https://www.eye-polygraph.com/en/for/retail): The register, the safe, the cash-collection bag, and the stockroom pass through staff hands every day. In 30–45 minutes EyeDetect checks specific facts: taking money from the register, processing refunds without goods, ringing up discounts for friends. We screen candidates for cash-handling positions and test employees after a shortage.
+
+- [Lie Detector for a Developer or Real Estate Agency](https://www.eye-polygraph.com/en/for/real-estate): A foreman signs acceptance certificates with a contractor, a sales manager keeps a database of hundreds of clients, a property management company handles residents' money. In 30–45 minutes EyeDetect checks specific facts: receiving a kickback, passing on the database, closing a deal behind the agency's back. In our Lviv office or on-site at your project.
+
+- [Lie Detector for Clinics and Pharmacies](https://www.eye-polygraph.com/en/for/medical): Medical staff have access to drugs, the cash register, and patient data at the same time, and no inventory system closes all three risks. EyeDetect checks specific facts in 30–45 minutes with no sensors on the body. The format works for pre-employment screening and for establishing what happened after an incident.
+
+- [Lie Detector for Nannies and Household Staff](https://www.eye-polygraph.com/en/for/household): You entrust a person with your child, your elderly parents, or the keys to your home on the strength of a reference and a two-hour interview. EyeDetect adds one more source of information: answers to specific questions about the past, scored by an algorithm. The test is calm, has no sensors, and takes 30–45 minutes.
+
+- [Lie Detector for Insurance Companies](https://www.eye-polygraph.com/en/for/insurance): Some claims can be neither confirmed nor refuted by documents: there are no witnesses, the expert gives a range, and the claimant insists. EyeDetect checks specific facts of the event in 30–45 minutes and returns a score from 1 to 99. Insurance was one of the first segments where Converus applied EyeDetect in the US.
+
+- [Lie Detector for Franchisors: Partner Screening](https://www.eye-polygraph.com/en/for/franchise): You hand a partner your brand, standards, and customer base, but can only check the documents they chose to provide. In 30–45 minutes EyeDetect checks specific facts: debts, convictions, a parallel business, real revenue. One test before signing the agreement costs less than terminating it after.

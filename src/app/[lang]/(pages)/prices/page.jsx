@@ -19,6 +19,7 @@ export async function generateMetadata({ params }) {
       canonical: `${seoMetaPageUrl}prices`,
       languages: {
         uk: `${process.env.NEXT_PUBLIC_SEO_URL}prices`,
+        "x-default": `${process.env.NEXT_PUBLIC_SEO_URL}prices`,
         ru: `${process.env.NEXT_PUBLIC_SEO_URL}ru/prices`,
         en: `${process.env.NEXT_PUBLIC_SEO_URL}en/prices`,
       },

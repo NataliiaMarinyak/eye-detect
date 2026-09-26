@@ -32,6 +32,7 @@ export async function generateMetadata({ params }) {
       canonical: `${seoMetaPageUrl}locations`,
       languages: {
         'uk': `${process.env.NEXT_PUBLIC_SEO_URL}locations`,
+        'x-default': `${process.env.NEXT_PUBLIC_SEO_URL}locations`,
         'ru': `${process.env.NEXT_PUBLIC_SEO_URL}ru/locations`,
         'en': `${process.env.NEXT_PUBLIC_SEO_URL}en/locations`,
       },

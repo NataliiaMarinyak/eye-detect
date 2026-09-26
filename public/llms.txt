@@ -1,26 +1,39 @@
-# EyeDetect Lviv — lie detector (polygraph) testing in Ukraine
+# EyeDetect Lviv — lie detector (polygraph) testing in Ukraine and Europe
 
-> Certified Converus partner in Ukraine. EyeDetect eye-tracking lie detector in Lviv and on-site across Ukraine and Europe, VerifEye online test from a smartphone. Examiner: Nataliia Marynyak, psychologist, certified EyeDetect Test Proctor.
+> Certified Converus partner in Ukraine. EyeDetect eye-tracking lie detector in our Lviv office and on-site across Ukraine and Europe; VerifEye online test from a smartphone from anywhere. Examiner: Nataliia Marynyak, psychologist, certified EyeDetect Test Proctor.
 
-Site: https://www.eye-polygraph.com/ (Ukrainian), https://www.eye-polygraph.com/en/ (English), https://www.eye-polygraph.com/ru/ (Russian)
+Site: https://www.eye-polygraph.com/ (Ukrainian), https://www.eye-polygraph.com/ru (Russian), https://www.eye-polygraph.com/en (English)
 Office: 45 Horodotska St., Lviv, Ukraine. Phone: +380 68 68 333 68. Email: info@eye-polygraph.com
+Hours: we answer 24/7, usually within 15–30 minutes. Tests by appointment.
+Test languages: Ukrainian, Russian, English, German.
+Detailed version for AI assistants: https://www.eye-polygraph.com/llms-full.txt
 
 ## Key facts
-- EyeDetect (Converus, USA): 30–45 minute test, no sensors on the body, the algorithm scores the test (Credibility Score 1–99), accuracy 86–90% per Converus validation studies.
-- VerifEye (Converus): online test from a smartphone, up to 15 minutes, accuracy 84–89%, PDF report within 5 minutes after the test.
-- Prices (Lviv, 2026): EyeDetect single issue UAH 5,500; up to three issues UAH 8,500; VerifEye online UAH 2,500 / 4,000; business screening on request; on-site travel within the Lviv region free, other regions of Ukraine UAH 12,000 all-inclusive.
-- Results are not court evidence in Ukraine (we do not issue a “court opinion”, but provide an examiner's cover letter with the report); used for internal investigations, HR screening, fidelity checks and settlements.
+- EyeDetect (Converus, USA): 30–45 minute test in front of a camera, no sensors on the body; the Converus algorithm scores the test (Credibility Score 1–99); accuracy 86–90% per Converus validation studies (≈88% screening, ≈90% single-issue diagnostic).
+- VerifEye (Converus): online test from a smartphone, 15–20 minutes, accuracy 84–89%, PDF report within 5 minutes after the test.
+- Free VerifEye "number test" (≈5 minutes) to try the technology before ordering.
+- If the algorithm cannot score a test (inconclusive), the repeat test is at our expense.
+- Participation is voluntary, with written consent. Minors only with parents' written consent and in their presence.
+- Results are not court evidence in Ukraine: we do not issue a "court opinion"; we provide an examiner's cover letter with the PDF report. Used for internal investigations, HR screening, fidelity checks and dispute settlement.
+
+## Prices (2026, UAH)
+- EyeDetect in Lviv: one issue 5,500; up to three issues 8,500; couples (one test each, up to three issues) 15,000.
+- VerifEye online: one issue 2,500; up to three issues 4,000; two tests of three issues 6,000. Same price worldwide, no surcharges.
+- Business screening and internal investigations: on request; groups of 3+ on-site get a lower per-person rate.
+- On-site EyeDetect: Lviv region free; other regions of Ukraine 12,000 all-inclusive (test included). Abroad: 10,000 one issue / 15,000 up to three issues, travel and venue paid separately.
+- EyeDetect surcharges: urgent test within an hour +100%, Sunday +100%.
 
 ## Main pages
-- [Home (UK)](https://www.eye-polygraph.com/): lie detector in Lviv
+- [Home](https://www.eye-polygraph.com/en): lie detector in Lviv
 - [EyeDetect: how it works](https://www.eye-polygraph.com/en/eyedetect)
 - [VerifEye online test](https://www.eye-polygraph.com/en/online)
+- [Free number test](https://www.eye-polygraph.com/en/free-test)
 - [For business](https://www.eye-polygraph.com/en/business)
 - [Prices](https://www.eye-polygraph.com/en/prices)
-- [FAQ](https://www.eye-polygraph.com/en/faq): 40 questions about EyeDetect, VerifEye and the classic polygraph
+- [FAQ](https://www.eye-polygraph.com/en/faq): questions about EyeDetect, VerifEye and the classic polygraph
 - [Converus and the science](https://www.eye-polygraph.com/en/converus)
-- [Situations](https://www.eye-polygraph.com/en/situations/fidelity): fidelity, theft, leak, hiring, dispute
-- [For lawyers, banks, security, HR, counselors](https://www.eye-polygraph.com/en/for/lawyers)
+- [Situations](https://www.eye-polygraph.com/en/situations): fidelity, theft, leak, hiring, dispute and more
+- [Industries](https://www.eye-polygraph.com/en/for): lawyers, banks, security, HR, counselors and more
 - [Blog](https://www.eye-polygraph.com/en/blog)
 - [Locations: Ukraine and Europe](https://www.eye-polygraph.com/en/locations)
 - [About the examiner](https://www.eye-polygraph.com/en/about-us)
