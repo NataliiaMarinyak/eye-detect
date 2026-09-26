@@ -1,7 +1,5 @@
 import dynamic from "next/dynamic";
 import ConsultationSection from "@/sections/consultationSection/ConsultationSection";
-import InfoSections from "@/sections/infoPage/InfoSections";
-import { aboutTeamMedia } from "@/data/pages/aboutTeamMedia";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
 
@@ -158,7 +156,6 @@ const AboutUsPage = async ({ params }) => {
       />
       <ConsultationSection dictionary={dictionary} />
       <DynamicSpecialistSection lang={lang} dictionary={dictionary} />
-      <InfoSections blocks={aboutTeamMedia[lang] || aboutTeamMedia.uk} lang={lang} />
       <DynamicHomeCertificatesSection
         isOnHomePage={false}
         lang={lang}
