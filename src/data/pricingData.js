@@ -17,8 +17,8 @@ export const pricingGroups = [
         nameRus: "Проверка на верность — один вопрос",
         nameEng: "Fidelity test — one issue",
         price: 5500,
-        priceLabel: "5 500 ₴",
-        priceLabelRus: "5 500 ₴",
+        priceLabel: "5 500 ₴",
+        priceLabelRus: "5 500 ₴",
         priceLabelEng: "UAH 5,500",
       },
       {
@@ -26,8 +26,8 @@ export const pricingGroups = [
         nameRus: "Расширенная проверка — до трёх вопросов",
         nameEng: "Extended test — up to three issues",
         price: 8500,
-        priceLabel: "8 500 ₴",
-        priceLabelRus: "8 500 ₴",
+        priceLabel: "8 500 ₴",
+        priceLabelRus: "8 500 ₴",
         priceLabelEng: "UAH 8,500",
       },
       {
@@ -35,8 +35,8 @@ export const pricingGroups = [
         nameRus: "Проверка для пары — по одному тесту EyeDetect каждому, до трёх вопросов",
         nameEng: "Couples test — one EyeDetect test each, up to three issues",
         price: 15000,
-        priceLabel: "15 000 ₴",
-        priceLabelRus: "15 000 ₴",
+        priceLabel: "15 000 ₴",
+        priceLabelRus: "15 000 ₴",
         priceLabelEng: "UAH 15,000",
       },
     ],
@@ -52,8 +52,8 @@ export const pricingGroups = [
         nameRus: "Онлайн-тест — один вопрос",
         nameEng: "Online test — one issue",
         price: 2500,
-        priceLabel: "2 500 ₴",
-        priceLabelRus: "2 500 ₴",
+        priceLabel: "2 500 ₴",
+        priceLabelRus: "2 500 ₴",
         priceLabelEng: "UAH 2,500",
       },
       {
@@ -61,8 +61,8 @@ export const pricingGroups = [
         nameRus: "Онлайн-тест — до трёх вопросов",
         nameEng: "Online test — up to three issues",
         price: 4000,
-        priceLabel: "4 000 ₴",
-        priceLabelRus: "4 000 ₴",
+        priceLabel: "4 000 ₴",
+        priceLabelRus: "4 000 ₴",
         priceLabelEng: "UAH 4,000",
       },
       {
@@ -70,8 +70,8 @@ export const pricingGroups = [
         nameRus: "Онлайн-тест — два теста по 3 вопроса",
         nameEng: "Online test — two tests of 3 issues each",
         price: 6000,
-        priceLabel: "6 000 ₴",
-        priceLabelRus: "6 000 ₴",
+        priceLabel: "6 000 ₴",
+        priceLabelRus: "6 000 ₴",
         priceLabelEng: "UAH 6,000",
       },
     ],
@@ -119,8 +119,8 @@ export const pricingGroups = [
         nameRus: "EyeDetect — один вопрос",
         nameEng: "EyeDetect — one issue",
         price: 10000,
-        priceLabel: "10 000 ₴",
-        priceLabelRus: "10 000 ₴",
+        priceLabel: "10 000 ₴",
+        priceLabelRus: "10 000 ₴",
         priceLabelEng: "UAH 10,000",
       },
       {
@@ -128,8 +128,8 @@ export const pricingGroups = [
         nameRus: "EyeDetect — до трёх вопросов",
         nameEng: "EyeDetect — up to three issues",
         price: 15000,
-        priceLabel: "15 000 ₴",
-        priceLabelRus: "15 000 ₴",
+        priceLabel: "15 000 ₴",
+        priceLabelRus: "15 000 ₴",
         priceLabelEng: "UAH 15,000",
       },
       {
@@ -144,8 +144,8 @@ export const pricingGroups = [
         name: "VerifEye онлайн",
         nameRus: "VerifEye онлайн",
         nameEng: "VerifEye online",
-        priceLabel: "2 500 / 4 000 / 6 000 ₴, без доплат",
-        priceLabelRus: "2 500 / 4 000 / 6 000 ₴, без доплат",
+        priceLabel: "2 500 / 4 000 / 6 000 ₴, без доплат",
+        priceLabelRus: "2 500 / 4 000 / 6 000 ₴, без доплат",
         priceLabelEng: "UAH 2,500 / 4,000 / 6,000, no surcharge",
       },
     ],
@@ -168,8 +168,8 @@ export const pricingGroups = [
         name: "Інші області України",
         nameRus: "Другие области Украины",
         nameEng: "Other regions of Ukraine",
-        priceLabel: "12 000 ₴ під ключ, разом із тестом",
-        priceLabelRus: "12 000 ₴ под ключ, вместе с тестом",
+        priceLabel: "12 000 ₴ під ключ, разом із тестом",
+        priceLabelRus: "12 000 ₴ под ключ, вместе с тестом",
         priceLabelEng: "UAH 12,000 all-inclusive, test included",
       },
     ],
@@ -231,18 +231,18 @@ export const pricingIncluded = [
   },
 ];
 
-// Порівняння зі світовими цінами. Курс НБУ на 15.09.2026: 1 PLN = 11,8663 ₴, 1 USD = 44,618 ₴.
-// Джерела: eyedetect.pl (1 290 zł скринінг до 4 тем, 1 590 zł діагностичний тест на 1 тему)
+// Порівняння зі світовими цінами. Курс НБУ на 15.09.2026: 1 PLN = 11,8663 ₴, 1 USD = 44,618 ₴.
+// Джерела: eyedetect.pl (1 290 zł скринінг до 4 тем, 1 590 zł діагностичний тест на 1 тему)
 // і eyecanknow.com (VerifEye від $69), перевірено у вересні 2026.
 // Рядок Великої Британії прибрано за рішенням власника 15.09.2026.
 export const pricingComparison = {
-  text: "Той самий тест EyeDetect на тому самому обладнанні й з тією самою сертифікацією Converus у інших країнах коштує помітно дорожче. У Львові тест на одне питання — 5 500 ₴, онлайн VerifEye — 2 500 ₴.",
-  textRus: "Тот же тест EyeDetect на том же оборудовании и с той же сертификацией Converus в других странах стоит заметно дороже. Во Львове тест на один вопрос — 5 500 ₴, онлайн VerifEye — 2 500 ₴.",
+  text: "Той самий тест EyeDetect на тому самому обладнанні й з тією самою сертифікацією Converus у інших країнах коштує помітно дорожче. У Львові тест на одне питання — 5 500 ₴, онлайн VerifEye — 2 500 ₴.",
+  textRus: "Тот же тест EyeDetect на том же оборудовании и с той же сертификацией Converus в других странах стоит заметно дороже. Во Львове тест на один вопрос — 5 500 ₴, онлайн VerifEye — 2 500 ₴.",
   textEng: "The same EyeDetect test on the same equipment with the same Converus certification costs noticeably more abroad. In Lviv a single-issue test is UAH 5,500, VerifEye online UAH 2,500.",
   rows: [
-    { country: "Польща", countryRus: "Польша", countryEng: "Poland", price: "1 290–1 590 zł", priceEng: "PLN 1,290–1,590", uah: "≈ 15 300–18 900 ₴", uahEng: "≈ UAH 15,300–18,900", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
-    { country: "США", countryRus: "США", countryEng: "USA", price: "$69", uah: "≈ 3 100 ₴", uahEng: "≈ UAH 3,100", note: "VerifEye онлайн", noteRus: "VerifEye онлайн", noteEng: "VerifEye online" },
-    { country: "Львів", countryRus: "Львов", countryEng: "Lviv", price: "5 500 ₴ / 2 500 ₴", priceEng: "UAH 5,500 / UAH 2,500", uah: "", uahEng: "", note: "EyeDetect у кабінеті / VerifEye онлайн", noteRus: "EyeDetect в кабинете / VerifEye онлайн", noteEng: "EyeDetect in office / VerifEye online" },
+    { country: "Польща", countryRus: "Польша", countryEng: "Poland", price: "1 290–1 590 zł", priceEng: "PLN 1,290–1,590", uah: "≈ 15 300–18 900 ₴", uahEng: "≈ UAH 15,300–18,900", note: "EyeDetect у кабінеті", noteRus: "EyeDetect в кабинете", noteEng: "EyeDetect in office" },
+    { country: "США", countryRus: "США", countryEng: "USA", price: "$69", uah: "≈ 3 100 ₴", uahEng: "≈ UAH 3,100", note: "VerifEye онлайн", noteRus: "VerifEye онлайн", noteEng: "VerifEye online" },
+    { country: "Львів", countryRus: "Львов", countryEng: "Lviv", price: "5 500 ₴ / 2 500 ₴", priceEng: "UAH 5,500 / UAH 2,500", uah: "", uahEng: "", note: "EyeDetect у кабінеті / VerifEye онлайн", noteRus: "EyeDetect в кабинете / VerifEye онлайн", noteEng: "EyeDetect in office / VerifEye online" },
   ],
 };
 

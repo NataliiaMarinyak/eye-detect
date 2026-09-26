@@ -67,8 +67,8 @@
     width: 24px;
     min-width: 24px;
     height: 24px;
-    stroke: $textDarkColor;
-    fill: none;
+    // Суцільна галочка: пунктирне коло виглядало як заглушка.
+    color: $btnBgColor;
   }
 
   @media screen and (min-width: $tablet) {

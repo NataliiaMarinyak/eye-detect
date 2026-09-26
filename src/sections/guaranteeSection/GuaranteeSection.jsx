@@ -28,7 +28,7 @@ const GuaranteeSection = ({ lang, dictionary, compact = false, items }) => {
             return (
               <li key={i} className={styles.item}>
                 <svg className={styles.icon}>
-                  <use href="/sprite.svg#icon-cross-in-circle"></use>
+                  <use href="/sprite.svg#icon-check-mark-in-circle"></use>
                 </svg>
                 <p className={styles.text}>{text}</p>
               </li>

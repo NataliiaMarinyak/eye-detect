@@ -70,7 +70,7 @@ const PricesSection = ({ lang, dictionary }) => {
 
         <p className={styles.guarantee}>
           <svg className={styles.guaranteeIcon} aria-hidden="true">
-            <use href="/sprite.svg#icon-cross-in-circle"></use>
+            <use href="/sprite.svg#icon-check-solid"></use>
           </svg>
           <span>{pick(pricingGuarantee, "text")}</span>
         </p>
@@ -97,7 +97,7 @@ const PricesSection = ({ lang, dictionary }) => {
             {pricingIncluded.map((el, i) => (
               <li key={i} className={styles.includedItem}>
                 <svg className={styles.icon}>
-                  <use href="/sprite.svg#icon-cross-in-circle"></use>
+                  <use href="/sprite.svg#icon-check-solid"></use>
                 </svg>
                 <span>{pick(el, "text")}</span>
               </li>

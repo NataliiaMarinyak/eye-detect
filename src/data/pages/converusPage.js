@@ -141,8 +141,8 @@ export const converusPage = {
           "2021: EyeDetect відзначений урядовою нагородою безпеки Govies від Security Today.",
           "2020: EyeDetect+ названий продуктом року у категорії скринінгу працівників.",
           "2019: EyeDetect for Investigations переміг у категорії корпоративного ПЗ на Utah Innovation Awards.",
-          "2017: фіналіст Red Herring Top 100 North America.",
           "2018: суд округу Таос (Нью-Мексико) допустив результати EyeDetect як доказ.",
+          "2017: фіналіст Red Herring Top 100 North America.",
         ],
       },
       {
@@ -300,8 +300,8 @@ export const converusPage = {
           "2021: EyeDetect отмечен правительственной наградой безопасности Govies от Security Today.",
           "2020: EyeDetect+ назван продуктом года в категории скрининга сотрудников.",
           "2019: EyeDetect for Investigations победил в категории корпоративного ПО на Utah Innovation Awards.",
-          "2017: финалист Red Herring Top 100 North America.",
           "2018: суд округа Таос (Нью-Мексико) допустил результаты EyeDetect как доказательство.",
+          "2017: финалист Red Herring Top 100 North America.",
         ],
       },
       {
@@ -459,8 +459,8 @@ export const converusPage = {
           "2021: EyeDetect received the Govies government security award from Security Today.",
           "2020: EyeDetect+ named product of the year in the employee screening category.",
           "2019: EyeDetect for Investigations won the enterprise software category at the Utah Innovation Awards.",
-          "2017: finalist, Red Herring Top 100 North America.",
           "2018: a Taos County court (New Mexico) admitted EyeDetect results as evidence.",
+          "2017: finalist, Red Herring Top 100 North America.",
         ],
       },
       {

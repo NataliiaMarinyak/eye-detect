@@ -190,9 +190,8 @@
   width: 24px;
   height: 24px;
   margin-top: 2px;
-  // Символ у спрайті намальований обведенням, тому фарбуємо stroke, а не fill.
-  fill: none;
-  stroke: $btnBgColor;
+  // Галочка icon-check-solid: коло зафарбоване currentColor, сама галочка біла.
+  color: $btnBgColor;
 }
 
 .comparison {
@@ -316,6 +315,5 @@
   width: 24px;
   height: 24px;
   margin-top: 1px;
-  fill: none;
-  stroke: $btnBgColor;
+  color: $btnBgColor;
 }

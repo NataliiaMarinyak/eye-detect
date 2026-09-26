@@ -67,8 +67,8 @@ export const specialistData = [
         listEng: ["Diagnostic work, conducting training sessions and short lectures."],
       },
       {
-        subTitle: "Психолог у компанії 'Поліграф Львів' (з 2018 р.)",
-        subTitleRus: "Психолог в компании 'Полиграф Львов' (с 2018 года)",
+        subTitle: "Психолог у компанії «Поліграф Львів» (з 2018 р.)",
+        subTitleRus: "Психолог в компании «Полиграф Львов» (с 2018 года)",
         subTitleEng: "Psychologist at Polygraph Lviv (since 2018)",
         list: [
           "Консультації та складання психологічних портретів кандидатів для оцінки персоналу.",

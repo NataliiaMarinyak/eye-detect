@@ -32,7 +32,7 @@ const SpecialistSection = ({ lang, dictionary }) => {
                         <li key={i} className={styles.details}>
                           <h4 className={styles.detailsTitle}>
                             <svg>
-                              <use href="/sprite.svg#icon-check-mark-in-circle"></use>
+                              <use href="/sprite.svg#icon-check-solid"></use>
                             </svg>
                             {getLocalizedField(det, "subTitle", lang)}
                           </h4>
