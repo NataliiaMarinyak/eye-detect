@@ -95,6 +95,11 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
+// Лише uk/ru/en. Відсутні файли на кшталт /abc.txt чи /x.png middleware не
+// переписує, і вони потрапляли сюди як «мова» abc.txt — сторінка падала з
+// помилкою 500 (Unsupported locale). Тепер це звичайна 404.
+export const dynamicParams = false;
+
 export default async function RootLayout({ children, params }) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
