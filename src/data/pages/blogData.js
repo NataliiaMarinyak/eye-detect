@@ -16,6 +16,7 @@ const blogPosts1 = [
     uk: {
       title: "Які питання ставлять на поліграфі при прийомі на роботу",
       description: "Які теми перевіряють на детекторі брехні перед наймом: крадіжки, наркотики, судимості, резюме, зв'язки з конкурентами. Як звучать питання і чи можна відмовитися.",
+      seoDescription: "Що перевіряють на детекторі брехні перед наймом: крадіжки, наркотики, судимості, резюме, зв'язки з конкурентами. Як звучать питання і чи можна відмовитися.",
       h1: "Які питання ставлять на поліграфі при прийомі на роботу",
       lead: "Кандидати бояться цього тесту більше, ніж варто. Питання не про особисте життя і не про «чи ви хороша людина». Вони про конкретні факти, які важливі для посади, і всі їх людина читає заздалегідь.",
       sections: [
@@ -33,6 +34,7 @@ const blogPosts1 = [
     ru: {
       title: "Какие вопросы задают на полиграфе при приёме на работу",
       description: "Список тем, которые проверяют на детекторе лжи перед наймом: кражи, наркотики, судимости, резюме, связи с конкурентами. Как формулируются вопросы и можно ли отказаться.",
+      seoDescription: "Что проверяют на детекторе лжи перед наймом: кражи, наркотики, судимости, резюме, связи с конкурентами. Как звучат вопросы и можно ли отказаться.",
       h1: "Какие вопросы задают на полиграфе при приёме на работу",
       lead: "Кандидаты боятся этого теста больше, чем стоит. Вопросы не о личной жизни и не о том, «хороший ли вы человек». Они о конкретных фактах, важных для должности, и все их человек читает заранее.",
       sections: [
@@ -50,6 +52,7 @@ const blogPosts1 = [
     en: {
       title: "What Questions Are Asked on a Pre-Employment Polygraph",
       description: "Which topics a pre-employment lie detector test covers: theft, drugs, criminal records, résumé claims, ties to competitors. How the questions are worded and whether you can decline.",
+      seoDescription: "What a pre-employment lie detector test covers: theft, drugs, criminal records, résumé claims, ties to competitors. How questions sound and if you can refuse.",
       h1: "What Questions Are Asked on a Pre-Employment Polygraph",
       lead: "Candidates fear this test more than they should. The questions are not about your private life and not about whether you are “a good person”. They are about specific facts that matter for the position, and the candidate reads all of them in advance.",
       sections: [
@@ -88,6 +91,7 @@ const blogPosts1 = [
     ru: {
       title: "Можно ли обмануть детектор лжи: что работает, а что нет",
       description: "Кнопка в ботинке, успокоительные, счёт в уме, «поверить в собственную ложь». Что из этого срабатывает против классического полиграфа, а что против EyeDetect. Честный ответ специалиста.",
+      seoDescription: "Кнопка в ботинке, успокоительные, счёт в уме, «поверить в свою ложь». Что из этого работает против полиграфа, а что против EyeDetect. Честный ответ.",
       h1: "Можно ли обмануть детектор лжи",
       lead: "В интернете десятки советов, как «пройти полиграф». Большинство из них о классическом приборе с датчиками и о 1990-х. Разберём по очереди, что из этого до сих пор работает. Коротко: эти приёмы рассчитаны на классический полиграф, а не на тест по движениям глаз.",
       sections: [
@@ -104,6 +108,7 @@ const blogPosts1 = [
     en: {
       title: "Can You Beat a Lie Detector: What Works and What Does Not",
       description: "A tack in the shoe, sedatives, counting in your head, “believing your own lie”. Which of these work against a classic polygraph, and which work against EyeDetect.",
+      seoDescription: "A tack in the shoe, sedatives, mental counting, “believing your own lie”. Which of these work against a classic polygraph, and which against EyeDetect.",
       h1: "Can You Beat a Lie Detector",
       lead: "The internet is full of tips on how to “pass a polygraph”. Most of them are about the classic device with sensors and about the 1990s. Let us go through them one by one and see what still works. In short: these tricks are designed for the classic polygraph, not for a test based on eye movements.",
       sections: [
@@ -159,6 +164,7 @@ const blogPosts1 = [
     en: {
       title: "How to Prepare for a Lie Detector Test",
       description: "What to do the day before an EyeDetect or VerifEye test: sleep, food, medication, glasses, clothing. What to bring and what not to do. A short checklist from the examiner.",
+      seoDescription: "What to do the day before an EyeDetect or VerifEye test: sleep, food, medication, glasses, clothing. What to bring and what to avoid. A short checklist.",
       h1: "How to Prepare for a Lie Detector Test",
       lead: "Preparation is not about “passing”. It is about making the test valid on the first attempt. Most inconclusive results come down to lack of sleep and rushing.",
       sections: [
@@ -196,7 +202,9 @@ const blogPosts1 = [
     },
     ru: {
       title: "Является ли результат детектора лжи доказательством в суде в Украине",
+      seoTitle: "Является ли детектор лжи доказательством в суде Украины",
       description: "Честный ответ: нет, результат теста не является доказательством. Но его используют в мировых соглашениях, внутренних расследованиях и как основание для решений. Что говорит закон и как это работает на практике.",
+      seoDescription: "Честный ответ: нет, результат теста не доказательство. Но его используют в мировых соглашениях, внутренних расследованиях и для решений. Что говорит закон.",
       h1: "Является ли результат детектора лжи доказательством в суде",
       lead: "Коротко: нет. Ни классический полиграф, ни EyeDetect не являются доказательством в понимании уголовного или гражданского процесса Украины. Длинный ответ интереснее, потому что тест всё равно меняет ход дел.",
       sections: [
@@ -212,7 +220,9 @@ const blogPosts1 = [
     },
     en: {
       title: "Is a Lie Detector Result Admissible as Evidence in a Ukrainian Court",
+      seoTitle: "Is a Lie Detector Result Evidence in a Ukrainian Court?",
       description: "The honest answer: no, the test result is not evidence. But it is used in settlement agreements, internal investigations and as a basis for decisions. What the law says.",
+      seoDescription: "The honest answer: no, the result is not evidence. But it is used in settlements, internal investigations and as a basis for decisions. What the law says.",
       h1: "Is a Lie Detector Result Admissible as Evidence in Court",
       lead: "In short: no. Neither the classic polygraph nor EyeDetect counts as evidence under Ukrainian criminal or civil procedure. The longer answer is more interesting, because the test still changes how cases play out.",
       sections: [

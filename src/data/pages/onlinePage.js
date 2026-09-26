@@ -2,8 +2,8 @@
 export const onlinePage = {
   uk: {
     seo: {
-      title: "Детектор брехні онлайн (поліграф онлайн): VerifEye за 15–20 хвилин",
-      description: "VerifEye від Converus: застосунок на смартфоні фіксує реакції очей, точність 84–89% за даними виробника. Тест 15–20 хвилин, PDF-звіт до 5 хвилин після тесту. З будь-якого міста.",
+      title: "Детектор брехні онлайн (поліграф): VerifEye за 15–20 хвилин",
+      description: "VerifEye від Converus: застосунок фіксує реакції очей, точність 84–89% за даними виробника. Тест 15–20 хв, PDF-звіт до 5 хвилин. З будь-якого міста.",
       keywords: ["детектор брехні онлайн", "онлайн детектор брехні", "поліграф онлайн", "verifeye", "тест на брехню з телефона", "детектор лжи онлайн"],
       crumbHome: "Головна",
       crumb: "Онлайн-тест VerifEye",
@@ -64,8 +64,8 @@ export const onlinePage = {
   },
   ru: {
     seo: {
-      title: "Детектор лжи онлайн (полиграф онлайн): VerifEye за 15–20 минут",
-      description: "VerifEye от Converus: приложение на смартфоне фиксирует реакции глаз, точность 84–89% по данным производителя. Тест 15–20 минут, PDF-отчёт до 5 минут после теста. Из любого города.",
+      title: "Детектор лжи онлайн (полиграф): VerifEye за 15–20 минут",
+      description: "VerifEye от Converus: приложение фиксирует реакции глаз, точность 84–89% по данным производителя. Тест 15–20 мин, PDF-отчёт до 5 минут. Из любого города.",
       keywords: ["детектор лжи онлайн", "онлайн детектор лжи", "полиграф онлайн", "verifeye", "тест на ложь с телефона"],
       crumbHome: "Главная",
       crumb: "Онлайн-тест VerifEye",
@@ -126,8 +126,8 @@ export const onlinePage = {
   },
   en: {
     seo: {
-      title: "Online Lie Detector (Online Polygraph): VerifEye in 15–20 Minutes",
-      description: "VerifEye by Converus: a smartphone app records eye reactions, accuracy 84–89% according to the manufacturer. The test takes 15–20 minutes, PDF report within 5 minutes after the test. From any city.",
+      title: "Online Lie Detector (Polygraph): VerifEye in 15–20 Minutes",
+      description: "VerifEye by Converus: a phone app records eye reactions, 84–89% accuracy per the manufacturer. 15–20 minute test, PDF report within 5 minutes. From any city.",
       keywords: ["online lie detector", "lie detector online", "online polygraph", "verifeye", "lie detector test from phone", "remote lie detector test"],
       crumbHome: "Home",
       crumb: "VerifEye online test",

@@ -40,6 +40,7 @@ export const blogPosts2 = [
     },
     en: {
       title: "How Long a Lie Detector Test Takes and What the Person Experiences",
+      seoTitle: "How Long a Lie Detector Test Takes and How It Feels",
       description: "Minute by minute: how long an EyeDetect, VerifEye and classic polygraph test takes, what the person sees on the screen, and why there is nothing to fear.",
       h1: "How Long a Lie Detector Test Takes and What the Person Experiences",
       lead: "The most common fear before a test: “they will interrogate me for hours, wired up to sensors”. No. On EyeDetect the person sits in front of an ordinary laptop and reads statements. Here is how that time goes.",
@@ -62,6 +63,7 @@ export const blogPosts2 = [
     situation: null,
     uk: {
       title: "EyeDetect чи класичний поліграф: що обрати для вашої ситуації",
+      seoTitle: "EyeDetect чи класичний поліграф: що обрати",
       description: "Порівняння без реклами: час, точність, датчики, ціна, коли який метод кращий. Для вірності, персоналу, розслідувань і спорів.",
       h1: "EyeDetect чи класичний поліграф: що обрати",
       lead: "Обидва методи працюють, і обидва мають межі. Ми проводимо EyeDetect, тому чесно скажемо, де він виграє, а де класичний поліграф досі доречніший.",
@@ -79,6 +81,7 @@ export const blogPosts2 = [
     },
     ru: {
       title: "EyeDetect или классический полиграф: что выбрать для вашей ситуации",
+      seoTitle: "EyeDetect или классический полиграф: что выбрать",
       description: "Сравнение без рекламы: время, точность, датчики, цена, когда какой метод лучше. Для верности, персонала, расследований и споров.",
       h1: "EyeDetect или классический полиграф: что выбрать",
       lead: "Оба метода работают, и у обоих есть границы. Мы проводим EyeDetect, поэтому честно скажем, где он выигрывает, а где классический полиграф до сих пор уместнее.",
@@ -96,7 +99,9 @@ export const blogPosts2 = [
     },
     en: {
       title: "EyeDetect or a Classic Polygraph: Which to Choose for Your Situation",
+      seoTitle: "EyeDetect or a Classic Polygraph: Which to Choose",
       description: "A comparison without the sales pitch: time, accuracy, sensors, price, and when each method is better. For fidelity, staff screening, investigations and disputes.",
+      seoDescription: "A comparison without the sales pitch: time, accuracy, sensors, price, and when each method is better. For fidelity, staff screening, investigations, disputes.",
       h1: "EyeDetect or a Classic Polygraph: Which to Choose",
       lead: "Both methods work, and both have limits. We run EyeDetect, so we will say plainly where it wins and where the classic polygraph is still the better fit.",
       sections: [
@@ -119,6 +124,7 @@ export const blogPosts2 = [
     uk: {
       title: "Як зрозуміти, що партнер зраджує, і що робити далі",
       description: "Не список із 50 «ознак зради», а чесна розмова: які зміни справді щось означають, чому здогадки руйнують більше за правду, і як отримати відповідь за одну зустріч.",
+      seoDescription: "Не список із 50 «ознак зради», а чесна розмова: які зміни справді щось означають, чому здогадки руйнують, і як отримати відповідь за одну зустріч.",
       h1: "Як зрозуміти, що партнер зраджує, і чи допоможе детектор брехні",
       lead: "Інтернет повен списків «10 ознак зради». Половина з них описує просто втомлену людину. Ми бачимо десятки пар на рік і знаємо, які підозри підтверджуються, а які ні. Тут без міфів.",
       sections: [
@@ -135,7 +141,9 @@ export const blogPosts2 = [
     },
     ru: {
       title: "Как понять, что партнёр изменяет: признаки, которые работают, и что делать дальше",
+      seoTitle: "Как понять, что партнёр изменяет, и что делать дальше",
       description: "Не список из 50 «признаков измены», а честный разговор: какие изменения действительно что-то значат, почему догадки разрушают больше правды, и как получить ответ за одну встречу.",
+      seoDescription: "Не список из 50 «признаков измены», а честный разговор: какие изменения что-то значат, почему догадки разрушают, и как получить ответ за одну встречу.",
       h1: "Как понять, что партнёр изменяет, и поможет ли детектор лжи",
       lead: "Интернет полон списков «10 признаков измены». Половина из них описывает просто уставшего человека. Мы видим десятки пар в год и знаем, какие подозрения подтверждаются, а какие нет. Здесь без мифов.",
       sections: [
@@ -152,7 +160,9 @@ export const blogPosts2 = [
     },
     en: {
       title: "How to Tell Whether Your Partner Is Cheating, and What to Do Next",
+      seoTitle: "How to Tell If Your Partner Is Cheating and What to Do",
       description: "Not a list of 50 “signs of cheating”, but an honest conversation: which changes really mean something, why guessing does more damage than the truth, and how to get an answer in a single visit.",
+      seoDescription: "Not a list of 50 “signs of cheating”, but an honest talk: which changes really mean something, why guessing hurts, and how to get an answer in one visit.",
       h1: "How to Tell Whether Your Partner Is Cheating, and Whether a Lie Detector Can Help",
       lead: "The internet is full of “10 signs of cheating” lists. Half of them describe a person who is simply tired. We see dozens of couples a year and know which suspicions are confirmed and which are not. No myths here.",
       sections: [
@@ -174,6 +184,7 @@ export const blogPosts2 = [
     situation: "fidelity",
     uk: {
       title: "Перевірка на вірність на детекторі брехні: як проходить і що отримаєте",
+      seoTitle: "Перевірка на вірність на детекторі брехні: як проходить",
       description: "Покроково: від першого дзвінка до звіту. Які питання ставлять на тесті на вірність, скільки це триває, скільки коштує у Львові і онлайн, і що написано у звіті.",
       h1: "Перевірка на вірність на детекторі брехні: як проходить тест і що ви отримаєте",
       lead: "Це найчастіша причина звернень до нас. Тому розповідаємо детально, щоб ви знали, що на вас чекає, ще до дзвінка.",
@@ -192,6 +203,7 @@ export const blogPosts2 = [
     },
     ru: {
       title: "Проверка на верность на детекторе лжи: как проходит, какие вопросы, что получите",
+      seoTitle: "Проверка на верность на детекторе лжи: как проходит",
       description: "Пошагово: от первого звонка до отчёта. Какие вопросы задают на тесте на верность, сколько это длится, сколько стоит во Львове и онлайн, и что написано в отчёте.",
       h1: "Проверка на верность на детекторе лжи: как проходит тест и что вы получите",
       lead: "Это самая частая причина обращений к нам. Поэтому рассказываем подробно, чтобы вы знали, что вас ждёт, ещё до звонка.",
@@ -210,7 +222,9 @@ export const blogPosts2 = [
     },
     en: {
       title: "Fidelity Test on a Lie Detector: How It Works and What You Get",
+      seoTitle: "Fidelity Lie Detector Test: How It Works, What You Get",
       description: "Step by step: from the first call to the report. What questions are asked in a fidelity test, how long it takes, what it costs in Lviv and online, and what the report says.",
+      seoDescription: "Step by step, from the first call to the report: fidelity test questions, how long it takes, what it costs in Lviv and online, and what the report says.",
       h1: "Fidelity Test on a Lie Detector: How the Test Works and What You Get",
       lead: "This is the most common reason people contact us. So we describe it in detail, so that you know what to expect before you even call.",
       sections: [
@@ -233,7 +247,9 @@ export const blogPosts2 = [
     situation: "theft",
     uk: {
       title: "Крадіжка на роботі: як знайти винного без звинувачень навмання",
+      seoTitle: "Крадіжка на роботі: як знайти винного без звинувачень",
       description: "Зникли гроші з каси або товар зі складу. Що робити керівнику в перші дні, як не зруйнувати команду підозрами і як тест на детекторі брехні звужує коло за один день.",
+      seoDescription: "Зникли гроші з каси чи товар зі складу. Що робити керівнику в перші дні, як не зруйнувати команду підозрами і як детектор брехні звужує коло за день.",
       h1: "Крадіжка на роботі: як знайти винного на детекторі брехні без звинувачень навмання",
       lead: "Найгірше, що робить керівник після крадіжки, це підозрює всіх одразу. Через тиждень звільняються найкращі, а винний лишається. Ось порядок дій, який працює.",
       sections: [
@@ -251,7 +267,9 @@ export const blogPosts2 = [
     },
     ru: {
       title: "Кража на работе: как найти виновного без обвинений наугад",
+      seoTitle: "Кража на работе: как найти виновного без обвинений",
       description: "Пропали деньги из кассы или товар со склада. Что делать руководителю в первые дни, как не разрушить команду подозрениями и как тест на детекторе лжи сужает круг за один день.",
+      seoDescription: "Пропали деньги из кассы или товар со склада. Что делать руководителю в первые дни, как не разрушить команду подозрениями и как детектор лжи сужает круг.",
       h1: "Кража на работе: как найти виновного на детекторе лжи без обвинений наугад",
       lead: "Худшее, что делает руководитель после кражи, это подозревает всех сразу. Через неделю увольняются лучшие, а виновный остаётся. Вот порядок действий, который работает.",
       sections: [
@@ -269,7 +287,9 @@ export const blogPosts2 = [
     },
     en: {
       title: "Theft at Work: How to Find the Culprit Without Random Accusations",
+      seoTitle: "Theft at Work: How to Find the Culprit Without Accusations",
       description: "Money has gone missing from the till or goods from the warehouse. What a manager should do in the first days, how not to destroy the team with suspicion, and how a lie detector test narrows the circle in a single day.",
+      seoDescription: "Money gone from the till or goods from the warehouse? What a manager should do first, how not to wreck the team, how a lie detector test narrows the circle.",
       h1: "Theft at Work: How to Find the Culprit with a Lie Detector, Without Random Accusations",
       lead: "The worst thing a manager can do after a theft is suspect everyone at once. A week later the best people quit, and the culprit stays. Here is a sequence of steps that works.",
       sections: [
@@ -293,6 +313,7 @@ export const blogPosts2 = [
     uk: {
       title: "Онлайн детектор брехні: справжній тест чи застосунок-жарт",
       description: "У магазинах застосунків сотні «детекторів брехні» за палець на екрані. Справжній онлайн-тест від виробника детекторів брехні — VerifEye від Converus. П'ять ознак, за якими їх легко розрізнити.",
+      seoDescription: "У магазинах застосунків сотні «детекторів брехні» за палець на екрані. Справжній онлайн-тест — VerifEye від Converus. П'ять ознак, як їх розрізнити.",
       h1: "Онлайн детектор брехні: як відрізнити справжній тест від застосунку-жарту",
       lead: "Запит «детектор брехні онлайн» видає і наукову технологію, і ігри для вечірок. Виглядають вони інколи однаково. Ось як не помилитися.",
       sections: [
@@ -309,7 +330,9 @@ export const blogPosts2 = [
     },
     ru: {
       title: "Онлайн детектор лжи: как отличить настоящий тест от приложения-шутки",
+      seoTitle: "Онлайн детектор лжи: настоящий тест или приложение-шутка",
       description: "В магазинах приложений сотни «детекторов лжи» за палец на экране. Настоящий онлайн-тест от производителя детекторов лжи — VerifEye от Converus. Пять признаков, по которым их легко различить.",
+      seoDescription: "В магазинах приложений сотни «детекторов лжи» за палец на экране. Настоящий онлайн-тест — VerifEye от Converus. Пять признаков, как их различить.",
       h1: "Онлайн детектор лжи: как отличить настоящий тест от приложения-шутки",
       lead: "Запрос «детектор лжи онлайн» выдаёт и научную технологию, и игры для вечеринок. Выглядят они иногда одинаково. Вот как не ошибиться.",
       sections: [
@@ -327,6 +350,7 @@ export const blogPosts2 = [
     en: {
       title: "Online Lie Detector: A Real Test or a Joke App",
       description: "App stores have hundreds of “lie detectors” that work by placing a finger on the screen. The real online test from a lie detector manufacturer is VerifEye by Converus. Five signs that make them easy to tell apart.",
+      seoDescription: "App stores are full of finger-on-screen “lie detectors”. The real online test is VerifEye by Converus. Five signs that make them easy to tell apart.",
       h1: "Online Lie Detector: How to Tell a Real Test from a Joke App",
       lead: "A search for “online lie detector” returns both scientific technology and party games. Sometimes they look the same. Here is how not to get it wrong.",
       sections: [

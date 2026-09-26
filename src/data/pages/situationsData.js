@@ -67,8 +67,8 @@ export const situations = [
     uk: {
       nav: "Вірність",
       seo: {
-        title: "Перевірка на вірність на детекторі брехні — у кабінеті або онлайн",
-        description: "Тест на вірність партнера: EyeDetect у Львові за 30–45 хв або VerifEye онлайн з телефона за 15–20 хв. Конкретні питання, звіт до 5 хвилин після тесту, повна конфіденційність.",
+        title: "Перевірка на вірність на детекторі брехні: Львів або онлайн",
+        description: "Тест на вірність партнера: EyeDetect у Львові за 30–45 хв або VerifEye онлайн за 15–20 хв. Конкретні питання, звіт до 5 хвилин, повна конфіденційність.",
         keywords: ["перевірка на вірність", "тест на вірність", "детектор брехні зрада", "поліграф вірність", "перевірити партнера"],
       },
       h1: "Перевірка на вірність на детекторі брехні",
@@ -96,8 +96,8 @@ export const situations = [
     ru: {
       nav: "Верность",
       seo: {
-        title: "Проверка на верность на детекторе лжи — в кабинете или онлайн",
-        description: "Тест на верность партнёра: EyeDetect во Львове за 30–45 мин или VerifEye онлайн с телефона за 15–20 мин. Конкретные вопросы, отчёт до 5 минут после теста, полная конфиденциальность.",
+        title: "Проверка на верность на детекторе лжи: Львов или онлайн",
+        description: "Тест на верность партнёра: EyeDetect во Львове за 30–45 мин или VerifEye онлайн за 15–20 мин. Конкретные вопросы, отчёт до 5 минут, полная конфиденциальность.",
         keywords: ["проверка на верность", "тест на верность", "детектор лжи измена", "полиграф верность", "проверить партнёра"],
       },
       h1: "Проверка на верность на детекторе лжи",
@@ -125,8 +125,8 @@ export const situations = [
     en: {
       nav: "Fidelity",
       seo: {
-        title: "Fidelity Test on a Lie Detector — In Our Lviv Office or Online",
-        description: "Partner fidelity test: EyeDetect in Lviv in 30–45 minutes or VerifEye online from a phone in 15–20 minutes. Specific questions, a report within 5 minutes after the test, full confidentiality.",
+        title: "Fidelity Lie Detector Test — Lviv Office or Online",
+        description: "Partner fidelity test: EyeDetect in Lviv in 30–45 minutes or VerifEye online in 15–20 minutes. Specific questions, report in 5 minutes, full confidentiality.",
         keywords: ["fidelity test", "infidelity lie detector test", "cheating polygraph test", "polygraph fidelity", "test my partner"],
       },
       h1: "Fidelity Test on a Lie Detector",
@@ -159,7 +159,7 @@ export const situations = [
     uk: {
       nav: "Крадіжка",
       seo: {
-        title: "Крадіжка або нестача: перевірка причетних на детекторі брехні",
+        title: "Крадіжка або нестача: перевірка на детекторі брехні",
         description: "Зникли гроші, товар або нестача в касі. EyeDetect перевіряє 6–8 осіб за день і показує, хто причетний, без звинувачень навмання. Львів і виїзд по Україні.",
         keywords: ["крадіжка на роботі поліграф", "перевірка на крадіжку", "нестача каса поліграф", "хто вкрав детектор брехні", "перевірка працівників крадіжка"],
       },
@@ -216,7 +216,7 @@ export const situations = [
       nav: "Theft",
       seo: {
         title: "Theft or Shortage: Lie Detector Test for Those Involved",
-        description: "Missing money, missing goods, or a cash shortage. EyeDetect tests 6–8 people per day and shows who is involved, without random accusations. Lviv and on-site across Ukraine.",
+        description: "Missing money, goods, or a cash shortage? EyeDetect tests 6–8 people per day and shows who is involved, without random accusations. Lviv or on-site.",
         keywords: ["workplace theft polygraph", "theft lie detector test", "cash shortage polygraph", "who stole lie detector", "employee theft screening"],
       },
       h1: "Workplace Theft: Lie Detector Test",
@@ -249,7 +249,7 @@ export const situations = [
       nav: "Витік інформації",
       seo: {
         title: "Витік інформації: перевірка працівників на детекторі брехні",
-        description: "Конкуренти дізналися ціни, клієнтську базу або плани. EyeDetect перевіряє, хто передавав дані, без звинувачень навмання. 6–8 осіб за день, звіт одразу після тесту.",
+        description: "Конкуренти дізналися ціни, базу клієнтів чи плани? EyeDetect перевіряє, хто передав дані, без звинувачень. 6–8 осіб за день, звіт одразу після тесту.",
         keywords: ["витік інформації перевірка", "поліграф витік даних", "перевірка персоналу на лояльність", "хто злив базу клієнтів", "комерційна таємниця поліграф"],
       },
       h1: "Витік інформації: знайти джерело на детекторі брехні",
@@ -303,7 +303,7 @@ export const situations = [
       nav: "Information leak",
       seo: {
         title: "Information Leak: Lie Detector Test for Employees",
-        description: "Competitors learned your prices, client base, or plans. EyeDetect checks who passed the data on, without random accusations. 6–8 people per day, report right after the test.",
+        description: "Competitors got your prices, clients or plans? EyeDetect checks who passed the data on, without accusations. 6–8 people per day, report right after the test.",
         keywords: ["information leak investigation", "data leak polygraph", "employee loyalty screening", "who leaked the client base", "trade secret polygraph"],
       },
       h1: "Information Leak: Find the Source with a Lie Detector",
@@ -334,8 +334,8 @@ export const situations = [
     uk: {
       nav: "Кандидат на роботу",
       seo: {
-        title: "Перевірка кандидата на детекторі брехні перед прийомом на роботу",
-        description: "Перевірка кандидата на EyeDetect за 30–45 хвилин: судимості, наркотики, крадіжки на попередніх місцях, приховані факти в резюме. Звіт одразу після тесту, Львів і виїзд.",
+        title: "Перевірка кандидата на детекторі брехні перед наймом",
+        description: "Перевірка кандидата на EyeDetect за 30–45 хвилин: судимості, наркотики, крадіжки, приховані факти в резюме. Звіт одразу після тесту, Львів і виїзд.",
         keywords: ["перевірка кандидата поліграф", "поліграф при прийомі на роботу", "перевірка персоналу перед наймом", "скринінг кандидатів детектор брехні", "які питання задають на поліграфі при прийомі на роботу"],
       },
       h1: "Перевірка кандидата на детекторі брехні перед наймом",
@@ -362,8 +362,8 @@ export const situations = [
     ru: {
       nav: "Кандидат на работу",
       seo: {
-        title: "Проверка кандидата на детекторе лжи перед приёмом на работу",
-        description: "Проверка кандидата на EyeDetect за 30–45 минут: судимости, наркотики, кражи на предыдущих местах, скрытые факты в резюме. Отчёт сразу после теста, Львов и выезд.",
+        title: "Проверка кандидата на детекторе лжи перед наймом",
+        description: "Проверка кандидата на EyeDetect за 30–45 минут: судимости, наркотики, кражи, скрытые факты в резюме. Отчёт сразу после теста, Львов и выезд.",
         keywords: ["проверка кандидата полиграф", "полиграф при приёме на работу", "проверка персонала перед наймом", "скрининг кандидатов детектор лжи", "какие вопросы задают на полиграфе при приёме на работу"],
       },
       h1: "Проверка кандидата на детекторе лжи перед наймом",
@@ -391,7 +391,7 @@ export const situations = [
       nav: "Job candidate",
       seo: {
         title: "Pre-Employment Lie Detector Test for Job Candidates",
-        description: "Candidate screening on EyeDetect in 30–45 minutes: criminal records, drugs, theft at previous jobs, hidden facts in the resume. Report right after the test, Lviv and on-site.",
+        description: "Candidate screening on EyeDetect in 30–45 minutes: criminal records, drugs, past theft, hidden resume facts. Report right after the test, Lviv or on-site.",
         keywords: ["candidate polygraph test", "pre-employment polygraph", "pre-hire screening", "candidate lie detector screening", "what questions are asked on a pre-employment polygraph"],
       },
       h1: "Pre-Employment Lie Detector Test for Job Candidates",
@@ -423,8 +423,8 @@ export const situations = [
     uk: {
       nav: "Спір без доказів",
       seo: {
-        title: "Слово проти слова: перевірка на детекторі брехні у спірних ситуаціях",
-        description: "Коли є лише версії сторін і жодного доказу: борг, домовленість, звинувачення, конфлікт у родині чи бізнесі. Тест дає об'єктивну основу для рішення за одну зустріч.",
+        title: "Слово проти слова: перевірка на детекторі брехні у спорі",
+        description: "Лише версії сторін і жодного доказу: борг, домовленість, звинувачення, конфлікт у родині чи бізнесі. Тест дає об'єктивну основу для рішення за одну зустріч.",
         keywords: ["спір без доказів поліграф", "перевірка правдивості слів", "детектор брехні конфлікт", "хто бреше перевірка", "поліграф борг домовленість"],
       },
       h1: "Слово проти слова: детектор брехні як основа для рішення",
@@ -450,8 +450,8 @@ export const situations = [
     ru: {
       nav: "Спор без доказательств",
       seo: {
-        title: "Слово против слова: проверка на детекторе лжи в спорных ситуациях",
-        description: "Когда есть только версии сторон и ни одного доказательства: долг, договорённость, обвинение, конфликт в семье или бизнесе. Тест даёт объективную основу для решения за одну встречу.",
+        title: "Слово против слова: проверка на детекторе лжи в споре",
+        description: "Только версии сторон и ни одного доказательства: долг, договорённость, обвинение, конфликт в семье или бизнесе. Тест даёт объективную основу для решения.",
         keywords: ["спор без доказательств полиграф", "проверка правдивости слов", "детектор лжи конфликт", "кто врёт проверка", "полиграф долг договорённость"],
       },
       h1: "Слово против слова: детектор лжи как основа для решения",
@@ -478,7 +478,7 @@ export const situations = [
       nav: "Dispute without evidence",
       seo: {
         title: "Word Against Word: Lie Detector Test in Disputed Situations",
-        description: "When there are only two sides' versions and no evidence: a debt, an agreement, an accusation, a conflict in the family or in business. The test gives an objective basis for a decision in a single session.",
+        description: "Only two versions and no evidence: a debt, an agreement, an accusation, a family or business conflict. The test gives an objective basis for a decision.",
         keywords: ["dispute without evidence polygraph", "truth verification test", "lie detector conflict", "who is lying test", "polygraph debt agreement"],
       },
       h1: "Word Against Word: A Lie Detector as the Basis for a Decision",

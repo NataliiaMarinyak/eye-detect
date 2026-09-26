@@ -2,9 +2,9 @@
 export const eyedetectPage = {
   uk: {
     seo: {
-      title: "EyeDetect — детектор брехні за рухами очей: як працює і точність",
+      title: "EyeDetect: детектор брехні за рухами очей і його точність",
       description:
-        "EyeDetect: камера 60 кадрів за секунду фіксує мимовільні реакції очей. Без датчиків, 30–45 хвилин, точність 86–90% за даними Converus. Обмеження і різниця з класичним поліграфом.",
+        "EyeDetect: камера 60 кадрів/с фіксує мимовільні реакції очей. Без датчиків, 30–45 хвилин, точність 86–90% за даними Converus. Відмінності від поліграфа.",
       keywords: ["EyeDetect", "eye detect", "детектор брехні за очима", "як працює EyeDetect", "точність EyeDetect", "EyeDetect чи поліграф"],
       crumbHome: "Головна",
       crumb: "Технологія EyeDetect",
@@ -86,9 +86,9 @@ export const eyedetectPage = {
   },
   ru: {
     seo: {
-      title: "EyeDetect — детектор лжи по движениям глаз: как работает и точность",
+      title: "EyeDetect: детектор лжи по движениям глаз и его точность",
       description:
-        "EyeDetect: камера 60 кадров в секунду фиксирует непроизвольные реакции глаз. Без датчиков, 30–45 минут, точность 86–90% по данным Converus. Ограничения и отличия от классического полиграфа.",
+        "EyeDetect: камера 60 кадров/с фиксирует непроизвольные реакции глаз. Без датчиков, 30–45 минут, точность 86–90% по данным Converus. Отличия от полиграфа.",
       keywords: ["EyeDetect", "eye detect", "детектор лжи по глазам", "как работает EyeDetect", "точность EyeDetect", "EyeDetect или полиграф"],
       crumbHome: "Главная",
       crumb: "Технология EyeDetect",
@@ -170,9 +170,9 @@ export const eyedetectPage = {
   },
   en: {
     seo: {
-      title: "EyeDetect — the eye-movement lie detector: how it works and how accurate it is",
+      title: "EyeDetect Eye-Movement Lie Detector: How It Works, Accuracy",
       description:
-        "EyeDetect: a 60-frames-per-second camera records involuntary eye reactions. No sensors, 30–45 minutes, 86–90% accuracy according to Converus. Limitations and how it differs from a classic polygraph.",
+        "EyeDetect: a 60 fps camera records involuntary eye reactions. No sensors, 30–45 minutes, 86–90% accuracy per Converus. How it differs from a polygraph.",
       keywords: ["EyeDetect", "eye detect", "eye-tracking lie detector", "how EyeDetect works", "EyeDetect accuracy", "EyeDetect vs polygraph"],
       crumbHome: "Home",
       crumb: "EyeDetect technology",

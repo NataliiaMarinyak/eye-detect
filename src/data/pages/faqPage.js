@@ -6,7 +6,7 @@ export const faqPage = {
   uk: {
     seo: {
       title: "Питання і відповіді про EyeDetect і детектор брехні",
-      description: "Як працює EyeDetect, яка точність, що впливає на результат, чи можна обманути, чим відрізняється від поліграфа, як зберігаються дані. Відповіді за матеріалами Converus.",
+      description: "Як працює EyeDetect, яка точність, що впливає на результат, чи можна обманути, чим відрізняється від поліграфа, як зберігаються дані. За матеріалами Converus.",
       keywords: ["EyeDetect питання", "детектор брехні питання і відповіді", "точність EyeDetect", "EyeDetect чи поліграф", "чи можна обманути детектор брехні"],
       crumbHome: "Головна",
       crumb: "Питання і відповіді",
@@ -105,7 +105,7 @@ export const faqPage = {
   ru: {
     seo: {
       title: "Вопросы и ответы об EyeDetect и детекторе лжи",
-      description: "Как работает EyeDetect, какая точность, что влияет на результат, можно ли обмануть, чем отличается от полиграфа, как хранятся данные. Ответы по материалам Converus.",
+      description: "Как работает EyeDetect, какая точность, что влияет на результат, можно ли обмануть, чем отличается от полиграфа, как хранятся данные. По материалам Converus.",
       keywords: ["EyeDetect вопросы", "детектор лжи вопросы и ответы", "точность EyeDetect", "EyeDetect или полиграф", "можно ли обмануть детектор лжи"],
       crumbHome: "Главная",
       crumb: "Вопросы и ответы",
@@ -203,7 +203,7 @@ export const faqPage = {
   en: {
     seo: {
       title: "FAQ about EyeDetect and the Lie Detector",
-      description: "How EyeDetect works, how accurate it is, what affects the result, whether it can be beaten, how it differs from the polygraph, how data is stored. Answers based on Converus materials.",
+      description: "How EyeDetect works, its accuracy, what affects the result, whether it can be beaten, how it differs from a polygraph, how data is stored. Per Converus.",
       keywords: ["EyeDetect questions", "lie detector questions and answers", "EyeDetect accuracy", "EyeDetect or polygraph", "can you beat a lie detector"],
       crumbHome: "Home",
       crumb: "FAQ",

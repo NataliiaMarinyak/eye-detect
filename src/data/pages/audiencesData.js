@@ -18,7 +18,7 @@ export const audiences = [
   {
     slug: "lawyers",
     uk: {
-      seo: { title: "Детектор брехні для адвокатів і приватних детективів — EyeDetect", description: "Тест EyeDetect за 30–45 хвилин для оцінки клієнтів, свідків і версій у справі. Точність 86–90% у тестах на одне питання. Звіт одразу після тесту, Львів або виїзд.", keywords: ["детектор брехні для адвоката", "поліграф для детектива", "перевірка свідка детектор брехні", "EyeDetect розслідування"], crumbHome: "Головна", crumb: "Для юристів і детективів" },
+      seo: { title: "Детектор брехні для адвокатів і детективів — EyeDetect", description: "Тест EyeDetect за 30–45 хвилин для оцінки клієнтів, свідків і версій у справі. Точність 86–90% у тестах на одне питання. Звіт одразу, Львів або виїзд.", keywords: ["детектор брехні для адвоката", "поліграф для детектива", "перевірка свідка детектор брехні", "EyeDetect розслідування"], crumbHome: "Головна", crumb: "Для юристів і детективів" },
       hero: { eyebrow: "Юристам і приватним детективам", h1: "Детектор брехні для адвокатів і детективів", sub: "EyeDetect дає адвокату і детективу швидку відповідь: чи правдива конкретна версія подій. Тест на одне питання триває 30–45 хвилин, оцінку рахує алгоритм, а не людина. Результат не є доказом у суді, але економить тижні роботи не в тому напрямку.", facts: ["30–45 хвилин на тест", "точність 86–90%", "звіт одразу після тесту", "Львів або виїзд"] },
       blocks: [
         { type: "cards", title: "Де це допомагає", items: [
@@ -40,7 +40,7 @@ export const audiences = [
       ],
     },
     ru: {
-      seo: { title: "Детектор лжи для адвокатов и частных детективов — EyeDetect", description: "Тест EyeDetect за 30–45 минут для оценки клиентов, свидетелей и версий в деле. Точность 86–90% в тестах на один вопрос. Отчёт сразу после теста, Львов или выезд.", keywords: ["детектор лжи для адвоката", "полиграф для детектива", "проверка свидетеля детектор лжи", "EyeDetect расследование"], crumbHome: "Главная", crumb: "Для юристов и детективов" },
+      seo: { title: "Детектор лжи для адвокатов и детективов — EyeDetect", description: "Тест EyeDetect за 30–45 минут для оценки клиентов, свидетелей и версий в деле. Точность 86–90% в тестах на один вопрос. Отчёт сразу, Львов или выезд.", keywords: ["детектор лжи для адвоката", "полиграф для детектива", "проверка свидетеля детектор лжи", "EyeDetect расследование"], crumbHome: "Главная", crumb: "Для юристов и детективов" },
       hero: { eyebrow: "Юристам и частным детективам", h1: "Детектор лжи для адвокатов и детективов", sub: "EyeDetect даёт адвокату и детективу быстрый ответ: правдива ли конкретная версия событий. Тест на один вопрос длится 30–45 минут, оценку считает алгоритм, а не человек. Результат не является доказательством в суде, но экономит недели работы не в том направлении.", facts: ["30–45 минут на тест", "точность 86–90%", "отчёт сразу после теста", "Львов или выезд"] },
       blocks: [
         { type: "cards", title: "Где это помогает", items: [
@@ -62,7 +62,7 @@ export const audiences = [
       ],
     },
     en: {
-      seo: { title: "Lie Detector for Lawyers and Private Investigators — EyeDetect", description: "A 30–45 minute EyeDetect test to evaluate clients, witnesses, and versions of events in a case. 86–90% accuracy in single-issue tests. Report right after the test, in Lviv or on-site.", keywords: ["lie detector for lawyers", "polygraph for private investigators", "witness lie detector test", "EyeDetect investigation"], crumbHome: "Home", crumb: "For lawyers and investigators" },
+      seo: { title: "Lie Detector for Lawyers and Investigators — EyeDetect", description: "A 30–45 minute EyeDetect test to assess clients, witnesses and versions in a case. 86–90% accuracy in single-issue tests. Report right after, Lviv or on-site.", keywords: ["lie detector for lawyers", "polygraph for private investigators", "witness lie detector test", "EyeDetect investigation"], crumbHome: "Home", crumb: "For lawyers and investigators" },
       hero: { eyebrow: "For lawyers and private investigators", h1: "Lie Detector for Lawyers and Private Investigators", sub: "EyeDetect gives a lawyer or investigator a fast answer: is a specific version of events true? A single-issue test takes 30–45 minutes, and the score is computed by an algorithm, not a person. The result is not admissible evidence in court, but it saves weeks of work in the wrong direction.", facts: ["30–45 minutes per test", "86–90% accuracy", "report right after the test", "Lviv or on-site"] },
       blocks: [
         { type: "cards", title: "Where it helps", items: [
@@ -87,7 +87,7 @@ export const audiences = [
   {
     slug: "finance",
     uk: {
-      seo: { title: "Перевірка працівників банку та фінкомпанії на детекторі брехні", description: "EyeDetect для банків, кредитних спілок, фінансових і страхових компаній: перевірка кандидатів і періодична перевірка тих, хто має доступ до грошей і даних клієнтів. 6–8 осіб за день, виїзд в офіс.", keywords: ["перевірка працівників банку", "поліграф для фінансової компанії", "скринінг персоналу детектор брехні", "EyeDetect банк"], crumbHome: "Головна", crumb: "Для банків і фінансових компаній" },
+      seo: { title: "Детектор брехні для банків і фінкомпаній — EyeDetect", description: "EyeDetect для банків, кредитних спілок, фінансових і страхових компаній: перевірка кандидатів і тих, хто має доступ до грошей. 6–8 осіб за день, виїзд в офіс.", keywords: ["перевірка працівників банку", "поліграф для фінансової компанії", "скринінг персоналу детектор брехні", "EyeDetect банк"], crumbHome: "Головна", crumb: "Для банків і фінансових компаній" },
       hero: { eyebrow: "Банкам і фінансовим компаніям", h1: "Перевірка працівників банку на детекторі брехні", sub: "Досвідчений менеджер із 25 роками стажу і новий касир однаково мають доступ до рахунків. Перевірка кандидатів перед наймом і періодична перевірка працівників на EyeDetect знижує ризик крадіжок, шахрайства і витоку даних клієнтів.", facts: ["6–8 осіб за день", "виїзд в офіс", "звіт по кожному одразу після тесту", "письмова згода працівника"] },
       blocks: [
         { type: "cards", title: "Які ризики закриває перевірка", items: [
@@ -116,7 +116,7 @@ export const audiences = [
       ],
     },
     ru: {
-      seo: { title: "Проверка сотрудников банка и финкомпании на детекторе лжи", description: "EyeDetect для банков, кредитных союзов, финансовых и страховых компаний: проверка кандидатов и периодическая проверка тех, кто имеет доступ к деньгам и данным клиентов. 6–8 человек в день, выезд в офис.", keywords: ["проверка сотрудников банка", "полиграф для финансовой компании", "скрининг персонала детектор лжи", "EyeDetect банк"], crumbHome: "Главная", crumb: "Для банков и финансовых компаний" },
+      seo: { title: "Детектор лжи для банков и финкомпаний — EyeDetect", description: "EyeDetect для банков, кредитных союзов, финансовых и страховых компаний: проверка кандидатов и тех, кто имеет доступ к деньгам. 6–8 человек в день, выезд.", keywords: ["проверка сотрудников банка", "полиграф для финансовой компании", "скрининг персонала детектор лжи", "EyeDetect банк"], crumbHome: "Главная", crumb: "Для банков и финансовых компаний" },
       hero: { eyebrow: "Банкам и финансовым компаниям", h1: "Проверка сотрудников банка на детекторе лжи", sub: "Опытный менеджер с 25 годами стажа и новый кассир одинаково имеют доступ к счетам. Проверка кандидатов перед наймом и периодическая проверка сотрудников на EyeDetect снижает риск краж, мошенничества и утечки данных клиентов.", facts: ["6–8 человек в день", "выезд в офис", "отчёт по каждому сразу после теста", "письменное согласие сотрудника"] },
       blocks: [
         { type: "cards", title: "Какие риски закрывает проверка", items: [
@@ -145,7 +145,7 @@ export const audiences = [
       ],
     },
     en: {
-      seo: { title: "Lie Detector Screening for Bank and Financial Company Employees", description: "EyeDetect for banks, credit unions, financial and insurance companies: pre-employment screening and periodic testing of those with access to money and client data. 6–8 people per day, on-site at your office.", keywords: ["bank employee screening", "polygraph for financial companies", "employee screening lie detector", "EyeDetect bank"], crumbHome: "Home", crumb: "For banks and financial companies" },
+      seo: { title: "Lie Detector Screening for Banks and Financial Companies", description: "EyeDetect for banks, credit unions, financial and insurance companies: screening candidates and staff with access to money. 6–8 people per day, on-site.", keywords: ["bank employee screening", "polygraph for financial companies", "employee screening lie detector", "EyeDetect bank"], crumbHome: "Home", crumb: "For banks and financial companies" },
       hero: { eyebrow: "For banks and financial companies", h1: "Lie Detector Screening for Bank Employees", sub: "A seasoned manager with 25 years of service and a new teller have the same access to accounts. Pre-employment screening and periodic EyeDetect testing of employees reduce the risk of theft, fraud, and client data leaks.", facts: ["6–8 people per day", "on-site at your office", "report on each person right after the test", "employee's written consent"] },
       blocks: [
         { type: "cards", title: "Which risks screening covers", items: [
@@ -177,7 +177,7 @@ export const audiences = [
   {
     slug: "security",
     uk: {
-      seo: { title: "Перевірка охоронців і персоналу охоронних компаній — EyeDetect", description: "Кандидат в охоронці може мати минуле, якого немає в базах і довідках. EyeDetect перевіряє крадіжки, наркотики, зв'язки з кримінальними групами за 30–45 хвилин. Виїзд в офіс, 6–8 осіб за день.", keywords: ["перевірка охоронців детектор брехні", "поліграф охоронна компанія", "скринінг охорони", "EyeDetect охорона"], crumbHome: "Головна", crumb: "Для охоронних компаній" },
+      seo: { title: "Перевірка охоронців на детекторі брехні — EyeDetect", description: "Кандидат в охоронці може мати минуле, якого немає в базах. EyeDetect перевіряє крадіжки, наркотики, кримінальні зв'язки за 30–45 хвилин. 6–8 осіб за день.", keywords: ["перевірка охоронців детектор брехні", "поліграф охоронна компанія", "скринінг охорони", "EyeDetect охорона"], crumbHome: "Головна", crumb: "Для охоронних компаній" },
       hero: { eyebrow: "Охоронним компаніям", h1: "Перевірка охоронців на детекторі брехні", sub: "Довідка про несудимість і тест на наркотики не показують того, за що людину не спіймали. EyeDetect за 30–45 хвилин перевіряє кандидата на крадіжки, вживання наркотиків, зв'язки з кримінальними групами і чесність анкети. Розслідування інциденту на об'єкті займає 30–45 хвилин на людину.", facts: ["30–45 хвилин на кандидата", "6–8 осіб за день", "точність 86–90%", "виїзд в офіс"] },
       blocks: [
         { type: "cards", title: "Коли охоронні компанії звертаються", items: [
@@ -192,7 +192,7 @@ export const audiences = [
       ],
     },
     ru: {
-      seo: { title: "Проверка охранников и персонала охранных компаний — EyeDetect", description: "Кандидат в охранники может иметь прошлое, которого нет в базах и справках. EyeDetect проверяет кражи, наркотики, связи с криминальными группами за 30–45 минут. Выезд в офис, 6–8 человек в день.", keywords: ["проверка охранников детектор лжи", "полиграф охранная компания", "скрининг охраны", "EyeDetect охрана"], crumbHome: "Главная", crumb: "Для охранных компаний" },
+      seo: { title: "Проверка охранников на детекторе лжи — EyeDetect", description: "Кандидат в охранники может иметь прошлое, которого нет в базах. EyeDetect проверяет кражи, наркотики, криминальные связи за 30–45 минут. 6–8 человек в день.", keywords: ["проверка охранников детектор лжи", "полиграф охранная компания", "скрининг охраны", "EyeDetect охрана"], crumbHome: "Главная", crumb: "Для охранных компаний" },
       hero: { eyebrow: "Охранным компаниям", h1: "Проверка охранников на детекторе лжи", sub: "Справка о несудимости и тест на наркотики не показывают того, за что человека не поймали. EyeDetect за 30–45 минут проверяет кандидата на кражи, употребление наркотиков, связи с криминальными группами и честность анкеты. Расследование инцидента на объекте занимает 30–45 минут на человека.", facts: ["30–45 минут на кандидата", "6–8 человек в день", "точность 86–90%", "выезд в офис"] },
       blocks: [
         { type: "cards", title: "Когда охранные компании обращаются", items: [
@@ -207,7 +207,7 @@ export const audiences = [
       ],
     },
     en: {
-      seo: { title: "Screening Security Guards and Security Company Staff — EyeDetect", description: "A security guard candidate may have a past that does not show up in databases or certificates. EyeDetect checks for theft, drugs, and ties to criminal groups in 30–45 minutes. On-site at your office, 6–8 people per day.", keywords: ["security guard screening lie detector", "polygraph for security companies", "security staff screening", "EyeDetect security"], crumbHome: "Home", crumb: "For security companies" },
+      seo: { title: "Security Guard Screening on a Lie Detector — EyeDetect", description: "A guard candidate may have a past not found in databases. EyeDetect checks theft, drugs, and criminal ties in 30–45 minutes. On-site, 6–8 people per day.", keywords: ["security guard screening lie detector", "polygraph for security companies", "security staff screening", "EyeDetect security"], crumbHome: "Home", crumb: "For security companies" },
       hero: { eyebrow: "For security companies", h1: "Lie Detector Screening for Security Guards", sub: "A clean criminal record certificate and a drug test do not show what a person was never caught for. In 30–45 minutes, EyeDetect checks a candidate for theft, drug use, ties to criminal groups, and the honesty of their application form. Investigating an incident at a site takes 30–45 minutes per person.", facts: ["30–45 minutes per candidate", "6–8 people per day", "86–90% accuracy", "on-site at your office"] },
       blocks: [
         { type: "cards", title: "When security companies come to us", items: [
@@ -225,7 +225,7 @@ export const audiences = [
   {
     slug: "hr",
     uk: {
-      seo: { title: "VerifEye для HR: перевірка кандидатів зі смартфона за 15–20 хвилин", description: "Кандидат проходить тест VerifEye на своєму телефоні до співбесіди: крадіжки, наркотики, чесність резюме. 15–20 хвилин, точність 84–89%, звіт у PDF до 5 хвилин після тесту. Для віддалених команд і масового найму.", keywords: ["перевірка кандидатів онлайн", "VerifEye HR", "детектор брехні для найму", "скринінг кандидатів зі смартфона"], crumbHome: "Головна", crumb: "Для HR і рекрутерів" },
+      seo: { title: "VerifEye для HR: перевірка кандидатів зі смартфона, 15–20 хв", description: "Кандидат проходить VerifEye на своєму телефоні до співбесіди: крадіжки, наркотики, чесність резюме. 15–20 хвилин, точність 84–89%, PDF-звіт до 5 хвилин.", keywords: ["перевірка кандидатів онлайн", "VerifEye HR", "детектор брехні для найму", "скринінг кандидатів зі смартфона"], crumbHome: "Головна", crumb: "Для HR і рекрутерів" },
       hero: { eyebrow: "HR і рекрутерам", h1: "Онлайн детектор брехні для перевірки кандидатів", sub: "VerifEye — застосунок Converus, який за 15–20 хвилин перевіряє кандидата на його власному телефоні: чи чесне резюме, чи були крадіжки на попередній роботі, чи вживає наркотики. Ми готуємо питання, надсилаємо посилання, ви отримуєте результат. Для віддалених команд і регіональних філій.", facts: ["15–20 хвилин", "з будь-якого міста", "точність 84–89%", "від 2 500 ₴ за тест"] },
       blocks: [
         { type: "cards", title: "Чотири задачі HR, які закриває VerifEye", items: [
@@ -248,7 +248,7 @@ export const audiences = [
       ],
     },
     ru: {
-      seo: { title: "VerifEye для HR: проверка кандидатов со смартфона за 15–20 минут", description: "Кандидат проходит тест VerifEye на своём телефоне до собеседования: кражи, наркотики, честность резюме. 15–20 минут, точность 84–89%, отчёт в PDF до 5 минут после теста. Для удалённых команд и массового найма.", keywords: ["проверка кандидатов онлайн", "VerifEye HR", "детектор лжи для найма", "скрининг кандидатов со смартфона"], crumbHome: "Главная", crumb: "Для HR и рекрутеров" },
+      seo: { title: "VerifEye для HR: проверка кандидатов со смартфона, 15–20 мин", description: "Кандидат проходит VerifEye на своём телефоне до собеседования: кражи, наркотики, честность резюме. 15–20 минут, точность 84–89%, PDF-отчёт до 5 минут.", keywords: ["проверка кандидатов онлайн", "VerifEye HR", "детектор лжи для найма", "скрининг кандидатов со смартфона"], crumbHome: "Главная", crumb: "Для HR и рекрутеров" },
       hero: { eyebrow: "HR и рекрутерам", h1: "Онлайн детектор лжи для проверки кандидатов", sub: "VerifEye — приложение Converus, которое за 15–20 минут проверяет кандидата на его собственном телефоне: честное ли резюме, были ли кражи на предыдущей работе, употребляет ли наркотики. Мы готовим вопросы, отправляем ссылку, вы получаете результат. Для удалённых команд и региональных филиалов.", facts: ["15–20 минут", "из любого города", "точность 84–89%", "от 2 500 ₴ за тест"] },
       blocks: [
         { type: "cards", title: "Четыре задачи HR, которые закрывает VerifEye", items: [
@@ -271,7 +271,7 @@ export const audiences = [
       ],
     },
     en: {
-      seo: { title: "VerifEye for HR: Candidate Screening from a Smartphone in 15–20 Minutes", description: "The candidate takes the VerifEye test on their own phone before the interview: theft, drugs, resume honesty. 15–20 minutes, 84–89% accuracy, PDF report within 5 minutes after the test. For remote teams and high-volume hiring.", keywords: ["online candidate screening", "VerifEye HR", "lie detector for hiring", "smartphone candidate screening"], crumbHome: "Home", crumb: "For HR and recruiters" },
+      seo: { title: "VerifEye for HR: Smartphone Candidate Screening, 15–20 Min", description: "Candidates take VerifEye on their own phone before the interview: theft, drugs, resume honesty. 15–20 minutes, 84–89% accuracy, PDF report within 5 minutes.", keywords: ["online candidate screening", "VerifEye HR", "lie detector for hiring", "smartphone candidate screening"], crumbHome: "Home", crumb: "For HR and recruiters" },
       hero: { eyebrow: "For HR and recruiters", h1: "Online Lie Detector for Candidate Screening", sub: "VerifEye is a Converus app that checks a candidate on their own phone in 15–20 minutes: is the resume honest, was there theft at a previous job, do they use drugs. We prepare the questions and send the link; you receive the result. For remote teams and regional branches.", facts: ["15–20 minutes", "from any city", "84–89% accuracy", "from UAH 2,500 per test"] },
       blocks: [
         { type: "cards", title: "Four HR tasks VerifEye covers", items: [
@@ -297,7 +297,7 @@ export const audiences = [
   {
     slug: "counselors",
     uk: {
-      seo: { title: "EyeDetect для психологів і сімейних консультантів", description: "Тест EyeDetect у роботі з невірністю та залежностями: 30–45 хвилин, без датчиків, звіт одразу після тесту. Знімає заперечення і дає парі факти замість здогадок. Для психологів, сімейних терапевтів, центрів реабілітації.", keywords: ["детектор брехні для психолога", "перевірка на вірність психолог", "EyeDetect терапія залежностей", "тест для сімейного консультанта"], crumbHome: "Головна", crumb: "Для психологів і консультантів" },
+      seo: { title: "EyeDetect для психологів і сімейних консультантів", description: "EyeDetect у роботі з невірністю та залежностями: 30–45 хвилин, без датчиків, звіт одразу після тесту. Факти замість здогадок для психологів і терапевтів.", keywords: ["детектор брехні для психолога", "перевірка на вірність психолог", "EyeDetect терапія залежностей", "тест для сімейного консультанта"], crumbHome: "Головна", crumb: "Для психологів і консультантів" },
       hero: { eyebrow: "Психологам і сімейним консультантам", h1: "Детектор брехні EyeDetect для психологів", sub: "Коли один партнер підозрює, а інший заперечує, терапія ходить по колу. Тест EyeDetect за 30–45 хвилин дає обом конкретну відповідь на конкретне питання і дозволяє працювати з реальністю, а не з версіями. Без датчиків, без екзаменатора з дротами, який ламає довіру в кабінеті.", facts: ["30–45 хвилин на тест", "без датчиків на тілі", "звіт одразу після тесту", "Львів або виїзд"] },
       blocks: [
         { type: "cards", title: "Де тест допомагає терапевту", items: [
@@ -315,7 +315,7 @@ export const audiences = [
       ],
     },
     ru: {
-      seo: { title: "EyeDetect для психологов и семейных консультантов", description: "Тест EyeDetect в работе с неверностью и зависимостями: 30–45 минут, без датчиков, отчёт сразу после теста. Снимает отрицание и даёт паре факты вместо догадок. Для психологов, семейных терапевтов, центров реабилитации.", keywords: ["детектор лжи для психолога", "проверка на верность психолог", "EyeDetect терапия зависимостей", "тест для семейного консультанта"], crumbHome: "Главная", crumb: "Для психологов и консультантов" },
+      seo: { title: "EyeDetect для психологов и семейных консультантов", description: "EyeDetect в работе с неверностью и зависимостями: 30–45 минут, без датчиков, отчёт сразу после теста. Факты вместо догадок для психологов и терапевтов.", keywords: ["детектор лжи для психолога", "проверка на верность психолог", "EyeDetect терапия зависимостей", "тест для семейного консультанта"], crumbHome: "Главная", crumb: "Для психологов и консультантов" },
       hero: { eyebrow: "Психологам и семейным консультантам", h1: "Детектор лжи EyeDetect для психологов", sub: "Когда один партнёр подозревает, а другой отрицает, терапия ходит по кругу. Тест EyeDetect за 30–45 минут даёт обоим конкретный ответ на конкретный вопрос и позволяет работать с реальностью, а не с версиями. Без датчиков, без экзаменатора с проводами, который ломает доверие в кабинете.", facts: ["30–45 минут на тест", "без датчиков на теле", "отчёт сразу после теста", "Львов или выезд"] },
       blocks: [
         { type: "cards", title: "Где тест помогает терапевту", items: [
@@ -333,7 +333,7 @@ export const audiences = [
       ],
     },
     en: {
-      seo: { title: "EyeDetect for Psychologists and Family Counselors", description: "The EyeDetect test in work with infidelity and addiction: 30–45 minutes, no sensors, report right after the test. It cuts through denial and gives the couple facts instead of guesses. For psychologists, family therapists, and rehabilitation centers.", keywords: ["lie detector for psychologists", "fidelity test psychologist", "EyeDetect addiction therapy", "test for family counselors"], crumbHome: "Home", crumb: "For psychologists and counselors" },
+      seo: { title: "EyeDetect for Psychologists and Family Counselors", description: "EyeDetect for infidelity and addiction work: 30–45 minutes, no sensors, report right after the test. Facts, not guesses, for psychologists and therapists.", keywords: ["lie detector for psychologists", "fidelity test psychologist", "EyeDetect addiction therapy", "test for family counselors"], crumbHome: "Home", crumb: "For psychologists and counselors" },
       hero: { eyebrow: "For psychologists and family counselors", h1: "The EyeDetect Lie Detector for Psychologists", sub: "When one partner suspects and the other denies, therapy goes in circles. A 30–45 minute EyeDetect test gives both a specific answer to a specific question and lets you work with reality rather than competing versions. No sensors on the person being tested, nothing that breaks the trust in your office.", facts: ["30–45 minutes per test", "no sensors on the body", "report right after the test", "Lviv or on-site"] },
       blocks: [
         { type: "cards", title: "Where the test helps a therapist", items: [

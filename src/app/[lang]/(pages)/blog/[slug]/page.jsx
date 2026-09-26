@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
   const { lang, slug } = params;
   const p = getPost(slug, lang);
   if (!p) return {};
-  return buildPageMetadata({ lang, path: `blog/${slug}`, title: p.title, description: p.description });
+  return buildPageMetadata({ lang, path: `blog/${slug}`, title: p.seoTitle || p.title, description: p.seoDescription || p.description });
 }
 
 const PostPage = ({ params }) => {

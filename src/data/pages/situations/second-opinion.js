@@ -64,7 +64,7 @@ export const secondOpinion = {
     nav: "Second Opinion",
     seo: {
       title: "Second Opinion on a Polygraph Result: Lie Detector Retest",
-      description: "Disagree with a polygraph result, or doubt another examiner's report? EyeDetect: a different method, the same questions, a report within 5 minutes after the test. In Lviv or online.",
+      description: "Doubt a polygraph result or another examiner's report? EyeDetect: a different method, the same questions, report within 5 minutes. Lviv or online.",
       keywords: ["polygraph second opinion", "disagree with polygraph result", "independent lie detector retest", "challenge polygraph result", "retake polygraph different examiner"],
     },
     h1: "Second Opinion on a Polygraph Result: A Lie Detector Retest",

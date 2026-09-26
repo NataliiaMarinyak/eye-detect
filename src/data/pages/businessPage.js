@@ -2,8 +2,8 @@
 export const businessPage = {
   uk: {
     seo: {
-      title: "Перевірка персоналу на детекторі брехні — EyeDetect для бізнесу",
-      description: "Перевірка кандидатів і працівників на EyeDetect: 6–8 осіб за день, без датчиків, звіт одразу після тесту. Крадіжки, витік інформації, розслідування. Виїзд в офіс по Україні.",
+      title: "Перевірка персоналу на детекторі брехні — EyeDetect",
+      description: "Перевірка кандидатів і працівників на EyeDetect: 6–8 осіб за день, без датчиків, звіт одразу після тесту. Крадіжки, витоки, розслідування. Виїзд по Україні.",
       keywords: ["перевірка персоналу на поліграфі", "перевірка працівників детектор брехні", "поліграф для бізнесу", "службове розслідування поліграф", "скринінг кандидатів"],
       crumbHome: "Головна",
       crumb: "Для бізнесу",
@@ -81,7 +81,7 @@ export const businessPage = {
   ru: {
     seo: {
       title: "Проверка персонала на детекторе лжи — EyeDetect для бизнеса",
-      description: "Проверка кандидатов и сотрудников на EyeDetect: 6–8 человек в день, без датчиков, отчёт по каждому сразу после теста. Кражи, утечка информации, служебные расследования. Выезд в офис по Украине.",
+      description: "Проверка кандидатов и сотрудников на EyeDetect: 6–8 человек в день, без датчиков, отчёт сразу после теста. Кражи, утечки, расследования. Выезд по Украине.",
       keywords: ["проверка персонала на полиграфе", "проверка сотрудников детектор лжи", "полиграф для бизнеса", "служебное расследование полиграф", "скрининг кандидатов"],
       crumbHome: "Главная",
       crumb: "Для бизнеса",
@@ -159,7 +159,7 @@ export const businessPage = {
   en: {
     seo: {
       title: "Employee lie detector screening — EyeDetect for business",
-      description: "Screening candidates and employees with EyeDetect: 6–8 people per day, no sensors, report right after the test. Theft, information leaks, investigations. On-site visits to your office across Ukraine.",
+      description: "Screening candidates and employees with EyeDetect: 6–8 people per day, no sensors, report right after the test. Theft, leaks, investigations. On-site.",
       keywords: ["employee polygraph screening", "employee lie detector test", "polygraph for business", "internal investigation polygraph", "candidate screening"],
       crumbHome: "Home",
       crumb: "For business",

@@ -63,7 +63,7 @@ export const familyMoney = {
   en: {
     nav: "Family Money",
     seo: {
-      title: "Money Missing at Home: Lie Detector Test for Family and Partners",
+      title: "Money Missing at Home: Lie Detector Test for Families",
       description: "Money gone from a house, safe, or joint card; a debt between relatives; a shared business. EyeDetect in Lviv or VerifEye online: everyone with access in a day.",
       keywords: ["money missing from home lie detector", "lie detector test family", "who took money from the house", "polygraph test for a relative", "jewelry missing from home"],
     },

@@ -5,8 +5,8 @@
 export const converusPage = {
   uk: {
     seo: {
-      title: "Converus і EyeDetect: історія, наука, протоколи тестів, обладнання",
-      description: "Хто створив EyeDetect, як його перевіряли, які бувають протоколи тестів, на якому обладнанні він працює і чим відрізняється від поліграфа, EyeDetect+ і VerifEye. За матеріалами Converus.",
+      title: "Converus і EyeDetect: історія, наука, протоколи тестів",
+      description: "Хто створив EyeDetect, як його перевіряли, протоколи тестів і обладнання, чим відрізняється від поліграфа, EyeDetect+ і VerifEye. За матеріалами Converus.",
       keywords: ["Converus", "EyeDetect історія", "хто створив EyeDetect", "протоколи EyeDetect", "EyeDetect Україна", "окуломоторний тест"],
       crumbHome: "Головна",
       crumb: "Про Converus і EyeDetect",
@@ -164,8 +164,8 @@ export const converusPage = {
 
   ru: {
     seo: {
-      title: "Converus и EyeDetect: история, наука, протоколы тестов, оборудование",
-      description: "Кто создал EyeDetect, как его проверяли, какие бывают протоколы тестов, на каком оборудовании он работает и чем отличается от полиграфа, EyeDetect+ и VerifEye. По материалам Converus.",
+      title: "Converus и EyeDetect: история, наука, протоколы тестов",
+      description: "Кто создал EyeDetect, как его проверяли, протоколы тестов и оборудование, чем отличается от полиграфа, EyeDetect+ и VerifEye. По материалам Converus.",
       keywords: ["Converus", "EyeDetect история", "кто создал EyeDetect", "протоколы EyeDetect", "EyeDetect Украина", "окуломоторный тест"],
       crumbHome: "Главная",
       crumb: "О Converus и EyeDetect",
@@ -323,8 +323,8 @@ export const converusPage = {
 
   en: {
     seo: {
-      title: "Converus and EyeDetect: history, science, test protocols, equipment",
-      description: "Who created EyeDetect, how it was validated, which test protocols exist, what equipment it runs on, and how it differs from the polygraph, EyeDetect+ and VerifEye. Based on Converus materials.",
+      title: "Converus and EyeDetect: History, Science, Test Protocols",
+      description: "Who created EyeDetect, how it was validated, test protocols and equipment, how it differs from the polygraph, EyeDetect+ and VerifEye. Per Converus.",
       keywords: ["Converus", "EyeDetect history", "who created EyeDetect", "EyeDetect protocols", "EyeDetect Ukraine", "ocular-motor deception test"],
       crumbHome: "Home",
       crumb: "About Converus and EyeDetect",

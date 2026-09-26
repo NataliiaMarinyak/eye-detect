@@ -5,7 +5,7 @@ export const gambling = {
   uk: {
     nav: "Азартні ігри",
     seo: {
-      title: "Азартні ігри і приховані борги: перевірка на детекторі брехні",
+      title: "Азартні ігри і приховані борги: тест на детекторі брехні",
       description: "Партнер підозрює ставки, онлайн-казино або приховані кредити. EyeDetect у Львові за 30–45 хв або VerifEye онлайн за 15–20 хв: питання лише про факти, без осуду.",
       keywords: ["перевірка партнера на ставки", "детектор брехні азартні ігри", "приховані кредити партнера", "поліграф ігрова залежність", "чи грає чоловік онлайн казино"],
     },
@@ -35,7 +35,7 @@ export const gambling = {
     nav: "Азартные игры",
     seo: {
       title: "Азартные игры и скрытые долги: проверка на детекторе лжи",
-      description: "Партнёр подозревает ставки, онлайн-казино или скрытые кредиты. EyeDetect во Львове за 30–45 мин или VerifEye онлайн за 15–20 мин: вопросы о фактах, без осуждения.",
+      description: "Подозрение на ставки, онлайн-казино или скрытые кредиты. EyeDetect во Львове за 30–45 мин или VerifEye онлайн за 15–20 мин: вопросы о фактах, без осуждения.",
       keywords: ["проверка партнёра на ставки", "детектор лжи азартные игры", "скрытые кредиты партнёра", "полиграф игровая зависимость", "играет ли муж в онлайн казино"],
     },
     h1: "Азартные игры и скрытые траты: проверка на детекторе лжи",
@@ -64,7 +64,7 @@ export const gambling = {
     nav: "Gambling",
     seo: {
       title: "Gambling and Hidden Debts: A Lie Detector Test for Couples",
-      description: "Suspect betting, online casinos, or hidden loans? EyeDetect in Lviv in 30–45 minutes or VerifEye online in 15–20 minutes. Questions about facts only, no judgment.",
+      description: "Suspect betting, online casinos, or hidden loans? EyeDetect in Lviv in 30–45 min or VerifEye online in 15–20 min. Questions about facts only, no judgment.",
       keywords: ["gambling lie detector test", "is my partner gambling", "hidden loans partner polygraph", "gambling addiction polygraph test", "hidden debt lie detector"],
     },
     h1: "Gambling and Hidden Spending: A Lie Detector Test",

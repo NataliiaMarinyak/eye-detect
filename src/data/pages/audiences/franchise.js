@@ -5,7 +5,7 @@ import { cta, how } from "../audiencesShared";
 export const franchise = {
   slug: "franchise",
   uk: {
-    seo: { title: "Детектор брехні для франчайзера — перевірка партнера EyeDetect", description: "EyeDetect для франчайзерів і мереж: перевірка партнера перед передачею бренду, приховані борги і судимості, паралельний бізнес, заниження виручки для роялті.", keywords: ["детектор брехні для франчайзера", "перевірка франчайзі", "поліграф для партнера по бізнесу", "приховування виручки роялті", "EyeDetect франшиза"], crumbHome: "Головна", crumb: "Для франчайзерів і мереж" },
+    seo: { title: "Детектор брехні для франчайзера — перевірка партнера", description: "EyeDetect для франчайзерів і мереж: перевірка партнера перед передачею бренду, приховані борги і судимості, паралельний бізнес, заниження виручки для роялті.", keywords: ["детектор брехні для франчайзера", "перевірка франчайзі", "поліграф для партнера по бізнесу", "приховування виручки роялті", "EyeDetect франшиза"], crumbHome: "Головна", crumb: "Для франчайзерів і мереж" },
     hero: { eyebrow: "Франчайзерам і мережам із партнерами", h1: "Детектор брехні для франчайзера: перевірка партнера", sub: "Ви передаєте партнеру бренд, стандарти і клієнтську базу, а перевірити можете лише документи, які він сам надав. EyeDetect за 30–45 хвилин перевіряє конкретні факти: борги, судимості, паралельний бізнес, реальну виручку. Один тест перед підписанням договору дешевший за розірвання після.", facts: ["30–45 хвилин на людину", "точність 86–90%", "Львів, виїзд або онлайн", "звіт одразу після тесту"] },
     blocks: [
       { type: "cards", title: "Де це допомагає", items: [
@@ -61,7 +61,7 @@ export const franchise = {
     ],
   },
   en: {
-    seo: { title: "Lie Detector for Franchisors — Partner Screening with EyeDetect", description: "EyeDetect for franchisors and chains: partner screening before handing over the brand, hidden debts and convictions, parallel business, underreported royalties.", keywords: ["lie detector for franchisors", "franchisee screening", "polygraph for a business partner", "underreported royalty revenue", "EyeDetect franchise"], crumbHome: "Home", crumb: "For franchisors and chains" },
+    seo: { title: "Lie Detector for Franchisors — Partner Screening", description: "EyeDetect for franchisors and chains: partner screening before handing over the brand, hidden debts and convictions, parallel business, underreported royalties.", keywords: ["lie detector for franchisors", "franchisee screening", "polygraph for a business partner", "underreported royalty revenue", "EyeDetect franchise"], crumbHome: "Home", crumb: "For franchisors and chains" },
     hero: { eyebrow: "For franchisors and chains with partners", h1: "Lie Detector for Franchisors: Partner Screening", sub: "You hand a partner your brand, standards, and customer base, but can only check the documents they chose to provide. In 30–45 minutes EyeDetect checks specific facts: debts, convictions, a parallel business, real revenue. One test before signing the agreement costs less than terminating it after.", facts: ["30–45 minutes per person", "86–90% accuracy", "Lviv, on-site, or online", "report right after the test"] },
     blocks: [
       { type: "cards", title: "Where it helps", items: [
