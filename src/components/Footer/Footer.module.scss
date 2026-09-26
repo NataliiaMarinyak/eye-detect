@@ -123,6 +123,9 @@
 .navLink {
   font-size: 15px;
   line-height: 1.4;
+  // «Политика конфиденциальности» на 1024 px не вміщувалась у колонку.
+  overflow-wrap: anywhere;
+  hyphens: auto;
   color: rgba(255, 255, 255, 0.85);
   transition: color 200ms ease;
 
