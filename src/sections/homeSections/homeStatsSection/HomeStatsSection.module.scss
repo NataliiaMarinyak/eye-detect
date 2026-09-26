@@ -17,8 +17,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 24px 16px;
 
-  @media screen and (min-width: $tablet) {
-    grid-template-columns: repeat(4, 1fr);
+  // У чотири колонки — лише з ноутбука: на планшеті 768 px «500 000+»
+  // не вміщувалось, і четверте число («60+ країн») виходило за край екрана.
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0;
   }
 }
@@ -28,7 +30,7 @@
   flex-direction: column;
   gap: 6px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $laptop) {
     padding: 0 24px;
     border-left: 1px solid $lineColor;
 
