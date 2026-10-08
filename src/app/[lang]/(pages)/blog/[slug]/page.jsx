@@ -76,7 +76,7 @@ const PostPage = ({ params }) => {
           </div>
           {topic && (
             <p className={styles.topic}>
-              <span className={styles.topicLabel}>{t.situationLabel}</span>
+              <span className={styles.topicLabel}>{t.situationLabel}:{" "}</span>
               <a href={localHref(lang, `/situations/${topic.slug}`)} className={styles.topicLink}>{topic.h1}</a>
             </p>
           )}

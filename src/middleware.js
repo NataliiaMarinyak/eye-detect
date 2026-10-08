@@ -56,7 +56,10 @@ export function middleware(request) {
   );
   if (oldEyedetect) {
     const prefix = oldEyedetect[1] === "/uk" ? "" : oldEyedetect[1] || "";
-    return NextResponse.redirect(new URL(`${prefix}/eyedetect`, request.url), 308);
+    // clone() зберігає параметри адреси (utm-мітки тощо).
+    const url = request.nextUrl.clone();
+    url.pathname = `${prefix}/eyedetect`;
+    return NextResponse.redirect(url, 308);
   }
 
   // Пропускаємо системні файли

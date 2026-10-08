@@ -20,14 +20,17 @@ function guard() {
   function broken() {
     return de.id === "__next_error__" || !d.head || !d.body || !d.head.querySelector('link[rel="canonical"]') || !d.body.firstElementChild;
   }
-  // Не більше одного перезавантаження на сторінку за сеанс; якщо сховище недоступне — жодного.
+  // Не частіше одного перезавантаження на хвилину для сторінки; якщо сховище недоступне — жодного.
   function once(fn) {
-    var key = "eyeReload:" + location.pathname;
+    var key = "eyeReload:" + location.pathname, now = Date.now();
     try {
-      if (sessionStorage.getItem(key)) return;
-      sessionStorage.setItem(key, "1");
+      if (now - (Number(sessionStorage.getItem(key)) || 0) < 60000) return;
+      sessionStorage.setItem(key, String(now));
     } catch (e) { return; }
     fn();
+  }
+  function enc(text) {
+    try { return encodeURIComponent(text); } catch (e) { return ""; }
   }
   // Сигнал про збій: один GET на статичний файл /ce.json. Його видно в «Статистиці сканування»
   // Search Console, якщо сторінка впала саме в роботі Google. У параметрах лише текст помилки,
@@ -39,9 +42,9 @@ function guard() {
         if (/ChunkLoadError|_next\/static/.test(errors[i])) { message = errors[i]; break; }
       }
       var file = (message.match(/_next\/static\/[^\s)'"]+/) || [""])[0].split("/").pop() || "";
-      var query = "m=" + encodeURIComponent(message.replace(/\s+/g, " ").slice(0, 120)) +
-        "&f=" + encodeURIComponent(file.slice(0, 80)) +
-        "&p=" + encodeURIComponent(location.pathname.slice(0, 120));
+      var query = "m=" + enc(message.replace(/\s+/g, " ").slice(0, 120)) +
+        "&f=" + enc(file.slice(0, 80)) +
+        "&p=" + enc(location.pathname.slice(0, 120));
       fetch("/ce.json?" + query, { cache: "no-store", keepalive: true })["catch"](function () {});
     } catch (e) {}
   }
@@ -49,7 +52,11 @@ function guard() {
     if (busy || !S || !broken() || ++n > 3) return;
     // Після переходу всередині сайту знімок належить попередній сторінці — тоді просто
     // один раз завантажуємо поточну адресу заново.
-    if (location.pathname !== S.path) { once(function () { location.reload(); }); return; }
+    if (location.pathname !== S.path) {
+      if (n === 1) ping();
+      once(function () { location.reload(); });
+      return;
+    }
     busy = 1;
     try {
       de.removeAttribute("id");
@@ -66,11 +73,16 @@ function guard() {
     if (n === 1) {
       ping();
       // Відновлена сторінка читається, посилання працюють, але кнопки й форми — ні.
-      // Тому при першому натисканні не на посилання один раз перезавантажуємо сторінку.
-      addEventListener("pointerdown", function (ev) {
+      // Тому при натисканні не на посилання (клік, Enter чи пробіл) перезавантажуємо сторінку.
+      // Саме click, а не pointerdown: прокрутка пальцем і виділення тексту не мають перезавантажувати.
+      var reloadOnAction = function (ev) {
+        if (ev.type === "keydown" && ev.key !== "Enter" && ev.key !== " ") return;
         if (ev.target && ev.target.closest && ev.target.closest("a[href]")) return;
+        if (navigator.onLine === false) return;
         once(function () { location.reload(); });
-      }, true);
+      };
+      addEventListener("click", reloadOnAction, true);
+      addEventListener("keydown", reloadOnAction, true);
     }
   }
   function later() { clearTimeout(timer); timer = setTimeout(fix, 30); }
@@ -90,11 +102,15 @@ function guard() {
       head: list(KEEP).map(function (el) { return el.outerHTML; }).join(""),
       body: t.innerHTML,
     };
+    // Перші чотири помилки сторінки, а помилки власних скриптів (_next/static) — понад цей ліміт.
+    var note = function (text) {
+      if (errors.length < 4 || (errors.length < 12 && /ChunkLoadError|_next\/static/.test(text))) errors.push(text);
+    };
     addEventListener("error", function (ev) {
-      if (errors.length < 4) errors.push((ev.message || "ResourceError") + " " + (ev.filename || (ev.target && (ev.target.src || ev.target.href)) || ""));
+      note((ev.message || "ResourceError") + " " + (ev.filename || (ev.target && (ev.target.src || ev.target.href)) || ""));
     }, true);
     addEventListener("unhandledrejection", function (ev) {
-      if (errors.length < 4) errors.push(String(ev.reason && (ev.reason.message || ev.reason)));
+      note(String(ev.reason && (ev.reason.message || ev.reason)));
     });
     new MutationObserver(later).observe(de, { attributes: true, attributeFilter: ["id"], childList: true });
     new MutationObserver(later).observe(d.head, { childList: true });

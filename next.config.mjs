@@ -22,7 +22,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        // Службовий файл для сигналу про збій сторінки (src/app/global-error.jsx):
+        // Службовий файл для сигналу про збій сторінки (src/components/CrashGuard/CrashGuard.jsx):
         // не для індексу і не для кешу.
         source: "/ce.json",
         headers: [
