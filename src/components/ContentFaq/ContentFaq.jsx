@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useId, useState } from "react";
 import StudyLinks from "@/components/StudyLinks/StudyLinks";
 import styles from "./ContentFaq.module.scss";
 
@@ -8,11 +8,15 @@ const SOURCES = { uk: "Джерела:", ru: "Источники:", en: "Sources
 
 // Блок питань для внутрішніх сторінок. items: [{ q, a, sources? }], sources: [[назва, url], ...]. Розмітку FAQPage
 // додає сама сторінка через getContentFaqJsonLd.
-const ContentFaq = ({ items = [], lang = "uk", title }) => {
+// sectionId: якір секції (типово #faq). На сторінці /faq блоків кілька, там якір ставить сама сторінка,
+// тому передає sectionId={null}, щоб id не повторювались.
+const ContentFaq = ({ items = [], lang = "uk", title, sectionId = "faq" }) => {
   const [open, setOpen] = useState(null);
+  // Унікальний префікс для id відповідей: блок може стояти на сторінці кілька разів.
+  const uid = useId();
 
   return (
-    <section id="faq">
+    <section id={sectionId || undefined}>
       <div className={`container ${styles.container}`}>
         <h2 className={styles.title}>{title || TITLES[lang] || TITLES.uk}</h2>
         <ul className={styles.list}>
@@ -25,7 +29,7 @@ const ContentFaq = ({ items = [], lang = "uk", title }) => {
                     type="button"
                     className={styles.btn}
                     aria-expanded={isOpen}
-                    aria-controls={`cfaq-${i}`}
+                    aria-controls={`${uid}cfaq-${i}`}
                     onClick={() => setOpen(isOpen ? null : i)}
                   >
                     <span>{it.q}</span>
@@ -34,7 +38,7 @@ const ContentFaq = ({ items = [], lang = "uk", title }) => {
                     </svg>
                   </button>
                 </h3>
-                <div id={`cfaq-${i}`} className={`${styles.panel} ${isOpen ? styles.isOpen : ""}`}>
+                <div id={`${uid}cfaq-${i}`} className={`${styles.panel} ${isOpen ? styles.isOpen : ""}`}>
                   <div className={styles.inner}>
                     <p className={styles.answer}>{it.a}</p>
                     {it.study && <StudyLinks lang={lang} kind={it.study} />}

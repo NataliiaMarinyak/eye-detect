@@ -97,5 +97,6 @@
   font-size: 14px;
   line-height: 1.6;
   text-align: center;
-  color: $langColor;
+  // Темніший сірий: на світлій панелі $langColor давав контраст 4,23 при нормі 4,5.
+  color: $subTitleColor;
 }

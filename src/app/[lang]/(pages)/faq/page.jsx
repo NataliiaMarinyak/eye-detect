@@ -40,7 +40,7 @@ const FaqPage = ({ params }) => {
 
       {d.sections.map((s, i) => (
         <div key={s.title} id={`faq-${i}`} className={styles.group}>
-          <ContentFaq items={s.items} lang={lang} title={s.title} />
+          <ContentFaq items={s.items} lang={lang} title={s.title} sectionId={null} />
         </div>
       ))}
 
