@@ -13,30 +13,17 @@ const LOCALE_LABEL_KEY = {
 const LocaleSwitcher = ({ changeLanguage, lang, dictionary }) => {
   const pathName = usePathname();
 
+  // Шлях без мовного префікса: "/uk/x" → "/x", "/ru" → "/", "/x" → "/x".
+  // На сервері шлях приходить із префіксом (/uk/...), у браузері української версії — без нього,
+  // тому зводимо обидва випадки до одного, щоб посилання в HTML і після гідрації збігались.
+  const segments = (pathName || "/").split("/");
+  if (i18n.locales.includes(segments[1])) segments.splice(1, 1);
+  const barePath = segments.join("/") || "/";
+
+  // Головна мовної версії — без кінцевого слеша (/ru/ віддає 308 на /ru).
   const redirectedPathName = (locale) => {
-    if (!pathName) return "/";
-
-    const pathnameIsMissingLocale = i18n.locales.every(
-      (loc) => !pathName.startsWith(`/${loc}/`) && pathName !== `/${loc}`
-    );
-
-    if (pathnameIsMissingLocale) {
-      if (locale === i18n.defaultLocale) return pathName;
-      return `/${locale}${pathName}`;
-    } else {
-      if (locale === i18n.defaultLocale) {
-        const segments = pathName.split("/");
-        const isHome = segments.length === 2;
-        if (isHome) return "/";
-
-        segments.splice(1, 1);
-        return segments.join("/");
-      }
-
-      const segments = pathName.split("/");
-      segments[1] = locale;
-      return segments.join("/");
-    }
+    if (locale === i18n.defaultLocale) return barePath;
+    return barePath === "/" ? `/${locale}` : `/${locale}${barePath}`;
   };
 
   // Порядок у перемикачі: UA · EN · RU.
@@ -56,6 +43,8 @@ const LocaleSwitcher = ({ changeLanguage, lang, dictionary }) => {
             <Link
               className={lang === locale ? styles.active : styles.langBtn}
               href={redirectedPathName(locale)}
+              hrefLang={locale}
+              prefetch={false}
             >
               {label}
             </Link>

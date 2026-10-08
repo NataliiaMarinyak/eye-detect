@@ -175,6 +175,42 @@
   }
 }
 
+/* Посилання на сторінку ситуації, про яку стаття. Панель у стилі .lead */
+.topic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  margin-top: 32px;
+  padding: 16px 20px;
+  background-color: $panelBgColor;
+  border-left: 3px solid $primary;
+  border-radius: 0 $radiusCard $radiusCard 0;
+
+  @media screen and (min-width: $tablet) {
+    padding: 18px 24px;
+  }
+}
+
+.topicLabel {
+  font-size: 14px;
+  line-height: 1.4;
+  color: $subTitleColor;
+}
+
+.topicLink {
+  padding: 4px 0;
+  font-size: 17px;
+  line-height: 1.4;
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: $primaryHover;
+  }
+}
+
 .related {
   padding-top: 40px;
   margin-top: 48px;

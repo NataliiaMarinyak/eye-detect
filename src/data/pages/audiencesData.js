@@ -370,3 +370,12 @@ export const getAudience = (slug, lang) => {
 };
 
 export const getAudiencesList = (lang) => audiences.map((a) => ({ slug: a.slug, title: (a[lang] || a.uk).seo.crumb, sub: (a[lang] || a.uk).hero.h1 }));
+
+// Галузі для блоку «Інші галузі»: наступні за списком по колу (після останньої знову перша).
+// Так на кожну сторінку /for/* веде однакова кількість посилань з інших галузей.
+export const getOtherAudiences = (slug, lang, count = 4) => {
+  const list = getAudiencesList(lang);
+  const i = list.findIndex((a) => a.slug === slug);
+  if (i === -1) return [];
+  return [...list.slice(i + 1), ...list.slice(0, i)].slice(0, count);
+};

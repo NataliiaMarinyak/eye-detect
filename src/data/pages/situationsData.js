@@ -22,6 +22,7 @@ const shared = {
     ctaTitle: "Готові дізнатися правду?",
     ctaText: "Залиште заявку або зателефонуйте. Відповімо цілодобово, протягом 15–30 хвилин.",
     otherTitle: "Інші ситуації",
+    articlesTitle: "Статті на цю тему",
   },
   ru: {
     crumbHome: "Главная",
@@ -39,6 +40,7 @@ const shared = {
     ctaTitle: "Готовы узнать правду?",
     ctaText: "Оставьте заявку или позвоните. Ответим круглосуточно, в течение 15–30 минут.",
     otherTitle: "Другие ситуации",
+    articlesTitle: "Статьи на эту тему",
   },
   en: {
     crumbHome: "Home",
@@ -56,6 +58,7 @@ const shared = {
     ctaTitle: "Ready to find out the truth?",
     ctaText: "Send a request or call us. We reply 24/7, within 15–30 minutes.",
     otherTitle: "Other situations",
+    articlesTitle: "Articles on this topic",
   },
 };
 

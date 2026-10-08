@@ -1,9 +1,9 @@
 // Статті блогу. Кожна: slug, date, uk/ru { title, description, h1, lead, sections:[{h2, paragraphs:[...], list?:[...]}], faq? }.
 // Тексти написані під конкретні запити з Search Console (див. docs/seo-structure-uk.md, розділ 10).
 export const blogShared = {
-  uk: { crumbHome: "Головна", crumb: "Блог", title: "Блог про детектор брехні", sub: "Як проходить тест, що можна перевірити, а що ні, і як не потрапити на застосунок-жарт. Пишемо просто, без міфів.", readMore: "Читати", published: "Опубліковано", related: "Ще з блогу", ctaTitle: "Є конкретне питання?", ctaText: "Напишіть нам, підкажемо, чи підходить тест для вашої ситуації.", ctaOnline: "Пройти онлайн", ctaBook: "Записатися" },
-  ru: { crumbHome: "Главная", crumb: "Блог", title: "Блог о детекторе лжи", sub: "Как проходит тест, что можно проверить, а что нет, и как не попасть на приложение-шутку. Пишем просто, без мифов.", readMore: "Читать", published: "Опубликовано", related: "Ещё из блога", ctaTitle: "Есть конкретный вопрос?", ctaText: "Напишите нам, подскажем, подходит ли тест для вашей ситуации.", ctaOnline: "Пройти онлайн", ctaBook: "Записаться" },
-  en: { crumbHome: "Home", crumb: "Blog", title: "Lie Detector Blog", sub: "How the test works, what can and cannot be checked, and how to avoid falling for a joke app. Plain language, no myths.", readMore: "Read", published: "Published", related: "More from the blog", ctaTitle: "Have a specific question?", ctaText: "Write to us and we will tell you whether the test fits your situation.", ctaOnline: "Take the online test", ctaBook: "Book a test" },
+  uk: { crumbHome: "Головна", crumb: "Блог", title: "Блог про детектор брехні", sub: "Як проходить тест, що можна перевірити, а що ні, і як не потрапити на застосунок-жарт. Пишемо просто, без міфів.", readMore: "Читати", published: "Опубліковано", related: "Ще з блогу", ctaTitle: "Є конкретне питання?", ctaText: "Напишіть нам, підкажемо, чи підходить тест для вашої ситуації.", ctaOnline: "Пройти онлайн", ctaBook: "Записатися", situationLabel: "Докладно про цю ситуацію" },
+  ru: { crumbHome: "Главная", crumb: "Блог", title: "Блог о детекторе лжи", sub: "Как проходит тест, что можно проверить, а что нет, и как не попасть на приложение-шутку. Пишем просто, без мифов.", readMore: "Читать", published: "Опубликовано", related: "Ещё из блога", ctaTitle: "Есть конкретный вопрос?", ctaText: "Напишите нам, подскажем, подходит ли тест для вашей ситуации.", ctaOnline: "Пройти онлайн", ctaBook: "Записаться", situationLabel: "Подробно об этой ситуации" },
+  en: { crumbHome: "Home", crumb: "Blog", title: "Lie Detector Blog", sub: "How the test works, what can and cannot be checked, and how to avoid falling for a joke app. Plain language, no myths.", readMore: "Read", published: "Published", related: "More from the blog", ctaTitle: "Have a specific question?", ctaText: "Write to us and we will tell you whether the test fits your situation.", ctaOnline: "Take the online test", ctaBook: "Book a test", situationLabel: "More on this situation" },
 };
 
 import { blogPosts2 } from "@/data/pages/blogData2";
@@ -250,4 +250,20 @@ export const getPost = (slug, lang) => {
 export const getPosts = (lang) =>
   [...blogPosts]
     .sort((a, b) => (a.date < b.date ? 1 : -1))
-    .map((p) => ({ slug: p.slug, date: p.date, ...(p[lang] || p.uk) }));
+    .map((p) => ({ slug: p.slug, date: p.date, situation: p.situation, ...(p[lang] || p.uk) }));
+
+// Статті для блоку «Ще з блогу». Спершу ті, що про ту саму ситуацію, далі наступні за датою
+// по колу (після найстарішої знову найновіша). Так на кожну статтю ведуть посилання з інших,
+// а не лише на три найновіші.
+export const getRelatedPosts = (slug, lang, count = 3) => {
+  const posts = getPosts(lang);
+  const i = posts.findIndex((p) => p.slug === slug);
+  if (i === -1) return [];
+  const circle = [...posts.slice(i + 1), ...posts.slice(0, i)];
+  const { situation } = posts[i];
+  const same = situation ? circle.filter((p) => p.situation === situation) : [];
+  return [...same, ...circle.filter((p) => !same.includes(p))].slice(0, count);
+};
+
+// Статті про певну ситуацію (поле situation дорівнює slug сторінки /situations/*), новіші першими.
+export const getPostsBySituation = (situation, lang) => getPosts(lang).filter((p) => p.situation === situation);

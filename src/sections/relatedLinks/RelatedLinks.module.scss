@@ -1,0 +1,80 @@
+@import "../../app/variables";
+
+// Біла смуга між темним CTA і підвалом, як «Інші ситуації» на сторінках ситуацій.
+.section {
+  background-color: $cardBgColor;
+  border-top: 1px solid $lineColor;
+  border-bottom: 1px solid $lineColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @media screen and (min-width: $laptop) {
+    gap: 36px;
+  }
+}
+
+.title {
+  @include sectionTitle;
+
+  // Блок компактний: розмір як у «Інші ситуації» (.titleSmall), а не 26–40 px.
+  // Обгортка & {} ставить правило після @media з sectionTitle, тому воно діє на всіх ширинах.
+  & {
+    font-size: 22px;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+// Як .otherLink на сторінках ситуацій, тільки без іконки.
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px 18px;
+  border: 1px solid $lineColor;
+  border-radius: 100px;
+  background-color: $cardBgColor;
+  font-size: 15px;
+  line-height: 1.35;
+  text-align: center;
+  transition: border-color 200ms ease, color 200ms ease;
+
+  &:hover {
+    border-color: $primary;
+    color: $primary;
+  }
+
+  // Рамка фокуса всередині: .container обрізає все, що виходить за його ширину.
+  &:focus-visible {
+    outline-offset: -3px;
+  }
+}
+
+.more {
+  padding: 4px 0;
+  font-size: 15px;
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: $primaryHover;
+  }
+}

@@ -8,7 +8,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lastmod": "node scripts/gen-lastmod.mjs"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.6.1",

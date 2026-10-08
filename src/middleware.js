@@ -48,6 +48,17 @@ export function middleware(request) {
     return NextResponse.redirect(new URL(`${closedCity[1] || ""}/locations`, request.url), 308);
   }
 
+  // SEO: старі адреси сторінки EyeDetect з попереднього сайту. Google досі
+  // запитує їх і отримує 404, тому 308 на чинну сторінку тією ж мовою.
+  // Мову визначає префікс; /uk і адреса без префікса — українська, вона в корені.
+  const oldEyedetect = pathname.match(
+    /^(\/uk|\/ru|\/en)?\/(?:testuvannya-eyedetect|testirovanie-eyedetect|eyedetect\.html)\/?$/
+  );
+  if (oldEyedetect) {
+    const prefix = oldEyedetect[1] === "/uk" ? "" : oldEyedetect[1] || "";
+    return NextResponse.redirect(new URL(`${prefix}/eyedetect`, request.url), 308);
+  }
+
   // Пропускаємо системні файли
   if (
     pathname.startsWith("/_next") ||

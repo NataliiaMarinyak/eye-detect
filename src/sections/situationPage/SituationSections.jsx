@@ -9,7 +9,8 @@ import styles from "./SituationSections.module.scss";
 const localHref = (lang, path) => (lang === i18n.defaultLocale ? path : `/${lang}${path}`);
 
 // Секції сторінки ситуації. Дані: src/data/pages/situationsData.js
-const SituationSections = ({ s, lang, others, dictionary }) => {
+// posts: статті блогу про цю ситуацію [{ slug, title }], може бути порожнім.
+const SituationSections = ({ s, lang, others, posts = [], dictionary }) => {
   const t = s.shared;
   return (
     <>
@@ -114,9 +115,24 @@ const SituationSections = ({ s, lang, others, dictionary }) => {
         </div>
       </section>
 
-      {/* Інші ситуації */}
+      {/* Статті на цю тему (якщо є) та інші ситуації */}
       <section className={styles.white}>
         <div className={`container ${styles.container}`}>
+          {posts.length > 0 && (
+            <div className={styles.articlesGroup}>
+              <h2 className={styles.titleSmall}>{t.articlesTitle}</h2>
+              <ul className={styles.articles}>
+                {posts.map((p) => (
+                  <li key={p.slug}>
+                    <a href={localHref(lang, `/blog/${p.slug}`)} className={styles.articleLink}>
+                      <span>{p.title}</span>
+                      <span className={styles.articleArrow} aria-hidden="true">→</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           <h2 className={styles.titleSmall}>{t.otherTitle}</h2>
           <ul className={styles.others}>
             {others.map((o) => (

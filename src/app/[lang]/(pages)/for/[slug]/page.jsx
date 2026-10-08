@@ -1,9 +1,13 @@
 import { notFound } from "next/navigation";
 import PageHero from "@/sections/pageHero/PageHero";
 import InfoSections from "@/sections/infoPage/InfoSections";
-import { audiences, getAudience } from "@/data/pages/audiencesData";
+import RelatedLinks from "@/sections/relatedLinks/RelatedLinks";
+import { audiences, getAudience, getOtherAudiences } from "@/data/pages/audiencesData";
+import { otherAudiences } from "@/data/pages/audiencesShared";
 import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadata";
 import { i18n } from "@/dictionaries/i18n.config";
+
+const localHref = (lang, path) => (lang === i18n.defaultLocale ? path : `/${lang}${path}`);
 
 const PHOTOS = {
   lawyers: "/images/converus/eyedetect-examinee.webp",
@@ -48,6 +52,9 @@ const AudiencePage = ({ params }) => {
     provider: { "@id": `${process.env.NEXT_PUBLIC_SEO_URL}#business` },
     areaServed: { "@type": "Country", name: { uk: "Україна", ru: "Украина", en: "Ukraine" }[lang] || "Україна" },
   };
+  // «Інші галузі»: чотири наступні за списком по колу і посилання на перелік /for.
+  const t = otherAudiences[lang] || otherAudiences.uk;
+  const others = getOtherAudiences(slug, lang).map((a) => ({ href: localHref(lang, `/for/${a.slug}`), label: a.title }));
 
   return (
     <>
@@ -55,6 +62,7 @@ const AudiencePage = ({ params }) => {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(service) }} />
       <PageHero eyebrow={d.hero.eyebrow} title={d.hero.h1} sub={d.hero.sub} facts={d.hero.facts} primary={d.blocks.at(-1)?.button} service={d.blocks.at(-1)?.service} photo={PHOTOS[slug] || "/images/converus/eyedetect-examinee.webp"} photoAlt={d.seo.crumb} />
       <InfoSections blocks={d.blocks} lang={lang} />
+      <RelatedLinks title={t.title} links={others} more={{ href: localHref(lang, "/for"), label: t.all }} />
     </>
   );
 };

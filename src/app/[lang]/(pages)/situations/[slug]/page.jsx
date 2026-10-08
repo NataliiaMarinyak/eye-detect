@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import PageHero from "@/sections/pageHero/PageHero";
 import SituationSections from "@/sections/situationPage/SituationSections";
 import { situations, getSituation, getSituationsList } from "@/data/pages/situationsData";
+import { getPostsBySituation } from "@/data/pages/blogData";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getContentFaqJsonLd } from "@/helpers/getContentFaqJsonLd";
 import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadata";
@@ -30,6 +31,8 @@ const SituationPage = async ({ params }) => {
   if (!s) notFound();
   const dictionary = await getDictionary(lang);
   const others = getSituationsList(lang).filter((x) => x.slug !== slug);
+  // Статті блогу про цю ситуацію; якщо їх немає, блок «Статті на цю тему» не показується.
+  const posts = getPostsBySituation(slug, lang).map((p) => ({ slug: p.slug, title: p.title }));
 
   const crumbs = breadcrumbsJsonLd(lang, [
     ["", s.shared.crumbHome],
@@ -50,7 +53,7 @@ const SituationPage = async ({ params }) => {
         secondaryHref={`${lang === "uk" ? "" : "/" + lang}/online`}
         secondaryLabel={dictionary.buttons.testOnline}
       />
-      <SituationSections s={s} lang={lang} others={others} dictionary={dictionary} />
+      <SituationSections s={s} lang={lang} others={others} posts={posts} dictionary={dictionary} />
     </>
   );
 };

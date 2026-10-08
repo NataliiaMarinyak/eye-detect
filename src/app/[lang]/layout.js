@@ -1,5 +1,6 @@
 import "@/app/globals.scss";
 import dynamic from "next/dynamic";
+import { notFound } from "next/navigation";
 import localFont from "next/font/local";
 
 // Шрифти через next/font: попереднє завантаження і підбір запасного шрифту
@@ -33,6 +34,7 @@ import { SiteProvider } from "@/context/SiteContext";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import CallWidget from "@/components/CallWidget/CallWidget";
+import CrashGuard from "@/components/CrashGuard/CrashGuard";
 import { i18n } from "@/dictionaries/i18n.config";
 import { getDictionary } from "@/helpers/getDictionary";
 
@@ -102,6 +104,11 @@ export const dynamicParams = false;
 
 export default async function RootLayout({ children, params }) {
   const { lang } = params;
+  // Відсутній файл у підпапці (/images/x.webp, /a/b/c.png) middleware теж не
+  // переписує, і він доходить до маршруту [...rest] з «мовою» images чи a.
+  // dynamicParams на той маршрут не діє, тому невідому мову відсікаємо тут:
+  // 404 замість помилки 500 (Unsupported locale).
+  if (!i18n.locales.includes(lang)) notFound();
   const dictionary = await getDictionary(lang);
 
   const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
@@ -138,6 +145,8 @@ export default async function RootLayout({ children, params }) {
           {/* </TranslatorProvider> */}
         </SiteProvider>
         <CallWidget lang={lang} />
+        {/* Останнім у body: запам'ятовує готову сторінку на випадок збою скриптів */}
+        <CrashGuard />
       </body>
     </html>
   );

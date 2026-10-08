@@ -2,7 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
-import { blogPosts, blogShared, getPost, getPosts } from "@/data/pages/blogData";
+import { blogPosts, blogShared, getPost, getRelatedPosts } from "@/data/pages/blogData";
+import { getSituationsList } from "@/data/pages/situationsData";
 import { getContentFaqJsonLd } from "@/helpers/getContentFaqJsonLd";
 import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadata";
 import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
@@ -27,7 +28,10 @@ const PostPage = ({ params }) => {
   const p = getPost(slug, lang);
   if (!p) notFound();
   const t = blogShared[lang] || blogShared.uk;
-  const others = getPosts(lang).filter((x) => x.slug !== slug).slice(0, 3);
+  // «Ще з блогу»: у кожної статті свій набір (див. getRelatedPosts), а не три найновіші на всіх.
+  const others = getRelatedPosts(slug, lang);
+  // Сторінка ситуації, про яку ця стаття (поле situation у даних статті).
+  const topic = p.situation ? getSituationsList(lang).find((x) => x.slug === p.situation) : null;
 
   const crumbs = breadcrumbsJsonLd(lang, [["", t.crumbHome], ["blog", t.crumb], [`blog/${slug}`, p.title]]);
   const article = {
@@ -70,6 +74,12 @@ const PostPage = ({ params }) => {
               </div>
             ))}
           </div>
+          {topic && (
+            <p className={styles.topic}>
+              <span className={styles.topicLabel}>{t.situationLabel}</span>
+              <a href={localHref(lang, `/situations/${topic.slug}`)} className={styles.topicLink}>{topic.h1}</a>
+            </p>
+          )}
           {others.length > 0 && (
             <div className={styles.related}>
               <h2 className={styles.relatedTitle}>{t.related}</h2>

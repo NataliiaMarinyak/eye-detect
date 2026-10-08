@@ -293,6 +293,64 @@
   }
 }
 
+// Статті блогу на цю тему: група над «Інші ситуації» у тій самій білій секції, відділена лінією.
+.articlesGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid $lineColor;
+
+  @media screen and (min-width: $laptop) {
+    gap: 36px;
+    padding-bottom: 36px;
+  }
+}
+
+.articles {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+// Як .otherLink, але прямокутний рядок: назва статті довга і на телефоні переноситься.
+.articleLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 52px;
+  padding: 12px 18px;
+  border: 1px solid $lineColor;
+  border-radius: $radiusBtn;
+  background-color: $cardBgColor;
+  font-size: 15px;
+  line-height: 1.45;
+  transition: border-color 200ms ease, color 200ms ease;
+
+  &:hover {
+    border-color: $primary;
+    color: $primary;
+  }
+
+  // Рамка фокуса всередині рядка: .container обрізає все, що виходить за його ширину.
+  &:focus-visible {
+    outline-offset: -3px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+}
+
+.articleArrow {
+  flex-shrink: 0;
+  color: $primary;
+}
+
 .others {
   display: flex;
   flex-wrap: wrap;
