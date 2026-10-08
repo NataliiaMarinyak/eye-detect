@@ -68,6 +68,10 @@
 }
 
 .more {
+  // Не менше 44 px заввишки, щоб на телефоні було зручно натиснути.
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   padding: 4px 0;
   font-size: 15px;
   color: $primary;
