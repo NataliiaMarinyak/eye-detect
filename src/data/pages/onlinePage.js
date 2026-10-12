@@ -1,4 +1,5 @@
-// Зміст сторінки /online (VerifEye). Ключі: uk, ru.
+// Зміст сторінки /online (VerifEye). Ключі: uk, ru, en.
+// fit.bad.link — посилання внизу картки «Краще EyeDetect у кабінеті»: href без мовного префікса, секція додає /ru або /en.
 export const onlinePage = {
   uk: {
     seo: {
@@ -45,7 +46,7 @@ export const onlinePage = {
     fit: {
       title: "Коли онлайн підходить, а коли краще кабінет",
       good: { title: "Онлайн підходить", items: ["перевірка на вірність, коли партнер в іншому місті", "кандидат на роботу з іншого регіону", "швидка відповідь на одне-три конкретні питання", "перше знайомство з методом перед EyeDetect"] },
-      bad: { title: "Краще EyeDetect у кабінеті", items: ["крадіжки і службові розслідування з великими сумами", "коли потрібен максимальний контроль умов тесту", "людина носить окуляри з сильними лінзами або має проблеми з зором", "4 теми і більше: два тести VerifEye або EyeDetect за домовленістю"] },
+      bad: { title: "Краще EyeDetect у кабінеті", items: ["крадіжки і службові розслідування з великими сумами", "коли потрібен максимальний контроль умов тесту", "людина носить окуляри з сильними лінзами або має проблеми з зором", "4 теми і більше: два тести VerifEye або EyeDetect за домовленістю"], link: { text: "Як проходить EyeDetect у кабінеті", href: "/eyedetect" } },
     },
     requirements: {
       title: "Що потрібно від людини, яка проходить тест",
@@ -107,7 +108,7 @@ export const onlinePage = {
     fit: {
       title: "Когда онлайн подходит, а когда лучше кабинет",
       good: { title: "Онлайн подходит", items: ["проверка на верность, когда партнёр в другом городе", "кандидат на работу из другого региона", "быстрый ответ на один-три конкретных вопроса", "первое знакомство с методом перед EyeDetect"] },
-      bad: { title: "Лучше EyeDetect в кабинете", items: ["кражи и служебные расследования с крупными суммами", "когда нужен максимальный контроль условий теста", "человек носит очки с сильными линзами или имеет проблемы со зрением", "4 темы и больше: два теста VerifEye или EyeDetect по договорённости"] },
+      bad: { title: "Лучше EyeDetect в кабинете", items: ["кражи и служебные расследования с крупными суммами", "когда нужен максимальный контроль условий теста", "человек носит очки с сильными линзами или имеет проблемы со зрением", "4 темы и больше: два теста VerifEye или EyeDetect по договорённости"], link: { text: "Как проходит EyeDetect в кабинете", href: "/eyedetect" } },
     },
     requirements: {
       title: "Что нужно от человека, который проходит тест",
@@ -169,7 +170,7 @@ export const onlinePage = {
     fit: {
       title: "When online is a good fit, and when the office is better",
       good: { title: "Online is a good fit", items: ["a fidelity check when the partner is in another city", "a job candidate from another region", "a quick answer to one to three specific questions", "a first introduction to the method before EyeDetect"] },
-      bad: { title: "EyeDetect in our Lviv office is better", items: ["theft and internal investigations involving large sums", "when maximum control over test conditions is needed", "the person wears glasses with strong lenses or has vision problems", "4 or more topics: two VerifEye tests, or EyeDetect by agreement"] },
+      bad: { title: "EyeDetect in our Lviv office is better", items: ["theft and internal investigations involving large sums", "when maximum control over test conditions is needed", "the person wears glasses with strong lenses or has vision problems", "4 or more topics: two VerifEye tests, or EyeDetect by agreement"], link: { text: "How the EyeDetect test works in the office", href: "/eyedetect" } },
     },
     requirements: {
       title: "What is required from the person taking the test",

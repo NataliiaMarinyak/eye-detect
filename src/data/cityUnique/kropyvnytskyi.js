@@ -4,6 +4,7 @@ export const kropyvnytskyi = {
   uk: {
     seoTitle: "Поліграф у Кропивницькому: виїзд або тест онлайн",
     seoDescription: "Поліграф у Кропивницькому: виїзд спеціаліста зі Львова з EyeDetect за 12 000 ₴ під ключ або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴.",
+    updated: "2026-10-09",
     intro: "Кропивницький — центр Кіровоградської області, приблизно за 690 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: автобусом дорога займає близько 11–12 годин, автомобілем — 8,5–11 годин без зупинок.",
     facts: [["Від Львова", "≈ 690 км, 11–12 год автобусом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -15,15 +16,32 @@ export const kropyvnytskyi = {
     ],
     towns: {
       title: "Олександрія, Світловодськ та інші міста Кіровоградської області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Кіровоградської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і всюди в Україні, крім Львівської області.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Кіровоградської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
       list: "Олександрія · Світловодськ · Знам'янка · Долинська",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["cherkasy", "Черкаси"], ["dnipro", "Дніпро"], ["vinnytsia", "Вінниця"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Кропивницький, https://uk.wikipedia.org/wiki/Кіровоградська_область, https://uk.wikipedia.org/wiki/Знам'янка, https://uk.wikipedia.org/wiki/Олександрія, https://uk.wikipedia.org/wiki/Долинська, https://uk.wikipedia.org/wiki/Світловодськ
+    local: {
+      title: "Поліграф для степового Кропивницького: коли досить онлайн-тесту, а коли потрібен виїзд",
+      paragraphs: [
+        "Кропивницький стоїть на Інгулі серед степу, і область довкола нього аграрна: більша частина її території — рілля, де сіють пшеницю, кукурудзу й соняшник. Місто працює на це поле: тут роблять посівну й ґрунтообробну техніку, а машинобудування разом із харчовою промисловістю — його провідні галузі. Є і другий Кропивницький, студентський: льотна академія й кілька університетів. З цих двох світів і візьмемо приклади. Усі вони вигадані й потрібні для одного: показати, що питання до тесту стосується конкретного факту, називає період і має відповідь «так» або «ні».",
+        "Уявімо двох компаньйонів, які тримають майстерню з ремонту сівалок і тракторів. Перед посівною клієнти скаржаться на поломки, і один із компаньйонів підозрює, що майстер ставить уживані деталі, а в рахунок вписує нові. Другий приклад — двоє сусідів, які разом орендують землю: один відвіз соняшник покупцеві й назвав ціну, якій другий не вірить. Третій — батьки з Долинської, які щомісяця переказують синові-студентові гроші на навчання й житло в Кропивницькому, а він дедалі частіше просить іще. Питання для цих трьох випадків — у списку нижче.",
+        "Тепер про дорогу, бо вона тут багато що вирішує. Зручного поїзда зі Львова до Кропивницького немає: прямий є не кожного дня, та й приїжджає він уночі, тож спеціаліст добирається автобусом або з пересадкою, і це близько пів доби в один бік. Для одного питання й однієї людини радимо почати з онлайн-тесту VerifEye: студент пройде його з телефона в тихій кімнаті, компаньйон — удома ввечері. Виїзд з EyeDetect виправдовує себе, коли тест за один день проходять кілька людей, скажімо всі майстри або всі, хто мав ключі від складу запчастин. Тест проводимо в конторі господарства, кабінеті при майстерні чи готельному номері: головне, щоб там було тихо, а поруч зі столом була розетка. Якщо йдеться про працівників господарства, день виїзду краще обрати не в розпал посівної чи жнив, коли люди в полі. Згоду на тест кожен дає письмово й сам за себе, а перед перевіркою працівників порадьтеся з юристом.",
+        "Зі Знам'янки, важливого залізничного вузла приблизно за 40 км від Кропивницького, нескладно приїхати на день виїзду. Олександрія далі, за 75 км, Долинська — залізничний вузол на півдні області, а Світловодськ стоїть аж на Дніпрі, на Кременчуцькому водосховищі, за 131 км автошляхами. Звідти онлайн-тест можна пройти, не виїжджаючи з міста, а якщо потрібен EyeDetect, приїжджаємо на тих самих умовах, що й до обласного центру. Вартість виїзду й онлайн-тесту дивіться в блоці з цінами нижче.",
+        "Про слово «поліграф». Так у Кропивницькому називають будь-яку перевірку на детекторі брехні, хоча класичний поліграф — це датчики на тілі, і його ми не пропонуємо. EyeDetect і VerifEye працюють інакше: оцінюють реакції очей під час відповідей.",
+      ],
+      points: [
+        "Майстрові: «З 1 лютого цього року ви ставили на техніку клієнтів уживані запчастини замість нових?»",
+        "Співорендареві землі: «Ви продали соняшник урожаю 2026 року дорожче, ніж сказали партнерові?»",
+        "Студентові: «З 1 вересня цього року ви робили ставки на гроші, які батьки дали на навчання?»",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф в Кропивницком: выезд или тест онлайн",
     seoDescription: "Полиграф в Кропивницком: выезд специалиста из Львова с EyeDetect за 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴.",
+    updated: "2026-10-09",
     intro: "Кропивницкий — центр Кировоградской области, примерно в 690 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: на автобусе дорога занимает около 11–12 часов, на машине — 8,5–11 часов без остановок.",
     facts: [["От Львова", "≈ 690 км, 11–12 ч автобусом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -35,15 +53,31 @@ export const kropyvnytskyi = {
     ],
     towns: {
       title: "Александрия, Светловодск и другие города Кировоградской области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города Кировоградской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и везде в Украине, кроме Львовской области.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города Кировоградской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
       list: "Александрия · Светловодск · Знаменка · Долинская",
       nearbyLabel: "Другие города региона:",
       nearby: [["cherkasy", "Черкассы"], ["dnipro", "Днепр"], ["vinnytsia", "Винница"]],
+    },
+    local: {
+      title: "Полиграф для степного Кропивницкого: когда достаточно онлайн-теста, а когда нужен выезд",
+      paragraphs: [
+        "Кропивницкий стоит на Ингуле среди степи, и область вокруг него аграрная: большая часть её территории — пашня, где сеют пшеницу, кукурузу и подсолнечник. Город работает на это поле: здесь делают посевную и почвообрабатывающую технику, а машиностроение вместе с пищевой промышленностью — его ведущие отрасли. Есть и второй Кропивницкий, студенческий: лётная академия и несколько университетов. Из этих двух миров и возьмём примеры. Все они выдуманы и нужны для одного: показать, что вопрос для теста касается конкретного факта, называет период и имеет ответ «да» или «нет».",
+        "Представим двух компаньонов, которые держат мастерскую по ремонту сеялок и тракторов. Перед посевной клиенты жалуются на поломки, и один из компаньонов подозревает, что мастер ставит подержанные детали, а в счёт вписывает новые. Второй пример — двое соседей, которые вместе арендуют землю: один отвёз подсолнечник покупателю и назвал цену, которой второй не верит. Третий — родители из Долинской, которые каждый месяц переводят сыну-студенту деньги на учёбу и жильё в Кропивницком, а он всё чаще просит ещё. Вопросы для этих трёх случаев — в списке ниже.",
+        "Теперь о дороге, потому что она здесь многое решает. Удобного поезда из Львова в Кропивницкий нет: прямой есть не каждый день, да и прибывает он ночью, так что специалист добирается автобусом или с пересадкой, и это около полусуток в одну сторону. Для одного вопроса и одного человека советуем начать с онлайн-теста VerifEye: студент пройдёт его с телефона в тихой комнате, компаньон — дома вечером. Выезд с EyeDetect оправдывает себя, когда тест за один день проходят несколько человек, скажем все мастера или все, у кого были ключи от склада запчастей. Тест проводим в конторе хозяйства, кабинете при мастерской или гостиничном номере: главное, чтобы там было тихо, а рядом со столом была розетка. Если речь о работниках хозяйства, день выезда лучше выбрать не в разгар посевной или уборки урожая, когда люди в поле. Согласие на тест каждый даёт письменно и сам за себя, а перед проверкой сотрудников посоветуйтесь с юристом.",
+        "Из Знаменки, важного железнодорожного узла примерно в 40 км от Кропивницкого, несложно приехать в день выезда. Александрия дальше, в 75 км, Долинская — железнодорожный узел на юге области, а Светловодск стоит уже на Днепре, на Кременчугском водохранилище, в 131 км по автодорогам. Оттуда онлайн-тест можно пройти, не выезжая из города, а если нужен EyeDetect, приезжаем на тех же условиях, что и в областной центр. Стоимость выезда и онлайн-теста смотрите в блоке с ценами ниже.",
+        "О слове «полиграф». Так в Кропивницком называют любую проверку на детекторе лжи, хотя классический полиграф — это датчики на теле, и его мы не предлагаем. EyeDetect и VerifEye работают иначе: оценивают реакции глаз во время ответов.",
+      ],
+      points: [
+        "Мастеру: «С 1 февраля этого года вы ставили на технику клиентов подержанные запчасти вместо новых?»",
+        "Соарендатору земли: «Вы продали подсолнечник урожая 2026 года дороже, чем сказали партнёру?»",
+        "Студенту: «С 1 сентября этого года вы делали ставки на деньги, которые родители дали на учёбу?»",
+      ],
     },
   },
   en: {
     seoTitle: "Lie Detector Test in Kropyvnytskyi: Visit or Online",
     seoDescription: "Lie detector test in Kropyvnytskyi: an EyeDetect visit from Lviv for UAH 12,000 all-inclusive, or the VerifEye phone test today, from UAH 2,500.",
+    updated: "2026-10-09",
     intro: "Kropyvnytskyi is the administrative centre of the Kirovohrad region, about 690 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the bus takes about 11–12 hours, and the drive takes 8.5–11 hours without stops.",
     facts: [["From Lviv", "≈ 690 km, 11–12 h by bus"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
@@ -55,10 +89,25 @@ export const kropyvnytskyi = {
     ],
     towns: {
       title: "Oleksandriia, Svitlovodsk and other towns in the Kirovohrad region",
-      text: "The VerifEye online test can be taken from any town in the Kirovohrad region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine outside the Lviv region.",
+      text: "The VerifEye online test can be taken from any town in the Kirovohrad region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
       list: "Oleksandriia · Svitlovodsk · Znamianka · Dolynska",
       nearbyLabel: "Other cities in the region:",
       nearby: [["cherkasy", "Cherkasy"], ["dnipro", "Dnipro"], ["vinnytsia", "Vinnytsia"]],
+    },
+    local: {
+      title: "Polygraph testing in Kropyvnytskyi, a city of the steppe: when the online test is enough and when a visit makes sense",
+      paragraphs: [
+        "Kropyvnytskyi stands on the Inhul river in the middle of the steppe, and the region around it is agricultural: most of its territory is ploughland sown with wheat, maize and sunflowers. The city works for those fields: seeding and tillage machinery is made here, and machine building and food processing are its leading industries. There is a second Kropyvnytskyi too, a student one: a flight academy and several universities. Our examples come from these two worlds. All of them are invented and serve one purpose: to show that a test question is about a specific fact, names a period and has a yes-or-no answer.",
+        "Imagine two business partners who run a workshop repairing seed drills and tractors. Before the sowing season customers complain about breakdowns, and one partner suspects that the mechanic fits used parts and bills them as new. The second example is two neighbours who rent farmland together: one delivered the sunflower crop to the buyer and named a price the other does not believe. The third is parents in Dolynska who send their student son money every month for tuition and housing in Kropyvnytskyi, while he keeps asking for more. Questions for these three cases are in the list below.",
+        "Now about the journey, because here it decides a lot. There is no convenient train from Lviv to Kropyvnytskyi: the direct one is not daily and gets in at night, so the specialist takes a bus or changes trains, and that is about half a day each way. For one question and one person our advice is the VerifEye online test first: a student can take it on a phone in a quiet room, a business partner at home in the evening. An EyeDetect visit pays off when a group takes the test on one day, for instance all the mechanics or everyone who had keys to the parts store. We run the test in the farm office, a room at the workshop or a hotel room: what matters is that it is quiet and that there is a socket beside the table. If farm workers are involved, it is better not to pick a day at the height of sowing or harvest, when people are out in the fields. Each person gives consent in writing and for themselves alone, and you should speak to a lawyer before testing employees.",
+        "From Znamianka, an important railway junction about 40 km from Kropyvnytskyi, it is easy to come in on the day of the visit. Oleksandriia is further, 75 km away, Dolynska is a railway junction in the south of the region, and Svitlovodsk stands on the Dnipro itself, on the Kremenchuk Reservoir, 131 km away by road. From there the online test can be taken without leaving town, and if EyeDetect is needed, we come on the same terms as to the regional centre. For the cost of a visit and of the online test, see the prices block below.",
+        "A note on the word “polygraph”. In Kropyvnytskyi people use it for any lie detector test, although a classic polygraph means sensors on the body, and we do not offer it. EyeDetect and VerifEye work differently: they assess eye reactions while the person answers.",
+      ],
+      points: [
+        "For the mechanic: “Since February 1 this year, have you fitted used parts to customers' machines instead of new ones?”",
+        "For the co-tenant of the land: “Did you sell the 2026 sunflower crop for more than you told your partner?”",
+        "For the student: “Since September 1 this year, have you placed bets with the money your parents gave you for your studies?”",
+      ],
     },
   },
 };

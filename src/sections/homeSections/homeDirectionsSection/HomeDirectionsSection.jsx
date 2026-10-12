@@ -6,13 +6,15 @@ import { getLocalizedField } from "@/helpers/getLocalizedField";
 import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./HomeDirectionsSection.module.scss";
 
-// Картка ситуації веде на окрему сторінку /situations/<slug>, якщо вона є.
-const SLUG_BY_ICON = {
-  "/sprite.svg#icon-money": "theft",
-  "/sprite.svg#icon-competitors": "leak",
-  "/sprite.svg#icon-search": "hiring",
-  "/sprite.svg#icon-rings": "fidelity",
-  "/sprite.svg#icon-books": "dispute",
+// Картка веде на свою сторінку. Адреси повні, без мовного префікса (його додає посилання нижче):
+// п'ять карток — на сторінки ситуацій, «Перевірка персоналу на чесність» — на сторінку «Для бізнесу».
+const HREF_BY_ICON = {
+  "/sprite.svg#icon-money": "/situations/theft",
+  "/sprite.svg#icon-competitors": "/situations/leak",
+  "/sprite.svg#icon-search": "/business",
+  "/sprite.svg#icon-rings": "/situations/fidelity",
+  "/sprite.svg#icon-books": "/situations/dispute",
+  "/sprite.svg#icon-person": "/situations/hiring",
 };
 const MORE = { uk: "Детальніше", ru: "Подробнее", en: "Learn more" };
 
@@ -51,10 +53,10 @@ const HomeDirectionsSection = ({ lang, dictionary }) => {
               <p className={styles.description}>
                 {getLocalizedField(direction, "description", lang)}
               </p>
-              {SLUG_BY_ICON[direction.href] && (
+              {HREF_BY_ICON[direction.href] && (
                 <Link
                   className={styles.more}
-                  href={`${lang === i18n.defaultLocale ? "" : `/${lang}`}/situations/${SLUG_BY_ICON[direction.href]}`}
+                  href={`${lang === i18n.defaultLocale ? "" : `/${lang}`}${HREF_BY_ICON[direction.href]}`}
                 >
                   {MORE[lang] || MORE.uk}
                 </Link>

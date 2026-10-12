@@ -1,5 +1,6 @@
 import PageHero from "@/sections/pageHero/PageHero";
 import OnlineSections from "@/sections/onlinePage/OnlineSections";
+import CityLinks from "@/components/CityLinks/CityLinks";
 import { getOnlinePage } from "@/data/pages/onlinePage";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getContentFaqJsonLd } from "@/helpers/getContentFaqJsonLd";
@@ -7,6 +8,14 @@ import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadat
 import { getSeoMetaPageUrl } from "@/helpers/getSeoMetaPageUrl";
 import { getLocalizedField } from "@/helpers/getLocalizedField";
 import { pricingGroups, CURRENCY } from "@/data/pricingData";
+
+// Заголовок блоку посилань на міста: онлайн-тест від міста не залежить,
+// тому блок пропонує інше — тест EyeDetect у кабінеті або з виїздом у конкретному місті.
+const CITY_LINKS_TITLE = {
+  uk: "Потрібен тест у кабінеті або з виїздом? EyeDetect у вашому місті",
+  ru: "Нужен тест в кабинете или с выездом? EyeDetect в вашем городе",
+  en: "Need a test at an office or on-site? EyeDetect in your city",
+};
 
 export async function generateMetadata({ params }) {
   const { lang } = params;
@@ -80,7 +89,11 @@ const OnlinePage = async ({ params }) => {
         photo="/images/converus/verifeye-test.webp"
         photoAlt="VerifEye"
       />
-      <OnlineSections d={d} lang={lang} dictionary={dictionary} />
+      {/* Посилання на сторінки міст України стоять усередині секцій, перед темним блоком
+          «Замовити онлайн-тест»: сторінка закінчується кнопкою замовлення, а не списком міст. */}
+      <OnlineSections d={d} lang={lang} dictionary={dictionary}>
+        <CityLinks lang={lang} title={CITY_LINKS_TITLE[lang] || CITY_LINKS_TITLE.uk} />
+      </OnlineSections>
     </>
   );
 };

@@ -1,15 +1,32 @@
 // Тексти шаблону міської сторінки. {loc} = «у Києві», {city} = «Київ», {km} = відстань.
+//
+// Сторінка бере тексти через getCityTexts(lang, slug, region) (у кінці файла), а не напряму з cityTexts:
+//   • h1 — заголовок для міст Європи, h1Ua — для міст України (зі словом «поліграф», яке люди шукають);
+//   • coverage — абзац «де є обладнання EyeDetect», лише для міст України;
+//   • partner — заміни для міст зі списку PARTNER_CITIES: там тест EyeDetect проводить партнер
+//     у власному кабінеті (сімейна перевірка 8 500 ₴, скринінг і крадіжка від 5 500 ₴; виїзд до клієнта по місту 8 500 ₴, по області 12 000 ₴), тому речення про виїзд і «офісу немає» звучать інакше.
+
+// Міста, де тест EyeDetect проводить наш партнер у власному кабінеті (факт власника, 09.10.2026).
+// Єдине місце зі списком: від нього залежать перший екран, блок «Як пройти тест», шаблонні питання,
+// запасний meta description і назва послуги в JSON-LD. Назв партнерів на сайті не пишемо.
+export const PARTNER_CITIES = ["kyiv", "zaporizhzhia"];
+export const isPartnerCity = (slug) => PARTNER_CITIES.includes(slug);
+
 export const cityTexts = {
   uk: {
     title: "Детектор брехні {loc}: виїзд EyeDetect або онлайн VerifEye",
     h1: "Детектор брехні {loc}: виїзд спеціаліста або тест онлайн сьогодні",
+    h1Ua: "Поліграф і детектор брехні {loc}: виїзд або онлайн-тест",
     sub: {
-      "ua-west": "Кабінет у Львові, тест {loc} з виїздом спеціаліста за домовленістю або онлайн-тест з телефона вже сьогодні. Технологія Converus (США), звіт до 5 хвилин після тесту.",
-      "ua-other": "Тест EyeDetect {loc} з виїздом спеціаліста або онлайн-тест VerifEye з телефона вже сьогодні. Технологія Converus (США), звіт до 5 хвилин після тесту.",
+      "ua-west": "Шукаєте перевірку на поліграфі {loc}? EyeDetect від Converus (США) — детектор брехні за реакціями очей, без датчиків на тілі. Кабінет у Львові, виїзд спеціаліста за домовленістю або онлайн-тест VerifEye з телефона вже сьогодні.",
+      "ua-other": "Шукаєте перевірку на поліграфі {loc}? EyeDetect від Converus (США) — детектор брехні за реакціями очей, без датчиків на тілі. Спеціаліст приїжджає з обладнанням, а онлайн-тест VerifEye можна пройти з телефона вже сьогодні.",
       eu: "Онлайн-тест VerifEye з телефона вже сьогодні або виїзд спеціаліста з обладнанням EyeDetect {loc}. Технологія Converus (США), звіт у PDF до 5 хвилин.",
     },
     facts: ["онлайн сьогодні", "виїзд з обладнанням", "6–8 осіб за день", "PDF до 5 хвилин"],
     eyebrow: "Виїзд і онлайн",
+    // Назва послуги для заявки (Telegram) мовою сторінки.
+    service: "EyeDetect з виїздом",
+    coverage: "Обладнання EyeDetect є в нашому офісі у Львові та в наших партнерів у Києві й Запоріжжі. В інші міста України привозимо його самі. Онлайн-тест VerifEye працює з будь-якого міста.",
     visitTitle: "Як пройти тест {loc}",
     online: {
       title: "Онлайн сьогодні: VerifEye",
@@ -75,17 +92,57 @@ export const cityTexts = {
     uniqueTitle: "Детектор брехні {loc}: що варто знати",
     ctaTitle: "Готові дізнатися правду {loc}?",
     ctaText: "Залиште заявку або зателефонуйте. Відповімо цілодобово, протягом 15–30 хвилин.",
+    // Заміни для міст-партнерів (PARTNER_CITIES): власного офісу немає, тест проводить партнер у своєму кабінеті.
+    partner: {
+      title: "Поліграф {loc}: EyeDetect у партнера або онлайн",
+      h1: "Поліграф і детектор брехні {loc}: у партнера або онлайн",
+      description: "Детектор брехні {loc}: тест EyeDetect у кабінеті нашого партнера від 5 500 ₴, виїзд до клієнта або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴.",
+      sub: "Шукаєте перевірку на поліграфі {loc}? EyeDetect від Converus (США) — детектор брехні за реакціями очей, без датчиків на тілі. Тест проводить наш партнер у своєму кабінеті, є й виїзд до клієнта, а онлайн-тест VerifEye можна пройти з телефона вже сьогодні.",
+      facts: ["онлайн сьогодні", "EyeDetect у кабінеті партнера", "виїзд до клієнта", "PDF до 5 хвилин"],
+      eyebrow: "У партнера й онлайн",
+      service: "EyeDetect у партнера",
+      noOffice: "Власного офісу {loc} у нас немає. Тест EyeDetect тут проводить наш партнер у своєму кабінеті: сімейна перевірка — 8 500 ₴, скринінг і перевірка у справі про крадіжку — від 5 500 ₴. Виїзд до клієнта: по місту — 8 500 ₴, по області — 12 000 ₴. Онлайн-тест VerifEye доступний уже сьогодні.",
+      visit: {
+        title: "EyeDetect у кабінеті партнера",
+        text: "Тест EyeDetect {loc} проводить наш партнер у власному кабінеті, тож чекати на виїзд зі Львова не потрібно. Питання узгоджуємо заздалегідь, і людина читає їх до тесту. Сам тест триває 30–45 хвилин.",
+        price: "від 5 500 ₴",
+        cta: "Записатися на тест",
+      },
+      // Третя картка блоку «Як пройти тест», лише для міст-партнерів: виїзд до клієнта. Речення й ціни ті самі,
+      // що в плашці noOffice і в текстах цих міст. Не додавати «під ключ», «разом із тестом» і хто саме їде.
+      // title — ще й назва послуги у вікні заявки («Виїзд до клієнта · у Києві»).
+      clientVisit: {
+        title: "Виїзд до клієнта",
+        text: "Виїзд до клієнта зручний, коли приїхати до кабінету не виходить. Дату виїзду узгоджуємо після заявки.",
+        price: "по місту — 8 500 ₴, по області — 12 000 ₴",
+        cta: "Замовити виїзд",
+      },
+      // Ті самі key, що й у звичайних питаннях: унікальні питання міста замінюють їх через replaces.
+      faq: [
+        { key: "speed", q: "Як швидко можна пройти тест EyeDetect {loc}?", a: "Дату й час узгоджуємо з партнером, у кабінеті якого проходить тест. Найближчий вільний час назвемо після заявки. Дату виїзду до клієнта теж узгоджуємо після заявки. Онлайн-тест VerifEye доступний уже сьогодні." },
+        { key: "room", q: "Де проходить тест EyeDetect {loc}?", a: "У кабінеті нашого партнера: обладнання вже на місці, везти його зі Львова не потрібно. Власного офісу {loc} у нас немає; адресу кабінету повідомляємо під час запису. Можливий і виїзд до клієнта, по місту чи в область." },
+        { key: "price", q: "Скільки коштує тест EyeDetect {loc}?", a: "У кабінеті партнера сімейна перевірка коштує 8 500 ₴, скринінг і перевірка у справі про крадіжку — від 5 500 ₴. Виїзд до клієнта: по місту — 8 500 ₴, по області — 12 000 ₴. Точну суму для вашого випадку назвемо після заявки. Онлайн-тест VerifEye: 2 500 ₴ за одне питання, 4 000 ₴ за три, 6 000 ₴ за шість." },
+        { key: "online", q: "Чи можна пройти тест онлайн, не їдучи до кабінету?", a: "Так, VerifEye з телефона від 2 500 ₴, звіт у PDF до 5 хвилин після тесту. Для перевірок на вірність і кандидатів це часто зручніше." },
+      ],
+      quiz: {
+        text: "Дайте відповідь на 5 коротких питань — спеціаліст порахує точну вартість тесту в партнера, виїзду або онлайн-тесту і передзвонить. Це безкоштовно і ні до чого не зобов'язує.",
+        finalText: "Кілька коротких питань — і ми підберемо формат, тест у кабінеті партнера, виїзд до вас чи онлайн, та назвемо ціну.",
+      },
+    },
   },
   ru: {
     title: "Детектор лжи {loc}: выезд EyeDetect или онлайн VerifEye",
     h1: "Детектор лжи {loc}: выезд специалиста или тест онлайн сегодня",
+    h1Ua: "Полиграф и детектор лжи {loc}: выезд или онлайн-тест",
     sub: {
-      "ua-west": "Кабинет во Львове, тест {loc} с выездом специалиста по договорённости или онлайн-тест с телефона уже сегодня. Технология Converus (США), отчёт до 5 минут после теста.",
-      "ua-other": "Тест EyeDetect {loc} с выездом специалиста или онлайн-тест VerifEye с телефона уже сегодня. Технология Converus (США), отчёт до 5 минут после теста.",
+      "ua-west": "Ищете проверку на полиграфе {loc}? EyeDetect от Converus (США) — детектор лжи по реакциям глаз, без датчиков на теле. Кабинет во Львове, выезд специалиста по договорённости или онлайн-тест VerifEye с телефона уже сегодня.",
+      "ua-other": "Ищете проверку на полиграфе {loc}? EyeDetect от Converus (США) — детектор лжи по реакциям глаз, без датчиков на теле. Специалист приезжает с оборудованием, а онлайн-тест VerifEye можно пройти с телефона уже сегодня.",
       eu: "Онлайн-тест VerifEye с телефона уже сегодня или выезд специалиста с оборудованием EyeDetect {loc}. Технология Converus (США), отчёт в PDF до 5 минут.",
     },
     facts: ["онлайн сегодня", "выезд с оборудованием", "6–8 человек в день", "PDF до 5 минут"],
     eyebrow: "Выезд и онлайн",
+    service: "EyeDetect с выездом",
+    coverage: "Оборудование EyeDetect есть в нашем офисе во Львове и у наших партнёров в Киеве и Запорожье. В другие города Украины привозим его сами. Онлайн-тест VerifEye работает из любого города.",
     visitTitle: "Как пройти тест {loc}",
     online: {
       title: "Онлайн сегодня: VerifEye",
@@ -150,17 +207,52 @@ export const cityTexts = {
     uniqueTitle: "Детектор лжи {loc}: что стоит знать",
     ctaTitle: "Готовы узнать правду {loc}?",
     ctaText: "Оставьте заявку или позвоните. Ответим круглосуточно, в течение 15–30 минут.",
+    partner: {
+      title: "Полиграф {loc}: EyeDetect у партнёра или онлайн",
+      h1: "Полиграф и детектор лжи {loc}: у партнёра или онлайн",
+      description: "Детектор лжи {loc}: тест EyeDetect в кабинете нашего партнёра от 5 500 ₴, выезд к клиенту или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴.",
+      sub: "Ищете проверку на полиграфе {loc}? EyeDetect от Converus (США) — детектор лжи по реакциям глаз, без датчиков на теле. Тест проводит наш партнёр в своём кабинете, есть и выезд к клиенту, а онлайн-тест VerifEye можно пройти с телефона уже сегодня.",
+      facts: ["онлайн сегодня", "EyeDetect в кабинете партнёра", "выезд к клиенту", "PDF до 5 минут"],
+      eyebrow: "У партнёра и онлайн",
+      service: "EyeDetect у партнёра",
+      noOffice: "Собственного офиса {loc} у нас нет. Тест EyeDetect здесь проводит наш партнёр в своём кабинете: семейная проверка — 8 500 ₴, скрининг и проверка по делу о краже — от 5 500 ₴. Выезд к клиенту: по городу — 8 500 ₴, по области — 12 000 ₴. Онлайн-тест VerifEye доступен уже сегодня.",
+      visit: {
+        title: "EyeDetect в кабинете партнёра",
+        text: "Тест EyeDetect {loc} проводит наш партнёр в собственном кабинете, поэтому ждать выезда из Львова не нужно. Вопросы согласовываем заранее, и человек читает их до теста. Сам тест длится 30–45 минут.",
+        price: "от 5 500 ₴",
+        cta: "Записаться на тест",
+      },
+      clientVisit: {
+        title: "Выезд к клиенту",
+        text: "Выезд к клиенту удобен, когда приехать в кабинет не получается. Дату выезда согласовываем после заявки.",
+        price: "по городу — 8 500 ₴, по области — 12 000 ₴",
+        cta: "Заказать выезд",
+      },
+      faq: [
+        { key: "speed", q: "Как быстро можно пройти тест EyeDetect {loc}?", a: "Дату и время согласовываем с партнёром, в кабинете которого проходит тест. Ближайшее свободное время назовём после заявки. Дату выезда к клиенту тоже согласовываем после заявки. Онлайн-тест VerifEye доступен уже сегодня." },
+        { key: "room", q: "Где проходит тест EyeDetect {loc}?", a: "В кабинете нашего партнёра: оборудование уже на месте, везти его из Львова не нужно. Собственного офиса {loc} у нас нет; адрес кабинета сообщаем при записи. Возможен и выезд к клиенту, по городу или в область." },
+        { key: "price", q: "Сколько стоит тест EyeDetect {loc}?", a: "В кабинете партнёра семейная проверка стоит 8 500 ₴, скрининг и проверка по делу о краже — от 5 500 ₴. Выезд к клиенту: по городу — 8 500 ₴, по области — 12 000 ₴. Точную сумму для вашего случая назовём после заявки. Онлайн-тест VerifEye: 2 500 ₴ за один вопрос, 4 000 ₴ за три, 6 000 ₴ за шесть." },
+        { key: "online", q: "Можно ли пройти тест онлайн, не приезжая в кабинет?", a: "Да, VerifEye с телефона от 2 500 ₴, отчёт в PDF до 5 минут после теста. Для проверок на верность и кандидатов это часто удобнее." },
+      ],
+      quiz: {
+        text: "Ответьте на 5 коротких вопросов — специалист посчитает точную стоимость теста у партнёра, выезда или онлайн-теста и перезвонит. Это бесплатно и ни к чему не обязывает.",
+        finalText: "Несколько коротких вопросов — и мы подберём формат, тест в кабинете партнёра, выезд к вам или онлайн, и назовём цену.",
+      },
+    },
   },
   en: {
     title: "Lie detector {loc}: EyeDetect on-site visit or VerifEye online",
     h1: "Lie detector {loc}: specialist visit or online test today",
+    h1Ua: "Lie detector test {loc}: on-site visit or online",
     sub: {
-      "ua-west": "Office in Lviv, visits to {city} by arrangement, or an online test from your phone today. Converus technology (USA), report within 5 minutes after the test.",
-      "ua-other": "Specialist visit to {city} with EyeDetect equipment, or a VerifEye online test from your phone today. Converus technology (USA), report within 5 minutes after the test.",
+      "ua-west": "Looking for a polygraph test {loc}? EyeDetect by Converus (USA) is a lie detector that reads eye reactions, with no sensors attached to the body. Office in Lviv, visits to {city} by arrangement, or the VerifEye online test from your phone today.",
+      "ua-other": "Looking for a polygraph test {loc}? EyeDetect by Converus (USA) is a lie detector that reads eye reactions, with no sensors attached to the body. A specialist brings the equipment to {city}, or you can take the VerifEye online test from your phone today.",
       eu: "VerifEye online test from your phone today, or a specialist visit to {city} with EyeDetect equipment. Converus technology (USA), PDF report within 5 minutes.",
     },
     facts: ["online today", "on-site with equipment", "6–8 people per day", "PDF within 5 minutes"],
     eyebrow: "On-site and online",
+    service: "EyeDetect on-site",
+    coverage: "EyeDetect equipment is available at our office in Lviv and at our partners in Kyiv and Zaporizhzhia. We bring it to other cities in Ukraine ourselves. The VerifEye online test works from any city.",
     visitTitle: "How to take the test {loc}",
     online: {
       title: "Online today: VerifEye",
@@ -225,11 +317,105 @@ export const cityTexts = {
     uniqueTitle: "Lie detector test {loc}: what to know",
     ctaTitle: "Ready to learn the truth {loc}?",
     ctaText: "Send a request or call us. We reply 24/7, within 15–30 minutes.",
+    partner: {
+      title: "Polygraph {loc}: EyeDetect at a partner office or online",
+      h1: "Lie detector test {loc}: partner office or online",
+      description: "Lie detector test {loc}: EyeDetect at our partner's office from UAH 5,500, a visit to the client, or the VerifEye online test today from UAH 2,500.",
+      sub: "Looking for a polygraph test {loc}? EyeDetect by Converus (USA) is a lie detector that reads eye reactions, with no sensors attached to the body. Our partner runs the test at the partner's own office, a visit to the client is also available, and the VerifEye online test can be taken from your phone today.",
+      facts: ["online today", "EyeDetect at a partner office", "visit to the client", "PDF within 5 minutes"],
+      eyebrow: "Partner office and online",
+      service: "EyeDetect at a partner office",
+      noOffice: "We have no office of our own {loc}. Here the EyeDetect test is run by our partner at the partner's own office: a family test costs UAH 8,500; screening and a theft-related test cost from UAH 5,500. A visit to the client: UAH 8,500 within the city, UAH 12,000 in the region. The VerifEye online test is available today.",
+      visit: {
+        title: "EyeDetect at a partner's office",
+        text: "In {city}, the EyeDetect test is run by our partner at the partner's own office, so there is no need to wait for a visit from Lviv. We agree the questions in advance, and the person reads them before the test. The test itself takes 30–45 minutes.",
+        price: "from UAH 5,500",
+        cta: "Book a test",
+      },
+      clientVisit: {
+        title: "Visit to the client",
+        text: "A visit to the client is convenient when coming to the office is not possible. The date of the visit is agreed after you send a request.",
+        price: "UAH 8,500 within the city, UAH 12,000 in the region",
+        cta: "Request a visit",
+      },
+      faq: [
+        { key: "speed", q: "How soon can I take the EyeDetect test {loc}?", a: "We agree the date and time with the partner whose office hosts the test, and tell you the nearest available slot after you send a request. The date of a visit to the client is also agreed after you send a request. The VerifEye online test is available today." },
+        { key: "room", q: "Where does the EyeDetect test take place {loc}?", a: "At our partner's office: the equipment is already there, so nothing has to be brought from Lviv. We have no office of our own {loc}; you get the address when you book. A visit to the client, within the city or in the region, is also possible." },
+        { key: "price", q: "How much does the EyeDetect test cost {loc}?", a: "At the partner's office a family test costs UAH 8,500; screening and a theft-related test cost from UAH 5,500. A visit to the client: UAH 8,500 within the city, UAH 12,000 in the region. We will tell you the exact amount for your case after you send a request. VerifEye online test: UAH 2,500 for one question, UAH 4,000 for three, UAH 6,000 for six." },
+        { key: "online", q: "Can the test be taken online without going to the office?", a: "Yes, VerifEye from a phone from UAH 2,500, PDF report within 5 minutes after the test. For fidelity checks and job candidates this is often more convenient." },
+      ],
+      quiz: {
+        text: "Answer 5 short questions and a specialist will calculate the exact price of a test at the partner's office, a visit or an online test and call you back. Free and with no obligation.",
+        finalText: "A few short questions, and we will suggest the format, a test at the partner's office, a visit to you or online, and give you a price.",
+      },
+    },
   },
+};
+
+// Регіони України в ключах sub / visit.text / visit.price / faq.
+const UA_REGIONS = ["ua-west", "ua-other"];
+const forUaRegions = (value) => Object.fromEntries(UA_REGIONS.map((r) => [r, value]));
+
+// Тексти сторінки конкретного міста. region — результат getCityRegion (helpers/cityMeta.js).
+// Місто України отримує h1Ua; місто-партнер — ще й заміни з блоку partner. Форма об'єкта та сама,
+// що й у cityTexts[lang], тому секції (CityVisitSection тощо) нічого не знають про партнерів.
+// Єдиний виняток — поле clientVisit (третя картка «Виїзд до клієнта»): воно є тільки в міст-партнерів.
+export const getCityTexts = (lang, slug, region) => {
+  const base = cityTexts[lang] || cityTexts.uk;
+  if (region === "eu") return base;
+  const ua = { ...base, h1: base.h1Ua };
+  if (!isPartnerCity(slug)) return ua;
+  const p = base.partner;
+  return {
+    ...ua,
+    title: p.title,
+    h1: p.h1,
+    description: p.description,
+    facts: p.facts,
+    eyebrow: p.eyebrow,
+    service: p.service,
+    noOffice: p.noOffice,
+    sub: { ...base.sub, ...forUaRegions(p.sub) },
+    visit: {
+      ...base.visit,
+      title: p.visit.title,
+      cta: p.visit.cta,
+      text: { ...base.visit.text, ...forUaRegions(p.visit.text) },
+      textNoKm: { ...base.visit.textNoKm, ...forUaRegions(p.visit.text) },
+      price: { ...base.visit.price, ...forUaRegions(p.visit.price) },
+    },
+    // Є лише в міст-партнерів: за цим полем CityVisitSection показує третю картку «Виїзд до клієнта».
+    clientVisit: p.clientVisit,
+    faq: { ...base.faq, ...forUaRegions(p.faq) },
+    quiz: { ...base.quiz, ...p.quiz },
+  };
 };
 
 export const fill = (s, vars) => (s || "").replace(/\{(\w+)\}/g, (_, k) => (vars[k] ?? ""));
 
 // Короткі прийменники не лишаються в кінці рядка заголовка: «у Таллінні» переноситься разом.
+// Вираз без «погляду назад» (?<=…): функція працює й у браузері (рядок «Послуга» у вікні заявки),
+// а Safari до версії 16.4 такого виразу не розуміє і зупиняє сторінку з помилкою. Тому шукаємо ланцюжок
+// коротких слів після початку рядка, пробілу, «(» чи лапки і робимо пробіли в ньому нерозривними.
+// Результат той самий, що й у попереднього виразу.
 export const keepShortWords = (s) =>
-  (s || "").replace(/(?<=^|[\s«(])(у|в|і|й|з|із|та|до|на|о|а|и|к|с|по|за|от|in|to|a|an|of|or)\s+/giu, "$1 ");
+  (s || "").replace(
+    /(^|[\s«(])((?:(?:у|в|і|й|з|із|та|до|на|о|а|и|к|с|по|за|от|in|to|a|an|of|or)\s+)+)/giu,
+    (_, before, run) => before + glueSpaces(run)
+  );
+// Пробіли всередині ланцюжка коротких слів стають нерозривними (у лапках нижче — нерозривний пробіл).
+const glueSpaces = (run) => run.replace(/\s+/g, " ");
+
+// Числа й одиниці не розриваються між рядками: «12 000 ₴», «1 000 км», «UAH 12,000».
+// Лише для тексту на екрані: у мета-теги й розмітку для пошуковика (JSON-LD) не підставляти.
+const NBSP = String.fromCharCode(0xa0); // нерозривний пробіл
+export const keepNumbers = (s) =>
+  (s || "")
+    .replace(/(\d) (?=\d{3}(?!\d))/g, `$1${NBSP}`)
+    .replace(/(\d) (?=₴|%|грн(?![а-яіїєґ])|км(?![а-яіїєґ])|km(?![a-z]))/giu, `$1${NBSP}`)
+    .replace(/\bUAH (?=\d)/g, `UAH${NBSP}`);
+
+// Слово з дефісом у заголовку не розривається після дефіса: «онлайн-тест», «Івано-Франківську».
+// Після дефіса ставиться невидимий з'єднувач слів; сам дефіс і текст не змінюються.
+const WORD_JOINER = String.fromCharCode(0x2060);
+export const keepHyphens = (s) => (s || "").replace(/(\p{L})-(?=\p{L})/gu, `$1-${WORD_JOINER}`);

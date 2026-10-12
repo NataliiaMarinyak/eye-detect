@@ -4,6 +4,7 @@ import PageHero from "@/sections/pageHero/PageHero";
 import CityVisitSection from "@/sections/cityVisitSection/CityVisitSection";
 import CityQuizBanner from "@/sections/cityQuizBanner/CityQuizBanner";
 import CityUniqueSection from "@/sections/cityUniqueSection/CityUniqueSection";
+import CityLocalSection from "@/sections/cityLocalSection/CityLocalSection";
 import CitySituationsSection from "@/sections/citySituationsSection/CitySituationsSection";
 import CityTownsSection from "@/sections/cityTownsSection/CityTownsSection";
 import CityCasesSection from "@/sections/cityCasesSection/CityCasesSection";
@@ -12,8 +13,8 @@ import { getCityUnique, mergeCityFaq } from "@/data/cityUnique";
 import { getCitySections } from "@/data/pages/citySections";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
 import { getCityData, getAllCities } from "@/helpers/getCityData";
-import { getCityLocative, getCityRegion, getCityDistance } from "@/helpers/cityMeta";
-import { cityTexts, fill, keepShortWords } from "@/data/pages/cityTexts";
+import { getCityLocative, getCityRegion, getCityDistance, isUaRegion } from "@/helpers/cityMeta";
+import { getCityTexts, fill, keepShortWords, keepHyphens, isPartnerCity } from "@/data/pages/cityTexts";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getContentFaqJsonLd } from "@/helpers/getContentFaqJsonLd";
 import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadata";
@@ -40,17 +41,22 @@ export async function generateStaticParams() {
   return i18n.locales.flatMap((lang) => getAllCities().map((c) => ({ lang, slug: c.slug })));
 }
 
+// Відстань для тексту картки з розділювачем тисяч, як у текстах міст: «1 000» (uk, ru), «1,000» (en).
+// Інакше в Харкові поруч стояли б «1 000 км» у вступі і «1000 км» у картці виїзду.
+const formatKm = (km, lang) => (km ? String(km).replace(/\B(?=(\d{3})+(?!\d))/g, lang === "en" ? "," : " ") : "");
+
 // Дані сторінки міста: локатив («у Києві»), регіон, відстань, заповнені тексти.
+// getCityTexts сам підставляє H1 для міст України і тексти «у партнера» для Києва й Запоріжжя (PARTNER_CITIES).
 const getCityPage = (slug, lang) => {
   const data = getCityData(slug);
   if (!data) return null;
   const isUk = lang === i18n.defaultLocale;
-  const t = cityTexts[lang] || cityTexts.uk;
   const loc = getCityLocative(data, lang);
   const region = getCityRegion(slug, data.country);
+  const t = getCityTexts(lang, slug, region);
   const km = getCityDistance(slug);
   const cityLocal = lang === "en" ? getCityEn(slug) : isUk ? data.city : data.cityRus;
-  const vars = { loc, city: cityLocal, km: km || "" };
+  const vars = { loc, city: cityLocal, km: formatKm(km, lang) };
   return { data, t, loc, region, km, vars, isUk };
 };
 
@@ -64,7 +70,12 @@ export async function generateMetadata({ params }) {
     lang,
     path: `locations/${slug}`,
     title: u?.seoTitle || fill(p.t.title, p.vars),
-    description: u?.seoDescription || (lang === "en" ? fill(p.t.sub[p.region], p.vars) : p.isUk ? p.data.mainDescription : p.data.mainDescriptionRus),
+    // Запасний опис (коли місто не має свого): у міста-партнера свій шаблон — кабінет партнера від 5 500 ₴, виїзд до клієнта, онлайн.
+    description:
+      u?.seoDescription ||
+      (p.t.description
+        ? fill(p.t.description, p.vars)
+        : lang === "en" ? fill(p.t.sub[p.region], p.vars) : p.isUk ? p.data.mainDescription : p.data.mainDescriptionRus),
     keywords: seoLocationIdPage.seoMetaKeywords,
   });
 }
@@ -82,6 +93,8 @@ const LocationIdPage = async ({ params }) => {
   // Унікальні питання міста першими; шаблонні з тим самим key (replaces) не дублюються.
   const faq = mergeCityFaq(unique?.faq, t.faq[region].map((f) => ({ key: f.key, q: fill(f.q, vars), a: fill(f.a, vars) })));
   const sections = unique ? getCitySections(lang) : null;
+  // Чи є в міста довгий текст (поле local): та сама умова, за якою CityLocalSection показує блок.
+  const hasLocal = !!unique?.local?.title && (unique.local.paragraphs || []).some(Boolean);
 
   const crumbs = breadcrumbsJsonLd(lang, [
     ["", seoLocationIdPage.seoMetaNameJsonLd_1],
@@ -123,21 +136,36 @@ const LocationIdPage = async ({ params }) => {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getContentFaqJsonLd(faq)) }} />
       {webPageJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />}
+      {/* keepHyphens — лише до шаблону заголовка («онлайн-тест» не розривається), а не до назви міста:
+          «в Івано-Франківську:» одним шматком ширше за екран телефона (344 px проти 320), там перенос після дефіса потрібен. */}
       <PageHero
         eyebrow={t.eyebrow}
-        title={fill(t.h1, vars)}
+        title={keepShortWords(fill(keepHyphens(t.h1), vars))}
         sub={fill(t.sub[region], vars)}
         facts={t.facts}
         primary={t.visit.cta}
         quizLabel={t.quiz.heroCta}
-        service={`${{ uk: "EyeDetect з виїздом", ru: "EyeDetect с выездом", en: "EyeDetect on-site" }[lang] || "EyeDetect з виїздом"} · ${loc}`}
+        service={`${t.service} · ${loc}`}
         secondaryHref={`${lang === "uk" ? "" : "/" + lang}/online`}
         secondaryLabel={t.online.cta}
         photo="/images/converus/eyedetect-examinee.webp"
         photoAlt={unique ? heroPhotoAlt[lang] : fill(t.h1, vars)}
       />
-      {unique && <CityUniqueSection title={fill(t.uniqueTitle, vars)} intro={unique.intro} facts={unique.facts} />}
-      <CityVisitSection t={t} region={region} loc={loc} km={km} vars={vars} dictionary={dictionary} lang={lang} quizCta={!!unique} />
+      {/* visitLink: тихе посилання під фактами на блок «Як пройти тест» (#visit), лише коли між ними стоїть довгий текст міста. */}
+      {unique && (
+        <CityUniqueSection
+          title={fill(t.uniqueTitle, vars)}
+          intro={unique.intro}
+          facts={unique.facts}
+          note={isUaRegion(region) ? t.coverage : undefined}
+          visitLink={hasLocal ? fill(t.visitTitle, vars) : undefined}
+        />
+      )}
+      {/* Текст лише цього міста (поле local у src/data/cityUnique/<slug>.js); якщо його немає, блок порожній. */}
+      <CityLocalSection local={unique?.local} />
+      {/* У місті-партнері кнопка картки відкриває звичайне вікно заявки («EyeDetect у партнера · у Києві»):
+          у розрахунку вартості варіанта «кабінет партнера» немає. У решти міст з унікальним текстом — розрахунок. */}
+      <CityVisitSection t={t} region={region} loc={loc} km={km} vars={vars} dictionary={dictionary} lang={lang} quizCta={!!unique && !isPartnerCity(slug)} />
       <CityQuizBanner title={fill(t.quiz.title, vars)} text={t.quiz.text} button={t.quiz.button} phoneLabel={t.quiz.phone} />
       {unique ? <CitySituationsSection lang={lang} {...sections.situations} /> : <DynamicServicesSection lang={lang} dictionary={dictionary} slug={slug} />}
       {unique && <CityCasesSection cases={unique.cases || sections.commonCases} />}

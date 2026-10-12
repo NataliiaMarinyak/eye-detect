@@ -76,3 +76,45 @@
   line-height: 1.35;
   color: $primary;
 }
+
+// Тихе посилання під фактами на блок «Як пройти тест» (якір #visit): підкреслений текст, не кнопка.
+// Зона натискання не менша за 44 px: рядок 22 px + відступи 11 px згори й знизу.
+// Від'ємні поля забирають частину проміжку контейнера (20 px), щоб посилання не стояло надто далеко від фактів.
+.visitLink {
+  margin: -8px 0;
+  padding: 11px 8px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: $primary;
+  text-decoration: underline;
+  text-decoration-color: rgba(30, 58, 138, 0.35);
+  text-underline-offset: 3px;
+  border-radius: 6px;
+  outline: none;
+  transition: text-decoration-color 200ms ease;
+
+  &:hover {
+    text-decoration-color: $primary;
+  }
+
+  &:focus-visible {
+    box-shadow: $focusRing;
+  }
+}
+
+// Абзац під фактами: де є обладнання EyeDetect (Львів, партнери, виїзд). Дрібніший за вступ, відділений лінією.
+.note {
+  width: 100%;
+  max-width: 760px;
+  padding-top: 16px;
+  border-top: 1px solid $lineColor;
+  font-size: 15px;
+  line-height: 1.65;
+  color: $subTitleColor;
+  text-align: center;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 16px;
+  }
+}

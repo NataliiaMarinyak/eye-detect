@@ -75,6 +75,8 @@
   border-radius: 50%;
   background: $primarySoft;
   color: $textDarkColor;
+  // Кнопки не успадковують шрифт самі: без цього рядка браузер набирає їх стандартним Arial.
+  font-family: inherit;
   font-size: 26px;
   line-height: 1;
   cursor: pointer;
@@ -159,6 +161,7 @@
   border-radius: 14px;
   background: #fff;
   color: $textDarkColor;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.35;
   text-align: left;
@@ -192,6 +195,7 @@
   border: 0;
   background: none;
   color: $subTitleColor;
+  font-family: inherit;
   font-size: 15px;
   cursor: pointer;
 
@@ -256,7 +260,10 @@
   & textarea { resize: vertical; }
 }
 
+// Жирний текст у цьому вікні: справжній жирний шрифт сайту (--font-bold). Із самим font-weight: 700
+// браузер сам потовщує звичайне накреслення, і літери виходять товсті й розмиті.
 .label {
+  font-family: var(--font-bold);
   font-size: 14px;
   font-weight: 700;
 }
@@ -291,6 +298,7 @@
   border-radius: 100px;
   background: #fff;
   color: $textDarkColor;
+  font-family: inherit;
   font-size: 15px;
   cursor: pointer;
   transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
@@ -302,6 +310,7 @@
     border-color: $primary;
     background: $primary;
     color: #fff;
+    font-family: var(--font-bold);
     font-weight: 700;
   }
 }
@@ -329,6 +338,7 @@
   border-radius: 14px;
   background: $primary;
   color: #fff;
+  font-family: var(--font-bold);
   font-size: 17px;
   font-weight: 700;
   text-align: center;
@@ -344,6 +354,7 @@
   border: 1.5px solid $lineColor;
   border-radius: 14px;
   background: #fff;
+  font-family: inherit;
   font-size: 16px;
   cursor: pointer;
 }

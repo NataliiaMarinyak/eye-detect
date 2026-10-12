@@ -110,7 +110,7 @@
     "invalidEmail": "Invalid email address"
   },
   "buttons": {
-    "calculatePrice": "Get an exact quote",
+    "calculatePrice": "Calculate the exact price",
     "orderConsultation": "Request a consultation",
     "askSpecialist": "Ask the specialist",
     "moreDetails": "Learn more",

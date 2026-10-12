@@ -4,6 +4,7 @@ export const vinnytsia = {
   uk: {
     seoTitle: "Детектор брехні та поліграф у Вінниці: ціна, виїзд",
     seoDescription: "Перевірка на поліграфі у Вінниці: онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ або виїзд з EyeDetect — 12 000 ₴ під ключ. Звіт за 5 хвилин.",
+    updated: "2026-10-09",
     intro: "Вінниця — обласний центр, через який ходять поїзди Інтерсіті+ зі Львова до Києва. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: це близько 365 км, 4 год 40 хв поїздом Інтерсіті+ або 6 годин автомобілем без зупинок.",
     facts: [["Від Львова", "≈ 365 км, 4 год 40 хв поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -16,15 +17,32 @@ export const vinnytsia = {
     ],
     towns: {
       title: "Жмеринка, Могилів-Подільський та інші міста Вінницької області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Вінницької області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і всюди в Україні, крім Львівської області.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Вінницької області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
       list: "Жмеринка · Могилів-Подільський · Хмільник · Гайсин · Ладижин · Козятин",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["khmelnytskyi", "Хмельницький"], ["zhytomyr", "Житомир"], ["kyiv", "Київ"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Вінниця, https://uk.wikipedia.org/wiki/Вінницька_область, https://uk.wikipedia.org/wiki/Могилів-Подільський, https://uk.wikipedia.org/wiki/Жмеринка, https://uk.wikipedia.org/wiki/Козятин
+    local: {
+      title: "Детектор брехні у Вінниці: врожай, переробка, сімейний пай",
+      paragraphs: [
+        "Вінниччина — аграрна область: більшу частину її території займають сільськогосподарські угіддя, а в промисловості і області, і самої Вінниці найбільша частка припадає на харчову галузь. Тут багато такого, що не порахуєш поштучно: сировина, яку господарства в сезон звозять на завод, продукція на складі, вихід готового товару за зміну. Коли вага не сходиться, а накладні й камери нічого не пояснюють, лишається слово проти слова. Саме тут і стає в пригоді тест: він перевіряє одну конкретну подію за названий період.",
+        "Формат залежить від того, скількох людей стосується питання. Якщо однієї, радимо почати з онлайн-тесту VerifEye: виїзд до Вінниці ми плануємо на тиждень-два наперед, а онлайн-тест доступний того ж дня. Виїзд з EyeDetect доречний, коли питання стосується цілої зміни чи бригади, скажімо кожного, хто мав ключі від складу: їх перевіряємо одного дня. Спеціаліст приїжджає зі Львова поїздом Інтерсіті+ або автомобілем, а для тесту просимо підготувати тиху кімнату, де є стіл і розетка: кабінет на підприємстві, готельний номер чи інше місце, яке узгодимо з вами наперед.",
+        "Козятин і Жмеринка — великі залізничні вузли, тож звідти нескладно приїхати до Вінниці на день виїзду. З дальших міст і сіл їхати не обов'язково. Могилів-Подільський, наприклад, стоїть на Дністрі, на кордоні з Молдовою, за 121 км від Вінниці; звідти, як і з Гайсина, Ладижина чи Хмільника, онлайн-тест проходять із телефона, не виїжджаючи з міста.",
+        "Слово «поліграф» у Вінниці, як і скрізь, давно стало загальною назвою будь-якої перевірки на детекторі брехні, тож ми теж його вживаємо. Класичного поліграфа з датчиками на тілі ми при цьому не пропонуємо: EyeDetect і VerifEye — інший метод, вони зчитують реакції очей.",
+        "Ось кілька прикладів, вигаданих, але впізнаваних для аграрного краю. Уявімо переробний завод у сезон: в одного постачальника вага сировини за документами щоразу більша, ніж у сусідів із такими самими машинами, і власник хоче поставити питання приймальникові. Або харчове виробництво, де в одній зміні раптом побільшало браку. Буває й родинна історія: брат і сестра успадкували земельний пай, його орендує господарство, і сестра сумнівається, чи справді за минулий рік нічого не заплатили. Питання до тесту в таких випадках могли б звучати так:",
+      ],
+      points: [
+        "З 1 вересня 2026 року ви записували вагу сировини більшою, ніж показали ваги?",
+        "З 1 липня 2026 року ви списували придатну продукцію як брак, щоб забрати її собі?",
+        "Ви отримували гроші за оренду батькового паю за 2025 рік?",
+      ],
     },
   },
   ru: {
     seoTitle: "Детектор лжи и полиграф в Виннице: цена, выезд",
     seoDescription: "Проверка на полиграфе в Виннице: онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ или выезд с EyeDetect — 12 000 ₴ под ключ. Отчёт за 5 минут.",
+    updated: "2026-10-09",
     intro: "Винница — областной центр, через который ходят поезда Интерсити+ из Львова в Киев. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: это около 365 км, 4 ч 40 мин поездом Интерсити+ или 6 часов на машине без остановок.",
     facts: [["От Львова", "≈ 365 км, 4 ч 40 мин поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -37,15 +55,31 @@ export const vinnytsia = {
     ],
     towns: {
       title: "Жмеринка, Могилев-Подольский и другие города Винницкой области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города Винницкой области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и везде в Украине, кроме Львовской области.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города Винницкой области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
       list: "Жмеринка · Могилев-Подольский · Хмельник · Гайсин · Ладыжин · Казатин",
       nearbyLabel: "Другие города региона:",
       nearby: [["khmelnytskyi", "Хмельницкий"], ["zhytomyr", "Житомир"], ["kyiv", "Киев"]],
     },
+    local: {
+      title: "Детектор лжи в Виннице: урожай, переработка, семейный пай",
+      paragraphs: [
+        "Винницкая область — аграрная: основную часть её территории занимают сельскохозяйственные угодья, а в промышленности и области, и самой Винницы самая большая доля приходится на пищевую отрасль. Здесь много такого, что не пересчитаешь поштучно: сырьё, которое хозяйства в сезон свозят на завод, продукция на складе, выход готового товара за смену. Когда вес не сходится, а накладные и камеры ничего не объясняют, остаётся слово против слова. Именно здесь и пригодится тест: он проверяет одно конкретное событие за названный период.",
+        "Формат зависит от того, скольких людей касается вопрос. Если одного, советуем начать с онлайн-теста VerifEye: выезд в Винницу мы планируем на неделю-две вперёд, а онлайн-тест доступен в тот же день. Выезд с EyeDetect уместен, когда вопрос касается целой смены или бригады, скажем каждого, у кого были ключи от склада: их проверяем в один день. Специалист приезжает из Львова поездом Интерсити+ или на машине, а для теста просим подготовить тихую комнату, где есть стол и розетка: кабинет на предприятии, гостиничный номер или другое место, которое согласуем с вами заранее.",
+        "Казатин и Жмеринка — крупные железнодорожные узлы, так что оттуда несложно приехать в Винницу в день выезда. Из более дальних городов и сёл ехать не обязательно. Могилев-Подольский, например, стоит на Днестре, на границе с Молдовой, в 121 км от Винницы; оттуда, как и из Гайсина, Ладыжина или Хмельника, онлайн-тест проходят с телефона, не выезжая из города.",
+        "Слово «полиграф» в Виннице, как и везде, давно стало общим названием любой проверки на детекторе лжи, поэтому мы тоже его используем. Классический полиграф с датчиками на теле мы при этом не предлагаем: EyeDetect и VerifEye — другой метод, они считывают реакции глаз.",
+        "Вот несколько примеров, выдуманных, но узнаваемых для аграрного края. Представим перерабатывающий завод в сезон: у одного поставщика вес сырья по документам каждый раз больше, чем у соседей с такими же машинами, и владелец хочет задать вопрос приёмщику. Или пищевое производство, где в одной смене вдруг стало больше брака. Бывает и семейная история: брат и сестра унаследовали земельный пай, его арендует хозяйство, и сестра сомневается, правда ли за прошлый год ничего не заплатили. Вопросы к тесту в таких случаях могли бы звучать так:",
+      ],
+      points: [
+        "С 1 сентября 2026 года вы записывали вес сырья большим, чем показали весы?",
+        "С 1 июля 2026 года вы списывали годную продукцию как брак, чтобы забрать её себе?",
+        "Вы получали деньги за аренду отцовского пая за 2025 год?",
+      ],
+    },
   },
   en: {
     seoTitle: "Lie Detector Test in Vinnytsia: Price, Visit or Online",
-    seoDescription: "Polygraph test in Vinnytsia: verifEye phone test today from UAH 2,500, or an EyeDetect visit for UAH 12,000 all-inclusive. Report in 5 minutes.",
+    seoDescription: "Polygraph test in Vinnytsia: VerifEye phone test today from UAH 2,500, or an EyeDetect visit for UAH 12,000 all-inclusive. Report in 5 minutes.",
+    updated: "2026-10-09",
     intro: "Vinnytsia is a regional centre on the route of the Intercity+ trains from Lviv to Kyiv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: about 365 km, which takes 4 h 40 min by Intercity+ train or 6 hours by car without stops.",
     facts: [["From Lviv", "≈ 365 km, 4 h 40 min by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
@@ -58,10 +92,25 @@ export const vinnytsia = {
     ],
     towns: {
       title: "Zhmerynka, Mohyliv-Podilskyi and other towns in Vinnytsia Oblast",
-      text: "The VerifEye online test can be taken from any town in Vinnytsia Oblast. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine except Lviv Oblast.",
+      text: "The VerifEye online test can be taken from any town in Vinnytsia Oblast. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
       list: "Zhmerynka · Mohyliv-Podilskyi · Khmilnyk · Haisyn · Ladyzhyn · Koziatyn",
       nearbyLabel: "Other cities in the region:",
       nearby: [["khmelnytskyi", "Khmelnytskyi"], ["zhytomyr", "Zhytomyr"], ["kyiv", "Kyiv"]],
+    },
+    local: {
+      title: "Lie detector test in Vinnytsia: harvest, food processing, family land",
+      paragraphs: [
+        "Vinnytsia Oblast is farming country: most of its territory is farmland, and the food industry has the largest share of industrial output in both the oblast and the city of Vinnytsia. Much of what is at stake here cannot be counted piece by piece: raw produce that farms deliver to a plant in season, stock in a warehouse, the output of a shift. When the weight does not add up and neither waybills nor cameras explain it, it is one person's word against another's. This is where the test comes in: it checks one specific event within a named period.",
+        "The format depends on how many people the question concerns. If it is one person, we suggest starting with the VerifEye online test: we plan a visit to Vinnytsia one to two weeks ahead, while the online test is available the same day. An EyeDetect visit is the right choice when the question concerns a whole shift or crew, for instance each person who had keys to the warehouse: we test them all on the same day. The specialist comes from Lviv by Intercity+ train or by car, and for the test we ask you to set aside somewhere quiet with a table and a socket: an office at the company, a hotel room or another place we settle with you beforehand.",
+        "Koziatyn and Zhmerynka are major railway junctions, so it is easy to get from there to Vinnytsia on the day of a visit. From more distant towns and villages there is no need to travel. Mohyliv-Podilskyi, for example, stands on the Dniester, on the border with Moldova, 121 km from Vinnytsia; from there, as from Haisyn, Ladyzhyn or Khmilnyk, people take the online test on a phone without leaving town.",
+        "In Vinnytsia, as everywhere, “polygraph” has long been the everyday word for any lie detector test, so we use it too. We do not offer a classic polygraph with sensors on the body, though: EyeDetect and VerifEye are a different method that reads eye reactions.",
+        "Here are a few examples, invented but recognisable in a farming region. Imagine a processing plant in season: one supplier's raw produce weighs more on paper every time than that of neighbours with the same trucks, and the owner wants to put a question to the intake clerk. Or a food plant where one shift suddenly has more rejects than the others. There are family stories too: a brother and sister inherit a plot of farmland that a farm leases, and the sister doubts that nothing was paid for the past year. The test questions in such cases might read like this:",
+      ],
+      points: [
+        "Since September 1, 2026, have you recorded a higher weight for raw produce than the scales showed?",
+        "Since July 1, 2026, have you written off good products as rejects in order to take them for yourself?",
+        "Did you receive the rent for your father's land plot for 2025?",
+      ],
     },
   },
 };

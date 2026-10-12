@@ -1,5 +1,6 @@
 import OrderForm from "@/components/OrderForm/OrderForm";
 import { addressData } from "@/data/addressData";
+import { phone } from "@/data/socialMediaData";
 import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./HomeOrderSection.module.scss";
 
@@ -26,6 +27,13 @@ const HomeOrderSection = ({ lang, dictionary }) => {
                   <use href={`/sprite.svg#icon-map_pin`} />
                 </svg>
                 {getLocalizedField(addressData, "textAddress", lang)}
+              </a>
+              {/* Той самий номер, що в шапці й підвалі (data/socialMediaData.js): посилання для дзвінка */}
+              <a className={`${styles.addressLink} ${styles.phoneLink}`} href={phone.href}>
+                <svg className={styles.phoneIcon} aria-hidden="true">
+                  <use href={phone.icon} />
+                </svg>
+                {phone.contact}
               </a>
             </address>
           </div>

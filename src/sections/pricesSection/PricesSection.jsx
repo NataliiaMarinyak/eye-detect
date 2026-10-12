@@ -12,6 +12,10 @@ import { getLocalizedField } from "@/helpers/getLocalizedField";
 import styles from "./PricesSection.module.scss";
 
 const BOOK = { uk: "Записатися", ru: "Записаться", en: "Book" };
+// Картка, де жоден рядок не має кнопки запису («Для бізнесу», ціни «за запитом»):
+// одна кнопка під списком. ASK — підпис кнопки, ASK_SERVICE — хвіст назви послуги у вікні заявки.
+const ASK = { uk: "Запитати ціну", ru: "Узнать цену", en: "Ask for a price" };
+const ASK_SERVICE = { uk: "ціна за запитом", ru: "цена по запросу", en: "price on request" };
 
 // Рядок має кнопку запису, якщо в ньому є конкретна ціна:
 // числове поле price або сума в підписі (наприклад «12 000 ₴ під ключ»).
@@ -22,7 +26,20 @@ const isBookable = (item) =>
 const PricesSection = ({ lang, dictionary }) => {
   const pick = (obj, key) => getLocalizedField(obj, key, lang);
   const bookLabel = BOOK[lang] || BOOK.uk;
+  const askLabel = ASK[lang] || ASK.uk;
+  const askService = ASK_SERVICE[lang] || ASK_SERVICE.uk;
   const comparisonNote = pricingComparisonNote?.[lang] ?? pricingComparisonNote?.uk;
+
+  // Ряд із двох кнопок стоїть двічі: під прайсом і наприкінці сторінки, після порівняння цін.
+  const ctaButtons = (
+    <>
+      <PriceQuizBtn title={dictionary.buttons.calculatePrice} />
+      <OpenModalBtn
+        customClass=""
+        title={dictionary.buttons.orderConsultation}
+      />
+    </>
+  );
 
   return (
     <section className={styles.section}>
@@ -64,6 +81,16 @@ const PricesSection = ({ lang, dictionary }) => {
                   );
                 })}
               </ul>
+              {!hasBookable && (
+                <div className={styles.groupCta}>
+                  <OpenModalBtn
+                    customClass={styles.book}
+                    title={askLabel}
+                    ariaLabel={`${askLabel}: ${groupTitle}`}
+                    service={`${groupTitle} · ${askService}`}
+                  />
+                </div>
+              )}
             </div>
           );
         })}
@@ -81,13 +108,7 @@ const PricesSection = ({ lang, dictionary }) => {
           ))}
         </ul>
 
-        <div className={styles.ctaGroup}>
-          <PriceQuizBtn title={dictionary.buttons.calculatePrice} />
-          <OpenModalBtn
-            customClass=""
-            title={dictionary.buttons.orderConsultation}
-          />
-        </div>
+        <div className={styles.ctaGroup}>{ctaButtons}</div>
 
         <div className={styles.included}>
           <h2 className={styles.groupTitle}>
@@ -128,6 +149,8 @@ const PricesSection = ({ lang, dictionary }) => {
             <p className={styles.comparisonFootnote}>{comparisonNote}</p>
           )}
         </div>
+
+        <div className={`${styles.ctaGroup} ${styles.ctaGroupEnd}`}>{ctaButtons}</div>
       </div>
     </section>
   );

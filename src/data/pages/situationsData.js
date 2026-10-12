@@ -1,4 +1,5 @@
 // Сторінки ситуацій /situations/[slug]. Ключі: uk, ru, en. Нові ситуації у ./situations/*.js.
+import { fidelity } from "./situations/fidelity";
 import { premarital } from "./situations/premarital";
 import { familyMoney } from "./situations/family-money";
 import { gambling } from "./situations/gambling";
@@ -63,98 +64,7 @@ const shared = {
 };
 
 export const situations = [
-  {
-    slug: "fidelity",
-    icon: "/sprite.svg#icon-rings",
-    report: "/images/report-sample-eyedetect.webp",
-    uk: {
-      nav: "Вірність",
-      seo: {
-        title: "Перевірка на вірність на детекторі брехні: Львів або онлайн",
-        description: "Тест на вірність партнера: EyeDetect у Львові за 30–45 хв або VerifEye онлайн за 15–20 хв. Конкретні питання, звіт до 5 хвилин, повна конфіденційність.",
-        keywords: ["перевірка на вірність", "тест на вірність", "детектор брехні зрада", "поліграф вірність", "перевірити партнера"],
-      },
-      h1: "Перевірка на вірність на детекторі брехні",
-      sub: "Коли підозри не дають жити, а розмови ходять по колу, тест дає конкретну відповідь на конкретні питання. Конкретні питання про конкретний період, звіт до 5 хвилин після тесту, і ніхто, крім вас, його не побачить.",
-      facts: ["звіт до 5 хвилин після тесту", "онлайн або в кабінеті", "лише ви бачите звіт"],
-      how: [
-        { title: "Питання про факти, а не про почуття", text: "Ми не питаємо «чи кохаєш». Ми питаємо, чи був статевий контакт з іншою людиною з конкретної дати, чи було романтичне листування, чи були приховані витрати. На такі питання є однозначна відповідь." },
-        { title: "Обидва партнери читають питання заздалегідь", text: "Перед тестом людина читає повне пояснення кожного питання: що вважається контактом, що ні, за який період. Несподіванок і пасток немає: обидва партнери розуміють питання однаково ще до тесту." },
-        { title: "Спогади не спотворюють результат", text: "Класичний поліграф реєструє фізіологічні реакції, на які можуть впливати тривога, страх та емоційно значущі спогади. EyeDetect використовує інший принцип: аналізує когнітивне навантаження за рухами очей, зміною зіниці, швидкістю читання та відповідей. Тому емоційна реакція сама по собі не є основним показником, за яким EyeDetect визначає результат." },
-        { title: "Оцінка по кожному питанню окремо", text: "Звіт показує бал від 1 до 99 по кожній темі. Буває, що за статевим контактом людина чиста, а за листуванням ні. Ви бачите повну картину, а не одне слово «брехав»." },
-      ],
-      questions: [
-        "З 12 березня 2023 року ви мали статевий контакт з іншою людиною?",
-        "За останні 6 місяців ви таємно від партнера мали романтичне спілкування з іншою людиною?",
-        "За останні 6 місяців ви таємно витрачали більше 100 доларів на іншу людину?",
-        "У вас є приховані акаунти або переписки, про які партнер не знає?",
-      ],
-      faq: [
-        { q: "Чи можна перевірити партнера без його згоди?", a: "Ні. Тест проходить лише добровільно, з письмовою згодою. Відмова від тесту теж інформація, але змусити людину неможливо." },
-        { q: "Партнер в іншому місті. Що робити?", a: "VerifEye онлайн: ми надсилаємо посилання, людина проходить тест з телефона у тихій кімнаті, звіт у PDF приходить вам на пошту до 5 хвилин після тесту." },
-        { q: "Що, як результат «невизначений»?", a: "Таке буває, найчастіше через втому або хвилювання. Повторний тест — за наш рахунок." },
-        { q: "Чи дізнається хтось про тест?", a: "Ні. Тест EyeDetect у кабінеті можна пройти анонімно: без імені та фото, лише під номером. На сервер Converus для підрахунку йдуть тільки координати рухів очей, розмір зіниці та відповіді «правда/неправда». Онлайн-тест VerifEye робить фото для звіту, і звіт бачите лише ви. Ми не публікуємо фото й відгуки без дозволу, не обговорюємо перевірки і не зберігаємо звіти довше, ніж потрібно для видачі результату." },
-      ],
-    },
-    ru: {
-      nav: "Верность",
-      seo: {
-        title: "Проверка на верность на детекторе лжи: Львов или онлайн",
-        description: "Тест на верность партнёра: EyeDetect во Львове за 30–45 мин или VerifEye онлайн за 15–20 мин. Конкретные вопросы, отчёт до 5 минут, полная конфиденциальность.",
-        keywords: ["проверка на верность", "тест на верность", "детектор лжи измена", "полиграф верность", "проверить партнёра"],
-      },
-      h1: "Проверка на верность на детекторе лжи",
-      sub: "Когда подозрения не дают жить, а разговоры ходят по кругу, тест даёт конкретный ответ на конкретные вопросы. Конкретные вопросы о конкретном периоде, отчёт до 5 минут после теста, и никто, кроме вас, его не увидит.",
-      facts: ["отчёт до 5 минут после теста", "онлайн или в кабинете", "только вы видите отчёт"],
-      how: [
-        { title: "Вопросы о фактах, а не о чувствах", text: "Мы не спрашиваем «любишь ли». Мы спрашиваем, был ли половой контакт с другим человеком с конкретной даты, была ли романтическая переписка, были ли скрытые траты. На такие вопросы есть однозначный ответ." },
-        { title: "Оба партнёра читают вопросы заранее", text: "Перед тестом человек читает полное объяснение каждого вопроса: что считается контактом, что нет, за какой период. Неожиданностей и ловушек нет: оба партнёра понимают вопросы одинаково ещё до теста." },
-        { title: "Воспоминания не искажают результат", text: "Классический полиграф регистрирует физиологические реакции, на которые могут влиять тревога, страх и эмоционально значимые воспоминания. EyeDetect использует другой принцип: анализирует когнитивную нагрузку по движениям глаз, изменению зрачка, скорости чтения и ответов. Поэтому эмоциональная реакция сама по себе не является основным показателем, по которому EyeDetect определяет результат." },
-        { title: "Оценка по каждому вопросу отдельно", text: "Отчёт показывает балл от 1 до 99 по каждой теме. Бывает, что по половому контакту человек чист, а по переписке нет. Вы видите полную картину, а не одно слово «врал»." },
-      ],
-      questions: [
-        "С 12 марта 2023 года вы имели половой контакт с другим человеком?",
-        "За последние 6 месяцев вы тайно от партнёра имели романтическое общение с другим человеком?",
-        "За последние 6 месяцев вы тайно тратили больше 100 долларов на другого человека?",
-        "У вас есть скрытые аккаунты или переписки, о которых партнёр не знает?",
-      ],
-      faq: [
-        { q: "Можно ли проверить партнёра без его согласия?", a: "Нет. Тест проходит только добровольно, с письменным согласием. Отказ от теста тоже информация, но заставить человека невозможно." },
-        { q: "Партнёр в другом городе. Что делать?", a: "VerifEye онлайн: мы отправляем ссылку, человек проходит тест с телефона в тихой комнате, отчёт в PDF приходит вам на почту до 5 минут после теста." },
-        { q: "Что, если результат «неопределённый»?", a: "Такое бывает, чаще всего из-за усталости или волнения. Повторный тест — за наш счёт." },
-        { q: "Узнает ли кто-то о тесте?", a: "Нет. Тест EyeDetect в кабинете можно пройти анонимно: без имени и фото, только под номером. На сервер Converus для подсчёта идут только координаты движений глаз, размер зрачка и ответы «правда/неправда». Онлайн-тест VerifEye делает фото для отчёта, и отчёт видите только вы. Мы не публикуем фото и отзывы без разрешения, не обсуждаем проверки и не храним отчёты дольше, чем нужно для выдачи результата." },
-      ],
-    },
-    en: {
-      nav: "Fidelity",
-      seo: {
-        title: "Fidelity Lie Detector Test — Lviv Office or Online",
-        description: "Partner fidelity test: EyeDetect in Lviv in 30–45 minutes or VerifEye online in 15–20 minutes. Specific questions, report in 5 minutes, full confidentiality.",
-        keywords: ["fidelity test", "infidelity lie detector test", "cheating polygraph test", "polygraph fidelity", "test my partner"],
-      },
-      h1: "Fidelity Test on a Lie Detector",
-      sub: "When suspicion makes life unbearable and every conversation goes in circles, the test gives a specific answer to specific questions. Specific questions about a specific period, a report within 5 minutes after the test, and no one but you will see it.",
-      facts: ["report within 5 minutes after the test", "online or in our Lviv office", "only you see the report"],
-      how: [
-        { title: "Questions about facts, not feelings", text: "We do not ask “do you love me”. We ask whether there was sexual contact with another person since a specific date, whether there was romantic correspondence, whether there were hidden expenses. Such questions have a clear yes-or-no answer." },
-        { title: "Both partners read the questions in advance", text: "Before the test, the person reads a full explanation of every question: what counts as contact, what does not, and for which period. There are no surprises or traps: both partners understand the questions the same way before the test begins." },
-        { title: "Memories do not distort the result", text: "A classic polygraph records physiological reactions that can be influenced by anxiety, fear, and emotionally significant memories. EyeDetect works on a different principle: it analyzes cognitive load through eye movements, pupil changes, and reading and response speed. That is why an emotional reaction on its own is not the main indicator EyeDetect uses to determine the result." },
-        { title: "A separate score for each question", text: "The report shows a score from 1 to 99 for each topic. It happens that a person is clean on sexual contact but not on correspondence. You see the full picture, not a single word: “lied”." },
-      ],
-      questions: [
-        "Since March 12, 2023, have you had sexual contact with another person?",
-        "In the last 6 months, have you secretly had a romantic relationship with another person behind your partner's back?",
-        "In the last 6 months, have you secretly spent more than 100 dollars on another person?",
-        "Do you have hidden accounts or conversations your partner does not know about?",
-      ],
-      faq: [
-        { q: "Can I test my partner without their consent?", a: "No. The test is taken voluntarily only, with written consent. A refusal is also information, but no one can be forced to take the test." },
-        { q: "My partner is in another city. What can we do?", a: "VerifEye online: we send a link, the person takes the test from a phone in a quiet room, and the PDF report arrives in your inbox within 5 minutes after the test." },
-        { q: "What if the result is “inconclusive”?", a: "It happens, most often because of fatigue or nervousness. A repeat test is at our expense." },
-        { q: "Will anyone find out about the test?", a: "No. The EyeDetect test in our office can be taken anonymously: no name or photo, only a number. Only eye-movement coordinates, pupil size, and the “true/false” answers are sent to the Converus server for scoring. The VerifEye online test takes a photo for the report, and only you see the report. We do not publish photos or reviews without permission, do not discuss tests, and do not keep reports longer than needed to deliver the result." },
-      ],
-    },
-  },
+  fidelity,
   {
     slug: "theft",
     icon: "/sprite.svg#icon-money",

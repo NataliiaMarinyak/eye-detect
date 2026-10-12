@@ -1,0 +1,86 @@
+@import "../../app/variables";
+
+// Біла смуга з посиланнями на міста, як «Інші галузі» (sections/relatedLinks): компактна, без карток.
+.section {
+  padding-top: 32px;
+  padding-bottom: 36px;
+  background-color: $cardBgColor;
+  border-top: 1px solid $lineColor;
+  border-bottom: 1px solid $lineColor;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 44px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (min-width: $laptop) {
+    gap: 28px;
+  }
+}
+
+.title {
+  @include sectionTitle;
+
+  // Блок допоміжний: заголовок менший за звичайний заголовок секції (26–40 px).
+  // Обгортка & {} ставить правило після @media з sectionTitle, тому воно діє на всіх ширинах.
+  // max-width ширший за типові 24ch: з меншим шрифтом заголовок уміщається в один рядок
+  // і останнє слово («місті») не лишається саме на другому.
+  // text-wrap: balance — для довшого заголовка (сторінка передає свій): рядки однакової довжини.
+  & {
+    font-size: 22px;
+    max-width: 34ch;
+    text-wrap: balance;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  // 1000 px: на комп'ютері 21 місто стає у три рівні ряди, останнє не висить саме в четвертому.
+  max-width: 1000px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 10px;
+  }
+}
+
+// Не менше 44 px заввишки, щоб на телефоні було зручно натиснути.
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid $lineColor;
+  border-radius: 100px;
+  background-color: $cardBgColor;
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: center;
+  transition: border-color 200ms ease, color 200ms ease;
+
+  &:hover {
+    border-color: $primary;
+    color: $primary;
+  }
+
+  // Рамка фокуса всередині: .container обрізає все, що виходить за його ширину.
+  &:focus-visible {
+    outline-offset: -3px;
+  }
+}

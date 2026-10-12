@@ -4,6 +4,7 @@ export const mykolaiv = {
   uk: {
     seoTitle: "Поліграф у Миколаєві: детектор брехні, виїзд і ціна",
     seoDescription: "Поліграф у Миколаєві: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴. Звіт за 5 хвилин.",
+    updated: "2026-10-09",
     intro: "Миколаїв — центр Миколаївської області на півдні України, приблизно за 800 км від Львова. Прямий поїзд зі Львова їде понад 17 годин і курсує не щодня. Тому спеціаліст з EyeDetect зазвичай їде автомобілем, а дату виїзду узгоджуємо заздалегідь. Якщо відповідь потрібна швидше, онлайн-тест VerifEye зі смартфона можна пройти вже сьогодні.",
     facts: [["Від Львова", "≈ 800 км, 10–13 год машиною"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -17,15 +18,27 @@ export const mykolaiv = {
     ],
     towns: {
       title: "Первомайськ, Вознесенськ та інші міста Миколаївської області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Миколаївської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і всюди в Україні, крім Львівської області.",
-      list: "Первомайськ · Вознесенськ · Южноукраїнськ · Нова Одеса",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Миколаївської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
+      list: "Первомайськ · Вознесенськ · Південноукраїнськ · Нова Одеса",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["odesa", "Одеса"], ["kherson", "Херсон"], ["kropyvnytskyi", "Кропивницький"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Миколаїв, https://uk.wikipedia.org/wiki/Миколаївська_область
+    local: {
+      title: "Миколаїв: тест замість поліграфа для підприємства, господарства і родини",
+      paragraphs: [
+        "Миколаїв називають містом корабелів: він виріс навколо верфі, закладеної там, де Інгул впадає в Південний Буг, а згодом став містом заводів і портів, морського та річкового. Область довкола хліборобська: тут вирощують насамперед зернові й соняшник, і сільське господарство — одна з її головних галузей. Там, де є цехи, причали й великі господарства, поруч із сімейними питаннями виникають і виробничі: метал, пальне, інструмент, зерно — усе, що проходить через багато рук.",
+        "Уявімо судноремонтну дільницю. На ремонт судна бригада отримала листовий метал, кабель і фарбу, а після здачі робіт частини матеріалів бракує. Підозрювати всю бригаду означає зіпсувати стосунки в колективі, вказати на одного — ризикувати помилкою. У такій ситуації тест проходять усі, хто мав доступ, і кожен відповідає на те саме питання про факт: «З 1 до 30 вересня ви виносили з дільниці матеріали без оформлення?» Тест добровільний, кожен дає письмову згоду, а перед перевіркою персоналу роботодавцеві варто порадитися з юристом.",
+        "Інший приклад — пальне в господарстві. У жнива техніку заправляють кілька механізаторів, і за місяць витрата виходить помітно більшою за норму. Питання кожному з них могло б звучати так: «У липні цього року ви зливали пальне з техніки господарства?» Тим, хто нічого не брав, така перевірка потрібна не менше, ніж власникові: вона дає змогу відвести від себе підозру.",
+        "Саме під такі перевірки й варто планувати виїзд. Спеціаліст їде до Миколаєва автомобілем, а це цілий день дороги, тому збираємо всю бригаду чи зміну на один приїзд і приїжджаємо вдень. На підприємстві для цього вистачить кабінету майстра чи кімнати для нарад, де тихо і є стіл та розетка; люди заходять по одному. Якщо дільниця, склад чи господарство не в самому Миколаєві, а в Первомайську, Вознесенську, Новій Одесі чи поруч із ними, умови ті самі. Скільки коштують виїзд і онлайн-тест, показано нижче на цій сторінці.",
+        "І про саме слово. «Пройти поліграф» кажуть про будь-який детектор брехні, і ми розуміємо це слово так само. Але приладу з датчиками на тілі до Миколаєва не привозимо: камера EyeDetect фіксує реакції очей, поки людина читає твердження на екрані й відповідає на них, а класичний поліграф — окремий метод, з яким ми не працюємо. Якщо ж питання сімейне й людина одна, виїзд не потрібен зовсім: онлайн-тест VerifEye проходять з телефона вдома, у Миколаєві чи в будь-якому місті області.",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф в Николаеве: детектор лжи, выезд и цена",
     seoDescription: "Детектор лжи в Николаеве: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴. Отчёт за 5 минут.",
+    updated: "2026-10-09",
     intro: "Николаев — центр Николаевской области на юге Украины, примерно в 800 км от Львова. Прямой поезд из Львова идёт больше 17 часов и ходит не каждый день. Поэтому специалист с EyeDetect обычно едет на машине, а дату выезда согласовываем заранее. Если ответ нужен быстрее, онлайн-тест VerifEye со смартфона можно пройти уже сегодня.",
     facts: [["От Львова", "≈ 800 км, 10–13 ч на машине"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -39,15 +52,26 @@ export const mykolaiv = {
     ],
     towns: {
       title: "Первомайск, Вознесенск и другие города Николаевской области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города Николаевской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и везде в Украине, кроме Львовской области.",
-      list: "Первомайск · Вознесенск · Южноукраинск · Новая Одесса",
+      text: "Онлайн-тест VerifEye можно пройти из любого города Николаевской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
+      list: "Первомайск · Вознесенск · Пивденноукраинск · Новая Одесса",
       nearbyLabel: "Другие города региона:",
       nearby: [["odesa", "Одесса"], ["kherson", "Херсон"], ["kropyvnytskyi", "Кропивницкий"]],
+    },
+    local: {
+      title: "Николаев: тест вместо полиграфа для предприятия, хозяйства и семьи",
+      paragraphs: [
+        "Николаев называют городом корабелов: он вырос вокруг верфи, заложенной там, где Ингул впадает в Южный Буг, а со временем стал городом заводов и портов, морского и речного. Область вокруг — хлебный край: здесь выращивают прежде всего зерновые и подсолнечник, и сельское хозяйство — одна из её главных отраслей. Там, где есть цеха, причалы и крупные хозяйства, рядом с семейными вопросами возникают и производственные: металл, топливо, инструмент, зерно — всё, что проходит через много рук.",
+        "Представим судоремонтный участок. На ремонт судна бригада получила листовой металл, кабель и краску, а после сдачи работ части материалов не хватает. Подозревать всю бригаду значит испортить отношения в коллективе, указать на одного — рисковать ошибкой. В такой ситуации тест проходят все, у кого был доступ, и каждый отвечает на один и тот же вопрос о факте: «С 1 по 30 сентября вы выносили с участка материалы без оформления?» Тест добровольный, каждый даёт письменное согласие, а перед проверкой персонала работодателю стоит посоветоваться с юристом.",
+        "Другой пример — топливо в хозяйстве. Во время уборки урожая технику заправляют несколько механизаторов, и за месяц расход выходит заметно выше нормы. Вопрос каждому из них мог бы звучать так: «В июле этого года вы сливали топливо с техники хозяйства?» Тем, кто ничего не брал, такая проверка нужна не меньше, чем владельцу: она позволяет отвести от себя подозрение.",
+        "Именно под такие проверки и стоит планировать выезд. Специалист едет в Николаев на машине, а это целый день дороги, поэтому собираем всю бригаду или смену на один приезд и приезжаем днём. На предприятии для этого хватит кабинета мастера или комнаты для совещаний, где тихо и есть стол и розетка; люди заходят по одному. Если участок, склад или хозяйство не в самом Николаеве, а в Первомайске, Вознесенске, Новой Одессе или рядом с ними, условия те же. Сколько стоят выезд и онлайн-тест, показано ниже на этой странице.",
+        "И о самом слове. «Пройти полиграф» говорят о любом детекторе лжи, и мы понимаем это слово так же. Но прибор с датчиками на теле в Николаев не привозим: камера EyeDetect фиксирует реакции глаз, пока человек читает утверждения на экране и отвечает на них, а классический полиграф — отдельный метод, с которым мы не работаем. Если же вопрос семейный и человек один, выезд не нужен совсем: онлайн-тест VerifEye проходят с телефона дома, в Николаеве или в любом городе области.",
+      ],
     },
   },
   en: {
     seoTitle: "Lie Detector Test in Mykolaiv: Price, Visit or Online",
     seoDescription: "Lie detector test in Mykolaiv: an EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
+    updated: "2026-10-09",
     intro: "Mykolaiv is the administrative centre of the Mykolaiv region in southern Ukraine, about 800 km from Lviv. The direct train from Lviv takes more than 17 hours and does not run every day. So an EyeDetect specialist usually drives, and we arrange the date in advance. If you need an answer sooner, you can take the VerifEye smartphone test today.",
     facts: [["From Lviv", "≈ 800 km, 10–13 h by car"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
@@ -61,10 +85,20 @@ export const mykolaiv = {
     ],
     towns: {
       title: "Pervomaisk, Voznesensk and other towns in the Mykolaiv region",
-      text: "The VerifEye online test can be taken from any town in the Mykolaiv region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine outside the Lviv region.",
-      list: "Pervomaisk · Voznesensk · Yuzhnoukrainsk · Nova Odesa",
+      text: "The VerifEye online test can be taken from any town in the Mykolaiv region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
+      list: "Pervomaisk · Voznesensk · Pivdennoukrainsk · Nova Odesa",
       nearbyLabel: "Other cities in the region:",
       nearby: [["odesa", "Odesa"], ["kherson", "Kherson"], ["kropyvnytskyi", "Kropyvnytskyi"]],
+    },
+    local: {
+      title: "Mykolaiv: an eye-reaction test instead of a polygraph for a business, a farm or a family",
+      paragraphs: [
+        "Mykolaiv is known as the city of shipbuilders: it grew around a shipyard founded where the Inhul flows into the Southern Bug, and in time became a city of factories and of ports, both sea and river. The region around it is grain country: the main crops are cereals and sunflower, and farming is one of its key industries. Where there are workshops, quays and large farms, family questions are joined by workplace ones: metal, fuel, tools, grain — everything that passes through many hands.",
+        "Picture a ship repair yard. For a repair job the crew was issued sheet metal, cable and paint, and once the work is handed over some of the materials are missing. Suspecting the whole crew spoils relations in the team; pointing at one person risks a mistake. In a case like this everyone who had access takes the test, and each answers the same question about a fact: “Between September 1 and September 30, did you take materials out of the yard without paperwork?” The test is voluntary, each person gives written consent, and before testing staff an employer should talk to a lawyer.",
+        "Another example is fuel on a farm. During harvest several machine operators refuel the machinery, and over a month consumption comes out well above the norm. A question for each of them might be: “In July this year, did you drain fuel from the farm's machinery?” Those who took nothing need this check as much as the owner does: it lets them clear themselves of suspicion.",
+        "Checks like these are what a visit should be planned around. The specialist drives to Mykolaiv, which is a full day on the road, so we bring the whole crew or shift together for one trip and arrive in daytime. On site, a foreman's office or a meeting room is enough, as long as it is quiet and has a table and a power outlet; people come in one at a time. If the yard, warehouse or farm is not in Mykolaiv itself but in or near Pervomaisk, Voznesensk or Nova Odesa, the terms are the same. What a visit and the online test cost is shown further down this page.",
+        "And a word about the word. People say “take a polygraph” about any lie detector, and we understand the word the same way. But we do not bring a device with sensors on the body to Mykolaiv: the EyeDetect camera records eye reactions while the person reads statements on a screen and answers them, and a classic polygraph is a separate method that we do not work with. If the question is a family one and concerns one person, no visit is needed at all: the VerifEye online test is taken on a phone at home, in Mykolaiv or in any town of the region.",
+      ],
     },
   },
 };

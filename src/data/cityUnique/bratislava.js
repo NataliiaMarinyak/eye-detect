@@ -47,7 +47,7 @@ export const bratislava = {
   },
   en: {
     seoTitle: "Lie Detector Test in Bratislava: Online or On-Site",
-    seoDescription: "Lie detector in Bratislava: verifEye online test today from UAH 2,500 (≈ €49) or an EyeDetect visit. Report in 5 minutes.",
+    seoDescription: "Lie detector in Bratislava: VerifEye online test today from UAH 2,500 (≈ €49) or an EyeDetect visit. Report in 5 minutes.",
     intro: "Bratislava is the capital of Slovakia. A direct bus runs here from Lviv via Uzhhorod and Košice. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment; we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 670 km, 16 h by bus"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

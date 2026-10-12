@@ -4,6 +4,7 @@ export const dnipro = {
   uk: {
     seoTitle: "Поліграф і детектор брехні у Дніпрі: ціна, виїзд",
     seoDescription: "Поліграф у Дніпрі: онлайн-тест VerifEye з телефона сьогодні від 2 500 ₴ або виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ. Звіт за 5 хвилин.",
+    updated: "2026-10-09",
     intro: "Дніпро — одне з найбільших міст України, і від Львова до нього близько 950 км. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст їде зі Львова з обладнанням нічним поїздом, близько 13 годин: поїздів Інтерсіті на цьому маршруті немає.",
     facts: [["Від Львова", "≈ 950 км, 13 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -17,15 +18,32 @@ export const dnipro = {
     ],
     towns: {
       title: "Кривий Ріг, Кам'янське та інші міста Дніпропетровської області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і всюди в Україні, крім Львівської області.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
       list: "Кривий Ріг · Павлоград · Кам'янське · Жовті Води",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["zaporizhzhia", "Запоріжжя"], ["poltava", "Полтава"], ["kharkiv", "Харків"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Дніпро_(місто), https://uk.wikipedia.org/wiki/Дніпропетровська_область, https://uk.wikipedia.org/wiki/Кривий_Ріг, https://uk.wikipedia.org/wiki/Жовті_Води, https://uk.wikipedia.org/wiki/Павлоград, https://uk.wikipedia.org/wiki/Кам'янське
+    local: {
+      title: "Детектор брехні у Дніпрі: 13 годин дороги зі Львова і що це означає для вас",
+      paragraphs: [
+        "Дніпро — місто металургії й ракетно-космічної галузі, один із провідних фінансових центрів країни та великий торговий центр із численними магазинами й ринками. Це ще й важливий залізничний вузол і річковий порт. Місто стоїть на обох берегах річки: центр на високому правому, а три з восьми районів — на лівому.",
+        "Постійного обладнання EyeDetect у Дніпрі немає. Спеціаліст везе його зі Львова нічним поїздом, і дорога туди й назад забирає понад добу, тому виїзд сюди не буває «на завтра». Звідси проста порада: спершу запитайте себе, чи потрібен саме виїзд. Якщо питання одне й людина одна, онлайн-тест VerifEye дає відповідь того ж дня: з телефона, у тихій кімнаті вдома. Виїзд виправданий, коли за один приїзд треба перевірити кількох людей, наприклад усіх, хто мав доступ до каси. Обладнання ставимо на звичайний стіл біля розетки, тому підійде будь-яка тиха кімната: кабінет у вашому офісі чи номер у готелі, на правому березі або на лівому; місце узгоджуємо до поїздки. Вартість виїзду тоді ділиться між учасниками тесту.",
+        "Їхати з Дніпра до нашого офісу у Львові немає сенсу: це ті самі 13 годин у кожен бік. Якщо ж ви буваєте в сусідньому Запоріжжі, тест EyeDetect можна пройти там, у кабінеті нашого партнера, де обладнання вже є: сімейна перевірка коштує 8 500 ₴, скринінг і перевірка у справі про крадіжку — від 5 500 ₴. Напишіть про це в заявці.",
+        "Кілька прикладів, які легко уявити в торговому й промисловому місті. Уявімо магазин будматеріалів на лівому березі, де після ревізії не сходиться каса за два тижні, а на зміні працювали троє продавців. Буває й так: двоє партнерів тримають точку на ринку, і один підозрює, що частину товару продають повз облік. Третій приклад: родина з Дніпра найняла доглядальницю для літньої матері в Кривому Розі, а з квартири почали зникати гроші; якщо доглядальниця згодна, вона проходить онлайн-тест, нікуди не їдучи. У всіх трьох прикладах тест можливий лише за письмовою згодою того, хто його проходить; приклади питань — у списку нижче.",
+        "Дніпропетровщина — це й гірничі та заводські міста: Кривий Ріг із залізною рудою за 146 км автошляхами від обласного центру, Жовті Води з урановою промисловістю за 136 км, Павлоград із вугільними шахтами за 75 км, Кам'янське з металургією й хімією. Їхати з них до Дніпра заради тесту не потрібно: онлайн-тест працює з будь-якого з цих міст, а виїзд з EyeDetect можливий прямо туди на тих самих умовах. У Дніпрі таку перевірку звично називають поліграфом, і слово це зрозуміле. Метод у нас не класичний: EyeDetect і VerifEye стежать за тим, як реагують очі, датчиків на тіло не кріплять, і на класичному поліграфі ми не тестуємо. Ціни — у блоці нижче на сторінці.",
+      ],
+      points: [
+        "Продавцеві: «Між 1 і 14 вересня 2026 року ви брали гроші з каси магазину?»",
+        "Партнерові по бізнесу: «З 1 червня 2026 року ви продавали товар зі спільної точки без запису в обліку?»",
+        "Доглядальниці: «З 1 липня 2026 року ви брали гроші з квартири, де працюєте, без дозволу господарів?»",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф и детектор лжи в Днепре: цена, выезд",
     seoDescription: "Пройти полиграф в Днепре: онлайн-тест VerifEye с телефона сегодня от 2 500 ₴ или выезд специалиста с EyeDetect — 12 000 ₴ под ключ. Отчёт за 5 минут.",
+    updated: "2026-10-09",
     intro: "Днепр — один из крупнейших городов Украины, и от Львова до него около 950 км. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист едет из Львова с оборудованием ночным поездом, около 13 часов: поездов Интерсити на этом маршруте нет.",
     facts: [["От Львова", "≈ 950 км, 13 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -39,15 +57,31 @@ export const dnipro = {
     ],
     towns: {
       title: "Кривой Рог, Каменское и другие города Днепропетровской области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и везде в Украине, кроме Львовской области.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
       list: "Кривой Рог · Павлоград · Каменское · Жёлтые Воды",
       nearbyLabel: "Другие города региона:",
       nearby: [["zaporizhzhia", "Запорожье"], ["poltava", "Полтава"], ["kharkiv", "Харьков"]],
     },
+    local: {
+      title: "Детектор лжи в Днепре: 13 часов дороги из Львова и что это значит для вас",
+      paragraphs: [
+        "Днепр — город металлургии и ракетно-космической отрасли, один из ведущих финансовых центров страны и крупный торговый центр с многочисленными магазинами и рынками. Это ещё и важный железнодорожный узел и речной порт. Город стоит на обоих берегах реки: центр на высоком правом, а три из восьми районов — на левом.",
+        "Постоянного оборудования EyeDetect в Днепре нет. Специалист везёт его из Львова ночным поездом, и дорога туда и обратно занимает больше суток, поэтому выезд сюда не бывает «на завтра». Отсюда простой совет: сначала спросите себя, нужен ли именно выезд. Если вопрос один и человек один, онлайн-тест VerifEye даёт ответ в тот же день: с телефона, в тихой комнате дома. Выезд оправдан, когда за один приезд нужно проверить нескольких человек, например всех, у кого был доступ к кассе. Оборудование ставим на обычный стол рядом с розеткой, поэтому подойдёт любая тихая комната: кабинет в вашем офисе или номер в гостинице, на правом берегу или на левом; место согласуем до поездки. Стоимость выезда тогда делится между участниками теста.",
+        "Ехать из Днепра в наш офис во Львове нет смысла: это те же 13 часов в каждую сторону. Если же вы бываете в соседнем Запорожье, тест EyeDetect можно пройти там, в кабинете нашего партнёра, где оборудование уже есть: семейная проверка стоит 8 500 ₴, скрининг и проверка по делу о краже — от 5 500 ₴. Напишите об этом в заявке.",
+        "Несколько примеров, которые легко представить в торговом и промышленном городе. Представим магазин стройматериалов на левом берегу, где после ревизии не сходится касса за две недели, а в эти смены работали трое продавцов. Бывает и так: двое партнёров держат точку на рынке, и один подозревает, что часть товара продают мимо учёта. Третий пример: семья из Днепра наняла сиделку для пожилой матери в Кривом Роге, а из квартиры начали пропадать деньги; если сиделка согласна, она проходит онлайн-тест, никуда не выезжая. Во всех трёх примерах тест возможен только с письменного согласия того, кто его проходит; примеры вопросов — в списке ниже.",
+        "Днепропетровская область — это ещё и горняцкие и заводские города: Кривой Рог с железной рудой в 146 км по автодорогам от областного центра, Жёлтые Воды с урановой промышленностью в 136 км, Павлоград с угольными шахтами в 75 км, Каменское с металлургией и химией. Ехать из них в Днепр ради теста не нужно: онлайн-тест работает из любого из этих городов, а выезд с EyeDetect возможен прямо туда на тех же условиях. В Днепре такую проверку привычно называют полиграфом, и слово это понятное. Метод у нас не классический: EyeDetect и VerifEye следят за тем, как реагируют глаза, датчики на тело не крепят, и на классическом полиграфе мы не тестируем. Цены — в блоке ниже на странице.",
+      ],
+      points: [
+        "Продавцу: «Между 1 и 14 сентября 2026 года вы брали деньги из кассы магазина?»",
+        "Партнёру по бизнесу: «С 1 июня 2026 года вы продавали товар с общей точки без записи в учёте?»",
+        "Сиделке: «С 1 июля 2026 года вы брали деньги из квартиры, где работаете, без разрешения хозяев?»",
+      ],
+    },
   },
   en: {
     seoTitle: "Lie Detector Test in Dnipro: Price, Visit or Online",
-    seoDescription: "Polygraph test in Dnipro: verifEye phone test today from UAH 2,500, or an EyeDetect visit for UAH 12,000 all-inclusive. Report in 5 minutes.",
+    seoDescription: "Polygraph test in Dnipro: VerifEye phone test today from UAH 2,500, or an EyeDetect visit for UAH 12,000 all-inclusive. Report in 5 minutes.",
+    updated: "2026-10-09",
     intro: "Dnipro is one of Ukraine's largest cities, about 950 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment on an overnight train of about 13 hours, as there are no Intercity trains on this route.",
     facts: [["From Lviv", "≈ 950 km, 13 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
@@ -61,10 +95,25 @@ export const dnipro = {
     ],
     towns: {
       title: "Kryvyi Rih, Kamianske and other towns in Dnipropetrovsk Oblast",
-      text: "The VerifEye online test can be taken from any town in the oblast. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine except Lviv Oblast.",
+      text: "The VerifEye online test can be taken from any town in the oblast. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
       list: "Kryvyi Rih · Pavlohrad · Kamianske · Zhovti Vody",
       nearbyLabel: "Other cities in the region:",
       nearby: [["zaporizhzhia", "Zaporizhzhia"], ["poltava", "Poltava"], ["kharkiv", "Kharkiv"]],
+    },
+    local: {
+      title: "Lie detector test in Dnipro: 13 hours from Lviv and what that means for you",
+      paragraphs: [
+        "Dnipro is a city of metallurgy and the rocket and space industry, one of the country's leading financial centres and a major trading centre with numerous shops and markets. It is also an important railway junction and a river port. The city stands on both banks of the river: the centre is on the high right bank, and three of its eight districts are on the left.",
+        "There is no permanent EyeDetect equipment in Dnipro. A specialist brings it from Lviv on an overnight train, and the round trip takes more than a day, so a visit here is never a next-day matter. Hence a simple piece of advice: first ask yourself whether a visit is what you need. If there is one question and one person, the VerifEye online test gives an answer the same day: a phone and a quiet room at home are all it takes. A visit is justified when one trip has to cover several people, for example everyone who had access to the till. The equipment sits on an ordinary table next to a power socket, so any quiet room will do: a room in your office or a hotel room, on the right bank or the left; we settle the place before the trip. The cost of the visit is then shared among the people tested.",
+        "Travelling from Dnipro to our office in Lviv makes no sense: it is the same 13 hours each way. But if you happen to be in neighbouring Zaporizhzhia, you can take the EyeDetect test there, at our partner's office, where the equipment is already in place: a family test costs UAH 8,500, while screening and a theft-related test cost from UAH 5,500. Mention it in your request.",
+        "A few examples that are easy to picture in a city of trade and industry. Imagine a building-supplies shop on the left bank where, after an audit, the till does not add up for a two-week period, and three sales assistants worked those shifts. Or this: two partners run a market stall, and one suspects that some of the goods are being sold off the books. A third example: a family from Dnipro hired a carer for an elderly mother in Kryvyi Rih, and money started disappearing from the flat; if the carer agrees, she takes the online test without travelling anywhere. In all three examples the test is possible only with the written consent of the person taking it; example questions are in the list below.",
+        "Dnipropetrovsk Oblast is also a land of mining and factory towns: Kryvyi Rih with its iron ore, 146 km by road from the regional centre; Zhovti Vody with its uranium industry, 136 km; Pavlohrad with its coal mines, 75 km; and Kamianske with metallurgy and chemicals. There is no need to travel from them to Dnipro for a test: the online test works from any of these towns, and an EyeDetect visit can go straight there on the same terms. In Dnipro this kind of test is commonly called a polygraph, and everyone knows what the word means. The method we use is not the classic one: EyeDetect and VerifEye follow how the eyes react, no sensors are fixed to the body, and we do not test on a classic polygraph. Prices are in the block further down the page.",
+      ],
+      points: [
+        "For a sales assistant: “Between September 1 and September 14, 2026, did you take money from the shop's till?”",
+        "For a business partner: “Since June 1, 2026, have you sold goods from the shared stall without recording them in the books?”",
+        "For a carer: “Since July 1, 2026, have you taken money from the flat where you work without the owners' permission?”",
+      ],
     },
   },
 };

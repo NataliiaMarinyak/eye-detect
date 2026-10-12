@@ -58,7 +58,8 @@
     height: 51px;
     border-radius: 8px;
     padding: 12px 14px;
-    border: none;
+    // Рамка темніша за лінії карток ($lineColor): на білому тлі поле має бути добре видно.
+    border: 1px solid $disabledBgColor;
     outline: none;
     background-color: $cardBgColor ;
     font-family: inherit;

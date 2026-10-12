@@ -4,10 +4,11 @@ export const rivne = {
   uk: {
     seoTitle: "Поліграф у Рівному: ціна, виїзд або тест онлайн",
     seoDescription: "Детектор брехні в Рівному: виїзд спеціаліста з EyeDetect за 12 000 ₴ під ключ або онлайн-тест VerifEye з телефона вже сьогодні, від 2 500 ₴.",
+    updated: "2026-10-09",
     intro: "Рівне — обласний центр на заході України, приблизно за 210 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: автобусом чи автомобілем дорога займає 3–3,5 години. Прямих поїздів мало, найшвидші їдуть близько 3 годин, але курсують не щодня.",
     facts: [["Від Львова", "≈ 210 км, 3–3,5 год автобусом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
-      { q: "Де пройти поліграф у Рівному?", a: "Офісу в Рівному немає, тому є два варіанти. Онлайн-тест VerifEye можна пройти вже сьогодні з телефона, у тихій кімнаті вдома чи в офісі. Тест EyeDetect проводимо під час виїзду спеціаліста: у вашому офісі або в іншому тихому приміщенні в Рівному." },
+      { q: "Де пройти поліграф у Рівному?", a: "Офісу в Рівному немає, тому в самому місті є два варіанти. Онлайн-тест VerifEye можна пройти вже сьогодні з телефона, у тихій кімнаті вдома чи в офісі. Тест EyeDetect проводимо під час виїзду спеціаліста: у вашому офісі або в іншому тихому приміщенні в Рівному. Третій варіант — приїхати до нашого кабінету у Львові, але це шість-сім годин дороги в обидва боки." },
       { q: "Скільки коштує детектор брехні в Рівному?", a: "Виїзд спеціаліста з EyeDetect до Рівного — 12 000 ₴ під ключ, разом із тестом для однієї людини. Для кількох осіб вартість виїзду ділиться, точну суму назве спеціаліст. Онлайн-тест VerifEye: 2 500 ₴ за одне питання, 4 000 ₴ за три, 6 000 ₴ за шість, без доплат.", replaces: ["price"] },
       { q: "Як швидко ви можете приїхати до Рівного?", a: "Зазвичай протягом 2–5 робочих днів після узгодження питань і оплати. Дорога зі Львова займає 3–3,5 години автобусом чи автомобілем. Онлайн-тест VerifEye доступний уже сьогодні.", replaces: ["speed"], sources: [["inBus: Львів — Рівне, 17.09.2026", "https://inbus.ua/search?from_id=9804009129&to_id=9804012988&date_from=2026-09-17"], ["inBus: Львів — Рівне, 21.09.2026", "https://inbus.ua/search?from_id=9804009129&to_id=9804012988&date_from=2026-09-21"]] },
       { q: "Чи можна перевірити партнера на зраду?", a: "Так. Тест перевіряє одну конкретну підозру, наприклад зраду за певний період. Його проходить партнер, якого підозрюють, або обидва партнери, кожен окремо. Тест добровільний, за письмовою згодою. Онлайн-тест VerifEye коштує від 2 500 ₴." },
@@ -16,19 +17,38 @@ export const rivne = {
     ],
     towns: {
       title: "Дубно, Сарни та інші міста Рівненської області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Рівненської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і будь-де в Україні, крім Львівської області.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Рівненської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
       list: "Вараш · Дубно · Сарни · Костопіль · Острог",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["lutsk", "Луцьк"], ["ternopil", "Тернопіль"], ["khmelnytskyi", "Хмельницький"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Рівне, https://uk.wikipedia.org/wiki/Рівненська_область, https://uk.wikipedia.org/wiki/Дубно, https://uk.wikipedia.org/wiki/Острог, https://uk.wikipedia.org/wiki/Національний_університет_«Острозька_академія», https://uk.wikipedia.org/wiki/Костопіль, https://uk.wikipedia.org/wiki/Сарни, https://uk.wikipedia.org/wiki/Вараш
+    local: {
+      title: "Від Острога до Вараша: перевірка на поліграфі для Рівного й усієї області",
+      paragraphs: [
+        "Рівне стоїть на трасі Київ — Львів — Чоп, і саме нею, через Дубно, сюди їдуть зі Львова. У місті кілька університетів, а серед його галузей — машинобудування, хімічна, легка й харчова промисловість. Область довкола дуже різна: енергетики Вараша, залізничники Сарн, студенти Острога, лісові й деревообробні господарства. І відстані тут чималі, тому спершу варто зрозуміти, чи потрібно комусь кудись їхати.",
+        "Поліграфом у Рівному, як і скрізь, називають будь-який детектор брехні, тому одразу уточнимо. Ми тестуємо на EyeDetect і VerifEye: вони оцінюють реакції очей і не чіпляють на людину датчиків, а класичного поліграфа в нас немає.",
+        "Мешканцям області їхати до Рівного заради тесту не потрібно. Онлайн-тест VerifEye людина проходить зі свого телефона там, де живе, а PDF-звіт отримує не пізніше ніж за 5 хвилин після тесту. З EyeDetect є сенс їхати, коли за день тест мають пройти кілька людей. Обладнання спеціаліст привозить із собою, а від вас потрібна кімната, де тихо, є стіл і розетка: в офісі, на підприємстві чи в готелі. Так само приїжджаємо до Вараша, Сарн чи Дубна. Дістатися до нашого кабінету у Львові теж можна, але це шість-сім годин дороги в обидва боки, тому простіше почати з онлайн-тесту.",
+        "Ось кілька прикладів того, з чим може допомогти тест. Уявімо деревообробний цех: зі складу зникає матеріал, а доступ мали п'ятеро працівників. Питання для кожного з них може бути таким: «Від 1 до 15 вересня ви вивозили матеріал зі складу без накладної?» Або троє студентів винаймають квартиру, і в одного зник ноутбук: «У вересні ви виносили з квартири ноутбук Олега?» Або діти живуть у Києві, за літньою мамою в Рівному доглядає найнята жінка, і з шухляди зникли відкладені гроші: «У серпні ви брали гроші з шухляди в кімнаті Марії Іванівни?» Кожне питання стосується одного факту й одного періоду, людина читає його заздалегідь і проходить тест лише за власною письмовою згодою.",
+        "Наостанок — відстані від Рівного до міст області; саме через них починати тут найпростіше з онлайн-тесту:",
+      ],
+      points: [
+        "Дубно — близько 45 км, на трасі між Рівним і Львовом",
+        "Острог — близько 50 км, місто з власним університетом",
+        "Костопіль — близько 40 км на північний схід, деревообробка й меблі",
+        "Сарни — близько 90 км на північ, залізничний вузол",
+        "Вараш — понад 150 км, місто енергетиків",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф в Ровно: цена, выезд или тест онлайн",
     seoDescription: "Детектор лжи в Ровно: выезд специалиста с EyeDetect за 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона уже сегодня, от 2 500 ₴.",
+    updated: "2026-10-09",
     intro: "Ровно (также пишут «Ривне») — областной центр на западе Украины, примерно в 210 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: на автобусе или машине дорога занимает 3–3,5 часа. Прямых поездов мало, самые быстрые идут около 3 часов, но ходят не каждый день.",
     facts: [["От Львова", "≈ 210 км, 3–3,5 ч автобусом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
-      { q: "Где пройти полиграф в Ровно?", a: "Офиса в Ровно нет, поэтому есть два варианта. Онлайн-тест VerifEye можно пройти уже сегодня с телефона, в тихой комнате дома или в офисе. Тест EyeDetect проводим во время выезда специалиста: в вашем офисе или в другом тихом помещении в Ровно." },
+      { q: "Где пройти полиграф в Ровно?", a: "Офиса в Ровно нет, поэтому в самом городе есть два варианта. Онлайн-тест VerifEye можно пройти уже сегодня с телефона, в тихой комнате дома или в офисе. Тест EyeDetect проводим во время выезда специалиста: в вашем офисе или в другом тихом помещении в Ровно. Третий вариант — приехать в наш кабинет во Львове, но это шесть-семь часов дороги в обе стороны." },
       { q: "Сколько стоит детектор лжи в Ровно?", a: "Выезд специалиста с EyeDetect в Ровно — 12 000 ₴ под ключ, вместе с тестом для одного человека. Для нескольких человек стоимость выезда делится, точную сумму назовёт специалист. Онлайн-тест VerifEye: 2 500 ₴ за один вопрос, 4 000 ₴ за три, 6 000 ₴ за шесть, без доплат.", replaces: ["price"] },
       { q: "Как быстро вы можете приехать в Ровно?", a: "Обычно в течение 2–5 рабочих дней после согласования вопросов и оплаты. Дорога из Львова занимает 3–3,5 часа на автобусе или машине. Онлайн-тест VerifEye доступен уже сегодня.", replaces: ["speed"], sources: [["inBus: Львов — Ровно, 17.09.2026", "https://inbus.ua/search?from_id=9804009129&to_id=9804012988&date_from=2026-09-17"], ["inBus: Львов — Ровно, 21.09.2026", "https://inbus.ua/search?from_id=9804009129&to_id=9804012988&date_from=2026-09-21"]] },
       { q: "Можно ли проверить партнёра на измену?", a: "Да. Тест проверяет одно конкретное подозрение, например измену за определённый период. Его проходит партнёр, которого подозревают, или оба партнёра, каждый отдельно. Тест добровольный, с письменного согласия. Онлайн-тест VerifEye стоит от 2 500 ₴." },
@@ -37,19 +57,37 @@ export const rivne = {
     ],
     towns: {
       title: "Дубно, Сарны и другие города Ровенской области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города Ровенской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и в любом месте Украины, кроме Львовской области.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города Ровенской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
       list: "Вараш · Дубно · Сарны · Костополь · Острог",
       nearbyLabel: "Другие города региона:",
       nearby: [["lutsk", "Луцк"], ["ternopil", "Тернополь"], ["khmelnytskyi", "Хмельницкий"]],
+    },
+    local: {
+      title: "От Острога до Вараша: проверка на полиграфе для Ровно и всей области",
+      paragraphs: [
+        "Ровно стоит на трассе Киев — Львов — Чоп, и именно по ней, через Дубно, сюда едут из Львова. В городе несколько университетов, а среди его отраслей — машиностроение, химическая, лёгкая и пищевая промышленность. Область вокруг очень разная: энергетики Вараша, железнодорожники Сарн, студенты Острога, лесные и деревообрабатывающие хозяйства. И расстояния здесь немалые, поэтому сначала стоит понять, нужно ли кому-то куда-то ехать.",
+        "Полиграфом в Ровно, как и везде, называют любой детектор лжи, поэтому сразу уточним. Мы тестируем на EyeDetect и VerifEye: они оценивают реакции глаз и не цепляют на человека датчиков, а классического полиграфа у нас нет.",
+        "Жителям области ехать в Ровно ради теста не нужно. Онлайн-тест VerifEye человек проходит со своего телефона там, где живёт, а PDF-отчёт получает не позже чем через 5 минут после теста. С EyeDetect есть смысл ехать, когда за день тест должны пройти несколько человек. Оборудование специалист привозит с собой, а от вас нужна комната, где тихо, есть стол и розетка: в офисе, на предприятии или в гостинице. Точно так же приезжаем в Вараш, Сарны или Дубно. Добраться до нашего кабинета во Львове тоже можно, но это шесть-семь часов дороги в обе стороны, поэтому проще начать с онлайн-теста.",
+        "Вот несколько примеров того, с чем может помочь тест. Представим деревообрабатывающий цех: со склада пропадает материал, а доступ был у пятерых работников. Вопрос для каждого из них может быть таким: «С 1 по 15 сентября вы вывозили материал со склада без накладной?» Или трое студентов снимают квартиру, и у одного пропал ноутбук: «В сентябре вы выносили из квартиры ноутбук Олега?» Или дети живут в Киеве, за пожилой мамой в Ровно ухаживает нанятая женщина, и из ящика пропали отложенные деньги: «В августе вы брали деньги из ящика в комнате Марии Ивановны?» Каждый вопрос касается одного факта и одного периода, человек читает его заранее и проходит тест только с собственного письменного согласия.",
+        "Напоследок — расстояния от Ровно до городов области; именно из-за них начинать здесь проще всего с онлайн-теста:",
+      ],
+      points: [
+        "Дубно — около 45 км, на трассе между Ровно и Львовом",
+        "Острог — около 50 км, город с собственным университетом",
+        "Костополь — около 40 км на северо-восток, деревообработка и мебель",
+        "Сарны — около 90 км на север, железнодорожный узел",
+        "Вараш — более 150 км, город энергетиков",
+      ],
     },
   },
   en: {
     seoTitle: "Lie Detector Test in Rivne: Price, Visit or Online",
     seoDescription: "Lie detector test in Rivne: an EyeDetect specialist visit for UAH 12,000 all-inclusive, or the VerifEye phone test today from UAH 2,500.",
+    updated: "2026-10-09",
     intro: "Rivne is the administrative centre of the Rivne region in western Ukraine, about 210 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the trip takes 3–3.5 hours by bus or car. There are few direct trains; the fastest take about 3 hours but do not run every day.",
     facts: [["From Lviv", "≈ 210 km, 3–3.5 h by bus"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
-      { q: "Where can I take a lie detector test in Rivne?", a: "We have no office in Rivne, so there are two options. You can take the VerifEye online test today on your phone, in a quiet room at home or at work. The EyeDetect test takes place during a specialist visit, in your office or another quiet room in Rivne." },
+      { q: "Where can I take a lie detector test in Rivne?", a: "We have no office in Rivne, so in the city itself there are two options. You can take the VerifEye online test today on your phone, in a quiet room at home or at work. The EyeDetect test takes place during a specialist visit, in your office or another quiet room in Rivne. The third option is to come to our office in Lviv, but that means six to seven hours on the road there and back." },
       { q: "How much does a lie detector test cost in Rivne?", a: "An EyeDetect specialist visit to Rivne costs UAH 12,000 all-inclusive, test included, for one person. For several people the travel cost is shared; a specialist will tell you the exact amount. VerifEye online test: UAH 2,500 for one question, UAH 4,000 for three, UAH 6,000 for six, with no extra charges.", replaces: ["price"] },
       { q: "How soon can you come to Rivne?", a: "Usually within 2–5 business days after the questions are agreed and payment is made. The trip from Lviv takes 3–3.5 hours by bus or car. The VerifEye online test is available today.", replaces: ["speed"], sources: [["inBus: Lviv — Rivne, 17 Sep 2026", "https://inbus.ua/search?from_id=9804009129&to_id=9804012988&date_from=2026-09-17"], ["inBus: Lviv — Rivne, 21 Sep 2026", "https://inbus.ua/search?from_id=9804009129&to_id=9804012988&date_from=2026-09-21"]] },
       { q: "Can my partner take a lie detector test for infidelity?", a: "Yes. The test checks one specific suspicion, for example infidelity over a certain period. The partner under suspicion takes it, or both partners take separate tests. The test is voluntary and requires written consent. The VerifEye online test costs from UAH 2,500." },
@@ -58,10 +96,27 @@ export const rivne = {
     ],
     towns: {
       title: "Dubno, Sarny and other towns in the Rivne region",
-      text: "The VerifEye online test can be taken from any town in the Rivne region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine outside the Lviv region.",
+      text: "The VerifEye online test can be taken from any town in the Rivne region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
       list: "Varash · Dubno · Sarny · Kostopil · Ostroh",
       nearbyLabel: "Other cities in the region:",
       nearby: [["lutsk", "Lutsk"], ["ternopil", "Ternopil"], ["khmelnytskyi", "Khmelnytskyi"]],
+    },
+    local: {
+      title: "From Ostroh to Varash: a lie detector test for Rivne and the whole region",
+      paragraphs: [
+        "Rivne stands on the Kyiv–Lviv–Chop highway, and that is the road, via Dubno, that leads here from Lviv. The city has several universities, and its industries include machine building, chemicals, light industry and food processing. The region around it is varied: the power engineers of Varash, the railway workers of Sarny, the students of Ostroh, forestry and woodworking businesses. Distances here are considerable, so the first thing to settle is whether anyone needs to travel at all.",
+        "In Rivne, like anywhere else, a polygraph is what people call any lie detector, so one clarification straight away. We test on EyeDetect and VerifEye: they assess eye reactions and put no sensors on the person, while a classic polygraph is something we do not have.",
+        "People in the region do not need to travel to Rivne for a test. A person takes the VerifEye online test on their own phone wherever they live and gets the PDF report no later than 5 minutes afterwards. Travelling with EyeDetect is worthwhile when a number of people have to take the test on the same day. The specialist brings the equipment, and all we ask of you is a table, a socket and quiet: at your office, at the plant or in a hotel. We travel to Varash, Sarny or Dubno in the same way. You can also come to our office in Lviv, but that means six to seven hours on the road there and back, so it is simpler to start with the online test.",
+        "Here are a few examples of what the test can help with. Imagine a woodworking shop: material keeps disappearing from the storeroom, and five workers had access. The question for each of them might be: “Between September 1 and 15, did you take material out of the storeroom without a delivery note?” Or three students rent a flat together and one of them finds his laptop gone: “In September, did you take Oleh's laptop out of the flat?” Or the children live in Kyiv, a hired carer looks after their elderly mother in Rivne, and money set aside in a drawer has gone missing: “In August, did you take money from the drawer in Mariia Ivanivna's room?” Each question concerns one fact and one period; the person reads it in advance and takes the test only with their own written consent.",
+        "Finally, the distances from Rivne to the towns of the region; they are the reason the online test is the simplest way to start here:",
+      ],
+      points: [
+        "Dubno: about 45 km, on the highway between Rivne and Lviv",
+        "Ostroh: about 50 km, a town with its own university",
+        "Kostopil: about 40 km to the north-east, woodworking and furniture",
+        "Sarny: about 90 km to the north, a railway junction",
+        "Varash: more than 150 km, a power industry town",
+      ],
     },
   },
 };

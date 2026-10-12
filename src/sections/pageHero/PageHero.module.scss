@@ -43,6 +43,8 @@
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
+  // Рядки заголовка однакової довжини: останнє слово не лишається саме в рядку.
+  text-wrap: balance;
 
   @media screen and (min-width: $tablet) {
     font-size: 36px;

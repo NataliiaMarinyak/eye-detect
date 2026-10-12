@@ -4,7 +4,7 @@ export const sumy = {
   uk: {
     seoTitle: "Поліграф у Сумах: детектор брехні з виїздом або онлайн",
     seoDescription: "Поліграф у Сумах: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴. Звіт за 5 хвилин.",
-    updated: "2026-09-16",
+    updated: "2026-10-09",
     intro: "Суми — центр Сумської області, приблизно за 870 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст їде зі Львова з обладнанням 13,5–15 годин поїздом, тому виїзд плануємо за 1–2 тижні й поєднуємо з іншими заявками.",
     facts: [["Від Львова", "≈ 870 км, 13,5–15 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -17,16 +17,27 @@ export const sumy = {
     ],
     towns: {
       title: "Ромни, Конотоп та інші міста Сумської області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Сумської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і всюди в Україні, крім Львівської області.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Сумської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
       list: "Конотоп · Охтирка · Ромни",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["poltava", "Полтава"], ["kharkiv", "Харків"], ["chernihiv", "Чернігів"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Суми, https://uk.wikipedia.org/wiki/Сумська_область, https://uk.wikipedia.org/wiki/Конотоп, https://uk.wikipedia.org/wiki/Охтирка
+    local: {
+      title: "Від Львова до Сум далеко: як пройти поліграф, не чекаючи виїзду",
+      paragraphs: [
+        "Дорога зі Львова до Сум непроста: прямий поїзд ходить не щодня, їде понад пів доби й нерідко запізнюється. Тому день тесту EyeDetect у Сумах ми призначаємо із запасом, лише на денні години, і намагаємося зібрати в один приїзд кілька заявок із міста та області. Для вас це означає просту річ: якщо відповідь потрібна цього тижня, а не за два, практичний шлях — онлайн-тест VerifEye. Його проходять із телефона, без жодної дороги, а звіт у PDF приходить протягом 5 хвилин після тесту.",
+        "Онлайн-тест зручний ще й тим, що двом людям не обов'язково бути в одному місті. Буває так: брат працює в Польщі й щомісяця надсилає сестрі в Суми гроші на ремонт батьківської хати, а ремонт не рухається. Сестра згодна пройти тест, і питання для неї може звучати так: «З 1 січня цього року ви витрачали гроші, які брат надсилав на ремонт, на щось інше?» Може бути й навпаки: тест проходить той, хто поїхав на заробітки. Він робить це зі свого телефона там, де зараз живе, українською, російською, англійською або німецькою мовою.",
+        "Суми — місто машинобудівних і хімічних підприємств та університетів, тому другий приклад — про роботу. Уявімо невелику фірму, яка постачає запчастини до насосів. У неї двоє співвласників: один веде розрахунки з покупцями, а другий помічає, що частина оплат не доходить до рахунку. Питання до першого: «З 1 липня цього року ви брали в покупців готівку й не вносили її в касу фірми?» Обидва приклади вигадані, але показують правило: питання стосується одного факту, називає період і передбачає відповідь «так» або «ні».",
+        "Якщо потрібен саме EyeDetect, приїжджаємо з обладнанням. Від вас потрібне лише спокійне приміщення зі столом і розеткою: кабінет у вашому офісі або номер у сумському готелі; про нього домовляємося до поїздки. За один приїзд можна протестувати кількох людей, тому виїзд до Сум має найбільше сенсу для фірми або родини, де перевірити треба одразу кількох. Те саме стосується Конотопа, одного з промислових центрів області, Охтирки, міста нафтовиків, і Ромен: онлайн-тест можна пройти з будь-якого з них, а виїзд туди плануємо так само заздалегідь. Ціни — нижче на цій сторінці.",
+        "Перевіркою на поліграфі в Сумах, як і всюди, називають будь-який тест на детекторі брехні, але класичного поліграфа з датчиками ми не привозимо й не пропонуємо. EyeDetect і VerifEye оцінюють відповіді за реакціями очей, і на тіло людини ми нічого не кріпимо.",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф в Сумах: детектор лжи с выездом или онлайн",
     seoDescription: "Полиграф в Сумах: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴. Отчёт за 5 минут.",
-    updated: "2026-09-16",
+    updated: "2026-10-09",
     intro: "Сумы — центр Сумской области, примерно в 870 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист едет из Львова с оборудованием 13,5–15 часов поездом, поэтому выезд планируем за 1–2 недели и объединяем с другими заявками.",
     facts: [["От Львова", "≈ 870 км, 13,5–15 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -39,16 +50,26 @@ export const sumy = {
     ],
     towns: {
       title: "Ромны, Конотоп и другие города Сумской области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города Сумской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и везде в Украине, кроме Львовской области.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города Сумской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
       list: "Ахтырка · Конотоп · Ромны",
       nearbyLabel: "Другие города региона:",
       nearby: [["poltava", "Полтава"], ["kharkiv", "Харьков"], ["chernihiv", "Чернигов"]],
+    },
+    local: {
+      title: "От Львова до Сум далеко: как пройти полиграф, не дожидаясь выезда",
+      paragraphs: [
+        "Дорога из Львова в Сумы непростая: прямой поезд ходит не каждый день, идёт больше половины суток и нередко опаздывает. Поэтому день теста EyeDetect в Сумах мы назначаем с запасом, только на дневные часы, и стараемся собрать в один приезд несколько заявок из города и области. Для вас это означает простую вещь: если ответ нужен на этой неделе, а не через две, практичный путь — онлайн-тест VerifEye. Его проходят с телефона, без всякой дороги, а отчёт в PDF приходит в течение 5 минут после теста.",
+        "Онлайн-тест удобен ещё и тем, что двум людям не обязательно быть в одном городе. Бывает так: брат работает в Польше и каждый месяц присылает сестре в Сумы деньги на ремонт родительского дома, а ремонт не движется. Сестра согласна пройти тест, и вопрос для неё может звучать так: «С 1 января этого года вы тратили деньги, которые брат присылал на ремонт, на что-то другое?» Может быть и наоборот: тест проходит тот, кто уехал на заработки. Он делает это со своего телефона там, где сейчас живёт, на украинском, русском, английском или немецком языке.",
+        "Сумы — город машиностроительных и химических предприятий и университетов, поэтому второй пример — о работе. Представим небольшую фирму, которая поставляет запчасти к насосам. У неё двое совладельцев: один ведёт расчёты с покупателями, а второй замечает, что часть оплат не доходит до счёта. Вопрос первому: «С 1 июля этого года вы брали у покупателей наличные и не вносили их в кассу фирмы?» Оба примера вымышлены, но показывают правило: вопрос касается одного факта, называет период и предполагает ответ «да» или «нет».",
+        "Если нужен именно EyeDetect, приезжаем с оборудованием. От вас нужно только спокойное помещение со столом и розеткой: кабинет в вашем офисе или номер в сумском отеле; о нём договариваемся до поездки. За один приезд можно протестировать нескольких человек, поэтому выезд в Сумы имеет больше всего смысла для фирмы или семьи, где проверить нужно сразу нескольких. То же относится к Конотопу, одному из промышленных центров области, Ахтырке, городу нефтяников, и Ромнам: онлайн-тест можно пройти из любого из них, а выезд туда планируем так же заранее. Цены — ниже на этой странице.",
+        "Проверкой на полиграфе в Сумах, как и везде, называют любой тест на детекторе лжи, но классический полиграф с датчиками мы не привозим и не предлагаем. EyeDetect и VerifEye оценивают ответы по реакциям глаз, и на тело человека мы ничего не крепим.",
+      ],
     },
   },
   en: {
     seoTitle: "Lie Detector Test in Sumy: Visit from Lviv or Online",
     seoDescription: "Lie detector test in Sumy: an EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
-    updated: "2026-09-16",
+    updated: "2026-10-09",
     intro: "Sumy is the administrative centre of the Sumy region, about 870 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment for 13.5–15 hours by train, so visits are planned 1–2 weeks ahead and combined with other requests.",
     facts: [["From Lviv", "≈ 870 km, 13.5–15 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
@@ -61,10 +82,20 @@ export const sumy = {
     ],
     towns: {
       title: "Romny, Konotop and other towns in the Sumy region",
-      text: "The VerifEye online test can be taken from any town in the Sumy region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine outside the Lviv region.",
+      text: "The VerifEye online test can be taken from any town in the Sumy region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
       list: "Konotop · Okhtyrka · Romny",
       nearbyLabel: "Other cities in the region:",
       nearby: [["poltava", "Poltava"], ["kharkiv", "Kharkiv"], ["chernihiv", "Chernihiv"]],
+    },
+    local: {
+      title: "Sumy is a long way from Lviv: how to take a polygraph test without waiting for a visit",
+      paragraphs: [
+        "The trip from Lviv to Sumy is not an easy one: the direct train does not run every day, takes more than half a day and is often late. So we schedule an EyeDetect test day in Sumy with time to spare, in daytime hours only, and try to combine several requests from the city and the region in one trip. For you this means one simple thing: if you need an answer this week rather than in two, the practical route is the VerifEye online test. It is taken on a phone, with no travel at all, and the PDF report arrives within 5 minutes after the test.",
+        "The online test is also convenient because the two people involved do not have to be in the same city. It can go like this: a brother works in Poland and every month sends his sister in Sumy money to repair their parents' house, but the repairs are not moving. The sister agrees to take the test, and her question might be: “Since January 1 this year, have you spent the money your brother sent for the repairs on anything else?” It can also be the other way round: the test is taken by the one who left to work abroad. They do it on their own phone, wherever they live now, in Ukrainian, Russian, English or German.",
+        "Sumy is a city of machine-building and chemical plants and of universities, so the second example is about work. Picture a small firm that supplies spare parts for pumps. It has two co-owners: one handles payments from buyers, and the other notices that some payments never reach the account. The question for the first: “Since July 1 this year, have you taken cash from buyers and not paid it into the firm's till?” Both examples are made up, but they show the rule: a question covers one fact, names a period and calls for a yes or no answer.",
+        "If you need EyeDetect specifically, we come with the equipment. From you we need only a calm room with a desk and a socket: a room in your office or in a Sumy hotel, settled before the trip. Several people can be tested in one trip, so a visit to Sumy makes the most sense for a firm or a family where several people need to be tested at once. The same goes for Konotop, one of the region's industrial centres, Okhtyrka, an oil town, and Romny: the online test can be taken from any of them, and a visit there is planned ahead in the same way. Prices are further down this page.",
+        "In Sumy, as everywhere, people call any lie detector test a polygraph test, but we neither bring nor offer a classic polygraph with sensors. EyeDetect and VerifEye assess answers from eye reactions, and we attach nothing to the person's body.",
+      ],
     },
   },
 };

@@ -73,16 +73,25 @@
   }
 }
 
+// Телефон: назва і ціна в одному рядку, а довгий підпис ціни, який не вміщається поруч із назвою,
+// цілим блоком переходить під назву (flex-wrap). З планшета — завжди один рядок із пунктиром.
 .line {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  gap: 8px;
+  gap: 4px 8px;
   flex: 1 1 auto;
   min-width: 0;
+
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+  }
 }
 
 // Два класи: перебиваємо базовий .btn кнопки незалежно від порядку CSS.
-.row .book {
+// .groupCta .book — така сама кнопка під списком картки, де в рядках кнопок немає («Для бізнесу»).
+.row .book,
+.groupCta .book {
   align-self: flex-end;
   width: auto;
   max-width: none;
@@ -118,24 +127,69 @@
   }
 }
 
+// Кнопка «Запитати ціну» під списком картки без кнопок у рядках: праворуч, як «Записатися» в сусідніх картках.
+.groupCta {
+  display: flex;
+  justify-content: flex-end;
+  padding: 14px 0;
+  border-top: 1px solid $lineColor;
+}
+
+// З планшета кнопки в рядках мають сталу ширину 132 px; цій даємо не менше, щоб довший підпис не обрізався.
+.groupCta .book {
+  @media screen and (min-width: $tablet) {
+    flex: 0 0 auto;
+    min-width: 132px;
+  }
+}
+
+// Телефон: пунктиру немає, тому назва займає все вільне місце рядка, а ціна стоїть біля правого краю.
+// Основа 44 % — межа: ціна лишається поруч із назвою, доки вміщається у решту рядка (56 %), інакше йде під назву.
 .name {
+  flex: 1 1 44%;
   color: $textDarkColor;
+  overflow-wrap: break-word;
+
+  @media screen and (min-width: $tablet) {
+    flex: 0 1 auto;
+  }
 }
 
+// Пунктир між назвою і ціною — лише з планшета. На телефоні назва займає кілька рядків,
+// і під нею лишався короткий обривок пунктиру.
 .dots {
-  flex: 1 1 auto;
-  min-width: 16px;
-  align-self: flex-end;
-  margin-bottom: 5px;
-  border-bottom: 1px dotted $langColor;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    flex: 1 1 auto;
+    min-width: 16px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted $langColor;
+  }
 }
 
+// Телефон: довгий підпис («оплачуються окремо», «12 000 ₴ під ключ, разом із тестом») стає під назвою
+// на всю ширину картки й притискається праворуч (margin-left: auto), тож не виходить за її правий край
+// і не стискає назву у вузький стовпчик. text-wrap: balance — щоб у другому рядку не висіло одне слово.
+// З планшета — як було: ціна в рядку з назвою, не ширша за 56 %.
 .price {
-  flex: 0 0 auto;
-  max-width: 56%;
+  flex: 0 1 auto;
+  max-width: 100%;
+  margin-left: auto;
   font-weight: 700;
   text-align: right;
+  text-wrap: balance;
   color: $btnBgColor;
+  overflow-wrap: break-word;
+
+  @media screen and (min-width: $tablet) {
+    flex: 0 0 auto;
+    max-width: 56%;
+    margin-left: 0;
+    text-wrap: wrap;
+  }
 }
 
 .notes {
@@ -157,6 +211,12 @@
   gap: 12px;
   width: 100%;
   margin-bottom: 48px;
+}
+
+// Той самий ряд кнопок наприкінці сторінки, після порівняння цін: відступ згори, знизу — поле секції.
+.ctaGroupEnd {
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .included {

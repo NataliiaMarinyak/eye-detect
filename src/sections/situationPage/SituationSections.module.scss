@@ -42,6 +42,22 @@
   }
 }
 
+// Шість карток: на телефоні й планшеті одна під одною, у два стовпці — від ноутбука.
+.cards2Wide {
+  display: grid;
+  gap: 16px;
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // У двох широких стовпцях заголовки стоять в один рядок: запас під другий рядок (див. .cardTitle)
+  // лишав порожній рядок між заголовком і текстом.
+  & .cardTitle {
+    min-height: 0;
+  }
+}
+
 .cards3 {
   display: grid;
   gap: 16px;
@@ -80,12 +96,35 @@
   @media screen and (min-width: $tablet) {
     font-size: 16px;
   }
+
+  // Текст картки може бути списком абзаців.
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+// Кнопка заявки під картками: одна, по центру, той самий вигляд, що в кнопки блоку «Онлайн чи в кабінеті».
+.howAction {
+  display: flex;
+  justify-content: center;
+
+  // Два класи в селекторі: власний клас кнопки (.btn в OpenModalBtn) має ту саму вагу, що й .btnPrimary.
+  & .btnPrimary {
+    @media screen and (min-width: $laptop) {
+      width: auto;
+      min-width: 180px;
+    }
+  }
 }
 
 .questions {
   display: grid;
   gap: 12px;
+  width: 100%;
   max-width: 820px;
+  // По центру під заголовком: на широкому екрані список вужчий за контейнер.
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .question {

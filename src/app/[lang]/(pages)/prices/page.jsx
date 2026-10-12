@@ -1,9 +1,18 @@
 import PricesSection from "@/sections/pricesSection/PricesSection";
+import CityLinks from "@/components/CityLinks/CityLinks";
 import { pricingGroups, CURRENCY } from "@/data/pricingData";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getLocalizedField } from "@/helpers/getLocalizedField";
 import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
 import { i18n } from "@/dictionaries/i18n.config";
+
+// Заголовок блоку посилань на міста: у прайсі ціни для Львова й загальне правило виїзду,
+// а умови й ціна для конкретного міста — на його сторінці.
+const CITY_LINKS_TITLE = {
+  uk: "Умови й ціна у вашому місті",
+  ru: "Условия и цена в вашем городе",
+  en: "Terms and price in your city",
+};
 
 export async function generateMetadata({ params }) {
   const { lang } = params;
@@ -153,6 +162,8 @@ const PricesPage = async ({ params }) => {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(verifeyeJsonLd) }} />
       )}
       <PricesSection lang={lang} dictionary={dictionary} />
+      {/* Посилання на сторінки міст України: там умови й ціна для конкретного міста. */}
+      <CityLinks lang={lang} title={CITY_LINKS_TITLE[lang] || CITY_LINKS_TITLE.uk} />
     </>
   );
 };

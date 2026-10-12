@@ -251,9 +251,12 @@ $radiusBtn: 12px;
   background-color: $textLightColor;
   border: 1px solid $textLightColor;
 
+  // Колір тексту при наведенні задано явно: кнопка заявки має ще власний клас (.btn в OpenModalBtn),
+  // який при наведенні робить текст білим, і на світлому тлі цієї кнопки підпис зникав.
   &:hover {
     background-color: #e8edf8;
     border-color: #e8edf8;
+    color: $deepNavy;
   }
 }
 

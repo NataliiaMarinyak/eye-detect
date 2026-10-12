@@ -26,6 +26,8 @@
   position: relative;
   z-index: 1;
   display: grid;
+  // minmax(0, 1fr): широка кнопка не розтягує колонку за край екрана (на 320 px перший екран обрізало праворуч).
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
 
   @media screen and (min-width: $laptop) {
@@ -264,6 +266,11 @@
 .btnPrimary {
   @include buttonOnDark;
   white-space: nowrap;
+
+  // Вужче за 360 px підпис «Розрахувати точну вартість» ширший за кнопку: дозволяємо перенос на другий рядок.
+  @media screen and (max-width: 359px) {
+    white-space: normal;
+  }
 
   @media screen and (min-width: $tablet) {
     width: auto;

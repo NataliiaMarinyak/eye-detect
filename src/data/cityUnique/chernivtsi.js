@@ -4,6 +4,7 @@ export const chernivtsi = {
   uk: {
     seoTitle: "Поліграф у Чернівцях: детектор брехні, виїзд і онлайн",
     seoDescription: "Поліграф і детектор брехні в Чернівцях: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ, онлайн-тест VerifEye сьогодні — від 2 500 ₴. Звіт за 5 хвилин.",
+    updated: "2026-10-09",
     intro: "Чернівці — центр Буковини, і поїздів Інтерсіті зі Львова сюди немає. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: найшвидший поїзд їде близько 4,5 години, автомобілем — близько 5 годин без зупинок.",
     facts: [["Від Львова", "≈ 270 км, 4,5 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -16,15 +17,32 @@ export const chernivtsi = {
     ],
     towns: {
       title: "Новодністровськ, Сторожинець та інші міста Чернівецької області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ по всій Україні, крім Львівської області.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
       list: "Новодністровськ · Сторожинець · Хотин · Кіцмань · Заставна",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["ivano-frankivsk", "Івано-Франківськ"], ["ternopil", "Тернопіль"], ["khmelnytskyi", "Хмельницький"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Чернівці, https://uk.wikipedia.org/wiki/Чернівецька_область
+    local: {
+      title: "Чернівці, ринок і кордон поруч: з чого почати перевірку на поліграфі",
+      paragraphs: [
+        "Чернівці — передусім торгове місто: торгівля тут важить більше за промисловість, на великому міському ринку працюють тисячі підприємців, а малий бізнес — це здебільшого крамниці, послуги й кафе. У промисловості помітне місце посідає легка: швейні, трикотажні, взуттєві підприємства. До пункту пропуску на румунському кордоні звідси близько 40 км, до молдовського — трохи далі, і через місто проходить міжнародна траса.",
+        "Дорога зі Львова до Чернівців і назад забирає цілий день, тому виїзд спеціаліста ми плануємо заздалегідь, а їхати до нашого львівського офісу заради тесту на 30–45 хвилин мало кому зручно. Через це радимо починати з онлайн-тесту VerifEye з телефона: їхати нікуди не треба, а до виїзду можна повернутися пізніше, якщо він знадобиться. Виїзд з EyeDetect має сенс, коли тест потрібен кільком людям одразу, наприклад усім працівникам цеху чи магазину: спеціаліст тестує їх за один візит. Для тесту вистачить тихого приміщення, де є стіл і розетка; яке саме — ваш офіс, готельний номер чи кімната при цеху, — вирішуємо разом до поїздки. Ціни на обидва варіанти є в блоці нижче.",
+        "Ще дві місцеві подробиці. Для чималої частини жителів області рідна мова румунська, але тест є лише українською, російською, англійською та німецькою, тож людина має вільно читати однією з них. А з Новодністровська, Хотина, Сторожинця чи Кіцмані їхати до обласного центру не обов'язково: онлайн-тест проходять там, де людина живе.",
+        "Слово «поліграф» у розмові означає будь-який детектор брехні, тому так називають і нашу перевірку. Проводимо її на EyeDetect і VerifEye: вони стежать за реакціями очей, а тіло лишається без датчиків; класичний поліграф працює інакше, і серед наших послуг його немає.",
+        "Тепер приклади з життя торгового міста. Уявімо швейний цех, де після великого замовлення бракує тканини й кількох готових виробів, а в цеху працюють п'ятеро швачок. Другий приклад: подружжя з ранку до вечора торгує на ринку й шукає няню для дворічної доньки; перш ніж залишити з нею дитину, батьки хочуть спитати про її попередню роботу. Третій: виторг за кілька днів лежав удома до закупівлі товару, частина грошей зникла, а в квартирі тоді були тільки свої. Тест проходить лише той, хто дав письмову згоду, а питання стосується однієї події:",
+      ],
+      points: [
+        "Швачкам: «Від 1 до 20 вересня ви виносили з цеху тканину або готові вироби без дозволу власниці?»",
+        "Няні: «За останній рік роботи нянею ви залишали дитину саму вдома?»",
+        "Членам родини: «Від 5 до 8 жовтня ви брали гроші з шафи у спальні?»",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф в Черновцах: детектор лжи, выезд и онлайн",
     seoDescription: "Полиграф и детектор лжи в Черновцах: выезд специалиста с EyeDetect — 12 000 ₴ под ключ, онлайн-тест VerifEye сегодня — от 2 500 ₴. Отчёт за 5 минут.",
+    updated: "2026-10-09",
     intro: "Черновцы — центр Буковины, и поездов Интерсити из Львова сюда нет. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: самый быстрый поезд идёт около 4,5 часа, на машине — около 5 часов без остановок.",
     facts: [["От Львова", "≈ 270 км, 4,5 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -37,15 +55,31 @@ export const chernivtsi = {
     ],
     towns: {
       title: "Новоднестровск, Сторожинец и другие города Черновицкой области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ по всей Украине, кроме Львовской области.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
       list: "Новоднестровск · Сторожинец · Хотин · Кицмань · Заставна",
       nearbyLabel: "Другие города региона:",
       nearby: [["ivano-frankivsk", "Ивано-Франковск"], ["ternopil", "Тернополь"], ["khmelnytskyi", "Хмельницкий"]],
+    },
+    local: {
+      title: "Черновцы, рынок и граница рядом: с чего начать проверку на полиграфе",
+      paragraphs: [
+        "Черновцы — прежде всего торговый город: торговля здесь значит больше, чем промышленность, на большом городском рынке работают тысячи предпринимателей, а малый бизнес — это в основном магазины, услуги и кафе. В промышленности заметное место занимает лёгкая: швейные, трикотажные, обувные предприятия. До пункта пропуска на румынской границе отсюда около 40 км, до молдавского — немного дальше, и через город проходит международная трасса.",
+        "Дорога из Львова в Черновцы и обратно занимает целый день, поэтому выезд специалиста мы планируем заранее, а ехать в наш львовский офис ради теста на 30–45 минут мало кому удобно. Вот почему советуем начинать с онлайн-теста VerifEye с телефона: ехать никуда не нужно, а к выезду можно вернуться позже, если он понадобится. Выезд с EyeDetect имеет смысл, когда тест нужен сразу нескольким людям, например всем работникам цеха или магазина: специалист тестирует их за один визит. Для теста хватит тихого помещения, где есть стол и розетка; какого именно — ваш офис, гостиничный номер или комната при цехе, — решаем вместе до поездки. Цены на оба варианта есть в блоке ниже.",
+        "Ещё две местные подробности. Для немалой части жителей области родной язык румынский, но тест есть только на украинском, русском, английском и немецком, поэтому человек должен свободно читать на одном из них. А из Новоднестровска, Хотина, Сторожинца или Кицмани ехать в областной центр не обязательно: онлайн-тест проходят там, где человек живёт.",
+        "Слово «полиграф» в разговоре означает любой детектор лжи, поэтому так называют и нашу проверку. Проводим её на EyeDetect и VerifEye: они следят за реакциями глаз, а тело остаётся без датчиков; классический полиграф работает иначе, и среди наших услуг его нет.",
+        "Теперь примеры из жизни торгового города. Представим швейный цех, где после большого заказа не хватает ткани и нескольких готовых изделий, а в цеху работают пять швей. Второй пример: супруги с утра до вечера торгуют на рынке и ищут няню для двухлетней дочери; прежде чем оставить с ней ребёнка, родители хотят спросить о её предыдущей работе. Третий: выручка за несколько дней лежала дома до закупки товара, часть денег пропала, а в квартире тогда были только свои. Тест проходит только тот, кто дал письменное согласие, а вопрос касается одного события:",
+      ],
+      points: [
+        "Швеям: «С 1 по 20 сентября вы выносили из цеха ткань или готовые изделия без разрешения владелицы?»",
+        "Няне: «За последний год работы няней вы оставляли ребёнка одного дома?»",
+        "Членам семьи: «С 5 по 8 октября вы брали деньги из шкафа в спальне?»",
+      ],
     },
   },
   en: {
     seoTitle: "Lie Detector Test in Chernivtsi: EyeDetect Visit or Online",
     seoDescription: "Lie detector test in Chernivtsi: EyeDetect visit from Lviv for UAH 12,000 all-inclusive, or VerifEye online test today from UAH 2,500. Report in 5 minutes.",
+    updated: "2026-10-09",
     intro: "Chernivtsi is the main city of Bukovina, and there are no Intercity trains to it from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: about 4.5 hours by the fastest train or about 5 hours by car without stops.",
     facts: [["From Lviv", "≈ 270 km, 4.5 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
@@ -58,10 +92,25 @@ export const chernivtsi = {
     ],
     towns: {
       title: "Novodnistrovsk, Storozhynets and other towns in the Chernivtsi region",
-      text: "The VerifEye online test can be taken from any town in the region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive anywhere in Ukraine except the Lviv region.",
+      text: "The VerifEye online test can be taken from any town in the region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
       list: "Novodnistrovsk · Storozhynets · Khotyn · Kitsman · Zastavna",
       nearbyLabel: "Other cities in the region:",
       nearby: [["ivano-frankivsk", "Ivano-Frankivsk"], ["ternopil", "Ternopil"], ["khmelnytskyi", "Khmelnytskyi"]],
+    },
+    local: {
+      title: "Chernivtsi, a market city near the border: where to start with a polygraph test",
+      paragraphs: [
+        "Chernivtsi is above all a trading city: trade matters more here than industry, thousands of traders work at the large city market, and small business mostly means shops, services and cafés. Within industry, light industry stands out: sewing, knitwear and footwear businesses. The border crossing into Romania is about 40 km away, the one into Moldova a little further, and an international highway runs through the city.",
+        "The trip from Lviv to Chernivtsi and back takes a whole day, so we plan a specialist visit in advance, and travelling to our Lviv office for a 30–45 minute test suits few people. That is why our advice is to begin with VerifEye online, on a phone: no travel is needed, and you can come back to the idea of a visit later if it turns out to be necessary. An EyeDetect visit makes sense when several people need a test at once, for example everyone who works in a workshop or a shop: a specialist tests them in one visit. The test itself needs little: a quiet place with a table and a power outlet; whether that is your office, a hotel room or a room next to the workshop, we decide together before the trip. Prices for both options are in the block below.",
+        "Two more local details. Romanian is the mother tongue of a sizeable share of the region's residents, but the test exists only in Ukrainian, Russian, English and German, so the person has to read one of them fluently. And there is no need to travel to the regional capital from Novodnistrovsk, Khotyn, Storozhynets or Kitsman: the online test is taken wherever the person lives.",
+        "In conversation, any lie detector goes by the name of polygraph, which is why our test gets called that too. We run it on EyeDetect and VerifEye, which look at eye reactions and leave the body without sensors; a classic polygraph works differently, and it is not among our services.",
+        "Now some examples from life in a trading city. Imagine a sewing workshop where, after a big order, fabric and several finished garments are missing, and five seamstresses work there. A second example: a couple who trade at the market from morning till evening are looking for a nanny for their two-year-old daughter; before leaving the child with her, the parents want to ask about her previous job. A third: several days' takings were kept at home until the next purchase of stock, part of the money disappeared, and only family members were in the flat at the time. Only a person who has given written consent takes the test, and the question is about one event:",
+      ],
+      points: [
+        "For the seamstresses: “Between September 1 and September 20, did you take fabric or finished garments out of the workshop without the owner's permission?”",
+        "For the nanny: “In your last year of working as a nanny, did you leave a child alone at home?”",
+        "For the family members: “Between October 5 and October 8, did you take money from the wardrobe in the bedroom?”",
+      ],
     },
   },
 };

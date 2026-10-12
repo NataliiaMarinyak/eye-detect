@@ -4,6 +4,7 @@ export const uzhgorod = {
   uk: {
     seoTitle: "Поліграф в Ужгороді: детектор брехні, виїзд і онлайн",
     seoDescription: "Поліграф і детектор брехні в Ужгороді: виїзд спеціаліста зі Львова з EyeDetect — 12 000 ₴ під ключ, онлайн-тест VerifEye — від 2 500 ₴. Звіт за 5 хвилин.",
+    updated: "2026-10-09",
     intro: "Ужгород — центр Закарпатської області, і дорога сюди зі Львова йде через Карпати. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: найшвидший поїзд їде близько 5 годин, автомобілем — 4,5–5 годин без зупинок.",
     facts: [["Від Львова", "≈ 265 км, 5 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -16,15 +17,27 @@ export const uzhgorod = {
     ],
     towns: {
       title: "Мукачево, Хуст та інші міста Закарпатської області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ по всій Україні, крім Львівської області.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
       list: "Мукачево · Хуст · Берегове · Виноградів",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["ivano-frankivsk", "Івано-Франківськ"], ["chernivtsi", "Чернівці"], ["ternopil", "Тернопіль"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Ужгород, https://uk.wikipedia.org/wiki/Закарпатська_область, https://uk.wikipedia.org/wiki/Берегове
+    local: {
+      title: "Детектор брехні за Карпатами: як пройти тест в Ужгороді",
+      paragraphs: [
+        "Ужгород лежить по той бік Карпат, біля самого кордону зі Словаччиною: пункт пропуску є просто в місті, а Закарпаття загалом межує з чотирма країнами. Місто живе передусім торгівлею й послугами — кав'ярнями, ресторанами, готелями, — а область відома курортами, мінеральними й термальними водами та виноробством. Звідси й приклади ситуацій, які легко уявити в цьому краї: каса в закладі, будинок, який здають відпочивальникам, родина, розділена кордоном.",
+        "Дорога зі Львова в один бік — близько п'яти годин, тож поїздка до нашого кабінету з Ужгорода заради одного тесту — це цілий день у дорозі, та й виїзд спеціаліста ми плануємо заздалегідь. Тому починати тут розумно з онлайн-тесту VerifEye: людина проходить його з телефона там, де перебуває, — в Ужгороді, Мукачеві, Хусті, Береговому, Виноградові чи по той бік кордону. Виїзд з EyeDetect варто замовляти для групи, наприклад для всієї зміни закладу, яку тестуємо протягом одного дня. Для тесту підійде зала закладу до відкриття, вільний номер готелю чи кабінет в офісі: потрібні тільки тиша, стіл і розетка.",
+        "Окремо про мову. Тест проводимо українською, російською, англійською або німецькою, і питання людина читає заздалегідь. На Закарпатті це варто з'ясувати одразу: якщо комусь найзручніше читати угорською, як багатьом у Береговому, питання все одно будуть однією з чотирьох мов, і людина має добре її розуміти.",
+        "Кілька прикладів, щоб було зрозуміло, які питання підходять для тесту; проходить його лише той, хто дав письмову згоду. Уявімо кав'ярню чи невеликий готель: виручка за вересень не сходиться з кількістю гостей, а з касою працювали троє. Питання кожному: «Від 1 до 30 вересня ви приймали від гостей оплату повз касу?» Буває так, що власник живе в іншому місті, а будинок біля термальних басейнів здає через знайомого: «Цього літа ви поселяли гостей, про яких не сказали власникові?» Або чоловік працює у Словаччині, дружина лишилася в Ужгороді, і між ними росте підозра; тоді він проходить онлайн-тест там, де живе: «Від 1 червня у вас був статевий контакт із кимось, крім дружини?»",
+        "І наостанок про слово, яке зазвичай шукають. Перевіркою на поліграфі називають будь-який тест на детекторі брехні; ми проводимо його на EyeDetect і VerifEye, які оцінюють реакції очей, а датчиків на тілі немає взагалі. Класичний поліграф — це інший метод, і в нас його немає.",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф в Ужгороде: детектор лжи, выезд и онлайн",
     seoDescription: "Полиграф и детектор лжи в Ужгороде: выезд специалиста из Львова с EyeDetect — 12 000 ₴ под ключ, онлайн-тест VerifEye — от 2 500 ₴. Отчёт за 5 минут.",
+    updated: "2026-10-09",
     intro: "Ужгород — центр Закарпатской области, и дорога сюда из Львова идёт через Карпаты. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: самый быстрый поезд идёт около 5 часов, на машине — 4,5–5 часов без остановок.",
     facts: [["От Львова", "≈ 265 км, 5 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -37,15 +50,26 @@ export const uzhgorod = {
     ],
     towns: {
       title: "Мукачево, Хуст и другие города Закарпатской области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ по всей Украине, кроме Львовской области.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
       list: "Мукачево · Хуст · Берегово · Виноградов",
       nearbyLabel: "Другие города региона:",
       nearby: [["ivano-frankivsk", "Ивано-Франковск"], ["chernivtsi", "Черновцы"], ["ternopil", "Тернополь"]],
+    },
+    local: {
+      title: "Детектор лжи за Карпатами: как пройти тест в Ужгороде",
+      paragraphs: [
+        "Ужгород лежит по ту сторону Карпат, у самой границы со Словакией: пункт пропуска есть прямо в городе, а Закарпатье в целом граничит с четырьмя странами. Город живёт прежде всего торговлей и услугами — кофейнями, ресторанами, гостиницами, — а область известна курортами, минеральными и термальными водами и виноделием. Отсюда и примеры ситуаций, которые легко представить в этом крае: касса в заведении, дом, который сдают отдыхающим, семья, разделённая границей.",
+        "Дорога из Львова в одну сторону — около пяти часов, так что поездка в наш кабинет из Ужгорода ради одного теста — это целый день в пути, да и выезд специалиста мы планируем заранее. Поэтому начинать здесь разумно с онлайн-теста VerifEye: человек проходит его с телефона там, где находится, — в Ужгороде, Мукачеве, Хусте, Берегове, Виноградове или по ту сторону границы. Выезд с EyeDetect стоит заказывать для группы, например для всей смены заведения, которую тестируем в течение одного дня. Для теста подойдёт зал заведения до открытия, свободный номер гостиницы или кабинет в офисе: нужны только тишина, стол и розетка.",
+        "Отдельно о языке. Тест проводим на украинском, русском, английском или немецком, и вопросы человек читает заранее. В Закарпатье это стоит выяснить сразу: если кому-то удобнее всего читать по-венгерски, как многим в Берегове, вопросы всё равно будут на одном из четырёх языков, и человек должен хорошо его понимать.",
+        "Несколько примеров, чтобы было понятно, какие вопросы подходят для теста; проходит его только тот, кто дал письменное согласие. Представим кофейню или небольшую гостиницу: выручка за сентябрь не сходится с числом гостей, а с кассой работали трое. Вопрос каждому: «С 1 по 30 сентября вы принимали от гостей оплату мимо кассы?» Бывает так, что владелец живёт в другом городе, а дом рядом с термальными бассейнами сдаёт через знакомого: «Этим летом вы селили гостей, о которых не сказали владельцу?» Или муж работает в Словакии, жена осталась в Ужгороде, и между ними растёт подозрение; тогда он проходит онлайн-тест там, где живёт: «С 1 июня у вас был половой контакт с кем-то, кроме жены?»",
+        "И напоследок о слове, которое обычно ищут. Проверкой на полиграфе называют любой тест на детекторе лжи; мы проводим его на EyeDetect и VerifEye, которые оценивают реакции глаз, а датчиков на теле нет вообще. Классический полиграф — это другой метод, и у нас его нет.",
+      ],
     },
   },
   en: {
     seoTitle: "Lie Detector Test in Uzhhorod: EyeDetect Visit or Online",
     seoDescription: "Polygraph and lie detector test in Uzhhorod: EyeDetect visit from Lviv, UAH 12,000 all-inclusive, or VerifEye online test from UAH 2,500. Report in 5 minutes.",
+    updated: "2026-10-09",
     intro: "Uzhhorod is the centre of the Zakarpattia region, and the route from Lviv crosses the Carpathians. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: about 5 hours by the fastest train or 4.5–5 hours by car without stops.",
     facts: [["From Lviv", "≈ 265 km, 5 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
@@ -58,10 +82,20 @@ export const uzhgorod = {
     ],
     towns: {
       title: "Mukachevo, Khust and other towns in the Zakarpattia region",
-      text: "The VerifEye online test can be taken from any town in the region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive anywhere in Ukraine except the Lviv region.",
+      text: "The VerifEye online test can be taken from any town in the region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
       list: "Mukachevo · Khust · Berehove · Vynohradiv",
       nearbyLabel: "Other cities in the region:",
       nearby: [["ivano-frankivsk", "Ivano-Frankivsk"], ["chernivtsi", "Chernivtsi"], ["ternopil", "Ternopil"]],
+    },
+    local: {
+      title: "A lie detector test beyond the Carpathians: how it works in Uzhhorod",
+      paragraphs: [
+        "Uzhhorod lies on the far side of the Carpathians, right at the border with Slovakia: there is a border crossing in the city itself, and the Zakarpattia region as a whole borders four countries. The city lives mainly on trade and services, with its cafés, restaurants and hotels, while the region is known for resorts, mineral and thermal springs and winemaking. Hence the kinds of situations that are easy to picture here: the till in a café, a house let to holidaymakers, a family divided by the border.",
+        "The trip from Lviv takes about five hours one way, so coming to our office from Uzhhorod for a single test means a whole day on the road, and a specialist visit is something we plan in advance. That is why it makes sense to start here with the VerifEye online test: a person takes it on a phone wherever they are, in Uzhhorod, Mukachevo, Khust, Berehove, Vynohradiv or across the border. An EyeDetect visit is worth ordering for a group, for example a whole shift of a café or hotel, tested over a single day. The test can be held in the café before opening time, in a free hotel room or in an office: it only has to be quiet and have a table near a socket.",
+        "A separate note on language. We run the test in Ukrainian, Russian, English or German, and the person reads the questions in advance. In Zakarpattia this is worth checking at the start: if someone reads most comfortably in Hungarian, as many people in Berehove do, the questions will still be in one of the four languages, and the person needs to understand it well.",
+        "A few examples to show which questions suit the test; it is taken only by someone who has agreed in writing. Imagine a café or a small hotel: the takings for September do not match the number of guests, and three people worked the till. The question for each of them: “Between September 1 and 30, did you take payment from guests without putting it through the till?” It also happens that an owner lives in another city and lets a house near the thermal pools through an acquaintance: “This summer, did you put up guests you did not tell the owner about?” Or a husband works in Slovakia, his wife has stayed in Uzhhorod, and suspicion grows between them; he then takes the online test where he lives: “Since June 1, have you had sexual contact with anyone other than your wife?”",
+        "And finally, the word people usually search for. Any lie detector test tends to be called a polygraph test; ours runs on EyeDetect and VerifEye, which assess eye reactions, and there is not a single sensor on the body. The classic polygraph is a method of its own, and we do not use it.",
+      ],
     },
   },
 };

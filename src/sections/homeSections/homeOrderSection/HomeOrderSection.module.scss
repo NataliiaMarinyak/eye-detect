@@ -101,6 +101,23 @@
     fill: $alert-error;
 }
 
+// Номер телефону під адресою: посилання для дзвінка.
+// Висота 44 px для зручного натискання; ширина за текстом, щоб не спрацьовувало порожнє місце праворуч.
+.phoneLink {
+    width: fit-content;
+    min-height: 44px;
+    white-space: nowrap;
+}
+
+// Значок слухавки намальований лінією, тому без заливки (на відміну від мітки адреси).
+.phoneIcon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    stroke: $alert-error;
+    fill: none;
+}
+
 .orderForm {
     width: 100%;
 }

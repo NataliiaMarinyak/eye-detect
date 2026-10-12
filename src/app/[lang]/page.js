@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
 import HeroSection from "@/sections/homeSections/heroSection/HeroSection";
+import CityLinks from "@/components/CityLinks/CityLinks";
 import { FAQDataHome } from "@/data/FAQDataHome";
+import { homeLvivFaq } from "@/data/pages/homeLviv";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getSeoMetaPageUrl, getHomeUrl } from "@/helpers/getSeoMetaPageUrl";
 import { getFaqJsonLd } from "@/helpers/getFaqJsonLd";
@@ -49,6 +51,13 @@ const DynamicHomeStepsSection = dynamic(() =>
 const DynamicHomeReportSection = dynamic(() =>
   import("@/sections/homeSections/homeReportSection/HomeReportSection")
 );
+const DynamicHomeLvivSection = dynamic(() =>
+  import("@/sections/homeSections/homeLvivSection/HomeLvivSection")
+);
+
+// Питання про Львів (data/pages/homeLviv.js) дописуємо в кінець спільного списку:
+// той самий список іде і в блок «Часті питання», і в розмітку FAQPage.
+const homeFaq = [...FAQDataHome, ...homeLvivFaq];
 
 export async function generateMetadata({ params }) {
   const { lang } = params;
@@ -147,7 +156,7 @@ export default async function Home({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(getFaqJsonLd(FAQDataHome, lang)),
+          __html: JSON.stringify(getFaqJsonLd(homeFaq, lang)),
         }}
       />
       <HeroSection dictionary={dictionary} />
@@ -156,6 +165,9 @@ export default async function Home({ params }) {
       <DynamicHomeStepsSection dictionary={dictionary} />
       <DynamicHomeDirectionsSection lang={lang} dictionary={dictionary} />
       <DynamicHomeReportSection dictionary={dictionary} />
+      {/* Блок про Львів і одразу під ним посилання на сторінки інших міст України */}
+      <DynamicHomeLvivSection lang={lang} dictionary={dictionary} />
+      <CityLinks lang={lang} />
       <DynamicHomeAboutSection lang={lang} dictionary={dictionary} />
       <DynamicHomeCertificatesSection
         isOnHomePage={true}
@@ -164,7 +176,7 @@ export default async function Home({ params }) {
       />
       <DynamicHomeClientsSection lang={lang} dictionary={dictionary} />
       <DynamicHomeFAQSection
-        data={FAQDataHome}
+        data={homeFaq}
         lang={lang}
         dictionary={dictionary}
       />

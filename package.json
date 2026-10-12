@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lastmod": "node scripts/gen-lastmod.mjs"
+    "lastmod": "node scripts/gen-lastmod.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.6.1",

@@ -6,9 +6,13 @@ import { getFormTexts, langFromPath, privacyHref } from "../OrderForm/formTexts"
 import { SiteContext } from "@/context/SiteContext";
 import { useModalActions } from "@/hooks/modalActions";
 import { getFreeTestForm, isFreeTestService } from "@/data/pages/freeTestPage";
+// З файла текстів міст сюди береться лише маленька функція keepShortWords: решту файла збирач у код для браузера не кладе.
+import { keepShortWords } from "@/data/pages/cityTexts";
 import styles from "./Modal.module.scss";
 
 // Вікно заявки: заголовок, назва послуги, що буде далі, форма, примітка про дані.
+// Назва послуги проходить через keepShortWords лише в рядку на екрані («у Києві» не розривається між рядками);
+// у форму й у заявку йде звичайний рядок modalService.
 // Варіант "freeTest" (кнопка з variant="freeTest" або послуга безкоштовного тесту):
 // свій заголовок і текст без речення про оплату, у формі обов'язковий вибір формату.
 const Modal = ({ dictionary }) => {
@@ -69,7 +73,7 @@ const Modal = ({ dictionary }) => {
             <h2 id="order-modal-title" className={styles.title}>{title}</h2>
             {modalService && (
               <p className={styles.service}>
-                <span>{m.serviceLabel}:</span> {modalService}
+                <span>{m.serviceLabel}:</span> {keepShortWords(modalService)}
               </p>
             )}
             <p className={styles.text}>{text}</p>

@@ -12,17 +12,19 @@ export const TIER_A = [
   "berlin", "vienna", "dublin", "podgorica", "belgrade", "madrid",
 ];
 
-// Захід України: окремий регіон лише для тексту про відстань; ціна виїзду однакова по Україні (12 000 ₴ під ключ).
+// Захід України: окремий регіон лише для тексту про відстань; ціна виїзду однакова по Україні (12 000 ₴ під ключ). Виняток — міста-партнери (PARTNER_CITIES): там виїзд до клієнта по місту 8 500 ₴, по області 12 000 ₴.
 const UA_WEST = ["lutsk", "rivne", "ternopil", "ivano-frankivsk", "chernivtsi", "uzhgorod", "khmelnytskyi"];
 
 // Орієнтовна відстань від Львова автомобілем, км (для блоку «виїзд»).
 // Для міст з унікальним контентом звірено з маршрутами 15.09.2026.
+// Цифра тут має збігатися з відстанню у вступі сторінки міста (src/data/cityUnique/<slug>.js): 09.10.2026 так виправлено
+// Черкаси, Кропивницький, Миколаїв, Херсон, Запоріжжя, Суми, Чернігів і Будапешт (перевірено за маршрутами).
 const DISTANCE_KM = {
   lutsk: 150, rivne: 210, ternopil: 130, "ivano-frankivsk": 135, chernivtsi: 270, uzhgorod: 265,
-  khmelnytskyi: 240, vinnytsia: 365, zhytomyr: 400, kyiv: 540, cherkasy: 580, kropyvnytskyi: 640,
-  odesa: 800, mykolaiv: 760, kherson: 830, dnipro: 950, zaporizhzhia: 950, poltava: 870,
-  kharkiv: 1000, sumy: 1000, chernihiv: 650,
-  warsaw: 390, krakow: 330, bratislava: 670, prague: 860, budapest: 560, vienna: 790, berlin: 920,
+  khmelnytskyi: 240, vinnytsia: 365, zhytomyr: 400, kyiv: 540, cherkasy: 700, kropyvnytskyi: 690,
+  odesa: 800, mykolaiv: 800, kherson: 880, dnipro: 950, zaporizhzhia: 970, poltava: 870,
+  kharkiv: 1000, sumy: 870, chernihiv: 690,
+  warsaw: 390, krakow: 330, bratislava: 670, prague: 860, budapest: 580, vienna: 790, berlin: 920,
   chisinau: 570, vilnius: 800, riga: 1000, tallinn: 1300, belgrade: 1000, podgorica: 1350,
 };
 
@@ -31,6 +33,10 @@ export const getCityRegion = (slug, country = "") => {
   if (/Україна|Украина/.test(country)) return "ua-other";
   return "eu";
 };
+
+// Місто України (а не Європи): отримує H1 зі словом «поліграф» і абзац про те, де є обладнання EyeDetect.
+// Список міст, де тест проводить партнер у власному кабінеті, — PARTNER_CITIES у data/pages/cityTexts.js.
+export const isUaRegion = (region) => region === "ua-west" || region === "ua-other";
 
 export const getCityDistance = (slug) => DISTANCE_KM[slug] || null;
 

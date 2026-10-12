@@ -5,6 +5,7 @@ export const kherson = {
   uk: {
     seoTitle: "Поліграф у Херсоні: детектор брехні, виїзд і ціна",
     seoDescription: "Детектор брехні в Херсоні: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye сьогодні, від 2 500 ₴. Звіт за 5 хвилин.",
+    updated: "2026-10-09",
     intro: "Херсон — центр Херсонської області на півдні України, приблизно за 880 км від Львова. Прямого поїзда зі Львова немає, тому спеціаліст з EyeDetect їде автомобілем. Виїзд плануємо заздалегідь, а онлайн-тест VerifEye зі смартфона можна пройти вже сьогодні.",
     facts: [["Від Львова", "≈ 880 км, 11–14 год машиною"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -16,15 +17,31 @@ export const kherson = {
     ],
     towns: {
       title: "Виїзд в інші міста Херсонської області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста області, де є інтернет, або з міста, куди ви переїхали. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і всюди в Україні, крім Львівської області. Їдемо лише до підконтрольних Україні міст, куди на день виїзду безпечно доїхати, тому маршрут і місце тесту узгоджуємо заздалегідь.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста області, де є інтернет, або з міста, куди ви переїхали. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ. Їдемо лише до підконтрольних Україні міст, куди на день виїзду безпечно доїхати, тому маршрут і місце тесту узгоджуємо заздалегідь.",
       list: "",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["mykolaiv", "Миколаїв"], ["odesa", "Одеса"], ["zaporizhzhia", "Запоріжжя"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Херсон, https://suspilne.media/kherson/1272596-ranni-ovoci-teplici-ta-zrostanna-plos-pid-bastannimi-so-cogoric-virosuut-hersonski-fermeri/
+    local: {
+      title: "Чому перевірку на поліграфі в Херсоні радимо починати з онлайн-тесту",
+      paragraphs: [
+        "Перевірка на поліграфі — так у Херсоні, та й не лише тут, кажуть про кожен тест на детекторі брехні. У нас це EyeDetect і VerifEye: обидва аналізують реакції очей, тому датчики на тіло не потрібні, а тест на класичному поліграфі ми не проводимо. Із цих двох тестів для Херсона радимо спершу розглянути онлайн-тест VerifEye, і на це є три причини.",
+        "Перша — дорога. Херсон стоїть на правому березі Дніпра, і спеціаліст з обладнанням їде сюди зі Львова автомобілем: це цілий день за кермом. Друга — місце й час: тест з виїздом проводимо тільки вдень і тільки там, куди того дня безпечно доїхати, тому дату й кімнату погоджуємо заздалегідь. Третя — люди. Якщо частина родини зараз у Херсоні, а частина в іншому місті чи за кордоном, зібрати всіх в одній кімнаті складно. Онлайн кожен проходить тест там, де перебуває, з власного телефона: родич, який працює, скажімо, в Німеччині, може пройти його німецькою або українською, не приїжджаючи додому. Доступні також російська й англійська.",
+        "Виїзд з EyeDetect при цьому залишається можливим. Херсон здавна живе з річки й землі: тут виросли порт на Дніпрі й харчова промисловість, а на полях області й тепер вирощують овочі та баштанні. Тому тут може знадобитися й перевірка кількох людей одразу — у фермерському господарстві, на складі чи в теплицях. Тоді всіх, хто мав доступ до грошей або товару, збираємо в один день у приміщенні, яке ви запропонуєте: потрібні тиша, стіл і розетка.",
+        "Ось три приклади ситуацій і питань; це саме приклади, а не історії клієнтів. Власник кількох теплиць живе в іншому місті й буває в господарстві раз на місяць; керуючий звітує про продаж ранніх овочів, а виручка помітно менша, ніж торік. Власники квартири виїхали й залишили ключі сусідці, а повернувшись, не знайшли частини речей. Двоє партнерів мають спільний магазин: один переїхав до іншого міста, другий веде справу на місці, і цифри виручки перестали сходитися.",
+      ],
+      points: [
+        "Овочі з теплиць: «З 1 квітня до 31 травня цього року ви продавали овочі з теплиць, не записавши продаж у звіт?»",
+        "Квартира під наглядом: «З 1 червня до 30 вересня ви виносили з квартири речі без дозволу власників?»",
+        "Спільний магазин: «З 1 січня цього року ви брали з виручки гроші, про які не сказали партнерові?»",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф в Херсоне: детектор лжи, выезд и цена",
     seoDescription: "Детектор лжи в Херсоне: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye сегодня, от 2 500 ₴. Отчёт за 5 минут.",
+    updated: "2026-10-09",
     intro: "Херсон — центр Херсонской области на юге Украины, примерно в 880 км от Львова. Прямого поезда из Львова нет, поэтому специалист с EyeDetect едет на машине. Выезд планируем заранее, а онлайн-тест VerifEye со смартфона можно пройти уже сегодня.",
     facts: [["От Львова", "≈ 880 км, 11–14 ч машиной"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -36,15 +53,30 @@ export const kherson = {
     ],
     towns: {
       title: "Выезд в другие города Херсонской области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города области, где есть интернет, или из города, куда вы переехали. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и везде в Украине, кроме Львовской области. Едем только в подконтрольные Украине города, куда в день выезда безопасно доехать, поэтому маршрут и место теста согласовываем заранее.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города области, где есть интернет, или из города, куда вы переехали. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ. Едем только в подконтрольные Украине города, куда в день выезда безопасно доехать, поэтому маршрут и место теста согласовываем заранее.",
       list: "",
       nearbyLabel: "Другие города региона:",
       nearby: [["mykolaiv", "Николаев"], ["odesa", "Одесса"], ["zaporizhzhia", "Запорожье"]],
+    },
+    local: {
+      title: "Почему проверку на полиграфе в Херсоне советуем начинать с онлайн-теста",
+      paragraphs: [
+        "Проверка на полиграфе — так в Херсоне, да и не только здесь, говорят о каждом тесте на детекторе лжи. У нас это EyeDetect и VerifEye: оба анализируют реакции глаз, поэтому датчики на тело не нужны, а тест на классическом полиграфе мы не проводим. Из этих двух тестов для Херсона советуем сначала рассмотреть онлайн-тест VerifEye, и на это есть три причины.",
+        "Первая — дорога. Херсон стоит на правом берегу Днепра, и специалист с оборудованием едет сюда из Львова на машине: это целый день за рулём. Вторая — место и время: тест с выездом проводим только днём и только там, куда в этот день безопасно доехать, поэтому дату и комнату согласовываем заранее. Третья — люди. Если часть семьи сейчас в Херсоне, а часть в другом городе или за границей, собрать всех в одной комнате сложно. Онлайн каждый проходит тест там, где находится, со своего телефона: родственник, который работает, скажем, в Германии, может пройти его на немецком или украинском, не приезжая домой. Доступны также русский и английский.",
+        "Выезд с EyeDetect при этом остаётся возможным. Херсон издавна живёт рекой и землёй: здесь выросли порт на Днепре и пищевая промышленность, а на полях области и сейчас выращивают овощи и бахчевые. Поэтому здесь может понадобиться и проверка нескольких человек сразу — в фермерском хозяйстве, на складе или в теплицах. Тогда всех, у кого был доступ к деньгам или товару, собираем в один день в помещении, которое вы предложите: нужны тишина, стол и розетка.",
+        "Вот три примера ситуаций и вопросов; это именно примеры, а не истории клиентов. Владелец нескольких теплиц живёт в другом городе и бывает в хозяйстве раз в месяц; управляющий отчитывается о продаже ранних овощей, а выручка заметно меньше, чем в прошлом году. Владельцы квартиры уехали и оставили ключи соседке, а вернувшись, не нашли части вещей. У двух партнёров общий магазин: один переехал в другой город, второй ведёт дело на месте, и цифры выручки перестали сходиться.",
+      ],
+      points: [
+        "Овощи из теплиц: «С 1 апреля по 31 мая этого года вы продавали овощи из теплиц, не записав продажу в отчёт?»",
+        "Квартира под присмотром: «С 1 июня по 30 сентября вы выносили из квартиры вещи без разрешения владельцев?»",
+        "Общий магазин: «С 1 января этого года вы брали из выручки деньги, о которых не сказали партнёру?»",
+      ],
     },
   },
   en: {
     seoTitle: "Lie Detector Test in Kherson: Visit, Price or Online",
     seoDescription: "Lie detector test in Kherson: an EyeDetect visit for UAH 12,000 all-inclusive, or the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
+    updated: "2026-10-09",
     intro: "Kherson is the administrative centre of the Kherson region in southern Ukraine, about 880 km from Lviv. There is no direct train from Lviv, so an EyeDetect specialist travels by car. We plan the trip in advance, and you can take the VerifEye smartphone test today.",
     facts: [["From Lviv", "≈ 880 km, 11–14 h by car"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
@@ -56,10 +88,24 @@ export const kherson = {
     ],
     towns: {
       title: "Visits to other towns in the Kherson region",
-      text: "The VerifEye online test can be taken from any town in the region that has an internet connection, or from the city you have moved to. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine outside the Lviv region. We travel only to towns under Ukrainian control that are safe to reach on the day of the visit, so we agree the route and the test venue in advance.",
+      text: "The VerifEye online test can be taken from any town in the region that has an internet connection, or from the city you have moved to. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive. We travel only to towns under Ukrainian control that are safe to reach on the day of the visit, so we agree the route and the test venue in advance.",
       list: "",
       nearbyLabel: "Other cities in the region:",
       nearby: [["mykolaiv", "Mykolaiv"], ["odesa", "Odesa"], ["zaporizhzhia", "Zaporizhzhia"]],
+    },
+    local: {
+      title: "Why we suggest starting online if you need a polygraph test in Kherson",
+      paragraphs: [
+        "A polygraph test is what people in Kherson, and not only here, call every lie detector test. Ours are EyeDetect and VerifEye: both analyse eye reactions, so sensors on the body are not needed, and a test on a classic polygraph is not something we run. Of the two, we suggest looking at the VerifEye online test first for Kherson, and there are three reasons for that.",
+        "The first is the road. Kherson stands on the right bank of the Dnipro, and the specialist drives here from Lviv with the equipment: a full day behind the wheel. The second is place and time: an on-site test is held only in daytime and only where it is safe to travel on that day, so we agree the date and the room in advance. The third is people. If part of the family is in Kherson now and part is in another city or abroad, getting everyone into one room is hard. Online, each person takes the test wherever they are, on their own phone: a relative working in Germany, say, can take it in German or Ukrainian without coming home. Russian and English are available too.",
+        "An EyeDetect visit is still possible. Kherson has long lived off the river and the land: a port on the Dnipro and a food industry grew up here, and vegetables and melons are still grown in the region's fields. So there can also be a need to test several people at once — on a farm, in a warehouse or in greenhouses. In that case we bring together everyone who had access to the money or the goods on one day, in a room you suggest: it needs to be quiet and have a table and a power outlet.",
+        "Here are three examples of situations and questions; they are examples, not client stories. The owner of a few greenhouses lives in another city and visits the farm once a month; the manager reports on sales of early vegetables, and the takings are well below last year's. The owners of a flat left and gave the keys to a neighbour, and when they came back some of their belongings were gone. Two partners share a shop: one has moved to another city, the other runs the business on the spot, and the takings have stopped adding up.",
+      ],
+      points: [
+        "Vegetables from the greenhouses: “Between April 1 and May 31 this year, did you sell vegetables from the greenhouses without entering the sale in the report?”",
+        "A flat left in someone's care: “Between June 1 and September 30, did you take anything out of the flat without the owners' permission?”",
+        "A shared shop: “Since January 1 this year, have you taken money from the takings without telling your partner?”",
+      ],
     },
   },
 };

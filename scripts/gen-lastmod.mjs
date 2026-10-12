@@ -55,7 +55,7 @@ const TEMPLATES = {
 // Статичні сторінки: paths — файли й каталоги, dict — ключі верхнього рівня у src/dictionaries/*.json.
 const STATIC = {
   "": {
-    paths: ["src/app/[lang]/page.js", `${SECTIONS}/homeSections/`, `${DATA}/FAQDataHome.js`, `${DATA}/directionsData.js`, `${DATA}/aboutData.js`, "src/helpers/getBusinessJsonLd.js"],
+    paths: ["src/app/[lang]/page.js", `${SECTIONS}/homeSections/`, `${DATA}/FAQDataHome.js`, `${DATA}/pages/homeLviv.js`, `${DATA}/directionsData.js`, `${DATA}/aboutData.js`, "src/helpers/getBusinessJsonLd.js"],
     dict: ["seoMainPage", "heroSection", "homeStats", "homePaths", "homeSteps", "homeDirectionsSection", "homeReport", "homeAboutSection", "homeCertificatesSection", "homeClientsSection", "homeFAQSection", "homeOrderSection"],
   },
   prices: {

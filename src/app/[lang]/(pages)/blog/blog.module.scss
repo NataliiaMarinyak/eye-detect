@@ -82,7 +82,7 @@
   @include pageTopPadding;
   @include sectionSidePadding;
   width: 100%;
-  padding-bottom: 64px;
+  padding-bottom: 48px;
 }
 
 .articleInner {
@@ -138,6 +138,14 @@
     font-size: 17px;
   }
 
+  // Розділ статті: заголовок, абзаци, список і посилання лежать у вкладеному блоці,
+  // тому проміжок між ними задаємо тут (gap у .prose діє лише між розділами).
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
   & h2 {
     font-family: var(--font-head);
     font-weight: 400;
@@ -171,6 +179,25 @@
       margin-top: 11px;
       border-radius: 50%;
       background-color: $primary;
+    }
+  }
+}
+
+// Посилання під абзацами розділу (поле links у даних статті). Кожне з нового рядка,
+// зона натискання не нижча за 44 px.
+.sectionLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & a {
+    padding: 9px 0;
+    color: $primary;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    &:hover {
+      color: $primaryHover;
     }
   }
 }
@@ -211,10 +238,21 @@
   }
 }
 
+// «Ще з блогу»: окрема секція після статті й після її «Питань і відповідей».
+// Верхній відступ секції прибрано: проміжок дає нижній відступ статті (48 px) або блоку питань.
+.relatedSection {
+  padding-top: 0;
+}
+
 .related {
   padding-top: 40px;
-  margin-top: 48px;
   border-top: 1px solid $lineColor;
+}
+
+// Одразу після блоку питань лінія зайва: останнє питання вже закінчується лінією.
+.relatedAfterFaq {
+  padding-top: 0;
+  border-top: 0;
 }
 
 .relatedTitle {
@@ -280,8 +318,15 @@
   }
 }
 
-.ctaPrimary {
+// Два класи в селекторі: кнопка заявки має ще власний клас (.btn у OpenModalBtn, темно-синій)
+// тієї самої ваги, і без цього на темному тлі перемагав він: кнопки не було видно.
+.cta .ctaPrimary {
   @include buttonOnDark;
+
+  // .btn:hover задає білий текст: на світлому тлі наведеної кнопки його не було б видно.
+  &:hover {
+    color: $deepNavy;
+  }
 
   @media screen and (min-width: $tablet) {
     width: auto;

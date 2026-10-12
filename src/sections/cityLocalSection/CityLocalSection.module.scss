@@ -1,0 +1,82 @@
+@import "../../app/variables";
+
+// Той самий фон і відступи, що й у блоці «що варто знати» над ним: текст читається як його продовження.
+.section {
+  @include sectionTopBottomPadding;
+  border-bottom: 1px solid $lineColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (min-width: $laptop) {
+    gap: 28px;
+  }
+}
+
+.title {
+  @include sectionTitleCentered;
+  margin-bottom: 0;
+}
+
+// Довгий текст: заголовок по центру, абзаци ліворуч у вузькій колонці, щоб рядок легко читався.
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 760px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: $subTitleColor;
+  overflow-wrap: break-word;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 17px;
+  }
+}
+
+.points {
+  display: grid;
+  gap: 10px;
+  margin-top: 6px;
+  padding: 18px 20px;
+  background-color: $cardBgColor;
+  border: 1px solid $lineColor;
+  border-radius: $radiusCard;
+
+  @media screen and (min-width: $tablet) {
+    padding: 22px 28px;
+  }
+}
+
+.point {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $textDarkColor;
+  overflow-wrap: break-word;
+
+  // Крапка-маркер: стоїть навпроти першого рядка пункту.
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $primary;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}

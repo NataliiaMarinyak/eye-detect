@@ -15,6 +15,10 @@ const TEL_H = "+380 68 68 333 68";
 const NO_CONTACT = "Контакт не вказано";
 // Індекс каналу Telegram у t.contact.channels (однаковий для всіх мов).
 const TELEGRAM = 1;
+// Підпис форми контактів для ШІ-агентів (декларативний WebMCP, як у OrderForm). Форма з'являється
+// лише на останньому кроці, після п'яти питань; на її роботу атрибути не впливають.
+const TOOL_DESCRIPTION =
+  "Final step of the test price calculator. After the five questions in this dialog are answered, enter a name and a contact to receive the exact price of an EyeDetect or online VerifEye lie detector test and the available dates. The specialist replies 24/7, usually within 15-30 minutes.";
 
 
 
@@ -176,11 +180,20 @@ const PriceQuiz = ({ lang = "uk" }) => {
         )}
 
         {cur === 5 && (
-          <form className={styles.body} onSubmit={submit} noValidate>
+          <form className={styles.body} onSubmit={submit} noValidate toolname="calculate_test_price" tooldescription={TOOL_DESCRIPTION}>
             <h2 className={styles.q}>{t.contact.title}</h2>
             <label className={styles.field}>
               <span className={styles.label}>{t.contact.name}</span>
-              <input type="text" autoComplete="name" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} aria-invalid={!!errors.name} />
+              <input
+                type="text"
+                name="name"
+                autoComplete="name"
+                required
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                aria-invalid={!!errors.name}
+                toolparamdescription="Name of the person, as the specialist should address them. Required."
+              />
               {errors.name && <span className={styles.error}>{errors.name}</span>}
             </label>
 
@@ -188,9 +201,11 @@ const PriceQuiz = ({ lang = "uk" }) => {
               <span className={styles.label}>{t.contact.phone}</span>
               <input
                 type="text"
+                name="phone"
                 inputMode={form.channel === TELEGRAM ? "text" : "tel"}
                 autoComplete="tel"
                 maxLength={40}
+                toolparamdescription="Phone number with country code, for example +380 67 123 45 67, or a Telegram @username if Telegram is the chosen contact channel. Optional."
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 aria-invalid={!!errors.phone}

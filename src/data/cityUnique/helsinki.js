@@ -47,7 +47,7 @@ export const helsinki = {
   },
   en: {
     seoTitle: "Lie Detector Test in Helsinki: Online or Visit",
-    seoDescription: "Lie detector and polygraph test in Helsinki: verifEye online test today from UAH 2,500 (≈ €49), or an EyeDetect visit. Report in 5 minutes.",
+    seoDescription: "Lie detector and polygraph test in Helsinki: VerifEye online test today from UAH 2,500 (≈ €49), or an EyeDetect visit. Report in 5 minutes.",
     intro: "Helsinki is the Finnish capital, on the Gulf of Finland. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the route ends with a ferry from Tallinn, so we agree on the date in advance, once several requests come in from the region.",
     facts: [["From Lviv", "≈ 1,440 km, from 35 h of travel"], ["Online test", "≈ €49 (UAH 2,500)"], ["Test language", "Ukrainian, Russian, English, German"]],
     faq: [

@@ -1,0 +1,213 @@
+@import "../../../app/variables";
+
+// Фон секції типовий (як у сусідніх блоків головної): білі картки на світлому тлі.
+// Одразу під нею стоїть біла смуга CityLinks зі своїми лініями, тому власних ліній тут немає.
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media screen and (min-width: $laptop) {
+    gap: 40px;
+  }
+}
+
+.title {
+  @include sectionTitle;
+}
+
+// Телефон: картки одна під одною. Від планшета: дві колонки.
+// minmax(0, 1fr) не дає довгому слову розтягнути колонку за край екрана.
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    gap: 24px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding: 24px 20px;
+  @include card;
+
+  @media screen and (min-width: $tablet) {
+    padding: 24px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    padding: 28px;
+  }
+}
+
+.cardTitle {
+  font-family: var(--font-bold);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+
+  // Вужче за 340 px нерозривний шматок «на вул. Городоцькій, 45» при 18 px ширший за картку,
+  // і браузер рвав його посеред номера будинку. З меншим шрифтом шматок переноситься цілим.
+  @media screen and (max-width: 339px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 19px;
+  }
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: $subTitleColor;
+  overflow-wrap: break-word;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+// Рядки цін: назва ліворуч, сума праворуч; якщо не вміщаються, сума переходить під назву.
+.prices {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $lineColor;
+}
+
+.priceRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2px 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid $lineColor;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.priceName {
+  flex: 1 1 180px;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.priceValue {
+  font-family: var(--font-bold);
+  font-weight: 700;
+  white-space: nowrap;
+  color: $primary;
+}
+
+// Номер телефону в картці з адресою: посилання для дзвінка.
+// Висота не менша за 44 px, щоб на телефоні було зручно натиснути; номер не розривається між рядками.
+.phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  min-height: 44px;
+  font-family: var(--font-bold);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.3;
+  white-space: nowrap;
+  color: $primary;
+
+  & svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover {
+    color: $primaryHover;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+}
+
+// Посилання внизу картки: притиснуте до низу, щоб у ряду стояли на одній лінії.
+// Вертикальні поля роблять зону натискання не нижчою за 44 px.
+.more {
+  margin-top: auto;
+  padding: 10px 0;
+  align-self: flex-start;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: $primaryHover;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.trustWrap {
+  width: 100%;
+  max-width: 860px;
+  align-self: center;
+}
+
+// Абзац про оригінал звіту: біла плашка з акцентною лінією ліворуч.
+.trust {
+  padding: 20px;
+  background-color: $cardBgColor;
+  border: 1px solid $lineColor;
+  border-left: 3px solid $primary;
+  border-radius: 0 $radiusCard $radiusCard 0;
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+
+  @media screen and (min-width: $tablet) {
+    padding: 24px 28px;
+    font-size: 17px;
+  }
+}
+
+// Одна кнопка «Замовити консультацію» під абзацом про оригінал звіту: по центру.
+// Сама кнопка — готовий OpenModalBtn (ширина до 360 px), тут лише місце для неї.
+.ctaWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 24px;
+  }
+}
+
+// У globals.scss усі посилання inline-block; тут посилання стоїть посеред речення
+// і має переноситися разом із текстом, тому повертаємо inline.
+.trustLink {
+  display: inline;
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: $primaryHover;
+  }
+}

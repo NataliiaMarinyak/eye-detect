@@ -4,6 +4,7 @@ export const khmelnytskyi = {
   uk: {
     seoTitle: "Поліграф у Хмельницькому: детектор брехні з виїздом",
     seoDescription: "Детектор брехні в Хмельницькому: виїзд з EyeDetect — 12 000 ₴ під ключ, онлайн-тест VerifEye з телефона вже сьогодні, від 2 500 ₴. Звіт за 5 хвилин.",
+    updated: "2026-10-09",
     intro: "Хмельницький — обласний центр на заході України, приблизно за 240 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: прямий поїзд Intercity+ іде близько 3 годин, автомобілем дорога займає близько 4 годин, автобусом — 4–5 годин.",
     facts: [["Від Львова", "≈ 240 км, 3 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
@@ -15,15 +16,32 @@ export const khmelnytskyi = {
     ],
     towns: {
       title: "Кам'янець-Подільський, Шепетівка та інші міста Хмельницької області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Хмельницької області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і будь-де в Україні, крім Львівської області.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Хмельницької області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
       list: "Кам'янець-Подільський · Шепетівка · Старокостянтинів · Сатанів",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["ternopil", "Тернопіль"], ["vinnytsia", "Вінниця"], ["rivne", "Рівне"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Хмельницький, https://uk.wikipedia.org/wiki/Хмельницька_область, https://uk.wikipedia.org/wiki/Кам'янець-Подільський, https://uk.wikipedia.org/wiki/Сатанів
+    local: {
+      title: "Хмельницький і Поділля: коли доречна перевірка на поліграфі",
+      paragraphs: [
+        "Хмельницький — залізничний вузол на берегах Південного Бугу, у верхній течії річки. Серед галузей міста — машинобудування, харчова промисловість і виробництво будівельних матеріалів, тут працюють університети й академії. Область довкола аграрна: найбільше сіють зернових, вирощують цукрові буряки й картоплю, а на півдні, ближче до Дністра, багато садів. Є на Хмельниччині й туристичні та курортні місця: Кам'янець-Подільський із фортецею і Старим містом, бальнеологічний курорт Сатанів на Збручі. Звідси й приклади того, коли тест може стати в пригоді.",
+        "Уявімо три ситуації. Двоє братів із Хмельницького мають яблуневий сад на півдні області; у вересні один із них наймав збирачів і платив їм зі спільних грошей, а другий сумнівається в сумі. Питання могло б звучати так: «У вересні 2026 року ви заплатили збирачам яблук менше, ніж сказали братові?» Власниця екскурсійного бюро в Кам'янці-Подільському підозрює, що водій возить туристів автомобілем бюро без її відома й бере гроші собі: «З 1 травня до 30 вересня 2026 року ви возили туристів автомобілем бюро без відома власниці?» Дружина два тижні лікувалася в санаторії, і після її повернення чоловік підозрює зраду: «З 3 до 16 серпня 2026 року ви мали статевий контакт із кимось, крім чоловіка?»",
+        "Від Львова до Хмельницького близько трьох годин прямим поїздом, тому до двох звичних форматів тут додається третій. Онлайн-тест VerifEye підходить, коли питання стосується однієї людини. Виїзд спеціаліста з EyeDetect, який ми зазвичай організовуємо за кілька робочих днів, зручний, коли за день треба перевірити кількох людей: потрібне тихе приміщення, а в ньому стіл і розетка. Тест кожен проходить лише за власною письмовою згодою, а перед перевіркою працівників порадьтеся з юристом. Третій варіант — самому поїхати до Львова, де працює наш офіс на вулиці Городоцькій, 45: тоді дата тесту не залежить від графіка виїздів. Ціни онлайн-тесту й виїзду — у блоці нижче, вартість тесту у львівському офісі назве спеціаліст.",
+        "Слово «поліграф» ми вживаємо так само, як ті, хто шукає перевірку на поліграфі в Хмельницькому: як побутову назву детектора брехні. Сам метод у нас інший: EyeDetect і VerifEye оцінюють реакції очей, на людину не кріплять жодних датчиків, а класичного поліграфа ми не пропонуємо.",
+        "Онлайн-тест не прив'язаний до обласного центру: його можна пройти і в Кам'янці-Подільському, і в Сатанові, і в Шепетівці чи Старокостянтинові. Якщо ж на день виїзду ми збираємо кількох людей у Хмельницькому, приїхати можна й звідти. Коротко про три варіанти для Хмельницького:",
+      ],
+      points: [
+        "Онлайн-тест VerifEye: з телефона, з Хмельницького чи будь-якого міста області",
+        "EyeDetect з виїздом: спеціаліст привозить обладнання зі Львова, близько 240 км",
+        "EyeDetect у Львові: наш офіс на вул. Городоцькій, 45, близько трьох годин прямим поїздом",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф в Хмельницком: детектор лжи с выездом",
     seoDescription: "Детектор лжи в Хмельницком: выезд с EyeDetect — 12 000 ₴ под ключ, онлайн-тест VerifEye с телефона уже сегодня, от 2 500 ₴. Отчёт за 5 минут.",
+    updated: "2026-10-09",
     intro: "Хмельницкий — областной центр на западе Украины, примерно в 240 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: прямой поезд Intercity+ идёт около 3 часов, на машине дорога занимает около 4 часов, на автобусе — 4–5 часов.",
     facts: [["От Львова", "≈ 240 км, 3 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
@@ -35,15 +53,31 @@ export const khmelnytskyi = {
     ],
     towns: {
       title: "Каменец-Подольский, Шепетовка и другие города Хмельницкой области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города Хмельницкой области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и в любом месте Украины, кроме Львовской области.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города Хмельницкой области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
       list: "Каменец-Подольский · Шепетовка · Староконстантинов · Сатанов",
       nearbyLabel: "Другие города региона:",
       nearby: [["ternopil", "Тернополь"], ["vinnytsia", "Винница"], ["rivne", "Ровно"]],
+    },
+    local: {
+      title: "Хмельницкий и Подолье: когда уместна проверка на полиграфе",
+      paragraphs: [
+        "Хмельницкий — железнодорожный узел на берегах Южного Буга, в верхнем течении реки. Среди отраслей города — машиностроение, пищевая промышленность и производство строительных материалов, здесь работают университеты и академии. Область вокруг аграрная: больше всего сеют зерновых, выращивают сахарную свёклу и картофель, а на юге, ближе к Днестру, много садов. Есть в Хмельницкой области и туристические, и курортные места: Каменец-Подольский с крепостью и Старым городом, бальнеологический курорт Сатанов на Збруче. Отсюда и примеры того, когда тест может пригодиться.",
+        "Представим три ситуации. У двух братьев из Хмельницкого яблоневый сад на юге области; в сентябре один из них нанимал сборщиков и платил им из общих денег, а второй сомневается в сумме. Вопрос мог бы звучать так: «В сентябре 2026 года вы заплатили сборщикам яблок меньше, чем сказали брату?» Владелица экскурсионного бюро в Каменце-Подольском подозревает, что водитель возит туристов на автомобиле бюро без её ведома и берёт деньги себе: «С 1 мая по 30 сентября 2026 года вы возили туристов на автомобиле бюро без ведома владелицы?» Жена две недели лечилась в санатории, и после её возвращения муж подозревает измену: «С 3 по 16 августа 2026 года у вас был половой контакт с кем-то, кроме мужа?»",
+        "От Львова до Хмельницкого около трёх часов прямым поездом, поэтому к двум привычным форматам здесь добавляется третий. Онлайн-тест VerifEye подходит, когда вопрос касается одного человека. Выезд специалиста с EyeDetect, который мы обычно организуем за несколько рабочих дней, удобен, когда за день нужно проверить нескольких человек: требуется тихое помещение, а в нём стол и розетка. Тест каждый проходит только с собственного письменного согласия, а перед проверкой сотрудников посоветуйтесь с юристом. Третий вариант — самому поехать во Львов, где работает наш офис на улице Городоцкой, 45: тогда дата теста не зависит от графика выездов. Цены онлайн-теста и выезда — в блоке ниже, стоимость теста в львовском офисе назовёт специалист.",
+        "Слово «полиграф» мы употребляем так же, как те, кто ищет проверку на полиграфе в Хмельницком: как бытовое название детектора лжи. Сам метод у нас другой: EyeDetect и VerifEye оценивают реакции глаз, на человека не крепят никаких датчиков, а классический полиграф мы не предлагаем.",
+        "Онлайн-тест не привязан к областному центру: его можно пройти и в Каменце-Подольском, и в Сатанове, и в Шепетовке или Староконстантинове. Если же в день выезда мы собираем нескольких человек в Хмельницком, приехать можно и оттуда. Коротко о трёх вариантах для Хмельницкого:",
+      ],
+      points: [
+        "Онлайн-тест VerifEye: с телефона, из Хмельницкого или любого города области",
+        "EyeDetect с выездом: специалист привозит оборудование из Львова, около 240 км",
+        "EyeDetect во Львове: наш офис на ул. Городоцкой, 45, около трёх часов прямым поездом",
+      ],
     },
   },
   en: {
     seoTitle: "Polygraph in Khmelnytskyi: Lie Detector Test On-Site",
     seoDescription: "Lie detector test in Khmelnytskyi: EyeDetect visit for UAH 12,000 all-inclusive, or the VerifEye phone test today from UAH 2,500. Report in 5 minutes.",
+    updated: "2026-10-09",
     intro: "Khmelnytskyi is a regional centre in western Ukraine, about 240 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the direct Intercity+ train takes about 3 hours, the drive about 4 hours, and the bus 4–5 hours.",
     facts: [["From Lviv", "≈ 240 km, 3 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
@@ -55,10 +89,25 @@ export const khmelnytskyi = {
     ],
     towns: {
       title: "Kamianets-Podilskyi, Shepetivka and other towns in the Khmelnytskyi region",
-      text: "The VerifEye online test can be taken from any town in the Khmelnytskyi region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine outside the Lviv region.",
+      text: "The VerifEye online test can be taken from any town in the Khmelnytskyi region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
       list: "Kamianets-Podilskyi · Shepetivka · Starokostiantyniv · Sataniv",
       nearbyLabel: "Other cities in the region:",
       nearby: [["ternopil", "Ternopil"], ["vinnytsia", "Vinnytsia"], ["rivne", "Rivne"]],
+    },
+    local: {
+      title: "Khmelnytskyi and Podillia: when a lie detector test makes sense",
+      paragraphs: [
+        "Khmelnytskyi is a railway junction on the banks of the Southern Bug, in the river's upper reaches. The city's industries include machine building, food processing and building materials, and it is home to universities and academies. The region around it is agricultural: cereals take up the most land, sugar beet and potatoes are grown, and in the south, closer to the Dniester, there are many orchards. The region also has places for tourists and spa visitors: Kamianets-Podilskyi with its fortress and Old Town, and the spa resort of Sataniv on the Zbruch. Our examples of when a test can help come from here.",
+        "Imagine three situations. Two brothers from Khmelnytskyi own an apple orchard in the south of the region; in September one of them hired the pickers and paid them out of shared money, and the other doubts the amount. The question could be: “In September 2026, did you pay the apple pickers less than you told your brother?” The owner of a tour agency in Kamianets-Podilskyi suspects that the driver takes tourists out in the agency's car without her knowledge and keeps the money: “Between May 1 and September 30, 2026, did you drive tourists in the agency's car without the owner's knowledge?” A wife spent two weeks at a sanatorium for treatment, and after her return her husband suspects infidelity: “Between August 3 and August 16, 2026, did you have sexual contact with anyone other than your husband?”",
+        "Lviv is about three hours from Khmelnytskyi by direct train, so a third format joins the usual two here. The VerifEye online test suits a question about one person. An EyeDetect visit, which we can usually arrange within a few business days, is convenient when several people need testing in one day: the test calls for a quiet space with a table and a socket in it. Each person takes the test only with their own written consent, and you should talk to a lawyer before testing employees. The third option is to make the trip to Lviv yourself, where our office is at 45 Horodotska St.: then the date does not depend on our travel schedule. Prices for the online test and the visit are in the block below; ask a specialist about the cost of a test at the Lviv office.",
+        "We use the word “polygraph” the way people searching for a polygraph test in Khmelnytskyi do: as an everyday name for a lie detector. Our method is different: EyeDetect and VerifEye assess eye reactions, no sensors are attached to the person, and you will not find a classic polygraph with us.",
+        "The online test is not tied to the regional centre: it can be taken in Kamianets-Podilskyi, in Sataniv, in Shepetivka or Starokostiantyniv. And if we gather several people in Khmelnytskyi on a visit day, they can come from those towns too. The three options for Khmelnytskyi in brief:",
+      ],
+      points: [
+        "VerifEye online test: on a phone, from Khmelnytskyi or any town in the region",
+        "EyeDetect visit: a specialist brings the equipment from Lviv, about 240 km",
+        "EyeDetect in Lviv: our office at 45 Horodotska St., about three hours by direct train",
+      ],
     },
   },
 };

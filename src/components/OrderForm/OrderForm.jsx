@@ -15,6 +15,13 @@ import styles from "./OrderForm.module.scss";
 // choice — обов'язковий вибір з кількох варіантів (наприклад, формат безкоштовного тесту):
 //   { title, options: [підписи мовою сторінки], error, leadKey, leadOptions: [підписи українською для заявки] }.
 // showPrivacy — рядок про Політику конфіденційності під кнопкою (у вікні заявки його показує саме вікно).
+//
+// Підписи для ШІ-агентів (декларативний WebMCP): toolname і tooldescription на <form>, toolparamdescription
+// на кожному полі. Це звичайні HTML-атрибути малими літерами: React передає їх у розмітку як є,
+// на вигляд і роботу форми вони не впливають. Тексти англійською, бо їх читає програма, а не людина.
+const TOOL_DESCRIPTION =
+  "Request a consultation or a booking for an EyeDetect lie detector test at the office in Lviv, an on-site visit in Ukraine, or the online VerifEye test taken from a phone. The specialist replies 24/7, usually within 15-30 minutes.";
+
 const OrderForm = ({ dictionary, service = "", compact = true, choice = null, showPrivacy = true, lang: langProp }) => {
   const pathname = usePathname();
   const lang = langProp || langFromPath(pathname);
@@ -62,7 +69,12 @@ const OrderForm = ({ dictionary, service = "", compact = true, choice = null, sh
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className={styles.form}
+      onSubmit={handleSubmit(onSubmit)}
+      toolname="request_eyedetect_consultation"
+      tooldescription={TOOL_DESCRIPTION}
+    >
       {/* Пастка для ботів: приховане поле, людина його не бачить і не заповнює */}
       <input
         type="text"
@@ -70,6 +82,7 @@ const OrderForm = ({ dictionary, service = "", compact = true, choice = null, sh
         autoComplete="off"
         aria-hidden="true"
         style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, width: 0 }}
+        toolparamdescription="Leave this field empty. It is an anti-spam trap: a request with any value here is discarded."
         {...register("website")}
       />
       <div className={styles.inputWrap}>
@@ -101,6 +114,7 @@ const OrderForm = ({ dictionary, service = "", compact = true, choice = null, sh
           aria-invalid={!!errors.name}
           maxLength="30"
           autoComplete="name"
+          toolparamdescription="Name of the person making the request, as the specialist should address them. Required, 2 to 30 characters."
           className={
             dirtyFields.name && !errors.name
               ? `${styles.input} ${styles.successInput}`
@@ -133,6 +147,7 @@ const OrderForm = ({ dictionary, service = "", compact = true, choice = null, sh
           aria-invalid={!!errors.tel}
           maxLength="20"
           autoComplete="tel"
+          toolparamdescription="Phone number with country code for a call back or a reply in a messenger, for example +380 67 123 45 67. Optional."
           className={
             dirtyFields.tel && !errors.tel
               ? `${styles.input} ${styles.successInput}`
@@ -154,6 +169,7 @@ const OrderForm = ({ dictionary, service = "", compact = true, choice = null, sh
           aria-label={dictionary.form.email}
           maxLength="254"
           autoComplete="email"
+          toolparamdescription="Email address for the reply. Optional."
           className={
             errors.email ? `${styles.input} ${styles.errorInput}` : styles.input
           }
@@ -167,6 +183,7 @@ const OrderForm = ({ dictionary, service = "", compact = true, choice = null, sh
           cols="30"
           rows="2"
           placeholder={dictionary.form.textArea}
+          toolparamdescription="Short description of the situation: what needs to be checked, the preferred format (office in Lviv, on-site visit, or online VerifEye test) and the city. Optional."
           {...register("comment")}
         />
       </div>
@@ -179,7 +196,12 @@ const OrderForm = ({ dictionary, service = "", compact = true, choice = null, sh
           <div className={styles.choiceOptions}>
             {choice.options.map((label, i) => (
               <label key={label} className={`${styles.choiceOption} ${format === String(i) ? styles.choiceSelected : ""}`}>
-                <input type="radio" value={String(i)} {...register("format")} />
+                <input
+                  type="radio"
+                  value={String(i)}
+                  toolparamdescription={`Required single choice: ${choice.title} Select exactly one option; this option means: ${label}`}
+                  {...register("format")}
+                />
                 <span>{label}</span>
               </label>
             ))}

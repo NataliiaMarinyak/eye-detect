@@ -20,14 +20,22 @@ const SituationSections = ({ s, lang, others, posts = [], dictionary }) => {
           <Reveal>
             <h2 className={styles.title}>{t.howTitle}</h2>
           </Reveal>
-          <ul className={s.how.length === 4 ? styles.cards2 : styles.cards3}>
+          {/* Три картки стають у три стовпці, чотири — у два (вже з планшета). Шість карток — теж у два,
+              але лише з ноутбука: на планшеті два вузькі стовпці давали надто високі картки. */}
+          <ul className={s.how.length % 2 !== 0 ? styles.cards3 : s.how.length > 4 ? styles.cards2Wide : styles.cards2}>
             {s.how.map((it, i) => (
               <Reveal as="li" key={it.title} delay={i * 0.06} className={styles.card}>
                 <h3 className={styles.cardTitle}>{it.title}</h3>
-                <p className={styles.cardText}>{it.text}</p>
+                {/* text: рядок або список абзаців (довгу картку можна поділити на два абзаци). */}
+                {(Array.isArray(it.text) ? it.text : [it.text]).map((para, k) => (
+                  <p key={k} className={styles.cardText}>{para}</p>
+                ))}
               </Reveal>
             ))}
           </ul>
+          <div className={styles.howAction}>
+            <OpenModalBtn customClass={styles.btnPrimary} title={dictionary.buttons.orderConsultation} service={`EyeDetect · ${s.h1}`} />
+          </div>
         </div>
       </section>
 

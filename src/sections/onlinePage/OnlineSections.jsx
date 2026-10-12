@@ -10,7 +10,8 @@ const SERVICE = { uk: "VerifEye онлайн", ru: "VerifEye онлайн", en: 
 const serviceName = (lang) => SERVICE[lang] || SERVICE.uk;
 
 // Секції сторінки /online. Дані: src/data/pages/onlinePage.js
-const OnlineSections = ({ d, lang, dictionary }) => (
+// children — блок зі сторінки (посилання на міста): виводиться між питаннями й темним блоком замовлення.
+const OnlineSections = ({ d, lang, dictionary, children }) => (
   <>
     {/* Чому справжній */}
     <section className={styles.white}>
@@ -88,6 +89,13 @@ const OnlineSections = ({ d, lang, dictionary }) => (
                   </li>
                 ))}
               </ul>
+              {/* Картка, що радить інший тест, веде на його сторінку (поле link у даних, адреса без мовного префікса).
+                  Звичайне посилання <a>, а не next/link: інакше сторінка тягне в браузер зайві 7 кБ скриптів заради одного посилання. */}
+              {col.link && (
+                <a className={styles.fitLink} href={`${lang === "uk" ? "" : `/${lang}`}${col.link.href}`}>
+                  {col.link.text}
+                </a>
+              )}
             </Reveal>
           ))}
         </div>
@@ -110,6 +118,8 @@ const OnlineSections = ({ d, lang, dictionary }) => (
     </section>
 
     <ContentFaq items={d.faq} lang={lang} />
+
+    {children}
 
     <section className={styles.cta}>
       <div className={`container ${styles.ctaInner}`}>

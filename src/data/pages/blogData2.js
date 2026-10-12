@@ -183,10 +183,9 @@ export const blogPosts2 = [
     date: "2026-09-08",
     situation: "fidelity",
     uk: {
-      title: "Перевірка на вірність на детекторі брехні: як проходить і що отримаєте",
-      seoTitle: "Перевірка на вірність на детекторі брехні: як проходить",
+      title: "Як проходить перевірка на вірність: кроки, питання, час",
       description: "Покроково: від першого дзвінка до звіту. Які питання ставлять на тесті на вірність, скільки це триває, скільки коштує у Львові і онлайн, і що написано у звіті.",
-      h1: "Перевірка на вірність на детекторі брехні: як проходить тест і що ви отримаєте",
+      h1: "Як проходить перевірка на вірність: кроки, питання, час і звіт",
       lead: "Це найчастіша причина звернень до нас. Тому розповідаємо детально, щоб ви знали, що на вас чекає, ще до дзвінка.",
       sections: [
         { h2: "Крок 1. Дзвінок або повідомлення", paragraphs: ["Ви коротко описуєте ситуацію: хто проходитиме тест, що саме турбує, за який період. Ми пояснюємо, чи підходить тест, і пропонуємо формат: кабінет у Львові, виїзд або онлайн з телефона."] },
@@ -202,10 +201,9 @@ export const blogPosts2 = [
       ],
     },
     ru: {
-      title: "Проверка на верность на детекторе лжи: как проходит, какие вопросы, что получите",
-      seoTitle: "Проверка на верность на детекторе лжи: как проходит",
+      title: "Как проходит проверка на верность: шаги, вопросы, время",
       description: "Пошагово: от первого звонка до отчёта. Какие вопросы задают на тесте на верность, сколько это длится, сколько стоит во Львове и онлайн, и что написано в отчёте.",
-      h1: "Проверка на верность на детекторе лжи: как проходит тест и что вы получите",
+      h1: "Как проходит проверка на верность: шаги, вопросы, время и отчёт",
       lead: "Это самая частая причина обращений к нам. Поэтому рассказываем подробно, чтобы вы знали, что вас ждёт, ещё до звонка.",
       sections: [
         { h2: "Шаг 1. Звонок или сообщение", paragraphs: ["Вы коротко описываете ситуацию: кто будет проходить тест, что именно беспокоит, за какой период. Мы объясняем, подходит ли тест, и предлагаем формат: кабинет во Львове, выезд или онлайн с телефона."] },
@@ -221,11 +219,10 @@ export const blogPosts2 = [
       ],
     },
     en: {
-      title: "Fidelity Test on a Lie Detector: How It Works and What You Get",
-      seoTitle: "Fidelity Lie Detector Test: How It Works, What You Get",
+      title: "How a Fidelity Test Works: Steps, Questions, Timing",
       description: "Step by step: from the first call to the report. What questions are asked in a fidelity test, how long it takes, what it costs in Lviv and online, and what the report says.",
       seoDescription: "Step by step, from the first call to the report: fidelity test questions, how long it takes, what it costs in Lviv and online, and what the report says.",
-      h1: "Fidelity Test on a Lie Detector: How the Test Works and What You Get",
+      h1: "How a Fidelity Test Works: Steps, Questions, Timing and the Report",
       lead: "This is the most common reason people contact us. So we describe it in detail, so that you know what to expect before you even call.",
       sections: [
         { h2: "Step 1. A call or a message", paragraphs: ["You briefly describe the situation: who will take the test, what exactly worries you, and over what period. We explain whether the test is suitable and suggest a format: our Lviv office, on-site (we come to you), or online from a phone."] },

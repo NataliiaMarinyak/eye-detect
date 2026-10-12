@@ -29,6 +29,18 @@
   }
 }
 
+// Місто-партнер: три картки (онлайн, кабінет партнера, виїзд до клієнта).
+// На телефоні й планшеті одна під одною, на комп'ютері три в ряд.
+.gridThree {
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .card {
   @include card;
   display: flex;
@@ -82,12 +94,16 @@
   letter-spacing: -0.01em;
 }
 
+// На комп'ютері ціна й кнопка стоять в одному рядку: довга ціна не стискає кнопку,
+// і підпис («Замовити виїзд») лишається в одному рядку.
 .btnPrimary {
   @include buttonPrimary;
 
   @media screen and (min-width: $laptop) {
     width: auto;
     min-width: 180px;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 }
 
@@ -97,6 +113,42 @@
   @media screen and (min-width: $laptop) {
     width: auto;
     min-width: 180px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+// Три картки в ряд (місто-партнер) вужчі за дві: ціна стоїть над кнопкою, кнопка на всю ширину картки.
+// Ціни займають однакову висоту (два рядки), тому лінії й кнопки в трьох картках на одному рівні.
+.gridThree {
+  @media screen and (min-width: $laptop) {
+    .card {
+      padding: 28px 24px;
+    }
+
+    .footer {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .price {
+      line-height: 1.35;
+      min-height: 2.7em;
+    }
+
+    .btnPrimary,
+    .btnSecondary {
+      width: 100%;
+    }
+  }
+
+  // Англійська ціна третьої картки довша за українську й російську: на вузькому ноутбуці (1024–1100 px)
+  // при 19 px вона ставала у три рядки, і лінія над нею стояла вище, ніж у сусідніх картках.
+  // З меншим шрифтом усіх трьох цін вона знову у два рядки; українська й російська сторінки не змінюються.
+  @media screen and (min-width: $laptop) and (max-width: 1100px) {
+    .price:lang(en) {
+      font-size: 17px;
+    }
   }
 }
 
@@ -138,4 +190,15 @@
   line-height: 1.55;
   color: $primary;
   text-align: center;
+}
+
+// Плашка міста-партнера довга (чотири речення з цінами), тому кожне речення стоїть з нового рядка:
+// CityVisitSection.jsx ділить текст на речення, слова не змінюються.
+.noOfficeLine {
+  display: block;
+  text-wrap: balance;
+
+  & + & {
+    margin-top: 6px;
+  }
 }

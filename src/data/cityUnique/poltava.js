@@ -4,10 +4,11 @@ export const poltava = {
   uk: {
     seoTitle: "Поліграф у Полтаві: детектор брехні з виїздом або онлайн",
     seoDescription: "Детектор брехні в Полтаві: виїзд спеціаліста з EyeDetect — 12 000 ₴ під ключ або онлайн-тест VerifEye від 2 500 ₴ уже сьогодні. Звіт за 5 хвилин.",
+    updated: "2026-10-09",
     intro: "Полтава — центр Полтавської області, приблизно за 870 км від Львова. Найшвидший варіант — онлайн-тест VerifEye зі смартфона, його можна пройти вже сьогодні. Для тесту EyeDetect спеціаліст приїжджає зі Львова з обладнанням: найшвидший прямий поїзд іде близько 11 годин, автомобілем дорога займає 11–12 годин без зупинок.",
     facts: [["Від Львова", "≈ 870 км, 11 год поїздом"], ["Виїзд", "12 000 ₴ під ключ"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
-      { q: "Де пройти поліграф у Полтаві?", a: "Офісу в Полтаві немає, тому є два варіанти. Онлайн-тест VerifEye можна пройти вже сьогодні з телефона, у тихій кімнаті вдома чи в офісі. Тест EyeDetect проводимо під час виїзду: спеціаліст приїжджає зі Львова з обладнанням у ваш офіс, готель або іншу тиху кімнату, про яку домовимося заздалегідь." },
+      { q: "Де пройти поліграф у Полтаві?", a: "Офісу в Полтаві немає, тому в самій Полтаві є два варіанти. Онлайн-тест VerifEye можна пройти вже сьогодні з телефона, у тихій кімнаті вдома чи в офісі. Тест EyeDetect проводимо під час виїзду: спеціаліст приїжджає зі Львова з обладнанням у ваш офіс, готель або іншу тиху кімнату, про яку домовимося заздалегідь." },
       { q: "Скільки коштує детектор брехні в Полтаві?", a: "Виїзд спеціаліста з EyeDetect до Полтави коштує 12 000 ₴ під ключ, разом із тестом для однієї людини. Для кількох осіб вартість виїзду ділиться, точну суму назве спеціаліст. Онлайн-тест VerifEye: 2 500 ₴ за одне питання, 4 000 ₴ за три, 6 000 ₴ за шість, без доплат.", replaces: ["price"] },
       { q: "Як швидко спеціаліст може приїхати до Полтави?", a: "Виїзд до Полтави плануємо за 1–2 тижні й поєднуємо з іншими заявками. Дорога зі Львова займає близько 11 годин найшвидшим прямим поїздом або 11–12 годин автомобілем, не рахуючи зупинок. Автобусом довше — у середньому близько 14 годин за розкладами перевізників. Поїзд і час приїзду підбираємо так, щоб не потрапити на комендантську годину. Онлайн-тест VerifEye доступний уже сьогодні.", replaces: ["speed"], sources: [["Укрзалізниця: розклад Львів — Полтава", "https://uz.gov.ua/passengers/timetable/?from_station=23200&to_station=22580&select_time=2&time_from=00&time_to=24&by_route=1"], ["inBus: автобуси Львів — Полтава", "https://inbus.ua/bus-lviv-poltava"], ["Укрінформ: комендантська година на Полтавщині", "https://www.ukrinform.ua/rubric-regions/4162878-na-poltavsini-zminili-trivalist-komendantskoi-godini.html"]] },
       { q: "Чи можна перевірити партнера на зраду в Полтаві?", a: "Так. Тест перевіряє одну конкретну підозру, наприклад зраду за певний період. Його проходить партнер, якого підозрюють, або обидва партнери, кожен окремо. Тест добровільний, за письмовою згодою. Онлайн-тест VerifEye коштує від 2 500 ₴, і чекати на виїзд для нього не потрібно." },
@@ -15,19 +16,31 @@ export const poltava = {
     ],
     towns: {
       title: "Кременчук, Лубни та інші міста Полтавської області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Полтавської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ, як і всюди в Україні, крім Львівської області.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Полтавської області. Виїзд з EyeDetect до інших міст — на тих самих умовах: 12 000 ₴ під ключ.",
       list: "Гадяч · Горішні Плавні · Кременчук · Лубни · Миргород",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["kharkiv", "Харків"], ["dnipro", "Дніпро"], ["cherkasy", "Черкаси"]],
+    },
+    // local: джерела — https://uk.wikipedia.org/wiki/Полтава, https://uk.wikipedia.org/wiki/Полтавська_область, https://uk.wikipedia.org/wiki/Полтава-Київська, https://uk.wikipedia.org/wiki/Кременчук, https://uk.wikipedia.org/wiki/Горішні_Плавні, https://uk.wikipedia.org/wiki/Миргород
+    local: {
+      title: "Полтава між Києвом і Харковом: як пройти перевірку на поліграфі",
+      paragraphs: [
+        "Полтава стоїть на залізничному напрямку й автошляху Київ — Харків, і зі Львова сюди ходить прямий поїзд, без пересадок. Таке розташування дає полтавцям ще один варіант, крім виїзду спеціаліста й онлайн-тесту. Якщо людина, яка проходить тест, буває в Києві у справах, EyeDetect можна пройти там, у кабінеті нашого партнера: сімейна перевірка коштує 8 500 ₴, скринінг і перевірка у справі про крадіжку — від 5 500 ₴. Дату узгоджуємо після заявки, і чекати на приїзд зі Львова не потрібно. А коли питання одне й відповідь потрібна швидко, починати варто з онлайн-тесту VerifEye: він триває 15–20 хвилин, і їхати нікуди не треба.",
+        "Полтавщина живе із землі й надр. Серед найважливіших галузей області — сільське господарство, паливна й харчова промисловість, машинобудування. Кременчук — великий промисловий центр, Горішні Плавні тримаються на видобутку залізної руди, Миргород відомий як курорт. Тому й приклади візьмемо звідси: з господарства, родинних грошей і догляду за старшими. Усі три вигадані, але показують, яким має бути питання: про одну подію, з названим часом, з відповіддю «так» чи «ні».",
+        "Уявімо фермерське господарство під Лубнами. Після жнив на току бракує зерна, а ключі від складу мали троє працівників. Кожному з них можна поставити те саме питання: «З 15 липня до 31 серпня цього року ви вивозили зерно з току без накладної?» Інший приклад: брат позичив братові гроші на трактор без розписки, і тепер один каже, що борг повернув, а другий це заперечує. Питання: «Торік восени ви повернули братові гроші, позичені на трактор?» Буває й так, що літня мама живе в селі під Гадячем, діти — у Полтаві, а її пенсійною карткою користується доглядальниця. Питання для неї: «З 1 червня цього року ви знімали гроші з картки без відома власниці?»",
+        "Для виїзду вистачить тихої кімнати, де є стіл і розетка: це може бути контора господарства, кабінет на підприємстві чи номер у полтавському готелі, про який домовимося наперед. За один приїзд спеціаліст може по черзі протестувати кількох людей, кожного лише за його письмовою згодою; перед перевіркою працівників порадьтеся з юристом. До Кременчука, Лубен, Миргорода, Гадяча чи Горішніх Плавнів приїжджаємо так само, а онлайн-тест можна пройти з будь-якого з цих міст. Ціни на виїзд і онлайн-тест — нижче на цій сторінці.",
+        "У побуті кажуть «пройти поліграф у Полтаві», маючи на увазі будь-який детектор брехні. EyeDetect і VerifEye, якими ми тестуємо, зчитують реакції очей; до тіла нічого не під'єднують, а класичного поліграфа серед наших послуг немає.",
+      ],
     },
   },
   ru: {
     seoTitle: "Полиграф в Полтаве: детектор лжи с выездом или онлайн",
     seoDescription: "Детектор лжи в Полтаве: выезд специалиста с EyeDetect — 12 000 ₴ под ключ или онлайн-тест VerifEye от 2 500 ₴ уже сегодня. Отчёт за 5 минут.",
+    updated: "2026-10-09",
     intro: "Полтава — центр Полтавской области, примерно в 870 км от Львова. Самый быстрый вариант — онлайн-тест VerifEye со смартфона, его можно пройти уже сегодня. Для теста EyeDetect специалист приезжает из Львова с оборудованием: самый быстрый прямой поезд идёт около 11 часов, на машине дорога занимает 11–12 часов без остановок.",
     facts: [["От Львова", "≈ 870 км, 11 ч поездом"], ["Выезд", "12 000 ₴ под ключ"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
-      { q: "Где пройти полиграф в Полтаве?", a: "Офиса в Полтаве нет, поэтому есть два варианта. Онлайн-тест VerifEye можно пройти уже сегодня с телефона, в тихой комнате дома или в офисе. Тест EyeDetect проводим во время выезда: специалист приезжает из Львова с оборудованием в ваш офис, отель или другую тихую комнату, о которой договоримся заранее." },
+      { q: "Где пройти полиграф в Полтаве?", a: "Офиса в Полтаве нет, поэтому в самой Полтаве есть два варианта. Онлайн-тест VerifEye можно пройти уже сегодня с телефона, в тихой комнате дома или в офисе. Тест EyeDetect проводим во время выезда: специалист приезжает из Львова с оборудованием в ваш офис, отель или другую тихую комнату, о которой договоримся заранее." },
       { q: "Сколько стоит детектор лжи в Полтаве?", a: "Выезд специалиста с EyeDetect в Полтаву стоит 12 000 ₴ под ключ, вместе с тестом для одного человека. Для нескольких человек стоимость выезда делится, точную сумму назовёт специалист. Онлайн-тест VerifEye: 2 500 ₴ за один вопрос, 4 000 ₴ за три, 6 000 ₴ за шесть, без доплат.", replaces: ["price"] },
       { q: "Как быстро специалист может приехать в Полтаву?", a: "Выезд в Полтаву планируем за 1–2 недели и объединяем с другими заявками. Дорога из Львова занимает около 11 часов на самом быстром прямом поезде или 11–12 часов на машине, не считая остановок. На автобусе дольше — в среднем около 14 часов по расписаниям перевозчиков. Поезд и время приезда подбираем так, чтобы не попасть на комендантский час. Онлайн-тест VerifEye доступен уже сегодня.", replaces: ["speed"], sources: [["Укрзализныця: расписание Львов — Полтава", "https://uz.gov.ua/passengers/timetable/?from_station=23200&to_station=22580&select_time=2&time_from=00&time_to=24&by_route=1"], ["inBus: автобусы Львов — Полтава", "https://inbus.ua/bus-lviv-poltava"], ["Укринформ: комендантский час на Полтавщине", "https://www.ukrinform.ua/rubric-regions/4162878-na-poltavsini-zminili-trivalist-komendantskoi-godini.html"]] },
       { q: "Можно ли проверить партнёра на измену в Полтаве?", a: "Да. Тест проверяет одно конкретное подозрение, например измену за определённый период. Его проходит партнёр, которого подозревают, или оба партнёра, каждый отдельно. Тест добровольный, с письменного согласия. Онлайн-тест VerifEye стоит от 2 500 ₴, и ждать выезда для него не нужно." },
@@ -35,19 +48,30 @@ export const poltava = {
     ],
     towns: {
       title: "Кременчуг, Лубны и другие города Полтавской области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города Полтавской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ, как и везде в Украине, кроме Львовской области.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города Полтавской области. Выезд с EyeDetect в другие города — на тех же условиях: 12 000 ₴ под ключ.",
       list: "Гадяч · Горишние Плавни · Кременчуг · Лубны · Миргород",
       nearbyLabel: "Другие города региона:",
       nearby: [["kharkiv", "Харьков"], ["dnipro", "Днепр"], ["cherkasy", "Черкассы"]],
+    },
+    local: {
+      title: "Полтава между Киевом и Харьковом: как пройти проверку на полиграфе",
+      paragraphs: [
+        "Полтава стоит на железнодорожном направлении и автодороге Киев — Харьков, и из Львова сюда ходит прямой поезд, без пересадок. Такое расположение даёт полтавчанам ещё один вариант, помимо выезда специалиста и онлайн-теста. Если человек, который проходит тест, бывает в Киеве по делам, EyeDetect можно пройти там, в кабинете нашего партнёра: семейная проверка стоит 8 500 ₴, скрининг и проверка по делу о краже — от 5 500 ₴. Дату согласовываем после заявки, и ждать приезда из Львова не нужно. А когда вопрос один и ответ нужен быстро, начинать стоит с онлайн-теста VerifEye: он длится 15–20 минут, и ехать никуда не нужно.",
+        "Полтавщина живёт землёй и недрами. Среди важнейших отраслей области — сельское хозяйство, топливная и пищевая промышленность, машиностроение. Кременчуг — крупный промышленный центр, Горишние Плавни держатся на добыче железной руды, Миргород известен как курорт. Поэтому и примеры возьмём отсюда: из хозяйства, семейных денег и ухода за старшими. Все три вымышлены, но показывают, каким должен быть вопрос: об одном событии, с названным временем, с ответом «да» либо «нет».",
+        "Представим фермерское хозяйство под Лубнами. После уборки урожая на току не хватает зерна, а ключи от склада были у троих работников. Каждому из них можно задать один и тот же вопрос: «С 15 июля по 31 августа этого года вы вывозили зерно с тока без накладной?» Другой пример: брат одолжил брату деньги на трактор без расписки, и теперь один говорит, что долг вернул, а второй это отрицает. Вопрос: «Прошлой осенью вы вернули брату деньги, одолженные на трактор?» Бывает и так, что пожилая мама живёт в селе под Гадячем, дети — в Полтаве, а её пенсионной картой пользуется сиделка. Вопрос для неё: «С 1 июня этого года вы снимали деньги с карты без ведома владелицы?»",
+        "Для выезда хватит тихой комнаты, где есть стол и розетка: это может быть контора хозяйства, кабинет на предприятии или номер в полтавском отеле, о котором условимся заранее. За один приезд специалист может по очереди протестировать нескольких человек, каждого только с его письменного согласия; перед проверкой сотрудников посоветуйтесь с юристом. В Кременчуг, Лубны, Миргород, Гадяч или Горишние Плавни приезжаем так же, а онлайн-тест можно пройти из любого из этих городов. Цены на выезд и онлайн-тест — ниже на этой странице.",
+        "В быту говорят «пройти полиграф в Полтаве», имея в виду любой детектор лжи. EyeDetect и VerifEye, которыми мы тестируем, считывают реакции глаз; к телу ничего не подключают, а классического полиграфа среди наших услуг нет.",
+      ],
     },
   },
   en: {
     seoTitle: "Lie Detector Test in Poltava: Visit or Online",
     seoDescription: "Lie detector test in Poltava: an EyeDetect visit costs UAH 12,000 all-inclusive, or take the VerifEye online test today from UAH 2,500. Report in 5 minutes.",
+    updated: "2026-10-09",
     intro: "Poltava is the administrative centre of the Poltava region, about 870 km from Lviv. The fastest option is the VerifEye smartphone test, which you can take today. For an EyeDetect test, a specialist travels from Lviv with the equipment: the fastest direct train takes about 11 hours, and the drive takes 11–12 hours without stops.",
     facts: [["From Lviv", "≈ 870 km, 11 h by train"], ["Visit", "UAH 12,000 all-inclusive"], ["Online test", "from UAH 2,500"]],
     faq: [
-      { q: "Where can I take a polygraph test in Poltava?", a: "We have no office in Poltava, so there are two options. You can take the VerifEye online test today on your phone, in a quiet room at home or at work. The EyeDetect test takes place during a visit: a specialist comes from Lviv with the equipment to your office, your hotel or another quiet room we agree on in advance." },
+      { q: "Where can I take a polygraph test in Poltava?", a: "We have no office in Poltava, so in the city itself there are two options. You can take the VerifEye online test today on your phone, in a quiet room at home or at work. The EyeDetect test takes place during a visit: a specialist comes from Lviv with the equipment to your office, your hotel or another quiet room we agree on in advance." },
       { q: "How much does a lie detector test cost in Poltava?", a: "A specialist visit to Poltava with EyeDetect costs UAH 12,000 all-inclusive, test included, for one person. For several people the travel cost is shared; a specialist will tell you the exact amount. VerifEye online test: UAH 2,500 for one question, UAH 4,000 for three, UAH 6,000 for six, with no extra charges.", replaces: ["price"] },
       { q: "How soon can a specialist come to Poltava?", a: "Visits to Poltava are planned 1–2 weeks ahead and combined with other requests. The trip from Lviv takes about 11 hours by the fastest direct train, or 11–12 hours by car, not counting stops. The bus is slower — about 14 hours on average in the carriers' timetables. We choose the train and the arrival time so that we do not arrive during curfew. The VerifEye online test is available today.", replaces: ["speed"], sources: [["Ukrzaliznytsia: Lviv — Poltava timetable", "https://uz.gov.ua/passengers/timetable/?from_station=23200&to_station=22580&select_time=2&time_from=00&time_to=24&by_route=1"], ["inBus: Lviv — Poltava buses", "https://inbus.ua/bus-lviv-poltava"], ["Ukrinform: curfew hours in the Poltava region", "https://www.ukrinform.ua/rubric-regions/4162878-na-poltavsini-zminili-trivalist-komendantskoi-godini.html"]] },
       { q: "Can my partner take a lie detector test for infidelity in Poltava?", a: "Yes. The test checks one specific suspicion, for example infidelity over a certain period. The partner under suspicion takes it, or both partners take separate tests. The test is voluntary and requires written consent. The VerifEye online test costs from UAH 2,500, and there is no need to wait for a visit." },
@@ -55,10 +79,20 @@ export const poltava = {
     ],
     towns: {
       title: "Kremenchuk, Lubny and other towns in the Poltava region",
-      text: "The VerifEye online test can be taken from any town in the Poltava region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive, as anywhere in Ukraine outside the Lviv region.",
+      text: "The VerifEye online test can be taken from any town in the Poltava region. EyeDetect visits to other towns work the same way: UAH 12,000 all-inclusive.",
       list: "Hadiach · Horishni Plavni · Kremenchuk · Lubny · Myrhorod",
       nearbyLabel: "Other cities in the region:",
       nearby: [["kharkiv", "Kharkiv"], ["dnipro", "Dnipro"], ["cherkasy", "Cherkasy"]],
+    },
+    local: {
+      title: "Poltava, between Kyiv and Kharkiv: how to take a polygraph test",
+      paragraphs: [
+        "Poltava sits on the Kyiv–Kharkiv railway and highway, and a direct train runs here from Lviv, with no changes. That location gives people in Poltava one more option besides a specialist visit and the online test. If the person taking the test travels to Kyiv on business, they can take EyeDetect there, at our partner's office: a family test costs UAH 8,500, while screening and a theft-related test cost from UAH 5,500. We agree the date after you send a request, and you do not depend on a trip from Lviv. And when there is one question and the answer is needed quickly, it makes sense to start with the VerifEye online test: it takes 15–20 minutes and requires no travel.",
+        "The Poltava region lives off its land and what lies beneath it. Its key industries include farming, fuel and food production, and machine building. Kremenchuk is a major industrial centre, Horishni Plavni depends on iron ore mining, and Myrhorod is known as a spa resort. So our examples come from the same ground: a farm, family money and care for an elderly parent. All three are made up, but they show what a question should be: about a single event, with the time named, answered with a yes or a no.",
+        "Picture a farm near Lubny. After the harvest, grain is missing from the farm's grain store, and three workers had the keys. Each of them can be asked the same question: “Between July 15 and August 31 this year, did you take grain out of the store without a waybill?” Another example: one brother lent the other money for a tractor with nothing in writing, and now one says the debt was repaid while the other denies it. The question: “Last autumn, did you repay your brother the money you borrowed for the tractor?” Or an elderly mother lives in a village near Hadiach, her children live in Poltava, and a carer uses her pension card. The question for the carer: “Since June 1 this year, have you withdrawn money from the card without its owner's knowledge?”",
+        "For a visit, a quiet room is enough if it has a table and a power socket: the farm office, a room at the company or a hotel room in Poltava that we arrange ahead. In one visit the specialist can test several people in turn, each only with their written consent; talk to a lawyer before testing employees. We travel to Kremenchuk, Lubny, Myrhorod, Hadiach or Horishni Plavni in the same way, and the online test is open to people in any of these towns. Prices for a visit and for the online test are further down this page.",
+        "People say “take a polygraph in Poltava” and mean any lie detector. The two tests we use, EyeDetect and VerifEye, go by the reactions of the eyes; no sensors go on the body, and a classic polygraph is not part of what we offer.",
+      ],
     },
   },
 };
