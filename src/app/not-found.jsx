@@ -32,7 +32,7 @@ export default function RootNotFound() {
               </li>
             ))}
           </ul>
-          <p style={{ marginTop: 32, color: "#475569" }}>Телефон: <a href="tel:+380686833368" style={{ color: "#1e3a8a" }}>+380 (68) 68 333 68</a></p>
+          <p style={{ marginTop: 32, color: "#475569" }}>Телефон: <a href="tel:+380686833368" style={{ color: "#1e3a8a" }}>+380 68 68 333 68</a></p>
         </main>
       </body>
     </html>

@@ -1,6 +1,12 @@
 import Image from "next/image";
 import PriceQuizBtn from "@/components/Buttons/PriceQuizBtn/PriceQuizBtn";
+import { pricingGroups } from "@/data/pricingData";
+import { keepNumbers } from "@/data/pages/cityTexts";
 import styles from "./HeroSection.module.scss";
+
+// Підпис ціни мовою сторінки: перша позиція групи прайсу («private» — тест у кабінеті, «online» — VerifEye).
+const LABEL_KEY = { ru: "priceLabelRus", en: "priceLabelEng" };
+const firstPriceLabel = (groupId, lang) => pricingGroups.find((g) => g.id === groupId)?.items[0]?.[LABEL_KEY[lang] || "priceLabel"] || "";
 
 // Перший екран. Логіка: послуга → задачі клієнта → як це працює → хто проводить і що
 // отримаєте → одна дія з ціною → онлайн як додаткове посилання. Праворуч людина під час тесту.
@@ -8,6 +14,10 @@ import styles from "./HeroSection.module.scss";
 const HeroSection = ({ dictionary }) => {
   const hero = dictionary.heroSection;
   const prefix = dictionary.lang === "uk" ? "" : `/${dictionary.lang}`;
+  // Рядок із ціною під заголовком (рішення власника 22.10.2026): шаблон у словнику, суми з прайсу.
+  const priceLine = hero.priceLine
+    ? keepNumbers(hero.priceLine.replace("{office}", firstPriceLabel("private", dictionary.lang)).replace("{online}", firstPriceLabel("online", dictionary.lang)))
+    : "";
 
   return (
     <section id="hero" className={styles.hero}>
@@ -16,6 +26,14 @@ const HeroSection = ({ dictionary }) => {
         <div className={styles.top}>
           {hero.eyebrow && <p className={styles.eyebrow}>{hero.eyebrow}</p>}
           <h1 className={styles.title}>{hero.h1 || hero.title}</h1>
+          {/* На телефоні кожна ціна з нового рядка, з планшета — один рядок через « · ». */}
+          {priceLine && (
+            <p className={styles.priceLine}>
+              {priceLine.split(" · ").map((part) => (
+                <span key={part} className={styles.pricePart}>{part}</span>
+              ))}
+            </p>
+          )}
         </div>
         <div className={styles.content}>
 

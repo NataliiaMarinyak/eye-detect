@@ -14,7 +14,7 @@ import { getCitySections } from "@/data/pages/citySections";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
 import { getCityData, getAllCities } from "@/helpers/getCityData";
 import { getCityLocative, getCityRegion, getCityDistance, isUaRegion } from "@/helpers/cityMeta";
-import { getCityTexts, fill, keepShortWords, keepHyphens, isPartnerCity } from "@/data/pages/cityTexts";
+import { getCityTexts, fill, keepShortWords, keepHyphens, keepNumbers, isPartnerCity, NEAREST_OFFICE } from "@/data/pages/cityTexts";
 import { getDictionary } from "@/helpers/getDictionary";
 import { getContentFaqJsonLd } from "@/helpers/getContentFaqJsonLd";
 import { buildPageMetadata, breadcrumbsJsonLd } from "@/helpers/buildPageMetadata";
@@ -44,6 +44,13 @@ export async function generateStaticParams() {
 // Відстань для тексту картки з розділювачем тисяч, як у текстах міст: «1 000» (uk, ru), «1,000» (en).
 // Інакше в Харкові поруч стояли б «1 000 км» у вступі і «1000 км» у картці виїзду.
 const formatKm = (km, lang) => (km ? String(km).replace(/\B(?=(\d{3})+(?!\d))/g, lang === "en" ? "," : " ") : "");
+
+// Куди веде рядок «Третій спосіб…» під картками (NEAREST_OFFICE): блок про Львів на головній
+// або блок «Як пройти тест» на сторінці міста-партнера, з мовним префіксом.
+const officeHref = (target, lang) => {
+  const prefix = lang === "uk" ? "" : `/${lang}`;
+  return target === "lviv" ? `${prefix || "/"}#lviv` : `${prefix}/locations/${target}#visit`;
+};
 
 // Дані сторінки міста: локатив («у Києві»), регіон, відстань, заповнені тексти.
 // getCityTexts сам підставляє H1 для міст України і тексти «у партнера» для Києва й Запоріжжя (PARTNER_CITIES).
@@ -141,6 +148,7 @@ const LocationIdPage = async ({ params }) => {
       <PageHero
         eyebrow={t.eyebrow}
         title={keepShortWords(fill(keepHyphens(t.h1), vars))}
+        priceLine={t.heroPrice ? keepNumbers(t.heroPrice) : undefined}
         sub={fill(t.sub[region], vars)}
         facts={t.facts}
         primary={t.visit.cta}
@@ -165,10 +173,22 @@ const LocationIdPage = async ({ params }) => {
       <CityLocalSection local={unique?.local} />
       {/* У місті-партнері кнопка картки відкриває звичайне вікно заявки («EyeDetect у партнера · у Києві»):
           у розрахунку вартості варіанта «кабінет партнера» немає. У решти міст з унікальним текстом — розрахунок. */}
-      <CityVisitSection t={t} region={region} loc={loc} km={km} vars={vars} dictionary={dictionary} lang={lang} quizCta={!!unique && !isPartnerCity(slug)} />
+      <CityVisitSection
+        t={t}
+        region={region}
+        loc={loc}
+        km={km}
+        vars={vars}
+        dictionary={dictionary}
+        lang={lang}
+        quizCta={!!unique && !isPartnerCity(slug)}
+        officeLink={NEAREST_OFFICE[slug] && t.officeLink ? { text: t.officeLink[NEAREST_OFFICE[slug]], href: officeHref(NEAREST_OFFICE[slug], lang) } : undefined}
+      />
       <CityQuizBanner title={fill(t.quiz.title, vars)} text={t.quiz.text} button={t.quiz.button} phoneLabel={t.quiz.phone} />
       {unique ? <CitySituationsSection lang={lang} {...sections.situations} /> : <DynamicServicesSection lang={lang} dictionary={dictionary} slug={slug} />}
-      {unique && <CityCasesSection cases={unique.cases || sections.commonCases} />}
+      {/* Спільний блок «З чим до нас звертаються» прибрано (рішення власника 22.10.2026): він повторював «У яких ситуаціях…».
+          Лишається тільки власний блок міста, якщо він є (зараз лише в Таллінна). */}
+      {unique?.cases && <CityCasesSection cases={unique.cases} />}
       {unique ? <CityTownsSection lang={lang} towns={unique.towns} /> : lang !== "en" && <DynamicTownsSection lang={lang} slug={slug} />}
       <DynamicGuaranteeSection lang={lang} dictionary={dictionary} compact items={getCitySections(lang).guarantee} />
       <ContentFaq items={faq} lang={lang} title={keepShortWords(fill(t.faqTitle, vars))} />

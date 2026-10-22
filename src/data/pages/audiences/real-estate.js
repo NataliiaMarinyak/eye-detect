@@ -27,7 +27,7 @@ export const realEstate = {
       ] },
       { type: "text", title: "Що варто знати керівнику", paragraphs: [
         "Перевірка проходить лише за письмовою згодою працівника, він може відмовитись. Питання стосуються тільки роботи: гроші, документи, клієнти, підрядники. Ми не питаємо про здоров'я, політику, релігію чи приватне життя. Результат в Україні не є доказом у суді, це підстава для внутрішнього рішення чи службового розслідування.",
-        "Для будівельної компанії зручніший виїзд на об'єкт або в офіс: 6–8 осіб за день, потрібна тиха кімната зі столом і розеткою. Виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом. Агенції з кількома менеджерами часто простіше прийти в кабінет у Львові.",
+        "Для будівельної компанії зручніший виїзд на об'єкт або в офіс: 6–8 осіб за день, потрібна тиха кімната зі столом і розеткою. Виїзд по Львівській області — вартість назвемо після заявки, інші області України — 12 000 ₴ під ключ за одну людину, разом із тестом. Агенції з кількома менеджерами часто простіше прийти в кабінет у Львові.",
         "Тест проводить Наталя Мариняк, психолог, сертифікований Converus Test Proctor. Кабінет у Львові, вул. Городоцька, 45. Тест від 5 500 ₴, ціни для бізнесу залежать від кількості осіб, тем і міста, розрахунок надсилаємо того ж дня.",
       ] },
       cta.uk("EyeDetect для забудовника чи агенції нерухомості"),
@@ -56,7 +56,7 @@ export const realEstate = {
       ] },
       { type: "text", title: "Что стоит знать руководителю", paragraphs: [
         "Проверка проходит только с письменного согласия сотрудника, он может отказаться. Вопросы касаются только работы: деньги, документы, клиенты, подрядчики. Мы не спрашиваем о здоровье, политике, религии или частной жизни. Результат в Украине не является доказательством в суде, это основание для внутреннего решения или служебного расследования.",
-        "Для строительной компании удобнее выезд на объект или в офис: 6–8 человек в день, нужна тихая комната со столом и розеткой. Выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом. Агентству с несколькими менеджерами часто проще прийти в кабинет во Львове.",
+        "Для строительной компании удобнее выезд на объект или в офис: 6–8 человек в день, нужна тихая комната со столом и розеткой. Выезд по Львовской области — стоимость назовём после заявки, другие области Украины — 12 000 ₴ под ключ за одного человека, вместе с тестом. Агентству с несколькими менеджерами часто проще прийти в кабинет во Львове.",
         "Тест проводит Наталия Мариняк, психолог, сертифицированный Converus Test Proctor. Кабинет во Львове, ул. Городоцкая, 45. Тест от 5 500 ₴, цены для бизнеса зависят от количества человек, тем и города, расчёт отправляем в тот же день.",
       ] },
       cta.ru("EyeDetect для застройщика или агентства недвижимости"),
@@ -85,7 +85,7 @@ export const realEstate = {
       ] },
       { type: "text", title: "What a manager should know", paragraphs: [
         "Testing is done only with the employee's written consent, and they may refuse. Questions concern work only: money, documents, clients, contractors. We do not ask about health, politics, religion, or private life. In Ukraine the result is not admissible evidence in court; it is grounds for an internal decision or an internal investigation.",
-        "For a construction company, on-site testing at the project or office is more convenient: 6–8 people a day, and we need a quiet room with a table and a power outlet. Travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included. For an agency with a few managers it is often simpler to come to our Lviv office.",
+        "For a construction company, on-site testing at the project or office is more convenient: 6–8 people a day, and we need a quiet room with a table and a power outlet. Travel within the Lviv region is quoted after your request, other regions of Ukraine: UAH 12,000 per person, all-inclusive, test included. For an agency with a few managers it is often simpler to come to our Lviv office.",
         "The test is conducted by Nataliia Marynyak, psychologist, certified Converus Test Proctor. Office in Lviv, 45 Horodotska St. Tests start from UAH 5,500; business pricing depends on the number of people, topics, and city, and we send a quote the same day.",
       ] },
       cta.en("EyeDetect for a developer or real estate agency"),

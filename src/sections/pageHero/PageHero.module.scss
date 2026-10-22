@@ -55,6 +55,19 @@
   }
 }
 
+// Рядок із ціною одразу під заголовком (сторінки міст України).
+.priceLine {
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: $primaryOnDark;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
+
 .sub {
   font-size: 15px;
   line-height: 1.55;
@@ -141,5 +154,18 @@
     justify-self: end;
     width: 100%;
     max-width: 480px;
+  }
+}
+
+// Частини рядка з ціною: на телефоні кожна з нового рядка, з планшета — в один рядок через « · ».
+.pricePart {
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    display: inline;
+
+    & + &::before {
+      content: "\00a0·\00a0"; // нерозривні пробіли: звичайні тут зникали
+    }
   }
 }

@@ -48,7 +48,7 @@ export const businessPage = {
     pricing: {
       title: "Скільки коштує",
       note: "Ціни для бізнесу індивідуальні: залежать від кількості осіб, тем і міста. Напишіть, скільки людей і що потрібно перевірити, і ми надішлемо розрахунок того ж дня.",
-      travel: "Виїзд по Львівській області безкоштовно. Інші області України — 12 000 ₴ під ключ, разом із тестом. За кордоном дорога і приміщення окремо.",
+      travel: "Виїзд по Львівській області — вартість назвемо після заявки. Інші області України — 12 000 ₴ під ключ за одну людину, разом із тестом. За кордоном дорога і приміщення окремо.",
     },
     industries: {
       title: "Рішення для вашої галузі",
@@ -126,7 +126,7 @@ export const businessPage = {
     pricing: {
       title: "Сколько стоит",
       note: "Цены для бизнеса индивидуальные: зависят от количества людей, тем и города. Напишите, сколько людей и что нужно проверить, и мы отправим расчёт в тот же день.",
-      travel: "Выезд по Львовской области бесплатно. Другие области Украины — 12 000 ₴ под ключ, вместе с тестом. За границей дорога и помещение отдельно.",
+      travel: "Выезд по Львовской области — стоимость назовём после заявки. Другие области Украины — 12 000 ₴ под ключ за одного человека, вместе с тестом. За границей дорога и помещение отдельно.",
     },
     industries: {
       title: "Решения для вашей отрасли",
@@ -204,7 +204,7 @@ export const businessPage = {
     pricing: {
       title: "What it costs",
       note: "Business pricing is individual: it depends on the number of people, the topics, and the city. Tell us how many people and what needs to be checked, and we will send a quote the same day.",
-      travel: "Travel within the Lviv region is free. Other regions of Ukraine: UAH 12,000 all-inclusive, test included. Abroad, travel and premises are charged separately.",
+      travel: "Travel within the Lviv region is quoted after your request. Other regions of Ukraine: UAH 12,000 per person, all-inclusive, test included. Abroad, travel and premises are charged separately.",
     },
     industries: {
       title: "Solutions for your industry",

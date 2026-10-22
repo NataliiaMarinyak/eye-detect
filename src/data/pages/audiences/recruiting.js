@@ -22,7 +22,7 @@ export const recruiting = {
       { ...how.uk, tone: undefined, title: "Як проходить EyeDetect" },
       { type: "text", title: "Партнерська модель для агенції", paragraphs: [
         "Агенція перепродає перевірку клієнту як частину пакета або окрему опцію і сама визначає ціну для клієнта. Ми працюємо через агенцію: погоджуємо теми з рекрутером, надсилаємо посилання кандидатам, повертаємо звіти. Ціни для бізнесу індивідуальні і залежать від кількості тестів на місяць. Розрахунок надсилаємо того ж дня.",
-        "Два формати. VerifEye: кандидат проходить тест на своєму смартфоні з будь-якого міста, 15–20 хвилин, точність 84–89%, від 2 500 ₴. EyeDetect: 30–45 хвилин у кабінеті у Львові або з виїздом до клієнта, 6–8 людей за день, точність 86–90%, від 5 500 ₴. Виїзд по Львівській області безкоштовно, інші області України — 12 000 ₴ під ключ, разом із тестом.",
+        "Два формати. VerifEye: кандидат проходить тест на своєму смартфоні з будь-якого міста, 15–20 хвилин, точність 84–89%, від 2 500 ₴. EyeDetect: 30–45 хвилин у кабінеті у Львові або з виїздом до клієнта, 6–8 людей за день, точність 86–90%, від 5 500 ₴. Виїзд по Львівській області — вартість назвемо після заявки, інші області України — 12 000 ₴ під ключ за одну людину, разом із тестом.",
         "Кандидат проходить тест лише за письмовою згодою і може відмовитись. Питання стосуються конкретних фактів і періодів: гроші, майно, документи, робота. Теми здоров'я, політики, релігії та приватного життя не перевіряються. Результат не є доказом у суді, це підстава для кадрового рішення клієнта.",
       ] },
       { type: "table", title: "Який формат обрати", columns: ["", "VerifEye онлайн", "EyeDetect"], rows: [
@@ -52,7 +52,7 @@ export const recruiting = {
       { ...how.ru, tone: undefined, title: "Как проходит EyeDetect" },
       { type: "text", title: "Партнёрская модель для агентства", paragraphs: [
         "Агентство перепродаёт проверку клиенту как часть пакета или отдельную опцию и само определяет цену для клиента. Мы работаем через агентство: согласовываем темы с рекрутером, отправляем ссылки кандидатам, возвращаем отчёты. Цены для бизнеса индивидуальные и зависят от количества тестов в месяц. Расчёт отправляем в тот же день.",
-        "Два формата. VerifEye: кандидат проходит тест на своём смартфоне из любого города, 15–20 минут, точность 84–89%, от 2 500 ₴. EyeDetect: 30–45 минут в кабинете во Львове или с выездом к клиенту, 6–8 человек в день, точность 86–90%, от 5 500 ₴. Выезд по Львовской области бесплатно, другие области Украины — 12 000 ₴ под ключ, вместе с тестом.",
+        "Два формата. VerifEye: кандидат проходит тест на своём смартфоне из любого города, 15–20 минут, точность 84–89%, от 2 500 ₴. EyeDetect: 30–45 минут в кабинете во Львове или с выездом к клиенту, 6–8 человек в день, точность 86–90%, от 5 500 ₴. Выезд по Львовской области — стоимость назовём после заявки, другие области Украины — 12 000 ₴ под ключ за одного человека, вместе с тестом.",
         "Кандидат проходит тест только с письменного согласия и может отказаться. Вопросы касаются конкретных фактов и периодов: деньги, имущество, документы, работа. Темы здоровья, политики, религии и частной жизни не проверяются. Результат не является доказательством в суде, это основание для кадрового решения клиента.",
       ] },
       { type: "table", title: "Какой формат выбрать", columns: ["", "VerifEye онлайн", "EyeDetect"], rows: [
@@ -82,7 +82,7 @@ export const recruiting = {
       { ...how.en, tone: undefined, title: "How EyeDetect works" },
       { type: "text", title: "Partner model for agencies", paragraphs: [
         "The agency resells the screening to the client as part of a package or as a separate option and sets its own price for the client. We work through the agency: we agree on topics with the recruiter, send links to candidates, and return the reports. Business pricing is individual and depends on the number of tests per month. We send a quote the same day.",
-        "Two formats. VerifEye: the candidate takes the test on their own smartphone from any city, 15–20 minutes, 84–89% accuracy, from UAH 2,500. EyeDetect: 30–45 minutes in our Lviv office or on-site at the client, 6–8 people a day, 86–90% accuracy, from UAH 5,500. Travel within the Lviv region is free, other regions of Ukraine: UAH 12,000 all-inclusive, test included.",
+        "Two formats. VerifEye: the candidate takes the test on their own smartphone from any city, 15–20 minutes, 84–89% accuracy, from UAH 2,500. EyeDetect: 30–45 minutes in our Lviv office or on-site at the client, 6–8 people a day, 86–90% accuracy, from UAH 5,500. Travel within the Lviv region is quoted after your request, other regions of Ukraine: UAH 12,000 per person, all-inclusive, test included.",
         "The candidate takes the test only with written consent and may refuse. Questions concern specific facts and periods: money, property, documents, work. Health, politics, religion, and private life are not tested. The result is not admissible evidence in court; it is a basis for the client's hiring decision.",
       ] },
       { type: "table", title: "Which format to choose", columns: ["", "VerifEye online", "EyeDetect"], rows: [

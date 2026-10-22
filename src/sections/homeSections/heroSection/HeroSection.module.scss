@@ -401,3 +401,29 @@
     font-size: 14px;
   }
 }
+
+// Рядок із ціною під заголовком (рішення власника 22.10.2026): на телефоні по центру, з комп'ютера ліворуч, як заголовок.
+.priceLine {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: $primaryOnDark;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+}
+
+// Частини рядка з ціною: на телефоні кожна з нового рядка, з планшета — в один рядок через « · ».
+.pricePart {
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    display: inline;
+
+    & + &::before {
+      content: "\00a0·\00a0"; // нерозривні пробіли: звичайні тут зникали
+    }
+  }
+}

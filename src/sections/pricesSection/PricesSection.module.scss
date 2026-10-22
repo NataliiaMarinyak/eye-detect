@@ -377,3 +377,19 @@
   margin-top: 1px;
   color: $btnBgColor;
 }
+
+// Рядок про партнерів у Києві й Запоріжжі під групою «Виїзд до клієнта».
+.groupNote {
+  margin: 0;
+  padding: 12px 0 14px;
+  border-top: 1px solid $lineColor;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $subTitleColor;
+
+  & a {
+    color: $primary;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

@@ -1,4 +1,4 @@
-// Блок головної сторінки «Детектор брехні у Львові: як пройти тест» (sections/homeSections/homeLvivSection).
+// Блок головної сторінки «Детектор брехні у Львові: адреса, виїзд і ціни» (sections/homeSections/homeLvivSection).
 // Ключі: uk, ru, en. Кожна зміна тексту — одразу в трьох мовах.
 //
 // Звідки факти (нічого не вигадувати, правила — у CLAUDE.md):
@@ -17,7 +17,7 @@ const PREPARE_HREF = "/blog/yak-pidgotuvatysya-do-testu-na-detektori-brekhni";
 
 export const homeLviv = {
   uk: {
-    title: "Детектор брехні у Львові: як пройти тест",
+    title: "Детектор брехні у Львові: адреса, виїзд і ціни",
     cards: [
       {
         id: "polygraph",
@@ -35,15 +35,15 @@ export const homeLviv = {
         paragraphs: [
           "Тести EyeDetect проводимо в кабінеті у Львові, на вулиці Городоцькій, 45. Приймаємо за попереднім записом: зателефонуйте або залиште заявку, відповідаємо цілодобово, протягом 15–30 хвилин.",
           "Спершу разом формулюємо питання, і людина читає їх до тесту. Сам тест триває 30–45 хвилин, увесь візит — близько години. Звіт готовий протягом 5 хвилин після тесту.",
-          "Візьміть окуляри або лінзи, якщо носите: тест проходить із ними. За бажання тест у кабінеті можна пройти анонімно: без імені та фото, лише під номером.",
+          "Візьміть окуляри або лінзи, якщо носите: тест проходить із ними. За бажання тест у кабінеті можна пройти анонімно: письмову згоду ви підписуєте, а в системі й у звіті стоїть лише номер, без імені та фото.",
         ],
         link: { text: "Як підготуватися до тесту", href: PREPARE_HREF },
       },
       {
         id: "region",
-        title: "Львівська область: виїзд безкоштовний",
+        title: "Львівська область: виїзд до вас",
         paragraphs: [
-          "Якщо приїхати до Львова незручно, спеціаліст привозить обладнання сам. По всій Львівській області виїзд безкоштовний: ви платите лише за тест.",
+          "Якщо приїхати до Львова незручно, спеціаліст привозить обладнання сам. Вартість виїзду залежить від міста: спеціаліст назве її після заявки.",
           "Їздимо в Дрогобич, Стрий, Трускавець, Самбір, Борислав та інші міста області. На місці потрібна тиха кімната зі столом, стільцем і розеткою.",
           "За межами області: у Києві й Запоріжжі тест EyeDetect проводять наші партнери у своїх кабінетах, в інші міста України їдемо з обладнанням самі. Онлайн-тест VerifEye працює з будь-якого міста.",
         ],
@@ -53,7 +53,7 @@ export const homeLviv = {
         id: "prices",
         title: "Скільки коштує детектор брехні у Львові",
         paragraphs: [
-          "Ціна залежить від кількості людей і тем перевірки. Нижче фіксовані ціни на типові випадки; точну суму для вашої ситуації назве спеціаліст. По Львівській області доплати за виїзд немає.",
+          "Ціна залежить від кількості людей і тем перевірки. Нижче фіксовані ціни на типові випадки; точну суму для вашої ситуації назве спеціаліст. Ціни нижче — за тест у кабінеті; вартість виїзду по області спеціаліст назве після заявки.",
         ],
         note: "Якщо результат виявиться невизначеним, повторний тест проводимо за наш рахунок.",
         link: { text: "Усі ціни та що входить у вартість", href: "/prices" },
@@ -69,7 +69,7 @@ export const homeLviv = {
     },
   },
   ru: {
-    title: "Детектор лжи во Львове: как пройти тест",
+    title: "Детектор лжи во Львове: адрес, выезд и цены",
     cards: [
       {
         id: "polygraph",
@@ -87,15 +87,15 @@ export const homeLviv = {
         paragraphs: [
           "Тесты EyeDetect проводим в кабинете во Львове, на улице Городоцкой, 45. Принимаем по предварительной записи: позвоните или оставьте заявку, отвечаем круглосуточно, в течение 15–30 минут.",
           "Сначала вместе формулируем вопросы, и человек читает их до теста. Сам тест длится 30–45 минут, весь визит — около часа. Отчёт готов в течение 5 минут после теста.",
-          "Возьмите очки или линзы, если носите: тест проходит с ними. При желании тест в кабинете можно пройти анонимно: без имени и фото, только под номером.",
+          "Возьмите очки или линзы, если носите: тест проходит с ними. При желании тест в кабинете можно пройти анонимно: письменное согласие вы подписываете, а в системе и в отчёте стоит только номер, без имени и фото.",
         ],
         link: { text: "Как подготовиться к тесту", href: PREPARE_HREF },
       },
       {
         id: "region",
-        title: "Львовская область: выезд бесплатный",
+        title: "Львовская область: выезд к вам",
         paragraphs: [
-          "Если приехать во Львов неудобно, специалист привозит оборудование сам. По всей Львовской области выезд бесплатный: вы платите только за тест.",
+          "Если приехать во Львов неудобно, специалист привозит оборудование сам. Стоимость выезда зависит от города: специалист назовёт её после заявки.",
           "Ездим в Дрогобыч, Стрый, Трускавец, Самбор, Борислав и другие города области. На месте нужна тихая комната со столом, стулом и розеткой.",
           "За пределами области: в Киеве и Запорожье тест EyeDetect проводят наши партнёры в своих кабинетах, в другие города Украины едем с оборудованием сами. Онлайн-тест VerifEye работает из любого города.",
         ],
@@ -105,7 +105,7 @@ export const homeLviv = {
         id: "prices",
         title: "Сколько стоит детектор лжи во Львове",
         paragraphs: [
-          "Цена зависит от количества людей и тем проверки. Ниже фиксированные цены на типичные случаи; точную сумму для вашей ситуации назовёт специалист. По Львовской области доплаты за выезд нет.",
+          "Цена зависит от количества людей и тем проверки. Ниже фиксированные цены на типичные случаи; точную сумму для вашей ситуации назовёт специалист. Цены ниже — за тест в кабинете; стоимость выезда по области специалист назовёт после заявки.",
         ],
         note: "Если результат окажется неопределённым, повторный тест проводим за наш счёт.",
         link: { text: "Все цены и что входит в стоимость", href: "/prices" },
@@ -120,7 +120,7 @@ export const homeLviv = {
     },
   },
   en: {
-    title: "Lie detector test in Lviv: how to take it",
+    title: "Lie detector in Lviv: address, visits and prices",
     cards: [
       {
         id: "polygraph",
@@ -138,15 +138,15 @@ export const homeLviv = {
         paragraphs: [
           "EyeDetect tests take place in our Lviv office at 45 Horodotska St. We work by appointment: call or leave a request, we reply 24/7, within 15–30 minutes.",
           "First we formulate the questions together, and the person reads them before the test. The test itself takes 30–45 minutes, the whole visit about an hour. The report is ready within 5 minutes after the test.",
-          "Bring your glasses or contact lenses if you wear them: the test is taken with them on. If you prefer, the test in our office can be taken anonymously: no name or photo, only a number.",
+          "Bring your glasses or contact lenses if you wear them: the test is taken with them on. If you prefer, the test in our office can be taken anonymously: you still sign the written consent, but the system and the report show only a number, with no name or photo.",
         ],
         link: { text: "How to prepare for the test", href: PREPARE_HREF },
       },
       {
         id: "region",
-        title: "Lviv region: travel is free",
+        title: "Lviv region: we come to you",
         paragraphs: [
-          "If coming to Lviv is inconvenient, the specialist brings the equipment to you. Travel is free anywhere in the Lviv region: you pay only for the test.",
+          "If coming to Lviv is inconvenient, the specialist brings the equipment to you. The price of the visit depends on the town: the specialist will quote it after your request.",
           "We travel to Drohobych, Stryi, Truskavets, Sambir, Boryslav and other towns in the region. On site we need a quiet room with a table, a chair and a power outlet.",
           "Outside the region: in Kyiv and Zaporizhzhia the EyeDetect test is run by our partners at their own offices, and we bring the equipment to other cities in Ukraine ourselves. The VerifEye online test works from any city.",
         ],
@@ -156,7 +156,7 @@ export const homeLviv = {
         id: "prices",
         title: "How much a lie detector test costs in Lviv",
         paragraphs: [
-          "The price depends on the number of people and topics tested. Below are fixed prices for typical cases; the specialist will give you the exact amount for your situation. There is no travel surcharge within the Lviv region.",
+          "The price depends on the number of people and topics tested. Below are fixed prices for typical cases; the specialist will give you the exact amount for your situation. The prices below are for a test in our office; the specialist will quote the price of a visit within the region after your request.",
         ],
         note: "If the result is inconclusive, we run the retest at our expense.",
         link: { text: "All prices and what is included", href: "/prices" },

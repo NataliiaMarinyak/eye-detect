@@ -4,7 +4,7 @@
 //   • h1 — заголовок для міст Європи, h1Ua — для міст України (зі словом «поліграф», яке люди шукають);
 //   • coverage — абзац «де є обладнання EyeDetect», лише для міст України;
 //   • partner — заміни для міст зі списку PARTNER_CITIES: там тест EyeDetect проводить партнер
-//     у власному кабінеті (сімейна перевірка 8 500 ₴, скринінг і крадіжка від 5 500 ₴; виїзд до клієнта по місту 8 500 ₴, по області 12 000 ₴), тому речення про виїзд і «офісу немає» звучать інакше.
+//     у власному кабінеті (сімейна перевірка 8 500 ₴, скринінг і крадіжка від 5 500 ₴ за людину; виїзд до клієнта під ключ, разом із тестом: по місту 8 500 ₴, по області 12 000 ₴), тому речення про виїзд і «офісу немає» звучать інакше.
 
 // Міста, де тест EyeDetect проводить наш партнер у власному кабінеті (факт власника, 09.10.2026).
 // Єдине місце зі списком: від нього залежать перший екран, блок «Як пройти тест», шаблонні питання,
@@ -12,11 +12,28 @@
 export const PARTNER_CITIES = ["kyiv", "zaporizhzhia"];
 export const isPartnerCity = (slug) => PARTNER_CITIES.includes(slug);
 
+// Міста, звідки один тест дешевше пройти в кабінеті (нашому у Львові або партнера), ніж замовляти виїзд за 12 000 ₴.
+// Тексти цих міст називають це третім способом; під картками блоку «Як пройти тест» стоїть рядок-посилання officeLink
+// (рішення власника 22.10.2026). Значення — ключ у officeLink: lviv, kyiv або zaporizhzhia.
+export const NEAREST_OFFICE = {
+  lutsk: "lviv",
+  rivne: "lviv",
+  ternopil: "lviv",
+  "ivano-frankivsk": "lviv",
+  khmelnytskyi: "lviv",
+  zhytomyr: "kyiv",
+  chernihiv: "kyiv",
+  poltava: "kyiv",
+  dnipro: "zaporizhzhia",
+};
+
 export const cityTexts = {
   uk: {
     title: "Детектор брехні {loc}: виїзд EyeDetect або онлайн VerifEye",
     h1: "Детектор брехні {loc}: виїзд спеціаліста або тест онлайн сьогодні",
     h1Ua: "Поліграф і детектор брехні {loc}: виїзд або онлайн-тест",
+    // Рядок із ціною на першому екрані міст України (рішення власника 22.10.2026); у міст-партнерів — partner.heroPrice.
+    heroPriceUa: "Онлайн сьогодні — від 2 500 ₴ · виїзд — 12 000 ₴ під ключ за людину",
     sub: {
       "ua-west": "Шукаєте перевірку на поліграфі {loc}? EyeDetect від Converus (США) — детектор брехні за реакціями очей, без датчиків на тілі. Кабінет у Львові, виїзд спеціаліста за домовленістю або онлайн-тест VerifEye з телефона вже сьогодні.",
       "ua-other": "Шукаєте перевірку на поліграфі {loc}? EyeDetect від Converus (США) — детектор брехні за реакціями очей, без датчиків на тілі. Спеціаліст приїжджає з обладнанням, а онлайн-тест VerifEye можна пройти з телефона вже сьогодні.",
@@ -37,23 +54,29 @@ export const cityTexts = {
     visit: {
       title: "Виїзд спеціаліста з EyeDetect",
       text: {
-        "ua-west": "Відстань від Львова — близько {km} км. Приїжджаємо з обладнанням у ваш офіс або домовляємося про тихе приміщення. За день можна перевірити 6–8 осіб.",
-        "ua-other": "Відстань від Львова — близько {km} км, тому виїзд плануємо заздалегідь і поєднуємо з іншими заявками в регіоні. Приїжджаємо з обладнанням у ваш офіс або готель. За день можна перевірити 6–8 осіб.",
+        "ua-west": "Відстань від Львова — близько {km} км. Приїжджаємо з обладнанням у ваш офіс або домовляємося про тихе приміщення. За день можна перевірити 6–8 осіб; суму для кількох осіб назве спеціаліст.",
+        "ua-other": "Відстань від Львова — близько {km} км, тому виїзд плануємо заздалегідь і поєднуємо з іншими заявками в регіоні. Приїжджаємо з обладнанням у ваш офіс або готель. За день можна перевірити 6–8 осіб; суму для кількох осіб назве спеціаліст.",
         eu: "Виїзд плануємо під заявки: збираємо кілька запитів у регіоні і призначаємо дату. Тест {loc} проводимо у вашому офісі або в орендованому приміщенні. За день можна перевірити 6–8 осіб.",
       },
       textNoKm: {
-        "ua-west": "Приїжджаємо з обладнанням у ваш офіс або домовляємося про тихе приміщення. За день можна перевірити 6–8 осіб.",
-        "ua-other": "Виїзд плануємо заздалегідь і поєднуємо з іншими заявками в регіоні. Приїжджаємо з обладнанням у ваш офіс або готель. За день можна перевірити 6–8 осіб.",
+        "ua-west": "Приїжджаємо з обладнанням у ваш офіс або домовляємося про тихе приміщення. За день можна перевірити 6–8 осіб; суму для кількох осіб назве спеціаліст.",
+        "ua-other": "Виїзд плануємо заздалегідь і поєднуємо з іншими заявками в регіоні. Приїжджаємо з обладнанням у ваш офіс або готель. За день можна перевірити 6–8 осіб; суму для кількох осіб назве спеціаліст.",
         eu: "Виїзд плануємо під заявки: збираємо кілька запитів у регіоні і призначаємо дату. Тест проходить у вашому офісі або в орендованому приміщенні. За день можна перевірити 6–8 осіб.",
       },
       price: {
-        "ua-west": "12 000 ₴ під ключ, разом із тестом",
-        "ua-other": "12 000 ₴ під ключ, разом із тестом",
+        "ua-west": "12 000 ₴ під ключ за одну людину, разом із тестом",
+        "ua-other": "12 000 ₴ під ключ за одну людину, разом із тестом",
         eu: "тест від 10 000 ₴ + дорога і приміщення",
       },
       cta: "Замовити виїзд",
     },
     lvivNote: "Ще один варіант: приїхати до Львова, вул. Городоцька, 45. Тест від 5 500 ₴ без доплати за виїзд, дата без прив'язки до інших заявок.",
+    // Рядок-посилання під картками для міст із NEAREST_OFFICE (третій спосіб із текстів цих міст).
+    officeLink: {
+      lviv: "Третій спосіб — приїхати до нашого кабінету у Львові: тест від 5 500 ₴",
+      kyiv: "Третій спосіб — тест у кабінеті партнера в Києві, від 5 500 ₴",
+      zaporizhzhia: "Третій спосіб — тест у кабінеті партнера в Запоріжжі, від 5 500 ₴",
+    },
     faqTitle: "Питання про тест {loc}",
     faq: {
       "ua-west": [
@@ -95,25 +118,26 @@ export const cityTexts = {
     // Заміни для міст-партнерів (PARTNER_CITIES): власного офісу немає, тест проводить партнер у своєму кабінеті.
     partner: {
       title: "Поліграф {loc}: EyeDetect у партнера або онлайн",
-      h1: "Поліграф і детектор брехні {loc}: у партнера або онлайн",
+      h1: "Поліграф і детектор брехні {loc}: у кабінеті партнера або онлайн",
       description: "Детектор брехні {loc}: тест EyeDetect у кабінеті нашого партнера від 5 500 ₴, виїзд до клієнта або онлайн-тест VerifEye з телефона сьогодні, від 2 500 ₴.",
       sub: "Шукаєте перевірку на поліграфі {loc}? EyeDetect від Converus (США) — детектор брехні за реакціями очей, без датчиків на тілі. Тест проводить наш партнер у своєму кабінеті, є й виїзд до клієнта, а онлайн-тест VerifEye можна пройти з телефона вже сьогодні.",
       facts: ["онлайн сьогодні", "EyeDetect у кабінеті партнера", "виїзд до клієнта", "PDF до 5 хвилин"],
-      eyebrow: "У партнера й онлайн",
+      eyebrow: "Кабінет партнера й онлайн",
+      heroPrice: "У кабінеті партнера — від 5 500 ₴ · онлайн — від 2 500 ₴",
       service: "EyeDetect у партнера",
-      noOffice: "Власного офісу {loc} у нас немає. Тест EyeDetect тут проводить наш партнер у своєму кабінеті: сімейна перевірка — 8 500 ₴, скринінг і перевірка у справі про крадіжку — від 5 500 ₴. Виїзд до клієнта: по місту — 8 500 ₴, по області — 12 000 ₴. Онлайн-тест VerifEye доступний уже сьогодні.",
+      noOffice: "Власного офісу {loc} у нас немає. Тест EyeDetect тут проводить наш партнер у своєму кабінеті: сімейна перевірка — 8 500 ₴, скринінг і перевірка у справі про крадіжку — від 5 500 ₴ за людину. Виїзд до клієнта під ключ, разом із тестом: по місту — 8 500 ₴, по області — 12 000 ₴. Онлайн-тест VerifEye доступний уже сьогодні.",
       visit: {
         title: "EyeDetect у кабінеті партнера",
         text: "Тест EyeDetect {loc} проводить наш партнер у власному кабінеті, тож чекати на виїзд зі Львова не потрібно. Питання узгоджуємо заздалегідь, і людина читає їх до тесту. Сам тест триває 30–45 хвилин.",
-        price: "від 5 500 ₴",
+        price: "сімейна — 8 500 ₴ · скринінг і крадіжка — від 5 500 ₴ за людину",
         cta: "Записатися на тест",
       },
       // Третя картка блоку «Як пройти тест», лише для міст-партнерів: виїзд до клієнта. Речення й ціни ті самі,
-      // що в плашці noOffice і в текстах цих міст. Не додавати «під ключ», «разом із тестом» і хто саме їде.
+      // що в плашці noOffice і в текстах цих міст: під ключ, разом із тестом, за одну людину (відповідь власника 22.10.2026). Хто саме їде, не писати.
       // title — ще й назва послуги у вікні заявки («Виїзд до клієнта · у Києві»).
       clientVisit: {
         title: "Виїзд до клієнта",
-        text: "Виїзд до клієнта зручний, коли приїхати до кабінету не виходить. Дату виїзду узгоджуємо після заявки.",
+        text: "Виїзд до клієнта зручний, коли приїхати до кабінету не виходить. Ціна під ключ, разом із тестом, за одну людину. Дату виїзду узгоджуємо після заявки.",
         price: "по місту — 8 500 ₴, по області — 12 000 ₴",
         cta: "Замовити виїзд",
       },
@@ -121,7 +145,8 @@ export const cityTexts = {
       faq: [
         { key: "speed", q: "Як швидко можна пройти тест EyeDetect {loc}?", a: "Дату й час узгоджуємо з партнером, у кабінеті якого проходить тест. Найближчий вільний час назвемо після заявки. Дату виїзду до клієнта теж узгоджуємо після заявки. Онлайн-тест VerifEye доступний уже сьогодні." },
         { key: "room", q: "Де проходить тест EyeDetect {loc}?", a: "У кабінеті нашого партнера: обладнання вже на місці, везти його зі Львова не потрібно. Власного офісу {loc} у нас немає; адресу кабінету повідомляємо під час запису. Можливий і виїзд до клієнта, по місту чи в область." },
-        { key: "price", q: "Скільки коштує тест EyeDetect {loc}?", a: "У кабінеті партнера сімейна перевірка коштує 8 500 ₴, скринінг і перевірка у справі про крадіжку — від 5 500 ₴. Виїзд до клієнта: по місту — 8 500 ₴, по області — 12 000 ₴. Точну суму для вашого випадку назвемо після заявки. Онлайн-тест VerifEye: 2 500 ₴ за одне питання, 4 000 ₴ за три, 6 000 ₴ за шість." },
+        { key: "price", q: "Скільки коштує тест EyeDetect {loc}?", a: "У кабінеті партнера сімейна перевірка коштує 8 500 ₴, скринінг і перевірка у справі про крадіжку — від 5 500 ₴ за людину. Виїзд до клієнта під ключ, разом із тестом, за людину: по місту — 8 500 ₴, по області — 12 000 ₴. Точну суму для вашого випадку назвемо після заявки. Онлайн-тест VerifEye: 2 500 ₴ за одне питання, 4 000 ₴ за три, 6 000 ₴ за шість." },
+        { key: "report", q: "Чи можна купити або підправити результат {loc}?", a: "Ні. Бал рахує алгоритм Converus, і спеціаліст не може його змінити. Після тесту EyeDetect у кабінеті партнера ви в присутності спеціаліста відкриваєте оригінал звіту в кабінеті системи на його комп'ютері й можете порівняти його з PDF." },
         { key: "online", q: "Чи можна пройти тест онлайн, не їдучи до кабінету?", a: "Так, VerifEye з телефона від 2 500 ₴, звіт у PDF до 5 хвилин після тесту. Для перевірок на вірність і кандидатів це часто зручніше." },
       ],
       quiz: {
@@ -134,6 +159,7 @@ export const cityTexts = {
     title: "Детектор лжи {loc}: выезд EyeDetect или онлайн VerifEye",
     h1: "Детектор лжи {loc}: выезд специалиста или тест онлайн сегодня",
     h1Ua: "Полиграф и детектор лжи {loc}: выезд или онлайн-тест",
+    heroPriceUa: "Онлайн сегодня — от 2 500 ₴ · выезд — 12 000 ₴ под ключ за человека",
     sub: {
       "ua-west": "Ищете проверку на полиграфе {loc}? EyeDetect от Converus (США) — детектор лжи по реакциям глаз, без датчиков на теле. Кабинет во Львове, выезд специалиста по договорённости или онлайн-тест VerifEye с телефона уже сегодня.",
       "ua-other": "Ищете проверку на полиграфе {loc}? EyeDetect от Converus (США) — детектор лжи по реакциям глаз, без датчиков на теле. Специалист приезжает с оборудованием, а онлайн-тест VerifEye можно пройти с телефона уже сегодня.",
@@ -153,23 +179,28 @@ export const cityTexts = {
     visit: {
       title: "Выезд специалиста с EyeDetect",
       text: {
-        "ua-west": "Расстояние от Львова — около {km} км. Приезжаем с оборудованием в ваш офис или договариваемся о тихом помещении. За день можно проверить 6–8 человек.",
-        "ua-other": "Расстояние от Львова — около {km} км, поэтому выезд планируем заранее и объединяем с другими заявками в регионе. Приезжаем с оборудованием в ваш офис или отель. За день можно проверить 6–8 человек.",
+        "ua-west": "Расстояние от Львова — около {km} км. Приезжаем с оборудованием в ваш офис или договариваемся о тихом помещении. За день можно проверить 6–8 человек; сумму для нескольких человек назовёт специалист.",
+        "ua-other": "Расстояние от Львова — около {km} км, поэтому выезд планируем заранее и объединяем с другими заявками в регионе. Приезжаем с оборудованием в ваш офис или отель. За день можно проверить 6–8 человек; сумму для нескольких человек назовёт специалист.",
         eu: "Выезд планируем под заявки: собираем несколько запросов в регионе и назначаем дату. Тест {loc} проводим в вашем офисе или в арендованном помещении. За день можно проверить 6–8 человек.",
       },
       textNoKm: {
-        "ua-west": "Приезжаем с оборудованием в ваш офис или договариваемся о тихом помещении. За день можно проверить 6–8 человек.",
-        "ua-other": "Выезд планируем заранее и объединяем с другими заявками в регионе. Приезжаем с оборудованием в ваш офис или отель. За день можно проверить 6–8 человек.",
+        "ua-west": "Приезжаем с оборудованием в ваш офис или договариваемся о тихом помещении. За день можно проверить 6–8 человек; сумму для нескольких человек назовёт специалист.",
+        "ua-other": "Выезд планируем заранее и объединяем с другими заявками в регионе. Приезжаем с оборудованием в ваш офис или отель. За день можно проверить 6–8 человек; сумму для нескольких человек назовёт специалист.",
         eu: "Выезд планируем под заявки: собираем несколько запросов в регионе и назначаем дату. Тест проходит в вашем офисе или в арендованном помещении. За день можно проверить 6–8 человек.",
       },
       price: {
-        "ua-west": "12 000 ₴ под ключ, вместе с тестом",
-        "ua-other": "12 000 ₴ под ключ, вместе с тестом",
+        "ua-west": "12 000 ₴ под ключ за одного человека, вместе с тестом",
+        "ua-other": "12 000 ₴ под ключ за одного человека, вместе с тестом",
         eu: "тест от 10 000 ₴ + дорога и помещение",
       },
       cta: "Заказать выезд",
     },
     lvivNote: "Ещё один вариант: приехать во Львов, ул. Городоцкая, 45. Тест от 5 500 ₴ без доплаты за выезд, дата без привязки к другим заявкам.",
+    officeLink: {
+      lviv: "Третий способ — приехать в наш кабинет во Львове: тест от 5 500 ₴",
+      kyiv: "Третий способ — тест в кабинете партнёра в Киеве, от 5 500 ₴",
+      zaporizhzhia: "Третий способ — тест в кабинете партнёра в Запорожье, от 5 500 ₴",
+    },
     faqTitle: "Вопросы о тесте {loc}",
     faq: {
       "ua-west": [
@@ -209,29 +240,31 @@ export const cityTexts = {
     ctaText: "Оставьте заявку или позвоните. Ответим круглосуточно, в течение 15–30 минут.",
     partner: {
       title: "Полиграф {loc}: EyeDetect у партнёра или онлайн",
-      h1: "Полиграф и детектор лжи {loc}: у партнёра или онлайн",
+      h1: "Полиграф и детектор лжи {loc}: в кабинете партнёра или онлайн",
       description: "Детектор лжи {loc}: тест EyeDetect в кабинете нашего партнёра от 5 500 ₴, выезд к клиенту или онлайн-тест VerifEye с телефона сегодня, от 2 500 ₴.",
       sub: "Ищете проверку на полиграфе {loc}? EyeDetect от Converus (США) — детектор лжи по реакциям глаз, без датчиков на теле. Тест проводит наш партнёр в своём кабинете, есть и выезд к клиенту, а онлайн-тест VerifEye можно пройти с телефона уже сегодня.",
       facts: ["онлайн сегодня", "EyeDetect в кабинете партнёра", "выезд к клиенту", "PDF до 5 минут"],
-      eyebrow: "У партнёра и онлайн",
+      eyebrow: "Кабинет партнёра и онлайн",
+      heroPrice: "В кабинете партнёра — от 5 500 ₴ · онлайн — от 2 500 ₴",
       service: "EyeDetect у партнёра",
-      noOffice: "Собственного офиса {loc} у нас нет. Тест EyeDetect здесь проводит наш партнёр в своём кабинете: семейная проверка — 8 500 ₴, скрининг и проверка по делу о краже — от 5 500 ₴. Выезд к клиенту: по городу — 8 500 ₴, по области — 12 000 ₴. Онлайн-тест VerifEye доступен уже сегодня.",
+      noOffice: "Собственного офиса {loc} у нас нет. Тест EyeDetect здесь проводит наш партнёр в своём кабинете: семейная проверка — 8 500 ₴, скрининг и проверка по делу о краже — от 5 500 ₴ за человека. Выезд к клиенту под ключ, вместе с тестом: по городу — 8 500 ₴, по области — 12 000 ₴. Онлайн-тест VerifEye доступен уже сегодня.",
       visit: {
         title: "EyeDetect в кабинете партнёра",
         text: "Тест EyeDetect {loc} проводит наш партнёр в собственном кабинете, поэтому ждать выезда из Львова не нужно. Вопросы согласовываем заранее, и человек читает их до теста. Сам тест длится 30–45 минут.",
-        price: "от 5 500 ₴",
+        price: "семейная — 8 500 ₴ · скрининг и кража — от 5 500 ₴ за человека",
         cta: "Записаться на тест",
       },
       clientVisit: {
         title: "Выезд к клиенту",
-        text: "Выезд к клиенту удобен, когда приехать в кабинет не получается. Дату выезда согласовываем после заявки.",
+        text: "Выезд к клиенту удобен, когда приехать в кабинет не получается. Цена под ключ, вместе с тестом, за одного человека. Дату выезда согласовываем после заявки.",
         price: "по городу — 8 500 ₴, по области — 12 000 ₴",
         cta: "Заказать выезд",
       },
       faq: [
         { key: "speed", q: "Как быстро можно пройти тест EyeDetect {loc}?", a: "Дату и время согласовываем с партнёром, в кабинете которого проходит тест. Ближайшее свободное время назовём после заявки. Дату выезда к клиенту тоже согласовываем после заявки. Онлайн-тест VerifEye доступен уже сегодня." },
         { key: "room", q: "Где проходит тест EyeDetect {loc}?", a: "В кабинете нашего партнёра: оборудование уже на месте, везти его из Львова не нужно. Собственного офиса {loc} у нас нет; адрес кабинета сообщаем при записи. Возможен и выезд к клиенту, по городу или в область." },
-        { key: "price", q: "Сколько стоит тест EyeDetect {loc}?", a: "В кабинете партнёра семейная проверка стоит 8 500 ₴, скрининг и проверка по делу о краже — от 5 500 ₴. Выезд к клиенту: по городу — 8 500 ₴, по области — 12 000 ₴. Точную сумму для вашего случая назовём после заявки. Онлайн-тест VerifEye: 2 500 ₴ за один вопрос, 4 000 ₴ за три, 6 000 ₴ за шесть." },
+        { key: "price", q: "Сколько стоит тест EyeDetect {loc}?", a: "В кабинете партнёра семейная проверка стоит 8 500 ₴, скрининг и проверка по делу о краже — от 5 500 ₴ за человека. Выезд к клиенту под ключ, вместе с тестом, за человека: по городу — 8 500 ₴, по области — 12 000 ₴. Точную сумму для вашего случая назовём после заявки. Онлайн-тест VerifEye: 2 500 ₴ за один вопрос, 4 000 ₴ за три, 6 000 ₴ за шесть." },
+        { key: "report", q: "Можно ли купить или подправить результат {loc}?", a: "Нет. Балл считает алгоритм Converus, и специалист не может его изменить. После теста EyeDetect в кабинете партнёра вы в присутствии специалиста открываете оригинал отчёта в кабинете системы на его компьютере и можете сравнить его с PDF." },
         { key: "online", q: "Можно ли пройти тест онлайн, не приезжая в кабинет?", a: "Да, VerifEye с телефона от 2 500 ₴, отчёт в PDF до 5 минут после теста. Для проверок на верность и кандидатов это часто удобнее." },
       ],
       quiz: {
@@ -244,6 +277,7 @@ export const cityTexts = {
     title: "Lie detector {loc}: EyeDetect on-site visit or VerifEye online",
     h1: "Lie detector {loc}: specialist visit or online test today",
     h1Ua: "Lie detector test {loc}: on-site visit or online",
+    heroPriceUa: "Online today from UAH 2,500 · on-site visit UAH 12,000 per person, all-inclusive",
     sub: {
       "ua-west": "Looking for a polygraph test {loc}? EyeDetect by Converus (USA) is a lie detector that reads eye reactions, with no sensors attached to the body. Office in Lviv, visits to {city} by arrangement, or the VerifEye online test from your phone today.",
       "ua-other": "Looking for a polygraph test {loc}? EyeDetect by Converus (USA) is a lie detector that reads eye reactions, with no sensors attached to the body. A specialist brings the equipment to {city}, or you can take the VerifEye online test from your phone today.",
@@ -263,23 +297,28 @@ export const cityTexts = {
     visit: {
       title: "Specialist visit with EyeDetect",
       text: {
-        "ua-west": "{city} is about {km} km from Lviv. We bring the equipment to your office or arrange a quiet room. 6–8 people can be tested in a day.",
-        "ua-other": "{city} is about {km} km from Lviv, so we plan the trip in advance and combine it with other requests in the region. We bring the equipment to your office or hotel. 6–8 people can be tested in a day.",
+        "ua-west": "{city} is about {km} km from Lviv. We bring the equipment to your office or arrange a quiet room. 6–8 people can be tested in a day; for several people the specialist will quote the total.",
+        "ua-other": "{city} is about {km} km from Lviv, so we plan the trip in advance and combine it with other requests in the region. We bring the equipment to your office or hotel. 6–8 people can be tested in a day; for several people the specialist will quote the total.",
         eu: "Visits to {city} are scheduled around requests: we collect several requests in the region and set a date. The test takes place in your office or a rented room. 6–8 people can be tested in a day.",
       },
       textNoKm: {
-        "ua-west": "We bring the equipment to your office or arrange a quiet room. 6–8 people can be tested in a day.",
-        "ua-other": "We plan the trip in advance and combine it with other requests in the region. We bring the equipment to your office or hotel. 6–8 people can be tested in a day.",
+        "ua-west": "We bring the equipment to your office or arrange a quiet room. 6–8 people can be tested in a day; for several people the specialist will quote the total.",
+        "ua-other": "We plan the trip in advance and combine it with other requests in the region. We bring the equipment to your office or hotel. 6–8 people can be tested in a day; for several people the specialist will quote the total.",
         eu: "Visits are scheduled around requests: we collect several requests in the region and set a date. The test takes place in your office or a rented room. 6–8 people can be tested in a day.",
       },
       price: {
-        "ua-west": "UAH 12,000 all-inclusive, test included",
-        "ua-other": "UAH 12,000 all-inclusive, test included",
+        "ua-west": "UAH 12,000 per person, all-inclusive, test included",
+        "ua-other": "UAH 12,000 per person, all-inclusive, test included",
         eu: "test from UAH 10,000 + travel and venue",
       },
       cta: "Request a visit",
     },
     lvivNote: "Another option: come to Lviv, 45 Horodotska St. Test from UAH 5,500 with no travel surcharge, and the date does not depend on other requests.",
+    officeLink: {
+      lviv: "A third option: come to our office in Lviv, test from UAH 5,500",
+      kyiv: "A third option: a test at our partner's office in Kyiv, from UAH 5,500",
+      zaporizhzhia: "A third option: a test at our partner's office in Zaporizhzhia, from UAH 5,500",
+    },
     faqTitle: "Questions about the test {loc}",
     faq: {
       "ua-west": [
@@ -324,24 +363,26 @@ export const cityTexts = {
       sub: "Looking for a polygraph test {loc}? EyeDetect by Converus (USA) is a lie detector that reads eye reactions, with no sensors attached to the body. Our partner runs the test at the partner's own office, a visit to the client is also available, and the VerifEye online test can be taken from your phone today.",
       facts: ["online today", "EyeDetect at a partner office", "visit to the client", "PDF within 5 minutes"],
       eyebrow: "Partner office and online",
+      heroPrice: "Partner office from UAH 5,500 · online from UAH 2,500",
       service: "EyeDetect at a partner office",
-      noOffice: "We have no office of our own {loc}. Here the EyeDetect test is run by our partner at the partner's own office: a family test costs UAH 8,500; screening and a theft-related test cost from UAH 5,500. A visit to the client: UAH 8,500 within the city, UAH 12,000 in the region. The VerifEye online test is available today.",
+      noOffice: "We have no office of our own {loc}. Here the EyeDetect test is run by our partner at the partner's own office: a family test costs UAH 8,500; screening and a theft-related test cost from UAH 5,500 per person. A visit to the client, all-inclusive with the test: UAH 8,500 within the city, UAH 12,000 in the region. The VerifEye online test is available today.",
       visit: {
         title: "EyeDetect at a partner's office",
         text: "In {city}, the EyeDetect test is run by our partner at the partner's own office, so there is no need to wait for a visit from Lviv. We agree the questions in advance, and the person reads them before the test. The test itself takes 30–45 minutes.",
-        price: "from UAH 5,500",
+        price: "family test UAH 8,500 · screening and theft from UAH 5,500 per person",
         cta: "Book a test",
       },
       clientVisit: {
         title: "Visit to the client",
-        text: "A visit to the client is convenient when coming to the office is not possible. The date of the visit is agreed after you send a request.",
+        text: "A visit to the client is convenient when coming to the office is not possible. The price is all-inclusive, with the test, per person. The date of the visit is agreed after you send a request.",
         price: "UAH 8,500 within the city, UAH 12,000 in the region",
         cta: "Request a visit",
       },
       faq: [
         { key: "speed", q: "How soon can I take the EyeDetect test {loc}?", a: "We agree the date and time with the partner whose office hosts the test, and tell you the nearest available slot after you send a request. The date of a visit to the client is also agreed after you send a request. The VerifEye online test is available today." },
         { key: "room", q: "Where does the EyeDetect test take place {loc}?", a: "At our partner's office: the equipment is already there, so nothing has to be brought from Lviv. We have no office of our own {loc}; you get the address when you book. A visit to the client, within the city or in the region, is also possible." },
-        { key: "price", q: "How much does the EyeDetect test cost {loc}?", a: "At the partner's office a family test costs UAH 8,500; screening and a theft-related test cost from UAH 5,500. A visit to the client: UAH 8,500 within the city, UAH 12,000 in the region. We will tell you the exact amount for your case after you send a request. VerifEye online test: UAH 2,500 for one question, UAH 4,000 for three, UAH 6,000 for six." },
+        { key: "price", q: "How much does the EyeDetect test cost {loc}?", a: "At the partner's office a family test costs UAH 8,500; screening and a theft-related test cost from UAH 5,500 per person. A visit to the client, all-inclusive with the test, per person: UAH 8,500 within the city, UAH 12,000 in the region. We will tell you the exact amount for your case after you send a request. VerifEye online test: UAH 2,500 for one question, UAH 4,000 for three, UAH 6,000 for six." },
+        { key: "report", q: "Can the result be bought or adjusted {loc}?", a: "No. The score is calculated by the Converus algorithm, and the examiner cannot change it. After an EyeDetect test at the partner's office you open the original report in the system dashboard on the examiner's computer, in the examiner's presence, and can compare it with the PDF." },
         { key: "online", q: "Can the test be taken online without going to the office?", a: "Yes, VerifEye from a phone from UAH 2,500, PDF report within 5 minutes after the test. For fidelity checks and job candidates this is often more convenient." },
       ],
       quiz: {
@@ -363,7 +404,7 @@ const forUaRegions = (value) => Object.fromEntries(UA_REGIONS.map((r) => [r, val
 export const getCityTexts = (lang, slug, region) => {
   const base = cityTexts[lang] || cityTexts.uk;
   if (region === "eu") return base;
-  const ua = { ...base, h1: base.h1Ua };
+  const ua = { ...base, h1: base.h1Ua, heroPrice: base.heroPriceUa };
   if (!isPartnerCity(slug)) return ua;
   const p = base.partner;
   return {
@@ -373,6 +414,7 @@ export const getCityTexts = (lang, slug, region) => {
     description: p.description,
     facts: p.facts,
     eyebrow: p.eyebrow,
+    heroPrice: p.heroPrice,
     service: p.service,
     noOffice: p.noOffice,
     sub: { ...base.sub, ...forUaRegions(p.sub) },

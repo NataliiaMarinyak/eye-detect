@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal/Reveal";
 import OpenModalBtn from "@/components/Buttons/OpenModalBtn/OpenModalBtn";
 import ContentFaq from "@/components/ContentFaq/ContentFaq";
 import { i18n } from "@/dictionaries/i18n.config";
+import { keepNumbers } from "@/data/pages/cityTexts";
 import styles from "./SituationSections.module.scss";
 
 const localHref = (lang, path) => (lang === i18n.defaultLocale ? path : `/${lang}${path}`);
@@ -62,7 +63,7 @@ const SituationSections = ({ s, lang, others, posts = [], dictionary }) => {
         <div className={`container ${styles.container}`}>
           <Reveal>
             <h2 className={styles.title}>{t.formatTitle}</h2>
-            <p className={styles.subTitle}>{t.priceNote}</p>
+            <p className={styles.subTitle}>{keepNumbers(t.priceNote)}</p>
           </Reveal>
           <ul className={styles.formats}>
             {[t.online, t.office].map((f, i) => (

@@ -4,7 +4,7 @@ export const socialMediaData = [
     type: "phone",
     href: "tel:+380686833368",
     icon: "/sprite.svg#icon-call",
-    contact: "+380 (68) 68 333 68",
+    contact: "+380 68 68 333 68",
   },
   {
     name: "telegram",

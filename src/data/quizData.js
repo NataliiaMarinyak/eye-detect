@@ -266,7 +266,7 @@ export const estimateQuiz = (branch, idx) => {
   const parts = [];
   if (group) parts.push("від " + fmt(per) + " за людину, група " + (people === 3 ? "2–5" : "6+"));
   else parts.push(fmt(sum), "зі знижкою " + fmt(Math.max(0, sum - P.siteDiscount)));
-  if (format === 2) parts.push("виїзд: Львівська обл. безкоштовно, інші області 12 000 ₴ під ключ");
+  if (format === 2) parts.push("виїзд: Львівська обл. — ціна за домовленістю, інші області 12 000 ₴ під ключ за людину");
   if (threeQ) parts.push("до 3 питань");
   if (format === 3) parts.push("формат не обрано");
   return parts.join("; ");

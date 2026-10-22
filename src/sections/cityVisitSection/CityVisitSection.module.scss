@@ -202,3 +202,26 @@
     margin-top: 6px;
   }
 }
+
+// Рядок-посилання «Третій спосіб…» під картками (міста з NEAREST_OFFICE).
+.officeLink {
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+
+  & a {
+    color: $primary;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  & a:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+// Кілька цін в одній картці: кожна з нового рядка.
+.priceLine {
+  display: block;
+}

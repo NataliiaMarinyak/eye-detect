@@ -1,6 +1,6 @@
 // Унікальний контент сторінки Києва (uk/ru/en). Закон — з перевірених фактів на 15.09.2026; випадки — спільний блок.
 // Місто-партнер (PARTNER_CITIES у data/pages/cityTexts.js, факт власника від 09.10.2026): тест EyeDetect проводить
-// партнер у власному кабінеті: сімейна перевірка 8 500 ₴, скринінг і крадіжка від 5 500 ₴. Виїзд до клієнта: по Києву 8 500 ₴ (без «під ключ»), по області 12 000 ₴. Адресу й назву партнера тут не пишемо.
+// партнер у власному кабінеті: сімейна перевірка 8 500 ₴, скринінг і крадіжка від 5 500 ₴. Виїзд до клієнта під ключ, разом із тестом, за людину: по Києву 8 500 ₴, по області 12 000 ₴ (відповіді власника 22.10.2026). Адресу й назву партнера тут не пишемо.
 // faq[].replaces — ключі шаблонних питань (cityTexts faq), які це питання замінює.
 export const kyiv = {
   uk: {
@@ -11,7 +11,7 @@ export const kyiv = {
     facts: [["У кабінеті партнера", "від 5 500 ₴"], ["Виїзд до клієнта", "по місту 8 500 ₴, по області 12 000 ₴"], ["Онлайн-тест", "від 2 500 ₴"]],
     faq: [
       { q: "Де пройти поліграф у Києві?", a: "Власного офісу в Києві у нас немає, але є три варіанти. Онлайн-тест VerifEye можна пройти вже сьогодні з телефона, у тихій кімнаті вдома чи в офісі. Тест EyeDetect проводить наш партнер у своєму кабінеті в Києві; адресу кабінету повідомляємо під час запису. Третій варіант — виїзд до клієнта, по місту або в міста області.", replaces: ["room"] },
-      { q: "Скільки коштує перевірка на поліграфі в Києві?", a: "У кабінеті партнера в Києві сімейна перевірка, наприклад на вірність, коштує 8 500 ₴, а скринінг кандидатів і працівників та перевірка у справі про крадіжку — від 5 500 ₴. Виїзд до клієнта: по Києву — 8 500 ₴, по Київській області — 12 000 ₴. Точну суму для вашого випадку назвемо після заявки. Онлайн-тест VerifEye: 2 500 ₴ за одне питання, 4 000 ₴ за три, 6 000 ₴ за шість, без доплат.", replaces: ["price"] },
+      { q: "Скільки коштує перевірка на поліграфі в Києві?", a: "У кабінеті партнера в Києві сімейна перевірка, наприклад на вірність, коштує 8 500 ₴, а скринінг кандидатів і працівників та перевірка у справі про крадіжку — від 5 500 ₴ за людину. Виїзд до клієнта під ключ, разом із тестом, за людину: по Києву — 8 500 ₴, по Київській області — 12 000 ₴. Точну суму для вашого випадку назвемо після заявки. Онлайн-тест VerifEye: 2 500 ₴ за одне питання, 4 000 ₴ за три, 6 000 ₴ за шість, без доплат.", replaces: ["price"] },
       { q: "Як швидко можна пройти тест у Києві?", a: "Онлайн-тест VerifEye доступний уже сьогодні. Дату й час тесту EyeDetect узгоджуємо з партнером, у кабінеті якого він проходить; найближчий вільний час назвемо після заявки. Дату виїзду до клієнта теж узгоджуємо після заявки.", replaces: ["speed"] },
       { q: "Чи можна пройти поліграф на зраду в Києві?", a: "Так. Тест перевіряє одну конкретну підозру, наприклад зраду за певний період. Його проходить партнер, якого підозрюють, або обидва партнери, кожен окремо. Тест добровільний, за письмовою згодою. Онлайн-тест VerifEye коштує від 2 500 ₴, і їхати для нього нікуди не потрібно." },
       { q: "Чи можна перевірити працівників на поліграфі в Києві?", a: "Працівники можуть пройти тест EyeDetect у кабінеті нашого партнера в Києві або з виїздом до вас, а кандидати — онлайн-тест VerifEye з телефона. Тест проходить лише людина, яка дала письмову згоду. Для перевірки працівників і кандидатів правила суворіші, ніж для приватного тесту, тому перед такою перевіркою порадьтеся з юристом." },
@@ -19,7 +19,7 @@ export const kyiv = {
     ],
     towns: {
       title: "Біла Церква, Бровари та інші міста Київської області",
-      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Київської області. Виїзд до клієнта по області коштує 12 000 ₴ під ключ. Тест EyeDetect можна пройти й у кабінеті нашого партнера в Києві.",
+      text: "Онлайн-тест VerifEye можна пройти з будь-якого міста Київської області. Виїзд до клієнта по області коштує 12 000 ₴ під ключ за людину. Тест EyeDetect можна пройти й у кабінеті нашого партнера в Києві.",
       list: "Березань · Біла Церква · Бориспіль · Бровари · Буча · Васильків · Ірпінь · Обухів · Переяслав · Ржищів · Славутич · Фастів",
       nearbyLabel: "Інші міста регіону:",
       nearby: [["zhytomyr", "Житомир"], ["chernihiv", "Чернігів"], ["cherkasy", "Черкаси"]],
@@ -48,7 +48,7 @@ export const kyiv = {
     facts: [["В кабинете партнёра", "от 5 500 ₴"], ["Выезд к клиенту", "по городу 8 500 ₴, по области 12 000 ₴"], ["Онлайн-тест", "от 2 500 ₴"]],
     faq: [
       { q: "Где пройти полиграф в Киеве?", a: "Собственного офиса в Киеве у нас нет, но есть три варианта. Онлайн-тест VerifEye можно пройти уже сегодня с телефона, в тихой комнате дома или в офисе. Тест EyeDetect проводит наш партнёр в своём кабинете в Киеве; адрес кабинета сообщаем при записи. Третий вариант — выезд к клиенту, по городу или в города области.", replaces: ["room"] },
-      { q: "Сколько стоит проверка на полиграфе в Киеве?", a: "В кабинете партнёра в Киеве семейная проверка, например на верность, стоит 8 500 ₴, а скрининг кандидатов и сотрудников и проверка по делу о краже — от 5 500 ₴. Выезд к клиенту: по Киеву — 8 500 ₴, по Киевской области — 12 000 ₴. Точную сумму для вашего случая назовём после заявки. Онлайн-тест VerifEye: 2 500 ₴ за один вопрос, 4 000 ₴ за три, 6 000 ₴ за шесть, без доплат.", replaces: ["price"] },
+      { q: "Сколько стоит проверка на полиграфе в Киеве?", a: "В кабинете партнёра в Киеве семейная проверка, например на верность, стоит 8 500 ₴, а скрининг кандидатов и сотрудников и проверка по делу о краже — от 5 500 ₴ за человека. Выезд к клиенту под ключ, вместе с тестом, за человека: по Киеву — 8 500 ₴, по Киевской области — 12 000 ₴. Точную сумму для вашего случая назовём после заявки. Онлайн-тест VerifEye: 2 500 ₴ за один вопрос, 4 000 ₴ за три, 6 000 ₴ за шесть, без доплат.", replaces: ["price"] },
       { q: "Как быстро можно пройти тест в Киеве?", a: "Онлайн-тест VerifEye доступен уже сегодня. Дату и время теста EyeDetect согласовываем с партнёром, в кабинете которого он проходит; ближайшее свободное время назовём после заявки. Дату выезда к клиенту тоже согласовываем после заявки.", replaces: ["speed"] },
       { q: "Можно ли пройти полиграф на измену в Киеве?", a: "Да. Тест проверяет одно конкретное подозрение, например измену за определённый период. Его проходит партнёр, которого подозревают, или оба партнёра, каждый отдельно. Тест добровольный, с письменного согласия. Онлайн-тест VerifEye стоит от 2 500 ₴, и ехать для него никуда не нужно." },
       { q: "Можно ли проверить сотрудников на полиграфе в Киеве?", a: "Сотрудники могут пройти тест EyeDetect в кабинете нашего партнёра в Киеве или с выездом к вам, а кандидаты — онлайн-тест VerifEye с телефона. Тест проходит только человек, который дал письменное согласие. Для проверки сотрудников и кандидатов правила строже, чем для частного теста, поэтому перед такой проверкой посоветуйтесь с юристом." },
@@ -56,7 +56,7 @@ export const kyiv = {
     ],
     towns: {
       title: "Белая Церковь, Бровары и другие города Киевской области",
-      text: "Онлайн-тест VerifEye можно пройти из любого города Киевской области. Выезд к клиенту по области стоит 12 000 ₴ под ключ. Тест EyeDetect можно пройти и в кабинете нашего партнёра в Киеве.",
+      text: "Онлайн-тест VerifEye можно пройти из любого города Киевской области. Выезд к клиенту по области стоит 12 000 ₴ под ключ за человека. Тест EyeDetect можно пройти и в кабинете нашего партнёра в Киеве.",
       list: "Белая Церковь · Березань · Борисполь · Бровары · Буча · Васильков · Ирпень · Обухов · Переяслав · Ржищев · Славутич · Фастов",
       nearbyLabel: "Другие города региона:",
       nearby: [["zhytomyr", "Житомир"], ["chernihiv", "Чернигов"], ["cherkasy", "Черкассы"]],
@@ -84,7 +84,7 @@ export const kyiv = {
     facts: [["At the partner's office", "from UAH 5,500"], ["Visit to the client", "UAH 8,500 in the city, UAH 12,000 in the region"], ["Online test", "from UAH 2,500"]],
     faq: [
       { q: "Where can I take a polygraph test in Kyiv?", a: "We have no office of our own in Kyiv, but there are three options. You can take the VerifEye online test today on your phone, in a quiet room at home or at work. The EyeDetect test is run by our partner at the partner's own office in Kyiv; you get the address when you book. The third option is a visit to the client, within the city or to towns in the region.", replaces: ["room"] },
-      { q: "How much does a lie detector test cost in Kyiv?", a: "At our partner's office in Kyiv a family test, for example a fidelity test, costs UAH 8,500, while screening of job candidates and staff and a theft-related test cost from UAH 5,500. A visit to the client costs UAH 8,500 within Kyiv and UAH 12,000 in the Kyiv region. We will tell you the exact amount for your case after you send a request. VerifEye online test: UAH 2,500 for one question, UAH 4,000 for three, UAH 6,000 for six, with no extra charges.", replaces: ["price"] },
+      { q: "How much does a lie detector test cost in Kyiv?", a: "At our partner's office in Kyiv a family test, for example a fidelity test, costs UAH 8,500, while screening of job candidates and staff and a theft-related test cost from UAH 5,500 per person. A visit to the client, all-inclusive with the test, costs UAH 8,500 per person within Kyiv and UAH 12,000 in the Kyiv region. We will tell you the exact amount for your case after you send a request. VerifEye online test: UAH 2,500 for one question, UAH 4,000 for three, UAH 6,000 for six, with no extra charges.", replaces: ["price"] },
       { q: "How soon can I take the test in Kyiv?", a: "The VerifEye online test is available today. We agree the date and time of an EyeDetect test with the partner whose office hosts it, and tell you the nearest available slot after you send a request. The date of a visit to the client is also agreed after you send a request.", replaces: ["speed"] },
       { q: "Can my partner take a lie detector test for infidelity in Kyiv?", a: "Yes. The test checks one specific suspicion, for example infidelity over a certain period. The partner under suspicion takes it, or both partners take separate tests. The test is voluntary and requires written consent. The VerifEye online test costs from UAH 2,500, and you do not need to travel anywhere for it." },
       { q: "Can we test employees with a lie detector in Kyiv?", a: "Employees can take the EyeDetect test at our partner's office in Kyiv or during a visit to your premises, and job candidates can take the VerifEye online test on a phone. Only a person who has given written consent takes the test. The rules for testing employees and job candidates are stricter than for a private test, so talk to a lawyer before such a test." },
@@ -92,7 +92,7 @@ export const kyiv = {
     ],
     towns: {
       title: "Bila Tserkva, Brovary and other towns in the Kyiv region",
-      text: "The VerifEye online test can be taken from any town in the Kyiv region. A visit to the client in the region costs UAH 12,000 all-inclusive. The EyeDetect test can also be taken at our partner's office in Kyiv.",
+      text: "The VerifEye online test can be taken from any town in the Kyiv region. A visit to the client in the region costs UAH 12,000 per person, all-inclusive. The EyeDetect test can also be taken at our partner's office in Kyiv.",
       list: "Berezan · Bila Tserkva · Boryspil · Brovary · Bucha · Vasylkiv · Irpin · Obukhiv · Pereiaslav · Rzhyshchiv · Slavutych · Fastiv",
       nearbyLabel: "Other cities in the region:",
       nearby: [["zhytomyr", "Zhytomyr"], ["chernihiv", "Chernihiv"], ["cherkasy", "Cherkasy"]],

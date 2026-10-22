@@ -23,12 +23,22 @@ const ASK_SERVICE = { uk: "ціна за запитом", ru: "цена по з�
 const isBookable = (item) =>
   typeof item.price === "number" || /\d/.test(item.priceLabel || "");
 
+// Рядок під групою «Виїзд до клієнта»: у Києві й Запоріжжі тест проводить партнер, його ціни — на сторінках
+// цих міст (рішення власника 22.10.2026). Сам прайс цін партнера не містить.
+const PARTNER_NOTE = {
+  uk: { before: "У Києві й Запоріжжі тест EyeDetect проводить наш партнер у своєму кабінеті; ціни там — на сторінках ", kyiv: "Києва", and: " і ", zaporizhzhia: "Запоріжжя", after: "." },
+  ru: { before: "В Киеве и Запорожье тест EyeDetect проводит наш партнёр в своём кабинете; цены там — на страницах ", kyiv: "Киева", and: " и ", zaporizhzhia: "Запорожья", after: "." },
+  en: { before: "In Kyiv and Zaporizhzhia the EyeDetect test is run by our partner at the partner's own office; see the prices on the ", kyiv: "Kyiv", and: " and ", zaporizhzhia: "Zaporizhzhia", after: " pages." },
+};
+
 const PricesSection = ({ lang, dictionary }) => {
   const pick = (obj, key) => getLocalizedField(obj, key, lang);
   const bookLabel = BOOK[lang] || BOOK.uk;
   const askLabel = ASK[lang] || ASK.uk;
   const askService = ASK_SERVICE[lang] || ASK_SERVICE.uk;
   const comparisonNote = pricingComparisonNote?.[lang] ?? pricingComparisonNote?.uk;
+  const partnerNote = PARTNER_NOTE[lang] || PARTNER_NOTE.uk;
+  const langPrefix = lang === "uk" ? "" : `/${lang}`;
 
   // Ряд із двох кнопок стоїть двічі: під прайсом і наприкінці сторінки, після порівняння цін.
   const ctaButtons = (
@@ -81,6 +91,15 @@ const PricesSection = ({ lang, dictionary }) => {
                   );
                 })}
               </ul>
+              {group.id === "travel" && (
+                <p className={styles.groupNote}>
+                  {partnerNote.before}
+                  <a href={`${langPrefix}/locations/kyiv`}>{partnerNote.kyiv}</a>
+                  {partnerNote.and}
+                  <a href={`${langPrefix}/locations/zaporizhzhia`}>{partnerNote.zaporizhzhia}</a>
+                  {partnerNote.after}
+                </p>
+              )}
               {!hasBookable && (
                 <div className={styles.groupCta}>
                   <OpenModalBtn

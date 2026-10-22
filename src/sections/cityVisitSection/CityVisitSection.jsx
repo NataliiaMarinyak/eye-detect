@@ -13,6 +13,18 @@ const VISIT_SERVICE = { uk: "EyeDetect з виїздом", ru: "EyeDetect с в�
 // партнера немає; якщо таке з'явиться в тексті, рядок розірветься й на ньому.
 const splitSentences = (text) => text.split(/(?<=[.?…]) +(?=[\p{Lu}«“])/u).filter(Boolean);
 
+// Ціна в картці: «від 5 500 ₴» не розривається після «від», а кілька цін через « · »
+// («сімейна — 8 500 ₴ · скринінг і крадіжка — від 5 500 ₴ за людину») стоять кожна з нового рядка.
+const NBSP = String.fromCharCode(0xa0);
+const PriceText = ({ text }) =>
+  keepNumbers((text || "").replace(/(^|\s)(від|от|from) (?=\d|UAH)/g, `$1$2${NBSP}`))
+    .split(" · ")
+    .map((part) => (
+      <span key={part} className={styles.priceLine}>
+        {part}
+      </span>
+    ));
+
 // Блок «Як пройти тест у {місто}»: онлайн сьогодні або виїзд спеціаліста.
 // Тексти залежать від регіону (захід України / інша Україна / Європа).
 // quizCta: кнопка другої картки відкриває розрахунок вартості замість вікна заявки.
@@ -21,7 +33,9 @@ const splitSentences = (text) => text.split(/(?<=[.?…]) +(?=[\p{Lu}«“])/u).
 // keepNumbers — лише для показу: число і знак «₴» чи «км» не розриваються між рядками.
 // keepShortWords у рядках плашки партнера і в ціні третьої картки — щоб «у» чи «по» не лишалися в кінці рядка
 // («по місту — 8 500 ₴, по» / «області — 12 000 ₴»).
-const CityVisitSection = ({ t, region, loc, km, vars, dictionary, lang, quizCta = false }) => {
+// officeLink ({ text, href }) — рядок «Третій спосіб…» під картками для міст, звідки дешевше приїхати до кабінету
+// (NEAREST_OFFICE у cityTexts.js, рішення власника 22.10.2026).
+const CityVisitSection = ({ t, region, loc, km, vars, dictionary, lang, quizCta = false, officeLink }) => {
   const v = vars || { loc, km: km || "", city: loc };
   const visitText = km ? t.visit.text[region] : t.visit.textNoKm[region];
   const clientVisit = t.clientVisit;
@@ -49,7 +63,7 @@ const CityVisitSection = ({ t, region, loc, km, vars, dictionary, lang, quizCta 
             <p className={styles.badge}>{t.online.title}</p>
             <p className={styles.text}>{keepNumbers(t.online.text)}</p>
             <div className={styles.footer}>
-              <p className={styles.price}>{keepNumbers(t.online.price)}</p>
+              <p className={styles.price}><PriceText text={t.online.price} /></p>
               <a href={`${lang === "uk" ? "" : "/" + lang}/online`} className={styles.btnSecondary}>{t.online.cta}</a>
             </div>
           </Reveal>
@@ -57,7 +71,7 @@ const CityVisitSection = ({ t, region, loc, km, vars, dictionary, lang, quizCta 
             <p className={styles.badge}>{t.visit.title}</p>
             <p className={styles.text}>{keepNumbers(fill(visitText, v))}</p>
             <div className={styles.footer}>
-              <p className={styles.price}>{keepNumbers(t.visit.price[region])}</p>
+              <p className={styles.price}><PriceText text={t.visit.price[region]} /></p>
               {quizCta ? (
                 <PriceQuizBtn customClass={styles.btnPrimary} title={t.visit.cta} />
               ) : (
@@ -76,6 +90,11 @@ const CityVisitSection = ({ t, region, loc, km, vars, dictionary, lang, quizCta 
             </Reveal>
           )}
         </ul>
+        {officeLink?.text && (
+          <p className={styles.officeLink}>
+            <a href={officeLink.href}>{keepNumbers(officeLink.text)} →</a>
+          </p>
+        )}
       </div>
     </section>
   );

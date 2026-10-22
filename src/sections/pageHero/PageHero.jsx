@@ -6,13 +6,22 @@ import styles from "./PageHero.module.scss";
 // Перший екран для внутрішніх сторінок: темний фон, H1, підзаголовок,
 // факти, одна-дві кнопки, за потреби фото праворуч.
 // modalVariant — варіант вікна заявки для головної кнопки ("" або "freeTest").
-const PageHero = ({ service = "", modalVariant = "", eyebrow, title, sub, facts = [], primary, quizLabel, secondaryHref, secondaryLabel, photo, photoAlt = "" }) => {
+// priceLine — рядок із ціною одразу під заголовком (сторінки міст України, рішення власника 22.10.2026).
+const PageHero = ({ service = "", modalVariant = "", eyebrow, title, priceLine, sub, facts = [], primary, quizLabel, secondaryHref, secondaryLabel, photo, photoAlt = "" }) => {
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
           {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
           <h1 className={styles.title}>{title}</h1>
+          {/* На телефоні кожна ціна з нового рядка, з планшета — один рядок через « · ». */}
+          {priceLine && (
+            <p className={styles.priceLine}>
+              {priceLine.split(" · ").map((part) => (
+                <span key={part} className={styles.pricePart}>{part}</span>
+              ))}
+            </p>
+          )}
           {sub && <p className={styles.sub}>{sub}</p>}
           {(primary || quizLabel || secondaryHref) && (
             <div className={styles.actions}>
