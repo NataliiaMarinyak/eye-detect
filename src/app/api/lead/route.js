@@ -15,6 +15,61 @@ const cleanMultiline = (v, max) =>
     .join("\n")
     .slice(0, max);
 
+// Копія заявки в таблицю власника «Поліграф — заявки і оплати з сайтів» (вкладка «Айдетект», 01.11.2026).
+// Адреса й ключ — лише у змінних середовища Vercel (SHEET_WEBHOOK, SHEET_KEY); без них або при збої заявка все одно йде в Telegram.
+const lineOf = (text, label) => {
+  const m = String(text || "").match(new RegExp(`^${label}:[ \\t]*(.*)$`, "m"));
+  return m ? m[1].trim() : "";
+};
+
+async function copyToSheet({ name, tel, email, comment, page, attribution, service }) {
+  const url = process.env.SHEET_WEBHOOK;
+  const key = process.env.SHEET_KEY;
+  if (!url || !key) return;
+  const src = lineOf(attribution, "Джерело");
+  const source = /^Google Ads/.test(src)
+    ? "Google Ads"
+    : /chatgpt|openai|perplexity|gemini|copilot|claude|deepseek/i.test(src)
+      ? "ChatGPT / ШІ"
+      : /maps/i.test(src)
+        ? "Google Карти"
+        : /органіка|^Пошук/.test(src)
+          ? "Google пошук"
+          : /Прямий/.test(src)
+            ? "Пряме / закладки"
+            : "Інше";
+  const campaign = [src.replace(/^Google Ads(?: \/ )?/, ""), lineOf(attribution, "Ключове слово")]
+    .filter((s) => s && s !== src)
+    .join(" · ");
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 6000);
+  try {
+    await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+      body: JSON.stringify({
+        key,
+        site: "eye-polygraph.com",
+        source,
+        campaign,
+        service: /VerifEye/i.test(service) ? "VerifEye" : "EyeDetect",
+        name,
+        phone: tel,
+        contact: email,
+        answers: [service, comment].filter(Boolean).join("\n"),
+        comment: src,
+        page: lineOf(attribution, "Перша сторінка") || page,
+        query: lineOf(attribution, "Ключове слово"),
+      }),
+      signal: controller.signal,
+    });
+  } catch {
+    // таблиця недоступна — заявка вже в Telegram
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 export async function POST(request) {
   let body;
   try {
@@ -71,6 +126,7 @@ export async function POST(request) {
       body: JSON.stringify({ chat_id: chatId, text: lines.join("\n") }),
     });
     if (!res.ok) throw new Error(`telegram ${res.status}`);
+    await copyToSheet({ name, tel, email, comment, page, attribution, service });
     return NextResponse.json({ ok: true });
   } catch (e) {
     return NextResponse.json({ ok: false, error: "send_failed" }, { status: 502 });
